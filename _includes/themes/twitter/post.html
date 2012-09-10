@@ -38,7 +38,8 @@
   </div>
   <div class="span2">
     <br/>
-    {% assign author = site.authors[page.author] %}
+    {% for auth in page.author %}
+    {% assign author = site.authors[auth] %}
     <p id="author">
       <img class="img-circle" style="width:60px" src="http://en.gravatar.com/avatar/{{author.gravatar}}&size=60">
       <h4>{{author.name}}</h4>
@@ -47,6 +48,7 @@
         <li><a href="http://www.twitter.com/{{author.twitter}}">Twitter</a></li>
       </ul>
     </p>
+    {% endfor %}
     <br/>
     <ul class="nav nav-list">
       {% assign pages_list = site.pages %}

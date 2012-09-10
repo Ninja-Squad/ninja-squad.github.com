@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hello Ninja Squad!
-author: cexbrayat
+author: [acrepet, cexbrayat, clacote, jbnizet]
 tags: [ninjasquad]
 ---
 <h4>Ninja Squad, c’est votre vrai nom?</h4>
