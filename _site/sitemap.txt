@@ -1,0 +1,10 @@
+
+http://cexbrayat.github.com/archive.html
+http://cexbrayat.github.com/atom.xml
+http://cexbrayat.github.com/categories.html
+http://cexbrayat.github.com/index.html
+http://cexbrayat.github.com/pages.html
+http://cexbrayat.github.com/sitemap.txt
+http://cexbrayat.github.com/tags.html
+
+http://cexbrayat.github.com/2012/08/26/hello-ninjasquad

@@ -1,0 +1,56 @@
+<div class="page-header">
+  <h1>{{ page.title }}</h1>
+</div>
+<div class="row">
+  <div class="date span3"><span><i class="icon-time"></i>{{ page.date | date_to_long_string }}</span></div>
+  <div class="span3">
+  {% unless page.tags == empty %}
+    <div class="">
+    {% assign tags_list = page.tags %}
+    {% include JB/tags_list %}
+    </div>
+  {% endunless %}  
+  </div>
+</div>
+<br/>
+<div class="row">
+  <div class="span8" style="text-align: justify">
+    {{ content }}
+    <hr>
+    <div class="pagination">
+      <ul>
+      {% if page.previous %}
+        <li class="prev"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Previous</a></li>
+      {% else %}
+        <li class="prev disabled"><a>&larr; Previous</a></li>
+      {% endif %}
+        <li><a href="{{ BASE_PATH }}{{ site.JB.archive_path }}">Archive</a></li>
+      {% if page.next %}
+        <li class="next"><a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">Next &rarr;</a></li>
+      {% else %}
+        <li class="next disabled"><a>Next &rarr;</a>
+      {% endif %}
+      </ul>
+    </div>
+    <hr>
+    {% include JB/comments %}
+  </div>
+  <div class="span2">
+    <br/>
+    {% assign author = site.authors[page.author] %}
+    <p id="author">
+      <img src="http://en.gravatar.com/avatar/{{author.gravatar}}">
+      <h4>{{author.name}}</h4>
+      <ul class="nav nav-list">
+        <li><a href="http://www.github.com/{{author.github}}">Github</a></li>
+        <li><a href="http://www.twitter.com/{{author.twitter}}">Twitter</a></li>
+      </ul>
+    </p>
+    <br/>
+    <ul class="nav nav-list">
+      {% assign pages_list = site.pages %}
+      {% assign group = 'navigation' %}
+      {% include JB/pages_list %}
+    </ul>
+  </div> 
+</div>
