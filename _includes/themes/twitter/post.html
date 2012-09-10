@@ -11,6 +11,7 @@
     </div>
   {% endunless %}  
   </div>
+  <div class="span3"><span><i class="icon-comment"></i><a href="{{post.url}}#disqus_thread">Comments</a></span></div>
 </div>
 <br/>
 <div class="row">
@@ -39,7 +40,7 @@
     <br/>
     {% assign author = site.authors[page.author] %}
     <p id="author">
-      <img src="http://en.gravatar.com/avatar/{{author.gravatar}}">
+      <img class="img-circle" style="width:60px" src="http://en.gravatar.com/avatar/{{author.gravatar}}">
       <h4>{{author.name}}</h4>
       <ul class="nav nav-list">
         <li><a href="http://www.github.com/{{author.github}}">Github</a></li>
