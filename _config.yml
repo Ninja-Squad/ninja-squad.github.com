@@ -12,11 +12,27 @@ pygments: true
 title : NinjaSquad
 tagline: Set<AwesomeDeveloper> ninjas;
 authors:
+  acrepet:
+    name : Agnés Crepet
+    github : acrepet
+    twitter : agnes_crepet
+    gravatar : a7562607fd2dda9889bd3ecc70d98beb
   cexbrayat:
     name : Cédric Exbrayat
     github : cexbrayat
     twitter : cedric_exbrayat
     gravatar : 0f0edb7904c4eea5f1b60fba0bf88537
+  clacote:
+    name : Cyril Lacôte
+    github : clacote
+    twitter : clacote
+    gravatar : 1305aa79d71e887dabb8f698c4c1ff9f
+  jbnizet:
+    name : Jean Baptise Nizet
+    github : jbnizet
+    twitter : jbnizet
+    gravatar : 2f0d9dec16bae1e06552af55ddefc11f
+
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
@@ -26,7 +42,7 @@ authors:
 # Else if you are pushing to username.github.com, replace with your username.
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
-production_url : http://cexbrayat.github.com
+production_url : http://blog.ninja-sqaud.com
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
@@ -99,7 +115,7 @@ JB :
   analytics :
     provider : google 
     google : 
-        tracking_id : 'UA-123-12'
+        tracking_id : 'UA-30716106-1'
     getclicky :
       site_id : 
     mixpanel :
