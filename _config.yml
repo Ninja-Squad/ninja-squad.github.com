@@ -98,7 +98,7 @@ JB :
   comments :
     provider : disqus
     disqus :
-      short_name : cexbrayat
+      short_name : ninjasquad
     livefyre :
       site_id : 123
     intensedebate :
