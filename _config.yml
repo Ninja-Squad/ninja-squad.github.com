@@ -13,7 +13,7 @@ title : NinjaSquad
 tagline: Set<AwesomeDeveloper> ninjas;
 authors:
   acrepet:
-    name : Agnés Crépet
+    name : Agnès Crépet
     github : acrepet
     twitter : agnes_crepet
     gravatar : a7562607fd2dda9889bd3ecc70d98beb
@@ -28,7 +28,8 @@ authors:
     twitter : clacote
     gravatar : 1305aa79d71e887dabb8f698c4c1ff9f
   jbnizet:
-    name : Jean Baptiste Nizet
+  # "Jean-Baptiste" is too long to fit on right columns on post page.
+    name : JB Nizet
     github : jnizet
     twitter : jbnizet
     gravatar : 2f0d9dec16bae1e06552af55ddefc11f
