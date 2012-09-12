@@ -1,8 +1,4 @@
 /* Override some defaults */
-html, body {
-  background-color: #eee;
-  font-size: 16px;
-}
 .navbar {
   margin-bottom: 0;
 }
@@ -15,6 +11,7 @@ html, body {
 
 /* The white background content wrapper */
 .content {
+  font-size: 16px;
   background-color: #fff;
   padding: 20px;
   margin: 0 -20px; /* negative indent the amount of the padding to maintain the grid system */
