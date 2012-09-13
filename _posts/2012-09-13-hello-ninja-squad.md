@@ -28,7 +28,7 @@ Cette passion pour le code et notre métier n’est pas juste un mot pour nous, 
 <br/>
 <h4>Ninja to hire!</h4>
 
-Les ninjas étaient des spécialistes dont on pouvait louer les services. C’est également notre cas, même si une partie de notre temps restera consacrée à affiner nos compétences et à essayer de changer le monde en <a href="http://github.com/ninjasquad" target="_blank">open sourçant des outils</a>, en contribuant à des projets, et en réalisant des applications de notre cru. Nous avons déjà travaillé tous ensemble et nous savons la qualité de ce que nous pouvons produire. 
+Les ninjas étaient des spécialistes dont on pouvait louer les services. C’est également notre cas, même si une partie de notre temps restera consacrée à affiner nos compétences et à essayer de changer le monde en <a href="http://github.com/ninja-squad" target="_blank">open sourçant des outils</a>, en contribuant à des projets, et en réalisant des applications de notre cru. Nous avons déjà travaillé tous ensemble et nous savons la qualité de ce que nous pouvons produire. 
 
 Si vous cherchez une petite équipe compétente, nous sommes peut-être ceux qu’il vous faut. Et si nous ne sommes pas disponibles au moment opportun, peut-être pourrons-nous vous orienter vers des personnes de choix, car nous avons la chance de connaître beaucoup de gens doués. Et nous préférons toujours voir des projets réussis plutôt qu’inachevés.
 
