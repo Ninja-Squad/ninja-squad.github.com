@@ -11,7 +11,6 @@ Il serait dommage de ne pas soigner ces consommateurs, surtout si vous vous adre
 
 OK.  
 Maintenant, supposons que vous produisez du contenu par JavaScript. Du genre large le contenu. Par exemple, de l'ASCII-ART :
-
      _____ _     _        _____               _
     |   | |_|___|_|___   |   __|___ _ _ ___ _| |
     | | | | |   | | .'|  |__   | . | | | .'| . |
@@ -23,8 +22,14 @@ OK, ce use-case n'est pas le plus commmun. Mais à quoi bon faire un blog post s
 
 #CSS3 media queries
 
+CSS3 permet de styler son contenu en fonction de caractéristiques d'affichages : ratio, device, ou dimensions. C'est ce que met en oeuvre [Twitter Bootstrap](http://twitter.github.com/bootstrap/scaffolding.html#responsive) pour assurer le responsive, en testant uniquement la largeur d'affichage.
+
+Maintenant, comment mettre en oeuvre ces fonctionnalités en JavaScript?
+
 #JS window.matchMedia()
 
 Une fonction JS permet de tester des media queries CSS : `[window.matchMedia](https://developer.mozilla.org/en-US/docs/DOM/window.matchMedia)`.  
-Son support est encore assez limité. Heureusement, [Paul Irish nous fournit un polyfill]() assurant la compatibilité.
+Son support est encore assez limité. Heureusement, [Paul Irish nous fournit un polyfill](https://github.com/paulirish/matchMedia.js/) assurant la compatibilité.
+
+
 
