@@ -86,6 +86,7 @@ Cela nous permet d'écrire du code comme : `if (isMatchMediaPhone()) return "Hel
 
 Nous avons ainsi tout en main pour produire le ASCII-art qui nous intéresse en fonction du media.  
 
+	<pre id='ascii'></pre>
 	<script>
 	  function draw() {
 	    var ascii;
@@ -96,50 +97,50 @@ Nous avons ainsi tout en main pour produire le ASCII-art qui nous intéresse en 
 	    } else if (matchMediaPhone()) {
 	      ascii = "...Phone ASCII-art...";
 	    }
-	    $('#ascii').text(ascii);
+	    document.getElementById('ascii').innerHtml = ascii;
 	  }
 	  window.setInterval(draw(), 500);
 	</script>
 
-	<pre id='ascii'></pre>
-
 Nous voilà avec un magnifique ASCII-art responsive (n'oubliez pas de redimensionner la fenêtre de votre navigateur pour le _Wow effect!_) :
 
-<script src="/assets/matchMedia.js"></script>
+<pre id='ascii'>ASCII</pre>
+
+<script src="/assets/matchMedia.js">
+</script>
 
 <script>
 	function draw() {
 		var ascii;
 		if (matchMediaDesktop()) {
 			ascii =                                              
-	" _____     _ _        ____          _   _           "+
-	"|  |  |___| | |___   |    \ ___ ___| |_| |_ ___ ___ "+
-	"|     | -_| | | . |  |  |  | -_|_ -| '_|  _| . | . |"+
-	"|__|__|___|_|_|___|  |____/|___|___|_,_|_| |___|  _|"+
-	"                                                |_| ";
+	" _____     _ _        ____          _   _           \n"+
+	"|  |  |___| | |___   |    \\ ___ ___| |_| |_ ___ ___ \n"+
+	"|     | -_| | | . |  |  |  | -_|_ -| '_|  _| . | . |\n"+
+	"|__|__|___|_|_|___|  |____/|___|___|_,_|_| |___|  _|\n"+
+	"                                                |_| \n";
 		} else if (matchMediaTablet()) {
 			ascii =
-	" _____     _ _        _____     _   _     _   "+
-	"|  |  |___| | |___   |_   _|___| |_| |___| |_ "+
-	"|     | -_| | | . |    | | | .'| . | | -_|  _|"+
-	"|__|__|___|_|_|___|    |_| |__,|___|_|___|_|  ";
+	" _____     _ _        _____     _   _     _   \n"+
+	"|  |  |___| | |___   |_   _|___| |_| |___| |_ \n"+
+	"|     | -_| | | . |    | | | .'| . | | -_|  _|\n"+
+	"|__|__|___|_|_|___|    |_| |__,|___|_|___|_|  \n";
 
 		} else if (matchMediaPhone()) {
 			ascii =
-	"   _____     _ _       "+
-	"  |  |  |___| | |___   "+
-	"  |     | -_| | | . |  "+
-	"  |__|__|___|_|_|___|  "+
-	" _____ _               "+
-	"|  _  | |_ ___ ___ ___ "+
-	"|   __|   | . |   | -_|"+
-	"|__|  |_|_|___|_|_|___|";                   
+	"   _____     _ _       \n"+
+	"  |  |  |___| | |___   \n"+
+	"  |     | -_| | | . |  \n"+
+	"  |__|__|___|_|_|___|  \n"+
+	" _____ _               \n"+
+	"|  _  | |_ ___ ___ ___ \n"+
+	"|   __|   | . |   | -_|\n"+
+	"|__|  |_|_|___|_|_|___|\n";                   
 		}
-		$('#ascii').text(ascii);
+		document.getElementById('ascii').innerHTML = ascii;
 	}
-	window.setInterval(draw(), 500);
+	window.setInterval(draw, 500);
 </script>
-<pre id='ascii'>ASCII</pre>
 
 _Et voilà_, commme disent les américains francophones et les francophones américanophiles.  
 
