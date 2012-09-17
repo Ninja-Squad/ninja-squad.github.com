@@ -10,7 +10,7 @@ Tout [le monde a un smartphone](http://www.wired.com/gadgetlab/2011/11/smartphon
 Il serait dommage de ne pas soigner ces lecteurs, surtout si vous vous adressez à des geeks. Une bonne partie d'entre eux consomme du web en situation de mobilité. Et aujourd'hui, on n'a plus d'excuse à ne pas faire un site responsive : des frameworks CSS aussi communs que [Twitter Bootstrap](http://twitter.github.com/bootstrap/scaffolding.html#responsive) nous mâchent complètement le travail.
 
 C'est indiscutable, vous n'avez aucune excuse. En tout cas faîtes comme-ci, sinon cet article n'a plus vraiment de raison d'être. OK?
-Maintenant, supposons que vous produisiez du contenu par JavaScript. Du genre large le contenu. Par exemple, de l'ASCII-art :
+Maintenant, supposons que vous produisiez du contenu par JavaScript. Du genre large le contenu. Par exemple de l'ASCII-art, comme sur [la _home_ de Ninja Squad](http://ninja-squad.com), affiché dans un simili-terminal :
 
      _____ _     _        _____               _
     |   | |_|___|_|___   |   __|___ _ _ ___ _| |
@@ -65,6 +65,9 @@ Maintenant, comment mettre en oeuvre ces fonctionnalités en JavaScript?
 #JS window.matchMedia()
 
 Une fonction JS permet de tester des media queries CSS : [`window.matchMedia`](https://developer.mozilla.org/en-US/docs/DOM/window.matchMedia).
+
+Le support de `window.matchMedia` est encore assez limité. Heureusement, [Paul Irish nous fournit un polyfill](https://github.com/paulirish/matchMedia.js/) assurant la compatibilité avec les navigateurs plus anciens.
+
 En réutilisant les queries definies par Bootstrap, on peut donc se définir des fonctions utilitaires JavaScript testant le type de device :
 
 	window.matchMediaPhone = function() {
@@ -79,6 +82,5 @@ En réutilisant les queries definies par Bootstrap, on peut donc se définir des
 
 Cela me permet d'écrire : `if (isMatchMediaPhone()) return "Hello Phone!";
 
-Le support de `window.matchMedia` est encore assez limité. Heureusement, [Paul Irish nous fournit un polyfill](https://github.com/paulirish/matchMedia.js/) assurant la compatibilité avec les navigateurs plus anciens.
-
+Nous avons ainsi tout en main pour produire le ASCII-art qui nous intéresse en fonction du media.  
 "Et voilà", commme disent les américains francophones et les francophones américanophiles.
