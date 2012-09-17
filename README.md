@@ -51,11 +51,11 @@ Pour Windows, suivre les instructions sur
 La partie Python n'est pas nécessaire, puisque nous utilisons Google prettify pour la coloration syntaxique. 
 
 Une installation pré-configurée, après avoir suivi toutes ces étapes, est disponible 
-su <a href="https://docs.google.com/a/ninja-squad.com/open?id=0B0FLWwufPzrTbUhVNWlOQzZoREk">Google Drive</a>. 
+sur <a href="https://docs.google.com/a/ninja-squad.com/open?id=0B0FLWwufPzrTbUhVNWlOQzZoREk">Google Drive</a>. 
 Pour l'utiliser, il suffit de télécharger le zip, l'extraire dans un dossier (par exemple `D:\tools`),
 et d'ajouter son répertoire bin (par exemple `D:\tools\winjekyll\bin`) à la variable d'environnement `PATH`.
 
-Avant de lancer jekyll, il faut bien s'assurer d'avoir exécuter les commandes suivantes:
+Avant de lancer jekyll, il faut bien s'assurer d'avoir exécuté les commandes suivantes:
 
     set LC_ALL=en_US.UTF-8
     set LANG=en_US.UTF-8
