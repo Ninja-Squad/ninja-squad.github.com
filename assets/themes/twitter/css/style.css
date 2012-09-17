@@ -66,4 +66,11 @@
 	border:1px solid #4C964D;
 	color:#FFF;
 }
-	
+div.post-title {
+    background-color: #F5F5F5;
+    border:1px solid #F2E9E1;
+	padding: 0 10px;
+}
+div.post-title h1 {
+    font-size: 42px;
+}

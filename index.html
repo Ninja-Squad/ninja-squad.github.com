@@ -1,0 +1,65 @@
+---
+layout: page
+title: Blog Ninja Squad
+tagline: Set&lt;AwesomeDeveloper&gt;
+---
+{% for post in site.posts limit:10%}
+  <div class="row">
+    <div class="date span3"><span><i class="icon-time"></i>{{ post.date | date:"%Y-%m-%d" }}</span></div>
+    <div class="span3">
+      {% unless post.tags == empty %}
+      <div>
+        {% assign tags_list = post.tags %}
+        {% include JB/tags_list %}
+      </div>
+      {% endunless %}  
+    </div>
+    <div class="span3"><span><i class="icon-comment"></i><a href="{{post.url}}/#disqus_thread">Commentaires</a></span></div>
+  </div>
+  <div class="row">
+    <div class="span8 post-title">
+        <h1>{{ post.title }}</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="span8" style="text-align: justify">
+      {{ post.content }}
+    </div>
+    <div class="span2">
+      {% for auth in post.author %}
+      {% assign author = site.authors[auth] %}
+      <p>
+        <img class="img-circle" style="width:60px" src="http://en.gravatar.com/avatar/{{author.gravatar}}&amp;size=60">
+        <h4>{{author.name}}</h4>
+        <ul class="nav nav-list">
+          <li><a href="http://www.github.com/{{author.github}}">Github</a></li>
+          <li><a href="http://www.twitter.com/{{author.twitter}}">Twitter</a></li>
+        </ul>
+      </p>
+      {% endfor %}
+    </div> 
+  </div>
+  <div class="row">
+    <div class="span10">
+      <hr/>
+    </div>
+  </div>
+{% endfor %}
+
+<p>
+  <a href="{{ BASE_PATH }}{{ site.JB.archive_path }}">Posts plus anciens</a>
+</p>
+
+<script>
+  {% if site.safe == false %}var disqus_developer = 1;{% endif %}
+  var disqus_shortname = '{{ site.JB.comments.disqus.short_name }}';
+  var disqus_url = '{{site.production_url}}{{page.url}}/';
+  {% if page.wordpress_id %}var disqus_identifier = '{{page.wordpress_id}} {{site.production_url}}/?p={{page.wordpress_id}}';{% endif %}
+  /* * * DON'T EDIT BELOW THIS LINE * * */
+  (function () {
+     var s = document.createElement('script'); s.async = true;
+     s.type = 'text/javascript';
+     s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+     (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+   }());
+</script>
