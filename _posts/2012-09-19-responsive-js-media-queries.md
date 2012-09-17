@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Responsive JS media queries
+title: Responsive JS media queries, Bootstrap-compatible.
 author: clacote
 tags: [web, responsive, javascript]
 ---
@@ -10,6 +10,7 @@ Tout [le monde a un smartphone](http://www.wired.com/gadgetlab/2011/11/smartphon
 Il serait dommage de ne pas soigner ces lecteurs, surtout si vous vous adressez à des geeks. Une bonne partie d'entre eux consomme du web en situation de mobilité. Et aujourd'hui, on n'a plus d'excuse à ne pas faire un site responsive : des frameworks CSS aussi communs que [Twitter Bootstrap](http://twitter.github.com/bootstrap/scaffolding.html#responsive) nous mâchent complètement le travail.
 
 C'est in-dis-cu-table, vous n'avez aucune excuse. En tout cas faîtes comme-ci, sinon cet article n'a plus vraiment de raison d'être. OK?
+
 Maintenant, supposons que vous produisiez du contenu par JavaScript. Du genre large le contenu. Par exemple de l'ASCII-art, comme sur [la _home_ de Ninja Squad](http://ninja-squad.com), affiché dans un simili-terminal :
 
      _____ _     _        _____               _
@@ -29,7 +30,6 @@ Pourquoi ce contenu n'aurait-il pas droit, lui aussi, a être responsive? Sur un
 	|__   | . | | | .'| . |
 	|_____|_  |___|__,|___|
 	        |_|            
-
 
 Je suis d'accord, ce use-case n'est pas le plus commmun. Mais à quoi bon faire un blog post sur un sujet bateau, sinon?
 
@@ -54,14 +54,14 @@ affiche :
 
 Essayez de redimensionner la fenêtre de votre navigateur, si vous êtes sur desktop : le texte affiché dépend de la largeur du navigateur. <small>Ce côté magique du responsive me fait vibrer en ce moment.</small>
 
-Vu du [source de Bootstrap](https://github.com/twitter/bootstrap/blob/master/less/responsive-utilities.less), c'est simplement une media query testant la largeur d'affichage et affichant/masquant ces classes en fonction. Par exemple, pour les devices de type _phone_ :
+Vu du [source de Bootstrap](https://github.com/twitter/bootstrap/blob/master/less/responsive-utilities.less), c'est une media query testant uniquement la largeur d'affichage et affichant/masquant ces classes en fonction. Par exemple, pour les devices de type _phone_ :
 
 	@media (max-width: 767px) {
 	  .visible-desktop   { display: none !important; }
 	  // etc.
 	}
 
-Bootstrap permet donc nativement de rendre responsive notre contenu HTML.
+Bootstrap permet donc nativement de rendre responsive notre contenu HTML. C'est déjà énorme. Mais ça ne répond pas encore à notre besoin initial.    
 Maintenant, comment mettre en oeuvre ces fonctionnalités en JavaScript?
 
 #JS window.matchMedia()
@@ -70,7 +70,7 @@ Une fonction JS permet de tester des media queries CSS : [`window.matchMedia`](h
 
 Le support de `window.matchMedia` est encore assez limité. Heureusement, [Paul Irish nous fournit un polyfill](https://github.com/paulirish/matchMedia.js/) assurant la compatibilité avec les navigateurs plus anciens.
 
-En réutilisant les queries definies par Bootstrap, on peut donc se définir des fonctions utilitaires JavaScript testant le type de device, compatible avec les catégories Bootstrap :
+En réutilisant les queries definies par Bootstrap, on peut donc se définir des fonctions utilitaires JavaScript testant les types de devices conformes à Bootstrap :
 
 	window.matchMediaPhone = function() {
 	    return matchMedia('(max-width: 767px)').matches;
@@ -141,5 +141,6 @@ Nous voilà avec un magnifique ASCII-art responsive (n'oubliez pas de redimensio
 </script>
 <pre id='ascii'>ASCII</pre>
 
-_Et voilà_, commme disent les américains francophones et les francophones américanophiles.
+_Et voilà_, commme disent les américains francophones et les francophones américanophiles.  
+Vous pouvez reprendre une activité normale.
 
