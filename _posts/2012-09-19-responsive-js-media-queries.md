@@ -9,7 +9,7 @@ tags: [web, responsive, javascript]
 Tout [le monde a un smartphone](http://www.wired.com/gadgetlab/2011/11/smartphones-feature-phones/), ou presque. Et presque tout le monde a une tablette.   
 Il serait dommage de ne pas soigner ces lecteurs, surtout si vous vous adressez à des geeks. Une bonne partie d'entre eux consomme du web en situation de mobilité. Et aujourd'hui, on n'a plus d'excuse à ne pas faire un site responsive : des frameworks CSS aussi communs que [Twitter Bootstrap](http://twitter.github.com/bootstrap/scaffolding.html#responsive) nous mâchent complètement le travail.
 
-C'est indiscutable, vous n'avez aucune excuse. En tout cas faîtes comme-ci, sinon cet article n'a plus vraiment de raison d'être. OK?
+C'est in-dis-cu-table, vous n'avez aucune excuse. En tout cas faîtes comme-ci, sinon cet article n'a plus vraiment de raison d'être. OK?
 Maintenant, supposons que vous produisiez du contenu par JavaScript. Du genre large le contenu. Par exemple de l'ASCII-art, comme sur [la _home_ de Ninja Squad](http://ninja-squad.com), affiché dans un simili-terminal :
 
      _____ _     _        _____               _
@@ -41,14 +41,16 @@ Des classes CSS (`.visible-desktop`, `.hidden-phone`, etc...) vous permettent m�
 
 Par exemple :
 
-	<div class="visible-desktop">Hello Desktop!</div>
-	<div class="visible-tablet">Hello Tablet!</div>
-	<div class="visible-phone">Hello Phone!</div>
+	<span class="visible-desktop">Hello Desktop!</span>
+	<span class="visible-tablet">Hello Tablet!</span>
+	<span class="visible-phone">Hello Phone!</span>
 
-affiche : 
-<div class="visible-desktop">Hello Desktop!</div>
-<div class="visible-tablet">Hello Tablet!</div>
-<div class="visible-phone">Hello Phone!</div>
+affiche :
+<strong> 
+<span class="visible-desktop">Hello Desktop!</span>
+<span class="visible-tablet">Hello Tablet!</span>
+<span class="visible-phone">Hello Phone!</span>
+</strong>
 
 Essayez de redimensionner la fenêtre de votre navigateur, si vous êtes sur desktop : le texte affiché dépend de la largeur du navigateur. <small>Ce côté magique du responsive me fait vibrer en ce moment.</small>
 
@@ -68,7 +70,7 @@ Une fonction JS permet de tester des media queries CSS : [`window.matchMedia`](h
 
 Le support de `window.matchMedia` est encore assez limité. Heureusement, [Paul Irish nous fournit un polyfill](https://github.com/paulirish/matchMedia.js/) assurant la compatibilité avec les navigateurs plus anciens.
 
-En réutilisant les queries definies par Bootstrap, on peut donc se définir des fonctions utilitaires JavaScript testant le type de device :
+En réutilisant les queries definies par Bootstrap, on peut donc se définir des fonctions utilitaires JavaScript testant le type de device, compatible avec les catégories Bootstrap :
 
 	window.matchMediaPhone = function() {
 	    return matchMedia('(max-width: 767px)').matches;
@@ -80,7 +82,64 @@ En réutilisant les queries definies par Bootstrap, on peut donc se définir des
 	    return matchMedia('(min-width: 979px)').matches;
 	}
 
-Cela me permet d'écrire : `if (isMatchMediaPhone()) return "Hello Phone!";
+Cela nous permet d'écrire du code comme : `if (isMatchMediaPhone()) return "Hello Phone!"`;
 
 Nous avons ainsi tout en main pour produire le ASCII-art qui nous intéresse en fonction du media.  
-"Et voilà", commme disent les américains francophones et les francophones américanophiles.
+
+	<script>
+		function draw() {
+			var ascii;
+			if (matchMediaDesktop()) {
+				ascii = "...Desktop ASCII-art...";
+			} else if (matchMediaTablet()) {
+				ascii = "...Tablet ASCII-art...";
+			} else if (matchMediaPhone()) {
+				ascii = "...Phone ASCII-art...";
+			}
+			$('#ascii').text(ascii);
+		}
+		window.setInterval(draw(), 500);
+	</script>
+
+	<pre id='ascii'></pre>
+
+Nous voilà avec un magnifique ASCII-art responsive (n'oubliez pas de redimensionner la fenêtre de votre navigateur pour le _Wow effect!_) :
+
+<script src="/assets/matchMedia.js"></script>
+
+<script>
+	function draw() {
+		var ascii;
+		if (matchMediaDesktop()) {
+			ascii =                                              
+	" _____     _ _        ____          _   _           "+
+	"|  |  |___| | |___   |    \ ___ ___| |_| |_ ___ ___ "+
+	"|     | -_| | | . |  |  |  | -_|_ -| '_|  _| . | . |"+
+	"|__|__|___|_|_|___|  |____/|___|___|_,_|_| |___|  _|"+
+	"                                                |_| ";
+		} else if (matchMediaTablet()) {
+			ascii =
+	" _____     _ _        _____     _   _     _   "+
+	"|  |  |___| | |___   |_   _|___| |_| |___| |_ "+
+	"|     | -_| | | . |    | | | .'| . | | -_|  _|"+
+	"|__|__|___|_|_|___|    |_| |__,|___|_|___|_|  ";
+
+		} else if (matchMediaPhone()) {
+			ascii =
+	"   _____     _ _       "+
+	"  |  |  |___| | |___   "+
+	"  |     | -_| | | . |  "+
+	"  |__|__|___|_|_|___|  "+
+	" _____ _               "+
+	"|  _  | |_ ___ ___ ___ "+
+	"|   __|   | . |   | -_|"+
+	"|__|  |_|_|___|_|_|___|";                   
+		}
+		$('#ascii').text(ascii);
+	}
+	window.setInterval(draw(), 500);
+</script>
+<pre id='ascii'>ASCII</pre>
+
+_Et voilà_, commme disent les américains francophones et les francophones américanophiles.
+
