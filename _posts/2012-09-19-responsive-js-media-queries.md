@@ -87,18 +87,18 @@ Cela nous permet d'écrire du code comme : `if (isMatchMediaPhone()) return "Hel
 Nous avons ainsi tout en main pour produire le ASCII-art qui nous intéresse en fonction du media.  
 
 	<script>
-		function draw() {
-			var ascii;
-			if (matchMediaDesktop()) {
-				ascii = "...Desktop ASCII-art...";
-			} else if (matchMediaTablet()) {
-				ascii = "...Tablet ASCII-art...";
-			} else if (matchMediaPhone()) {
-				ascii = "...Phone ASCII-art...";
-			}
-			$('#ascii').text(ascii);
-		}
-		window.setInterval(draw(), 500);
+	  function draw() {
+	    var ascii;
+	    if (matchMediaDesktop()) {
+	      ascii = "...Desktop ASCII-art...";
+	    } else if (matchMediaTablet()) {
+	      ascii = "...Tablet ASCII-art...";
+	    } else if (matchMediaPhone()) {
+	      ascii = "...Phone ASCII-art...";
+	    }
+	    $('#ascii').text(ascii);
+	  }
+	  window.setInterval(draw(), 500);
 	</script>
 
 	<pre id='ascii'></pre>
@@ -142,5 +142,5 @@ Nous voilà avec un magnifique ASCII-art responsive (n'oubliez pas de redimensio
 <pre id='ascii'>ASCII</pre>
 
 _Et voilà_, commme disent les américains francophones et les francophones américanophiles.  
-Vous pouvez reprendre une activité normale.
 
+<p align="center"><img class="img-polaroid" src="/assets/images/success_baby.jpeg" alt="Success!" /></p>
