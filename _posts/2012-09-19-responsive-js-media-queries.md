@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Responsive JS media queries, Bootstrap-compatible.
+title: Responsive JS media queries, Bootstrap-compatible
 author: clacote
-tags: [web, responsive, javascript]
+tags: [web, responsive, css, js]
 ---
 #Responsive?
 
@@ -148,3 +148,5 @@ N'hésitez pas à redimensionner la fenêtre de votre navigateur pour maximiser 
 _Et voilà_, commme disent les américains francophones et les francophones américanophiles.  
 
 <p align="center"><img class="img-polaroid" src="/assets/images/success_baby.jpeg" alt="Success!" /></p>
+
+PS : cet article, ce blog, et [le site de Ninja Squad](http://ninja-squad.com) sont évidemment responsive.
