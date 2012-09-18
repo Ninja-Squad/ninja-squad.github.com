@@ -7,7 +7,10 @@ tags: [java, jug, conference]
 Premier voyage de l'équipe <a href="http://ninja-squad.com">NinjaSquad</a>, direction La Rochelle pour le <a href="https://sites.google.com/site/jugsummercamp/">JUG Summer Camp</a>. Du Java, du Web, l'océan, une conf gratuite d'une journée avec une organisation irréprochable, il faudrait être difficile pour ne pas aimer!
 
 <div style="text-align: center"><a href="http://www.jugsummercamp.org"><img title="JUG Summer Camp 2012" src="http://a0.twimg.com/profile_images/952785929/summercamp7.png" alt="JUG Summer Camp 2012" width="300" height="325" /></a></div>
-<br/><br/>
+
+<br/>
+<br/>
+
 ___Keynote___&nbsp;:&nbsp;Nicolas de Loof -&nbsp;<a href="https://twitter.com/ndeloof">@ndeloof</a><br/>
 Nicolas nous a fait un numéro de stand up très drôle en parodiant le podcast bien connu dans le monde Java : les <a href="http://lescastcodeurs.com/">Castcodeurs</a>. Comme aucun d'entre eux n'étaient présents, Nicolas a eu l'idée de faire un puppet show en reprenant les traits caractéristiques de chacun d'entre eux, pour faire une keynote originale sur notre métier. Franc succès dans la salle (évidemment seulement drôle si on écoute ce podcast).
 La journée se déroule ensuite sur deux tracks de confèrence, il faut donc faire des choix.
