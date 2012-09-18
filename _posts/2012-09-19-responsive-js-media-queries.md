@@ -84,7 +84,7 @@ En réutilisant les queries definies par Bootstrap, on peut donc se définir des
 	    return matchMedia('(min-width: 979px)').matches;
 	}
 
-Cela nous permet d'écrire du code comme : `if (isMatchMediaPhone()) return "Hello Phone!"`;
+Cela nous permet d'écrire du code comme : `if (matchMediaPhone()) return "Hello Phone!"`;
 
 Nous avons ainsi tout en main pour produire le ASCII-art qui nous intéresse en fonction du media.  
 
