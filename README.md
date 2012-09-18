@@ -1,42 +1,72 @@
-# Jekyll-Bootstrap
+# Le blog de Ninja Squad
 
-The quickest way to start and publish your Jekyll powered blog. 100% compatible with GitHub pages
+## Principe de fonctionnement
 
-## Usage
+Le blog est basé sur <a href="http://jekyllbootstrap.com">Jekyll-Bootstrap</a>. 
+Suivez ce lien pour avoir une documentation plus complète. Le blog est hébergé
+directement par github, qui regénère les pages du blog à chaque push sur la branche master.
 
-For all usage and documentation please see: <http://jekyllbootstrap.com>
+En deux mots, le principe : on crée des posts en créant des fichiers sur le modèle de ceux existants.
+Le modèle du nom de fichier et de l'en-tête doivent être respectés. La syntaxe des posts est markdown.
+Pour créer un post, suivre donc les étapes suivantes:
 
-## Version
-
-0.2.13 - stable and versioned using [semantic versioning](http://semver.org/).
-
-## Contributing 
-
-This repository tracks 2 projects:
-
-- **Jekyll-Bootstrap Framework.**  
-  The framework for which users should clone and build their blog on top of is available in the master branch.
-  
-  To contribute to the framework please make sure to checkout your branch based on `jb-development`!!
-  This is very important as it allows me to accept your pull request without having to publish a public version release.
-  
-  Small, atomic Features, bugs, etc.   
-  Use the `jb-development` branch but note it will likely change fast as pull requests are accepted.   
-  Please rebase as often as possible when working.   
-  Work on small, atomic features/bugs to avoid upstream commits affecting/breaking your development work.
-  
-  For Big Features or major API extensions/edits:   
-  This is the one case where I'll accept pull-requests based off the master branch.
-  This allows you to work in isolation but it means I'll have to manually merge your work into the next public release.
-  Translation : it might take a bit longer so please be patient! (but sincerely thank you).
+ - créer un fichier avec le bon nom, le bon en-tête, et le contenu en Markdown
+ - sauvegarder ce fichier en UTF-8
+ - faire tourner jekyll en local pour voir si tout va bien
+ - consulter le post sur http://localhost:4000/
+ - faire les corrections nécessaires
+ - committer et pusher: quelques secondes après, le blog est regénéré par github
  
-- **Jekyll-Bootstrap Documentation Website.**    
-  The documentation website at <http://jekyllbootstrap.com> is maintained in the gh-pages branch.
-  Please fork and contribute documentation additions to this branch only.
+Bien sûr on peut faire ça dans une branche, et faire une pull-request afin de faire relire le post
+par un collègue avant de le publier.
 
-The master and gh-pages branch do not share the same ancestry. Please treat them as completely separate git repositories!
+## Syntaxe des posts
 
+La syntaxe est Markdown, qui est un sur-ensemble de HTML. Twitter-bootstrap est utilisé pour le CSS.
+Il y a cependant quelques gotchas:
 
-## License
+ - Si un item d'une liste commence par un lien, le moteur markdown bugge, et ne génère aucun texte pour
+ cet item. Le truc est de faire précéder le lien par un caractère blanc HTML: `&nbsp;` ou `&#x20;`.
+ 
+         - &#x20;<a href="http://oracle.com">Oracle</a> est une grosse boîte
+         
+ - Google prettify est utilisé pour colorer syntaxiquement le code. La détection du langage est automatique.
+ Mais pour que cette coloration fonctionne, il faut insérer le code dans un bloc HTML 
+ `<pre class="prettyprint">`:
+ 
+        <pre class="prettyprint">
+            System.out.println("This should be colored automatically");
+        </pre>
+ 
+## Installation de Jekyll en local.
 
-[Creative Commons](http://creativecommons.org/licenses/by-nc-sa/3.0/)
+### Unix
+
+Pour les OS Unix, suivre les instructions dans le <a href="https://github.com/mojombo/jekyll/wiki/install">README de Jekyll</a>.
+
+### Windows
+
+Pour Windows, suivre les instructions sur 
+<a href="http://forresst.github.com/2012/03/20/Installer-Jekyll-Sous-Windows/">cette page</a> (étapes I et II).
+La partie Python n'est pas nécessaire, puisque nous utilisons Google prettify pour la coloration syntaxique. 
+
+Une installation pré-configurée, après avoir suivi toutes ces étapes, est disponible 
+sur <a href="https://docs.google.com/a/ninja-squad.com/open?id=0B0FLWwufPzrTbUhVNWlOQzZoREk">Google Drive</a>. 
+Pour l'utiliser, il suffit de télécharger le zip, l'extraire dans un dossier (par exemple `D:\tools`),
+et d'ajouter son répertoire bin (par exemple `D:\tools\winjekyll\bin`) à la variable d'environnement `PATH`.
+
+Avant de lancer jekyll, il faut bien s'assurer d'avoir exécuté les commandes suivantes:
+
+    set LC_ALL=en_US.UTF-8
+    set LANG=en_US.UTF-8
+    
+On peut ensuite lancer Jekyll en tapant la commande suivante, à la racine du projet :
+
+    jekyll --server
+    
+Ou, pour plus de diagnostic en cas d'erreur (par exemple, si on a oublié de taper les commandes ci-dessus, et que rien 
+ne se produit au lancement de jekyll):
+
+    jekyll --no-auto --server
+    
+L'alternative est de lancer la commande `blog.cmd`, à la racine du projet, qui lance les 3 commandes nécessaires.
