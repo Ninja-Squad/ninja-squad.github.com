@@ -29,13 +29,14 @@ Il y a cependant quelques gotchas:
  cet item. Le truc est de faire précéder le lien par un caractère blanc HTML: `&nbsp;` ou `&#x20;`.
  
          - &#x20;<a href="http://oracle.com">Oracle</a> est une grosse boîte
+         - Les blocs HTML vides sont mal gérés. Il faut au moins mettre un espace dedans.
          
  - Google prettify est utilisé pour colorer syntaxiquement le code. La détection du langage est automatique.
- Mais pour que cette coloration fonctionne, il faut insérer le code dans un bloc HTML 
- `<pre class="prettyprint">`:
+ Tous les blocs `<pre>...</pre>` sont automatiquement prettifiés (y compris et surtout ceux générés par Markdown).
+ Si vous voulez un bloc de code sans prettification, utilisez un bloc HTML avec la classe `noprettyprint`:
  
-        <pre class="prettyprint">
-            System.out.println("This should be colored automatically");
+        <pre class="noprettyprint">
+            System.out.println("Ce code n'est pas prettifié");
         </pre>
  
 ## Installation de Jekyll en local.
