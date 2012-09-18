@@ -11,7 +11,7 @@ Il serait dommage de ne pas soigner ces lecteurs. Une bonne partie d'entre eux c
 
 Maintenant, supposons que vous produisiez du contenu par JavaScript. Du genre large le contenu. Par exemple de l'ASCII-art, comme sur [la _home_ de Ninja Squad](http://ninja-squad.com), affiché dans un simili-terminal :
 
-<pre align="center">
+<pre align="center" style="color: black;">
      _____ _     _        _____               _
     |   | |_|___|_|___   |   __|___ _ _ ___ _| |
     | | | | |   | | .'|  |__   | . | | | .'| . |
@@ -21,7 +21,7 @@ Maintenant, supposons que vous produisiez du contenu par JavaScript. Du genre la
 
 Pourquoi ce contenu n'aurait-il pas droit, lui aussi, a être responsive? Sur un smartphone, sa largeur est trop grande, j'aimerais que les deux mots s'affichent sur deux lignes. Comme ça :
 
-<pre align="center">
+<pre align="center" style="color: black;">
 	   _____ _     _       
 	  |   | |_|___|_|___   
 	  | | | | |   | | .'|  
@@ -149,4 +149,5 @@ _Et voilà_, commme disent les américains francophones et les francophones amé
 
 <p align="center"><img class="img-polaroid" src="/assets/images/success_baby.jpeg" alt="Success!" /></p>
 
+<br/>
 PS : cet article, ce blog, et [le site de Ninja Squad](http://ninja-squad.com) sont évidemment responsive.
