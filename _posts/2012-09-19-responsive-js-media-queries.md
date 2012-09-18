@@ -6,21 +6,22 @@ tags: [web, responsive, javascript]
 ---
 #Responsive?
 
-Tout [le monde a un smartphone](http://www.wired.com/gadgetlab/2011/11/smartphones-feature-phones/), ou presque. Et presque tout le monde a une tablette.   
-Il serait dommage de ne pas soigner ces lecteurs, surtout si vous vous adressez à des geeks. Une bonne partie d'entre eux consomme du web en situation de mobilité. Et aujourd'hui, on n'a plus d'excuse à ne pas faire un site responsive : des frameworks CSS aussi communs que [Twitter Bootstrap](http://twitter.github.com/bootstrap/scaffolding.html#responsive) nous mâchent complètement le travail.
-
-C'est in-dis-cu-table, vous n'avez aucune excuse. En tout cas faîtes comme-ci, sinon cet article n'a plus vraiment de raison d'être. OK?
+Tout [le monde a un smartphone](http://www.wired.com/gadgetlab/2011/11/smartphones-feature-phones/), ou presque. Et presque tout le monde a une tablette chez les geeks.   
+Il serait dommage de ne pas soigner ces lecteurs. Une bonne partie d'entre eux consomme du web en situation de mobilité. Et aujourd'hui, nous n'avons plus d'excuse à ne pas faire un site responsive : des frameworks CSS aussi communs que [Twitter Bootstrap](http://twitter.github.com/bootstrap/scaffolding.html#responsive) nous mâchent complètement le travail.
 
 Maintenant, supposons que vous produisiez du contenu par JavaScript. Du genre large le contenu. Par exemple de l'ASCII-art, comme sur [la _home_ de Ninja Squad](http://ninja-squad.com), affiché dans un simili-terminal :
 
+<pre align="center">
      _____ _     _        _____               _
     |   | |_|___|_|___   |   __|___ _ _ ___ _| |
     | | | | |   | | .'|  |__   | . | | | .'| . |
     |_|___|_|_|_| |__,|  |_____|_  |___|__,|___|
               |___|              |_|
+</pre>
 
 Pourquoi ce contenu n'aurait-il pas droit, lui aussi, a être responsive? Sur un smartphone, sa largeur est trop grande, j'aimerais que les deux mots s'affichent sur deux lignes. Comme ça :
 
+<pre align="center">
 	   _____ _     _       
 	  |   | |_|___|_|___   
 	  | | | | |   | | .'|  
@@ -30,6 +31,7 @@ Pourquoi ce contenu n'aurait-il pas droit, lui aussi, a être responsive? Sur un
 	|__   | . | | | .'| . |
 	|_____|_  |___|__,|___|
 	        |_|            
+</pre>
 
 Je suis d'accord, ce use-case n'est pas le plus commmun. Mais à quoi bon faire un blog post sur un sujet bateau, sinon?
 
@@ -52,9 +54,9 @@ affiche :
 <span class="visible-phone">Hello Phone!</span>
 </strong>
 
-Essayez de redimensionner la fenêtre de votre navigateur, si vous êtes sur desktop : le texte affiché dépend de la largeur du navigateur. <small>Ce côté magique du responsive me fait vibrer en ce moment.</small>
+Essayez de redimensionner la fenêtre de votre navigateur, si vous êtes sur desktop : bim!, le texte affiché dépend de la largeur du navigateur. "Toute technologie suffisamment avancée est indiscernable de la magie" disait Arthur C. Clarke. Et c'est magique!
 
-Vu du [source de Bootstrap](https://github.com/twitter/bootstrap/blob/master/less/responsive-utilities.less), c'est une media query testant uniquement la largeur d'affichage et affichant/masquant ces classes en fonction. Par exemple, pour les devices de type _phone_ :
+En fait, Arthur C. Clarke n'avait probablement pas lu le [source de Bootstrap](https://github.com/twitter/bootstrap/blob/master/less/responsive-utilities.less) : une simple media query testant uniquement la largeur d'ecran affiche ou masquant ces classes en fonction. Par exemple, pour les devices de type _phone_ :
 
 	@media (max-width: 767px) {
 	  .visible-desktop   { display: none !important; }
@@ -102,9 +104,9 @@ Nous avons ainsi tout en main pour produire le ASCII-art qui nous intéresse en 
 	  window.setInterval(draw(), 500);
 	</script>
 
-Nous voilà avec un magnifique ASCII-art responsive (n'oubliez pas de redimensionner la fenêtre de votre navigateur pour le _Wow effect!_) :
+Nous voilà avec un magnifique ASCII-art responsive :
 
-<pre id='ascii'>ASCII</pre>
+<pre id='ascii' align="center">ASCII</pre>
 
 <script src="/assets/matchMedia.js">
 </script>
@@ -142,6 +144,7 @@ Nous voilà avec un magnifique ASCII-art responsive (n'oubliez pas de redimensio
 	window.setInterval(draw, 500);
 </script>
 
+N'hésitez pas à redimensionner la fenêtre de votre navigateur pour maximiser le _Wow effect_!  
 _Et voilà_, commme disent les américains francophones et les francophones américanophiles.  
 
 <p align="center"><img class="img-polaroid" src="/assets/images/success_baby.jpeg" alt="Success!" /></p>
