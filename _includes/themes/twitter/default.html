@@ -27,9 +27,11 @@
     <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
   -->
+  
+    <script src="{{ ASSET_PATH }}/js/jquery-1.7.2.min.js"></script>
   </head>
 
-  <body onload="prettyPrint()">
+  <body>
     <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
@@ -46,6 +48,9 @@
               <li><a href="http://ninja-squad.com/work"><i class="icon-bullhorn icon-white"></i>Notre métier</a></li>
               <li><a href="http://ninja-squad.com/team"><i class="icon-user icon-white"></i>Notre équipe</a></li>
               <li><a href="http://ninja-squad.com/contact"><i class="icon-envelope icon-white"></i>Contact</a></li>
+            </ul>
+            <ul class="nav pull-right">
+              <li><a href="/atom.xml"><i id="atom-feed" class="icon-"></i>Atom feed</a></li>
             </ul>
           </div>
         </div>
@@ -68,9 +73,14 @@
       </footer>
     </div> <!-- /container -->
 
-    <script src="{{ ASSET_PATH }}/js/jquery-1.7.2.min.js"></script>
     <script src="{{ ASSET_PATH }}/bootstrap/js/bootstrap.min.js"></script>
     <script src="{{ ASSET_PATH }}/js/prettify.js"></script>
+    <script>
+      $(document).ready(function() {
+        $("pre:not(.noprettyprint)").addClass("prettyprint");
+        prettyPrint();
+    });
+	</script>
     {% include JB/analytics %}
   </body>
 </html>
