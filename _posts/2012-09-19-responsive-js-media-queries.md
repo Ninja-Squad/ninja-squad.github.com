@@ -4,24 +4,24 @@ title: Responsive JS media queries, Bootstrap-compatible
 author: clacote
 tags: [web, responsive, css, js]
 ---
-#Responsive?
+##Responsive?
 
 Tout [le monde a un smartphone](http://www.wired.com/gadgetlab/2011/11/smartphones-feature-phones/), ou presque. Et presque tout le monde a une tablette chez les geeks.   
 Il serait dommage de ne pas soigner ces lecteurs. Une bonne partie d'entre eux consomme du web en situation de mobilité. Et aujourd'hui, nous n'avons plus d'excuse à ne pas faire un site responsive : des frameworks CSS aussi communs que [Twitter Bootstrap](http://twitter.github.com/bootstrap/scaffolding.html#responsive) nous mâchent complètement le travail.
 
 Maintenant, supposons que vous produisiez du contenu par JavaScript. Du genre large le contenu. Par exemple de l'ASCII-art, comme sur [la _home_ de Ninja Squad](http://ninja-squad.com), affiché dans un simili-terminal :
 
-<pre align="center" style="color: black;">
-     _____ _     _        _____               _
+<pre align="center" class="raw">
+     _____ _     _        _____               _ 
     |   | |_|___|_|___   |   __|___ _ _ ___ _| |
     | | | | |   | | .'|  |__   | . | | | .'| . |
     |_|___|_|_|_| |__,|  |_____|_  |___|__,|___|
-              |___|              |_|
+              |___|              |_|            
 </pre>
 
 Pourquoi ce contenu n'aurait-il pas droit, lui aussi, a être responsive? Sur un smartphone, sa largeur est trop grande, j'aimerais que les deux mots s'affichent sur deux lignes. Comme ça :
 
-<pre align="center" style="color: black;">
+<pre align="center" class="raw">
 	   _____ _     _       
 	  |   | |_|___|_|___   
 	  | | | | |   | | .'|  
@@ -35,7 +35,7 @@ Pourquoi ce contenu n'aurait-il pas droit, lui aussi, a être responsive? Sur un
 
 Je suis d'accord, ce use-case n'est pas le plus commmun. Mais à quoi bon faire un blog post sur un sujet bateau, sinon?
 
-#CSS3 media queries
+##CSS3 media queries
 
 CSS3, grâce aux *media queries*, permet de styler le contenu en fonction de caractéristiques d'affichage : ratio, device, ou dimensions. C'est ce que met en oeuvre [Twitter Bootstrap](http://twitter.github.com/bootstrap/scaffolding.html#responsive) pour assurer le responsive. Ainsi, il adapte sa grille naturellement, transformant les colonnes en lignes quand la largeur ne suffit plus.
 
@@ -66,7 +66,7 @@ En fait, Arthur C. Clarke n'avait probablement pas lu le [source de Bootstrap](h
 Bootstrap permet donc nativement de rendre responsive notre contenu HTML. C'est déjà énorme. Mais ça ne répond pas encore à notre besoin initial.    
 Maintenant, comment mettre en oeuvre ces fonctionnalités en JavaScript?
 
-#JS window.matchMedia()
+##JS window.matchMedia()
 
 Une fonction JS permet de tester des media queries CSS : [`window.matchMedia`](https://developer.mozilla.org/en-US/docs/DOM/window.matchMedia).
 
@@ -106,7 +106,7 @@ Nous avons ainsi tout en main pour produire le ASCII-art qui nous intéresse en 
 
 Nous voilà avec un magnifique ASCII-art responsive :
 
-<pre id='ascii' align="center">ASCII</pre>
+<pre id='ascii' align="center" class="raw">ASCII</pre>
 
 <script src="/assets/matchMedia.js">
 </script>
