@@ -33,9 +33,9 @@ Il y a cependant quelques gotchas:
          
  - Google prettify est utilisé pour colorer syntaxiquement le code. La détection du langage est automatique.
  Tous les blocs `<pre>...</pre>` sont automatiquement prettifiés (y compris et surtout ceux générés par Markdown).
- Si vous voulez un bloc de code sans prettification, utilisez un bloc HTML avec la classe `noprettyprint`:
+ Si vous voulez un bloc de code sans prettification, utilisez un bloc HTML avec la classe `raw`:
  
-        <pre class="noprettyprint">
+        <pre class="raw">
             System.out.println("Ce code n'est pas prettifié");
         </pre>
  
