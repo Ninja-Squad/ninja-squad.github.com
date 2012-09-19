@@ -66,6 +66,10 @@
 	border:1px solid #4C964D;
 	color:#FFF;
 }
+i#atom-feed {
+    background-image: url(../img/feed-icon.png);
+	background-position: 0 0;
+}
 div.post-title {
     background-color: #F5F5F5;
     border:1px solid #F2E9E1;
