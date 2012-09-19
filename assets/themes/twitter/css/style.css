@@ -80,3 +80,9 @@ div.post-title {
 div.post-title h1 {
     font-size: 42px;
 }
+h1 a {
+    color : inherit;
+}
+h1 a:hover {
+    text-decoration: none;
+}
