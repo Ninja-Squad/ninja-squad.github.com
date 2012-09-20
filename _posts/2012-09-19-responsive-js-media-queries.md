@@ -11,26 +11,26 @@ Il serait dommage de ne pas soigner ces lecteurs. Une bonne partie d'entre eux c
 
 Maintenant, supposons que vous produisiez du contenu par JavaScript. Du genre large le contenu. Par exemple de l'ASCII-art, comme sur [la _home_ de Ninja Squad](http://ninja-squad.com), affiché dans un simili-terminal :
 
-<pre style="text-align: center;" class="raw">
-     _____ _     _        _____               _ 
-    |   | |_|___|_|___   |   __|___ _ _ ___ _| |
-    | | | | |   | | .'|  |__   | . | | | .'| . |
-    |_|___|_|_|_| |__,|  |_____|_  |___|__,|___|
-              |___|              |_|            
+<pre style="line-height: 16px; text-align: center; min-width: 350px; overflow: auto" class="raw">
+ _____ _     _        _____               _ 
+|   | |_|___|_|___   |   __|___ _ _ ___ _| |
+| | | | |   | | .'|  |__   | . | | | .'| . |
+|_|___|_|_|_| |__,|  |_____|_  |___|__,|___|
+          |___|              |_|            
 </pre>
 
 Pourquoi ce contenu n'aurait-il pas droit, lui aussi, a être responsive? Sur un smartphone, sa largeur est trop grande, j'aimerais que les deux mots s'affichent sur deux lignes. Comme ça :
 
-<pre style="text-align: center;" class="raw">
-	   _____ _     _       
-	  |   | |_|___|_|___   
-	  | | | | |   | | .'|  
-	  |_|___|_|_|_| |__,|  
-	 _____      |___|    _ 
-	|   __|___ _ _ ___ _| |
-	|__   | . | | | .'| . |
-	|_____|_  |___|__,|___|
-	        |_|            
+<pre style="line-height: 16px; text-align: center;" class="raw">
+   _____ _     _       
+  |   | |_|___|_|___   
+  | | | | |   | | .'|  
+  |_|___|_|_|_| |__,|  
+ _____      |___|    _ 
+|   __|___ _ _ ___ _| |
+|__   | . | | | .'| . |
+|_____|_  |___|__,|___|
+        |_|            
 </pre>
 
 Je suis d'accord, ce use-case n'est pas le plus commmun. Mais à quoi bon faire un blog post sur un sujet bateau, sinon?
@@ -106,7 +106,7 @@ Nous avons ainsi tout en main pour produire le ASCII-art qui nous intéresse en 
 
 Nous voilà avec un magnifique ASCII-art responsive :
 
-<pre id='ascii' style="text-align: center;" class="raw">ASCII</pre>
+<pre id='ascii' style="line-height: 16px; text-align: center;" class="raw">ASCII</pre>
 
 <script src="/assets/matchMedia.js">
 </script>
