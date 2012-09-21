@@ -82,3 +82,7 @@ div.comments-heading {
 div.authors, div.pages {
     text-align: center;
 }
+div.social-buttons {
+    text-align: right;
+    margin: 22px 0;
+}
