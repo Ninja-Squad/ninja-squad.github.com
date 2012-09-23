@@ -11,7 +11,7 @@
     </ul>
   {% endunless %}  
   </div>
-  <div class="span2 comments-heading"><span><i class="icon-comment"></i><a href="{{post.url}}#disqus_thread">Commentaires</a></span></div>
+  <div class="span2 comments-heading"><span><i class="icon-comment"></i><a href="#disqus_thread">Commentaires</a></span></div>
 </div>
 <br/>
 <div class="row">
@@ -45,7 +45,7 @@
   </div> 
 </div>
 <div class="row">
-  <div class="span8">
+  <div class="span4">
     <div class="pagination">
       <ul>
       {% if page.previous %}
@@ -61,9 +61,15 @@
       {% endif %}
       </ul>
     </div>
-    <hr/>
   </div>
+  <div class="span4 social-buttons">
+    <a href="https://twitter.com/share" class="twitter-share-button" data-size="large" data-text="{{page.title}}" data-url="{{site.production_url}}{{page.url}}" data-lang="fr">Tweeter</a>
+      <div class="g-plusone" data-href="{{site.production_url}}{{page.url}}"></div>
+  </div>
+</div>
+<div class="row">
   <div class="span8">
+    <hr/>
     {% include JB/comments %}
   </div>
 </div>
