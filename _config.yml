@@ -117,7 +117,7 @@ JB :
     provider : google 
     google : 
         tracking_id : 'UA-30716106-1'
-        domain_name : 'ninja-squad.com'
+        domain_name : 'blog.ninja-squad.com'
     getclicky :
       site_id : 
     mixpanel :
