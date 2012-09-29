@@ -74,5 +74,7 @@ On a donc fait une version 1.0-RC1 (Release Candidate 1), disponible
 et dans le repo [Maven Central](http://search.maven.org/#search|ga|1|a%3A%22DbSetup%22).
 (On fera sans doute un post pour détailler notre expérience).
 
-Testez-là avec votre base de données, dans votre projet. Critiquez là, [soumettez-nous des bugs, 
-proposez-nous des améliorations](https://github.com/Ninja-Squad/DbSetup/issues).
+Testez-là avec votre base de données, dans votre projet. Critiquez là, soumettez-nous des bugs sur 
+[JIRA](https://ninjasquad.atlassian.net/) (merci à [Atlassian](http://www.atlassian.com) de nous héberger 
+gratuitement&nbsp;!). Proposez-nous des améliorations en forkant le projet sur 
+[github](https://github.com/Ninja-Squad/DbSetup).
