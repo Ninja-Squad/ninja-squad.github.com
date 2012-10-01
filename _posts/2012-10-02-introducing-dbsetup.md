@@ -9,7 +9,7 @@ tags: [java, open-source, dbsetup, testing]
 Tous les projets auxquels j'ai participé jusqu'ici utilisent une base de données. 
 
 L'immense majorité d'entre eux utilisent une base de données relationnelle. Et qui dit base de données
-dit requêtes. Ca peut être des requêtes SQL, HQL, JPQL, Criteria ou quoi que ce soit d'autre, mais dans 
+dit requêtes. Cela peut être des requêtes SQL, HQL, JPQL, Criteria ou quoi que ce soit d'autre, mais dans 
 tous les cas, il s'agit de tester ces requêtes de manière automatisée. Le moindre changement 
 de schéma peut les rendre incorrectes, sans que le compilateur vous prévienne.
 
@@ -65,16 +65,19 @@ d'un jeu de données très simple&nbsp;:
                       .withDefaultValue("VERSION", 1L)
                       .build());
                       
-Alors voilà. Tester DbSetup n'est pas simple&nbsp;: chaque base de données a ses petites particularités, ses
+Tester DbSetup n'est pas facile&nbsp;: chaque base de données a ses petites particularités, ses
 types de données, etc. On n'a sans doute pas pensé à tout. Mais on pense que cette version est stable est 
 utilisable en l'état. 
 
 On a donc fait une version 1.0-RC1 (Release Candidate 1), disponible 
 [en téléchargement](http://dbsetup.ninja-squad.com/download.html),
-et dans le repo [Maven Central](http://search.maven.org/#search|ga|1|a%3A%22DbSetup%22).
+et dans le repo [Maven Central](http://search.maven.org/#search|ga|1|a%3A%22DbSetup%22), sous 
+[licence MIT](http://dbsetup.ninja-squad.com/license.html).
 (On fera sans doute un post pour détailler notre expérience).
 
 Testez-là avec votre base de données, dans votre projet. Critiquez là, soumettez-nous des bugs sur 
 [JIRA](https://ninjasquad.atlassian.net/) (merci à [Atlassian](http://www.atlassian.com) de nous héberger 
 gratuitement&nbsp;!). Proposez-nous des améliorations en forkant le projet sur 
 [github](https://github.com/Ninja-Squad/DbSetup).
+
+Enjoy&nbsp;!
