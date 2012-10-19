@@ -21,7 +21,7 @@ Et si on créait l'entreprise de nos rêves? Oui, mais encore faut-il savoir ce 
 
 Ca pourrait être par exemple une boîte où nous nous accordons le temps de hacker sur les sujets de notre choix. Où nous avons toute latitude de mener des projets d'édition qui nous trottent dans la tête, de tenter de les développer, de se donner le temps d'essayer, même si nous ne sommes pas sûrs que ça marche... N'oublions pas qu'on a été biberonné aux écrits enthousiastes de [Joël Spolsky](http://www.joelonsoftware.com) sur le sujet!
 Et comment se consacrer à un projet sur un grand laps de temps sans facturer?  
-Et bien il faut être solidaire! Ca serait une boite coopérative dans laquelle on décide collégialement parmi nos idées dans lesquelles on investit. Certains d'entre nous consacrent leur temps (ou une partie de leur temps) à réaliser ces projets, pendant que les autres effectuent des prestations rentables immédiatement et assurent les salaires de tout le monde...
+Et bien il faut être solidaire! Ca serait une boite coopérative dans laquelle on décide collégialement parmi nos idées dans lesquelles on investit.
 
 Mais est-ce vraiment possible de trouver des gens dans le même esprit? Des gens séduits par l'idée que certains d'entre nous consacrent une partie de leur temps ou tout leur temps à des projets d'édition, alors que les autres effectuent des prestations rentables immédiatement afin d'assurer les salaires de tout le monde?
 
