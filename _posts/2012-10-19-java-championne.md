@@ -23,7 +23,7 @@ Ca pourrait être par exemple une boîte où nous nous accordons le temps de hac
 Et comment se consacrer à un projet sur un grand laps de temps sans facturer?  
 Et bien il faut être solidaire! Ca serait une boite coopérative dans laquelle on décide collégialement parmi nos idées dans lesquelles on investit.
 
-Mais est-ce vraiment possible de trouver des gens dans le même esprit? Des gens séduits par l'idée que certains d'entre nous consacrent une partie de leur temps ou tout leur temps à des projets d'édition, alors que les autres effectuent des prestations rentables immédiatement afin d'assurer les salaires de tout le monde?
+Mais est-ce vraiment possible de trouver des gens dans le même esprit? Des gens séduits par l'idée que certains d'entre nous consacrent leur temps (ou une partie de leur temps) à des projets d'édition, alors que les autres effectuent des prestations rentables immédiatement afin d'assurer les salaires de tout le monde?
 
 Et bien oui, c'est possible... On en a au moins trouvé quatre! Quatre développeurs qui se disent qu'il est plus important de tenter une expérience de création de produit, quitte à la râter, plutôt qu'espérer avoir son salaire variable... Quatre à mettre plus de valeur dans ce qu'on produit, ce qu'on code, comment on le code, que dans le titre de nos cartes de visite et le chiffre en bas de nos fiches de paye.
 
