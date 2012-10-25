@@ -9,30 +9,36 @@ pygments: true
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : NinjaSquad
+title: NinjaSquad
 tagline: Set<AwesomeDeveloper> ninjas;
+gplus: 103019373375785071516
+twitter: NinjaSquad
 authors:
   acrepet:
     name : Agnès Crépet
     github : acrepet
     twitter : agnes_crepet
     gravatar : a7562607fd2dda9889bd3ecc70d98beb
+    gplus : 116189330666769817164
   cexbrayat:
     name : Cédric Exbrayat
     github : cexbrayat
     twitter : cedric_exbrayat
     gravatar : 0f0edb7904c4eea5f1b60fba0bf88537
+    gplus : 108783492614745057153
   clacote:
     name : Cyril Lacôte
     github : clacote
     twitter : clacote
     gravatar : 1305aa79d71e887dabb8f698c4c1ff9f
+    gplus : 114128610730314333831
   jbnizet:
   # "Jean-Baptiste" is too long to fit on right columns on post page.
     name : JB Nizet
     github : jnizet
     twitter : jbnizet
     gravatar : 2f0d9dec16bae1e06552af55ddefc11f
+    gplus : 113219978281208960764
 
 
 # The production_url is only used when full-domain names are needed
