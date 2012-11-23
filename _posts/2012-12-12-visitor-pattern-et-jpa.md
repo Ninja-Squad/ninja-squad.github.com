@@ -139,3 +139,7 @@ Et bien c'est simple. Lorsque la méthode accept() sera appelée sur le proxy, l
 la base de données. A ce moment, le proxy aura une référence vers une instance de EmailChannel ou FaxChannel, en fonction du type trouvé 
 dans la base de données. Et comme il s'agit d'un proxy, l'appel à la méthode accept() sera transféré à cette instance de EmailChannel ou FaxChannel,
 qui va appeler la méthode adéquate du visiteur. Le proxy redevient transparent, grâce au polymorphisme.
+
+<p style="text-align:center;">
+    <img src="/assets/images/visitor3.jpg" alt=""/>
+</p>
