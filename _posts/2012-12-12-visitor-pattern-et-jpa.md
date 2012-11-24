@@ -5,7 +5,8 @@ author: jbnizet
 tags: [java, pattern, jpa]
 ---
 
-A mon étonnement, mes expérimentés et brillants collègues connaissent mal le pattern *visitor*.
+A mon étonnement, mes expérimentés et brillants collègues connaissent mal le pattern *visitor*,
+ou au moins l'intérêt qu'il peut avoir lorsqu'on travaille avec JPA.
 C'est pourtant un pattern qui, particulièrement avec JPA (ou Hibernate), est extrêmement utile.
 
 Voici un exemple d'utilisation. 
@@ -27,10 +28,10 @@ Une solution pour implémenter le service serait de l'implémenter comme ceci&nb
     }
     
 Le problème est que ça oblige l'entité Channel à connaître la classe ChannelDTO, qui est vraisemblblement dans un autre module,
-dont on ne veut pas rendre le modèle dépendant. Un autre problème est que ça pollue la classe Channel avec de la logique qui n'est
+dont on ne veut pas rendre le modèle dépendant. En outre, ça pollue la classe Channel avec de la logique qui n'est
 pas de sa responsabilité: une entité métier n'est pas censée s'occuper de la communication avec un web service.
 
-Une autre solution serait d'implémenter le service de la manière suivante&nbsp;:
+Une alternative serait d'implémenter le service de la manière suivante&nbsp;:
 
     private ChannelDTO createChannelDTO(Message message) {
         Channel channel = message.getChannel();
@@ -66,6 +67,8 @@ Alors que va faire Hibernate&nbsp;? Créer une instance d'un proxy Javassist ou 
 <p style="text-align:center;">
     <img src="/assets/images/visitor2.jpg" alt=""/>
 </p>
+
+Et donc, le channel référencé par le message ne sera ni une instance de EmailChannel, ni une instance de FaxChannel.
 
 ## La solution&nbsp;: le pattern *visitor*
 
