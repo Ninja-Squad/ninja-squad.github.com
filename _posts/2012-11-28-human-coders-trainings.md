@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Les formations Ninja Squad chez Human Coders
+title: "Formations : Human Coders + Ninja Squad"
 author: [cexbrayat, clacote]
 tags: [formation, java, git, play, partenariat]
 ---
