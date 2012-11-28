@@ -44,5 +44,6 @@ Pour en savoir un peu plus sur eux, nous leur avons posé quelques questions.
 > Nous ne sommes pas attachés à une techno précisément. L’important pour nous est que toutes nos formations soient d’une grande qualité et qu’elles soient dispensées par des développeurs qui adorent partager leurs connaissances. Vous en êtes un excellent exemple :)
 
 Certaines de nos formations sont ainsi disponibles dans le [catalogue Human Coders](http://formations.humancoders.com/ "Formations Human Coders"), et des dates seront annoncées très prochainement.  
+Human Coders annonce également ce partenariat sur [leur blog](http://blog.humancoders.com/post/36729817563/ninja-squad-partenaire-de-human-coders-pour-les "Article de Human Coders sur les formations Ninja Squad").  
 
 De façon réciproque, si vous êtes à la recherche d'aide sur un sujet qui n'entre pas dans nos compétences, il est fort possible que nous connaissions un maître du domaine et que nous puissions organiser une formation Human Coders pour vous. On dit beaucoup de bien de celle de Matthieu sur [Ruby on Rails](http://formations.humancoders.com/formations/ruby-on-rails "Formation Ruby on Rails par Matthieu Segret de Human Coders") par exemple. Dans tous les cas, cela ne coûte rien de [nous demander](http://ninja-squad.com/contact)!
