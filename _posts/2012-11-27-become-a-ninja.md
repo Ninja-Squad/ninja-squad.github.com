@@ -5,7 +5,7 @@ author: cexbrayat
 tags: [formation, java, git, play]
 ---
 
-Parce que nous aimons partager notre amour du code bien fait, nous avons travaillé dur ses dernières semaines pour donner naissance à nos premières [formations](http://ninja-squad.com/training "Formations Ninja Squad"). Nous avons commencé avec 4 sujets :
+Parce que nous aimons partager notre amour du code bien fait, nous avons travaillé dur ces dernières semaines pour donner naissance à nos premières [formations](http://ninja-squad.com/training "Formations Ninja Squad"). Nous avons commencé avec 4 sujets :
 - une formation pour [débuter en Java](http://ninja-squad.com/training/java "Formation Java par Ninja Squad"), parce que les bases sont indispensables.
 - une formation pour ceux qui veulent devenir un [Java Ninja](http://ninja-squad.com/training/java-advanced "Formation Java Avancé par Ninja Squad").
 - Play! est l'un de nos outils préférés pour faire du web, [le sujet](http://ninja-squad.com/training/play-framework "Formation Play! Framework par Ninja Squad") a donc naturellement trouvé sa place.
