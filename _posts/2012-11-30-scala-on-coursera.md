@@ -1,0 +1,40 @@
+---
+layout: post
+title: Scala on Coursera
+author: cexbrayat
+tags: [java, scala, coursera]
+---
+
+La semaine dernière s’achevait le cours [Functional Programming Principle in Scala](https://class.coursera.org/progfun-2012-001/class/index) de Coursera, animé par Martin Odersky en personne. Si vous ne connaissez pas [Coursera](https://www.coursera.org/), sachez que c’est l’une des startups californiennes qui se lance dans le domaine de l’éducation en ligne (l’une de leur dernière recrue est [Pamela Fox](https://twitter.com/pamelafox), speakeuse à [Mix-it 2012](http://mix-it.fr), et qui, alors qu’elle n’était pas encore employée, avait fait une keynote sur l’éducation). Sur le site, vous suivez des cours en vidéo, vous avez des exercices à faire et à rendre, vous recevez des notes et à la fin un diplome si vous avez été sages. Avec pas loin de 2 000 000 d’inscrits, le site a pris son envol, à juste titre il faut dire car la plateforme est très bien conçue. Martin Odersky, et sa société [TypeSafe](http://hypedrivendev.wordpress.com/2011/05/18/typesafe-scala-akka/), frappe donc encore un grand coup marketing en lançant ce cours en ligne sur Coursera. Si ce nom vous est également inconnu, Martin est le créateur de Scala avec une équipe de l’EPFL (Ecole Polytechnique Fédérale de Lausanne) où il est chercheur. Il a également bossé sur le compilateur Java et notamment contribué aux génériques de Java5. On peut donc dire sans trop se tromper qu’il en connaît un rayon en matière de JVM et de langage.
+
+ 
+
+Je ne l’avais jamais vu en revanche donner un cours, mais les videos sur Coursera qu’il a réalisé sont claires et compréhensibles à condition d’avoir un minimum d’anglais (et également de faire abstraction de l’accent allemand, qui est quand même plus compréhensible que l’accent français probablement). Le volume de cours n’est pas négligeable : s’étalant sur 7 semaines, il fallait quand même prévoir une à deux heures pour les vidéos et de quelques minutes à plusieurs heures pour les exercices. Mais cela n’a pas décourager les foules : le cours a compté 50000 participants (ou plutot inscrits, je ne sais pas si tous en sont venus à bout). Ce que j’en retiendrais :
+
+ 
+
+Les plus :
+
+- la __plateforme Coursera__ : rien à dire, je trouve ça bien très bien fait. Les vidéos sont téléchargeables ou visionnables en ligne, avec une possibilité d’accélérer la lecture qui est très appréciable tout en restant compréhensible. Les exercices sont très clairs, vous téléchargez un projet tout prêt dans le cas de ce cours, une fois terminé, vous pouvez le soumettre en ligne de commande avec ‘submit monmail monpassword’. Des tests unitaires vont alors se lancer sur votre projet directement sur la plateforme et vous pouvez voir votre résultat sur la page de feedback. Il faut patienter quelques minutes mais rien de dramatique. Le système de note est intéressant, avec un petit côté gamification : on cherche à avoir le 10/10 même si une note inférieure permet de valider le cours. Seul point négatif à ce propos : l’absence de trace vraiment explicite pour comprendre quel test et quand votre programme a échoué : on se retrouve à mettre de vieux println dans le code pour essayer de cerner le problème.
+
+- les __leçons__ étaient très souvent intéressantes, mettant bien en avant la programmation fonctionnelle, avec des exemples bien choisis et des solutions élégantes. J’avais lu le livre d’Odersky “Programming in Scala” lors de sa sortie, et j’ai retrouvé des exemples du livre, mais je m’y suis bien moins ennuyé. Les exercices étaient loin d’être triviaux pour certains : celui sur les anagrammes que je pensais faire en quelques minutes m’a finalement pris les 2h de ma pause déjeuner... La progression était correcte, et j’ai eu l’impression d’apprendre des choses tout au long du cours : je pouvais difficilement en demander plus.
+
+- au delà de Scala, difficile de ne pas aimer la __programmation fonctionnelle__. Et la pratiquer en Java est un vrai plaisir. Les collections scala sont géniales, vraiment. Dans la vie de tous les jours, je pallie comme beaucoup le manque grâce à l’excellente librairie Guava par exemple, et ce n’est pas sans déplaisir que je vois l’arrivée de Java8 (dont de nombreux concepts sont déjà dans Scala).
+
+ 
+
+Le moins :
+
+- Certains exercices étaient plus __“mathématiques”__ que “programmatique”, j’avais l’impression de retourner en prépa plus que d’apprendre un langage. On sent ici le côté académique de Odersky et je me demande si cela n’a pas rebuté un certain nombre de participants. Cela se sent aussi sur le langage en lui même, avec son système de type. Ce n’est pas le genre de chose qui m’intéresse outre mesure (que le système de type soit complet ou pas...), et certaines vidéos à ce sujet étaient moins intéressantes à regarder.
+
+- Je me suis limité à utiliser l’__IDE conseillé__, un Eclipse packagé pour Scala. Et j’ai trouvé l’expérience horrible (je travaille pourtant très souvent sous Eclipse), l’IDE plantait régulièrement, la complétion était longue, les erreurs souvent obscures et lancer les tests était lent. Autrement dit je ne sais pas comment les équipes qui travaillent sur des projets conséquents se débrouillent pour être productives. Il est fort possible qu’il y ait eu un problème avec ma machine, mais j’ai un macbook avec jdk7 assez standard : j’imagine donc que d’autres peuvent avoir ce problème. J’ai vu que beaucoup utilisait TextMate, et IntelliJ pour certains, ce qui est certainement mieux mais pas toujours possible dans une entreprise. Et globalement tout est lent, la compilation, les tests, l’execution... TypeSafe fournit un gros travail à ce sujet mais il y encore du chemin à parcourir.
+
+- J’ai souvent cherché des solutions alternatives une fois mes exercices rendus et je me suis rendu compte que même en connaissant très bien le problème, j’avais parfois du mal à comprendre celles-ci, tant les possibilités et __styles peuvent varier__. Je trouve ça assez inquiétant pour la maintenabilité d’une application, en tout cas si personne ne prend le temps de bien fixer certaines règles. La liberté amené par Scala vient avec un prix de rigueur, Odersky le dit lui même dans ses vidéos, n’hésitez pas à nommer les résultats intermédiaires de vos programmes. Et c’est vrai que l’API donne parfois envie de chaîner les appels sur une ligne, il faut donc résister et accepter de perdre en “oneliner” pour gagner en lisibilté.
+
+- Les boucles __“for comprehension”__ sont un concept puissant mais on se retrouve vite perdu entre les types disponibles, les itérateurs déclarés et les filtres. Alors que le code executé est souvent simple, toute la logique se trouve dans la déclaration du for. C’est souvent compliqué à débugger, parfois correct mais incroyablement lent si vous avez fait un mauvais choix (dont on ne se rend pas toujours compte immédiatement). Pour les anagrammes j’avais par exemple une solution qui fonctionnait correctement mais qui mettait 30 secondes de plus pour un itérateur mal déclaré. Il doit y avoir des carnages dans certaines applications... Il est parfois plus simple de faire le code avec des “map” et des “filter” puis de convertir en “for comprehension” par la suite.
+
+ 
+
+Si le sujet vous intéresse un autre article bien plus complet sur Scala et Coursera se trouve ici. Je ne peux qu’admirer l’excellence marketing de TypeSafe qui réussit encore une fois un très beau coup (après l’annonce récente de l’entrée de Rod Johnson au board par exemple). Et à titre personnel, je suis content d’avoir participer : j’ai appris de nouvelles choses et voir d’autres langages est toujours un excellent moyen de progresser. Je ne suis par contre toujours pas convaincu pour faire un vrai gros projet de la vraie vie avec. Ou alors avec un mec de chez Twitter ou Foursquare qui vient m’aider à démarrer et à prendre les bonnes options et les bonnes pratiques. Mais on en a rarement sous la main. Je surveille quand même du coin de l’oeil, on ne sait jamais...
+
+_Article publié sur le [blog de Cédric](http://hypedrivendev.wordpress.com/2012/11/30/scala-on-coursera)_
