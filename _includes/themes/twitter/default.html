@@ -9,6 +9,9 @@
     <meta name="description" content="{{ page.description }}">
     <meta name="twitter:description" content="{{ page.description }}">
 {% endif %}
+{% if page.canonical %}
+    <link rel="canonical" href="{{ page.canonical }}" />
+{% endif %}
     <meta name="author" content="Ninja Squad">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="publisher" href="https://plus.google.com/{{site.gplus}}">

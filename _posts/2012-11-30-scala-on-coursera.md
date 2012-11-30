@@ -3,6 +3,7 @@ layout: post
 title: Scala on Coursera
 author: cexbrayat
 tags: [java, scala, coursera]
+canonical: http://hypedrivendev.wordpress.com/2012/11/30/scala-on-coursera/
 ---
 
 La semaine dernière s’achevait le cours [Functional Programming Principle in Scala](https://class.coursera.org/progfun-2012-001/class/index) de Coursera, animé par Martin Odersky en personne. Si vous ne connaissez pas [Coursera](https://www.coursera.org/), sachez que c’est l’une des startups californiennes qui se lance dans le domaine de l’éducation en ligne (l’une de leur dernière recrue est [Pamela Fox](https://twitter.com/pamelafox), speakeuse à [Mix-it 2012](http://mix-it.fr), et qui, alors qu’elle n’était pas encore employée, avait fait une keynote sur l’éducation). Sur le site, vous suivez des cours en vidéo, vous avez des exercices à faire et à rendre, vous recevez des notes et à la fin un diplome si vous avez été sages. Avec pas loin de 2 000 000 d’inscrits, le site a pris son envol, à juste titre il faut dire car la plateforme est très bien conçue. Martin Odersky, et sa société [TypeSafe](http://hypedrivendev.wordpress.com/2011/05/18/typesafe-scala-akka/), frappe donc encore un grand coup marketing en lançant ce cours en ligne sur Coursera. Si ce nom vous est également inconnu, Martin est le créateur de Scala avec une équipe de l’EPFL (Ecole Polytechnique Fédérale de Lausanne) où il est chercheur. Il a également bossé sur le compilateur Java et notamment contribué aux génériques de Java5. On peut donc dire sans trop se tromper qu’il en connaît un rayon en matière de JVM et de langage.
@@ -37,4 +38,4 @@ Le moins :
 
 Si le sujet vous intéresse un autre article bien plus complet sur Scala et Coursera se trouve ici. Je ne peux qu’admirer l’excellence marketing de TypeSafe qui réussit encore une fois un très beau coup (après l’annonce récente de l’entrée de Rod Johnson au board par exemple). Et à titre personnel, je suis content d’avoir participer : j’ai appris de nouvelles choses et voir d’autres langages est toujours un excellent moyen de progresser. Je ne suis par contre toujours pas convaincu pour faire un vrai gros projet de la vraie vie avec. Ou alors avec un mec de chez Twitter ou Foursquare qui vient m’aider à démarrer et à prendre les bonnes options et les bonnes pratiques. Mais on en a rarement sous la main. Je surveille quand même du coin de l’oeil, on ne sait jamais...
 
-_Article publié sur le [blog de Cédric](http://hypedrivendev.wordpress.com/2012/11/30/scala-on-coursera)_
+_Article publié sur le [blog de Cédric](http://hypedrivendev.wordpress.com/2012/11/30/scala-on-coursera "Article original sur le blog de Cédric Exbrayat")_
