@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Le visitor pattern, et pourquoi l'utiliser avec JPA
+title: Le visitor pattern, et ses bénéfices avec JPA
 author: jbnizet
 tags: [java, pattern, jpa]
 ---
