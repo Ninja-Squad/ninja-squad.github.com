@@ -5,7 +5,7 @@ author: jbnizet
 tags: [java, pattern, jpa]
 ---
 
-A mon étonnement, mes expérimentés et brillants collègues connaissent mal le pattern *visitor*,
+Peu de développeurs, même très expérimentés, connaissent et utilisent le pattern *visitor*,
 ou au moins l'intérêt qu'il peut avoir lorsqu'on travaille avec JPA.
 C'est pourtant un pattern qui, particulièrement avec JPA (ou Hibernate), est extrêmement utile.
 
