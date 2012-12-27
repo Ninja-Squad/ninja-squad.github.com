@@ -27,7 +27,7 @@ Une solution pour implémenter le service serait de l'implémenter comme ceci&nb
         return message.getChannel().toChannelDTO();
     }
     
-Le problème est que ça oblige l'entité Channel à connaître la classe ChannelDTO, qui est vraisemblblement dans un autre module,
+Le problème est que ça oblige l'entité Channel à connaître la classe ChannelDTO, qui est vraisemblablement dans un autre module,
 dont on ne veut pas rendre le modèle dépendant. En outre, ça pollue la classe Channel avec de la logique qui n'est
 pas de sa responsabilité: une entité métier n'est pas censée s'occuper de la communication avec un web service.
 
