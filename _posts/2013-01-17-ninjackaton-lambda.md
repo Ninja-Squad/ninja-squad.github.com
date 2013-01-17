@@ -2,7 +2,7 @@
 layout: post
 title: Ninjackaton - Java Lambda JDK8
 author: [cexbrayat, jbnizet, acrepet, clacote]
-tags: [ninjackaton, evenement, java, lambda]
+tags: [ninjackaton, java, lambda]
 ---
 
 Ninja Squad fête déjà sa demi-année d’existence. Nous on est absolument ravi. Et on s’est dit qu’il n’y aurait rien de mieux que célébrer ce bonheur tous ensemble&nbsp;: ceux qui nous aiment (ou pas), ceux qui nous soutiennent, et même ceux qui ne nous connaissent pas.  
