@@ -14,7 +14,7 @@ On aurait pu imaginer faire la fête dans un grand raout de débauche. Mais on a
 Ce premier Ninjackaton va vous amener à la découverte de la nouveauté majeure du JDK8&nbsp;: les _lambdas_! Derrière ce nom étrange se cache sans doute la plus importante nouveauté dans Java depuis le JDK5 et les _generics_. Autant commencer à s’y intéresser dès maintenant, car si vous codez en Java, cela sera bientôt votre quotidien!
 
 ## Comment ça se déroule&nbsp;?
-Tout d’abord une présentation du sujet a lieu pendant 30 minutes. Ensuite, nous mettons les mains dans le code tous ensemble, avec une partie pratique d’une heure environ, en suivant un workshop préparé par nos soins. Cette partie nécessite donc d’avoir son laptop (ou de trouver un gentil un binôme avec un laptop). Il faudra réfléchir un peu bien sûr, mais juste ce qu’il faut. Une fois que nous aurons bien travaillé, on pourra tous se restaurer et discuter autour d’un buffet.
+Tout d’abord une présentation du sujet a lieu pendant 30 minutes. Ensuite, nous mettons les mains dans le code tous ensemble, avec une partie pratique d’une heure environ, en suivant un workshop préparé par nos soins. Cette partie nécessite donc d’avoir son laptop (ou de trouver un gentil binôme avec un laptop). Il faudra réfléchir un peu bien sûr, mais juste ce qu’il faut. Une fois que nous aurons bien travaillé, on pourra tous se restaurer et discuter autour d’un buffet.
 
 On est très heureux de pouvoir organiser ça pour vous, alors nous espérons vous voir nombreux!
 Réservez dès à présent votre soirée du mardi 12 février, les places seront bientôt mises à disposition. L’espace étant limité, on ne pourra malheureusement pas accueillir toute la communauté, alors&nbsp;: *tenez-vous prêts*!
