@@ -23,7 +23,7 @@ La requête qui permet de selectionner ce sous ensemble serait par exemple :
     // stats comprises entre 15:00 et 16:00
     var query = { timestamp : { $gte: 1358607600, $lte: 1358611200 }}
 
-La fonction map va renvoyer les informations qui vous intéressent pour une clé. Ici nous voulons les connections pour l’heure qui nous intéresse, donc nous aurons une fonction comme suit :
+La fonction map va renvoyer les informations qui vous intéressent pour une clé. Ici nous voulons les connexions pour l’heure qui nous intéresse, donc nous aurons une fonction comme suit :
 
     // on renvoie les infos pour la clé 15:00
     var map = function(){ emit(1358607600, { connections : this.connections}) }
