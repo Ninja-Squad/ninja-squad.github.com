@@ -33,7 +33,7 @@ La fonction reduce va ensuite aggréger les informations, en ajoutant les connex
 	// calculer la somme de toutes les connexions et la moyenne
     var reduce = function(key, values){ 
       var connections = Array.sum(values.connections);
-      var avg = connections/values.lenght;
+      var avg = connections/values.length;
       return { connections: connections, avg: avg}
     }
 
