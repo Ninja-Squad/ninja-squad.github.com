@@ -24,5 +24,5 @@ Réservez dès à présent votre soirée du mardi 12 février, les places seront
 
 Les places seront ouvertes à la distribution jeudi <code>24/01/2013</code> à <code>13H37</code>. Etant en nombre très limitées, merci de ne pas en réserver si vous n'êtes pas sûr de venir pour que le maximum de personnes puissent en profiter.
 
-Les modalités de distribution seront diffusées [sur notre compte Twitter](http://twitter.com/NinjaSquad "Compte Twitter de Ninja Squad") et ici-même, ajoutées à cet article.
+Les modalités de distribution seront diffusées [sur notre compte Twitter](http://twitter.com/NinjaSquad "Compte Twitter de Ninja Squad"), sur [notre page Google+](https://plus.google.com/103019373375785071516 "Page Ninja Squad sur Google+"), et ici-même, ajoutées à cet article.  
 *Reeeeeaaaady?*
