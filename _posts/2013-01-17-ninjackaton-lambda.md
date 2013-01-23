@@ -17,4 +17,12 @@ Ce premier Ninjackaton va vous amener à la découverte de la nouveauté majeure
 Tout d’abord une présentation du sujet a lieu pendant 30 minutes. Ensuite, nous mettons les mains dans le code tous ensemble, avec une partie pratique d’une heure environ, en suivant un workshop préparé par nos soins. Cette partie nécessite donc d’avoir son laptop (ou de trouver un gentil binôme avec un laptop). Il faudra réfléchir un peu bien sûr, mais juste ce qu’il faut. Une fois que nous aurons bien travaillé, on pourra tous se restaurer et discuter autour d’un buffet.
 
 On est très heureux de pouvoir organiser ça pour vous, alors nous espérons vous voir nombreux!
-Réservez dès à présent votre soirée du mardi 12 février, les places seront bientôt mises à disposition. L’espace étant limité, on ne pourra malheureusement pas accueillir toute la communauté, alors&nbsp;: *tenez-vous prêts*!
+Réservez dès à présent votre soirée du mardi 12 février, les places seront bientôt mises à disposition. L’espace étant limité, on ne pourra malheureusement pas accueillir toute la communauté, alors&nbsp;: **tenez-vous prêts**!
+
+<br/>
+**Mise à jour du 23/01/2013**
+
+Les places seront ouvertes à la distribution jeudi <code>24/01/2013</code> à <code>13H37</code>. Etant en nombre très limitées, merci de ne pas en réserver si vous n'êtes pas sûr de venir pour que le maximum de personnes puissent en profiter.
+
+Les modalités de distribution seront diffusées [sur notre compte Twitter](http://twitter.com/NinjaSquad "Compte Twitter de Ninja Squad") et ici-même, ajoutées à cet article.
+*Reeeeeaaaady?*
