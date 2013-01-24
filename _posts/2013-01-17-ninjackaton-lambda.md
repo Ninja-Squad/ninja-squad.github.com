@@ -26,3 +26,15 @@ Les places seront ouvertes à la distribution jeudi <code>24/01/2013</code> à <
 
 Les modalités de distribution seront diffusées [sur notre compte Twitter](http://twitter.com/NinjaSquad "Compte Twitter de Ninja Squad"), sur [notre page Google+](https://plus.google.com/103019373375785071516 "Page Ninja Squad sur Google+"), et ici-même, ajoutées à cet article.  
 *Reeeeeaaaady?*
+
+<br/>
+**Mise à jour du 24/01/2013**
+
+La distribution est ouverte :
+
+<p style="text-align: center;">
+	<a href="http://www.eventbrite.fr/event/5269380860?ref=ebtnebregn" target="_blank"><img src="http://www.eventbrite.fr/custombutton?eid=5269380860" alt="Eventbrite - Ninjackaton : Java 8 &amp; lambda" /></a>
+</p>
+
+<br/>
+Chopez une place, et on se retrouve le 12 février. N'oubliez pas d'apporter votre billet, imprimé ou numérique.
