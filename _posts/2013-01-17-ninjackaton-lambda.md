@@ -36,5 +36,5 @@ La distribution est ouverte :
 	<a href="http://www.eventbrite.fr/event/5269380860?ref=ebtnebregn" target="_blank"><img src="http://www.eventbrite.fr/custombutton?eid=5269380860" alt="Eventbrite - Ninjackaton : Java 8 &amp; lambda" /></a>
 </p>
 
-<br/><br/>
+<br/>
 Chopez une place, et on se retrouve le 12 février. N'oubliez pas d'apporter votre billet, imprimé ou numérique.
