@@ -86,3 +86,18 @@ div.social-buttons {
     text-align: right;
     margin: 22px 0;
 }
+div.post-wrapper {
+    text-align: justify; 
+    padding-top: 20px;
+    font-size: 1.21em; 
+}
+div.post-wrapper, div.post-wrapper li {
+    line-height: 1.40em; 
+}
+div.post-content {
+    padding-left: 30px; 
+    padding-right: 30px;
+}
+pre, code {
+    font-size: 14px;
+}
