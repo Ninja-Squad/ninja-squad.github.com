@@ -5,7 +5,7 @@ author: [cexbrayat]
 tags: [java8, lambda]
 ---
 
-Si vous avez suivi l’actualité Java ces derniers temps, vous avez peut-être entendu que la sortie de la “developer preview” du JDK 8 a été repoussée. Bien sûr tout le monde s’en donne à coeur joie pour vanner Oracle, c’est de bonne guerre. Mais pour une fois, ce retard est peut-être une bonne chose : toute l’équipe du JDK travaille d’arrache-pied pour peaufiner la grande nouveauté de cette version : les lambdas. Nous avons suivi avec attention leur avancée ces derniers mois, testant des JDKs, pestant contre certains choix et en admirant d’autres. Si au début je trouvais un intérêt minimal aux lambdas par rapport à ce que proposent Scala et consort, j’avoue maintenant attendre la sortie de Java 8 pour profiter des nouveautés, et écrire du code un plus sympa dans un langage que j’apprécie.
+Si vous avez suivi l’actualité Java ces derniers temps, vous avez peut-être entendu que la sortie de la “developer preview” du JDK 8 a été repoussée. Bien sûr tout le monde s’en donne à coeur joie pour vanner Oracle, c’est de bonne guerre. Mais pour une fois, ce retard est peut-être une bonne chose : toute l’équipe du JDK travaille d’arrache-pied pour peaufiner la grande nouveauté de cette version : les lambdas. Nous avons suivi avec attention leur avancée ces derniers mois, testant des JDKs, pestant contre certains choix et en admirant d’autres. Si au début je trouvais un intérêt minimal aux lambdas par rapport à ce que proposent Scala et consort, j’avoue maintenant attendre la sortie de Java 8 pour profiter des nouveautés, et écrire du code un peu plus sympa dans un langage que j’apprécie.
 
 Voilà assez parlé de ma vie.
 
@@ -81,7 +81,7 @@ Dans votre code, vous pourrez faire vos propres interfaces fonctionnelles, qui s
 incompatible types: lambda.Interface1 is not a functional interface
 multiple non-overriding abstract methods found in interface com.ninja_squad.training.lambda.Interface1
 
-Pour prévenir ce problème, une annotation @FunctionalInterface a été ajoutée. Celle-ci indique au compilateur que l’interface en question ne doit avoir qu’un et une seule méthode abstraite. Si vous essayez d’ajouter une méthode abstraite à cette interface, vous obtenez l’erreur de compilation suivante :
+Pour prévenir ce problème, une annotation @FunctionalInterface a été ajoutée. Celle-ci indique au compilateur que l’interface en question ne doit avoir qu’une et une seule méthode abstraite. Si vous essayez d’ajouter une méthode abstraite à cette interface, vous obtenez l’erreur de compilation suivante :
 
 Unexpected @FunctionalInterface annotation
 training.lambda.Interface1 is not a functional interface
