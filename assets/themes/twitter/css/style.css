@@ -63,12 +63,12 @@ i#atom-feed {
 div.post-title {
     background-color: #F5F5F5;
     border:1px solid #F2E9E1;
-	padding: 0 10px;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 div.post-title h1 {
     font-size: 42px;
+    padding-left: 10px;
 }
 h1 a {
     color : inherit;
@@ -81,6 +81,7 @@ div.comments-heading {
 }
 div.authors, div.pages {
     text-align: center;
+    padding-top: 20px;
 }
 div.social-buttons {
     text-align: right;
@@ -89,19 +90,26 @@ div.social-buttons {
 div.post-wrapper {
     text-align: justify; 
     padding-top: 20px;
-    font-size: 1.21em; 
+    font-size: 17px;
+    word-spacing: 3px; 
 }
 div.post-wrapper, div.post-wrapper li {
     line-height: 1.40em; 
 }
 div.post-content {
-    padding-left: 30px; 
-    padding-right: 30px;
+    padding-left: 45px; 
+    padding-right: 45px;
 }
 @media all and (max-width: 767px) {
     div.post-content {
       padding-left: 0px; 
       padding-right: 0px;
+    }
+}
+@media all and (min-width:768px) and (max-width:979px) {
+    div.post-content {
+      padding-left: 15px; 
+      padding-right: 15px;
     }
 }
 
