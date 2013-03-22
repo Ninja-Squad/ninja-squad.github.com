@@ -48,16 +48,16 @@ Avant de discuter ces projets avec vous à Devoxx, nous avions envie de vous les
 
 **Qui a créé votre entreprise, et d'où venez-vous?**
 
-> Mi-2011, Jean-Baptiste Lemée, indépendant en mission avec Jonathan Winandy, s’interroge sur la suite que doit prendre sa carrière. Pour lui, l’idéal serait de créer un produit innovant et d’arriver à en vivre ou de monter une startup. Mais comme beaucoup, Jean-Baptiste a lancé plein de projets, peu avancent. Il manque quelque chose pour que ça prenne comme d’autres développeurs et des compétences non-techniques.
+> Mi-2011, Jean-Baptiste Lemée, indépendant en mission avec Jonathan Winandy, s’interroge sur la suite que doit prendre sa carrière. Pour lui, l’idéal serait de créer un produit innovant et arriver à en vivre, ou de monter une startup. Mais comme beaucoup, Jean-Baptiste a lancé plein de projets mais peu avancent. Il manque quelque chose pour que ça prenne.
 >
-> Comment faire ? Jean-Baptiste se pose la question: ”qu’est ce que sais je bien faire et que je pourrais utiliser pour atteindre mon objectif ultime de créer un produit viable ?”.  
+> Comment faire ? Jean-Baptiste se pose la question: ”Que puis je faire pour atteindre mon objectif ultime de créer un produit viable ?”.  
 > La réponse est limpide, ce qu’il sait faire, bien voire même très bien c’est de la prestation. Donc allez, faisons quelque chose qui, on le sait, marche. Montons une SSII avec des copains, recrutons quelque personnes et on développera des projets en interne sur l’inter-contrat (OUHA super sexy !).
 > 
 > C’est là qu’intervient Jonathan qui va expliquer à Jean-Baptiste qu’il devrait essayer d’innover dans l’organisation de l’entreprise afin de faire émerger une innovation opérationnelle. Cela implique que le fameux “produit viable” n’émergera pas forcément d’une idée géniale de Jean-Baptiste mais potentiellement de quelqu’un d’autre. Après avoir lu en long et en large le livre “The Future of Management” ainsi que “Rework”, Jean-Baptiste a une première idée de ce qu’il voudrait faire. Il invite alors plein de copains à manger ou boire un verre et discute de son idée avec eux. Au fil des discussions de nouvelles idées d’organisation émergent, le projet s’affine. Finalement il organise une réunion de lancement avec plusieurs associés potentiels et c’est 2 d’entre eux qui finalement oserons se lancer dans l’aventure :  
 > - Olivier Girardot - développeur Python / Java et créateur du site [appartinfo.com](http://appartinfo.com) 
 > - Hugo Lassiège - développeur Java indépendant du groupe ["leszindeps"](http://www.leszindeps.fr/). 
 >
-> Ensuite nous avons recruté Florent Biville, notre premier salarié et développé la structure.
+> Florent Biville sera le premier à rejoindre la société, suivi de Nicolas Rey et Jonathan Winandy.
 
 **Quel est votre projet d'entreprise, quelles sont les valeurs défendues?**
 
