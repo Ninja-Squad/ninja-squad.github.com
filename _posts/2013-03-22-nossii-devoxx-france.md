@@ -34,7 +34,7 @@ Avant de discuter ces projets avec vous à Devoxx, nous avions envie de vous les
 >
 > Nos journées de travail sont assez variées, on n'est pas encore entrés dans une routine de travail (et c'est pas plus mal !).
 
-**Quelle organisation avez-vous adopté? Comment assurez-vous la gestion administrative, comptable, et commerciale?**
+**Quelle organisation avez-vous adoptée? Comment assurez-vous la gestion administrative, comptable, et commerciale?**
 
 > Nous avons une organisation très égalitaire avec la volonté de partager à la fois le fun et les tâches ingrates. Pour l'instant toute la partie administrative et comptable a été réalisée par nous même mais nous sommes en train d'évoluer sur ce point afin de nous recentrer sur les tâches où nous avons une forte valeur ajoutée. Nous n'avons pas de gestion commerciale. Nos canaux de communication sont le site internet, le blog, twitter, et les rencontres humaines.
 
@@ -78,7 +78,7 @@ Avant de discuter ces projets avec vous à Devoxx, nous avions envie de vous les
 > - et anecdote, Jean-Baptiste passe pas mal de temps aussi a réceptionner le courrier, le classer dans _Google Drive_ (accessible à tous : transparence absolue).
 > Nous nous retrouvons également régulièrement sur _Skype_ ou _Hangout_ afin de discuter et prendre ou modifier des décisions qui sont ensuite entérinées sur notre outil collaboratif [Agora](https://github.com/LateralThoughts/lt-agora).
 
-**Quelle organisation avez-vous adopté? Comment assurez-vous la gestion administrative, comptable, et commerciale?**
+**Quelle organisation avez-vous adoptée? Comment assurez-vous la gestion administrative, comptable, et commerciale?**
 
 > Nous avons une organisation dites "plate". Il n’y a pas de chef. Cela ne veut pas dire que c’est l’anarchie. Les décisions sont prises par tous, appliquées par tous et controlées par tous. Nous avons également mis en place quelques process léger pour éviter les erreurs bêtes et les oublis.
 >
