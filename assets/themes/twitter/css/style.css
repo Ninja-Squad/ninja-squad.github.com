@@ -94,6 +94,7 @@ div.post-wrapper {
     word-spacing: 3px; 
 }
 div.post-wrapper, div.post-wrapper li {
+    font-size: 19px;
     line-height: 1.40em; 
 }
 div.post-content {
@@ -118,9 +119,5 @@ pre, code {
 }
 
 blockquote p {
-    font-size: 19px;
-}
-
-li {
     font-size: 19px;
 }
