@@ -108,3 +108,7 @@ div.post-content {
 pre, code {
     font-size: 14px;
 }
+
+blockquote p {
+    font-size: 19px;
+}
