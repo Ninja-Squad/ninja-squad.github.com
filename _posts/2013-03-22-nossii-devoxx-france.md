@@ -76,7 +76,7 @@ Avant de discuter ces projets avec vous à Devoxx, nous avions envie de vous les
 > - Jonathan, Florent et Hugo travaillent sur leurs formation pour LT-Training. 
 > - Hugo et Jean-Baptiste travaille sur le projet [hopwork.com](http://hopwork.com) 
 > - et anecdote, Jean-Baptiste passe pas mal de temps aussi a réceptionner le courrier, le classer dans _Google Drive_ (accessible à tous : transparence absolue).
-> Nous nous retrouvons également régulièrement sur _Skype_ ou _Hangout_ afin de discuter et prendre ou modifier des décisions qui sont ensuite entériné sur notre outil collaboratif [Agora](https://github.com/LateralThoughts/lt-agora).
+> Nous nous retrouvons également régulièrement sur _Skype_ ou _Hangout_ afin de discuter et prendre ou modifier des décisions qui sont ensuite entérinées sur notre outil collaboratif [Agora](https://github.com/LateralThoughts/lt-agora).
 
 **Quelle organisation avez-vous adopté? Comment assurez-vous la gestion administrative, comptable, et commerciale?**
 
