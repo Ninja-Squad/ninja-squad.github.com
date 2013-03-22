@@ -89,7 +89,7 @@ Avant de discuter ces projets avec vous à Devoxx, nous avions envie de vous les
 > - Clients Paris : Olivier,  Jean-Baptiste, Jonathan
 > - Paie / administratif des salariés : Nicolas / Florent (Nicolas et Florent sont salariés de la structure #autogestion)
 >
-> Nous avons une liste d’une cinquantaine de taches. Chaque tache est rémunérée via un système de points, les points représentent la pénibilité de la tâche et se convertissent en argent. La participation aux taches administratives est optionnelle.
+> Nous avons une liste d’une cinquantaine de tâches. Chaque tâche est rémunérée via un système de points, les points représentent la pénibilité de la tâche et se convertissent en argent. La participation aux taches administratives est optionnelle.
 
 **Un dernier truc à ajouter?**
 
