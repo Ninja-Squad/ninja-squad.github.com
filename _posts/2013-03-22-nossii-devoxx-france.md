@@ -9,13 +9,13 @@ tags: [devoxx, partner, bof, interview]
 
 Un des avantages de gérer sa propre entreprise, c'est qu'il devient ainsi facile pour nous développeurs de réclamer une place à sa direction : les négociations en sont très facilitées! :)
 
-Nous aurons ainsi non seulement la chance d'assister en spectateurs aux trois jours (université + conférence), mais nous co-animerons un <a href="http://en.wikipedia.org/wiki/Birds_of_a_Feather_(computing)" title="Définition d'un Birds of a Feather sur Wikipedia">BOF</a> intitulé ["Not Only SSII"](http://www.devoxx.com/display/FR13/BOF+Not+Only+SSII "Détail du BOF Not Only SSII à Devox France"), avec nos amis de [SCopyLeft](http://scopyleft.fr "Site de SCopyLeft") et de [Lateral Thoughts](http://www.lateral-thoughts.com "Site de Lateral Thoughts"). Il aura lieu le jeudi 28 mars à 21H à l'Auditorium.
+Nous aurons ainsi non seulement la chance d'assister en spectateurs aux trois jours (université + conférence), mais nous co-animerons un <a href="http://en.wikipedia.org/wiki/Birds_of_a_Feather_(computing)" title="Définition d'un Birds of a Feather sur Wikipedia">BOF</a> intitulé ["Not Only SSII"](http://www.devoxx.com/display/FR13/BOF+Not+Only+SSII "Détail du BOF Not Only SSII à Devox France"), avec nos amis de [scopyleft](http://scopyleft.fr "Site de scopyleft") et de [Lateral Thoughts](http://www.lateral-thoughts.com "Site de Lateral Thoughts"). Il aura lieu le jeudi 28 mars à 21H à l'Auditorium.
 
 Si nous animons ce BOF ensemble, c'est que nous partageons quelques valeurs, et l'envie de sortir du schéma traditionnel des SSIIs avec des sociétés coopératives gérées par des développeurs.
 
 Avant de discuter ces projets avec vous à Devoxx, nous avions envie de vous les présenter. Et qui mieux qu'eux-même pour le faire? Hop, des interviews! 
 
-## SCopyLeft
+## scopyleft
 
 **Qui a créé votre entreprise, et d'où venez-vous?**
 
@@ -95,4 +95,4 @@ Avant de discuter ces projets avec vous à Devoxx, nous avions envie de vous les
 
 > Oui, un point important qui est vrai aussi lorsqu’on est indépendant. Le nerf de la guerre c’est l’argent. Plus en gagne plus on est libre. Libre de prendre du temps pour développer des idées, libre de dire non à une mission bof, libre de prendre des risques. Si vous voulez être vraiment libre, gagner au loto, mettez-vous à votre compte, copiez-nous ou rejoignez nous !
 
-Merci à [SCopyLeft](http://scopyleft.fr "Site de SCopyLeft") et [Lateral Thoughts](http://www.lateral-thoughts.com "Site de Lateral Thoughts") pour leurs réponses, et rendez-vous à Devoxx, jeudi 28 mars à 21H à l'Auditorium.
+Merci à [scopyleft](http://scopyleft.fr "Site de scopyleft") et [Lateral Thoughts](http://www.lateral-thoughts.com "Site de Lateral Thoughts") pour leurs réponses, et rendez-vous à Devoxx, jeudi 28 mars à 21H à l'Auditorium.
