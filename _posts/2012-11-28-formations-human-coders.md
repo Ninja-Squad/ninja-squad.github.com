@@ -2,7 +2,7 @@
 layout: post
 title: "Formations : Human Coders + Ninja Squad"
 author: [cexbrayat, clacote]
-tags: [formation, java, git, play, partenariat]
+tags: [formation, java, git, play, partenariat, interview]
 ---
 
 
