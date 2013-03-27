@@ -52,7 +52,7 @@ Alors une lambda implémentant `UnaryOperator` pourrait être :
 
     (a) -> a * a;
 
-Mais la lambda pourrait même ici se passer des parathèses autour des paramètres :
+Mais la lambda pourrait même ici se passer des parenthèses autour des paramètres :
 
     a -> a * a;
 
