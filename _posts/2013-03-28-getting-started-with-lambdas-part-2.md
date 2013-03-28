@@ -33,7 +33,7 @@ Nous pouvons encore simplifier un peu l'écriture en utilisant un return implici
 
     Concatenator c = (int a, double b) -> a + " " + b;
 
-Le return a disparu&nbsp;! En effet, par défaut, la laleur de l'expression à droite de la flèche est retournée par la lambda : les syntaxes avec et sans return sont donc parfaitement équivalentes.
+Le return a disparu&nbsp;! En effet, par défaut, la valeur de l'expression à droite de la flèche est retournée par la lambda : les syntaxes avec et sans return sont donc parfaitement équivalentes.
 
 Nous pouvons également nous reposer sur l'inférence de type et laisser le compilateur (lorsque c'est possible) déterminer les types de nos paramètres&nbsp;:
 
@@ -104,6 +104,6 @@ qui signifie la même chose que&nbsp;:
 
     StringToIntFunction f = s -> stringToIntMap.get(s);
  
-Voilà, nous avons fait un inventaire exhaustif des façons d'écrire une lambda. La possibilité d'omettre les parenthèses, types, accolades et le mot clé return est appréciable et donne une syntaxe très peu verbeuse. L'ajout de l'opérateur `::` introduit de nouvelles possibilités dans l'écriture comme vous avez pu le constater. Son utilisation demande un peu de pratique, mais cela viendra vite naturel&nbsp;!
+Voilà, nous avons fait un inventaire exhaustif des façons d'écrire une lambda&nbsp;! La possibilité d'omettre les parenthèses, types, accolades et le mot clé return est appréciable et donne une syntaxe très peu verbeuse. L'ajout de l'opérateur `::` introduit de nouvelles possibilités dans l'écriture comme vous avez pu le constater. Son utilisation demande un peu de pratique, mais cela deviendra vite naturel&nbsp;!
 
 La prochaine fois nous regarderons une petite subtilité sur la portée des variables utilisables dans une lambda. Teasing teasing...
