@@ -3,6 +3,7 @@ layout: post
 title: Getting started with lambdas - Part 2
 author: [cexbrayat]
 tags: [java8, lambda]
+canonical: http://hypedrivendev.wordpress.com/2013/04/05/getting-started-with-lambdas-part-2
 ---
 
 Après une [première partie](/2013/02/28/getting-started-with-lambdas-part-1/) dédiée à comprendre les interfaces fonctionnelles, nous allons entrer dans le vif du sujet avec cet article dont le but est de vous présenter les différentes façons d'écrire une lambda.
@@ -107,3 +108,5 @@ qui signifie la même chose que&nbsp;:
 Voilà, nous avons fait un inventaire exhaustif des façons d'écrire une lambda&nbsp;! La possibilité d'omettre les parenthèses, types, accolades et le mot clé return est appréciable et donne une syntaxe très peu verbeuse. L'ajout de l'opérateur `::` introduit de nouvelles possibilités dans l'écriture comme vous avez pu le constater. Son utilisation demande un peu de pratique, mais cela deviendra vite naturel&nbsp;!
 
 La prochaine fois nous regarderons une petite subtilité sur la portée des variables utilisables dans une lambda. Teasing teasing...
+
+_Article publié sur le [blog de Cédric](http://hypedrivendev.wordpress.com/2013/04/05/getting-started-with-lambdas-part-2 "Article original sur le blog de Cédric Exbrayat")_
