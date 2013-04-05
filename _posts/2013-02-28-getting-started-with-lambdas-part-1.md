@@ -43,7 +43,7 @@ Ca fait bizarre, mais on s’y fait. Dans le cas de cette interface, la méthode
 Cette première solution implémente l’interface en donnant une implémentation à chaque méthode, la méthode `default` étant surchargée.
 Une autre solution est possible, si l’implémentation par défaut de print vous convient, vous pouvez seulement fournir une implémentation à `transform()` :
 
-    public class MessageWithDefault implement MessageInterfaceWithDefault {
+    public class MessageWithDefault implements MessageInterfaceWithDefault {
         public String transform(String message) {
             return message;
         }
