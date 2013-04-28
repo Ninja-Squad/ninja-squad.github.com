@@ -123,7 +123,7 @@ Cette option permet de tracer que la révision, bien que ne devant pas être mer
 Si après une nouvelle correction, on merge une nouvelle fois la branche de maintenance vers le trunk, cette révision sera détectée comme déjà mergée, et ne le sera donc plus. 
 
 Le cherry-pick de Git n'offre malheureusement pas cette fonctionnalité. Le merge de git est lui très différent de celui de Subversion, puisqu'en mergeant un commit,
-on merge aussi tout ses ancêtres. Et cela nous pose problème puisque, on l'a dit, on veut éviter que certains commits soient mergés dans master. 
+on merge aussi tous ses ancêtres. Et cela nous pose problème puisque, on l'a dit, on veut éviter que certains commits soient mergés dans master. 
 
 La solution: l'option <code>-s ours</code> de git merge. Cette option merge un commit, mais sans modifier du tout la branche cible. Supposons donc que Cédric fasse une première
 correction dans la branche de maintenance, à intégrer dans master. Juste après son commit, il le merge dans master&nbsp;:
@@ -163,8 +163,8 @@ Agnès fait ensuite une nouvelle correction dans la branche de maintenance, à i
     
 Ces merges successifs font ressembler les logs à une jolie couture, d'où le nom parfois utilisé de *stitching pattern* pour décrire ce motif.   
 
-Si tous les développeurs maîtrisent bien ce processus de report et s'appliquent à les effectuer immédiatement, le résultat est simple à analyser, et on peut savoir d'un seul coup 
-d'oeil aux logs ce qui a déjà et ce qui n'a pas encore été réintégré dans master, ou en exécutant la commande suivante, qui devrait ne rien afficher si tout a bien été reporté&nbsp;
+Si tous les développeurs maîtrisent bien ce processus de report et s'appliquent à les effectuer immédiatement, le résultat est simple à analyser. On peut savoir d'un seul coup 
+d'oeil aux logs ce qui a déjà et ce qui n'a pas encore été réintégré dans master. On peut aussi exécuter la commande suivante, qui devrait ne rien afficher si tout a bien été reporté&nbsp;
 
     master> git log master..maintenance
 
