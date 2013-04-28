@@ -5,9 +5,10 @@ author: [jbnizet]
 tags: [git]
 ---
 
-Les ninjas utilisent Git depuis la création de Ninja Squad pour tous leur projet. Le site web de Ninja Squad est sous Git. Ce blog est géré avec Git. Nos formations sont sous Git. 
-Néanmoins, aucun de nous n'avait encore utilisé Git en entreprise, sur un projet de développement complexe, avec plusieurs branches développées et maintenues en parallèle. 
-C'est maintenant le cas, chez notre client préféré Energy Pool (ces gars assurent&nbsp;!).
+Les ninjas utilisent Git depuis la création de Ninja Squad pour tous leurs projets. Le site web de Ninja Squad est sous Git. Ce blog est géré avec Git. Nos formations sont sous Git.
+ 
+Néanmoins, depuis que nous l'utilisons chez notre client, sur un projet de développement complexe, avec plusieurs branches développées et maintenues en parallèle, 
+nous avons encore développé notre *git-fu*.
 
 Les différentes manières de développer de nouvelles fonctionnalités en utilisant des branches Git sont bien documentées, et font l'objet d'une littérature abondante. 
 L'utilisation de branches de maintenance est, elle, assez peu décrite, et nous avons dû trouver un mode de travail pour les gérer.
@@ -16,7 +17,7 @@ Mais commençons par le début, et décrivons comment nous avons décidé de tra
 
 ## Développer une nouvelle fonctionnalité
 
-Plonger dans l'historique d'un projet et régler des conflits est déjà bien assez compliqué. Lorsque l'historique n'est pas linéaire, mais constitué de nombeuses branches 
+Plonger dans l'historique d'un projet et régler des conflits est déjà bien assez compliqué. Lorsque l'historique n'est pas linéaire, mais constitué de nombreuses branches 
 fusionnées les unes dans les autres, c'est encore plus compliqué. Nous avons donc choisi un mode de travail nous assurant un historique le plus linéaire possible, similaire
 à celui qu'on obtiendrait en utilisant Subversion. Néanmoins, les branches sont la vraie force de Git, et nous ne voulons pas nous passer de pouvoir passer d'une branche 
 de travail à une branche de correction de bug rapidement, en local. Voici donc comment nous travaillons.
@@ -79,7 +80,7 @@ sur master&nbsp;:
 </p>
 
 Dans cette étape, on peut choisir de fusionner nos commits ensemble pour n'en faire qu'un si on le désire, avec l'option <code>-i</code>. Il se peut qu'il y ait des conflits 
-à résoudre également. Dans ce cas, l'usage d'un outil graphique (l'IDE, TortoiseGit, SmartGit, etc.) devient un aide précieuse. 
+à résoudre également. Dans ce cas, l'usage d'un outil graphique (l'IDE, TortoiseGit, SmartGit, etc.) devient une aide précieuse. 
 Une fois cette étape terminée, après avoir vérifié que le code compile toujours et que les tests passent, on peut réintégrer notre code dans master. 
 Si personne n'a modifié origin/master pendant le rebase, aucun problème. Mais mieux vaut s'en assurer. Dans ce cas, on recommence l'étape de rebase précédente.
 
@@ -93,7 +94,8 @@ Si personne n'a modifié origin/master pendant le rebase, aucun problème. Mais 
 </p>
 
 A ce moment, la branche topic1 est un ancêtre du dernier commit sur master. Il ne reste plus qu'à merger la branche sur 
-master, et à la pousser sur origin. Le merge, dans ce cas, laissera l'historique linéaire, puisqu'il ne fera qu'avancer dans les commits (fast-forward)&nbsp;:
+master, et à la pousser sur origin. Le merge, dans ce cas, laissera l'historique linéaire, puisqu'il ne fera qu'avancer l'étiquette de la branche master dans les commits 
+(fast-forward)&nbsp;:
 
     master> git merge topic1
     master> git push origin master
@@ -104,7 +106,7 @@ master, et à la pousser sur origin. Le merge, dans ce cas, laissera l'historiqu
     <img src="/assets/images/git_branching/merge_and_push_after.png" alt="Merge et push: après" />
 </p>
     
-On peut ensuite continuer à travailler dans cette branche, s'il reste des choses à y faire, ou supprimer la branche et en créer une nouvelle pour la fonctionnalité suivante.
+On peut ensuite continuer à travailler dans la branche topic1, s'il reste des choses à y faire, ou supprimer la branche et en créer une nouvelle pour la fonctionnalité suivante.
 
 ## Gérer une branche de maintenance
 
@@ -115,7 +117,7 @@ aussi intégrée dans master.
 Certains changements, par contre, n'ont de sens que dans la branche de maintenance, et ne doivent pas être appliqués sur master. Par exemple, un changement de version des 
 pom Maven, ou un backport d'un changement déjà présent dans master.
 
-Subversion a un outil intéressant pour gérer ce problème. Toutes les révisions mergées de la branche de maintenance vers le trunk sont marquée comme telles. 
+Subversion a un outil intéressant pour gérer ce problème. Toutes les révisions mergées de la branche de maintenance vers le trunk sont marquées comme telles. 
 Et on peut merger une ou plusieurs révisions avec l'option <code>record-only</code>. 
 Cette option permet de tracer que la révision, bien que ne devant pas être mergée, a été prise en compte. 
 Si après une nouvelle correction, on merge une nouvelle fois la branche de maintenance vers le trunk, cette révision sera détectée comme déjà mergée, et ne le sera donc plus. 
@@ -159,7 +161,11 @@ Agnès fait ensuite une nouvelle correction dans la branche de maintenance, à i
     <img src="/assets/images/git_branching/agnes_after.png" alt="Merge d'Agnès: après" />
 </p>
     
-Si tous les développeurs maîtrisent bien ce processus de report et s'appliquent à les effectuer immédiatement, le résultat est simple à analyser, et on peut savoir d'un seul coup 
-d'oeil aux logs ce qui a déjà et ce qui n'a pas encore été réintégré dans master.
+Ces merges successifs font ressembler les logs à une jolie couture, d'où le nom parfois utilisé de *stitching pattern* pour décrire ce motif.   
 
-Et vous, comment gérez-vous les branches de maintenance&nbsp;?
+Si tous les développeurs maîtrisent bien ce processus de report et s'appliquent à les effectuer immédiatement, le résultat est simple à analyser, et on peut savoir d'un seul coup 
+d'oeil aux logs ce qui a déjà et ce qui n'a pas encore été réintégré dans master, ou en exécutant la commande suivante, qui devrait ne rien afficher si tout a bien été reporté&nbsp;
+
+    master> git log master..maintenance
+
+Voilà le workflow qui nous a semblé optimal. N'hésitez pas à nous indiquer le vôtre, ou quelles astuces vous y avez apporté.
