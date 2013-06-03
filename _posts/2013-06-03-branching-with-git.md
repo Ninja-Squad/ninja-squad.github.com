@@ -2,7 +2,7 @@
 layout: post
 title: Branching avec git
 author: [jbnizet]
-tags: [git]
+tags: [git, enterprise, tool, workflow]
 ---
 
 Les ninjas utilisent Git depuis la création de Ninja Squad pour tous leurs projets. Le site web de Ninja Squad est sous Git. Ce blog est géré avec Git. Nos formations sont sous Git.
@@ -32,7 +32,7 @@ Avant de commencer à développer une nouvelle fonctionnalité ou un nouveau bug
     <img src="/assets/images/git_branching/pull_after.png" alt="Pull: après" />
 </p>
     
-On crée ensuite sa branche de travail
+On crée ensuite sa branche de travail&nbsp;:
 
     master> git checkout -b topic1
 
@@ -125,7 +125,7 @@ Si après une nouvelle correction, on merge une nouvelle fois la branche de main
 Le cherry-pick de Git n'offre malheureusement pas cette fonctionnalité. Le merge de git est lui très différent de celui de Subversion, puisqu'en mergeant un commit,
 on merge aussi tous ses ancêtres. Et cela nous pose problème puisque, on l'a dit, on veut éviter que certains commits soient mergés dans master. 
 
-La solution: l'option <code>-s ours</code> de git merge. Cette option merge un commit, mais sans modifier du tout la branche cible. Supposons donc que Cédric fasse une première
+La solution&nbsp;: l'option <code>-s ours</code> de git merge. Cette option merge un commit, mais sans modifier du tout la branche cible. Supposons donc que Cédric fasse une première
 correction dans la branche de maintenance, à intégrer dans master. Juste après son commit, il le merge dans master&nbsp;:
 
     maintenance> git checkout master
@@ -168,4 +168,4 @@ d'oeil aux logs ce qui a déjà et ce qui n'a pas encore été réintégré dans
 
     master> git log master..maintenance
 
-Voilà le workflow qui nous a semblé optimal. N'hésitez pas à nous indiquer le vôtre, ou quelles astuces vous y avez apporté.
+Voilà le workflow qui nous a semblé optimal. N'hésitez pas à nous indiquer le vôtre, ou quelles astuces vous y avez apportées.
