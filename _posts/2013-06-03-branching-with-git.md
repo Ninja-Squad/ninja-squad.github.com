@@ -93,7 +93,7 @@ Si personne n'a modifié origin/master pendant le rebase, aucun problème. Mais 
     <img src="/assets/images/git_branching/third_pull_after.png" alt="Checkout et pull: après" />
 </p>
 
-A ce moment, la branche topic1 est un ancêtre du dernier commit sur master. Il ne reste plus qu'à merger la branche sur 
+A ce moment, la branche topic1 est un descendant du dernier commit sur master. Il ne reste plus qu'à merger la branche sur 
 master, et à la pousser sur origin. Le merge, dans ce cas, laissera l'historique linéaire, puisqu'il ne fera qu'avancer l'étiquette de la branche master dans les commits 
 (fast-forward)&nbsp;:
 
