@@ -67,7 +67,8 @@ Le code affiche la valeur de <code>Answers.MEANING_OF_LIFE</code>. On s'attend d
 statique soit exécuté, et l'avertissement affiché. 
 
 Or il n'en est rien. En effet, <code>MEANING_OF_LIFE</code> est une constante, dont la valeur est connue à la compilation. 
-Le compilateur insère donc la valeur de la constante directement dans le code appelant. Et il s'agit là d'un comportement spécifié par la JLS, et 
+Le compilateur insère donc la valeur de la constante directement dans le code appelant. Et il s'agit là d'un comportement 
+[spécifié par la JLS](http://docs.oracle.com/javase/specs/jls/se7/html/jls-13.html#jls-13.4.9), et 
 pas d'une optimisation sauvage. En gros, le byte-code réellement généré correspond donc au code Java suivant&nbsp;:
 
     System.out.println("What's the meaning of life? Answer: Who knows?");
@@ -87,7 +88,7 @@ Si vous estimez que la valeur d'une constante pourrait être amenée à changer 
     }
     
 Notez aussi que toutes les variables <code>static final</code> ne sont pas des constantes pour le compilateur. Seuls les types primitifs et les Strings
-peuvent être des constantes à la compilation.
+peuvent être des [constantes à la compilation](http://docs.oracle.com/javase/specs/jls/se7/html/jls-15.html#jls-15.28).
     
 <script>
 $(document).ready(function() {
