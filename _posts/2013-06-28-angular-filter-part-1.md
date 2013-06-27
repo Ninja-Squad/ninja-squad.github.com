@@ -44,7 +44,7 @@ Angular va alors retrouver la fonction de filtre correspondant à la chaîne de 
 
 Angular propose par défaut certains filtres communs :
 
-- number : permet de préciser le nombre chiffre après la virgule à afficher (arrondi au plus proche).
+- number : permet de préciser le nombre de chiffres après la virgule à afficher (arrondi au plus proche).
 
 {% raw %}
 <pre>
@@ -80,7 +80,7 @@ Angular propose par défaut certains filtres communs :
 </pre>
 {% endraw %}  
 
-Un certain nombre de pattern sont disponibles (avec un rendu différent selon la locale) :
+Un certain nombre de patterns sont disponibles (avec un rendu différent selon la locale) :
 {% raw %}
 <pre>
   <code class="javascript">
@@ -139,7 +139,7 @@ Un certain nombre de pattern sont disponibles (avec un rendu différent selon la
     // order by the property 'gender' 
     {{ ninjas | orderBy:'gender'}} // Agnes,JB,Cyril,Cédric 
 
-    // order by a function (lowercase first) 
+    // order by a function (lowercase last) 
     $scope.lowercaseLast = function(elem){ 
       return elem.name === elem.name.toLowerCase() 
     }; 
