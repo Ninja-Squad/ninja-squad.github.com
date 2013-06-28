@@ -89,7 +89,7 @@ Un certain nombre de patterns sont disponibles (avec un rendu différent selon l
 </pre>
 {% endraw %}    
 
-- lowercase/uppercase : de façon assez évidente, ces filtres vont convertir l'expression en majuscules ou miniscules.
+- lowercase/uppercase : de façon assez évidente, ces filtres vont convertir l'expression en majuscules ou minuscules.
 {% raw %}
 <pre>
   <code class="javascript">
