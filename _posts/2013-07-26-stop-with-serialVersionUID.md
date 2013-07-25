@@ -63,4 +63,4 @@ les deux parties (le client et le serveur) partagent la même version des classe
 
 Donc, TL;DR&nbsp;: si vous ne vous servez pas de la sérialisation comme moyen de persistance à long terme, et si vos clients et votre
 serveur sont déployés de manière homogène, désactivez cette option de compilation et ne mettez pas de champ `serialVersionUID`
-dans vos classes. Un bon coup de regexp-replace, et vous pouvez même les en enlever.
+dans vos classes. Un bon coup de regexp-replace, et vous pouvez même les enlever.
