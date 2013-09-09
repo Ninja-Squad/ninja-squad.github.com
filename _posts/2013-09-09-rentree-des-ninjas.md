@@ -8,7 +8,7 @@ tags: [training]
 Les Ninjas à l’école
 
 Mais que font les Ninjas en plus de leur mission chez leurs clients? Des killer app? De la veille? De la plongée?
-Alors un peu de tout ça, mais en plus les Ninjas se sont donné dès leur première année d’existence une mission particulière : celle d'évangéliser d’autres petits Ninjas. Oui oui rien que ça ;-)
+Alors un peu de tout ça, mais en plus les Ninjas se sont donnés dès leur première année d’existence une mission particulière : celle d'évangéliser d'autres petits Ninjas. Oui oui rien que ça ;-)
 
 Plus sérieusement, il nous tient à coeur de pouvoir transmettre notre passion pour le développement. Être présents dans les Écoles ou les Universités est également un bon moyen, selon nous, de valoriser le métier de développeur. Je me souviens encore de la première fois où j’ai donné des cours à l’Ecole des Mines de St-Etienne, j’étais sidérée par les réponses à la question que je posais en début de cours : “Quel métier voulez-vous faire plus tard?”. Les 4/5ième des élèves répondaient “Chefs de Projet”. Lorsqu’à la fin des cours la proportion baisse, c’est pour moi une vraie victoire!
 
