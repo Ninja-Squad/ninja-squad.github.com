@@ -5,7 +5,7 @@ author: [acrepet]
 tags: [training]
 ---
 
-Les Ninjas à l’école
+## Les Ninjas à l’école
 
 Mais que font les Ninjas en plus de leur mission chez leurs clients? Des killer app? De la veille? De la plongée?
 Alors un peu de tout ça, mais en plus les Ninjas se sont donnés dès leur première année d’existence une mission particulière : celle d'évangéliser d'autres petits Ninjas. Oui oui rien que ça ;-)
