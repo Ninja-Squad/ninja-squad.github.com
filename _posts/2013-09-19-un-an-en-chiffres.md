@@ -24,7 +24,6 @@ Pas de business plan, pas de prévisions financières<sup>1</sup>, juste notre e
 # 3 salariés
 
 Ninja Squad, c'est 3 salariés seulement&nbsp;: Cédric, Cyril, et Jean-Baptiste<sup>2</sup>.
-Si Agnès a gardé son job actuel, c'est avant tout pour raisons personnelles&nbsp;: conjointe d'un membre de l'équipe avec qui elle attendait un enfant, mieux ne valait pas mettre tous leurs oeufs dans le même panier.
 
 Si nous en sommes les gérants, nous avons effectivement choisi d'être aussi salariés de notre propre entreprise (SAS customisée sur les principes coopératifs).
 Cyril fut le premier à être salarié en juillet 2012.
