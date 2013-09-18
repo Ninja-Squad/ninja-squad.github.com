@@ -18,12 +18,12 @@ et surtout une grosse curiosité chez beaucoup de gens que l'on croise, intrigu�
 Ninja Squad, c'est 4 fondateurs&nbsp;: Agnès Crépet, Cédric Exbrayat, Cyril Lacôte et Jean-Baptiste Nizet.
 La société s'est fondée sans emprunt, avec pour seule trésorerie initiale son capital social&nbsp;: `10101`€.
 Cela nous garantissait toute indépendance et ne nous obligeait à rendre de compte à personne.
-Pas de business plan, pas de prévisions financières<sup>1</sup>, juste notre envie de travailler ensemble et de tenter le coup sans gros risque.
+Pas de business plan, pas de prévisions financières<sup><a href="#footnote-1">1</a></sup>, juste notre envie de travailler ensemble et de tenter le coup sans gros risque.
 
 
 # 3 salariés
 
-Ninja Squad, c'est 3 salariés seulement&nbsp;: Cédric, Cyril, et Jean-Baptiste<sup>2</sup>.
+Ninja Squad, c'est 3 salariés seulement&nbsp;: Cédric, Cyril, et Jean-Baptiste<sup><a href="#footnote-2">2</a></sup>.
 
 Si nous en sommes les gérants, nous avons effectivement choisi d'être aussi salariés de notre propre entreprise (SAS customisée sur les principes coopératifs).
 Cyril fut le premier à être salarié en juillet 2012.
@@ -78,6 +78,6 @@ Et comme nos plus gros dilemmes actuels consistent à décider pour quel client 
 <br/>
 
 <p style="font-size: 0.7em;">
-1. note de Cédric&nbsp;: et mes tableurs Excel alors, il compte pour du beurre?<br/>
-2. Si Agnès a gardé son job actuel, c’est avant tout pour raisons personnelles&nbsp;: conjointe d’un membre de l’équipe avec qui elle attendait un enfant, mieux ne valait pas mettre tous leurs oeufs dans le même panier.
+<a id="footnote-1">1. note de Cédric&nbsp;: et mes tableurs Excel alors, il compte pour du beurre?</a><br/>
+<a id="footnote-2">2. Si Agnès a gardé son job actuel, c'est avant tout pour raisons personnelles&nbsp;: conjointe d'un membre de l'équipe avec qui elle attendait un enfant, mieux ne valait pas mettre tous leurs oeufs dans le même panier</a>.
 </p>
