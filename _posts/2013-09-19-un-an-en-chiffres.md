@@ -73,11 +73,20 @@ On pourrait vous noyer sous les chiffres. Mais on voulait, en toute transparence
 Certes, on a peut-être eu la chance de trouver des clients compréhensifs. Ou peut-être que des clients pour qui on est heureux de travailler de notre mieux, en leur apportant notre expertise, sans se compromettre, ni les voler, ont simplement envie de nous faire confiance. Et ça pourrait aussi vous arriver, qui sait.
 
 Alors oui, gérer une société est parfois pénible (la déclaration de TVA y est pour beaucoup). Il suffit cependant de s'épauler d'un comptable efficace.
-Et comme nos plus gros dilemmes actuels consistent à décider pour quel client on préfère travailler dans les mois qui viennent, et si les prochains MacBook Pro payés par la société seront Retina ou non, on signe tous pour une année supplémentaire.
+Et comme nos plus gros dilemmes actuels consistent à décider pour quel client on préfère travailler dans les mois qui viennent, et si les prochains MacBook Pro payés par la société seront Retina ou non<sup><a href="#footnote-3">3</a></sup>, on signe tous pour une année supplémentaire.
 
 <br/>
+<br/>
 
-<p style="font-size: 0.7em;">
-<a id="footnote-1">1. note de Cédric&nbsp;: et mes tableurs Excel alors, il compte pour du beurre?</a><br/>
-<a id="footnote-2">2. Si Agnès a gardé son job actuel, c'est avant tout pour raisons personnelles&nbsp;: conjointe d'un membre de l'équipe avec qui elle attendait un enfant, mieux ne valait pas mettre tous leurs oeufs dans le même panier</a>.
-</p>
+<ol class="footnote">
+	<li id="footnote-1">
+		Note de Cédric&nbsp;: et mes tableurs Excel alors, ils comptent pour du beurre?
+	</li>
+	<li id="footnote-2">
+		Si Agnès a gardé son job actuel, c'est avant tout pour raisons personnelles&nbsp;:
+		conjointe d'un membre de l'équipe avec qui elle attendait un enfant, mieux ne valait pas mettre tous leurs oeufs dans le même panier.
+	</li>
+	<li id="footnote-3">
+		Dernières nouvelles&nbsp;: JB vient de craquer pour un Retina, après 15 ans de développement sous Windows&reg;! :)
+	</li>
+</ol>
