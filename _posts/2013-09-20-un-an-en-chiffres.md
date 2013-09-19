@@ -26,7 +26,7 @@ Pas de business plan, pas de prévisions financières<sup><a href="#footnote-1">
 Ninja Squad, c'est 3 salariés seulement&nbsp;: Cédric, Cyril, et Jean-Baptiste<sup><a href="#footnote-2">2</a></sup>.
 
 Si nous en sommes les gérants, nous avons effectivement choisi d'être aussi salariés de notre propre entreprise (SAS customisée sur les principes coopératifs).
-Cyril fut le premier à être salarié en juillet 2012.
+Cyril fut le premier à l'être en juillet 2012.
 Il a pu se payer tout en constituant la trésorerie nécessaire pour assurer le salaire des 2 autres, qui l'ont rejoint en octobre 2012.
 
 Si nous nous sommes payés dès le 1er jour, nous nous accordions des salaires modestes mais vivables&nbsp;: 1500€ nets.
@@ -65,7 +65,7 @@ Quand la société a été sur ses rails, on a commencé à flamber et faire des
 - on a déposé [notre marque à l'INPI](http://bases-marques.inpi.fr/Typo3_INPI_Marques/marques_fiche_resultats.html?index=1&refId=3937579_201246_fmark&y=0)&nbsp;: 240€.
 - on a payé un ami graphiste pour faire naître [Chuck](/2013/08/28/3d-pixel-art/), notre emblème&nbsp;: 500€.
 - on a réalisé nos propres goodies (mugs, tee-shirts, badges)&nbsp;: 350€.
-- et on a offerts des stickers pour [la promotion de Golo](http://golo-lang.org/news/2013/04/29/viral-marketing-thanks-to-ninjasquad/) (montant confidentiel).
+- et on a offert des stickers pour [la promotion de Golo](http://golo-lang.org/news/2013/04/29/viral-marketing-thanks-to-ninjasquad/) (le montant reste confidentiel tellement il est indécent).
 
 Voilà près de 5000€ dépensés pour <span style="text-decoration:line-through;">le swag</span> le confort, la veille, et notre contribution à la communauté.
 
@@ -86,9 +86,9 @@ Et comme nos plus gros dilemmes actuels consistent à décider pour quel client 
 	</li>
 	<li id="footnote-2">
 		Si Agnès a gardé son job actuel, c'est avant tout pour raisons personnelles&nbsp;:
-		conjointe d'un membre de l'équipe avec qui elle attendait un enfant, mieux ne valait pas mettre tous leurs oeufs dans le même panier.
+		conjointe d'un membre de l'équipe avec qui elle attendait un enfant, mieux ne valait pas mettre tous leurs oeufs dans le même panier avant d'être sûr qu'il n'était pas percé.
 	</li>
 	<li id="footnote-3">
-		Dernières nouvelles&nbsp;: JB vient de craquer pour un Retina, après 15 ans de développement sous Windows&reg;! :)
+		Dernières nouvelles&nbsp;: JB vient de craquer pour un Retina, après 15 ans de développement sous Windows&reg;! Plus besoin de maintenir de `.bat` pour nos projets internes! :)
 	</li>
 </ol>
