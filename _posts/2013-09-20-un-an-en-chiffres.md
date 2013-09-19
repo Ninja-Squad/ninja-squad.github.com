@@ -36,15 +36,15 @@ Puis, en janvier 2013, nous sommes passés à 2000€ nets. Puis ce mois-ci, à 
 
 # Vous gagnez autant d'argent?!
 
-Ce qui est formidable, c'est que tout cela s'est déroulé comme on le rêvait sans savoir si c'était une utopie naïve. Nous avons dès le départ instauré avec nos clients notre rythme de travail&nbsp;: 4 jours de prestations par semaine, pour se garder un jour libre. Libres de faire de la veille, de bosser sur nos projets personnels, ou de fignoler l'idée magique qui fera de Ninja Squad le nouveau Google. Ou Github (&hearts;). Ou WinDev (?!). On a d'ailleurs consacré prêt de 3 mois en plus de nos [#ninjackday](http://twitter.com/search?q=ninjackday) à l'expérimentation d'idées qui nous chatouillaient. Et les formations à l'université nous ont également demandé pas mal de préparations non payées.
+Ce qui est formidable, c'est que tout cela s'est déroulé comme on le rêvait sans savoir si c'était une utopie naïve. Nous avons dès le départ instauré avec nos clients notre rythme de travail&nbsp;: 4 jours de prestations par semaine, pour se garder un jour libre. Libres de faire de la veille, de bosser sur nos projets personnels, ou de fignoler l'idée magique qui fera de Ninja Squad le nouveau Google. Ou Github (&hearts;). Ou WinDev (?!). On a d'ailleurs consacré prêt de trois mois en plus de nos [#ninjackday](http://twitter.com/search?q=ninjackday) à l'expérimentation d'idées qui nous chatouillaient. Et les formations à l'université nous ont également demandé pas mal de préparations non payées. Sans compter les deux mois d'arrêt maladie sans facturation d'un ninja qui s'est pêté les deux poignets.
 
-Notre premier bilan comptable, à l'issue d'une année d'existence, a révélé un chiffre d'affaire de 190.000€. Il est constitué essentiellement par nos prestations de développement en régie, et pour une part plus modeste par les formations données et divers projets pour des clients en remote.
+Notre premier bilan comptable, à l'issue d'une année d'existence, a révélé un chiffre d'affaire de 190.000€. Il est constitué essentiellement par nos prestations de développement en régie, et pour une part plus modeste par les formations données et divers projets pour des clients en remote. 
 
 Nous avions ainsi un résultat préliminaire de 89.000€.
 
-Plutôt qu'acheter une Porsche de fonction, ou racheter une boîte plus petite (?) pour faire de la croissance, nous avons choisi de nous redistribuer 50.000€ de ce bénéfice (ce qui n'en fait plus que la moitié une fois les charges sociales déduites), avant d'attaquer la seconde année avec une trésorerie rassurante (30.000€ après impôt société qui viennent s'ajouter à notre capital) nous permettant d'assurer plusieurs mois de salaire en cas de difficulté. Ou de projet interne à financer.
+Plutôt qu'acheter une Porsche&reg; de fonction, ou racheter une boîte plus petite (?) pour faire de la croissance, nous avons choisi de nous redistribuer 50.000€ de ce bénéfice (ce qui n'en fait plus que la moitié une fois les charges sociales déduites), avant d'attaquer la seconde année avec une trésorerie rassurante (30.000€ après impôt société qui viennent s'ajouter à notre capital) nous permettant d'assurer plusieurs mois de salaire en cas de difficulté. Ou de projet interne à financer.
 
-Comment avons-nous pu faire autant de bénéfice, en se payant plus décemment, et en ne travaillant que 4 jours par semaine?
+Comment avons-nous pu faire autant de bénéfice, en se payant plus que décemment, et en ne travaillant que 4 jours par semaine?
 
 # Mais quelles sont vos charges?
 
@@ -80,7 +80,7 @@ Et comme nos plus gros dilemmes actuels consistent à décider pour quel client 
 
 <ol class="footnote">
 	<li id="footnote-1">
-		Note de Cédric&nbsp;: et mes tableurs Excel alors, ils comptent pour du beurre?
+		Pour être tout à fait juste, Cédric aimait se rassurer en bricolant des prévisions budgétaires dans Excel&reg;.
 	</li>
 	<li id="footnote-2">
 		Si Agnès a gardé son job actuel, c'est avant tout pour raisons personnelles&nbsp;:
