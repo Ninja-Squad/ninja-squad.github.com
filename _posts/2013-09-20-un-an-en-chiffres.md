@@ -40,7 +40,7 @@ Ce qui est formidable, c'est que tout cela s'est déroulé comme on le rêvait s
 
 Notre premier bilan comptable, à l'issue d'une année d'existence, a révélé un chiffre d'affaire de 190.000€. Il est constitué essentiellement par nos prestations de développement en régie, et pour une part plus modeste par les formations données et divers projets pour des clients en remote. 
 
-Nous avions ainsi un résultat préliminaire de 89.000€.
+Nous avions ainsi un résultat préliminaire de 89.000€. \o/
 
 Plutôt qu'acheter une Porsche&reg; de fonction, ou racheter une boîte plus petite (?) pour faire de la croissance, nous avons choisi de nous redistribuer 50.000€ de ce bénéfice (ce qui n'en fait plus que la moitié une fois les charges sociales déduites), avant d'attaquer la seconde année avec une trésorerie rassurante (30.000€ après impôt société qui viennent s'ajouter à notre capital) nous permettant d'assurer plusieurs mois de salaire en cas de difficulté. Ou de projet interne à financer.
 
@@ -55,15 +55,17 @@ Nos charges sont en effet minimes. Pas de loyer, pas de salaire de managers, pas
 - Location de Dedibox, hébergeant notre site web, de l'infastructure projet (Jenkins, Sonar), divers tests de technologies et projets internes en maturation&nbsp;: 40€.
 - Frais bancaires&nbsp;: 25€ environ.
 - Notes de frais de transport&nbsp;: 250€ environ (deux ninjas ont la drôle d'idée d'habiter vers Saint-Etienne tout en travaillant sur Lyon...).
-- et, si on néglige quelques frais annuels minimes (cotisations, taxes et assurance diverses, qui s'élèvent à un maximum de 1000€ par an) c'est tout!
+
+Et c'est tout, si on néglige quelques frais annuels minimes (cotisations, taxes et assurance diverses, qui s'élèvent à un maximum de 1000€ par an)!
 
 Quand la société a été sur ses rails, on a commencé à flamber et faire des dépenses démesurées&nbsp;:
 - on s'est chacun acheté un second moniteur (250€ pièce), des SSDs (200€ pièce) et des licences IntelliJ pour bosser confortablement chez nos clients récurrents.
 - on s'est payé les conférences que nous n'organisions pas&nbsp;:p, qui nous branchaient et où nous n'avions pas la chance d'être déjà invités (avec une Java Championne et deux JUGs leaders, on est chanceux de ce côté-là)&nbsp;: [Devoxx FR](http://devoxx.fr), [RealtimeConf EU](http://realtimeconf.eu/), [Blend Conference](http://www.blendconference.com/).
-- on a organisé un Ninjackaton en soirée&nbsp;: 500€.
+- on a organisé un [#Ninjackaton](http://twitter.com/search?q=ninjackaton) en soirée&nbsp;: 500€.
+- on a déposé [notre marque à l'INPI](http://bases-marques.inpi.fr/Typo3_INPI_Marques/marques_fiche_resultats.html?index=1&refId=3937579_201246_fmark&y=0)&nbsp;: 240€.
 - on a payé un ami graphiste pour faire naître [Chuck](/2013/08/28/3d-pixel-art/), notre emblème&nbsp;: 500€.
-- on a payé des stickers pour [la promotion de Golo](http://golo-lang.org/news/2013/04/29/viral-marketing-thanks-to-ninjasquad/).
-- on a réalisé nos propres goodies (mugs, tee-shirts).
+- on a réalisé nos propres goodies (mugs, tee-shirts, badges)&nbsp;: 350€.
+- et on a offerts des stickers pour [la promotion de Golo](http://golo-lang.org/news/2013/04/29/viral-marketing-thanks-to-ninjasquad/) (montant confidentiel).
 
 Voilà près de 5000€ dépensés pour <span style="text-decoration:line-through;">le swag</span> le confort, la veille, et notre contribution à la communauté.
 
@@ -80,7 +82,7 @@ Et comme nos plus gros dilemmes actuels consistent à décider pour quel client 
 
 <ol class="footnote">
 	<li id="footnote-1">
-		Pour être tout à fait juste, Cédric aimait se rassurer en bricolant des prévisions budgétaires dans Excel&reg;.
+		Pour être tout à fait juste, Cédric aimait se rassurer en bricolant des prévisions budgétaires dans des <span style="text-decoration:line-through;">feuilles Excel&reg;</span> Google Spreadsheets.
 	</li>
 	<li id="footnote-2">
 		Si Agnès a gardé son job actuel, c'est avant tout pour raisons personnelles&nbsp;:
