@@ -94,12 +94,11 @@ div.social-buttons {
 div.post-wrapper {
     text-align: justify; 
     padding-top: 20px;
-    font-size: 17px;
     word-spacing: 3px; 
 }
 div.post-wrapper, div.post-wrapper li {
-    font-size: 19px;
-    line-height: 1.40em; 
+    font-size: 18px;
+    line-height: 1.50em; 
 }
 div.post-content {
     padding-left: 45px; 
@@ -120,6 +119,10 @@ div.post-content {
 
 pre, code {
     font-size: 14px;
+}
+
+p code {
+    font-size: 18px;
 }
 
 blockquote p {
