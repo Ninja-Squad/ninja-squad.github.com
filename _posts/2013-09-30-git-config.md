@@ -45,8 +45,10 @@ Ces deux paramètres sont nécessaires pour faire un commit et apparaîtront dan
     [core]
         editor = vim
         pager = less
+        excludesfile = ~/.gitignore_global
 
 La section core contient beaucoup d'options possibles. Parmi elles, `editor` vous permet de choisir quel éditeur de texte sera utilisé (j'aime bien vim, si si je vous assure, mais vous pouvez très bien mettre SublimeText par exemple, avec `subl -w`), idem pour le pager utilisé par Git (pour afficher le log par exemple). Il faut savoir que Git pagine dès que l'affichage ne rentre pas dans votre écran&nbsp;: certains détestent ça et préfèrent utiliser `cat` plutôt.
+L'option `excludesfile` permet d'ignorer de façon globale certains fichiers en les précisant dans un `.gitignore` global. Le mien est inspiré de celui de [Github](https://help.github.com/articles/ignoring-files).
 <br/><br/>
 
     [alias]
