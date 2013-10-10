@@ -150,6 +150,6 @@ Il est possible de customiser le template de message de commit avec l'option `co
 
 Vous pouvez trouver mon '.gitconfig' complet sur mon [repo Github](https://github.com/cexbrayat/dotfiles/blob/master/git/.gitconfig).
 
-Et vous, quelles sont vos options préféréesnbsp;?
+Et vous, quelles sont vos options préférées&nbsp;?
 
 _Article publié sur le [blog de Cédric](http://hypedrivendev.wordpress.com/2013/09/30/git-config-les-options-indispensables "Article original sur le blog de Cédric Exbrayat")_
