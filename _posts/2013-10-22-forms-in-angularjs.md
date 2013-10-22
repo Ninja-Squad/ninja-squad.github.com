@@ -5,6 +5,9 @@ author: cexbrayat
 tags: [angularjs]
 canonical: http://hypedrivendev.wordpress.com/2013/10/22/forms-in-angular
 ---
+
+Nous continuons notre série d'articles sur AngularJS, sur lequel nous vous proposons [une formation](http://ninja-squad.fr/training/angularjs). Aujourd'hui&nbsp;: la validation de formulaires.
+
 Si vous lisez ceci, vous savez probablement créer un formulaire en HTML. Toute application web en contient son lot. Un formulaire contient un ensemble de champs, chaque champ étant une manière pour l'utilisateur de saisir des informations. Ces champs groupés ensemble dans un formulaire ont un sens, que ce soit une page d'enregistrement pour vos utilisateurs, ou une formulaire de login.
 
 Les formulaires en Angular étendent les formulaires HTML en leur ajoutant un certain nombre d'états et en donnant aux développeurs de nouvelles façon d'agir.
