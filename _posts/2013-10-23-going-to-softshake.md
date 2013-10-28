@@ -20,3 +20,15 @@ Si je vous ai convaincu, n'oubliez pas d'installer le nécessaire sur votre lapt
 - Javadoc, ça aide toujours.
 
 Venez nous voir!
+
+**Update**
+
+Wow, SoftShake était une superbe conférence, conviviale comme on les aime! Notre talk a fait salle pleine, mais faute de laptop et de wifi, notre atelier s'est déroulé en comité plus restreint.
+
+Pour ceux qui veulent se rattraper tranquillement à la maison, voici le [repo Github](https://github.com/Ninja-Squad/ninjackaton-lambda) contenant les slides et l'atelier.
+
+Une branche 'soluce' contient la solution aux différents exercices. Et si vous avez des questions, nous sommes à portée de [Twitter](http://twitter.com/ninjasquad).
+
+Enfin, vous pouvez tester vos connaissances sur les lambdas avec [notre quizz](https://github.com/Ninja-Squad/ninjackaton-lambda/tree/master/slides) : ouvrez le fichier 'lambda.html' dans votre navigateur et jouez!
+
+Merci à l'organisation et à tous les participants!
