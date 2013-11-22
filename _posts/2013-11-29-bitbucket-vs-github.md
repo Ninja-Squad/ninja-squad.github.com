@@ -5,7 +5,7 @@ author: cexbrayat
 tags: [git]
 ---
 
-Vous savez peut être que [Bitbucket](https://bitbucket.org) vous permet depuis fin 2011 d'héberger vos projets Git, comme [Github](http://github.com), après avoir été un temple de Mercurial. Est-ce pour autant une bonne alternative ? Passons en revue leurs particularités !
+Vous savez peut-être que [Bitbucket](https://bitbucket.org) vous permet depuis fin 2011 d'héberger vos projets Git, comme [Github](http://github.com), après avoir été un temple de Mercurial. Est-ce pour autant une bonne alternative ? Passons en revue leurs particularités !
 
 <h1>Repository</h1>
 
@@ -24,7 +24,7 @@ L'historique des commits est un peu mieux dans Bitbucket avec l'affichage possib
 On trouve également le même mécanisme de fork (copie d'un repository dans votre espace utilisateur sur lequel vous avez tous les droits), de pull requests (demande d'intégration d'une fonctionnalité que vous avez codé dans un repo qui ne vous appartient pas) et de code reviews (possibilité de voir les différences introduites et de commenter le code).
 
 Bitbucket ajoute quelques features "nice to have" : il est possible d'afficher un diff avec le fichier dans son ancienne version et dans sa nouvelle version côte à côte, d'[affecter les code reviews](http://blog.bitbucket.org/2013/02/25/pull-requests-now-with-reviewers-and-smarter-notifications/
-) à certains collaborateurs pour approbation et de ne pouvoir merger que si la pull request a été approuvé un certain nombre de fois. Ce petit workflow d'intégration n'est pas sans intérêt, même si il est souvent pratiqué informellement sur Github. Autre petit avantage : lorsqu'une pull request ne peut être mergée pour cause de conflit, Bitbucket affiche clairement quels sont les fichiers et lignes en cause.
+) à certains collaborateurs pour approbation et de ne pouvoir merger que si la pull request a été approuvée un certain nombre de fois. Ce petit workflow d'intégration n'est pas sans intérêt, même s'il est souvent pratiqué informellement sur Github. Autre petit avantage : lorsqu'une pull request ne peut être mergée pour cause de conflit, Bitbucket affiche clairement quels sont les fichiers et lignes en cause.
 
 <h1>Administration</h1>
 
@@ -52,7 +52,7 @@ Un wiki minimaliste est disponible pour les deux sites, avec syntaxe markdown, c
 
 <h1>Money, Money</h1>
 
-Bitbucket mise sur un bon argument pour attirer les développeurs : les repositories privés. Alors que sur Github, le plan gratuit ne vous donne accès qu'à des repositories publics, Bitbucket autorise la création gratuite et illimitée de repositories privés. La restriction, car il faut bien une incitation à passer à la version payante, concerne le nombre maximum d'utilisateurs d'un repository privé : 5. Vous ne pouvez donc donner les droits d'accés à ces repo privés qu'à 5 de vos collègues : au-delà, il faudra mettre la main au portefeuille.
+Bitbucket mise sur un bon argument pour attirer les développeurs : les repositories privés. Alors que sur Github, le plan gratuit ne vous donne accès qu'à des repositories publics, Bitbucket autorise la création gratuite et illimitée de repositories privés. La restriction, car il faut bien une incitation à passer à la version payante, concerne le nombre maximum d'utilisateurs d'un repository privé : 5. Vous ne pouvez donc donner les droits d'accès à ces repo privés qu'à 5 de vos collègues : au-delà, il faudra mettre la main au portefeuille.
 
 Les stratégies sont donc différentes en terme de marketing :
 - [Github](https://github.com/pricing) limite le nombre de repositories privés en fonction du prix (0 en gratuit, puis 5 pour 7$, 10 pour 12$...), le nombre de collaborateurs étant illimité.
@@ -60,11 +60,11 @@ Les stratégies sont donc différentes en terme de marketing :
 
 Bitbucket a donc un argument intéressant pour une petite équipe créant un projet privé. A noter également la possibilité d'héberger vous même un [Github Enterprise](https://enterprise.github.com/) ou la suite professionelle de Bitbucket, nommée [Stash](https://www.atlassian.com/software/stash/overview), si la perspective d'avoir vos sources sur des serveurs américains vous trouble (mais franchement on ne voit pas pourquoi...). Ces outils vous donnent toutes les fonctionnalités de base plus la possibilité de s'intégrer avec votre système d'authentification interne.
 
-Les prix sont tout de suite plus ... entreprise! Github Enterprise démarre à 5000$ par an pour 20 users, et est à peu près linéaire avec [250$ par utilisateur](https://enterprise.github.com/pricing) (100 utilisateurs donnent donc 250000$ par an, aïe). Bitbucket utilise là aussi une stratégie incitative avec une offre à seulement 10$ par mois pour 10 utilisateurs. La pente est ensuite plus raide mais [les prix](https://www.atlassian.com/software/stash/pricing) restent beaucoup plus abordables que Github avec 100 utilisateurs à 6000$ par an. A noter que Stash offre quelques fonctionnalités intéressantes comme une intégration poussée avec Jira (le bugtracker de la même société), ou les merges automatiques en cascade (un bugfix sur une ancienne release peut être automatiquement mergé sur les releases plus récentes).
+Les prix sont tout de suite plus ... entreprise! Github Enterprise démarre à 5000$ par an pour 20 utilisateurs, et est à peu près linéaire avec [250$ par utilisateur](https://enterprise.github.com/pricing) (100 utilisateurs donnent donc 250000$ par an, aïe). Bitbucket utilise là aussi une stratégie incitative avec une offre à seulement 10$ par mois pour 10 utilisateurs. La pente est ensuite plus raide mais [les prix](https://www.atlassian.com/software/stash/pricing) restent beaucoup plus abordables que ceux de Github avec 100 utilisateurs à 6000$ par an. A noter que Stash offre quelques fonctionnalités intéressantes comme une intégration poussée avec Jira (le bugtracker de la même société), ou les merges automatiques en cascade (un bugfix sur une ancienne release peut être automatiquement mergé sur les releases plus récentes).
 
 <h1>Extras</h1>
 
-Tous deux proposent une très bonne API REST, et des "hooks" qui permettent de s'intégrer avec tout ce que votre éco système comporte d'important (les intégrations continues, dashboards, issue trackers...).
+Tous deux proposent une très bonne API REST, et des "hooks" qui permettent de s'intégrer avec tout ce que votre écosystème comporte d'important (les intégrations continues, dashboards, issue trackers...).
 Dans les petits bonus de Github, il ne faut pas oublier [Github Pages](http://pages.github.com/), un support de nouveaux formats ([fichier STL 3D](https://github.com/cexbrayat/3d-pixel-art/blob/master/ninja-squad-3d-smoothed.stl), [fichier GeoJSON](https://github.com/benbalter/dc-maps/blob/master/embassies.geojson)) et une application mobile (même si c'est un peu anecdotique).
 
 <h1>Communauté</h1>
@@ -75,10 +75,10 @@ Les deux sites ont un petit aspect social, avec la possibilité de suivre des ut
 
 <h1>TL; DR;</h1>
 
-Bitbucket a bien rattrapé son retard et ne souffre d'aucune lacune flagrante, au delà de sa communauté moins nombreuse. Il possède même quelques fonctionnalités que l'on retrouverait avec plaisir sur Github.
+Bitbucket a bien rattrapé son retard et ne souffre d'aucune lacune flagrante, au-delà de sa communauté moins nombreuse. Il possède même quelques fonctionnalités que l'on retrouverait avec plaisir sur Github.
 
 Pour résumer :
 - vous avez un projet open source ? Github sans réfléchir. L'exposition sera un ordre de magnitude supérieure.
-- vous avez beaucoup de repositories privés, une petite équipe et peu d'argent ? Bitbucket est la solution économique. Vous pouvez même envisager Stash, leur solution pro.
+- vous avez beaucoup de repositories privés, une petite équipe et peu d'argent&nbsp;? Bitbucket est la solution économique. Vous pouvez même envisager Stash, leur solution pro.
 - vous avez peu de repo privés et/ou de grandes équipes ? Github a un pricing plus intéressant.
 - vous voulez héberger la solution chez vous ? Stash est beaucoup moins cher et ajoute quelques fonctionnalités intéressantes. Mais vous pouvez également regarder du côté des projets open source gratuits comme [Gitlab](http://gitlab.org/) par exemple.
