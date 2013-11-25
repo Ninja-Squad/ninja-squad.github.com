@@ -2,7 +2,8 @@
 layout: post
 title: Bitbucket vs Github
 author: cexbrayat
-tags: [git]
+tags: [git, github, bitbucket]
+canonical: http://hypedrivendev.wordpress.com/2013/11/29/bitbucket-vs-github/
 ---
 
 Vous savez peut-être que [Bitbucket](https://bitbucket.org) vous permet depuis fin 2011 d'héberger vos projets Git, comme [Github](http://github.com), après avoir été un temple de Mercurial. Est-ce pour autant une bonne alternative ? Passons en revue leurs particularités !
@@ -17,7 +18,7 @@ La navigation dans les sources se fait de façon identique sur le site, en parco
 
 Il est également possible de voir l'activité du projet, et les deux concurrents utilisent le fichier README de façon similaire pour décrire le projet.
 
-L'historique des commits est un peu mieux dans Bitbucket avec l'affichage possible de toutes les branches. La visualisation des branches est aussi intéressante, plus graphique que celle proposée par Github.
+L'historique des commits est un peu plus fonctionnel dans Bitbucket avec l'affichage possible de toutes les branches. La visualisation des branches est aussi intéressante, plus graphique que celle proposée par Github.
 
 <h1>Fork/Pull Request/Code review</h1>
 
@@ -42,7 +43,7 @@ Chacun des concurrents propose un bug tracker intégré. Les fonctionnalités so
 
 Bitbucket propose en plus une criticité, une priorité et une gestion du workflow intégrée alors que Github compense en permettant la création dynamique de labels comme vous l'entendez. Le système de Github est flexible mais demande un peu plus de travail.
 
-Une autre fonctionnalité intéressante réside dans le [vote sur les issues](http://blog.bitbucket.org/2013/08/14/no-more-1s-bitbucket-issues-now-has-voting/) : là où Github ne permet toujours pas de voter, et où les commentaires '+1' sont le seul moyen de manifester son intérêt.
+Une autre fonctionnalité intéressante réside dans le [vote sur les issues](http://blog.bitbucket.org/2013/08/14/no-more-1s-bitbucket-issues-now-has-voting/). Là où Github ne permet toujours pas de voter, et où les commentaires '+1' sont le seul moyen de manifester son intérêt, Bitbucket intègre directement le vote sur les issues, ce qui permet de jauger l'intérêt de la communauté pour une feature particulière.
 
 La synchronisation avec d'autres bug trackers est généralement possible. L'intégration de Bitbucket avec Jira est mise en avant mais le même [connecteur](https://confluence.atlassian.com/display/BITBUCKET/Use+the+JIRA+DVCS+Connector+Plugin) est utilisé pour Github et Bitbucket dans JIRA, les fonctionnalités sont donc possiblement équivalentes (mais je n'ai pas testé).
 
@@ -60,11 +61,12 @@ Les stratégies sont donc différentes en terme de marketing :
 
 Bitbucket a donc un argument intéressant pour une petite équipe créant un projet privé. A noter également la possibilité d'héberger vous même un [Github Enterprise](https://enterprise.github.com/) ou la suite professionelle de Bitbucket, nommée [Stash](https://www.atlassian.com/software/stash/overview), si la perspective d'avoir vos sources sur des serveurs américains vous trouble (mais franchement on ne voit pas pourquoi...). Ces outils vous donnent toutes les fonctionnalités de base plus la possibilité de s'intégrer avec votre système d'authentification interne.
 
-Les prix sont tout de suite plus ... entreprise! Github Enterprise démarre à 5000$ par an pour 20 utilisateurs, et est à peu près linéaire avec [250$ par utilisateur](https://enterprise.github.com/pricing) (100 utilisateurs donnent donc 250000$ par an, aïe). Bitbucket utilise là aussi une stratégie incitative avec une offre à seulement 10$ par mois pour 10 utilisateurs. La pente est ensuite plus raide mais [les prix](https://www.atlassian.com/software/stash/pricing) restent beaucoup plus abordables que ceux de Github avec 100 utilisateurs à 6000$ par an. A noter que Stash offre quelques fonctionnalités intéressantes comme une intégration poussée avec Jira (le bugtracker de la même société), ou les merges automatiques en cascade (un bugfix sur une ancienne release peut être automatiquement mergé sur les releases plus récentes).
+Les prix sont tout de suite plus ... entreprise! Github Enterprise démarre à 5000$ par an pour 20 utilisateurs, et est à peu près linéaire avec [250$ par utilisateur](https://enterprise.github.com/pricing) (100 utilisateurs donnent donc 25000$ par an, aïe). Bitbucket utilise là aussi une stratégie incitative avec une offre à seulement 10$ par mois pour 10 utilisateurs. La pente est ensuite plus raide mais [les prix](https://www.atlassian.com/software/stash/pricing) restent beaucoup plus abordables que ceux de Github avec 100 utilisateurs à 6000$ par an. A noter que Stash offre quelques fonctionnalités intéressantes comme une intégration poussée avec Jira (le bugtracker de la même société), ou les merges automatiques en cascade (un bugfix sur une ancienne release peut être automatiquement mergé sur les releases plus récentes).
 
 <h1>Extras</h1>
 
 Tous deux proposent une très bonne API REST, et des "hooks" qui permettent de s'intégrer avec tout ce que votre écosystème comporte d'important (les intégrations continues, dashboards, issue trackers...).
+Bitbucket ne pose [aucune limite sur la taille des fichiers](https://confluence.atlassian.com/pages/viewpage.action?pageId=273877699), là où Github [restreint à 100Mb par fichier](https://help.github.com/articles/what-is-my-disk-quota).
 Dans les petits bonus de Github, il ne faut pas oublier [Github Pages](http://pages.github.com/), un support de nouveaux formats ([fichier STL 3D](https://github.com/cexbrayat/3d-pixel-art/blob/master/ninja-squad-3d-smoothed.stl), [fichier GeoJSON](https://github.com/benbalter/dc-maps/blob/master/embassies.geojson)) et une application mobile (même si c'est un peu anecdotique).
 
 <h1>Communauté</h1>
@@ -82,3 +84,5 @@ Pour résumer :
 - vous avez beaucoup de repositories privés, une petite équipe et peu d'argent&nbsp;? Bitbucket est la solution économique. Vous pouvez même envisager Stash, leur solution pro.
 - vous avez peu de repo privés et/ou de grandes équipes ? Github a un pricing plus intéressant.
 - vous voulez héberger la solution chez vous ? Stash est beaucoup moins cher et ajoute quelques fonctionnalités intéressantes. Mais vous pouvez également regarder du côté des projets open source gratuits comme [Gitlab](http://gitlab.org/) par exemple.
+
+_Article publié sur le [blog de Cédric](http://hypedrivendev.wordpress.com/2013/11/29/bitbucket-vs-github/ "Article original sur le blog de Cédric Exbrayat")_
