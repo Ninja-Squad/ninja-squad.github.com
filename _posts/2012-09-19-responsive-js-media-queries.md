@@ -48,11 +48,11 @@ Par exemple :
 	<span class="visible-phone">Hello Phone!</span>
 
 affiche :
-<strong> 
+
 <span class="visible-desktop">Hello Desktop!</span>
 <span class="visible-tablet">Hello Tablet!</span>
 <span class="visible-phone">Hello Phone!</span>
-</strong>
+
 
 Essayez de redimensionner la fenêtre de votre navigateur, si vous êtes sur desktop : bim!, le texte affiché dépend de la largeur du navigateur. "Toute technologie suffisamment avancée est indiscernable de la magie" disait Arthur C. Clarke. Et c'est magique!
 
