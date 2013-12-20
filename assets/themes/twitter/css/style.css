@@ -119,6 +119,8 @@ div.post-content {
 
 pre, code {
     font-size: 14px;
+    text-align: left;
+    word-spacing: normal;
 }
 
 p code {
