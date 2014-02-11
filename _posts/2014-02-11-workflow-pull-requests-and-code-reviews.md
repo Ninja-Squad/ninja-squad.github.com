@@ -37,7 +37,7 @@ Il faut noter que ce repository n'est pas synchronisé automatiquement avec le r
 
     git remote add upstream https://github.com/angular/angularjs
 
-On peu coder notre fonctionnalité comme précédemment :
+On peut coder notre fonctionnalité comme précédemment :
 
     git branch awesome-feature
     git checkout awesome-feature
