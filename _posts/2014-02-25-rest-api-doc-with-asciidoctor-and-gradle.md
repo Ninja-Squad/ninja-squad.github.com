@@ -5,70 +5,73 @@ author: jbnizet
 tags: [asciidoctor, gradle, doc, rest]
 ---
 
-Generating documentation for a Java API is quite easy. Javadoc is a great and easy to use tool, integrated in every Java build tool,
+Generating documentation for a Java API is quite easy. Javadoc is a great and easy to use tool, integrated with every Java build tool,
 and produces a result that every Java developer is (or should be) comfortable with.
 
 Generating documentation for a REST API is not as easy. You can implement a RESTful backend in any language you can imagine. Once you have chosen one
 (Java, in our case), the way you define it and implement it depends on the frameworks you choose: JAX-RS, Spring MVC, etc. Even assuming you have a tool 
 understanding your framework, it also has to understand how your JSON serializer (Jackson, in this case) is configured and works. And if 
 you use annotations to define your validation constraints, it also has to understand them. All in all, automating the documentation generation
-of a REST API is much harder than doing it for a Java API.
+of a REST API is much harder than doing so for a Java API.
 
-We did some experiments with [Swagger](http://swagger.wordnik.com/), but were not really satisfied with the result. Its 
-[Spring MVC integration](https://github.com/martypitt/swagger-springmvc) doesn't handle all the signatures of the Spring MVC
-controller methods, the generated validation constraints are incorrect, and the end result is a bit rough. There's a good reason why
-popular REST API documentations like the Twitter API are not automatically generated, but carefully hand-crafted, so we finally decided to go this way, 
-and this post describes how we did it.
+We did some experiments with [Swagger](http://swagger.wordnik.com/), but were not really satisfied with the result. It has good points: language
+and framework-agnostic framework, automatic generation from code and annotations, JSON structure descriptions and examples, possibility to send GET 
+and POST requests directly from the documentation.
+
+But its [Spring MVC integration](https://github.com/martypitt/swagger-springmvc) doesn't handle all the signatures of the Spring MVC
+controller methods, the generated validation constraints are incorrect, and the end result is a bit rough. It's also non-trivial to have an offline
+version of the documentation. 
+
+There are goods reasons why popular REST API documentations like the Twitter API are not automatically generated, but 
+carefully hand-crafted. So we finally decided to go this way, and this post describes how we did it.
 
 ## Asciidoc
 
 First af all, we wanted to be free to organize the documentation as we wanted, to provide introductory paragraphs about the general
 conventions, etc. Being able to generate it in various formats (HTML, PDF, etc.) is also something we found useful. And an automatically generated
 table of contents is great as well. So we decided
-to go with [Asciidoc](http://www.methods.co.nz/asciidoc/) and, more specifically, Asciidoctor. A typical service documentation 
+to go with [Asciidoc](http://www.methods.co.nz/asciidoc/) and, more specifically, [Asciidoctor](http://asciidoctor.org/). A typical service documentation 
 looks like this in our Asciidoc document:
 
-    == Messages
+    == Poney Races
 
-    Messages can be read, created, updated and deleted by a user having the 
-    ROOT role. A corpus ID is used to identify the cluster, database and 
-    collection to use. Only collections that are not used in any campaign 
-    can be modified.
+    Poney races can be read, created, updated and deleted by a user having the 
+    RACE_ORGANIZER role. A poneydrome ID is used to identify where to read 
+    or save the poney race.
 
     === Read
 
     [cols="h,5a"]
     |===
     | URL
-    | /api/admin/corpora/[corpusId]/messages/[messageId]
+    | /api/admin/[poneydromeId]/races/[raceId]
 
     | Method
     | GET
 
     | Response Body
-    | include::{snippetDir}/message.json.adoc[]
+    | include::{snippetDir}/race.json.adoc[]
     |===
 
 You can add any information you like, in any format you like, in the documentation. This is a real advantage that allows making your documentation
 readable and understandable. But even more than the URLs, the HTTP methods and status codes, what matters is the nature and format of the data
-that is accepted or returned by the services. And this is where we automated it partially, to make sure it conforms to the reality of the actual API,
+accepted or returned by the services. And this is where we automated it partially, to make sure it conforms to the reality of the actual API,
 and to avoid having to hard-code JSON structures in the document. 
 
 ## JSON snippets generation
 
-The magic is thus in the include block in the snippet above. The `message.json.adoc` file is generated and contains an example JSON structure. 
+The magic is thus in the include block in the snippet above. The `race.json.adoc` file is generated and contains an example JSON structure. 
 To generate it, we use Java code that creates instances of Java objects that are actually returned by the service, and serialize them using the 
 same Jackson mapper, configured the same way as in the actual application (except for the indentation).
 
 So we simply have a class that contains methods like the following:
 
-    private Message message() {
-        Message message = new Message();
-        message.setId(new ObjectId().toString());
-        message.setText("This football match was boring. As usual.");
-        message.setSource("twitter");
-        message.setLanguage("en");
-        return message;
+    private PoneyRace poneyRace() {
+        PoneyRace race = new PoneyRace();
+        race.setId(new ObjectId().toString());
+        race.setDescription("The greatest poney race ever. All best poneys will run.");
+        race.setDate(DateTime.parse("2012-03-12T16:00:00Z"));
+        return race;
     }
 
 Every object that needs to be converted to JSON and included in the documentation is generated by a method such as the one above,
@@ -124,4 +127,4 @@ with the appropriate options in order to generate the documentation where we wan
 ## Conclusion
 
 Is this strategy perfect? Nope. You have to maintain the documentation as you maintain the code. Changing an URL in the code means also changing it in the
-documentation. But it does a good job, in a simple and flexible way, without having to fight with a tool which thinks it knows better than you do.
+documentation. But it does a good job, in a simple and flexible way, without having to fight with a tool which thinks it knows more than you do.
