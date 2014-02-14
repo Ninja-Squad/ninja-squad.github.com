@@ -11,7 +11,7 @@ tags: [java, productivity]
 >
 >Il va me falloir un quart d'heure avec Maven pour tout rebuilder et redéployer l'appli dans mon serveur, juste pour corriger deux lignes de code. 
 >
->Ah, si seulement mon chef de projet scrum master responsable des achats nous achetait des licences de JRebel, tout irait plus vite.
+>Ah, si seulement mon chef de projet scrum master responsable des achats nous achetait des licences de [JRebel](http://zeroturnaround.com/software/jrebel/), tout irait plus vite.
 
 *Un ninja*&nbsp;:
 
