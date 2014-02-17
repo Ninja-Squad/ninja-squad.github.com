@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Workflow, Pull Requests & Code Reviews
+title: Workflow, Pull Requests &amp; Code Reviews
 author: cexbrayat
 tags: [git, github]
 canonical: http://hypedrivendev.wordpress.com/2014/02/11/workflow-pull-requests-and-code-reviews
@@ -12,7 +12,7 @@ Il y a deux grandes façons de travailler à plusieurs :
 - un repo partagé par toute l'équipe
 - un repo pour chaque développeur
 
-# Workflow & Pull Requests
+# Workflow &amp; Pull Requests
 
 ## Open Source style
 
