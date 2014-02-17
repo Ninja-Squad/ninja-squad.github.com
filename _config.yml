@@ -12,6 +12,9 @@ title: NinjaSquad
 tagline: Set<AwesomeDeveloper> ninjas;
 gplus: 103019373375785071516
 twitter: NinjaSquad
+author:
+  name: Ninja Squad
+  email: contact@ninja-squad.com
 authors:
   acrepet:
     name : Agnès Crépet
