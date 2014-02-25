@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Generate your REST API documentation with Asciidoctor and Gradle
+title: Generate REST API documentation with Asciidoctor and Gradle
 author: jbnizet
 tags: [asciidoctor, gradle, doc, rest]
 ---
