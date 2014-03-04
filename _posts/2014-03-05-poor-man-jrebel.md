@@ -21,7 +21,7 @@ tags: [java, productivity]
 > - tu lances ton serveur en debug
 > - tu testes ton code de développeur lambda
 > - tu t'aperçois qu'il y a un bug, mais c'est pas grave
-> - tu corriges ton code et tu mets un `// TODO: ajouter un test unitaire
+> - tu corriges ton code et tu mets un `// TODO: ajouter un test unitaire`
 > - tu recompiles ton code
 > - tu rafraichis la page dans ton navigateur, et voilà. Le nouveau code est rechargé à chaud, et il n'y a pas besoin de tout rebuilder et redéployer.
 
