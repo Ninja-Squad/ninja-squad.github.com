@@ -7,7 +7,7 @@ tags: [java, productivity]
 
 *Un développeur*&nbsp;:
 
->Rhaa, malgré mes tests unitaires, je m'aperçois en testant mon application lightweight full-stack enterprise web 3.0 qu'il y a un bug&nbsp;! 
+>Rhaa, malgré mes tests unitaires, je m'aperçois en testant mon application _lightweight full-stack enterprise web 3.0_ qu'il y a un bug&nbsp;! 
 >
 >Il va me falloir un quart d'heure avec Maven pour tout rebuilder et redéployer l'appli dans mon serveur, juste pour corriger deux lignes de code. 
 >
@@ -21,13 +21,13 @@ tags: [java, productivity]
 > - tu lances ton serveur en debug
 > - tu testes ton code de développeur lambda
 > - tu t'aperçois qu'il y a un bug, mais c'est pas grave
-> - tu corriges ton code et tu mets un *// TODO: ajouter un test unitaire*
+> - tu corriges ton code et tu mets un `// TODO: ajouter un test unitaire
 > - tu recompiles ton code
 > - tu rafraichis la page dans ton navigateur, et voilà. Le nouveau code est rechargé à chaud, et il n'y a pas besoin de tout rebuilder et redéployer.
 
 *Un développeur*&nbsp;:
 
->Ben oui, avec Eclipse ça le faisait tout seul, mais avec IntelliJ, il compile pas tout seul tant que t'es en debug
+>Ben oui, avec Eclipse ça le faisait tout seul, mais avec IntelliJ, il compile pas tout seul tant que t'es en debug.
 
 *Un ninja*&nbsp;:
 
