@@ -15,7 +15,7 @@ tags: [java, productivity]
 
 *Un ninja*&nbsp;:
 
-> Hahaha mon bon Blaze, qu'est-ce que tu perds comme temps&nbsp;! Nous les Ninjas, on est un peu comme Mac Gyver. Juste besoin d'un debugger, et
+> Hahaha mon bon Blaze, qu'est-ce que tu perds comme temps&nbsp;! Nous les ninjas, on est un peu comme Mac Gyver. Juste besoin d'un debugger, et
 >on te fabrique un JRebel&nbsp;:
 >
 > - tu lances ton serveur en debug
