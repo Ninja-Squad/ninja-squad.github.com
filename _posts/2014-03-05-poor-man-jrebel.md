@@ -31,7 +31,7 @@ tags: [java, productivity]
 
 *Un ninja*&nbsp;:
 
->Ctrl-F9 mon bon blase. *Build - Make Project* si tu es un adepte de la souris. Et puis quand IntelliJ te demande s'il faut recharger les classes,
+>Ctrl-F9 mon bon Blaze. *Build - Make Project* si tu es un adepte de la souris. Et puis quand IntelliJ te demande s'il faut recharger les classes,
 > ben tu dis oui, évidemment.
 
 *Un développeur*&nbsp;:
