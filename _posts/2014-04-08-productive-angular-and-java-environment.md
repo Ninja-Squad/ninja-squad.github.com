@@ -26,7 +26,7 @@ In the same vein, using third-party CSS frameworks like Bootstrap is becoming mo
 
 ## Grunt
 
-<div style="float:right; margin:20px;"><img src="/assets/images/2014-03-25/grunt-logo.svg" width="150px;"/></div>
+<div style="float:right; margin:20px;"><img src="/assets/images/2014-04-08/grunt-logo.svg" width="150px;"/></div>
 
 Here's thus how we use those tools in our AngularJS-based projects:
 
@@ -34,7 +34,7 @@ We use [grunt-contrib-uglify](https://github.com/gruntjs/grunt-contrib-uglify) t
 
 We then use [grunt-contrib-concat](https://github.com/gruntjs/grunt-contrib-concat) to concatenate the already minified JS libraries and our own minified JS, and thus produce a single, minified JS file: `app.min.js`.
 
-![From many JS source files to a single minified one](/assets/images/2014-03-25/grunt-contrib-uglify.png)
+![From many JS source files to a single minified one](/assets/images/2014-04-08/grunt-contrib-uglify.png)
 
     uglify: {
         'p2': {
@@ -66,7 +66,7 @@ We then use [grunt-contrib-concat](https://github.com/gruntjs/grunt-contrib-conc
 
 We use [grunt-contrib-less](https://github.com/gruntjs/grunt-contrib-less) to produce a single, minified CSS file from the boostrap less files and our own less files: `app.min.css`. Note that we use a timestamp to generate a unique file name. This allows us to make the browser cache those large CSS and JS files for years, while still being to be able to deploy a new version of the app. Since the new version uses different file names, the browser will download the new files immediately and won't use a stale, cached version.
 
-![From many Less source files to a single minified CSS file](/assets/images/2014-03-25/grunt-contrib-less.png)
+![From many Less source files to a single minified CSS file](/assets/images/2014-04-08/grunt-contrib-less.png)
 
     less: {
         app: {
@@ -84,7 +84,7 @@ We use [grunt-contrib-copy](https://github.com/gruntjs/grunt-contrib-copy) to pr
 
 Now how do we replace these JS and CSS references inside those HTML pages? Using the [grunt-htmlrefs](https://github.com/tactivos/grunt-htmlrefs) plugin.
 
-![From a single html file to multiple versions of this file](/assets/images/2014-03-25/grunt-htmlrefs.png)
+![From a single html file to multiple versions of this file](/assets/images/2014-04-08/grunt-htmlrefs.png)
 
     copy: {
         index: {
@@ -123,7 +123,7 @@ All this process runs in a second and is thus almost transparent.
 
 But how to avoid deploying the webapp every time we make a change? The trick is to avoid the deployment completely. We use a proxy server ([connect](http://www.senchalabs.org/connect/), using [grunt-contrib-connect](https://github.com/gruntjs/grunt-contrib-connect) and [grunt-connect-proxy](https://github.com/drewzboto/grunt-connect-proxy)), but it could be anything else) to serve the static files directly from the files inside the project, and delegate to the actual Java server for REST service requests.
 
-![Serve files with a proxy to avoid deployments](/assets/images/2014-03-25/connect-proxy.png)
+![Serve files with a proxy to avoid deployments](/assets/images/2014-04-08/connect-proxy.png)
 
     connect: {
         server: {
