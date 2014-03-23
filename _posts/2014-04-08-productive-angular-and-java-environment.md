@@ -37,7 +37,7 @@ We then use [grunt-contrib-concat](https://github.com/gruntjs/grunt-contrib-conc
 ![From many JS source files to a single minified one](/assets/images/2014-04-08/grunt-contrib-uglify.png)
 
     uglify: {
-        'p2': {
+        'app': {
             files: {
                 'build/grunt/tmp/js/app-only.min.js': [
                     'src/main/webapp/js/app.js',
@@ -64,7 +64,7 @@ We then use [grunt-contrib-concat](https://github.com/gruntjs/grunt-contrib-conc
         }
     },
 
-We use [grunt-contrib-less](https://github.com/gruntjs/grunt-contrib-less) to produce a single, minified CSS file from the boostrap less files and our own less files: `app.min.css`. Note that we use a timestamp to generate a unique file name. This allows us to make the browser cache those large CSS and JS files for years, while still being to be able to deploy a new version of the app. Since the new version uses different file names, the browser will download the new files immediately and won't use a stale, cached version.
+We use [grunt-contrib-less](https://github.com/gruntjs/grunt-contrib-less) to produce a single, minified CSS file from the boostrap less files and our own less files: `app.min.css`. Note that we use a timestamp to generate a unique file name. This allows us to make the browser cache those large CSS and JS files for years, while still being able to deploy a new version of the app. Since the new version uses different file names, the browser will download the new files immediately and won't use a stale, cached version.
 
 ![From many Less source files to a single minified CSS file](/assets/images/2014-04-08/grunt-contrib-less.png)
 
@@ -80,7 +80,7 @@ Our main HTML file is named `index-dev.html`. It references every non-minified J
 We use [grunt-contrib-copy](https://github.com/gruntjs/grunt-contrib-copy) to produce 2 (or more) copies of this page:
 
 - `index.html`: this one is the one that is used in production. It only references the `app-1385397227574.min.js` file and the `app-1385397227574.min.css` files.
-- `index-e2e.html`: this one is the same as index.html, but references two additional JS files used to mock the REST backend, using `angular-mocks.js`. This allows creating end-to-end tests (yes, we know, the name is inappropriate) without depending on an actual backend. We also do more coarse-grained, end-to-end tests against the real backend.
+- `index-e2e.html`: this one is the same as `index.html`, but references two additional JS files used to mock the REST backend, using `angular-mocks.js`. This allows creating end-to-end tests (yes, we know, the name is inappropriate) without depending on an actual backend. We also do more coarse-grained, end-to-end tests against the real backend.
 
 Now how do we replace these JS and CSS references inside those HTML pages? Using the [grunt-htmlrefs](https://github.com/tactivos/grunt-htmlrefs) plugin.
 
