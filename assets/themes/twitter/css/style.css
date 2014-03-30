@@ -83,7 +83,7 @@ h1 a:hover {
 div.comments-heading {
     text-align: right;
 }
-div.authors, div.pages {
+div.authors, div.pages, div.training-dates {
     text-align: center;
     padding-top: 20px;
 }
@@ -92,27 +92,27 @@ div.social-buttons {
     margin: 22px 0;
 }
 div.post-wrapper {
-    text-align: justify; 
+    text-align: justify;
     padding-top: 20px;
-    word-spacing: 3px; 
+    word-spacing: 3px;
 }
 div.post-wrapper, div.post-wrapper li {
     font-size: 18px;
-    line-height: 1.50em; 
+    line-height: 1.50em;
 }
 div.post-content {
-    padding-left: 45px; 
+    padding-left: 45px;
     padding-right: 45px;
 }
 @media all and (max-width: 767px) {
     div.post-content {
-      padding-left: 0px; 
+      padding-left: 0px;
       padding-right: 0px;
     }
 }
 @media all and (min-width:768px) and (max-width:979px) {
     div.post-content {
-      padding-left: 15px; 
+      padding-left: 15px;
       padding-right: 15px;
     }
 }

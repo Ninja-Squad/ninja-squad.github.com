@@ -9,7 +9,7 @@
       {% assign tags_list = page.tags %}
       {% include JB/tags_list %}
     </ul>
-  {% endunless %}  
+  {% endunless %}
   </div>
   <div class="span2 comments-heading"><span><i class="icon-comment"></i><a href="#disqus_thread">Commentaires</a></span></div>
 </div>
@@ -35,6 +35,10 @@
       {% endfor %}
     </div>
     <br/>
+    <div class="training-dates">
+      {% include ninjasquad/trainings %}
+    </div>
+    <br/>
     <div class="pages">
       <ul class="nav nav-list">
         {% assign pages_list = site.pages %}
@@ -42,7 +46,7 @@
         {% include JB/pages_list %}
       </ul>
     </div>
-  </div> 
+  </div>
 </div>
 <div class="row">
   <div class="span4">
