@@ -6,7 +6,7 @@ tags: [Mix-IT, conference, concours]
 ---
 
 Vous avez peut-être remarqué une baisse d'activité publique chez Ninja Squad. Ce n'est pas - seulement - du à l'arrivée des beaux jours (même si on se prépare un timeoff au soleil&nbsp;:).  
-En effet, trois des quatre ninjas sont dans l'organisation de [Mix-IT]()http://mix-it.fr), la conférence technique lyonnaise.
+En effet, trois des quatre ninjas sont dans l'organisation de [Mix-IT](http://mix-it.fr), la conférence technique lyonnaise.
 Et la quatrième édition 2014 approche à grand pas&nbsp;: elle aura lieu les 29 et 30 avril. Sélection des talks du _Call For Papers_, logistique des deux jours, organisation de la soirée (sur une péniche!), définition du planning, gestion des trajets et de l'hébergement des speakers qui viennent parfois de loin&nbsp;: les tâches ne manquent pas.  
 L'intégralité des 500 billets a été vendue en 43H (record battu \o/)&nbsp;: on aime à se dire que cela confirme la pertinence de cette conférence dans le paysage français.  
 Si vous n'avez pas le vôtre, c'est malheureusement trop tard.
