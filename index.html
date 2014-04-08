@@ -12,7 +12,7 @@ tagline:
         {% assign tags_list = post.tags %}
         {% include JB/tags_list %}
       </ul>
-      {% endunless %}  
+      {% endunless %}
     </div>
     <div class="span2 comments-heading"><span><i class="icon-comment"></i><a href="{{post.url}}/#disqus_thread">Commentaires</a></span></div>
   </div>
@@ -25,18 +25,25 @@ tagline:
     <div class="span8 post-wrapper">
       <div class="post-content">{{ post.content }}</div>
     </div>
-    <div class="span2 authors">
-      {% for auth in post.author %}
-      {% assign author = site.authors[auth] %}
-      <p>
-        <img class="img-circle" alt="" style="width:60px" src="http://en.gravatar.com/avatar/{{author.gravatar}}&amp;size=60">
-      </p>
-      <h4>{{author.name}}</h4>
-      <ul class="nav nav-list">
-        <li><a href="http://www.github.com/{{author.github}}">Github</a></li>
-        <li><a href="http://www.twitter.com/{{author.twitter}}">Twitter</a></li>
-      </ul>
-      {% endfor %}
+    <div class="span2">
+      <br/>
+      <div class="authors">
+        {% for auth in post.author %}
+        {% assign author = site.authors[auth] %}
+        <p>
+          <img class="img-circle" alt="" style="width:60px" src="http://en.gravatar.com/avatar/{{author.gravatar}}&amp;size=60">
+        </p>
+        <h4>{{author.name}}</h4>
+        <ul class="nav nav-list">
+          <li><a href="http://www.github.com/{{author.github}}">Github</a></li>
+          <li><a href="http://www.twitter.com/{{author.twitter}}">Twitter</a></li>
+        </ul>
+        {% endfor %}
+      </div>
+      <br/>
+      <div class="training-dates">
+        {% include ninjasquad/trainings %}
+      </div>
     </div>
   </div>
   <div class="row">
