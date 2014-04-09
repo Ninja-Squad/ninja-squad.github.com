@@ -8,7 +8,7 @@ tags: [ninjasquad]
 
 Oui, vraiment. Une équipe de ninjas, parce que dans nos carrières précédentes, c’était souvent le rôle qui nous était alloué : on nous assignait les objectifs critiques, et nous ne lachions le morceau qu’une fois la mission réussie. Le ninpõ, la voie des ninjas, met l’accent sur l’endurance, la persévérance et l’adaptation, toutes de bonnes qualités pour des développeurs.
 <a href="http://ninja-squad.com" target="_blank">Ninja Squad</a>, aussi, parce que le nom de domaine était disponible :)
-Dans tous les cas, avouez que vous vous en rappelez déjà! 
+Dans tous les cas, avouez que vous vous en rappelez déjà!
 
 <br/>
 <h4>Mais qui êtes vous?</h4>
@@ -16,10 +16,11 @@ Dans tous les cas, avouez que vous vous en rappelez déjà!
 Certes, les ninjas préfèrent l’anonymat, mais il semblerait que ce ne soit pas la meilleure stratégie pour se faire connaître!
 
 Nous sommes 4, comme d’autres ninjas plus célébres :
-- &nbsp;<a href="http://ninja-squad.com/team#Agnes" target="_blank">Agnes Crépet</a>, JUG leader, agiliste de terrain et architecte plus qu’expérimentée;
-- &nbsp;<a href="http://ninja-squad.com/team#Cedric" target="_blank">Cédric Exbrayat</a>, JUG leader également, à la pointe des technos branchées du front jusqu’au back-office;
-- &nbsp;<a href="http://ninja-squad.com/team#Cyril" target="_blank">Cyril Lacôte</a>, ex-Googler et globe trotter;
-- &nbsp;<a href="http://ninja-squad.com/team#JB" target="_blank">Jean Baptiste Nizet</a>, clean coder par excellence, et champion de Stack Overflow.
+
+- <a href="http://ninja-squad.com/team#Agnes" target="_blank">Agnes Crépet</a>, JUG leader, agiliste de terrain et architecte plus qu’expérimentée;
+- <a href="http://ninja-squad.com/team#Cedric" target="_blank">Cédric Exbrayat</a>, JUG leader également, à la pointe des technos branchées du front jusqu’au back-office;
+- <a href="http://ninja-squad.com/team#Cyril" target="_blank">Cyril Lacôte</a>, ex-Googler et globe trotter;
+- <a href="http://ninja-squad.com/team#JB" target="_blank">Jean Baptiste Nizet</a>, clean coder par excellence, et champion de Stack Overflow.
 
 Nous avons une passion commune pour créer et concevoir des applications, avec nos armes de prédilection (principalement Java et Javascript, et une pointe de méthodes agiles), mais aussi pour les réaliser avec la manière. Nous savons qu’il y a toujours à apprendre, et nous sommes en quête permanente d’amélioration. Et nous aimons transmettre ce que nous connaissons car c’est également une façon de progresser.
 
@@ -28,7 +29,7 @@ Cette passion pour le code et notre métier n’est pas juste un mot pour nous, 
 <br/>
 <h4>Ninja to hire!</h4>
 
-Les ninjas étaient des spécialistes dont on pouvait louer les services. C’est également notre cas, même si une partie de notre temps restera consacrée à affiner nos compétences et à essayer de changer le monde en <a href="http://github.com/ninja-squad" target="_blank">open sourçant des outils</a>, en contribuant à des projets, et en réalisant des applications de notre cru. Nous avons déjà travaillé tous ensemble et nous savons la qualité de ce que nous pouvons produire. 
+Les ninjas étaient des spécialistes dont on pouvait louer les services. C’est également notre cas, même si une partie de notre temps restera consacrée à affiner nos compétences et à essayer de changer le monde en <a href="http://github.com/ninja-squad" target="_blank">open sourçant des outils</a>, en contribuant à des projets, et en réalisant des applications de notre cru. Nous avons déjà travaillé tous ensemble et nous savons la qualité de ce que nous pouvons produire.
 
 Si vous cherchez une petite équipe compétente, nous sommes peut-être ceux qu’il vous faut. Et si nous ne sommes pas disponibles au moment opportun, peut-être pourrons-nous vous orienter vers des personnes de choix, car nous avons la chance de connaître beaucoup de gens doués. Et nous préférons toujours voir des projets réussis plutôt qu’inachevés.
 
@@ -42,4 +43,3 @@ On mesure chaque jour combien la maîtrise de la technique est un art en perpét
 
 <br/>
 <h4>Ready?</h4>
-
