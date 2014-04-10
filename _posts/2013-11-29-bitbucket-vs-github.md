@@ -34,6 +34,7 @@ Peu de différence là encore : possibilité de créer des équipes et de leur a
 <h1>Bug tracking</h1>
 
 Chacun des concurrents propose un bug tracker intégré. Les fonctionnalités sont à peu près identiques :
+
 - création d'anomalie avec assignation possible et version cible de correction.
 - description au format markdown, avec images jointes.
 - recherche des anomalies.
@@ -56,6 +57,7 @@ Un wiki minimaliste est disponible pour les deux sites, avec syntaxe markdown, c
 Bitbucket mise sur un bon argument pour attirer les développeurs : les repositories privés. Alors que sur Github, le plan gratuit ne vous donne accès qu'à des repositories publics, Bitbucket autorise la création gratuite et illimitée de repositories privés. La restriction, car il faut bien une incitation à passer à la version payante, concerne le nombre maximum d'utilisateurs d'un repository privé : 5. Vous ne pouvez donc donner les droits d'accès à ces repo privés qu'à 5 de vos collègues : au-delà, il faudra mettre la main au portefeuille.
 
 Les stratégies sont donc différentes en terme de marketing :
+
 - [Github](https://github.com/pricing) limite le nombre de repositories privés en fonction du prix (0 en gratuit, puis 5 pour 7$, 10 pour 12$...), le nombre de collaborateurs étant illimité.
 - [Bitbucket](https://bitbucket.org/plans) permet de créer un nombre illimité de repositories privés mais limite le nombre de collaborateurs (5 en gratuit, puis 10 pour 10$, 25 pour 25$...).
 
@@ -80,6 +82,7 @@ Les deux sites ont un petit aspect social, avec la possibilité de suivre des ut
 Bitbucket a bien rattrapé son retard et ne souffre d'aucune lacune flagrante, au-delà de sa communauté moins nombreuse. Il possède même quelques fonctionnalités que l'on retrouverait avec plaisir sur Github.
 
 Pour résumer :
+
 - vous avez un projet open source ? Github sans réfléchir. L'exposition sera un ordre de magnitude supérieure.
 - vous avez beaucoup de repositories privés, une petite équipe et peu d'argent&nbsp;? Bitbucket est la solution économique. Vous pouvez même envisager Stash, leur solution pro.
 - vous avez peu de repo privés et/ou de grandes équipes ? Github a un pricing plus intéressant.

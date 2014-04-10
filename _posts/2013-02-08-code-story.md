@@ -17,8 +17,10 @@ Certainement parce qu'on est trop bêtes de ne pas avoir pris le temps de vous e
 
 Probablement aussi pour se faire mousser un peu : les trois ninjas ont tous été sélectionnés à l'issue de cette phase, [atteignant le score maximal](http://code-story.net/2013/02/01/concours-2013-phase-1.html). Et on est quand même pas peu fier d'y être arrivé. Bon moi je dois quand même avouer avoir bien peiné à atteindre l'algorithme optimal sur [la location d'astronef Jajascript](http://code-story.net/2013/02/02/jajascript.html) permettant de répondre aux performances maximales (trouver le planning optimal parmis 50000 vols).
 
-<br/>
-<p style="text-align:center;"><img class="img-polaroid" src="/assets/images/carlton.gif" alt="La victoire des ninjas" /></p>
+
+<p style="text-align:center;">
+  <img class="img-polaroid" src="/assets/images/carlton.gif" alt="La victoire des ninjas" />
+</p>
 <br/>
 
 Mais surtout parce que ce concours était formidable, sur la forme comme dans le fond.
@@ -38,8 +40,8 @@ On souhaite bonne chance à tous les participants, et on félicite David et Jean
 
 Quant à vous, lecteur, on ne peut que vous encourager, l'année prochaine, à ne pas rater la prochaine édition.
 
-<br/>
+
 <p align="center">
-<a href="http://www.youtube.com/watch?v=8FMFxaT-n7U">On IrA ToUs à CoDeStOrY, MêMe tOi!</a>
+  <a href="http://www.youtube.com/watch?v=8FMFxaT-n7U">On IrA ToUs à CoDeStOrY, MêMe tOi!</a>
 </p>
 <br/>
