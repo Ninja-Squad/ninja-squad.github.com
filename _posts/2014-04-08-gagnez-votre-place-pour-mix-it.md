@@ -28,3 +28,14 @@ On vous rappelle le hashtag officiel de Mix-IT 2014&nbsp;: [#mixit14](https://tw
 
 Le concours prendra fin **lundi 14 avril à minuit** (dans la nuit de dimanche à lundi), timestamp Twitter faisant foi.  
 A vos tweets, partez!
+
+-------
+
+**Mise à jour du 14/04/2014 : le résultat**
+
+Après tirage au sort, le grand gagnant de la place pour Mix-IT 2014 est Maxence Dalmais aka [@maxired](https://twitter.com/maxired), avec le tweet suivant :
+
+<blockquote class="twitter-tweet" lang="en" style="text-align: center;"><p><a href="https://twitter.com/search?q=%23mixIT_lyon&amp;src=hash">#mixIT_lyon</a> A moi la place <a href="https://twitter.com/NinjaSquad">@NinjaSquad</a> pour How torewrite your JavaScript app ten times <a href="http://t.co/eTBqmzFLLP">http://t.co/eTBqmzFLLP</a> ! svp, svp svp ! ! ! <a href="https://twitter.com/LyonJS">@LyonJS</a></p>&mdash; Maxence Dalmais (@maxired) <a href="https://twitter.com/maxired/statuses/453525239914586112">April 8, 2014</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+Bravo à lui, et rendez-vous le 29 avril pour Mix-IT&nbsp;!
