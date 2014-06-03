@@ -10,7 +10,7 @@ Ayant abandonné son précédent système de versionning pour adopter le [semant
 stable (précédemment 1.0.x, puis 1.2.x, la 1.1.x étant la branche de développement, à la Unix Kernel).
 Mais que contient cette version fraichement émoulue? Nous avons passé au crible les différents commits (plus de 400!) qu'elle contient pour vous !
 
-Outre les nombreux "fixes", on note l'abandon défnitif du support d'IE8 : cette fois vous êtes seuls au monde si votre application doit tourner sur ce bon vieux IE.
+Outre les nombreux "fixes", on note l'abandon définitif du support d'IE8 : cette fois vous êtes seuls au monde si votre application doit tourner sur ce bon vieux IE.
 
 # Input date
 
