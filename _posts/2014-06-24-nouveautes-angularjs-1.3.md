@@ -55,7 +55,7 @@ Cette nouvelle option est assez pratique, notamment pour un cas très précis qu
     <!-- poney-unique-name is a custom validator, implemented as a directive, checking with the server if the value is not already taken by another poney -->
     <input name="name" type="text" ng-required="true" poney-unique-name ng-model="poney.name" ng-model-options="{updateOn: 'blur'}">
 
-Un problème peut cependant apparaître avec cette approche. Imaginez un bouton 'Clear' sur votre formulaire qui vide les champs. Si jamais l'utilisateur remplit un champ avec un debounce, puis clique sur 'Clear', les champs vont se vider, puis le debounce s'éxecuter et remplir à nouveau le champ! Il faut donc penser à supprimer tous les debounces en attente dans le code de la méthode `clear()` appelée par le clic sur le bouton, en utilisant une nouvelle méthode exposée par le controller du champ, appelée `$rollbackViewValue`.
+Un problème peut cependant apparaître avec cette approche. Imaginez un bouton 'Clear' sur votre formulaire qui vide les champs. Si jamais l'utilisateur remplit un champ avec un debounce, puis clique sur 'Clear', les champs vont se vider, puis le debounce s'éxecuter et remplir à nouveau le champ! Il faut donc penser à supprimer tous les debounces en attente dans le code de la méthode `clear()` appelée par le clic sur le bouton, en utilisant une nouvelle méthode exposée par le controller du champ, appelée `$rollbackViewValue`. Celle-ci est également disponible sur le formulaire pour agir sur tous les champs d'un coup.
 
 Vous pouvez jouer avec cette nouvelle fonctionnalité, et ses limites, avec ce [Plunker](http://plnkr.co/edit/94oLhzYOZeMcJcUBrXKq?p=preview).
 
