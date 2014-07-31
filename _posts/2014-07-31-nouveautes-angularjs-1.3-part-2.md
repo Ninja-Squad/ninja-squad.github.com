@@ -8,7 +8,7 @@ canonical: http://hypedrivendev.wordpress.com/2014/07/31/nouveautes-angularjs-1_
 
 Nous poursuivons notre exploration des nouvelles features d'AngularJS 1.3! Si vous avez raté la première partie, c'est [par ici](http://blog.ninja-squad.com/2014/06/24/nouveautes-angularjs-1.3/). 
 
-Et bien sûr, vour pourrez retrouver tout ça dans notre livre dont la sortie se rapproche!
+Et bien sûr, vous pourrez retrouver tout ça dans notre livre dont la sortie se rapproche!
 
 # ngStrictDI
 
@@ -106,7 +106,7 @@ Le `$scope` est enrichi d'une nouvelle méthode pour observer un ensemble de val
 
 # One time binding
 
-Il est maintenant possible de demander à Angular de cesser d'observer une expression une fois celle-ci évaluée. Il suffit pour cela de la précéder de `::` dans vos templates. Ainsi tout changement ultérieur ne sera pas repercuté à l'affichage.
+Il est maintenant possible de demander à Angular de cesser d'observer une expression une fois celle-ci évaluée. Il suffit pour cela de la précéder de `::` dans vos templates. Ainsi tout changement ultérieur ne sera pas répercuté à l'affichage.
 {% raw %}
     $scope.name = 'Cédric';
 
