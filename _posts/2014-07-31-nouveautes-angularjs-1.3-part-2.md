@@ -27,7 +27,7 @@ Pour éviter cela, une autre syntaxe est disponible :
       // and now handles minification
     }]);
 
-Et là, plus de problème. Il faut donc penser à utiliser cette syntaxe (ou s'appuyer sur un plugin dans votre build qui fasse tout ça automatiquement comme [ng-min](https://github.com/btford/ngmin) ou [ng-annotate](https://github.com/olov/ng-annotate), ou encore une autre syntaxe, basée sur l'attribut `$inject`). Mais il arrive qu'un développeur oublie de l'utiliser à un seul endroit et l'application ne démarre pas, ce qui est bien sûr un peu pénible.
+Et là, plus de problème. Il faut donc penser à utiliser cette syntaxe (ou s'appuyer sur un plugin dans votre build qui fasse tout ça automatiquement comme [ng-min](https://github.com/btford/ngmin) ou [ng-annotate](https://github.com/olov/ng-annotate). Une autre syntaxe, basée sur l'attribut `$inject` est aussi proposée. Mais il arrive qu'un développeur oublie de l'utiliser à un seul endroit et l'application ne démarre pas, ce qui est bien sûr un peu pénible.
 
 C'est là ou la version 1.3 apporte une nouveauté : il est désormais possible de démarrer Angular en mode 'strict-di' (injection de dépendance stricte), et un beau message d'erreur pour indiquer que tel composant n'utilise pas la bonne syntaxe apparaît.
 
@@ -93,7 +93,7 @@ Et si jamais les messages d'erreur sont trop génériques, vous pouvez les surch
 
 A noter que cela fonctionne également avec vos directives de validation custom!
 
-Là encore, amusez vous avec le [Plunker associé](http://plnkr.co/edit/jUkOtx30Etb1IbscxiJh?p=preview).
+Là encore, amusez-vous avec le [Plunker associé](http://plnkr.co/edit/jUkOtx30Etb1IbscxiJh?p=preview).
 
 # Watchgroup
 
