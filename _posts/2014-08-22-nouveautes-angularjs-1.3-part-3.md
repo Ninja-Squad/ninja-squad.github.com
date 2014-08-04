@@ -11,7 +11,7 @@ Pour vous rafraîchir la mémoire, nous avons déjà parlé de ngModelOptions et
 
 # No more global controllers
 
-Changement particulièrement "BREAKING" ! Par défaut, il n'est désormais plus possible de déclarer un controller comme une fonction globale : tout passera désormais par l'utilisation des modules et de la méthodes d'enregistrement `.controller()`.
+Changement particulièrement "BREAKING" ! Par défaut, il n'est désormais plus possible de déclarer un controller comme une fonction globale : tout passera désormais par l'utilisation des modules et de la méthode d'enregistrement `.controller()`.
 
 Ainsi, ce que vous aviez probablement utilisé dans votre première application de TodoList, ne fonctionnera plus :
 
@@ -26,7 +26,7 @@ Ainsi, ce que vous aviez probablement utilisé dans votre première application 
         ...
       })
 
-A noter qu'il est possible de réactiver l'ancien comportement en configuration le `$controllerProvider` avec la méthode `.allowGlobals()` :
+A noter qu'il est possible de réactiver l'ancien comportement en configurant le `$controllerProvider` avec la méthode `.allowGlobals()` :
 
     angular.module('todoApp')
       .config($controllerProvider){
@@ -67,7 +67,7 @@ Si vous utilisez des directives multi élements, par exemple :
     <div>... some content</div>
     <div poney-end></div>
 
-Vous devez maintenant déclarer la directive avec un attribut `multiElement :
+Vous devez maintenant déclarer la directive avec un attribut `multiElement` :
 
     angular.module('directives')
       .directive('poney', function() {
@@ -87,7 +87,7 @@ Vous savez qu'il est possible de filtrer la collection que vous allez afficher d
 
     <div ng-repeat="poney in poneys | filter:search">{{ poney }}</div>
 
-C'est très pratique, mais si l'on veut utiliser le nombre de résultats affiché, on est obligé de réappliquer le même filtre à la même collection :
+C'est très pratique, mais si l'on veut utiliser le nombre de résultats affichés, on est obligé de réappliquer le même filtre à la même collection :
 
     <div ng-repeat="poney in poneys | filter:search">{{ poney }}</div>
     <div ng-if="(poneys | filter:search).length === 0">No results.</div>
