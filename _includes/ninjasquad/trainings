@@ -1,5 +1,9 @@
+{% assign nowunix = site.time | date: "%s" %}
 <h4>Formations</h4>
-{% for training in site.JB.trainings %}
-<a href="http://ninja-squad.fr/training/{{training[0]}}">{{training[1].title}}</a>
-<p>{{training[1].dates}}, {{training[1].location}}</p>
+{% for training in site.data.trainings %}
+{% assign beginunix = training.begin | date: "%s" %}
+{% if beginunix > nowunix %}
+<a href="http://ninja-squad.fr/training/{{ training.name }}">{{ training.title }}</a>
+<p>{{ training.begin | date: "%-d %b" }} - {{ training.end | date: "%-d %b" }}, {{ training.location }}</p>
+{% endif %}
 {% endfor %}

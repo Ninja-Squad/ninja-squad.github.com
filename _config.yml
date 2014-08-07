@@ -2,7 +2,7 @@
 # For more see: https://github.com/mojombo/jekyll/wiki/Permalinks
 permalink: /:categories/:year/:month/:day/:title
 
-exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "blog.cmd"]
+exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "blog.sh"]
 pygments: true
 markdown: kramdown
 encoding: utf-8
@@ -151,25 +151,3 @@ JB :
   # and include your custom code. Your custom file must be defined at:
   #   ./_includes/custom/[HELPER]
   # where [HELPER] is the name of the helper you are overriding.
-
-  trainings :
-    java-advanced:
-      title: Java avancé
-      location: Lyon
-      dates: 15-17 Avril
-    play:
-      title: Play!
-      location: Lyon
-      dates: 18-20 Juin
-    java8:
-      title: Java 8
-      location: Lyon
-      dates: 19 Juin
-    angularjs:
-      title: AngularJS
-      location: Lyon
-      dates: 5-7 Août
-    git:
-      title: Git
-      location: Lyon
-      dates: 12-13 Août
