@@ -2,7 +2,7 @@
 layout: post
 title: Hibernate 4 et le cache de second niveau
 author: acrepet
-tags: ["hibernate","cache"]
+tags: [hibernate,cache,ehcache,jcache,spring,javaconfig]
 ---
 Sur le blog de Ninja Squad, on vous parle souvent de nouveaux trucs sexy comme AngularJS de plus en plus utilisé en entreprise. Aujourd'hui on va vous parler d'un framework beaucoup plus ancien, qui a plus de 10 ans, mais tout aussi utilisé : Hibernate!
 Récemment j’ai dû migrer des applications d’Hibernate 3 à Hibernate 4. 
