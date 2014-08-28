@@ -103,19 +103,27 @@ Il est maintenant possible de construire une promise directement avec le constru
 
 Précédemment, il était nécessaire d'utiliser cette syntaxe, dont je n'ai jamais été très fan :
 
+    // creation
     var d = $q.defer();
-    d.promise.then(function() {
-      deferred.resolve.call(deferred);
-    });
-    d.resolve('foo');
+    if(success){
+      d.resolve('foo');
+    }
+    var promise = d.promise;
+
+    // use
+    promise.then(function(result) {});
 
 Il maintenant possible de faire plus élégant, et beaucoup plus proche de la syntaxe adoptée par ES6 :
 
-    var d = $q(function(resolve) {
-      resolve('foo');
-    }).then(function(value) {
-      deferred.resolve(value);
+    // creation
+    var promise = $q(function(resolve) {
+      if(success){
+        resolve('foo');
+      }
     });
+
+    // use
+    promise.then(function(result) {});
 
 # ngTouched and ngSubmitted
 
