@@ -1,0 +1,29 @@
+- name: git
+  title: Git
+  begin: 2014-08-12
+  end: 2014-08-13
+  location: Lyon
+
+- name: angularjs
+  title: AngularJS
+  begin: 2014-08-05
+  end: 2014-08-07
+  location: Lyon
+
+- name: java8
+  title: Java 8
+  begin: 2014-06-19
+  end: 2014-06-19
+  location: Lyon
+
+- name: javaAdvanced
+  title: Java advanced
+  begin: 2014-04-15
+  end: 2014-04-17
+  location: Lyon
+
+- name: play
+  title: Play!
+  begin: 2014-06-18
+  end: 2014-06-20
+  location: Lyon
