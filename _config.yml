@@ -153,23 +153,23 @@ JB :
   # where [HELPER] is the name of the helper you are overriding.
 
   trainings :
-    java-advanced:
-      title: Java avancé
-      location: Lyon
-      dates: 15-17 Avril
-    play:
-      title: Play!
-      location: Lyon
-      dates: 18-20 Juin
-    java8:
-      title: Java 8
-      location: Lyon
-      dates: 19 Juin
-    angularjs:
-      title: AngularJS
-      location: Lyon
-      dates: 5-7 Août
     git:
       title: Git
       location: Lyon
-      dates: 12-13 Août
+      dates: 8-9 Octobre
+    angularjs:
+      title: AngularJS
+      location: Lyon
+      dates: 14-16 Octobre
+    java8:
+      title: Java 8
+      location: Lyon
+      dates: 16 Octobre
+    java-advanced:
+      title: Java avancé
+      location: Lyon
+      dates: 21-23 Octobre
+    play:
+      title: Play!
+      location: Lyon
+      dates: 29-30 Octobre
