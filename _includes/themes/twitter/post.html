@@ -19,7 +19,7 @@
     <div class="post-content">{{ content }}</div>
     <hr/>
   </div>
-  <div class="span2">
+  <div class="span2 text-center">
     <br/>
     <div class="authors">
       {% for auth in page.author %}
@@ -33,6 +33,10 @@
         <li><a href="http://www.twitter.com/{{author.twitter}}">Twitter</a></li>
       </ul>
       {% endfor %}
+    </div>
+    <br/>
+    <div id="promotion" class="training-dates">
+      {% include ninjasquad/promotion %}
     </div>
     <br/>
     <div class="training-dates">
