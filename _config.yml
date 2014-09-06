@@ -155,21 +155,21 @@ JB :
   trainings :
     git:
       title: Git
-      location: Lyon
-      dates: 8-9 Octobre
+      dates: 
+        - 8-9 Octobre à Lyon
+        - 6-7 Novembre à Paris
     angularjs:
       title: AngularJS
-      location: Lyon
-      dates: 14-16 Octobre
+      dates: 
+        - 14-16 Octobre à Lyon
+        - 3-5 Novembre à Paris
     java8:
       title: Java 8
-      location: Lyon
-      dates: 16 Octobre
+      dates: 16 Octobre à Lyon
     java-advanced:
       title: Java avancé
-      location: Lyon
-      dates: 21-23 Octobre
+      dates: 21-23 Octobre à Lyon
     play:
       title: Play!
       location: Lyon
-      dates: 29-30 Octobre
+      dates: 29-30 Octobre à Lyon
