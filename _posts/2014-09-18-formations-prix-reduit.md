@@ -5,13 +5,13 @@ author: clacote
 tags: ["formation", "promotion", "git", "angularjs"]
 ---
 
-C'est pas pour se vanter, mais Ninja Squad fait d'excellentes formations. Récemment, nos formations [AngularJS](http://ninja-squad.fr/training/angularjs) et [Git](http://ninja-squad.fr/training/git) sont parties comme des petits pains, et les clients étaient ravis.
+Ninja Squad fait d'excellentes formations. Récemment, nos formations [AngularJS](http://ninja-squad.fr/training/angularjs) et [Git](http://ninja-squad.fr/training/git) sont parties comme des petits pains, et les clients étaient ravis.
 
 Ce sont essentiellement des formations en *intra-entreprise* que nous assurons&nbsp;: un client frappe à notre porte, "hey les ninjas, j'adore ce que vous faites, et j'ai eu d'excellents échos, alors venez former toute mon équipe&nbsp;!". Et ça c'est plutôt cool.  
 
 ## Marketing is hard
 
-Mais on organise aussi des formations en *inter-entreprise*&nbsp;: on planifie des dates, et les gens intéressés s'inscrivent. Le saviez-vous&nbsp;? Probablement pas... Et ça, c'est parce que c'est très dur à organiser&nbsp;: il faut savoir communiquer ces dates, les rappeler régulièrement, pour que les gens vaguement intéressés soient au courant. Et on n'est pas très fort en marketing, et on n'aime pas trop jouer les commerciaux. On a toujours peur de soûler les gens qui nous suivent, en martelant des réclames. Alors souvent, ces dates tombent à l'eau, faute de suffisemment d'inscrits. Et au final, tout le monde est déçu&nbsp;: nous, et les quelques personnes motivées qui avaient fait la démarche et se trouvent finalement privées de la session planifiée.
+Mais on organise aussi des formations en *inter-entreprise*&nbsp;: on planifie des dates, et les gens intéressés s'inscrivent. Le saviez-vous&nbsp;? Probablement pas... Et ça, c'est parce que c'est très dur à organiser&nbsp;: il faut savoir communiquer ces dates, les rappeler régulièrement, pour que les gens vaguement intéressés soient au courant. Et on n'est pas très fort en marketing, et on n'aime pas trop jouer les commerciaux. On a toujours peur de soûler les gens qui nous suivent, en martelant des réclames. Alors souvent, ces dates tombent à l'eau, faute de suffisamment d'inscrits. Et au final, tout le monde est déçu&nbsp;: nous, et les quelques personnes motivées qui avaient fait la démarche et se trouvent finalement privées de la session planifiée.
 
 <p style="text-align: center;">
 <figure>
@@ -24,11 +24,11 @@ On aimerait pourtant encourager ces sessions en inter-entreprise&nbsp;: c'est so
 
 ## Cent balles et un mars
 
-Alors plutôt que brader nos formations - qui ne le méritent pas, **on a voulu encourager les vrais héros**.
+Alors plutôt que brader nos formations&nbsp;- qui ne le méritent pas&nbsp;- **on a voulu encourager les vrais héros**.
 
 On offrira désormais sur toutes nos formations Ninja Squad une **réduction de -30%** pour&nbsp;:
 
-- Les organisateurs bénévoles d'événements (*user groups*, conférence, *meetups*, ...).
+- Les organisateurs bénévoles d'événements (*user group*, conférence, *meetup*, ...).
 - Les *commiters* sur des projets open source.
 - Les indépendants, qui eux ne bénéficient pas du <abbr title="Droit Individuel à la Formation">DIF</abbr>.
 
