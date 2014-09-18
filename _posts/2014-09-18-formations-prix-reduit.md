@@ -31,6 +31,7 @@ On offrira désormais sur toutes nos formations Ninja Squad une **réduction de 
 - Les organisateurs bénévoles d'événements (*user group*, conférence, *meetup*, ...).
 - Les *commiters* sur des projets open source.
 - Les indépendants, qui eux ne bénéficient pas du <abbr title="Droit Individuel à la Formation">DIF</abbr>.
+- Les demandeurs d'emploi, qui veulent se former aux technologies payantes.
 
 Si vous nous montrez que vous faites partie de cette population méritante, vous bénéficierez de cette réduction exceptionnelle. Si des gens ont besoin d'un encouragement, c'est bien vous&nbsp;! Vous êtes nos héros, et on a envie de vous aimer.
 
@@ -40,3 +41,8 @@ Si vous nous montrez que vous faites partie de cette population méritante, vous
 
 <br/>
 Alors maintenant, vous allez checker [les dates des prochaines sessions de formation prévues sur Lyon ou Paris](http://ninja-squad.fr/training) (elles sont aussi listées sur l'encart à droite de cet article), et vous en parlez partout autour de vous, merci&nbsp;!&nbsp;:)
+
+<br/>
+**Mise à jour**
+
+On a ajouté les demandeurs d'emploi aux bénéficiaires de cette promotion. Ils méritent aussi un coup de pouce&nbsp;!
