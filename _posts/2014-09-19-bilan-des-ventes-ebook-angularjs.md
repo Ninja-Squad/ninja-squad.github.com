@@ -33,7 +33,7 @@ Pour nous, c'était inespéré.
 
 OK, donc on peut dire que ça a fonctionné. Mais si le prix est libre, combien donnent les acheteurs&nbsp;?
 
-## Et les maisons d'édition&nbsp;?
+## T'aurais pas 2 euros&nbsp;?
 
 On a certes choisi un prix libre, on a certes fourni un ebook sans aucun DRM, mais on ne voulait pas le donner gratuitement&nbsp;: c'est notre bébé, notre sueur, notre travail. Pour obtenir le livre, il faut donc rentrer sa carte bleue, et payer un minimum de 2€.
 
@@ -51,7 +51,7 @@ On constate plusieurs choses&nbsp;:
 
 OK, donc le livre se vend bien, les gens sont prêts à payer un prix honnête. Mais alors, pourquoi ne pas le sortir chez un éditeur&nbsp;?
 
-## Pourquoi ne pas inonder les étales des libraires&nbsp;?!
+## Et les maisons d'éditions&nbsp;?!
 
 Si ce livre s'est bien vendu - du moins à notre petite échelle - on pourait regretter de ne pas l'avoir sorti dans le circuit traditionnel, pour qu'il soit en vente partout et bénéficie du pouvoir de promotion de l'éditeur et des distributeurs.
 
