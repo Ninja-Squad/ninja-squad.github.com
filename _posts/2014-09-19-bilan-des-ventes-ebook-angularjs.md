@@ -6,15 +6,16 @@ tags: ["ebook","angularjs", "bilan"]
 ---
 
 Après une [longue et laborieuse genèse](/2014/09/02/devenez-un-ninja-avec-angularjs-ebook/ "La genèse du livre Devenez un Ninja avec AngularJS"), Ninja Squad a finalement mis en vente son premier livre&nbsp;: un [ebook sur AngularJS](https://books.ninja-squad.com/ "Ebook AngularJS à prix libre et pour une bonne cause, par Ninja Squad").  
-Si nous n'en sommes déjà pas peu fiers, il nous parait aussi intéressant de vous faire un bilan sur les ventes. Car, caractéristique notable qui n'aura échappé à personne&nbsp;: il était vendu à *prix libre*, et en soutien optionnelle à une cause caritative ([Humble Bundle-style](https://www.humblebundle.com/)).
+Si nous n'en sommes déjà pas peu fiers, il nous paraît aussi intéressant de vous faire un bilan sur les ventes. Car, caractéristique notable qui n'aura échappé à personne&nbsp;: il était vendu à *prix libre*, et en soutien optionnelle à une cause caritative ([Humble Bundle-style](https://www.humblebundle.com/)).
 
 Alors, est-ce que ça marche un prix libre&nbsp;?
 
 ## Show me the money!
 
-On savait en sortant ce livre qu'on ne rentabiliserait jamais le temps passé à sa rédaction. Pour tout vous dire, on pensait en vendre une vingtaine sur l'année, à nos seuls supporters les plus fidèles. On savait que l'amour ne serait pas plus fort que la répulsion des galimatias techniques pour que nos proches se sentent obligés de l'acheter.
+On savait en sortant ce livre qu'on ne rentabiliserait jamais le temps passé à sa rédaction. Pour tout vous dire, on pensait n'en vendre qu'une vingtaine sur l'année, à nos seuls supporters les plus fidèles. On savait que l'amour ne serait pas plus fort que la répulsion des galimatias techniques pour que nos proches se sentent obligés de l'acheter.
 
-Mais on ne le sortait pas pour qu'il soit rentable. Comme d'habitude, on l'a fait sans trop réflechir, parce que ça nous semblait classe, même si ça demandait beaucoup de travail sans facturation. Et si ça contribuait à nous rendre célèbres, on aurait été ravi de refourguer des formations à tous les enthousiastes.  
+Mais on ne le sortait pas pour qu'il soit rentable. Comme d'habitude, on l'a fait sans trop réflechir, parce que ça nous semblait classe, même si ça demandait beaucoup de travail sans facturation.
+Et si cela convertissait de nouveaux enthousiastes, on aurait été ravi de les aider grâce à notre super formation (qui bénéficie de [la réduction pour les Héros](/2014/09/18/formations-prix-reduit/ "Les formations Ninja Squad à prix réduit pour les Héros")).
 On était aussi content de tester la vente en ligne directe, de nos propres produits, sur un site fait à la main&nbsp;: <abbr title="Do It Yourself, bricole le toi-même">DIY</abbr>&nbsp;! C'est notre ADN, ce qui fait qu'on aime ce métier de développeur. Et vivre de nos propres créations est une envie qui nous titille de longue date.
 
 Bref, on annonce le livre et le site de vente, qui propose le prix libre et l'action caritative, le 2 septembre 2014 à 11H. Et là, _pouf-pouf_, la magie opère :
