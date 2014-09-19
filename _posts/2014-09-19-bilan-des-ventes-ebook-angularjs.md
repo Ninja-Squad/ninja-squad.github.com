@@ -5,27 +5,84 @@ author: clacote
 tags: ["ebook","angularjs", "bilan"]
 ---
 
-bla bla bla bla bla bla
-bla bla bla bla bla bla
-bla bla bla bla bla bla
-bla bla bla bla bla bla
-bla bla bla bla bla bla
-bla bla bla bla bla bla
+Après une [longue et laborieuse genèse](/2014/09/02/devenez-un-ninja-avec-angularjs-ebook/ "La genèse du livre Devenez un Ninja avec AngularJS"), Ninja Squad a finalement mis en vente son premier livre&nbsp;: un [ebook sur AngularJS](https://books.ninja-squad.com/ "Ebook AngularJS à prix libre et pour une bonne cause, par Ninja Squad").  
+Si nous n'en sommes déjà pas peu fier, il nous parait aussi intéressant de vous faire un bilan sur les ventes. Car, caractéristique notable qui n'aura échappée à personne&nbsp;: il était vendu à *prix libre*, et en soutien optionnelle à une cause caritative ([Humble Bundle-style](https://www.humblebundle.com/)).
 
-## Ventes par jour
+Alors, est-ce que ça marche un prix libre&nbsp;?
+
+## Show me the money!
+
+On savait en sortant ce livre qu'on ne rentabiliserait jamais le temps passé à sa rédaction. Pour tout vous dire, on pensait en vendre une vingtaine sur l'année, à nos seuls supporters les plus fidèles. On savait que l'amour ne serait pas plus fort que la répulsion des galimatias techniques pour que nos proches se sentent obligés de l'acheter.
+
+Mais on ne le sortait pas pour qu'il soit rentable. Comme d'habitude, on l'a fait sans trop réflechir, parce que ça nous semblait classe, même si ça demandait beaucoup de travail sans facturation. Et si ça contribuait à nous rendre célèbres, on aurait été ravi de refourguer des formations à tous les enthousiastes.  
+On était aussi content de tester la vente en ligne directe, de nos propres produits, sur un site fait à la main&nbsp;: <abbr title="Do It Yourself, bricole le toi-même">DIY</abbr>&nbsp;! C'est notre ADN, ce qui fait qu'on aime ce métier de développeur. Et vivre de nos propres créations est une envie qui nous titille de longue date.
+
+Bref, on annonce le livre et le site de vente, qui propose le prix libre et l'action caritative, le 2 septembre 2014 à 11H. Et là, _pouf-pouf_, la magie opère :
 
 <div id="chart_ventes" style="width: 100%; height: 400px;"></div>
 
-bla bla bla bla bla bla
-bla bla bla bla bla bla
-bla bla bla bla bla bla
-bla bla bla bla bla bla
-bla bla bla bla bla bla
-bla bla bla bla bla bla
+87 ventes sur une première petite journée, pour pas loin de 1000€ HT&nbsp;! On était déjà aux anges.
 
-## Achats par tarifs
+Bien sûr, ce rythme a très vite chuté, pour atteindre des volumes assez dérisoires passé la première semaine. On ne sait effectivement pas tellement communiquer en dehors de notre cercle communautaire. On constate un petit pic le 8 septembre, quand on a finalement ajouté une version MOBI, en plus des EPUB et PDF.
+
+A ce jour du 18 septembre 2O14, après trois semaines, on a fait **385 ventes pour un total de 3800€ HT**.
+
+L'autre bonne nouvelle, c'est qu'on a aussi récolté **près de 1200€ pour l'association** [Docteur Souris](http://www.docteursouris.fr/). \o/
+
+Pour nous, c'était inespéré.
+
+OK, donc on peut dire que ça a fonctionné. Mais si le prix est libre, combien donnent les acheteurs&nbsp;?
+
+## Et les maisons d'édition&nbsp;?
+
+On a certes choisi un prix libre, on a certes fourni un ebook sans aucun DRM, mais on ne voulait pas le donner gratuitement&nbsp;: c'est notre bébé, notre sueur, notre travail. Pour obtenir le livre, il faut donc rentrer sa carte bleue, et payer un minimum de 2€.
+
+Voici la répartition des prix donnés librement par les acheteurs&nbsp;:
 
 <div id="chart_tarifs" style="width: 100%; height: 400px;"></div>
+
+Attention, l'échelle est logarithmique.
+
+On constate plusieurs choses&nbsp;:
+
+- Seulement 1/5 des acheteurs donnent le prix minimum. Je trouve ça magique&nbsp;: ils font l'effort de faire un geste et de récompenser notre travail et l'association. Voilà de quoi redonner foi dans l'Humanité.
+- La majorité des acheteurs conservent le prix par défaut. Nous l'avions initialement valorisé à 10€ (`D1` sur le graphe). Puis au bout d'une semaine, pour voir, nous l'avons positionné à 20€ (`D2` sur le graphe). C'est surprenant, mais bon à savoir&nbsp;! :p La proposition initiale a donc beaucoup de poids dans le choix de l'acheteur.
+- Quelques rares personnes ont donné des tarifs démesurés : 30€, 50€. Il faut avouer que ce sont pour l'essentiel des connaissances. 
+
+OK, donc le livre se vend bien, les gens sont prêts à donner des tarifs honnètes. Mais alors, pourquoi ne pas le sortir chez un éditeur&nbsp;?
+
+## Pourquoi ne pas inonder les étales des libraires&nbsp;?!
+
+Si ce livre s'est bien vendu - du moins à notre petite échelle - on pourait regretter de ne pas l'avoir sorti dans le circuit traditionnel, pour qu'il soit en vente partout et bénéficie du pouvoir de promotion de l'éditeur et des distributeurs.
+
+Si la question ne s'était pas posée parce qu'on voulait le faire en mode DIY, par curiosité, nous avons interrogé des amis qui ont déjà sorti des livres techniques de références par le circuit traditionnel.
+
+Tout d'abord, [Nicolas De Loof](https://twitter.com/ndeloof) pour le livre [Apache Maven](http://www.amazon.fr/dp/2744024945) écrit avec [Arnaud Héritier](https://twitter.com/aheritier).
+
+**Combien avez-vous touché pour ce livre&nbsp;?**
+
+> On a touché chacun ~1500€ je crois, soit 1 euro par exemplaire - au pourcentage, divisé par deux imposable tout ça, soit de quoi ne pas avoir envie de recommencer :)
+
+**Pour vos prochains livres, voulez-vous continuer de passer par un éditeur&nbsp;?**
+
+> Certainement pas. J'ai d'ailleurs fait l'erreur d'accepter pour Packt un livre sur cloudbees (déjà obsolète) et ça a été un enfer.
+> Pearson nous laissait faire relativement à notre sauce avec un unique contact chez eux, ça a pas mal aidée.
+> Chez Packt j'ai changé 3 fois de responsable du projet et été en contact avec 12 personnes différentes, dont un relecteur qui a commencé au chapitre 8 et indiqué "ce n'est pas très clair, il faudrait introduire ces notions" (ou lire les chapitres précédents ?)
+
+Ensuite [Antonio Goncalvès](https://twitter.com/agoncal) pour sa [série de livres sur JEE](http://antoniogoncalves.org/category/books/). Voici le récit de son expérience :
+
+> Pour faire simple, le monde de l'édition est à la ramasse (j'ai bossé directement avec Eyrolles et APress et je sais ce qui se passe derrière PackT et Oreilly... ils font tous pareil)&nbsp;: ils ont de moins en moins d'employés, la qualité chute, le passage au numérique se fait aux forceps, le suivi est miséreux, la relecture quasi inexistante et les contraintes multiples.
+> Pour la rémunération, c'est simple&nbsp;: l'auteur touche 8/10/12% du prix... EDITEUR !!! Donc, mon livre est à 49$, prix éditeur 22$ et moi je touche 2.2$ (c'est à dire 1.8€). Le règlement se fait au trimestre, et t'es content de toucher tes 2.000€.
+
+Moralité&nbsp;: des auteurs reconnus, sortant un livre de référence sur des technologies universellement utilisées, n'ont pas gagné plus d'argent que nous avec ce modeste livre vendu par nous-même dans des proportions infiniment plus faibles. Et au-delà de la rémunération, ils ont mal vécu leur relation éditeur. Suite à notre discusssion, Antonio Goncalvès vient d'ailleurs de publier [un article édifiant sur la censure exercée par son éditeur](http://antoniogoncalves.org/2014/09/16/the-uncensored-java-ee-7-book/) qu'il gardait sous le coude depuis plus d'un an.
+
+Si c'est donc pour ne pas gagner plus, et subir des pressions éditoriales, nous ne voyons pas l'intérêt de passer par le circuit traditionnel de l'édition. Encore un domaine qui souffre de la transition au numérique, comme le soulignait Antonio, et semble désormais obsolète. Un éditeur prend une marge démesurée pour lutter contre le piratage et vous offir une exposition. Nous avons pourtant constaté avec cette expérience de livre technique DIY qu'on peut vraiment vendre des produits numériques sans DRM, et que Twitter et Google nous ammenant sur notre _landing page_ vaut dans notre cas une exposition tout aussi importante que celle des distributeurs traditionnels. Alors imaginez si vous savez faire des landing pages bien plus jolies et vendeuses que la nôtre! :p
+
+Vous savez ce qu'il vous reste à faire pour votre prochain livre&nbsp;: DIY&nbsp;! \o/
+
+<p style="text-align: center;">
+<img class="img-responsive" src="/assets/images/books/writer.gif" alt="yeah" />
+</p>
 
 <script type="text/javascript" src="https://www.google.com/jsapi"></script>
 <script type="text/javascript">
@@ -36,39 +93,40 @@ bla bla bla bla bla bla
 		
 		var dataVentes = new google.visualization.DataTable();
 		dataVentes.addColumn('string', 'Date');
-		dataVentes.addColumn('number', 'Ventes HT');
+		dataVentes.addColumn('number', 'Nombre de ventes');
+		dataVentes.addColumn('number', 'Montant HT des ventes');
 		dataVentes.addColumn({type:'string', role:'annotation'});
 		dataVentes.addColumn({type:'string', role:'annotationText'});
 		dataVentes.addRows([
-			['01/09', 4.00, 'T', 'Nos tests en production'],
-			['02/09', 846.33, 'J', 'Le jour J de la mise en vente'],
-			['03/09', 641.33, null, null],
-			['04/09', 528.48, null, null],
-			['05/09', 374.33, null, null],
-			['06/09', 203.33, null, null],
-			['07/09', 143.00, null, null],
-			['08/09', 315.50, 'M', 'Sortie de la version MOBI'],
-			['09/09', 191.83, null, null],
-			['10/09', 88.00, null, null],
-			['11/09', 61.00, null, null],
-			['12/09', 151.00, null, null],
-			['13/09', 30.00, null, null],
-			['14/09', 44.00, null, null],
-			['15/09', 57.00, null, null],
-			['16/09', 42.00, null, null],
-			['17/09', 19.00, null, null]
+			['01/09', 2, 4.00, 'T', 'Nos tests en production'],
+			['02/09', 87, 846.33, 'J', 'Le jour J de la mise en vente'],
+			['03/09', 64, 641.33, null, null],
+			['04/09', 66, 528.48, null, null],
+			['05/09', 43, 374.33, null, null],
+			['06/09', 18, 203.33, null, null],
+			['07/09', 14, 143.00, null, null],
+			['08/09', 28, 315.50, 'M', 'Sortie de la version MOBI'],
+			['09/09', 18, 191.83, null, null],
+			['10/09', 10, 88.00, null, null],
+			['11/09', 6, 61.00, null, null],
+			['12/09', 12, 151.00, null, null],
+			['13/09', 2, 30.00, null, null],
+			['14/09', 4, 44.00, null, null],
+			['15/09', 7, 57.00, null, null],
+			['16/09', 4, 42.00, null, null],
+			['17/09', 3, 19.00, null, null]
 		]);
 		var optionsVentes = {
-			title: 'Volume en euros des ventes HT par jour',
+			title: 'Volume des ventes par jour',
 			legend: {
-				position: 'none'
+				position: 'top'
 			},
-			chartArea:{width:'85%',height:'80%'},
+			chartArea:{width:'80%',height:'80%'},
 			curveType: 'function'
 		};
 
 		var formatter = new google.visualization.NumberFormat({decimalSymbol: ',', suffix: '€', groupingSymbol: '.'});
-		formatter.format(dataVentes, 1);
+		formatter.format(dataVentes, 2);
 
 		var chartVentes = new google.visualization.LineChart(document.getElementById('chart_ventes'));
 		chartVentes.draw(dataVentes, optionsVentes);
