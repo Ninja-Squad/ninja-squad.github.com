@@ -14,13 +14,7 @@ bla bla bla bla bla bla
 
 ## Ventes par jour
 
-### Version Google Charts
-
-<div id="chart_ventes" style="width: 100%;"></div>
-
-### Version Infogr.am
-
-<script id="infogram_0_ebook--ventes-en-montants" src="//e.infogr.am/js/embed.js" type="text/javascript"></script><div style="width:100%;border-top:1px solid #acacac;padding-top:3px;font-family:Arial;font-size:10px;text-align:center;"><a target="_blank" href="//infogr.am/ebook--ventes-en-montants" style="color:#acacac;text-decoration:none;">Volume en euros des ventes par jour</a> | <a style="color:#acacac;text-decoration:none;" href="//infogr.am" target="_blank">Create Infographics</a></div>
+<div id="chart_ventes" style="width: 100%; height: 400px;"></div>
 
 bla bla bla bla bla bla
 bla bla bla bla bla bla
@@ -31,14 +25,7 @@ bla bla bla bla bla bla
 
 ## Achats par tarifs
 
-### Version Google Charts
-
-<div id="chart_tarifs" style="width: 100%;"></div>
-
-### Version Infogr.am
-
-<script id="infogram_0_ebook--volume-par-tarif" src="//e.infogr.am/js/embed.js" type="text/javascript"></script><div style="width:100%;border-top:1px solid #acacac;padding-top:3px;font-family:Arial;font-size:10px;text-align:center;"><a target="_blank" href="//infogr.am/ebook--volume-par-tarif" style="color:#acacac;text-decoration:none;">Nombre d'achats par tarif</a> | <a style="color:#acacac;text-decoration:none;" href="//infogr.am" target="_blank">Create Infographics</a></div>
-
+<div id="chart_tarifs" style="width: 100%; height: 400px;"></div>
 
 <script type="text/javascript" src="https://www.google.com/jsapi"></script>
 <script type="text/javascript">
@@ -73,6 +60,10 @@ bla bla bla bla bla bla
 		]);
 		var optionsVentes = {
 			title: 'Volume en euros des ventes HT par jour',
+			legend: {
+				position: 'none'
+			},
+			chartArea:{width:'85%',height:'80%'},
 			curveType: 'function'
 		};
 
@@ -83,13 +74,13 @@ bla bla bla bla bla bla
 		chartVentes.draw(dataVentes, optionsVentes);
 		
 		var dataTarifs = new google.visualization.DataTable();
-		dataTarifs.addColumn('number', 'Tarif');
+		dataTarifs.addColumn('number', 'Tarif HT');
 		dataTarifs.addColumn('number', 'Nombre d\'achats');
 		dataTarifs.addColumn({type:'string', role:'annotation'});
 		dataTarifs.addColumn({type:'string', role:'annotationText'});
 		dataTarifs.addRows([
 			[0, 0, null, null],
-			[2.00, 88.00, 'M', 'Le prix TTC minimum'],
+			[2.00, 88.00, 'M', 'Prix minimum'],
 			[3.00, 8.00, null, null],
 			[4.00, 9.00, null, null],
 			[4.17, 1.00, null, null],
@@ -100,7 +91,7 @@ bla bla bla bla bla bla
 			[8.33, 6.00, null, null],
 			[8.33, 1.00, null, null],
 			[9.00, 3.00, null, null],
-			[10.00, 104.00, 'D1', 'Le prix par défaut initial'],
+			[10.00, 104.00, 'D1', '1er prix par défaut'],
 			[12.00, 6.00, null, null],
 			[12.50, 6.00, null, null],
 			[13.00, 9.00, null, null],
@@ -109,7 +100,7 @@ bla bla bla bla bla bla
 			[16.67, 1.00, null, null],
 			[17.00, 2.00, null, null],
 			[18.00, 1.00, null, null],
-			[20.00, 43.00, 'D2', 'Le prix par défaut dans un second temps'],
+			[20.00, 43.00, 'D2', '2nd prix par défaut'],
 			[25.00, 6.00, null, null],
 			[30.00, 5.00, null, null],
 			[35.00, 3.00, null, null],
@@ -118,18 +109,28 @@ bla bla bla bla bla bla
 		]);
 
 		var optionsTarifs = {
-			title: 'Le nombre d\'achats par tarif',
+			title: 'Le nombre d\'achats par tarif HT librement choisi',
+			legend: {
+				position: 'none'
+			},
+			bar: {groupWidth: "2"},
+			chartArea:{width:'85%',height:'80%'},
+			annotations: {
+				alwaysOutside: true
+			},
 			hAxis: {
 				title: 'Le prix HT décidé par l\'acheteur',
-				ticks: [5,10,15,20,25,30,35,40,45,50],
 				format: '#€'
+			},
+			vAxis: {
+				logScale: true
 			}
 		};
 		formatter.format(dataTarifs, 0);
 
 		var formatter = new google.visualization.NumberFormat({decimalSymbol: ',', suffix: '€', groupingSymbol: '.'});
 
-		var chartTarifs = new google.visualization.LineChart(document.getElementById('chart_tarifs'));
+		var chartTarifs = new google.visualization.ColumnChart(document.getElementById('chart_tarifs'));
 		chartTarifs.draw(dataTarifs, optionsTarifs);
 	}
 </script>
