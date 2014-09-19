@@ -58,13 +58,13 @@ On constate plusieurs choses&nbsp;:
 - Seulement 1/5 des acheteurs donnent le prix minimum. Je trouve ça magique&nbsp;: ils font l'effort de faire un geste et de récompenser notre travail et l'association. Voilà de quoi redonner foi dans l'Humanité.
 - La majorité des acheteurs conservent le prix par défaut. Nous l'avions initialement valorisé à 10€ (`D1` sur le graphe). Puis au bout d'une semaine, pour voir, nous l'avons positionné à 20€ (`D2` sur le graphe). La proposition initiale a donc beaucoup de poids dans le choix de l'acheteur. C'est surprenant, mais bon à savoir&nbsp;! :p 
 - Quelques rares personnes ont donné des tarifs démesurés : 30€, 50€. Il faut avouer que ce sont pour l'essentiel des connaissances.
-- Et enfin, observation la plus importantes : sept personnes ont souhaiter donner 8,33€ HT (`P` sur le graphe), probablement pour payer 10€ TTC tout rond. Ne négligez donc pas la proportion de la population souffrant de <abbr title="Troubles Obsessionnels Compulsifs">TOCs</abbr> :p.
+- Et enfin, observation la plus importante&nbsp;: sept personnes ont donné 8,33€ HT (`P` sur le graphe), probablement pour payer 10€ TTC tout rond. Ne négligez donc pas la proportion de la population souffrant de <abbr title="Troubles Obsessionnels Compulsifs">TOCs</abbr> :p.
 
 OK, donc le livre se vend bien, les gens sont prêts à payer un prix honnête. Mais alors, pourquoi ne pas le sortir chez un éditeur&nbsp;?
 
 ## Et les maisons d'éditions&nbsp;?!
 
-Si ce livre s'est bien vendu - du moins à notre petite échelle - on pourait regretter de ne pas l'avoir sorti dans le circuit traditionnel, pour qu'il soit en vente partout et bénéficie du pouvoir de promotion de l'éditeur et des distributeurs.
+Si ce livre s'est bien vendu&nbsp;- du moins à notre petite échelle&nbsp;- on pourait regretter de ne pas l'avoir sorti dans le circuit traditionnel, pour qu'il soit en vente partout et bénéficie du pouvoir de promotion de l'éditeur et des distributeurs.
 
 Si la question ne s'était pas posée parce qu'on voulait le faire en mode DIY, par curiosité, nous avons interrogé des amis qui ont déjà sorti des livres techniques de références par le circuit traditionnel.
 
