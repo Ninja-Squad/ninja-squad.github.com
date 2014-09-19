@@ -6,7 +6,7 @@ tags: ["ebook","angularjs", "bilan"]
 ---
 
 Après une [longue et laborieuse genèse](/2014/09/02/devenez-un-ninja-avec-angularjs-ebook/ "La genèse du livre Devenez un Ninja avec AngularJS"), Ninja Squad a finalement mis en vente son premier livre&nbsp;: un [ebook sur AngularJS](https://books.ninja-squad.com/ "Ebook AngularJS à prix libre et pour une bonne cause, par Ninja Squad").  
-Si nous n'en sommes déjà pas peu fier, il nous parait aussi intéressant de vous faire un bilan sur les ventes. Car, caractéristique notable qui n'aura échappée à personne&nbsp;: il était vendu à *prix libre*, et en soutien optionnelle à une cause caritative ([Humble Bundle-style](https://www.humblebundle.com/)).
+Si nous n'en sommes déjà pas peu fiers, il nous parait aussi intéressant de vous faire un bilan sur les ventes. Car, caractéristique notable qui n'aura échappé à personne&nbsp;: il était vendu à *prix libre*, et en soutien optionnelle à une cause caritative ([Humble Bundle-style](https://www.humblebundle.com/)).
 
 Alors, est-ce que ça marche un prix libre&nbsp;?
 
@@ -25,7 +25,7 @@ Bref, on annonce le livre et le site de vente, qui propose le prix libre et l'ac
 
 Bien sûr, ce rythme a très vite chuté, pour atteindre des volumes assez dérisoires passé la première semaine. On ne sait effectivement pas tellement communiquer en dehors de notre cercle communautaire. On constate un petit pic le 8 septembre, quand on a finalement ajouté une version MOBI, en plus des EPUB et PDF.
 
-A ce jour du 18 septembre 2O14, après trois semaines, on a fait **385 ventes pour un total de 3800€ HT**.
+A ce jour du 18 septembre 2014, après trois semaines, on a fait **385 ventes pour un total de 3800€ HT**.
 
 L'autre bonne nouvelle, c'est qu'on a aussi récolté **près de 1200€ pour l'association** [Docteur Souris](http://www.docteursouris.fr/). \o/
 
@@ -49,7 +49,7 @@ On constate plusieurs choses&nbsp;:
 - La majorité des acheteurs conservent le prix par défaut. Nous l'avions initialement valorisé à 10€ (`D1` sur le graphe). Puis au bout d'une semaine, pour voir, nous l'avons positionné à 20€ (`D2` sur le graphe). C'est surprenant, mais bon à savoir&nbsp;! :p La proposition initiale a donc beaucoup de poids dans le choix de l'acheteur.
 - Quelques rares personnes ont donné des tarifs démesurés : 30€, 50€. Il faut avouer que ce sont pour l'essentiel des connaissances. 
 
-OK, donc le livre se vend bien, les gens sont prêts à donner des tarifs honnètes. Mais alors, pourquoi ne pas le sortir chez un éditeur&nbsp;?
+OK, donc le livre se vend bien, les gens sont prêts à payer un prix honnête. Mais alors, pourquoi ne pas le sortir chez un éditeur&nbsp;?
 
 ## Pourquoi ne pas inonder les étales des libraires&nbsp;?!
 
@@ -66,17 +66,17 @@ Tout d'abord, [Nicolas De Loof](https://twitter.com/ndeloof) pour le livre [Apac
 **Pour vos prochains livres, voulez-vous continuer de passer par un éditeur&nbsp;?**
 
 > Certainement pas. J'ai d'ailleurs fait l'erreur d'accepter pour Packt un livre sur cloudbees (déjà obsolète) et ça a été un enfer.
-> Pearson nous laissait faire relativement à notre sauce avec un unique contact chez eux, ça a pas mal aidée.
+> Pearson nous laissait faire relativement à notre sauce avec un unique contact chez eux, ça a pas mal aidé.
 > Chez Packt j'ai changé 3 fois de responsable du projet et été en contact avec 12 personnes différentes, dont un relecteur qui a commencé au chapitre 8 et indiqué "ce n'est pas très clair, il faudrait introduire ces notions" (ou lire les chapitres précédents ?)
 
-Ensuite [Antonio Goncalvès](https://twitter.com/agoncal) pour sa [série de livres sur JEE](http://antoniogoncalves.org/category/books/). Voici le récit de son expérience :
+Ensuite [Antonio Goncalvès](https://twitter.com/agoncal) pour sa [série de livres sur Java EE](http://antoniogoncalves.org/category/books/). Voici le récit de son expérience :
 
 > Pour faire simple, le monde de l'édition est à la ramasse (j'ai bossé directement avec Eyrolles et APress et je sais ce qui se passe derrière PackT et Oreilly... ils font tous pareil)&nbsp;: ils ont de moins en moins d'employés, la qualité chute, le passage au numérique se fait aux forceps, le suivi est miséreux, la relecture quasi inexistante et les contraintes multiples.
 > Pour la rémunération, c'est simple&nbsp;: l'auteur touche 8/10/12% du prix... EDITEUR !!! Donc, mon livre est à 49$, prix éditeur 22$ et moi je touche 2.2$ (c'est à dire 1.8€). Le règlement se fait au trimestre, et t'es content de toucher tes 2.000€.
 
 Moralité&nbsp;: des auteurs reconnus, sortant un livre de référence sur des technologies universellement utilisées, n'ont pas gagné plus d'argent que nous avec ce modeste livre vendu par nous-même dans des proportions infiniment plus faibles. Et au-delà de la rémunération, ils ont mal vécu leur relation éditeur. Suite à notre discusssion, Antonio Goncalvès vient d'ailleurs de publier [un article édifiant sur la censure exercée par son éditeur](http://antoniogoncalves.org/2014/09/16/the-uncensored-java-ee-7-book/) qu'il gardait sous le coude depuis plus d'un an.
 
-Si c'est donc pour ne pas gagner plus, et subir des pressions éditoriales, nous ne voyons pas l'intérêt de passer par le circuit traditionnel de l'édition. Encore un domaine qui souffre de la transition au numérique, comme le soulignait Antonio, et semble désormais obsolète. Un éditeur prend une marge démesurée pour lutter contre le piratage et vous offir une exposition. Nous avons pourtant constaté avec cette expérience de livre technique DIY qu'on peut vraiment vendre des produits numériques sans DRM, et que Twitter et Google nous ammenant sur notre _landing page_ vaut dans notre cas une exposition tout aussi importante que celle des distributeurs traditionnels. Alors imaginez si vous savez faire des landing pages bien plus jolies et vendeuses que la nôtre! :p
+Si c'est donc pour ne pas gagner plus, et subir des pressions éditoriales, nous ne voyons pas l'intérêt de passer par le circuit traditionnel de l'édition. Encore un domaine qui souffre de la transition au numérique, comme le soulignait Antonio, et semble désormais obsolète. Un éditeur prend une marge démesurée pour lutter contre le piratage et vous offir une exposition. Nous avons pourtant constaté avec cette expérience de livre technique DIY qu'on peut vraiment vendre des produits numériques sans DRM, et que Twitter et Google nous amenant sur notre _landing page_ vaut dans notre cas une exposition tout aussi importante que celle des distributeurs traditionnels. Alors imaginez si vous savez faire des landing pages bien plus jolies et vendeuses que la nôtre&nbsp;! :p
 
 Vous savez ce qu'il vous reste à faire pour votre prochain livre&nbsp;: DIY&nbsp;! \o/
 
