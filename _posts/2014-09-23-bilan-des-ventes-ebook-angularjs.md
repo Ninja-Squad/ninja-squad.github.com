@@ -2,7 +2,7 @@
 layout: post
 title: Bilan des ventes de l'ebook AngularJS
 author: clacote
-tags: ["ebook","angularjs", "bilan"]
+tags: ["ebook", "livre", "angularjs", "bilan", "edition"]
 ---
 
 Après une [longue et laborieuse genèse](/2014/09/02/devenez-un-ninja-avec-angularjs-ebook/ "La genèse du livre Devenez un Ninja avec AngularJS"), Ninja Squad a finalement mis en vente son premier livre&nbsp;: un [ebook sur AngularJS](https://books.ninja-squad.com/ "Ebook AngularJS à prix libre et pour une bonne cause, par Ninja Squad").  
@@ -30,9 +30,9 @@ Bref, on annonce le livre et le site de vente, qui propose le prix libre et l'ac
 
 Bien sûr, ce rythme a très vite chuté, pour atteindre des volumes assez dérisoires passé la première semaine. On ne sait effectivement pas tellement communiquer en dehors de notre cercle communautaire. On constate un petit pic le 8 septembre, quand on a finalement ajouté une version MOBI, en plus des EPUB et PDF.
 
-A ce jour du 18 septembre 2014, après trois semaines, on a fait **385 ventes pour un total de 3800€ HT**.
+A ce jour du 23 septembre 2014, après trois semaines, on a fait **4300 visiteurs unique, et 392 ventes pour un total de 3900€ HT**.
 
-L'autre bonne nouvelle, c'est qu'on a aussi récolté **près de 1200€ pour l'association** [Docteur Souris](http://www.docteursouris.fr/). \o/
+L'autre bonne nouvelle, c'est qu'on a aussi récolté **plus de 1200€ pour l'association** [Docteur Souris](http://www.docteursouris.fr/). \o/
 
 Pour nous, c'était inespéré.
 
@@ -125,7 +125,11 @@ Vous savez ce qu'il vous reste à faire pour votre prochain livre&nbsp;: DIY&nbs
 			['14/09', 4, 44.00, null, null],
 			['15/09', 7, 57.00, null, null],
 			['16/09', 4, 42.00, null, null],
-			['17/09', 3, 19.00, null, null]
+			['17/09', 3, 19.00, null, null],
+			['18/09', 5, 60.00, null, null],
+			['19/09', 5, 52.00, null, null],
+			['20/09', 2, 21.00, null, null],
+			['21/09', 1, 20.00, null, null]
 		]);
 		var optionsVentes = {
 			title: 'Volume des ventes par jour',
@@ -149,27 +153,28 @@ Vous savez ce qu'il vous reste à faire pour votre prochain livre&nbsp;: DIY&nbs
 		dataTarifs.addColumn({type:'string', role:'annotationText'});
 		dataTarifs.addRows([
 			[0, 0, null, null],
-			[2.00, 88.00, 'M', 'Prix minimum'],
+			[2.00, 90.00, 'M', 'Prix minimum'],
 			[3.00, 8.00, null, null],
 			[4.00, 9.00, null, null],
 			[4.17, 1.00, null, null],
-			[5.00, 53.00, null, null],
+			[5.00, 56.00, null, null],
 			[6.00, 1.00, null, null],
 			[7.00, 3.00, null, null],
-			[8.00, 11.00, null, null],
+			[8.00, 12.00, null, null],
 			[8.33, 7.00, 'P', 'Quelques psychopathes'],
 			[9.00, 3.00, null, null],
-			[10.00, 104.00, 'D1', '1er prix par défaut'],
+			[10.00, 105.00, 'D1', '1er prix par défaut'],
 			[12.00, 6.00, null, null],
 			[12.50, 6.00, null, null],
 			[13.00, 9.00, null, null],
 			[14.00, 3.00, null, null],
-			[15.00, 11.00, null, null],
+			[15.00, 12.00, null, null],
+			[16.00, 1.00, null, null],
 			[16.67, 1.00, null, null],
 			[17.00, 2.00, null, null],
 			[18.00, 1.00, null, null],
-			[20.00, 43.00, 'D2', '2nd prix par défaut'],
-			[25.00, 6.00, null, null],
+			[20.00, 46.00, 'D2', '2nd prix par défaut'],
+			[25.00, 7.00, null, null],
 			[30.00, 5.00, null, null],
 			[35.00, 3.00, null, null],
 			[40.00, 1.00, null, null],
