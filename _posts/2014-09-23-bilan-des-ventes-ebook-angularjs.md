@@ -30,13 +30,13 @@ Bref, on annonce le livre et le site de vente, qui propose le prix libre et l'ac
 
 Bien sûr, ce rythme a très vite chuté, pour atteindre des volumes assez dérisoires passé la première semaine. On ne sait effectivement pas tellement communiquer en dehors de notre cercle communautaire. On constate un petit pic le 8 septembre, quand on a finalement ajouté une version MOBI, en plus des EPUB et PDF.
 
-A ce jour du 23 septembre 2014, après trois semaines, on a fait **4300 visiteurs unique, et 392 ventes pour un total de 3900€ HT**.
+A ce jour du 23 septembre 2014, après trois semaines, on a fait **4300 visiteurs unique, et 395 ventes pour un total de plus de 3900€ HT**.
 
 L'autre bonne nouvelle, c'est qu'on a aussi récolté **plus de 1200€ pour l'association** [Docteur Souris](http://www.docteursouris.fr/). \o/
 
 Pour nous, c'était inespéré.
 
-OK, donc on peut dire que ça a fonctionné. Mais si le prix est libre, combien donnent les acheteurs&nbsp;?
+On peut dire que ça a fonctionné. Mais si le prix est libre, combien donnent les acheteurs&nbsp;?
 
 ## T'aurais pas 2 euros&nbsp;?
 
@@ -129,7 +129,8 @@ Vous savez ce qu'il vous reste à faire pour votre prochain livre&nbsp;: DIY&nbs
 			['18/09', 5, 60.00, null, null],
 			['19/09', 5, 52.00, null, null],
 			['20/09', 2, 21.00, null, null],
-			['21/09', 1, 20.00, null, null]
+			['21/09', 1, 20.00, null, null],
+			['22/09', 3, 40.00, null, null]
 		]);
 		var optionsVentes = {
 			title: 'Volume des ventes par jour',
@@ -163,7 +164,7 @@ Vous savez ce qu'il vous reste à faire pour votre prochain livre&nbsp;: DIY&nbs
 			[8.00, 12.00, null, null],
 			[8.33, 7.00, 'P', 'Quelques psychopathes'],
 			[9.00, 3.00, null, null],
-			[10.00, 105.00, 'D1', '1er prix par défaut'],
+			[10.00, 107.00, null, null],
 			[12.00, 6.00, null, null],
 			[12.50, 6.00, null, null],
 			[13.00, 9.00, null, null],
@@ -173,14 +174,13 @@ Vous savez ce qu'il vous reste à faire pour votre prochain livre&nbsp;: DIY&nbs
 			[16.67, 1.00, null, null],
 			[17.00, 2.00, null, null],
 			[18.00, 1.00, null, null],
-			[20.00, 46.00, 'D2', '2nd prix par défaut'],
+			[20.00, 47.00, 'D2', '2nd prix par défaut'],
 			[25.00, 7.00, null, null],
 			[30.00, 5.00, null, null],
 			[35.00, 3.00, null, null],
 			[40.00, 1.00, null, null],
 			[50.00, 3.00, null, null]
 		]);
-
 		var optionsTarifs = {
 			title: 'Le nombre d\'achats par tarif HT librement choisi',
 			legend: {
