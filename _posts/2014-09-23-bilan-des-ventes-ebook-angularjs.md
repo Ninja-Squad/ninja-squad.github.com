@@ -6,7 +6,7 @@ tags: ["ebook", "livre", "angularjs", "bilan", "edition"]
 ---
 
 Après une [longue et laborieuse genèse](/2014/09/02/devenez-un-ninja-avec-angularjs-ebook/ "La genèse du livre Devenez un Ninja avec AngularJS"), Ninja Squad a finalement mis en vente son premier livre&nbsp;: un [ebook sur AngularJS](https://books.ninja-squad.com/ "Ebook AngularJS à prix libre et pour une bonne cause, par Ninja Squad").  
-Si nous n'en sommes déjà pas peu fiers, il nous paraît aussi intéressant de vous faire un bilan sur les ventes. Car, caractéristique notable qui n'aura échappé à personne&nbsp;: il est vendu à **prix libre**, et en soutien optionnelle à une cause caritative ([Humble Bundle-style](https://www.humblebundle.com/)).
+Si nous n'en sommes déjà pas peu fiers, il nous paraît aussi intéressant de vous faire un bilan sur les ventes. Car, caractéristique notable qui n'aura échappé à personne&nbsp;: il est vendu à **prix libre**, et en soutien optionnel à une cause caritative ([Humble Bundle-style](https://www.humblebundle.com/)).
 
 Alors, est-ce que ça marche un prix libre&nbsp;?
 
