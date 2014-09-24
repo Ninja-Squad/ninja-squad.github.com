@@ -1,8 +1,8 @@
 <div class="page-header">
-  <h1>{{ page.title }}</h1>
+  <h1 itemprop="name">{{ page.title }}</h1>
 </div>
 <div class="row">
-  <div class="date span2"><span><i class="icon-time"></i>{{ page.date | date:"%Y-%m-%d" }}</span></div>
+  <div class="date span2"><span itemprop="datePublished" content="{{ page.date | date:"%Y-%m-%d" }}"><i class="icon-time"></i>{{ page.date | date:"%Y-%m-%d" }}</span></div>
   <div class="span4">
   {% unless page.tags == empty %}
     <ul class="tag_box inline">
@@ -22,17 +22,19 @@
   <div class="span2 text-center">
     <br/>
     <div class="authors">
+      <div itemprop="author" itemscope itemtype="http://schema.org/Person">
       {% for auth in page.author %}
       {% assign author = site.authors[auth] %}
       <p>
-        <img class="img-circle" alt="" style="width:60px" src="http://en.gravatar.com/avatar/{{author.gravatar}}&amp;size=60">
+        <img itemprop="image" class="img-circle" alt="" style="width:60px" src="http://en.gravatar.com/avatar/{{author.gravatar}}&amp;size=60">
       </p>
-      <h4>{{author.name}}</h4>
+      <h4 itemprop="name">{{author.name}}</h4>
       <ul class="nav nav-list">
         <li><a href="http://www.github.com/{{author.github}}">Github</a></li>
         <li><a href="http://www.twitter.com/{{author.twitter}}">Twitter</a></li>
       </ul>
       {% endfor %}
+      </div>
     </div>
     <br/>
     <div id="promotion" class="training-dates">
