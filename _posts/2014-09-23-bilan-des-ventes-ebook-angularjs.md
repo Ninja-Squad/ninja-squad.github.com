@@ -3,6 +3,7 @@ layout: post
 title: Bilan des ventes de l'ebook AngularJS
 author: clacote
 tags: ["ebook", "livre", "angularjs", "bilan", "edition"]
+description: Alors, est-ce que ça marche de vendre un ebook sans DRM à prix libre? Combien payent les acheteurs, quel est le volume de ventes? Des auteurs de livres sortis via le circuit traditionnel des maisons d'édition viennent également apporter leur témoignage.
 ---
 
 Après une [longue et laborieuse genèse](/2014/09/02/devenez-un-ninja-avec-angularjs-ebook/ "La genèse du livre Devenez un Ninja avec AngularJS"), Ninja Squad a finalement mis en vente son premier livre&nbsp;: un [ebook sur AngularJS](https://books.ninja-squad.com/ "Ebook AngularJS à prix libre et pour une bonne cause, par Ninja Squad").  
