@@ -29,7 +29,7 @@ Alors plutôt que brader nos formations&nbsp;- qui ne le méritent pas&nbsp;- **
 On offrira désormais sur toutes nos formations Ninja Squad une **réduction de -30%** pour&nbsp;:
 
 - Les organisateurs bénévoles d'événements (*user group*, conférence, *meetup*, ...).
-- Les *commiters* sur des projets open source.
+- Les *committers* sur des projets open source.
 - Les indépendants, qui eux ne bénéficient pas du <abbr title="Droit Individuel à la Formation">DIF</abbr>.
 - Les demandeurs d'emploi, qui veulent se former aux technologies payantes.
 
