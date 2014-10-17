@@ -201,8 +201,6 @@ Vous savez ce qu'il vous reste à faire pour votre prochain livre&nbsp;: DIY&nbs
 		};
 		formatter.format(dataTarifs, 0);
 
-		var formatter = new google.visualization.NumberFormat({decimalSymbol: ',', suffix: '€', groupingSymbol: '.'});
-
 		var chartTarifs = new google.visualization.ColumnChart(document.getElementById('chart_tarifs'));
 		chartTarifs.draw(dataTarifs, optionsTarifs);
 	}
