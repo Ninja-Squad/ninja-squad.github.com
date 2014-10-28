@@ -95,12 +95,12 @@ Si ce type n'est pas supporté par le navigateur, un champ texte sera utilisé e
       <span ng-show="eventForm.startTime.$error.max">Event should be before 6PM</span>
     </form>
 
-Le modèle lié est une Date JS avec la date du 1 Janvier 1900 et l'heure saisie.
+Le modèle lié est une Date JS avec la date du 1 Janvier 1970 et l'heure saisie.
 
 La version 1.3 supporte également les champs 'dateTimeLocal', qui sont donc une date et une heure. Si ce type n'est pas supporté par le navigateur, un champ texte sera utilisé et le format ISO sera yyyy-MM-ddTHH:mm :
 
     <form name="eventForm">
-      <input name="startDate" type="dateTimeLocal" ng-required="true" ng-model="event.startDate"
+      <input name="startDate" type="datetime-local" ng-required="true" ng-model="event.startDate"
         min="2014-06-01T00:00" max="2014-06-30T23:59">
       <span ng-show="eventForm.startDate.$error.dateTimeLocal">Date is incorrect</span>
       <span ng-show="eventForm.startDate.$error.min">Event should be after May</span>
