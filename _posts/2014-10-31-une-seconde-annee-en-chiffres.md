@@ -19,8 +19,8 @@ Non, nos tarifs n'ont pas augmenté dans ces proportions&nbsp;! :p
 
 Si une activité plus importante sur toute l'année est la raison principale de cette progression, ce n'est pas la seule&nbsp;: [nos formations](http://ninja-squad.fr/training "Les formations Ninja Squad") se sont aussi très bien vendues, beaucoup plus que l'année dernière. Cédric Exbrayat a en effet écumé la France avec ses nouvelles formations [Git](http://ninja-squad.fr/training/git "Formation Git par Ninja Squad") et [AngularJS](http://ninja-squad.fr/training/angularjs "Formation AngularJS par Ninja Squad"). Pour la première fois, nous avons enfin rentabilisé des supports \o/&nbsp;!
 
-Le seul regret sur notre activité de formations concerne l'administratif que cela engendre. Être un organisme aggréé demande d'établir des conventions, les faire signer, remettre des diplômes, faire un bilan annuel. Il faut faire avec, car il n'est pas question de ne pas être aggréé&nbsp;: l'immense majorité des entreprises l'exigent pour faire valoir leurs droits à la formation.  
-Aussi, les formations multiplient les facturations. Ca pourrait être un aspect plutôt cool. Sauf que beaucoup d'entreprises passent par des <abbr title="Organismes Paritaires Collecteurs Agréés">OPCA</abbr>. Et il s'avère que ces organismes, dont le métier est pourtant de facturer des organismes de formation (comme nous), sont extrèmement pénibles et lents et procéduriers (I'm looking at you, AgefosPME). Depuis, on demande à nos gentils clients, dans la mesure du possible, de nous payer directement et de se faire rembourser par leur OPCA, qui dans cet ordre sont beaucoup plus enclins à satisfaire une entreprise qui les finance plutôt qu'une bande de ninjas qui attendent d'être payés.
+Le seul regret sur notre activité de formations concerne l'administratif que cela engendre. Être un organisme agréé demande d'établir des conventions, les faire signer, remettre des diplômes, faire un bilan annuel. Il faut faire avec, car il n'est pas question de ne pas être agréé&nbsp;: l'immense majorité des entreprises l'exigent pour faire valoir leurs droits à la formation.  
+Aussi, les formations multiplient les facturations. Ca pourrait être un aspect plutôt cool. Sauf que beaucoup d'entreprises passent par des <abbr title="Organismes Paritaires Collecteurs Agréés">OPCA</abbr>. Et il s'avère que ces organismes, dont le métier est pourtant de facturer des organismes de formation (comme nous), sont extrêmement pénibles et lents et procéduriers (I'm looking at you, AgefosPME). Depuis, on demande à nos gentils clients, dans la mesure du possible, de nous payer directement et de se faire rembourser par leur OPCA, qui dans cet ordre sont beaucoup plus enclins à satisfaire une entreprise qui les finance plutôt qu'une bande de ninjas qui attendent d'être payés.
 
 On a donc facturé à plein régime. Mais l'année dernière, on avait plein d'activités non rémunérées. Serions-nous alors devenus de vénaux capitalistes qui ne pensent qu'à la facturation&nbsp;?
 
@@ -71,7 +71,7 @@ Ces dépenses de fonctionnement ne sont pas les seules dépenses&nbsp;: il faut 
 
 ## Nos charges, impôts, et taxes
 
-Ninja Squad est fier de contribuer à la nation, Ninja Squad paye sa dime. Et non, bien qu'on ne cesse de nous le répéter régulièrement&nbsp;: nous ne sommes pas exonérés les deux premières années.
+Ninja Squad est fier de contribuer à la nation, Ninja Squad paye sa dîme. Et non, bien qu'on ne cesse de nous le répéter régulièrement&nbsp;: nous ne sommes pas exonérés les deux premières années.
 
 <br/>
 
@@ -85,7 +85,7 @@ On s'est en effet distribué 145k€ en salaires bruts.
 
 Depuis l'année dernière, et sur l'intégralité de cet exercice, nous avions chacun des salaires de 2500€ nets. Et comme l'année dernière, nous avons attendu notre résultat préliminaire pour savoir combien nous nous distribuerions en prime. Cette année, ce résultat préliminaire s'élevait à 100k€ environ. Nous nous sommes donc distribué environ ~60k€ de primes brutes (sois un peu plus de 10k€ nets chacun après déductions des charges patronales et salariale), pour atteindre un résultat de 38k€, sur lesquels nous avons payé 5700€ d'impôt société avant de mettre le reste en réserve.
 
-Si cette pluie de chiffre ne vous a toujours pas comblé (pervers!), nous pouvons aussi vous diriger vers les sites d'information légales qui détaillent les bilans des entreprise, par exemple `societe.com` où [le bilan de Ninja Squad](http://www.societe.com/bilan/ninja-squad/752513465201406301.html "Le bilan 2014 de Ninja Squad sur societe.com") est accessible. 
+Si cette pluie de chiffres ne vous a toujours pas comblé (pervers!), nous pouvons aussi vous diriger vers les sites d'information légales qui détaillent les bilans des entreprise, par exemple `societe.com` où [le bilan de Ninja Squad](http://www.societe.com/bilan/ninja-squad/752513465201406301.html "Le bilan 2014 de Ninja Squad sur societe.com") est accessible. 
 
 Et si vraiment, vous êtes passionnés par la comptabilité (?!), on peut pousser la transparence jusqu'à vous fournir notre bilan complet et officiel&nbsp;: voici [46 pages bourrées de chiffres et de tableaux indigestes](/assets/bilan-ninja-squad-2014.pdf "Le bilan 2013-2014 complet et officiel de Ninja Squad").
 
