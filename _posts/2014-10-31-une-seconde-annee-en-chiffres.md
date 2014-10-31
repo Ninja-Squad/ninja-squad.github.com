@@ -71,7 +71,7 @@ Ces dépenses de fonctionnement ne sont pas les seules dépenses&nbsp;: il faut 
 
 ## Nos charges, impôts, et taxes
 
-Ninja Squad est fier de contribuer à la nation, Ninja Squad paye sa dîme. Et non, bien qu'on ne cesse de nous le répéter régulièrement&nbsp;: nous ne sommes pas exonérés les deux premières années.
+Ninja Squad est fier de contribuer à l'intérêt général, Ninja Squad paye sa dîme. Et non, bien qu'on ne cesse de nous le répéter régulièrement&nbsp;: nous ne sommes pas exonérés les deux premières années.
 
 <br/>
 
@@ -106,7 +106,7 @@ Certains ninjas prévoient aussi de longs voyages autour du monde&nbsp;, d'autre
 
 <ol class="footnote">
   <li id="footnote-1">
-Cet apparté n'était pas tant destiné à faire fondre les mamans qu'à <a href="https://twitter.com/cedric_exbrayat/status/522397238145085441">énerver</a> <a href="https://twitter.com/cedric_exbrayat/status/524991106329899008">Cédric</a>.
+Cet apparté n'était pas tant destiné à faire fondre les mamans qu'à <a href="https://twitter.com/cedric_exbrayat/status/522397238145085441">provoquer</a> <a href="https://twitter.com/cedric_exbrayat/status/524991106329899008">Cédric</a>.
   </li>
 </ol>
 
