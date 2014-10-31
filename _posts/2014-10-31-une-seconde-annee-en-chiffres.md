@@ -97,10 +97,17 @@ On a aussi des projets parallèles secrets&nbsp;: un site grand public pourrait 
 
 Certains ninjas prévoient aussi de longs voyages autour du monde&nbsp;, d'autres seront parents une seconde fois (coucou Marius <3 c'est _papapa_!<sup><a href="#footnote-1">1</a></sup>)&nbsp;: cette nouvelle année s'annonce encore riche en aventures.
 
+
 <figure style="text-align: center;">
     <img class="img-responsive" src="/assets/images/we-dont-need-roads.gif" alt="Roads? Where we're going, we don't need roads!" />
     <figcaption style="text-align: center;">Roads? Where we're going, we don't need roads!</figcaption>
 </figure>
+
+
+<br/>
+**Mise à jour**
+
+On m'a fait part de mon injustice face au coût d'une fiche de paie. Je sous-estimerais le travail et les compétences nécessaires pour assurer leur conformité, notamment dans un cadre législatif qui bouge sans cesse. Et on m'invite à ne pas caricaturer le travail des comptables, comme on peut caricaturer le travail d'un développeur, qui se contenterait bien évidemment d'appuyer sur un bouton pour transformer une spécification UML en une application fonctionnelle. L'argument fait mouche; je m'excuse publiquement face à la corporation des comptables, et leur fais des bisous.
 
 <br/>
 
