@@ -2,7 +2,7 @@
 layout: post
 title: Une année en chiffres
 author: [clacote]
-tags: [ninjasquad, argent, bénéfices]
+tags: ["Ninja Squad", "bilan", "argent", "bénéfices"]
 ---
 
 Dans la série des rétrospectives sur cette première année écoulée pour Ninja Squad,
