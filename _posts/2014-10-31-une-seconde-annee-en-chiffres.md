@@ -12,10 +12,11 @@ Et [comme l’année dernière](/2013/09/20/un-an-en-chiffres/ "Le bilan financi
 
 # Qu'est-ce qu'on a fait cette année ?
 
-Cette seconde année n'a pas vu de révolutions, elle a fonctionné sur les même bases que la première année&nbsp;: quatre fondateurs, trois salariés, quatre jours de prestation par semaine, pas de locaux, pas de commerciaux, pas de managers, et vacances à volonté. Nous étions en mission toute l'année, sans être en recherche de prestations (le problème était plutôt l'inverse...). Si un ninja récemment papa est passé sur l'exercice à 80%, il s'était pété les deux poignets l'année précédente et n'avait pas travaillé plusieurs mois.
+Cette seconde année n'a pas vu de révolutions, elle a fonctionné sur les même bases que la première année&nbsp;: quatre fondateurs, trois salariés, quatre jours de prestation par semaine, pas de locaux, pas de commerciaux, pas de managers, et vacances à volonté. Nous étions en mission toute l'année, sans être en recherche de prestations (le problème était plutôt l'inverse...). Si un ninja récemment papa est passé sur l'exercice à 80%, il s'était pété les deux poignets l'année précédente et n'avait alors pas travaillé plusieurs mois.
 
 Ainsi, le chiffre d'affaire annuel est en forte progression&nbsp;: il est passé de 190k€ à 263k€, soit une augmentation de 37%.  
-Non, nos tarifs n'ont pas augmenté dans ces proportions&nbsp;! :p  
+Non, nos tarifs n'ont pas augmenté dans ces proportions&nbsp;! :p
+
 Si une activité plus importante sur toute l'année est la raison principale de cette progression, ce n'est pas la seule&nbsp;: [nos formations](http://ninja-squad.fr/training "Les formations Ninja Squad") se sont aussi très bien vendues, beaucoup plus que l'année dernière. Cédric Exbrayat a en effet écumé la France avec ses nouvelles formations [Git](http://ninja-squad.fr/training/git "Formation Git par Ninja Squad") et [AngularJS](http://ninja-squad.fr/training/angularjs "Formation AngularJS par Ninja Squad"). Pour la première fois, nous avons enfin rentabilisé des supports \o/&nbsp;!
 
 Le seul regret sur notre activité de formations concerne l'administratif que cela engendre. Être un organisme aggréé demande d'établir des conventions, les faire signer, remettre des diplômes, faire un bilan annuel. Il faut faire avec, car il n'est pas question de ne pas être aggréé&nbsp;: l'immense majorité des entreprises l'exigent pour faire valoir leurs droits à la formation.  
@@ -40,7 +41,7 @@ Mais j'en vois qui s'impatientent au fond&nbsp;: trop de bla-bla. Ils sont venus
 
 # Money, money, money
 
-263k€ de Chiffre d'Affaire sur l'exercice 2014-2015, disais-je. Comment se répartissent ces recettes&nbsp;?
+263k€ de Chiffre d'Affaire sur l'exercice 2013-2014, disais-je. Comment se répartissent ces recettes&nbsp;?
 
 ## Nos recettes
 
@@ -64,7 +65,7 @@ D'abord, pour fonctionner, Ninja Squad a du acheter des trucs&nbsp;: notre abonn
 
 <br/>
 
-Le poste de dépense qui nous est le plus douloureux, parce qu'il nous est plus ou moins imposé, ce sont les frais de comptabilité. On ne se remet toujours pas de payer 25€ pièce une fiche de paie (900€ par an...), alors que notre prestataire se contente probablement d'appuyer sur un bouton pour qu'elles sortent de l'imprimante. Certes garantir leur conformité est une valeur ajoutée, mais elle nous semble bien chère payée.
+Le poste de dépense qui nous est le plus douloureux, parce qu'il nous est plus ou moins imposé, ce sont les frais de comptabilité. On ne se remet toujours pas de payer 25€ pièce une fiche de paie (900€ par an...), alors que notre prestataire se contente probablement d'appuyer sur un bouton pour qu'elles sortent de l'imprimante. Certes garantir leur conformité est une valeur ajoutée, mais elle nous semble bien cher payée.
 
 Ces dépenses de fonctionnement ne sont pas les seules dépenses&nbsp;: il faut aussi payer des taxes.
 
@@ -90,9 +91,24 @@ Et si vraiment, vous êtes passionnés par la comptabilité (?!), on peut pousse
 
 # What's next?
 
-Le troisième et nouvel exercice est déjà bien entamé. Depuis, [notre ebook sur AngularJS](https://books.ninja-squad.com) est sorti dans les bacs virtuels, on a commencé à travailler en remote pour [un grand éditeur grenoblois](http://fr.bonitasoft.com/) en plus de [notre principal historique lyonnais](http://www.energy-pool.eu/)(<3), et on a des projets secrets&nbsp;: un site grand public pourrait sortir dans quelques semaines ou mois (mais ce n'est pas encore mûr), et d'autres idées encore plus hypothétiques.
+Le troisième et nouvel exercice est déjà bien entamé. Depuis, [notre ebook sur AngularJS](https://books.ninja-squad.com) est sorti dans les bacs virtuels, on a commencé à travailler en remote pour [un grand éditeur grenoblois](http://fr.bonitasoft.com/) en plus de [notre client historique lyonnais](http://www.energy-pool.eu/) <3 qui continue de nous faire confiance.
 
-Certains ninjas prévoient aussi de longs voyages autour du monde&nbsp;: cette nouvelle année s'annonce riche en aventures.
+On a aussi des projets parallèles secrets&nbsp;: un site grand public pourrait sortir dans quelques semaines ou mois (mais ce n'est pas encore mûr), et d'autres idées encore plus hypothétiques.
+
+Certains ninjas prévoient aussi de longs voyages autour du monde&nbsp;, d'autres seront parents une seconde fois (coucou Marius <3 c'est _papapa_!<sup><a href="#footnote-1">1</a></sup>)&nbsp;: cette nouvelle année s'annonce encore riche en aventures.
+
+<figure style="text-align: center;">
+    <img class="img-responsive" src="/assets/images/we-dont-need-roads.gif" alt="Roads? Where we're going, we don't need roads!" />
+    <figcaption style="text-align: center;">Roads? Where we're going, we don't need roads!</figcaption>
+</figure>
+
+<br/>
+
+<ol class="footnote">
+  <li id="footnote-1">
+Cet apparté n'était pas tant destiné à faire fondre les mamans qu'à <a href="https://twitter.com/cedric_exbrayat/status/522397238145085441">énerver</a> <a href="https://twitter.com/cedric_exbrayat/status/524991106329899008">Cédric</a>.
+  </li>
+</ol>
 
 <script type="text/javascript" src="https://www.google.com/jsapi"></script>
 <script type="text/javascript">
@@ -111,7 +127,8 @@ Certains ninjas prévoient aussi de longs voyages autour du monde&nbsp;: cette n
 
     var optionsRecettes = {
       title: 'Recettes de Ninja Squad - 2013-2014 : 263 231,95 €',
-      chartArea:{width:'85%',height:'80%'}
+      chartArea:{width:'85%',height:'80%'},
+      pieSliceText: 'label'
     };
 
     var formatter = new google.visualization.NumberFormat({decimalSymbol: ',', suffix: '€', groupingSymbol: ' '});
@@ -135,7 +152,10 @@ Certains ninjas prévoient aussi de longs voyages autour du monde&nbsp;: cette n
 
     var optionsDepenses = {
       title: 'Dépenses de Ninja Squad - 2013-2014 : 21 299,70 €',
-      chartArea:{width:'85%',height:'80%'}
+      chartArea:{width:'85%',height:'80%'},
+      pieSliceText: 'label',
+      slices: {  7: {offset: 0.2}
+      },
     };
     formatter.format(dataDepenses, 1);
 
@@ -152,7 +172,8 @@ Certains ninjas prévoient aussi de longs voyages autour du monde&nbsp;: cette n
 
     var optionsCharges = {
       title: 'Taxes et impôts de Ninja Squad - 2013-2014 : 57 486,98 €',
-      chartArea:{width:'85%',height:'80%'}
+      chartArea:{width:'85%',height:'80%'},
+      pieSliceText: 'label'
     };
     formatter.format(dataCharges, 1);
 
