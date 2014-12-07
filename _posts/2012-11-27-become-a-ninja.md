@@ -9,7 +9,7 @@ Parce que nous aimons partager notre amour du code bien fait, nous avons travail
 
 - une formation pour [débuter en Java](http://ninja-squad.com/training/java "Formation Java par Ninja Squad"), parce que les bases sont indispensables.
 - une formation pour ceux qui veulent devenir un [Java Ninja](http://ninja-squad.com/training/java-advanced "Formation Java Avancé par Ninja Squad").
-- Play! est l'un de nos outils préférés pour faire du web, [le sujet](http://ninja-squad.com/training/play-framework "Formation Play! Framework par Ninja Squad") a donc naturellement trouvé sa place.
+- Play! est l'un de nos outils préférés pour faire du web, [le sujet](http://ninja-squad.com/training/play "Formation Play! Framework par Ninja Squad") a donc naturellement trouvé sa place.
 - enfin une [découverte de Git](http://ninja-squad.com/training/git "Formation Git par Ninja Squad"), avec un focus sur la façon de l'utiliser en entreprise.
 
 <div class="row-fluid">
