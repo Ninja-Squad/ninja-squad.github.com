@@ -5,7 +5,7 @@ author: [clacote]
 tags: [devoxx, partner, bof, interview]
 ---
 
-[Devoxx France](www.devoxx.fr "Site de Devoxx France") approche à grand pas, et Ninja Squad y sera!
+[Devoxx France](http://www.devoxx.fr "Site de Devoxx France") approche à grand pas, et Ninja Squad y sera!
 
 Un des avantages de gérer sa propre entreprise, c'est qu'il devient ainsi facile pour nous développeurs de réclamer une place à sa direction : les négociations en sont très facilitées! :)
 
@@ -13,7 +13,7 @@ Nous aurons ainsi non seulement la chance d'assister en spectateurs aux trois jo
 
 Si nous animons ce BOF ensemble, c'est que nous partageons quelques valeurs, et l'envie de sortir du schéma traditionnel des SSIIs avec des sociétés coopératives gérées par des développeurs.
 
-Avant de discuter ces projets avec vous à Devoxx, nous avions envie de vous les présenter. Et qui mieux qu'eux-même pour le faire? Hop, des interviews! 
+Avant de discuter ces projets avec vous à Devoxx, nous avions envie de vous les présenter. Et qui mieux qu'eux-même pour le faire? Hop, des interviews!
 
 ## scopyleft
 
@@ -52,10 +52,10 @@ Avant de discuter ces projets avec vous à Devoxx, nous avions envie de vous les
 >
 > Comment faire ? Jean-Baptiste se pose la question: ”Que puis je faire pour atteindre mon objectif ultime de créer un produit viable ?”.  
 > La réponse est limpide, ce qu’il sait faire, bien voire même très bien c’est de la prestation. Donc allez, faisons quelque chose qui, on le sait, marche. Montons une SSII avec des copains, recrutons quelque personnes et on développera des projets en interne sur l’inter-contrat (OUHA super sexy !).
-> 
+>
 > C’est là qu’intervient Jonathan qui va expliquer à Jean-Baptiste qu’il devrait essayer d’innover dans l’organisation de l’entreprise afin de faire émerger une innovation opérationnelle. Cela implique que le fameux “produit viable” n’émergera pas forcément d’une idée géniale de Jean-Baptiste mais potentiellement de quelqu’un d’autre. Après avoir lu en long et en large le livre “The Future of Management” ainsi que “Rework”, Jean-Baptiste a une première idée de ce qu’il voudrait faire. Il invite alors plein de copains à manger ou boire un verre et discute de son idée avec eux. Au fil des discussions de nouvelles idées d’organisation émergent, le projet s’affine. Finalement il organise une réunion de lancement avec plusieurs associés potentiels et c’est 2 d’entre eux qui finalement oserons se lancer dans l’aventure :  
-> - Olivier Girardot - développeur Python / Java et créateur du site [appartinfo.com](http://appartinfo.com) 
-> - Hugo Lassiège - développeur Java indépendant du groupe ["leszindeps"](http://www.leszindeps.fr/). 
+> - Olivier Girardot - développeur Python / Java et créateur du site [appartinfo.com](http://appartinfo.com)
+> - Hugo Lassiège - développeur Java indépendant du groupe ["leszindeps"](http://www.leszindeps.fr/).
 >
 > Florent Biville sera le premier à rejoindre la société, suivi de Nicolas Rey et Jonathan Winandy.
 
@@ -71,10 +71,10 @@ Avant de discuter ces projets avec vous à Devoxx, nous avions envie de vous les
 
 > Notre journée de travail est la même que celle de n’importe quel développeur, à ceci près qu’elle ne s'arrête pas à 18h ou que l’on n’est pas tous les jours chez nos clients.
 >
-> En plus de nos missions de prestation, 
-> - Olivier et Jonathan travaillent à monter une cellule autour du Big Data : LT-Data. 
-> - Jonathan, Florent et Hugo travaillent sur leurs formation pour LT-Training. 
-> - Hugo et Jean-Baptiste travaille sur le projet [hopwork.com](http://hopwork.com) 
+> En plus de nos missions de prestation,
+> - Olivier et Jonathan travaillent à monter une cellule autour du Big Data : LT-Data.
+> - Jonathan, Florent et Hugo travaillent sur leurs formation pour LT-Training.
+> - Hugo et Jean-Baptiste travaille sur le projet [hopwork.com](http://hopwork.com)
 > - et anecdote, Jean-Baptiste passe pas mal de temps aussi a réceptionner le courrier, le classer dans _Google Drive_ (accessible à tous : transparence absolue).
 > Nous nous retrouvons également régulièrement sur _Skype_ ou _Hangout_ afin de discuter et prendre ou modifier des décisions qui sont ensuite entérinées sur notre outil collaboratif [Agora](https://github.com/LateralThoughts/lt-agora).
 
