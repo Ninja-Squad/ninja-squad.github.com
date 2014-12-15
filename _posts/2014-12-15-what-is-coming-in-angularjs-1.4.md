@@ -3,7 +3,7 @@ layout: post
 title: What's coming in AngularJS 1.4
 author: ["cexbrayat"]
 tags: ["javascript", "angularjs"]
-description: A new version of AngularJS (1.4) will be release in March next year. Let's have a look at its shinny new features!
+description: A new version of AngularJS (1.4) will be released in March next year. Let's have a look at its shiny new features!
 ---
 
 The Angular Team is now hard at work designing the 2.0 version (you may have heard of it...) but that doesn't mean everything has stopped in the 1.x version. Quite the contrary: [Pete Bacon Darwin](https://twitter.com/petebd) has taken the lead of the whole team, and they are working on maintaining the 1.3 version and releasing a 1.4 version. The release will happen around ngConf, so that puts us around the end of February or early March. Then there will be a 1.5 release later in 2015, around the autumn.
