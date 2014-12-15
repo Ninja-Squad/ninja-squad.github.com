@@ -10,7 +10,7 @@ The Angular Team is now hard at work designing the 2.0 version (you may have hea
 
 But what is coming in 1.4? Let's have a look!
 
-*__Disclaimer__: I have no special access to these informations. I'm only giving you guesses and insights, based on what's available in the [Public Design Documents](https://drive.google.com/drive/u/1/#folders/0BxgtL8yFJbacQmpCc1NMV3d5dnM/0BxgtL8yFJbacUnUxc3l5aTZrbVk/0B7Ovm8bUYiUDZkNjZ0NscWlaODg), on [Github]() and in the [AngularJS 1.4 Planning Meeting video](https://www.youtube.com/watch?v=Uae9_8aFo-o&feature). So, hey, don't be mad if part of this is not in 1.4 ;)*
+*__Disclaimer__: I have no special access to these informations. I'm only giving you guesses and insights, based on what's available in the [Public Design Documents](https://drive.google.com/drive/u/1/#folders/0BxgtL8yFJbacQmpCc1NMV3d5dnM/0BxgtL8yFJbacUnUxc3l5aTZrbVk/0B7Ovm8bUYiUDZkNjZ0NscWlaODg), on [Github](https://github.com/angular/angular.js/labels/1.4-candidate) and in the [AngularJS 1.4 Planning Meeting video](https://www.youtube.com/watch?v=Uae9_8aFo-o&feature). So, hey, don't be mad if part of this is not in 1.4 ;)*
 
 # Router
 
