@@ -1,14 +1,18 @@
 ---
 layout: post
-title: 5 astuces sur les directives et leurs tests
+title: 5 tricks about AngularJS directives and tests
 author: ["cexbrayat"]
 tags: ["javascript", "angularjs"]
-description: 5 astuces sur la façon d'écrire les directives et leurs tests
+description: 5 tricks on how to write AngularJS directives and have them tested
 ---
 
-Si il y a bien un sujet pas simple en Angular, c'est l'écriture de directives. J'espère que les chapitres de [notre livre](books.ninja-squad.fr) aident à passer un cap sur ce problème, mais il manque sur les internets un article un peu complet sur la façon de tester celles-ci. En effet, Angular est très bien pensé pour les tests, avec un système de mock, d'injection de dépendance, de simulation des requêtes HTTP, bref la totale.
+If AngularJS has tricky parts, that may be how to write directives.
+Hopefully [our book](https://books.ninja-squad.com) helped you on the matter,
+but it's hard to find good references on how to test directives.
 
-Mais les tests de directive restent souvent le parent pauvre de tout ça. Une directive un peu complète va contenir un template, un scope à elle avec diffèrentes valeurs initialisées, et un ensemble de méthodes de comportement. Essayons de prendre une exemple pratique et pas trop compliqué :
+Angular is well designed around tests, with a mock system, dependency injection, simulated HTTP requests, everything. But directive tests are often sidelined in this framework.
+
+An advanced directive will have a template, its own scope with specific values, and a set of behavioral functions. Let's have a practical and not too complex example:
 
 {% raw %}
     angular.module('myProject.directives').directive('gravatar', function() {
@@ -31,11 +35,11 @@ Mais les tests de directive restent souvent le parent pauvre de tout ça. Une di
     });
 {% endraw %}
 
-Cette directive permet d'afficher le gravatar d'un utilisateur (passé en paramètre `user`), avec 2 tailles possibles : 20px par défaut et 40px si le paramètre `size` est précisé avec la valeur `lg`. Cette logique de composant est assez agréable à manipuler, puisque pour l'utiliser, il suffit de mettre dans un template :
+This directive displays the gravatar of a user (given an `user` parameter), with two possible sizes: 20px by default, or 40px if `size` parameter has `lg` value. This component paradigm is easy to use, as you just have to write in a template:
 
     <gravatar user="user" size="lg"></gravatar>
 
-Tester une directive ressemble à un test classique, avec quelques instructions en plus qui ressemblent à des incantations de magie noire quand on débute, et que l'on copie/colle religieusement en espérant que personne ne nous pose de questions sur leur signification.
+Testing a directive is like a traditional test, but with some specific instructions looking like black magic when you're a novice. You start by copy/pasting them religiously, hoping that nobody will ever ask you about their meaning.
 
     beforeEach(inject(function($rootScope, $compile) {
       scope = $rootScope;
@@ -49,28 +53,32 @@ Tester une directive ressemble à un test classique, avec quelques instructions 
       scope.$digest();
     }));
 
-# 1 - C'est quoi tout ce bordel
+# 1. WTF is this?
 
-On commence par créer une chaîne de caractères avec le HTML que l'on veut interpréter. Celui-ci doit, bien sûr, contenir la directive que vous voulez tester :
+We start by creating a string containing the HTML we want to interpret. Obviously, it has to contain the directive we want to test:
 
     '<gravatar user="user" size="lg"></gravatar>'
 
-Ensuite l'élèment est compilé : c'est peut-être la première fois que vous voyez le service `$compile`. Celui-ci est un service fourni par Angular, utilisé par le framework lui-même, mais rarement dans notre code. A l'exception des tests donc.
-Pour le compiler, on lui passe un scope, qui correspond aux variables auxquelles la directive aura accès. La notre a, par exemple, besoin d'un utilisateur : on créé donc un scope avec une variable `user` qui contient l'id gravatar qui va bien.
+Then, this element is compiled: that might be your first encounter with `$compile` service.
+This is a native AngularJS service, used by the framework internally, but rarely in our code (besides test).
+To make it compile, we have to provide a scope, holding all variables which the directive will access. In our example, we need an user: we then create a scope with an `user` variable, storing the suitable gravatar id.
 
-Le `$digest()` à la fin permet de déclencher les watchers, c'est à dire résoudre toutes les expressions contenues dans notre directive : `user.gravatar` et `sizePx`.
+`$digest` at the end is for running watchers, which will resolve all Angular expressions used in our template: `user.gravatar` and `sizePx`.
 
-Une fois compilée, on récupère un élément Angular, comme lorsque l'on utilise la méthode [angular.element](https://docs.angularjs.org/api/ng/function/angular.element) qui wrappe un élément de DOM ou du HTML sous forme de chaîne de caractères pour en faire un élément jQuery.
+Once compiled we get an Angular element, like the one we get when using [angular.element](https://docs.angularjs.org/api/ng/function/angular.element) to wrap a DOM element or a HTML string as a jQuery element.
 
-Et voilà, le setup est fait. Maintenant, nous allons pouvoir passer au test proprement dit.
+That's it, setup is done! Now it's time to really test!
 
-Ce que vous ne savez probablement pas, c'est qu'un élément Angular offre de petits bonus. Ainsi, nous pouvons accéder au scope de la directive, qu'il soit isolé ou non. Dans notre cas, la directive `gravatar` utilise un scope isolé, donc notre test ressemblerait à quelque chose comme ça : 
+What you probably don't know is that an Angular element provides some nice benefits: we can get access to the directive's scope, it being isolated or not.
+In our case, the `gravatar` directive uses an isolated scope, so our test would look like :
 
     it('should have the correct size on scope', function() {
-        expect(gravatar.isolateScope().sizePx).toBe('40');        
+        expect(gravatar.isolateScope().sizePx).toBe('40');
     });
 
-On peut aussi s'assurer que le HTML produit par la directive est conforme à ce que l'on attend. Vous pouvez utiliser la méthode `html()` qui renvoie le HTML de l'élément sous forme de chaîne de caractères, mais cela donne des tests un peu pénibles à maintenir. On peut faire quelque chose d'un peu plus sympa, pour tester la validité de l'élément, des classes ou attributs avec : 
+We can also make sure that generated HTML is what we expect from the directive.
+There is an `html()` function which returns element's HTML as string, but that makes tests hard to maintain.
+Something nicer is to test element's type, classes and attributes:
 
     it('should create a gravatar image with large size', function() {
         expect(gravatar[0].tagName).toBe('IMG');
@@ -78,11 +86,11 @@ On peut aussi s'assurer que le HTML produit par la directive est conforme à ce 
         expect(gravatar.attr('src')).toBe('http://www.gravatar.com/avatar/12345?s=40&d=identicon');
     });
 
-Il est pas beau ce test ? Mais on peut encore mieux faire...
+Isn't our test great? But we can do better!
 
-# 2 - Put your logic in a controller
+# 2. Logic in a controller
 
-La logique d'une directive peut être un pénible à tester. Le plus simple est de l'externaliser dans un controller dédié, que l'on peut tester comme un controller classique : 
+One directive's logic could be hard to test. The simplest is to externalize it in a dedicated controller, which could be easily tested:
 
 {% raw %}
     angular.module('myProject.directives').directive('gravatar', function() {
@@ -99,11 +107,11 @@ La logique d'une directive peut être un pénible à tester. Le plus simple est 
     });
 {% endraw %}
 
-C'est d'autant plus utile si votre controller grossit et devient plus complexe.
+That is more and more useful as your logic grows and becomes more complex.
 
-# 3 - Externalize your template
+# 3. Externalize your template
 
-De la même façon, dès qu'un template fait plus d'une ligne, n'hésitez pas à l'extraire dans un fichier à part.
+As for the logic, as soon as a template is more than one line long, let's put it in a dedicated file:
 
     angular.module('myProject.directives').directive('gravatar', function() {
       return {
@@ -118,23 +126,26 @@ De la même façon, dès qu'un template fait plus d'une ligne, n'hésitez pas à
       };
     });
 
-Cela introduit cependant une petite subtilité pour les tests. Si vous relancez celui que vous aviez avant d'externaliser le template, vous allez avoir l'erreur suivante :
+But that introduces some side effect in your tests. If you run the one you had before externalizing the template, you would get the following error:
 
     Error: Unexpected request: GET gravatar.html
     No more request expected
 
-Et oui, si on externalise le template, AngularJS va faire une requête pour le récupérer auprès du serveur. D'où une requête GET inattendue...
-Mais on peut charger le template dans le test pour éviter ce problème. Il suffit pour cela d'utiliser [karma-ng-html2js](https://github.com/karma-runner/karma-ng-html2js-preprocessor) (ou le module grunt/gulp équivalent). Le principe est de charger les templates dans un module à part et d'inclure ce module dans notre test.
+Yes, if you have an external template, Angular would have to make an HTTP request to fetch it from server.
+Thus an unexpected GET request...
 
-Il suffit alors de charger le template dans le test : 
+But you can have the template loaded in the test to avoid this issue.
+[karma-ng-html2js](https://github.com/karma-runner/karma-ng-html2js-preprocessor) (or the equivalent grunt/gulp module) can fetch templates in a dedicated module, then you just have to load it before your test.
 
     beforeEach(module('gravatar.html'));
 
-Et le tour est joué !
+Et voilà!
 
-# 4 - Recursion
+# 4. Recursion
 
-Si vous faites des directives un peu avancées, un jour ou l'autre, vous allez tomber sur une directive qui s'appelle elle-même. Bizarrement, ce n'est pas supporté par défaut par AngularJS. Vous pouvez cependant ajouter un module, RecursionHelper, qui offre un service permettant de compiler manuellement des directives récursives :
+If you start playing with advanced directives, someday you will need a directive using itself.
+Oddly enough, that is not supported by default in AngularJS.
+But you can add `RecursionHelper` module, providing a service for programatically compiling recursive directives:
 
     angular.module('myProject.directives')
     .directive('container', function(RecursionHelper) {
@@ -149,8 +160,10 @@ Si vous faites des directives un peu avancées, un jour ou l'autre, vous allez t
       };
     });
 
-# 5 - Learn from the pros
+# 5. Learn from the pros
 
-Le meilleur moyen de progresser en écriture de directives est de vous inspirer des projets open-source. Le projet AngularUI renferme un grand nombre de directives, notamment les directives de [UIBootstrap](http://angular-ui.github.io/bootstrap/) qui peuvent vous inspirer. L'un des principaux contributeurs au projet, [Pawel](https://github.com/pkozlowski-opensource), a fait un talk avec [quelques idées](http://pkozlowski-opensource.github.io/ng-europe-2014/presentation/#/) complémentaires à cet article.
+The best way to improve your directive writing skills is to grab inspiration from open source project.
+AngularUI projects hold a lot of directives, especially [UIBootstrap](http://angular-ui.github.io/bootstrap/) which is a good source.
+[Pawel](https://github.com/pkozlowski-opensource), one of the main contributor, gave a talk with [some ideas](http://pkozlowski-opensource.github.io/ng-europe-2014/presentation/#/) going beyond this blog post.
 
-Et si vous voulez mettre tout ça en pratique, la prochaine [formation](http://ninja-squad.fr/training/angularjs) a lieu à Paris les 9-11 Février, et la suivante, à Lyon, les 9-11 Mars !
+And if you want to practice with some help, [our next training session](http://ninja-squad.fr/training/angularjs) will be held in Paris, France, on February 9-11, and the following one in Lyon, France, on March 9-11!
