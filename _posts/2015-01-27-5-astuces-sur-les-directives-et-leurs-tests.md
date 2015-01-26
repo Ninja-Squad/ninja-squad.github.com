@@ -1,10 +1,12 @@
 ---
 layout: post
-title: 5 trucs sur les directives AngularJS et leurs tests
+title: 5 astuces sur les directives AngularJS et leurs tests
 author: ["cexbrayat"]
 tags: ["javascript", "angularjs"]
 description: 5 astuces sur la façon d'écrire les directives AngularJS et leurs tests
 ---
+
+*Looking for the EN version? it's [here](http://blog.ninja-squad.fr/2015/01/27/5-tricks-about-directives-and-tests/)*
 
 Si il y a bien un sujet compliqué en Angular, c'est l'écriture de directives. J'espère que les chapitres de [notre livre](https://books.ninja-squad.com) aident à passer un cap sur ce problème, mais il manque sur les internets un article un peu complet sur la façon de tester celles-ci.
 
@@ -57,8 +59,8 @@ On commence par créer une chaîne de caractères avec le HTML que l'on veut int
 
     '<gravatar user="user" size="lg"></gravatar>'
 
-Ensuite l'élèment est compilé : c'est peut-être la première fois que vous voyez le service `$compile`. Celui-ci est un service fourni par Angular, utilisé par le framework lui-même, mais rarement dans notre code. A l'exception des tests donc.
-Pour le compiler, on lui passe un scope, qui correspond aux variables auxquelles la directive aura accès. La notre a, par exemple, besoin d'un utilisateur : on créé donc un scope avec une variable `user` qui contient l'id gravatar qui va bien.
+Ensuite l'élément est compilé : c'est peut-être la première fois que vous voyez le service `$compile`. Celui-ci est un service fourni par Angular, utilisé par le framework lui-même, mais rarement dans notre code. A l'exception des tests donc.
+Pour le compiler, on lui passe un scope, qui correspond aux variables auxquelles la directive aura accès. La nôtre a, par exemple, besoin d'un utilisateur : on crée donc un scope avec une variable `user` qui contient l'id gravatar qui va bien.
 
 Le `$digest()` à la fin permet de déclencher les watchers, c'est à dire résoudre toutes les expressions contenues dans notre directive : `user.gravatar` et `sizePx`.
 
@@ -70,6 +72,12 @@ Ce que vous ne savez probablement pas, c'est qu'un élément Angular offre de pe
 
     it('should have the correct size on scope', function() {
         expect(gravatar.isolateScope().sizePx).toBe('40');
+    });
+
+Si le scope n'était pas isolé, on utiliserait `scope()` :
+
+    it('should have the correct size on scope', function() {
+        expect(gravatar.scope().sizePx).toBe('40');
     });
 
 On peut aussi s'assurer que le HTML produit par la directive est conforme à ce que l'on attend. Vous pouvez utiliser la méthode `html()` qui renvoie le HTML de l'élément sous forme de chaîne de caractères, mais cela donne des tests un peu pénibles à maintenir. On peut faire quelque chose d'un peu plus sympa, pour tester la validité de l'élément, des classes ou attributs avec :
@@ -105,7 +113,7 @@ C'est d'autant plus utile si votre controller grossit et devient plus complexe.
 
 # 3. Externaliser le template
 
-De la même façon, dès qu'un template fait plus d'une ligne, n'hésitez pas à l'extraire dans un fichier à part.
+De la même façon, si le template grossit trop, n'hésitez pas à l'extraire dans un fichier à part.
 
     angular.module('myProject.directives').directive('gravatar', function() {
       return {
@@ -153,6 +161,8 @@ Si vous faites des directives un peu avancées, un jour ou l'autre, vous allez t
 
 # 5. Apprendre des meilleurs
 
-Le meilleur moyen de progresser en écriture de directives est de vous inspirer des projets open-source. Le projet AngularUI renferme un grand nombre de directives, notamment les directives de [UIBootstrap](http://angular-ui.github.io/bootstrap/) qui peuvent vous inspirer. L'un des principaux contributeurs au projet, [Pawel](https://github.com/pkozlowski-opensource), a fait un talk avec [quelques idées](http://pkozlowski-opensource.github.io/ng-europe-2014/presentation/#/) complémentaires à cet article.
+Le meilleur moyen de progresser en écriture de directives est de vous inspirer des projets open-source. Le projet AngularUI contient un grand nombre de directives, notamment les directives de [UIBootstrap](http://angular-ui.github.io/bootstrap/) qui peuvent vous inspirer. L'un des principaux contributeurs au projet, [Pawel](https://github.com/pkozlowski-opensource), a fait un talk avec [quelques idées](http://pkozlowski-opensource.github.io/ng-europe-2014/presentation/#/) complémentaires à cet article.
 
 Et si vous voulez mettre tout ça en pratique, [notre prochaine formation](http://ninja-squad.fr/training/angularjs) a lieu à Paris les 9-11 Février, et la suivante à Lyon les 9-11 Mars !
+
+_Article publié sur le [blog de Cédric](http://hypedrivendev.wordpress.com/2015/01/27/5-astuces-sur-les-directives-et-leurs-tests/ "Article original sur le blog de Cédric Exbrayat")_

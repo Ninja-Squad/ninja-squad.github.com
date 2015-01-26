@@ -6,13 +6,15 @@ tags: ["javascript", "angularjs"]
 description: 5 tricks on how to write AngularJS directives and have them tested
 ---
 
-If AngularJS has tricky parts, that may be how to write directives.
-Hopefully [our book](https://books.ninja-squad.com) helped you on the matter,
+*Vous cherchez la version FR ? C'est [ici](http://blog.ninja-squad.fr/2015/01/27/5-astuces-sur-les-directives-et-leurs-tests/)*
+
+If AngularJS has one tricky part, it is for sure how to write directives.
+Hopefully [our book](https://books.ninja-squad.com) helped you for the first steps,
 but it's hard to find good references on how to test directives.
 
-Angular is well designed around tests, with a mock system, dependency injection, simulated HTTP requests, everything. But directive tests are often sidelined in this framework.
+Angular is well designed around tests, with a mock system, dependency injection, simulated HTTP requests, pretty much everything you need. But directive tests are often sidelined in applications.
 
-An advanced directive will have a template, its own scope with specific values, and a set of behavioral functions. Let's have a practical and not too complex example:
+An advanced directive will have a template, its own scope with specific values, and a set of behavioral functions. Let's have a look at a practical and not too complex example:
 
 {% raw %}
     angular.module('myProject.directives').directive('gravatar', function() {
@@ -39,7 +41,7 @@ This directive displays the gravatar of a user (given an `user` parameter), with
 
     <gravatar user="user" size="lg"></gravatar>
 
-Testing a directive is like a traditional test, but with some specific instructions looking like black magic when you're a novice. You start by copy/pasting them religiously, hoping that nobody will ever ask you about their meaning.
+Testing a directive is like a traditional test, but with some specific instructions looking like black magic when you're a beginner. You start by copy/pasting them religiously, hoping that nobody will ever ask you about their meaning.
 
     beforeEach(inject(function($rootScope, $compile) {
       scope = $rootScope;
@@ -59,9 +61,9 @@ We start by creating a string containing the HTML we want to interpret. Obviousl
 
     '<gravatar user="user" size="lg"></gravatar>'
 
-Then, this element is compiled: that might be your first encounter with `$compile` service.
+Then, this element is compiled: that might be your first encounter with the `$compile` service.
 This is a native AngularJS service, used by the framework internally, but rarely in our code (besides test).
-To make it compile, we have to provide a scope, holding all variables which the directive will access. In our example, we need an user: we then create a scope with an `user` variable, storing the suitable gravatar id.
+To make it compile, we have to provide a scope, holding all variables which the directive will access. In our example, we need a user: we then create a scope with an `user` variable, storing the suitable gravatar id.
 
 `$digest` at the end is for running watchers, which will resolve all Angular expressions used in our template: `user.gravatar` and `sizePx`.
 
@@ -76,8 +78,14 @@ In our case, the `gravatar` directive uses an isolated scope, so our test would 
         expect(gravatar.isolateScope().sizePx).toBe('40');
     });
 
-We can also make sure that generated HTML is what we expect from the directive.
-There is an `html()` function which returns element's HTML as string, but that makes tests hard to maintain.
+If it wasn't an isolated scope, we would use `scope()`:
+
+    it('should have the correct size on scope', function() {
+        expect(gravatar.scope().sizePx).toBe('40');
+    });
+
+We can also make sure that the generated HTML is what we expect from the directive.
+There is an `html()` function which returns the element's HTML as string, but that makes tests hard to maintain.
 Something nicer is to test element's type, classes and attributes:
 
     it('should create a gravatar image with large size', function() {
@@ -86,7 +94,7 @@ Something nicer is to test element's type, classes and attributes:
         expect(gravatar.attr('src')).toBe('http://www.gravatar.com/avatar/12345?s=40&d=identicon');
     });
 
-Isn't our test great? But we can do better!
+Great, isn't it? But we can do better!
 
 # 2. Logic in a controller
 
@@ -107,11 +115,21 @@ One directive's logic could be hard to test. The simplest is to externalize it i
     });
 {% endraw %}
 
-That is more and more useful as your logic grows and becomes more complex.
+That is more and more useful as your logic grows and becomes more complex. The controller you're gonna write looks exactly like a regular controller, but here the injected scope will be the directive's scope. Take a look:
+
+{% raw %}
+    angular.module('myProject.controllers').controller('GravatarDirectiveController', function($scope) {
+      if ($scope.size === 'lg') {
+        $scope.sizePx = '40';
+      } else {
+        $scope.sizePx = '20';
+      }
+    });
+{% endraw %}
 
 # 3. Externalize your template
 
-As for the logic, as soon as a template is more than one line long, let's put it in a dedicated file:
+As for the logic,  if the HTML becomes large, it could be a good idea to externalize it in a HTML file:
 
     angular.module('myProject.directives').directive('gravatar', function() {
       return {
@@ -162,7 +180,7 @@ But you can add `RecursionHelper` module, providing a service for programaticall
 
 # 5. Learn from the pros
 
-The best way to improve your directive writing skills is to grab inspiration from open source project.
+The best way to improve your directive writing skills is to grab inspiration from open source projects.
 AngularUI projects hold a lot of directives, especially [UIBootstrap](http://angular-ui.github.io/bootstrap/) which is a good source.
 [Pawel](https://github.com/pkozlowski-opensource), one of the main contributor, gave a talk with [some ideas](http://pkozlowski-opensource.github.io/ng-europe-2014/presentation/#/) going beyond this blog post.
 
