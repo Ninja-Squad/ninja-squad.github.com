@@ -10,7 +10,7 @@ encoding: utf-8
 # Themes are encouraged to use these universal variables
 # so be sure to set them if your theme uses them.
 #
-title: NinjaSquad
+title: "Ninja Squad"
 tagline: Set<AwesomeDeveloper> ninjas;
 gplus: +NinjaSquad
 twitter: NinjaSquad
@@ -155,11 +155,11 @@ JB :
   trainings :
     git:
       title: Git
-      dates: 
+      dates:
         - 23-24 Février à Paris
     angularjs:
       title: AngularJS
-      dates: 
+      dates:
         - 9-11 Février à Paris
         - 9-11 Mars à Lyon
     java8:
@@ -168,4 +168,3 @@ JB :
     java-advanced:
       title: Java avancé
       dates: 2-5 Mars à Lyon
-    
