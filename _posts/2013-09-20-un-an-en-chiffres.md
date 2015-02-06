@@ -2,7 +2,7 @@
 layout: post
 title: Une année en chiffres
 author: [clacote]
-tags: ["Ninja Squad", "bilan", "argent", "bénéfices"]
+tags: ["ninja squad", "bilan", "argent", "bénéfices"]
 ---
 
 Dans la série des rétrospectives sur cette première année écoulée pour Ninja Squad,
@@ -38,7 +38,7 @@ Puis, en janvier 2013, nous sommes passés à 2000€ nets. Puis ce mois-ci, à 
 
 Ce qui est formidable, c'est que tout cela s'est déroulé comme on le rêvait sans savoir si c'était une utopie naïve. Nous avons dès le départ instauré avec nos clients notre rythme de travail&nbsp;: 4 jours de prestations par semaine, pour se garder un jour libre. Libres de faire de la veille, de bosser sur nos projets personnels, ou de fignoler l'idée magique qui fera de Ninja Squad le nouveau Google. Ou Github (&hearts;). Ou WinDev (?!). On a d'ailleurs consacré près de trois mois en plus de nos [#ninjackday](http://twitter.com/search?q=ninjackday) à l'expérimentation d'idées qui nous chatouillaient. Et les formations à l'université nous ont également demandé pas mal de préparations non payées. Sans compter les deux mois d'arrêt maladie sans facturation d'un ninja qui s'est pêté les deux poignets.
 
-Notre premier bilan comptable, à l'issue d'une année d'existence, a révélé un chiffre d'affaire de 190.000€. Il est constitué essentiellement par nos prestations de développement en régie, et pour une part plus modeste par les formations données et divers projets pour des clients en remote. 
+Notre premier bilan comptable, à l'issue d'une année d'existence, a révélé un chiffre d'affaire de 190.000€. Il est constitué essentiellement par nos prestations de développement en régie, et pour une part plus modeste par les formations données et divers projets pour des clients en remote.
 
 Nous avions ainsi un résultat préliminaire de 89.000€. \o/
 

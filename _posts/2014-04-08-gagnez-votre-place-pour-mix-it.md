@@ -2,7 +2,7 @@
 layout: post
 title: Gagnez votre place pour Mix-IT
 author: clacote
-tags: [Mix-IT, conference, concours]
+tags: [mix-it, conference, concours]
 ---
 
 Vous avez peut-être remarqué une baisse d'activité publique chez Ninja Squad. Ce n'est pas - seulement - du à l'arrivée des beaux jours (même si on se prépare un timeoff au soleil&nbsp;:).  

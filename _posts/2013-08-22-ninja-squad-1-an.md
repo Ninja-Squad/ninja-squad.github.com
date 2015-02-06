@@ -2,7 +2,7 @@
 layout: post
 title: Ninja Squad - Un an!
 author: [acrepet, cexbrayat, clacote, jbnizet]
-tags: [ninjasquad, bilan, rétrospective]
+tags: ["ninja squad", bilan, rétrospective]
 ---
 
 Il y a quelques semaines, Ninja Squad a fêté sa première année d'existence. Après cette itération vient le temps de faire une rétrospective pour commencer un nouveau sprint. Tout d'abord, le sentiment général : nous avons passé une année extraordinaire, bien au-delà de nos attentes! Beaucoup de rencontres, de projets intéressants, d'idées pour la suite et d'opportunités, un vrai plaisir! Aucun d'entre nous ne regrette de s'être lancé dans l'aventure.
@@ -22,7 +22,7 @@ Certains de nos petits outils ont vu le jour sous la forme d'un projet open sour
 
 Enfin, nous profitons aussi de nos vendredis pour écrire quelques articles sur ce blog, et partager nos découvertes avec vous. L'audience du blog et vos retours nous font très plaisir et nous encouragent à continuer.
 
-Cette première année a été également l’occasion d’organiser notre premier  #ninjackaton, un évènement gratuit pour les participants, sur le thème de la nouveauté majeure du JDK8 : les lambdas. Belle réussite pour cette première tentative, ambiance sympatique entre hacking et nems! 
+Cette première année a été également l’occasion d’organiser notre premier  #ninjackaton, un évènement gratuit pour les participants, sur le thème de la nouveauté majeure du JDK8 : les lambdas. Belle réussite pour cette première tentative, ambiance sympatique entre hacking et nems!
 Et puis, avec les beaux jours, nous en profitons aussi pour voir nos familles ou aller à la piscine, cela fait partie des bons côtés de gérer son temps!
 Beaucoup nous posent également des questions sur nos salaires : nous avons commencé par nous payer modestement pour ne pas prendre de risque mais aujourd’hui nous avons pu atteindre un niveau de rémunération très satisfaisant.
 
