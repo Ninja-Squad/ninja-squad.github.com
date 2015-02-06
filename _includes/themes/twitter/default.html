@@ -40,7 +40,7 @@
     <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
     <link rel="apple-touch-icon" sizes="72x72" href="/assets/images/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="/assets/images/apple-touch-icon-114x114.png">
-  
+
     <script src="{{ ASSET_PATH }}/js/jquery-1.7.2.min.js"></script>
   </head>
 
@@ -56,7 +56,7 @@
           <a class="brand" href="http://ninja-squad.com"><img alt="Ninja Squad" title="Logo Ninja Squad" src="/assets/images/logo-head.png" /></a>
           <div class="nav-collapse">
             <ul class="nav">
-              <li class="active"><a href="/"><i class="icon-book icon-white"></i>Blog</a></li>  
+              <li class="active"><a href="/"><i class="icon-book icon-white"></i>Blog</a></li>
               <li><a href="http://ninja-squad.com/work"><i class="icon-bullhorn icon-white"></i>Notre métier</a></li>
               <li><a href="http://ninja-squad.com/team"><i class="icon-user icon-white"></i>Notre équipe</a></li>
               <li><a href="http://ninja-squad.com/projects"><i class="icon-folder-open icon-white"></i>Nos projets</a></li>
@@ -80,13 +80,13 @@
         <div class="span1"></div>
       </div>
       <footer>
-        <p>&copy; {{ site.title }} 2012 
+        <p>&copy; {{ site.title }} 2012&nbsp;-&nbsp;{{ site.time | date: '%Y' }}
           with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
           and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
         </p>
       </footer>
     </div> <!-- /container -->
- 
+
     <script src="{{ ASSET_PATH }}/bootstrap/js/bootstrap.min.js"></script>
     <script src="{{ ASSET_PATH }}/js/prettify.js"></script>
     <script>
@@ -94,16 +94,16 @@
         $("pre:not(.raw)").addClass("prettyprint");
         prettyPrint();
       });
-      
+
       !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
-      
+
       window.___gcfg = {lang: 'fr'};
       (function() {
-        var po = document.createElement('script'); 
-        po.type = 'text/javascript'; 
+        var po = document.createElement('script');
+        po.type = 'text/javascript';
         po.async = true;
         po.src = 'https://apis.google.com/js/plusone.js';
-        var s = document.getElementsByTagName('script')[0]; 
+        var s = document.getElementsByTagName('script')[0];
         s.parentNode.insertBefore(po, s);
       })();
 	</script>
