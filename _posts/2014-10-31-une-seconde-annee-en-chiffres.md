@@ -2,7 +2,7 @@
 layout: post
 title: Une seconde année en chiffres
 author: clacote
-tags: ["Ninja Squad", "bilan", "argent", "bénéfices"]
+tags: ["ninja squad", "bilan", "argent", "bénéfices"]
 description: Le bilan de la seconde année comptable de Ninja Squad. Alors, pâtes ou caviar?
 ---
 
@@ -85,7 +85,7 @@ On s'est en effet distribué 145k€ en salaires bruts.
 
 Depuis l'année dernière, et sur l'intégralité de cet exercice, nous avions chacun des salaires de 2500€ nets. Et comme l'année dernière, nous avons attendu notre résultat préliminaire pour savoir combien nous nous distribuerions en prime. Cette année, ce résultat préliminaire s'élevait à 100k€ environ. Nous nous sommes donc distribué environ ~60k€ de primes brutes (sois un peu plus de 10k€ nets chacun après déductions des charges patronales et salariale), pour atteindre un résultat de 38k€, sur lesquels nous avons payé 5700€ d'impôt société avant de mettre le reste en réserve.
 
-Si cette pluie de chiffres ne vous a toujours pas comblé (pervers!), nous pouvons aussi vous diriger vers les sites d'information légales qui détaillent les bilans des entreprise, par exemple `societe.com` où [le bilan de Ninja Squad](http://www.societe.com/bilan/ninja-squad/752513465201406301.html "Le bilan 2014 de Ninja Squad sur societe.com") est accessible. 
+Si cette pluie de chiffres ne vous a toujours pas comblé (pervers!), nous pouvons aussi vous diriger vers les sites d'information légales qui détaillent les bilans des entreprise, par exemple `societe.com` où [le bilan de Ninja Squad](http://www.societe.com/bilan/ninja-squad/752513465201406301.html "Le bilan 2014 de Ninja Squad sur societe.com") est accessible.
 
 Et si vraiment, vous êtes passionnés par la comptabilité (?!), on peut pousser la transparence jusqu'à vous fournir notre bilan complet et officiel&nbsp;: voici [46 pages bourrées de chiffres et de tableaux indigestes](/assets/bilan-ninja-squad-2014.pdf "Le bilan 2013-2014 complet et officiel de Ninja Squad").
 
@@ -123,7 +123,7 @@ Cet apparté n'était pas tant destiné à faire fondre les mamans qu'à <a href
   google.setOnLoadCallback(drawCharts);
 
   function drawCharts() {
-    
+
     var dataRecettes = google.visualization.arrayToDataTable([
       ['Type de prestation',    'Recettes en euros HT'],
       ['Développement', 201962.50],

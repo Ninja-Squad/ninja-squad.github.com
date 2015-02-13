@@ -2,7 +2,7 @@
 layout: post
 title: Une Java Championne chez Ninja Squad?!
 author: [acrepet]
-tags: [java, java-champion, ninjasquad]
+tags: [java, "java champion", "ninja squad"]
 ---
 <br/>
 
@@ -33,10 +33,3 @@ Et bien oui, c'est possible... On en a au moins trouvé quatre! Quatre développ
 Et moi, Agnès, pourquoi ai-je monté Ninja Squad avec ces 3 autres ninjas?
 Et bien pour toutes les raisons que je viens de citer. Parce que la forme coopérative m'intéresse. Parce que je me suis dit qu'après 10 ans de boulot c'était le moment de tenter l'expérience. Et un an de congé sabbatique m'a également permis de faire le point sur comment vivre au plus près de ses aspirations personnelles. Je suis donc très heureuse d'être co-fondatrice de Ninja Squad!  
 Le plus dur c'était sûrement de se lancer. Même s'il est encore trop tôt après 3 mois d'activité pour juger si cela va fonctionner comme on peut le rêver, on se rend déjà compte qu'il ne semble pas si difficile de trouver des missions, même sans commercial ni manager... Et que sans les coûts de leurs salaires et de locaux, la pression financière n'est pas si importante, ce qui nous laisse d'autant plus de liberté pour s'investir dans ce qui nous fait plaisir. Je ne sais pas où on sera dans un an, en tout cas, les premiers pas de l'Escadron des Ninjas sont tout à fait exhaltants!
-
-
-
-
-
-
-

@@ -6,16 +6,19 @@ group: navigation
 ---
 {% include JB/setup %}
 
+{% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
+{% assign tag_words = site_tags | split:',' | sort %}
+
 <ul class="tag_box inline">
-  {% assign tags_list = site.tags %}
+  {% assign tags_list = tag_words %}
   {% include JB/tags_list %}
 </ul>
 
-
-{% for tag in site.tags %}
-  <h2 id="{{ tag[0] }}-ref">{{ tag[0] }}</h2>
-  <ul>
-    {% assign pages_list = tag[1] %}
-    {% include JB/pages_list %}
-  </ul>
-{% endfor %}
+{% for item in (0..site.tags.size) %}{% unless forloop.last %}
+{% capture this_word %}{{ tag_words[item] | strip_newlines }}{% endcapture %}
+<h2 id="{{ this_word }}-ref">{{ this_word }}</h2>
+<ul class="posts">
+  {% assign pages_list = site.tags[this_word] %}
+  {% include JB/pages_list %}
+</ul>
+{% endunless %}{% endfor %}
