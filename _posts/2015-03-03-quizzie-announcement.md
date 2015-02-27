@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Quizz me if you can
+title: Quiz me if you <canvas></canvas>
 author: ["jbnizet"]
 tags: ["ninja squad", "quizzie"]
-description: Quizz me if you can
+description: Quiz me if you can
 ---
 
 When we started Ninja Squad, we all agreed to have one day off every week. This day would allow us testing new frameworks, learning things, 
@@ -15,7 +15,7 @@ administrative tasks, preparing trainings, writing blog posts, etc. The next big
 
 Or is it? :-)
 
-Our trainees know that every chapter of our training ends with a quizz. We built a [small JavaScript-only
+Our trainees know that every chapter of our training ends with a quiz. We built a [small JavaScript-only
 app](https://github.com/Ninja-Squad/quizz) to play these quizzes. But creating them is painful: editing JSON files containing 
 well-formatted code is not the most pleasant thing to do. So the idea came up: why not create a web app to create, store and play these quizzes? 
 
@@ -38,15 +38,15 @@ You can play quizzes, for free.
 
 You can contribute by creating quizzes about [any subject](https://quizzie.io/tags) you want, in English or in French, for free. 
 
-You can embed a quizz in your own web page or blog, for free. 
+You can embed a quiz in your own web page or blog, for free. 
 
-You can keep your quizz private and use it in your training, with your colleagues or friends, for 1.5€: the price of a coffee.
+You can keep your quiz private and use it in your training, with your colleagues or friends, for 1.5€: the price of a coffee.
 
 You can use Markdown and thus embed images, code, quotes, etc. in the quizzes. 
 You can also embed YouTube videos and Deezer track previews, if you like blind tests or want to provide a video explanation 
 for your answers.
 
-You can get statistics, and thus compare yourself to others, or know which questions of a quizz are easy and which ones are tough.
+You can get statistics, and thus compare yourself to others, or know which questions of a quiz are easy and which ones are tough.
 
 We we have tossed up a stackoverflow-ish [gamification](https://quizzie.io/users) [sauce](https://quizzie.io/badges/categories/all) on top of all. So it should be fun!
 
