@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Quiz me if you <canvas></canvas>
+title: Quiz me if you can
 author: ["jbnizet"]
 tags: ["ninja squad", "quizzie"]
 description: Quiz me if you can
@@ -54,5 +54,5 @@ Oh, and I forgot to mention: you're not the product. No ad! And it works fine on
 
 ## Go try it!
 
-Be among the first to join the Quizzie community, and go test Quizzie on [quizzie.io](https://quizzie.io)!
+Be among the first to join the Quizzie community, go test Quizzie on [quizzie.io](https://quizzie.io), and spread the news&nbsp;!
 
