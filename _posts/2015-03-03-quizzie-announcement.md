@@ -36,13 +36,13 @@ So let me introduce... (drum roll)
 
 You can play quizzes, for free. 
 
-You can contribute by creating quizzes about [any subject](https://quizzie.io/tags) you want, in English or in French, for free. 
+You can contribute by [creating quizzes](https://quizzie.io/quizzes/50352/all-you-need-to-know-about-creating-a-quiz) about [any subject](https://quizzie.io/tags) you want, in English or in French, for free. 
 
 You can embed a quiz in your own web page or blog, for free. 
 
 You can keep your quiz private and use it in your training, with your colleagues or friends, for 1.5€: the price of a coffee.
 
-You can use Markdown and thus embed images, code, quotes, etc. in the quizzes. 
+You can [use Markdown](https://quizzie.io/quizzes/50305/markdown---how-to-improve-the-look-of-your-quizzes) and thus embed images, code, quotes, etc. in the quizzes. 
 You can also embed YouTube videos and Deezer track previews, if you like blind tests or want to provide a video explanation 
 for your answers.
 

@@ -40,13 +40,14 @@ Merci donc d'accueillir... (roulements de tambour)
 
 Vous pouvez jouer aux quiz, gratuitement.
 
-Vous pouvez contribuer en créant des quiz sur [les sujets que vous voulez](https://quizzie.io/tags), en français ou en anglais, gratuitement.
+Vous pouvez contribuer en [créant des quiz](https://quizzie.io/quizzes/50350/tout-ce-quil-faut-savoir-sur-la-creation-de-quiz) sur [les sujets que vous voulez](https://quizzie.io/tags), en français ou en anglais, gratuitement.
 
 Vous pouvez embarquer un quiz dans votre propre page web ou votre blog, gratuitement.
 
 Vous pouvez garder vos quiz privés et les utiliser dans vos formations ou avec vos collègues ou vos amis, pour 1,5€&nbsp;: le prix d'un café.
 
-Vous pouvez utiliser Markdown et donc placer des images, du code, des citations, etc. dans les quiz.
+Vous pouvez [utiliser Markdown](https://quizzie.io/quizzes/50300/markdown-ou-comment-ameliorer-la-presentation-de-vos-quiz) et donc placer des images, du code, des citations, etc. dans les quiz.
+
 Vous pouvez aussi embarquer des vidéos YouTube ou des previews Deezer, si vous aimez les blind-tests, ou si vous voulez donner une
 explication par vidéo.
 
