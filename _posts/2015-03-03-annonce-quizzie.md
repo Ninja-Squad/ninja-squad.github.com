@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Qui m'aime me quiz
+title: "Quizzie : qui m'aime me quiz !"
 author: ["jbnizet"]
 tags: ["ninja squad", "quizzie"]
-description: Qui m'aime me quiz
+description: "Quizzie : qui m'aime me quiz ! Jouez et créez des quiz publics ou privés, sur les sujets que vous adorez, et apprenez en vous amusant."
 ---
 
 Quand on a lancé Ninja Squad, on s'est tous mis d'accord pour prendre un jour off par semaine.
