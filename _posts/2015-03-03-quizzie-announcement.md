@@ -6,11 +6,11 @@ tags: ["ninja squad", "quizzie"]
 description: Quiz me if you can
 ---
 
-When we started Ninja Squad, we all agreed to have one day off every week. This day would allow us testing new frameworks, learning things, 
+When we started Ninja Squad, we all agreed to have one day off every week. This day would allow us to test new frameworks, learning things, 
 experimenting, building fun stuff. In our dreams, a great idea would come
 up from this free time, and we would eventually spend it together building the next big thing.
 
-We respected that day-off rule from the start, but we must admit that we also spent it doing
+We followed that day-off rule from the start, but we must admit that we also spent it doing
 administrative tasks, preparing trainings, writing blog posts, etc. The next big thing isn't there yet.
 
 Or is it? :-)
@@ -26,7 +26,7 @@ Surely other people might be interested in playing them. We could build somethin
 
 And so we did. 
 
-It took time. I started alone, but Cédric and Cyril ended up joining me in this effort. And now it's usable.
+It took some time. I started alone, but Cédric and Cyril ended up joining me in this effort. And now it's usable.
 
 So let me introduce... (drum roll)
 
@@ -40,7 +40,7 @@ You can contribute by [creating quizzes](https://quizzie.io/quizzes/50352/all-yo
 
 You can embed a quiz in your own web page or blog, for free. 
 
-You can keep your quiz private and use it in your training, with your colleagues or friends, for 1.5€: the price of a coffee.
+You can keep your quiz private and use it in your trainings, with your colleagues or friends, for 1.5€: the price of a coffee.
 
 You can [use Markdown](https://quizzie.io/quizzes/50305/markdown---how-to-improve-the-look-of-your-quizzes) and thus embed images, code, quotes, etc. in the quizzes. 
 You can also embed YouTube videos and Deezer track previews, if you like blind tests or want to provide a video explanation 
@@ -48,9 +48,9 @@ for your answers.
 
 You can get statistics, and thus compare yourself to others, or know which questions of a quiz are easy and which ones are tough.
 
-We we have tossed up a stackoverflow-ish [gamification](https://quizzie.io/users) [sauce](https://quizzie.io/badges/categories/all) on top of all. So it should be fun!
+We have tossed up a stackoverflow-ish [gamification](https://quizzie.io/users) [sauce](https://quizzie.io/badges/categories/all) on top of all. So it should be fun!
 
-Oh, and I forgot to mention: you're not the product. No ad! And it works fine on phones and tablets, too.
+Oh, and I forgot to mention: you're not the product. No ads! And it works fine on phones and tablets, too.
 
 ## Go try it!
 
