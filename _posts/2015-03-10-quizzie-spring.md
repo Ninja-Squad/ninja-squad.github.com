@@ -24,7 +24,7 @@ Here are the few things I particularly like about Spring and Spring MVC
 
 ![Test results in SonarQube](/assets/images/quizzie/test-results.png)
 
-Spring provides top-notch support for tests. And we do care about tests, bith in the backend and in the frontend.
+Spring provides top-notch support for tests. And we do care about tests, both in the backend and in the frontend.
 
 Of course, dependency injection is all about testability, and Spring is, first and foremost,
 a dependency injection framework. So it's not surprising for Spring-based code to be testable. But Spring goes further than that. 
