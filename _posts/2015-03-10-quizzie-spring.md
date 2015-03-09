@@ -3,7 +3,7 @@ layout: post
 title: "What we learnt from Quizzie: Spring"
 author: ["jbnizet"]
 tags: ["ninja squad", "quizzie", "spring"]
-description: "What we learnt from Quizzie: Spring"
+description: "Last week, I proudly announced Quizzie, and explained that doing it was a great way to learn new things. In this post and future posts, I'll share some of the things we learnt by making Quizzie. And I'll start with Spring."
 ---
 
 Last week, I [proudly announced](http://blog.ninja-squad.com/2015/03/03/quizzie-announcement/) [Quizzie](https://quizzie.io), and 
@@ -18,7 +18,7 @@ First thing to know about Spring MVC: despite the name, it's also an excellent f
 where the server doesn't generate HTML, but accepts and produces JSON messages. In fact, you can mix traditional view-dispatching methods
 with RESTful methods producing JSON in the same controller.
 
-Here are the few things I particularly like about Spring and Spring MVC
+Here are the few things I particularly like about Spring and Spring MVC.
 
 ## Testing
 
@@ -57,8 +57,8 @@ OK. Spring has events, but they're not as easy and useful as the one provided by
 only if the current transaction commits. 
 
 But Spring is both very well documented, open-source, and open to customizations. I was able to implement
-such kinds of transactional events quite easily, and was even prepared to release that feature as an open-source library.
-But then I saw that there was already a RFE in Spring's bug tracker for this functionality. So I gave my advice, discussed with 
+such kinds of transactional events quite easily, and was even [prepared to release](https://github.com/Ninja-Squad/spring-events/pull/1) that feature as an open-source library.
+But then I saw that there was already a RFE in Spring's bug tracker for this functionality. So I gave my opinion, discussed with 
 the Spring developers, and good news: [transactional events are coming in the next release of Spring](https://spring.io/blog/2015/02/11/better-application-events-in-spring-framework-4-2).
 
 Where do we use such events in Quizzie? 
