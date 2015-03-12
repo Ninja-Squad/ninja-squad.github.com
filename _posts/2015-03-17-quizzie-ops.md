@@ -54,7 +54,7 @@ So we tried. That seemed like a good idea. We would have an easy to install, rep
 
 We almost succeeded. At a moment, we tried deploying an ElasticSearch and Kibana container to archive and search our log files. This sounded easy: just use a ready-made Docker container. Three days later, our DigitalOcean box was shut down because the Docker container was doing nothing except broadcasting (i.e. spamming) half of the DigitalOcean boxes on the data center. Using a ready-made container without knowing exactly what runs inside it and how it has been configured: bad, bad idea. Lesson learned.
 
-So we looked back and asked ouselves a few questions:
+So we looked back and asked ourselves a few questions:
 
  - does Docker really helps us having a stable and reproducible environment. The answer was no. 
  - does Docker make it easier to deploy our application. The answer was no.
