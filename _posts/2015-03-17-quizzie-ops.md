@@ -2,8 +2,8 @@
 layout: post
 title: "What we learnt from Quizzie: Ops"
 author: ["jbnizet"]
-tags: ["ninja squad", "quizzie", "ansible, docker"]
-description: "We're pretty decent developers, but when it comes to operations, that's another story. Building and operating Quizzie 
+tags: ["ninja squad", "quizzie", "ansible", "docker"]
+description: "We're pretty decent developers, but when it comes to operations, that's another story. Building and operating Quizzie
 is a great way to slowly become devops, and not just devs."
 ---
 
@@ -17,17 +17,17 @@ In this post, I'll explain where and how we deploy Quizzie, and the lessons we l
 
 ## DigitalOcean
 
-When we decided to deploy Quizzie on the interweb, we didn't know where we would deploy it. We first thought about using 
-a PAAS. The application being built with Spring, [CloundFoundry](http://www.cloudfoundry.org/index.html) was a natural choice. 
-So we began using it, and the experience was pleasant, overall. I particularly liked the fact that uploading a big war file took only a few seconds because the uploader was smart enough to avoid uploading all the libraries inside the war that it already knew about. 
+When we decided to deploy Quizzie on the interweb, we didn't know where we would deploy it. We first thought about using
+a PAAS. The application being built with Spring, [CloundFoundry](http://www.cloudfoundry.org/index.html) was a natural choice.
+So we began using it, and the experience was pleasant, overall. I particularly liked the fact that uploading a big war file took only a few seconds because the uploader was smart enough to avoid uploading all the libraries inside the war that it already knew about.
 
-But we felt like it was too limiting for what we wanted to do. Using a distant heroku-hosted PostgreSQL database, 
+But we felt like it was too limiting for what we wanted to do. Using a distant heroku-hosted PostgreSQL database,
 accessible from anywhere, didn't please us, either. The price was a limiting factor, too: Quizzie is free except for private quizzes, and we haven't earned a cent yet.
 
 So we decided to go with a more classical hosting offering, and chose to try using [DigitalOcean](https://www.digitalocean.com/). Their offering is pretty cheap, and given how using an SSD on our dev boxes changed our life, having an SSD on the production machine looked like a good idea.
 
 We thought we would only use it during the development phase, but given how well things went, we finally decided to deploy Quizzie
-there. 
+there.
 
 Things we like about DigitalOcean:
 
@@ -48,15 +48,15 @@ anything on your home, install whatever you want and make regular save points. S
 
 ## Docker
 
-[Docker](https://www.docker.com) is the best invention since sliced bread, right? You're a loser if you don't use it. 
+[Docker](https://www.docker.com) is the best invention since sliced bread, right? You're a loser if you don't use it.
 
-So we tried. That seemed like a good idea. We would have an easy to install, reproducible container for Tomcat, and for PostgreSQL, and for NGINX, etc. 
+So we tried. That seemed like a good idea. We would have an easy to install, reproducible container for Tomcat, and for PostgreSQL, and for NGINX, etc.
 
 We almost succeeded. At a moment, we tried deploying an ElasticSearch and Kibana container to archive and search our log files. This sounded easy: just use a ready-made Docker container. Three days later, our DigitalOcean box was shut down because the Docker container was doing nothing except broadcasting (i.e. spamming) half of the DigitalOcean boxes on the data center. Using a ready-made container without knowing exactly what runs inside it and how it has been configured: bad, bad idea. Lesson learned.
 
 So we looked back and asked ourselves a few questions:
 
- - does Docker really helps us having a stable and reproducible environment. The answer was no. 
+ - does Docker really helps us having a stable and reproducible environment. The answer was no.
  - does Docker make it easier to deploy our application. The answer was no.
  - does Docker make the application easier to operate: consult logs, diagnose a failure, get back online quickly and safely? The answer was no.
  - are we confident enough to not screw everything up, be able to restart Quizzie or restore a backup. The answer was no.
@@ -65,7 +65,7 @@ So we looked back and asked ourselves a few questions:
  - should we use Docker in production? The answer was no.
 
 We'll probably try using Docker again in a few months or years, but at the moment, I simply feel it's not mature enough to be usable by
-developers like us. And even then, unless I need to deploy the same container on dozens of machines, I'm not sure the huge additional 
+developers like us. And even then, unless I need to deploy the same container on dozens of machines, I'm not sure the huge additional
 complexity is worth it.
 
 So we decided to forget about Docker, and rewrote our ansible provisioning scripts to simply install the JVM, Tomcat, PostgreSQL and NGINX directly on the DigitalOcean host. Three hours later, we had all we needed to
@@ -73,17 +73,17 @@ install everything on a fresh machine, deploy quizzie, backup and restore the da
 
 ## Ansible
 
-If you use Linux and don't know [Ansible](http://www.ansible.com), you're missing a really, really great tool. 
+If you use Linux and don't know [Ansible](http://www.ansible.com), you're missing a really, really great tool.
 
 Ansible has great guides and a clear, complete reference documentation. You can start using it in a few minutes, and learn the more
 advanced concepts later.
 
-It's easy to set up: all you need is Python and SSH, and those two both come pre-installed on Linux distros. 
+It's easy to set up: all you need is Python and SSH, and those two both come pre-installed on Linux distros.
 
 It has a huge amount of modules to deal with files, downloads and uploads, shell commands, database setup, web server
-monitoring, etc. 
+monitoring, etc.
 
-And its basic design principle is brilliant: instead of executing an imperative script to install or configure everything you need on a remote host (or many of them), you **declare** how your system should be configured. Ansible is idempotent: if your ansible install fails in the middle, after having installed 5 apt packages and created 10 directories and symlinks, just fix the failing task in the middle of the playbook, restart the whole process, and it will automatically detect that the 5 apt packages are already installed, and that the 10 directories and symlinks already exist. 
+And its basic design principle is brilliant: instead of executing an imperative script to install or configure everything you need on a remote host (or many of them), you **declare** how your system should be configured. Ansible is idempotent: if your ansible install fails in the middle, after having installed 5 apt packages and created 10 directories and symlinks, just fix the failing task in the middle of the playbook, restart the whole process, and it will automatically detect that the 5 apt packages are already installed, and that the 10 directories and symlinks already exist.
 
 We use Ansible to install and configure all the software we need on the production box. Installing and configuring the JVM, Tomcat, NGINX, PostgreSQL, the firewall, is done by executing a single command.
 
