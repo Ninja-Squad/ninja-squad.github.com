@@ -54,7 +54,7 @@ L'alias que vous donnez est laissé à votre appréciation, mais on distingue pl
 
 Vous utilisez probablement un router dans votre application. Les différents routers, aussi bien le router officiel `ngRoute`, que les routers proposés par la communauté, proposent aussi cette option dans leur configuration. Par exemple, avec `ngRoute`, on peut imaginer la configuration suivante :
 
-    angular.config(function($routeProvider){
+    myApp.config(function($routeProvider){
         $routeProvider.when('/', {
             controller: 'MainCtrl',
             controllerAs: 'vm'
