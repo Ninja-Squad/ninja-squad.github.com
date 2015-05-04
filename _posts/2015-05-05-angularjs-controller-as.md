@@ -20,10 +20,12 @@ Tout d'abord, en quoi cela consiste-t-il ? Imaginons un controller assez typique
 
 Avec son template :
 
+{%raw%}
     <div ng-controller="MainCtrl">
       <input ng-model="name">
       <p>{{greetings(name)}}</p>
     </div>  
+{%endraw%}
 
 Un simple `input`, initialisé avec une valeur par défaut, permet de renseigner un nom, et un message de bienvenue est affiché en dessous.
 
@@ -39,12 +41,14 @@ Si l'on utilise la syntaxe alternative du `controller as`, le code est légérem
 
 Le template doit lui aussi être modifié :
 
+{%raw%}
     <div ng-controller="MainCtrl as vm">
       <input ng-model="vm.name">
       <p>{{vm.greetings(vm.name)}}</p>
     </div>
+{%endraw%}
 
-Un alias est créé pour le controller `ng-controller="MainCtrl as vm"`, ce qui implique que l'on devra utilisé `vm` pour référencer le controller dans le template.
+Un alias est créé pour le controller `ng-controller="MainCtrl as vm"`, ce qui implique que l'on devra utiliser `vm` pour référencer le controller dans le template.
 
 L'alias que vous donnez est laissé à votre appréciation, mais on distingue plusieurs tendances :
 
@@ -85,13 +89,13 @@ En fait, on pourrait expliquer la transformation du controller par le code équi
     angular.module('controllers')
       .controller('MainCtrl', function($scope){
         $scope.vm = this;
-        this.name = 'Cedric'; // revient à définir vm.defaultName
+        this.name = 'Cedric'; // revient à définir vm.name
         this.greetings = function(name){ // revient à définir vm.greetings
           return 'Hello ' + name;
         };
       });
 
-L'avantage de cette syntaxe ne saute peut-être pas aux yeux, rendant les templates plus verbeux, et il faut connaître l'un des pièges d'AngularJS pour l'apprécier. Sans rentrer dans les détails ici, il peut arriver de se faire pièger par l'héritage des controllers. La technique habituelle pour éviter tout problème est de manipuler des models avec un `.`, par exemple `user.name` plutôt que `name`. Et c'est ce que force finalement cette syntaxe, avec un niveau intermédiaire introduit dans nos models par l'alias.
+L'avantage de cette syntaxe ne saute peut-être pas aux yeux, rendant les templates plus verbeux, et il faut connaître l'un des pièges d'AngularJS pour l'apprécier. Sans rentrer dans les détails ici, il peut arriver de se faire pièger par l'héritage des controllers. La technique habituelle pour éviter tout problème est de manipuler des models avec un `.`, par exemple `user.name` plutôt que `name`. Cette nouvelle syntaxe résoud finalement le problème, avec un niveau intermédiaire introduit dans nos models par l'alias.
 
 Les partisans de `controller as` mettent également en avant le meilleur découplage visuel entre le controller et le vrai rôle de `$scope`, qui n'apparaîtra plus dans le code du controller, sauf à utiliser des watchers ou des événements. Mais dans ce cas, ce sera plus aisé de s'en rendre compte.
 
@@ -106,7 +110,7 @@ Comme je le disais, ce n'est pas la syntaxe que nous utilisions jusqu'à présen
         };
       });
 
-Ce genre de problème disparaîtra avec l'utilisation de ES6, grâce aux arrow functions, mais si vous écrivez encore vos applications en ES5, c'est une bonne précaution à prendre.
+Ce genre de problème disparaîtra avec l'utilisation de ES6, grâce aux [arrow functions](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Fonctions/Fonctions_fl%C3%A9ch%C3%A9es), mais si vous écrivez encore vos applications en ES5, c'est une bonne précaution à prendre.
 
 En fait, cette syntaxe est particulièrement adaptée si vous écrivez vos applications AngularJS en ES6, ce qui est parfaitement possible en utilisant un transpiler comme [Babel](https://babeljs.io/) ou [Traceur](https://github.com/google/traceur-compiler). A ce moment là, non seulement le problème du `this` peut être évité, mais on peut aussi utiliser des classes pour déclarer les controllers, ce qui a pour effet d'effectivement manipuler le `this` de la classe en définissant des méthodes de classe :
 
@@ -124,6 +128,6 @@ En fait, cette syntaxe est particulièrement adaptée si vous écrivez vos appli
 
 Dans cette optique futuriste d'applications écrites en ES6 ou TypeScript, la team Angular essaye de promouvoir la syntaxe `controller as`. Car c'est bien sûr cette écriture qui sera prévilégiée dans les applications [Angular 2](https://books.ninja-squad.com/angular2). Si vous voulez préparer votre application à une éventuelle migration vers la version 2, il est donc probablement plus intéressant d'adopter cette syntaxe. D'autant que le tout nouveau router, qui devrait être utilisé aussi bien en AngularJS 1.x qu'en Angular 2, demande d'utiliser la syntaxe `controller as`. Pas le choix donc si vous voulez utiliser ce nouveau router !
 
-Si vous avez une application existante, et que vous voulez migrer vers cette syntaxe, c'est faisable, mais bien sûr un peu long (il faut reprendre chaque controller, template et test) et un peu risqué (attention au `this` notamment dans les callbacks, et il ne faut rien oublier dans les templates, rien ne vous préviendra si vous oublier de renommer `name` en `vm.name`...). A noter que cette syntaxe est également possible avec les controllers des directives.
+Si vous avez une application existante, et que vous voulez migrer vers cette syntaxe, c'est faisable, mais bien sûr un peu long (il faut reprendre chaque controller, template et test) et un peu risqué (attention au `this` notamment dans les callbacks, et il ne faut rien oublier dans les templates : rien ne vous préviendra si vous oublier de renommer `name` en `vm.name`...). A noter que cette syntaxe est également possible avec les controllers des directives.
 
 On voit donc que `controller as` est la syntaxe qui devient privilégiée officiellement : vous savez donc ce qu'il vous reste à faire pour votre prochaine application, voire pour votre application actuelle. [Notre ebook](https://books.ninja-squad.com/angularjs) va être mis à jour avec plus de détails sur cette partie, ainsi que sur les nouveautés de la version 1.4. Les heureux possesseurs d'un exemplaire recevront très bientôt une version mise à jour. Et si vous ne l'avez pas encore acheté (est-ce possible ?), c'est le moment !
