@@ -89,7 +89,7 @@ us with promises and callbacks in the first place. So let's accept this fact, an
       };
     });
 
-Congrats! This finally works. Except when it doesn't. What if the http call fails? How can the controller know about it? We would need a second callback. 
+Congrats! This finally works. Except when it doesn't. What if the HTTP call fails? How can the controller know about it? We would need a second callback. 
 
       var getPoneys = function(successCallbackFn, errorCallbackFn) {
         $http.get('/api/poneys').success(function(data) {
@@ -99,8 +99,8 @@ Congrats! This finally works. Except when it doesn't. What if the http call fail
         });
       };
 
-But wait: that's exactly what promises allow: passing two callbacks: one to handle a successful response, and one to handle an error response. And BTW, why wrap the callback functions into anonymous
-functions? We're making our life more complex than it should be. We should simply return the http promise, and let the controller deal with it.
+But wait: that's exactly what promises allow. Passing two callbacks: one to handle a successful response, and one to handle an error response. And BTW, why wrap the callback functions into anonymous
+functions? We're making our life more complex than it should be. We should simply return the HTTP promise, and let the controller deal with it.
 
     app.controller('PoneysCtrl', function($scope, poneyService) {
       poneyService.getPoneys().success(function(data) {
@@ -123,7 +123,7 @@ See, our first implementation of the service was right, after all. We simply had
 ## The Real Thing - You To Me Are Everything
 
 The previous version works fine, but it still has a design issue. The controller assumes that the 
-service returns an `HttpPromise`. For some bizarre reason, AngularJS thought it would be a good idea if promises returned by the $http service were different than all the other promises: they would have
+service returns an `HttpPromise`. For some bizarre reason, AngularJS thought it would be a good idea if promises returned by the $http service were different than all the other `$q` promises: they would have
 additional `success()` and `error()` methods, that would basically do the same thing as `then()`, but
 in a different way:
 
@@ -170,7 +170,7 @@ We'll thus have to create our own promise, right? So we'll have to use the `$q` 
         return defer.promise;
       };
 
-Great. Now we return a promise of poneys. Except when the http request fails. In that case,
+Great. Now we return a promise of poneys. Except when the HTTP request fails. In that case,
 the returned promise will never be resolved nor rejected, and the caller won't be aware of the
 error. So let's fix it:
 
@@ -186,7 +186,7 @@ error. So let's fix it:
         return defer.promise;
       };
 
-That is fine. But it's way more complex that it should be. Let's look at the documentation
+That is fine. But it's way more complex than it should be. Let's look at the documentation
 of $q, and especially at the documentation of the function `then()`:
 
 > This method returns a new promise which is resolved or rejected via the return value of the successCallback, errorCallback.
@@ -203,7 +203,7 @@ Don't know about you, but I need an example to understand this:
       };
 
 Now that's cool. We can "transform" a promise of response into a promise of poneys by transforming
-the response into poneys in the `then()` callback. Note that if the http response fails, the returned
+the response into poneys in the `then()` callback. Note that if the HTTP response fails, the returned
 promise of poneys will be rejected as well, and the controller will thus be aware of the error if it wants to:
 
     app.controller('PoneysCtrl', function($scope, poneyService) {
@@ -214,7 +214,7 @@ promise of poneys will be rejected as well, and the controller will thus be awar
       });
     });
 
-Have you noticed? You can simply pass it a success callback, and then chain with a call to `catch()` which only takes an error callback. I find that style more readable than the standard style of passing two callbacks to `then()`, which is equivalent:
+Have you noticed? You can simply pass it a success callback, and then chain with a call to `catch()` which only takes an error callback. I find that style more readable than the standard style of passing two callbacks to `then()`:
 
     app.controller('PoneysCtrl', function($scope, poneyService) {
       poneyService.getPoneys().then(function(data) {
@@ -223,5 +223,7 @@ Have you noticed? You can simply pass it a success callback, and then chain with
         $scope.error = 'unable to get the poneys';
       });
     });
+
+Beware that it's not strictly equivalent, though, as `catch()` is called on the promise returned by `then()`, and not on the original promise.
 
 This post is getting long. The next one will talk about promise chaining, resolving and rejecting, and unit tests. Stay tuned!
