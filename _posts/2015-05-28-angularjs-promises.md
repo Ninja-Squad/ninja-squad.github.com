@@ -29,7 +29,7 @@ Here's some example of code I've seen numerous times:
 It absolutely makes sense: you want an array of poneys in the scope, so you get them from the
 service allowing to get poneys from the backend:
 
-    app.factory('poneys', function($http) {
+    app.factory('poneyService', function($http) {
       var getPoneys = function() {
         return $http.get('/api/poneys');
       };
@@ -77,7 +77,7 @@ us with promises and callbacks in the first place. So let's accept this fact, an
       });
     });
 
-    app.factory('poneys', function($http) {
+    app.factory('poneyService', function($http) {
       var getPoneys = function(callbackFn) {
         $http.get('/api/poneys').success(function(data) {
           callbackFn(data);
@@ -108,7 +108,7 @@ functions? We're making our life more complex than it should be. We should simpl
       });
     });
 
-    app.factory('poneys', function($http) {
+    app.factory('poneyService', function($http) {
       var getPoneys = function() {
         return $http.get('/api/poneys');
       };
