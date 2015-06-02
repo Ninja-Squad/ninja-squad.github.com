@@ -143,7 +143,7 @@ Now let's say we would like to display an error message when saving the question
         });
     };
 
-That's wrong again. The callback doesn't return anything. Which actually means it returns `undefined`. So you might think that it's not too bad: `saveQuestion()` will return a rejected promise, and the rejection value will be undefined. But the rest of the code which doesn't care about the rejection value. Well, nope. Returning a value from the callback **resolves** the promise returned by `saveQuestion()` even if you return this value from an error callback. The original rejected promise of HTTP response is thus "transformed" into a resolved promise of undefined. 
+That's wrong again. The callback doesn't return anything. Which actually means it returns `undefined`. So you might think that it's not too bad: `saveQuestion()` will return a rejected promise, and the rejection value will be undefined. Since the rest of the code which doesn't care about the rejection value, that's fine. Well, nope. Returning a value from the callback **resolves** the promise returned by `saveQuestion()` even if you return this value from an error callback. The original rejected promise of HTTP response is thus "transformed" into a resolved promise of undefined. 
 
 That's something that can be useful (we'll see an example soon), but which is undesired in that case. So how can we transform the rejected promise into another rejected promise? By chaining, again. Instead of returning a value, we can simply return a rejected promise. Just as `$q.when()` allows creating a resolved promise, `$q.reject()` allows creating a rejected promise:
 
@@ -190,11 +190,11 @@ There is another way to do that, but it has a [nasty side-effect on unit tests](
 
     ⇒ then() returns a promise rejected as the original
   
-Here's a [plunkr showing a suite of unit tests](http://plnkr.co/edit/n8xyZaYfl59cV3TGPfTu?p=preview) demonstrating al these cases.
+Here's a [plunkr showing a suite of unit tests](http://plnkr.co/edit/n8xyZaYfl59cV3TGPfTu?p=preview) demonstrating all these cases.
 
 ## Testing is doubting
 
-OK. Now let's say we have a service returning a promise of poneys, and we want to test a controller $scope function that stores the poneys in the scope, or an error flag if the promise is. Simplest thing you can imagine.
+OK. Now let's say we have a service returning a promise of poneys, and we want to test a controller $scope function that stores the poneys in the scope, or an error flag if the promise is rejected. Simplest thing you can imagine.
 
     it('should set poneys in $scope if poneys can be loaded', function() {
         var poneys = ['Aloe', 'Pinkie Pie'];
