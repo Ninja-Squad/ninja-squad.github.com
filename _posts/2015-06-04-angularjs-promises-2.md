@@ -190,7 +190,7 @@ There is another way to do that, but it has a [nasty side-effect on unit tests](
 
     ⇒ then() returns a promise rejected as the original
   
-Here's a [plunkr showing a suite of unit tests](http://plnkr.co/edit/n8xyZaYfl59cV3TGPfTu?p=preview) demonstrating all these cases.
+Here's a [plunkr showing a suite of unit tests](http://plnkr.co/edit/KlrvP6GhrpThdwEW1iki?p=preview) demonstrating all these cases.
 
 ## Testing is doubting
 
