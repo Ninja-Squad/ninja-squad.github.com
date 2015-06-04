@@ -226,4 +226,4 @@ Have you noticed? You can simply pass it a success callback, and then chain with
 
 Beware that it's not strictly equivalent, though, as `catch()` is called on the promise returned by `then()`, and not on the original promise.
 
-This post is getting long. The next one will talk about promise chaining, resolving and rejecting, and unit tests. Stay tuned!
+This post is getting long. [The next one](/2015/06/04/angularjs-promises-2/) will talk about promise chaining, resolving and rejecting, and unit tests. Stay tuned!
