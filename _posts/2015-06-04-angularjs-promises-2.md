@@ -53,7 +53,7 @@ So change the code:
         }
     };
 
-That's ugly. We're repeating the same block of code twice. We now know that trying to transform an asynchronous call into a synchronous, blocking call is a dead-end. But we could do the inverse thing: transform a synchronous call into an asynchronous one:
+That's ugly. We're repeating the same block of code twice. We now know that trying to transform an asynchronous call into a synchronous, blocking call is a dead-end. But we could do the reverse thing: transform a synchronous call into an asynchronous one:
 
     $scope.next = function() {
         saveQuestionIfDirty().then(function() {
@@ -143,7 +143,7 @@ Now let's say we would like to display an error message when saving the question
         });
     };
 
-That's wrong again. The callback doesn't return anything. Which actually means it returns `undefined`. So you might think that it's not too bad: `saveQuestion()` will return a rejected promise, and the rejection value will be undefined. Since the rest of the code which doesn't care about the rejection value, that's fine. Well, nope. Returning a value from the callback **resolves** the promise returned by `saveQuestion()` even if you return this value from an error callback. The original rejected promise of HTTP response is thus "transformed" into a resolved promise of undefined. 
+That's wrong again. The callback doesn't return anything. Which actually means it returns `undefined`. So you might think that it's not too bad: `saveQuestion()` will return a rejected promise, and the rejection value will be undefined. Since the rest of the code doesn't care about the rejection value, that's fine. Well, nope. Returning a value from the callback **resolves** the promise returned by `saveQuestion()` even if you return this value from an error callback. The original rejected promise of HTTP response is thus "transformed" into a resolved promise of undefined. 
 
 That's something that can be useful (we'll see an example soon), but which is undesired in that case. So how can we transform the rejected promise into another rejected promise? By chaining, again. Instead of returning a value, we can simply return a rejected promise. Just as `$q.when()` allows creating a resolved promise, `$q.reject()` allows creating a rejected promise:
 
@@ -246,9 +246,9 @@ If you're testing a service (which doesn't use a $scope), call `$apply()` on the
 
 ## Conclusion
 
-Promises are a powerful concept, but which is quite hard to grasp. And I've not even talked about [composition](https://docs.angularjs.org/api/ng/service/$q#all), which allows executing several asynchronous calls in parallel, and getting the result once all the promises are resolved.
+Promises are a powerful concept, but a quite hard one to grasp. And I've not even talked about [composition](https://docs.angularjs.org/api/ng/service/$q#all), which allows executing several asynchronous calls in parallel, and getting the result once all the promises are resolved.
 
-But mastering them tremendously helps in writing elegant, robust code in AngularJS applications. Promises are also coming in EcmaScript 6, and even if the syntax used to create them is different, their behavior is identical. So even VanillaJS code will soon use promises.
+But mastering them tremendously helps in writing elegant, robust code in AngularJS applications. Promises are also coming in ECMAScript 6, and even if the syntax used to create them is different, their behavior is identical. So even VanillaJS code will soon use promises.
 
 I would have liked to have such an article when I started learning promises. That would have allowed me to avoid many mistakes. Hopefully, these two posts will constitute a resolved promise of successful and happy coding for you:
 
