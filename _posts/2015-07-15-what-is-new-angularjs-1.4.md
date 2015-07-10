@@ -12,7 +12,7 @@ so I'll let you dig in this part by yourself.
 
 The whole release has a clear feeling of getting us closer to what an app will
 look in Angular 2, by enforcing some practices. The sad part is that the new
-router module that was announced is not in 1.4 ans is delayed to 1.5.
+router module that was announced is not in 1.4 and is delayed to 1.5.
 But some nice new features have also been added.
 
 Let's dig in!
@@ -21,7 +21,7 @@ Let's dig in!
 
 For all the fans of NPM out there, AngularJS and its modules are now packaged as
 CommonJS modules, with the proper exports, and published on NPM.
-That allows a simpler setup if you are using Browserify.
+That allows a simpler setup if you are using [Browserify](http://browserify.org/).
 
 # limitTo
 
@@ -40,6 +40,7 @@ using the limit filter on `letters` will output the following:
     {{vm.letters | limitTo:2:0}} // [a, b]
     {{vm.letters | limitTo:2:1}} // [b, c]
     {{vm.letters | limitTo:2:-1}} // [f]
+    {{vm.letters | limitTo:-2:-1}} // [d, e]
 {%endraw%}
 
 If you want to play with it: head to this [plunkr](http://plnkr.co/edit/fjBNS27qwdZivMygQjbX?p=preview)
@@ -52,7 +53,7 @@ Now, you can dynamically specify if an option should be disabled!
 
 Let's say you have to pick your user to pick her two favorite ponies, with two select.
 You don't want her to pick the same one twice, so, in the second select,
-you're gonna disable the option picked in the first one.
+you want to disable the option picked in the first one.
 The `ngOptions` micro-syntax has been enriched with `disable when` to achieve this.
 
     Most fav: <select ng-model="mostFav"
@@ -62,7 +63,7 @@ The `ngOptions` micro-syntax has been enriched with `disable when` to achieve th
       ng-options="pony disable when isMostFav(pony) for pony in ponies">
     </select>
 
-You can see that the second select use the new `disable` capabilities,
+You can see that the second select uses the new `disable` capabilities,
 by calling a function that will check if the current option is the one chosen in the first select box.
 You can of course also check a boolean attribute of your model instead of calling a function.
 
@@ -82,7 +83,7 @@ with the ultimate goal to ease the migration.
 As Angular 2 will not use a `$scope` object anymore in the controllers, we are
 now encouraged to write our apps using `controllerAs` (same logic applies to the new router,
   we'll talk about this in the following posts). With the `controllerAs` syntax in a controller,
-  the controller is the scope itself, so you add new methods and attributes on `this`:
+  the controller itself is published on the scope, and you can thus access attributes of the controller from the view:
 
     angular.module('controllers')
       .controller('ComponentCtrl', function(){
@@ -160,7 +161,7 @@ So you had to do the pretty horrible:
 
 Now it's working, but it's awful: with `$scope` back, a manual watcher and some trick with the value of `this`... No one liked it, no one was using it.
 
-The introduction of `bindToController` in 1.3 was here to fix this. With this new attribute, as soon as the controller is instantiated, the values of the isolate scope bindings will be available, and no more need to watch it, or use the $scope:
+The introduction of `bindToController` in 1.3 was here to fix this. With this new attribute, as soon as the controller is instantiated, the values of the isolate scope bindings would be available, and you wouldn't need to watch it, or use the $scope:
 
 {%raw%}
     angular.module('directives')
@@ -218,19 +219,45 @@ Let's start with the breaking change induced: `ng-include-messages`,
 which was previously a directive to add as an attribute on the same element containing `ng-messages`,
 is now a directive that should be a child of `ng-messages`. So you may want to check this if you upgrade to 1.4.
 
-As I was saying, it's now possible to have dynamic error messages.
-Let's imagine your form has a bunch of client validation and can also have some errors coming from the server validation.
-This list of errors is declared in your controller as `serverErrors`,
-and you can now iterate over this collection and display the error message on a dynamic expression, here using the error code.
+As I was saying, it's now possible to have dynamic error key with a new directive `ngMessageExp`.
+That's something that was not possible previously. We can now give an expression, and the result
+of this expression will decide if the error message is displayed or not. We can give an array as the expression:
 
-    angular.module('ngMessagesApp', ['ngMessages'])
-      .controller('MainCtrl', function() {
-        this.serverErrors = [{
-          code: 'alreadyExist', message: 'Event name already exist'
-        }, {
-          code: 'inappropriate', message: 'Event name is inappropriate'
-        }];
-      })
+{%raw%}
+    <form name="eventForm">
+      name: <input name="name" ng-model="event.name">
+    </form>
+    <div ng-messages="eventForm.$error">
+      <div ng-message-exp="['minlength', 'maxlength']">
+        The event name should be between 50 and 100 characters
+      </div>
+    </div>
+{%endraw%}
+
+Previously we would have to repeat the template for each error type:
+
+{%raw%}
+    <form name="eventForm">
+      name: <input name="name" ng-model="event.name">
+    </form>
+    <div ng-messages="eventForm.$error">
+      <div ng-message="minlength">
+        The event name should be between 50 and 100 characters
+      </div>
+      <div ng-message="maxlength">
+        The event name should be between 50 and 100 characters
+      </div>
+    </div>
+{%endraw%}
+
+It can also be interesting to work with repeaters, if you want to display an error message
+that comes from your server side validation for example. You can define the full list of your
+possible server errors with their code and their corresponding message in your app:
+
+    this.serverErrors = [{ code: 'alreadyExist', message: 'Event name already exist'},
+      { code: 'inappropriate', message: 'Event name is inappropriate'}];
+
+Then instead of adding one `ngMessage` per error, you can use a repeater:
 
 {%raw%}
     <form name="eventForm">
@@ -245,13 +272,11 @@ and you can now iterate over this collection and display the error message on a 
     </div>
 {%endraw%}
 
-The error messages will be displayed if the `custom-server-validation` directive
-adds some errors existing in the `serverErrors` list, after a server check for example,
-matching the dynamic expression `error.code`.
+The error message will be displayed if an error has a code matching the dynamic expression `error.code`.
 
 # ngCookies
 
-This module is not really new, but it has been refactored and enhanced.
+This module is not really new, but it has been redesigned and enhanced.
 When we give our training, we often have the same question about cookies : can we pass some options,
 like the expiration date? And it was a good question, as it was not possible with the `ngCookies` module
 (but of course, you could use a community alternative, [angular-cookie](https://github.com/ivpusic/angular-cookie) for example).
@@ -262,13 +287,13 @@ and `$cookies`, but now `$cookieStore` is deprecated. It still exists for now,
 but you should use the brand new `$cookies` service. This one no longer works with properties, but has now a few methods :
 
 - `get(key)`: quite obviously returns the value of the cookie key.
-- `getObject(key)`: same but also deserialize the object stored for this key.
+- `getObject(key)`: same but also deserializes the object stored for this key.
 - `getAll()`: returns an object with every cookie key and values.
 - `put(key, value, options)`: sets the value of a cookie at the given key.
-- `putObject(key, value, options)`: same thing, but serialize the value first.
+- `putObject(key, value, options)`: same thing, but serializes the value first.
 - `remove(key)`: deletes the given cookie.
 
-You may have notice the `options` parameter in `put` and `putObject` methods,
+You may have noticed the `options` parameter in `put` and `putObject` methods,
 and that's also new. You can now specify a few things, as properties of the `options` object :
 
 - `expires`: will set the expiration date at the given value (can be a string or a date).
@@ -319,17 +344,6 @@ After:
         // will test 3 times, with user being admin, then user, anon
       });
 
-# Timezones
-
-The date filter now allows to convert to another timezone (previously you could only convert to UTC...).
-So you can now do:
-
-{%raw%}
-    <p>UTC -> {{date | date:'short':'UTC'}}</p>
-    <p>Paris -> {{date | date:'short':'GMT+0200'}}</p>
-    <p>Auckland -> {{date | date:'short':'GMT+1300'}}</p>
-{%endraw%}
-
 # ngJq
 
 A new directive is born, `ngJq`, allowing us to force the library used by `angular.element`.
@@ -359,7 +373,7 @@ The decorator will be invoked when the decorated service is first instantiated, 
 
 Until now, AngularJS was offering a very limited support for internationalization
 (the long word i18n stands for). You can use some filters for date, numbers or currency,
-and you can manage plurials with ngPluralize, but, let's be honest,
+and you can manage plurals with ngPluralize, but, let's be honest,
 that was not nearly enough to make a real app. As usual, the community filled in, and two open-sources emerged above the others:
 
 - [angular-translate](https://github.com/angular-translate/angular-translate), which is probably the most popular
@@ -367,16 +381,16 @@ that was not nearly enough to make a real app. As usual, the community filled in
 
 Recently, the Angular team gathered the project leaders and [drafted a plan](https://docs.google.com/document/d/1pbtW2yvtmFBikfRrJd8VAsabiFkKezmYZ_PbgdjQOVU/edit)
 to add a better support to AngularJS, and also for the brand new Angular 2.
-The long term goal is to have all the necessary to translate and localize an app,
+The long term goal is to have all the necessary features to translate and localize an app,
 with a better integration with professional tools to do this translation.
 
-This is the first step for this effort, with a new module dedicated to this `ngMessageFormat`.
+The new `ngMessageFormat` module is the first step towards this goal.
 We, as developers, are writing HTML templates with messages that should be translated.
-The goal is to be able to extract these messages, bundle them to give them to a translator (that can be you also),
+The goal is to be able to extract these messages, bundle them to give them to a translator,
 and then reintegrate the translated messages. The last step can be done with two main options :
 
 - loading a JSON file with the translation for each key (most popular)
-- generating a template for each language (popular for very big app, Google-style)
+- generating a template for each language (popular for very big apps, Google-style)
 
 In the long term, maybe the 1.5 release at the end of the year, we'll have a whole toolchain to help us with this.
 The new module is just here to start the effort, and is focused on handling, as you can guess, the message format, especially gender and plurals.
@@ -411,6 +425,6 @@ And it can be nested as much as you want.
 
 This not yet a full blown solution, but we'll keep an eye on it and see what it will become, and if it's interesting to use.
 
-Well that was a long post, and I hope you'll have learn something! If you migrate your app, be especially careful with ngAnimate, ngCookies and ngMessages, and follow the [official migration guide](https://docs.angularjs.org/guide/migration#migrating-from-1-3-to-1-4).
+Well that was a long post, and I hope you'll have learnt something! If you migrate your app, be especially careful with ngAnimate, ngCookies and ngMessages, and follow the [official migration guide](https://docs.angularjs.org/guide/migration#migrating-from-1-3-to-1-4).
 
 [Our ebook](https://books.ninja-squad.com) is now updated to the 1.4 version : all of you who already bought it should receive an email to download the updated release soon.
