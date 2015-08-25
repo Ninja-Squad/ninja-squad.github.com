@@ -1,7 +1,9 @@
 <h4>Formations</h4>
 {% for training in site.JB.trainings %}
 <a href="http://ninja-squad.fr/training/{{training[0]}}">{{training[1].title}}</a>
+<p>
 {% for date in training[1].dates %}
-<p>{{date}}</p>
+{{date}}<br>
 {% endfor %}
+</p>
 {% endfor %}
