@@ -17,7 +17,7 @@ There are still a few important features missing and bugs to crush before that,
 and also lots of documentation to write.
 But the beta is not that far, probably a matter of a few months, if I had to make a bet.
 I've been upgrading our ebook to the latest alpha releases, and I love the way the project evolves:
-it's usually a matter of deleting code (yay!) and renaming things (that's more painful for me, as you can imagine).
+it's usually a matter of deleting code (yay!) and renaming things (that's more painful for me, as I have to change my code samples and chapters. But we have 100% test coverage, so it smooths things out!).
 The concepts are now solid and well established. The performance is very good according to the benchmarks, but, well, you know, benchmarks...
 It has been announced that IE9 will be supported, I'm sure that it will please some of you.
 
