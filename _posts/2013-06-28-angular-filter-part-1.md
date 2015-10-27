@@ -2,7 +2,7 @@
 layout: post
 title: Angular filter - Part 1
 author: [cexbrayat]
-tags: [javascript, angular]
+tags: [javascript, angularjs]
 canonical: http://hypedrivendev.wordpress.com/2013/06/28/angular-filter-part-1
 ---
 
@@ -51,7 +51,7 @@ Angular propose par défaut certains filtres communs :
 {% raw %}
 <pre>
   <code class="javascript">
-    {{ 87.67 | number:1 }} // 87.7 
+    {{ 87.67 | number:1 }} // 87.7
   </code>
 </pre>
 {% endraw %}  
@@ -62,7 +62,7 @@ Angular propose par défaut certains filtres communs :
     {{ 87.67 | number:3 }} // 87.670
   </code>
 </pre>
-{% endraw %} 
+{% endraw %}
 
 - currency : permet de préciser la monnaie.
 {% raw %}
@@ -105,7 +105,7 @@ Un certain nombre de patterns sont disponibles (avec un rendu différent selon l
 {% raw %}
 <pre>
   <code class="javascript">
-    {{ person | json }} // { name: 'Cedric', company: 'Ninja Squad'} 
+    {{ person | json }} // { name: 'Cedric', company: 'Ninja Squad'}
   </code>
 </pre>
 {% endraw %}  
@@ -113,7 +113,7 @@ Un certain nombre de patterns sont disponibles (avec un rendu différent selon l
 {% raw %}
 <pre>
   <code class="javascript">
-    {{ person }} // { name: 'Cedric', company: 'Ninja Squad'} 
+    {{ person }} // { name: 'Cedric', company: 'Ninja Squad'}
   </code>
 </pre>
 {% endraw %}    
@@ -122,8 +122,8 @@ Un certain nombre de patterns sont disponibles (avec un rendu différent selon l
 {% raw %}
 <pre>
   <code class="javascript">
-    {{ ['a','b','c'] | limitTo:2 }} // ['a','b'] 
-    {{ ['a','b','c'] | limitTo:-2 }} // ['b','c'] 
+    {{ ['a','b','c'] | limitTo:2 }} // ['a','b']
+    {{ ['a','b','c'] | limitTo:-2 }} // ['b','c']
   </code>
 </pre>
 {% endraw %}  
@@ -137,18 +137,18 @@ Un certain nombre de patterns sont disponibles (avec un rendu différent selon l
     var agnes = {name: 'Agnes', gender: 'female'};     
     var cedric = {name: 'cedric', gender: 'male'};     
     $scope.ninjas = [jb, cyril, agnes, cedric];  
-    
-    // order by the property 'gender' 
-    {{ ninjas | orderBy:'gender'}} // Agnes,JB,Cyril,Cédric 
 
-    // order by a function (lowercase last) 
-    $scope.lowercaseLast = function(elem){ 
-      return elem.name === elem.name.toLowerCase() 
-    }; 
-    {{ ninjas | orderBy:lowercaseLast }} // Agnes,JB,Cyril,cedric 
+    // order by the property 'gender'
+    {{ ninjas | orderBy:'gender'}} // Agnes,JB,Cyril,Cédric
 
-    // order by an array of properties or functions 
-    {{ ninjas | orderBy:['-gender','name'] }} // cedric,Cyril,JB,Agnes 
+    // order by a function (lowercase last)
+    $scope.lowercaseLast = function(elem){
+      return elem.name === elem.name.toLowerCase()
+    };
+    {{ ninjas | orderBy:lowercaseLast }} // Agnes,JB,Cyril,cedric
+
+    // order by an array of properties or functions
+    {{ ninjas | orderBy:['-gender','name'] }} // cedric,Cyril,JB,Agnes
   </code>
 </pre>
 {% endraw %}

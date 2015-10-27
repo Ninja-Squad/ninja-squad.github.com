@@ -9,7 +9,7 @@ can be unit-tested."
 
 In my [previous post](/2015/05/28/angularjs-promises/), I showed
 some common traps and anti-patterns that many newbies, including myself,
-fall into when using basic functionalities of promises. 
+fall into when using basic functionalities of promises.
 
 Let's continue this journey and see how we can use them in more complex situations.
 
@@ -93,7 +93,7 @@ So we can simplify `saveQuestionIfDirty()`:
         }
     };
 
-Let's look at `next()` now. Weren't promises supposed to avoid this pyramid of callbacks? 
+Let's look at `next()` now. Weren't promises supposed to avoid this pyramid of callbacks?
 
 Here's how I would like to write the code:
 
@@ -105,7 +105,7 @@ Here's how I would like to write the code:
         });
     };
 
-But that won't work. First of all, we've seen before that the promise returned by `then()`is resolved via the value returned by the callback. And our callback doesn't return anything. It should thus return the next question. 
+But that won't work. First of all, we've seen before that the promise returned by `then()`is resolved via the value returned by the callback. And our callback doesn't return anything. It should thus return the next question.
 
     $scope.next = function() {
         saveQuestionIfDirty().then(function() {
@@ -143,7 +143,7 @@ Now let's say we would like to display an error message when saving the question
         });
     };
 
-That's wrong again. The callback doesn't return anything. Which actually means it returns `undefined`. So you might think that it's not too bad: `saveQuestion()` will return a rejected promise, and the rejection value will be undefined. Since the rest of the code doesn't care about the rejection value, that's fine. Well, nope. Returning a value from the callback **resolves** the promise returned by `saveQuestion()` even if you return this value from an error callback. The original rejected promise of HTTP response is thus "transformed" into a resolved promise of undefined. 
+That's wrong again. The callback doesn't return anything. Which actually means it returns `undefined`. So you might think that it's not too bad: `saveQuestion()` will return a rejected promise, and the rejection value will be undefined. Since the rest of the code doesn't care about the rejection value, that's fine. Well, nope. Returning a value from the callback **resolves** the promise returned by `saveQuestion()` even if you return this value from an error callback. The original rejected promise of HTTP response is thus "transformed" into a resolved promise of undefined.
 
 That's something that can be useful (we'll see an example soon), but which is undesired in that case. So how can we transform the rejected promise into another rejected promise? By chaining, again. Instead of returning a value, we can simply return a rejected promise. Just as `$q.when()` allows creating a resolved promise, `$q.reject()` allows creating a rejected promise:
 
@@ -189,7 +189,7 @@ There is another way to do that, but it has a [nasty side-effect on unit tests](
   * error callback is absent
 
     ⇒ then() returns a promise rejected as the original
-  
+
 Here's a [plunkr showing a suite of unit tests](http://plnkr.co/edit/KlrvP6GhrpThdwEW1iki?p=preview) demonstrating all these cases.
 
 ## Testing is doubting
@@ -215,7 +215,7 @@ OK. Now let's say we have a service returning a promise of poneys, and we want t
         expect($scope.errorLoadingPoneys).toBeTruthy();
     });
 
-These tests should pass, right? 
+These tests should pass, right?
 
 Nope. Callbacks are not invoked as soon as the promise is resolved or rejected. Even if the promise is already resolved or rejected and a new callback is passed to `then()`, this callback won't be invoked immediately. AngularJS only invokes the `then()` callbacks at the next digest loop. This doesn't make much difference in classical application code, but it does make a huge one in unit tests. You need to explicitely call `$digest()` or `$apply()`on a $scope to force AngularJS to invoke the callbacks:
 

@@ -27,16 +27,16 @@ La première branche Git, nommée `express` met en place une application Node.js
     var express = require('express')
       , app = express()
       , server = require('http').createServer(app);
-    
+
     app.use(express.static(__dirname + '/'));
-    
+
     server.listen(9003);
 
 L'application Node.js va servir les ressources statiques sur le port 9003. On peut alors ajouter le fichier [HTML de notre application](https://github.com/Ninja-Squad/angular-express-socketio/blob/express/vote.html), qui contient basiquement :
 
     <div class="row" ng-repeat="vote in votes">
       <div class="col-xs-4 vote"> {{ vote.choice }} </div>
-      <div class="col-xs-4 vote"> {{ vote.votes }} </div> 
+      <div class="col-xs-4 vote"> {{ vote.votes }} </div>
       <div class="btn btn-primary col-xs-4" ng-click="voteFor(vote.choice)">+1</div>
     </div>
 
