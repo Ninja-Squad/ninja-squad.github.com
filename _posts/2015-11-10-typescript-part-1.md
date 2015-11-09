@@ -6,13 +6,13 @@ tags: ["Angular 2", "TypeScript"]
 description: "Angular 2 is not that far now. It has been designed to leverage a lot of new wonderful things in Web development, like TypeScript. Let's have a look!"
 ---
 
-TypeScript has been around since 2012, and is a superset of JavaScript, adding a few things to ES5. The more important one is the type system, giving TypeScript its name. From version 1.5, released in 2015, the library is trying to be a superset of ES6, including all the shiny features we saw in the last blog posts, and a few new things as well, like decorators.
+TypeScript has been around since 2012, and is a superset of JavaScript, adding a few things to ES5. The more important one is the type system, giving TypeScript its name. From version 1.5, released in 2015, the library is trying to be a superset of ES6, including all the shiny features we saw in the [last](/2015/10/06/es6-part-1/) [blog](/2015/10/13/es6-part-2/) [posts](/2015/11/03/types/), and a few new things as well, like decorators.
 Writing TypeScript feels very much like writing JavaScript. By convention, TypeScript files are named with a `.ts` extension, and they will need to be compiled to standard JavaScript, usually at build time, using the TypeScript compiler. The generated code is very readable.
 
     npm install -g typescript
     tsc test.ts
 
-But let's start by the beginning.
+But let's start with the beginning.
 
 # Types as in TypeScript
 
