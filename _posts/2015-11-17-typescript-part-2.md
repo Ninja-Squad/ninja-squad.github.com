@@ -81,7 +81,7 @@ These shortcuts are really useful and we'll rely on them a lot in Angular 2!
 
 When working with external libraries written in JS, you may think we are doomed because we don't know what types of parameter the function in that library will expect. That's one of the cool things with the TypeScript community: its members have defined interfaces for the types and functions exposed by the popular JavaScript libraries!
 
-The files containing these interfaces have a special `.d.ts` extension. They contain a list of the library's public functions. A good place to look for these files is https://github.com/borisyankov/DefinitelyTyped[DefinitelyTyped]. For example, if you want to use TS in your AngularJS 1.x apps, you can download the proper file from the repo:
+The files containing these interfaces have a special `.d.ts` extension. They contain a list of the library's public functions. A good place to look for these files is [DefinitelyTyped](https://github.com/borisyankov/DefinitelyTyped). For example, if you want to use TS in your AngularJS 1.x apps, you can download the proper file from the repo:
 
     tsd query angular --action install --save
 
@@ -119,7 +119,7 @@ that may be standardized one day in the future (possibly in ES7/ES2016).
 Note that the TypeScript implementation goes slightly further than the proposed standard.
 
 In Angular 2, we will use the decorators provided by the framework.
-They role is fairly basic: they add some metadata to our classes to say for example "this class is a component",
+Their role is fairly basic: they add some metadata to our classes to say for example "this class is a component",
 "this is an optional dependency", "this is a custom property", etc...
 It's not required to use them, as you can add the metadata manually (if you want to stick to ES5 for example),
 but the code will be definitely more elegant using decorators, as provided by TypeScript.
@@ -176,16 +176,15 @@ and will understand that it is a component, based on the metadata the decorator 
 Cool, huh? As you can see, a decorator can also receive parameters, here a configuration object.
 
 I just wanted to introduce the raw concept of decorators,
-we'll look into every decorator available in Angular all along the book.
+we'll look into every decorator available in Angular all along [our book](https://books.ninja-squad.com/angular2).
 
 I have to point out that you can use decorators with Babel as a transpiler instead of TypeScript.
-There is even a plugin to support all the Angular 2 deocrators: [angular2-annotations](https://www.npmjs.com/package/babel-plugin-angular2-annotations)
+There is even a plugin to support all the Angular 2 decorators: [angular2-annotations](https://www.npmjs.com/package/babel-plugin-angular2-annotations).
 Babel also supports class properties, but not the type system offered by TypeScript.
 You can use Babel, and write "ES6+" code, but you will not be able to use the types, and they are very useful for the dependency injection for example.
 It's completely possible, but you'll have to add more decorators to replace the types.
 
 So my advice would be to give TypeScript a try!
-All my examples from here will use it.
 It's not very intrusive, as you can use it just where it's useful and forget about it for the rest.
 If you really don't like it, it will not be very difficult to switch to ES6 with Babel or Traceur,
 or even ES5, if you are slightly crazy (but honestly, an Angular 2 app in ES5 has pretty ugly code).
