@@ -107,19 +107,19 @@ This is a fairly new feature, added only in TypeScript 1.5, to help supporting A
 Indeed, as we will shortly see, Angular 2 components can be described using decorators.
 You may have not heard about decorators, as not every language has them.
 A decorator is a way to do some meta-programming.
-There are fairly similar to annotations
-which are mainly used in Java, #C and Python, and maybe other languages I don't know.
+They are fairly similar to annotations
+which are mainly used in Java, C# and Python, and maybe other languages I don't know.
 Depending on the language, you add an annotation to a method, an attribute, or a class.
 Generally, annotations are not really used by the language itself, but mainly by frameworks and libraries.
 
-Decorators are really powerful: they can modify their target, and for example to add metadata.
+Decorators are really powerful: they can modify their target (method, classes, etc...), and for example alter the parameters of the call, tamper with the result, call other methods when the target is called or add metadata for a framework (which is what Angular 2 decorators do).
 Until now, it was not something possible in JavaScript.
 But the language is evolving and there is now an official proposal for `decorators`,
 that may be standardized one day in the future (possibly in ES7/ES2016).
 Note that the TypeScript implementation goes slightly further than the proposed standard.
 
 In Angular 2, we will use the decorators provided by the framework.
-Their role is fairly basic: they add some metadata to our classes to say for example "this class is a component",
+Their role is fairly basic: they add some metadata to our classes, attributes or parameters to say for example "this class is a component",
 "this is an optional dependency", "this is a custom property", etc...
 It's not required to use them, as you can add the metadata manually (if you want to stick to ES5 for example),
 but the code will be definitely more elegant using decorators, as provided by TypeScript.
@@ -128,21 +128,26 @@ In TypeScript, decorators start with an `@`, and can be applied to a class, a cl
 Not on a constructor though, but it can be applied to the constructor's parameters.
 
 To have a better grasp on this, let's try to build a simple decorator,
-`@log()`, that will log something every time a method is called.
+`@Log()`, that will log something every time a method is called.
 
 It will be use like this:
 
     class RaceService {
 
-      @log()
+      @Log()
       getRace(raceId) {
+        // call API
+      }
+
+      @Log()
+      getRaces() {
         // call API
       }
     }
 
 To define it, we have to write a method returning a function like this:
 
-    let log = function () {
+    let Log = function () {
       return (target: any, name: string, descriptor: any) => {
         logger.log(`call to ${name}`);
         return descriptor;
@@ -155,6 +160,14 @@ Here we have a method decorator, that takes 3 parameters:
 - `target`: the method targeted by our decorator
 - `name`: the name of the targeted method
 - `descriptor`: a descriptor of the targeted method, like is the method enumerable, writable, etc...
+
+So, in our simple example, every time the `getRace()` or `getRaces()` methods are called,
+we'll see a trace in the browser logs:
+
+    raceService.getRaces();
+    // logs: call to getRaces
+    raceService.getRace(1);
+    // logs: call to getRace
 
 Here we simply log the method name, but you could do pretty much whatever you want:
 interfere with the parameters, the result, calling another function, etc...
@@ -189,4 +202,4 @@ It's not very intrusive, as you can use it just where it's useful and forget abo
 If you really don't like it, it will not be very difficult to switch to ES6 with Babel or Traceur,
 or even ES5, if you are slightly crazy (but honestly, an Angular 2 app in ES5 has pretty ugly code).
 
-Stay tune for the next episode of 'The road to Angular 2'!
+Stay tuned for the next episode of 'The road to Angular 2'!
