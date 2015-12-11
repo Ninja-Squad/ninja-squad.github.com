@@ -8,7 +8,7 @@ description: "So, you made a cool API. Can we download our invoice?"
 
 We're a tiny shop. We don't have any secretary, full-time accountant, or whatever. We're just developers.
 
-But we thus have to do some secretary or accountant tasks. One of them is to carefully archive invoices coming from online service providers such as Github, DigitalOcean or Online.
+But we thus have to do some secretary or accountant tasks. One of them is to carefully archive invoices coming from online service providers such as [Github](https://github.com/), [DigitalOcean](https://www.digitalocean.com/) or [Online](https://www.online.net/fr).
 
 These three are all major online service providers, and they're kind enough to send us an email every month, to send us our invoice, or just let us know that it's available.
 
