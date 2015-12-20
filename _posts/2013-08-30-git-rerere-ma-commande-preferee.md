@@ -9,7 +9,7 @@ canonical: http://hypedrivendev.wordpress.com/2013/08/30/git-rerere-ma-commande-
 
 J’adore faire des rebases. Vraiment. C’est d’ailleurs une part très importante du [workflow que nous vous conseillons](http://blog.ninja-squad.com/2013/06/03/branching-with-git/). L’une des choses qui énerve parfois ceux qui font des rebases vient de la résolution de conflit répétitives qui peut survenir. 
 
-Pour rappel, un rebase va prendre tous les commits sur votre branche courante et les rejouer un à un sur une autre. Si vous avez une branche ‘topic1’ avec 5 commits et que vous effectuer un rebase sur la branche ‘master’ alors Git rejoue les 5 commits les uns après les autres sur la branche master.
+Pour rappel, un rebase va prendre tous les commits sur votre branche courante et les rejouer un à un sur une autre. Si vous avez une branche ‘topic1’ avec 5 commits et que vous effectuez un rebase sur la branche ‘master’ alors Git rejoue les 5 commits les uns après les autres sur la branche master.
 
 Parfois, ces commits ont un conflit et le rebase s’arrête, le temps de vous laisser corriger. Mais il arrive que dès que Git passe au commit suivant, vous ayez à nouveau le conflit! Ce qui est très frustrant et pousse parfois à l’abandon du rebase. 
 
