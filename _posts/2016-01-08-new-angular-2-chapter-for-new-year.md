@@ -14,14 +14,14 @@ That’s not the final release yet, but we’re getting there.
 And we have been hard at work on [our ebook](https://books.ninja-squad.com/angular2).
 **In fact we are just a few days shy from our first release.**
 Like the framework we are going to release a first version of the ebook
-(in english and in french) with all
+(in English and in French) with all
 that you need to write your first app,
 and then we’ll release some updates with new chapters on more advanced topics.
 
 To keep you busy while you wait for the ebook release,
 we added some content to the free samples.
 
-You can now read about :
+You can now read about:
 
 - ECMAScript 6
 - TypeScript
