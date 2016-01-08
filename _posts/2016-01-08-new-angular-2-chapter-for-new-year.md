@@ -3,7 +3,7 @@ layout: post
 title: New free chapters on Angular 2
 author: cexbrayat
 tags: ["Angular 2", "ebook"]
-description: "Angular 2 is out in beta, our ebook is a few days shy from being released, and here are some new free chapters!"
+description: "Angular 2 is out in beta, we'll release our ebook in a few days, and here are some new free chapters!"
 ---
 
 # Happy new year!
@@ -18,7 +18,7 @@ Maybe you haven’t heard but Angular 2 is now out in beta!
 That’s not the final release yet, but it will be there soon.
 
 And we have been hard at work on [our ebook](https://books.ninja-squad.com/angular2).
-**In fact we are just a few days shy from our first release**.
+**In fact, we'll release a first version of our ebook in a few days**.
 
 Like the framework, we are going to release a first version of the ebook
 (in English and in French) with all
