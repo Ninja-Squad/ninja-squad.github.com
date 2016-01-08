@@ -20,7 +20,7 @@ That’s not the final release yet, but it will be there soon.
 And we have been hard at work on [our ebook](https://books.ninja-squad.com/angular2).
 **In fact we are just a few days shy from our first release**.
 
-Like the framework we are going to release a first version of the ebook
+Like the framework, we are going to release a first version of the ebook
 (in English and in French) with all
 that you need to write your first app,
 and then we’ll release updates with new chapters on more advanced topics.
@@ -54,6 +54,9 @@ You can now read about:
 - How to get started
 
 Also, don't miss our sample application that leverages all what you gonna learn about Angular 2: [PonyRacer](http://ponyracer.ninja-squad.com/).
+
+Go take a look!
+
 We're proud of our awesome pixel art ponies made for us by the talented
 <a href="http://dotsmarc.tumblr.com/">Marc Manier</a> aka <a href="https://twitter.com/dotsmarc">@dotsMarc</a>.
 
@@ -63,7 +66,7 @@ We're proud of our awesome pixel art ponies made for us by the talented
 
 <br>
 
-We're hungry to have you read the full book that required so many hours of work.
+We can't wait to show you the full book that required so many hours of work!
 Stay tuned!
 
 <br>
@@ -111,6 +114,9 @@ Désormais, tu peux lire gratuitement des chapitres sur&nbsp;:
 - et démarrer de zéro sa première application.
 
 Aussi, ne rate pas notre application de démo qui met en œuvre tout ce que tu apprendras à faire en Angular 2&nbsp;: [PonyRacer](http://ponyracer.ninja-squad.com/).
+
+Va jeter un oeil&nbsp;!
+
 On est tellement fier de nos incroyables poneys en pixel art animé créés pour nous par le talentueux
 <a href="http://dotsmarc.tumblr.com/">Marc Manier</a> aka <a href="https://twitter.com/dotsmarc">@dotsMarc</a>.
 
@@ -120,4 +126,4 @@ On est tellement fier de nos incroyables poneys en pixel art animé créés pour
 
 <br>
 
-En ayant hâte de te faire lire le livre complet qui nous a demandé tant de travail, on te dit à très vite.
+En ayant hâte de te faire lire le livre complet qui nous a demandé tant de travail, on te dit à très vite&nbsp;!
