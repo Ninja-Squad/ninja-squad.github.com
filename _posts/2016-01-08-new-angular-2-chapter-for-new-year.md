@@ -3,7 +3,7 @@ layout: post
 title: New free chapters on Angular 2
 author: cexbrayat
 tags: ["Angular 2", "ebook"]
-description: "Angular 2 is out in beta, we'll release our ebook in a few days, and here are some new free chapters!"
+description: "Angular 2 is out in beta, we will release our ebook in a few days, and here are some new free chapters!"
 ---
 
 # Happy new year!
@@ -18,7 +18,7 @@ Maybe you haven’t heard but Angular 2 is now out in beta!
 That’s not the final release yet, but it will be there soon.
 
 And we have been hard at work on [our ebook](https://books.ninja-squad.com/angular2).
-**In fact, we'll release a first version of our ebook in a few days**.
+**In fact, we will release a first version of our ebook in a few days**.
 
 Like the framework, we are going to release a first version of the ebook
 (in English and in French) with all
@@ -26,7 +26,7 @@ that you need to write your first app,
 and then we’ll release updates with new chapters on more advanced topics.
 Obviously, you'll be notified and will get these updates for free if you bought the book.
 
-To keep you busy while you wait a few days for the ebook release,
+To keep you busy while you wait for the ebook release,
 we added some [content to the free samples](https://books.ninja-squad.com/angular2#toc).
 
 <div class="row-fluid">
@@ -53,7 +53,8 @@ You can now read about:
 - The framework’s philosophy
 - How to get started
 
-Also, don't miss our sample application that leverages all what you gonna learn about Angular 2: [PonyRacer](http://ponyracer.ninja-squad.com/).
+Also, don't miss our sample application: [PonyRacer](http://ponyracer.ninja-squad.com/).
+It leverages all the Angular 2 features that you will learn by reading the ebook.
 
 Go take a look!
 
@@ -86,7 +87,7 @@ Comme l'a fait l'équipe du framework, nous allons sortir une première version 
 puis nous sortirons ensuite une mise à jour avec de nouveaux chapitres sur des sujets plus avancés.
 Tu seras bien évidemment notifié en tant qu'acheteur, et bénéficieras de ces ajouts gratuitement.
 
-Pour te faire patienter en attendant la sortie du livre dans quelques jours,
+Pour te faire patienter en attendant la sortie du livre,
 on a ajouté [plein de contenu dans les extraits gratuits](https://books.ninja-squad.com/angular2#toc).
 
 <div class="row-fluid">
@@ -117,7 +118,7 @@ Aussi, ne rate pas notre application de démo qui met en œuvre tout ce que tu a
 
 Va jeter un oeil&nbsp;!
 
-On est tellement fier de nos incroyables poneys en pixel art animé créés pour nous par le talentueux
+On est tellement fiers de nos incroyables poneys en pixel art animé créés pour nous par le talentueux
 <a href="http://dotsmarc.tumblr.com/">Marc Manier</a> aka <a href="https://twitter.com/dotsmarc">@dotsMarc</a>.
 
 <div style="text-align: center">
