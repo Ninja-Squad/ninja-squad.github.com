@@ -53,6 +53,16 @@ You can now read about:
 - The framework’s philosophy
 - How to get started
 
+Also, don't miss our sample application that leverages all what you gonna learn about Angular 2: [PonyRacer](http://ponyracer.ninja-squad.com/).
+We're proud of our awesome pixel art ponies made for us by the talented
+<a href="http://dotsmarc.tumblr.com/">Marc Manier</a> aka <a href="https://twitter.com/dotsmarc">@dotsMarc</a>.
+
+<div style="text-align: center">
+  <img title="One of PonyRacer pony" src="/assets/images/ng2-ebook/pony.gif" alt="8 bits pixel art animated pony by Marc Manier for Ninja Squad" />
+</div>
+
+<br>
+
 We're hungry to have you read the full book that required so many hours of work.
 Stay tuned!
 
@@ -99,5 +109,15 @@ Désormais, tu peux lire gratuitement des chapitres sur&nbsp;:
 - Les Web Components&nbsp;;
 - La philosophie du framework&nbsp;;
 - et démarrer de zéro sa première application.
+
+Aussi, ne rate pas notre application de démo qui met en œuvre tout ce que tu apprendras à faire en Angular 2&nbsp;: [PonyRacer](http://ponyracer.ninja-squad.com/).
+On est tellement fier de nos incroyables poneys en pixel art animé créés pour nous par le talentueux
+<a href="http://dotsmarc.tumblr.com/">Marc Manier</a> aka <a href="https://twitter.com/dotsmarc">@dotsMarc</a>.
+
+<div style="text-align: center">
+  <img title="Un des poneys de PonyRacer" src="/assets/images/ng2-ebook/pony.gif" alt="Poney en pixel art 8 bits animé, créé par Marc Manier pour Ninja Squad" />
+</div>
+
+<br>
 
 En ayant hâte de te faire lire le livre complet qui nous a demandé tant de travail, on te dit à très vite.
