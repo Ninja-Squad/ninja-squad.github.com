@@ -8,7 +8,7 @@ description: "Our DRM-free ebook is out. Pay what you want and learn Angular 2!"
 
 # It's finally here!
 
-After countless hours of work, we are very happy to release our ebook 'Become a ninja with Angular 2'!
+After countless hours of work, we are very happy to release our ebook 'Become a ninja with Angular&nbsp;2'!
 
 As we announced, the ebook is **DRM free**, available in **English** and **French**,
 in every format you can dream of (**PDF, EPUB, MOBI, HTML**).
@@ -26,10 +26,10 @@ We are selling the ebook ourselves, using [Stripe](https://stripe.com/fr) as our
 When you buy the book, we send you an email with a link for the download and an invoice.
 Don’t worry, we won't spam you, we'll just send you emails when we release a significant update.
 
-The ebook covers all the things you have to know to start coding great apps in Angular 2.
+The ebook covers all the things you have to know to start coding great apps in Angular&nbsp;2.
 Check out [the content](https://books.ninja-squad.com/angular2#toc)!
 A few chapters will be added when the framework is slightly more mature
-(Remember that Angular 2 is still in beta).
+(Remember that Angular&nbsp;2 is still in beta).
 Of course, all future updates will be free if you buy the ebook now.
 
 We are still working on the "Pro package", with a great set of exercises to build a full project step by step.
@@ -44,7 +44,7 @@ Now go and [buy it](https://books.ninja-squad.com/angular2#buy)!
 <img itemprop="image" class="img-responsive" src="/assets/images/ng2-ebook/ng2-cover.png" alt="Become a ninja with Angular 2" />
 </p>
 
-If you want to go further, we also give [trainings](http://ninja-squad.com/training/angular2) all around the world! 
+If you want to go further, we also give [trainings](http://ninja-squad.com/training/angular2) all around the world!
 
 <ol class="footnote">
   <li id="footnote-1">
