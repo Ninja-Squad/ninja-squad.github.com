@@ -5,12 +5,11 @@ author: cexbrayat
 tags: [formation, java, git, play]
 ---
 
-Parce que nous aimons partager notre amour du code bien fait, nous avons travaillé dur ces dernières semaines pour donner naissance à nos premières [formations](http://ninja-squad.com/training "Formations Ninja Squad"). Nous avons commencé avec 4 sujets :
+Parce que nous aimons partager notre amour du code bien fait, nous avons travaillé dur ces dernières semaines pour donner naissance à nos premières [formations](http://ninja-squad.com/formations "Formations Ninja Squad"). Nous avons commencé avec 3 sujets :
 
-- une formation pour [débuter en Java](http://ninja-squad.com/training/java "Formation Java par Ninja Squad"), parce que les bases sont indispensables.
-- une formation pour ceux qui veulent devenir un [Java Ninja](http://ninja-squad.com/training/java-advanced "Formation Java Avancé par Ninja Squad").
-- Play! est l'un de nos outils préférés pour faire du web, [le sujet](http://ninja-squad.com/training/play "Formation Play! Framework par Ninja Squad") a donc naturellement trouvé sa place.
-- enfin une [découverte de Git](http://ninja-squad.com/training/git "Formation Git par Ninja Squad"), avec un focus sur la façon de l'utiliser en entreprise.
+- une formation pour [débuter en Java](http://ninja-squad.com/formations/formation-java "Formation Java par Ninja Squad"), parce que les bases sont indispensables.
+- une formation pour ceux qui veulent devenir un [Java Ninja](http://ninja-squad.com/formations/formation-javaAdvanced "Formation Java Avancé par Ninja Squad").
+- enfin une [découverte de Git](http://ninja-squad.com/formations/formation-git "Formation Git par Ninja Squad"), avec un focus sur la façon de l'utiliser en entreprise.
 
 <div class="row-fluid">
 	<span class="span4" style="text-align:center;"><img src="/assets/images/git-logo.png" alt="Git" style="max-height:90px;"/></span>

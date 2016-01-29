@@ -14,4 +14,4 @@ Tout d’abord le [site officiel](http://angularjs.org) bien sûr, dont la premi
 
 Si vous aimez les vidéos, je ne peux que vous conseiller celles de [egghead.io](http://www.youtube.com/playlist?list=PLP6DbQBkn9ymGQh2qpk9ImLHdSH5T7yw7) : une série de vidéos très courtes qui introduisent les différents concepts. Si vous êtes plus porté sur les livres, Manning publie [AngularJS in Action](http://www.manning.com/bford/) (en MEAP pour l’instant avec seulement quelques chapitres, mais très prometteur).
 
-Enfin, notre nouvelle formation [Débuter avec AngularJS](http://ninja-squad.com/training/angularjs) se déroule régulièrement ou à la demande dans votre entreprise pour lancer votre équipe sur les bons rails!
+Enfin, notre nouvelle formation [Débuter avec AngularJS](http://ninja-squad.com/formations/formation-angularjs) se déroule régulièrement ou à la demande dans votre entreprise pour lancer votre équipe sur les bons rails!

@@ -5,7 +5,7 @@ author: clacote
 tags: ["formation", "promotion", "git", "angularjs"]
 ---
 
-Ninja Squad fait d'excellentes formations. Récemment, nos formations [AngularJS](http://ninja-squad.fr/training/angularjs) et [Git](http://ninja-squad.fr/training/git) sont parties comme des petits pains, et les clients étaient ravis.
+Ninja Squad fait d'excellentes formations. Récemment, nos formations [AngularJS](http://ninja-squad.fr/formations/formation-angularjs) et [Git](http://ninja-squad.fr/formations/formation-git) sont parties comme des petits pains, et les clients étaient ravis.
 
 Ce sont essentiellement des formations en *intra-entreprise* que nous assurons&nbsp;: un client frappe à notre porte, "hey les ninjas, j'adore ce que vous faites, et j'ai eu d'excellents échos, alors venez former toute mon équipe&nbsp;!". Et ça c'est plutôt cool.  
 
@@ -40,7 +40,7 @@ Si vous nous montrez que vous faites partie de cette population méritante, vous
 </p>
 
 <br/>
-Alors maintenant, vous allez checker [les dates des prochaines sessions de formation prévues sur Lyon ou Paris](http://ninja-squad.fr/training) (elles sont aussi listées sur l'encart à droite de cet article), et vous en parlez partout autour de vous, merci&nbsp;!&nbsp;:)
+Alors maintenant, vous allez checker [les dates des prochaines sessions de formation prévues sur Lyon ou Paris](http://ninja-squad.fr/formations) (elles sont aussi listées sur l'encart à droite de cet article), et vous en parlez partout autour de vous, merci&nbsp;!&nbsp;:)
 
 <br/>
 **Mise à jour**

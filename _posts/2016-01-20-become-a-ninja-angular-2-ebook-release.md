@@ -44,7 +44,7 @@ Now go and [buy it](https://books.ninja-squad.com/angular2#buy)!
 <img itemprop="image" class="img-responsive" src="/assets/images/ng2-ebook/ng2-cover.png" alt="Become a ninja with Angular 2" />
 </p>
 
-If you want to go further, we also give [trainings](http://ninja-squad.com/training/angular2) all around the world!
+If you want to go further, we also give [trainings](http://ninja-squad.com/formations/formation-angular2) all around the world!
 
 <ol class="footnote">
   <li id="footnote-1">
