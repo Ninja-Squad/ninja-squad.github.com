@@ -6,7 +6,7 @@ tags: [git]
 ---
 
 S’il y a bien une startup qui est devenu incontournable dans le quotidien des développeurs ces dernières années, c'est sans aucun doute [Github](http://github.com). Quel que soit le langage qui nous fait gagner notre vie, la plupart des librairies et projets open source sont aujourd’hui hébergés sur cette plate-forme qui a poussé plus loin qu'aucune la collaboration entre développeurs du monde entier.
-   
+
 <div style="text-align: center"><img title="Git" src="http://ninja-squad.com/public/img/xgit-logo.png.pagespeed.ic.LbKXCliCua.png" alt="Git logo" width="300" height="325" /></div>
 <br/>
 
@@ -24,4 +24,4 @@ Sinon, si vous êtes plutôt du genre à regarder des vidéos, on trouve un ense
 
 Enfin deux excellents tutoriaux sont proposés sur les sites [gitimmersion](http://gitimmersion.com/) et celui d’[Atlassian](http://www.atlassian.com/git).
 
-Et bien sûr, [notre formation](http://ninja-squad.fr/training/git), plébiscitée par tous ses participants, se déroule régulièrement (prochaine session fin Juin si vous êtes intéressés) ou à la demande dans votre entreprise !
+Et bien sûr, [notre formation](http://ninja-squad.fr/formations/formation-git), plébiscitée par tous ses participants, se déroule régulièrement (prochaine session fin Juin si vous êtes intéressés) ou à la demande dans votre entreprise !

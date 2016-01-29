@@ -12,7 +12,7 @@ stable (précédemment 1.0.x, puis 1.2.x, la 1.1.x étant la branche de dévelop
 Mais que contient cette version fraichement émoulue? Outre les nombreux "fixes", on note l'abandon définitif du support d'IE8 : cette fois vous êtes seuls au monde si votre application doit tourner sur ce bon vieux IE. Pour le reste, nous avons passé au crible pour vous les différents commits (plus de 400!) qu'elle contient !
 
 > **Disclaimer**  
-> Nous sommes dans la phase finale de rédaction d'**un livre** sur AngularJS en français, nous vous en dirons bientôt plus! Et en attendant, si vous voulez en savoir plus, allez voir [notre formation](http://ninja-squad.fr/training/angularjs), qui est d'ores et déjà à jour!
+> Nous sommes dans la phase finale de rédaction d'**un livre** sur AngularJS en français, nous vous en dirons bientôt plus! Et en attendant, si vous voulez en savoir plus, allez voir [notre formation](http://ninja-squad.fr/formations/formation-angularjs), qui est d'ores et déjà à jour!
 
 # ngModelOptions
 
