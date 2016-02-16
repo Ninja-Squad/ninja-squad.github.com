@@ -14,11 +14,11 @@ tagline:
       </ul>
       {% endunless %}
     </div>
-    <div class="span2 comments-heading"><span><i class="icon-comment"></i><a href="{{post.url}}/#disqus_thread">Commentaires</a></span></div>
+    <div class="span2 comments-heading"><span><i class="icon-comment"></i><a href="{{post.url}}#disqus_thread">Commentaires</a></span></div>
   </div>
   <div class="row">
     <div class="span10 post-title">
-        <h1><a title="Lien permanent vers {{ post.title }}" href="{{post.url}}/">{{ post.title }}</a></h1>
+        <h1><a title="Lien permanent vers {{ post.title }}" href="{{post.url}}">{{ post.title }}</a></h1>
     </div>
   </div>
   <div class="row">
@@ -65,7 +65,7 @@ tagline:
   </div>
   <div class="row">
     <div class="span8 social-buttons">
-      <a href="https://twitter.com/share" class="twitter-share-button" data-size="large" data-text="{{post.title}}" data-url="{{site.production_url}}{{post.url}}/" data-lang="fr">Tweeter</a>
+      <a href="https://twitter.com/share" class="twitter-share-button" data-size="large" data-text="{{post.title}}" data-url="{{site.production_url}}{{post.url}}" data-lang="fr">Tweeter</a>
       <div class="g-plusone" data-href="{{site.production_url}}{{post.url}}"></div>
     </div>
   </div>
@@ -83,7 +83,7 @@ tagline:
 <script>
   {% if site.safe == false %}var disqus_developer = 1;{% endif %}
   var disqus_shortname = '{{ site.JB.comments.disqus.short_name }}';
-  var disqus_url = '{{site.production_url}}{{page.url}}/';
+  var disqus_url = '{{site.production_url}}{{page.url}}';
   {% if page.wordpress_id %}var disqus_identifier = '{{page.wordpress_id}} {{site.production_url}}/?p={{page.wordpress_id}}';{% endif %}
   /* * * DON'T EDIT BELOW THIS LINE * * */
   (function () {
