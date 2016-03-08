@@ -7,7 +7,7 @@ description: "Trucs et astuces concernant le moteur de parsing propre à Angular
 ---
 
 # Ninja Tips #1
-Les ninjas se lancent dans l'écriture de *Ninja Tips*&nbsp;! On a envie de vous faire partager les trucs et astuces que l'on découvre et qui nous plaisent. On se dit aussi que cela pourrait être sympa que l'on vous explique des petits (ou gros) problèmes que l'on a pu rencontrer au quotidien dans nos projets, en vous donnant quelques pistes de solutions... Nous nous lançons donc dans des petits posts courts mais réguliers&nbsp;! Les sujets viendront au fur et à mesure des semaines, en fonction des problèmes que l'on rencontre, de nos lectures ou des derniers sujets auxquels [JB a répondu](http://stackoverflow.com/users/571407/jb-nizet) sur StackOverflow.
+Les ninjas se lancent dans l'écriture de *Ninja Tips*&nbsp;! On a envie de vous faire partager les trucs et astuces que l'on découvre et qui nous plaisent. On se dit aussi que cela pourrait être sympa que l'on vous explique des petits (ou gros) problèmes que l'on a pu rencontrer au quotidien dans nos projets, en vous donnant quelques pistes de solutions... Nous nous lançons donc dans des petits posts courts mais réguliers&nbsp;! Les sujets viendront au fur et à mesure des semaines, en fonction des problèmes que l'on rencontre, de nos lectures ou des derniers sujets auxquels [JB a répondu](http://stackoverflow.com/users/571407/jb-nizet?tab=answers) sur StackOverflow.
 
 # Bien écrire ses templates
 
