@@ -6,8 +6,6 @@ tags: ["Angular 2", "typescript", "json", "tips"]
 description: "Make your code safer and more maintainable by typing your JSON"
 ---
 
-# Ninja Tips #2 - Angular 2: Make your JSON typed
-
 This tip is not specifically about Angular 2, but rather about TypeScript.
 But since Angular 2, like many of you probably, is what lead us to using TypeScript,
 we'll explain this tip in an Angular 2 context, and compare it with JavaScript code
@@ -86,6 +84,9 @@ TypeScript interfaces, a bit like Java generic types, are a purely compile-time 
                              .map(response => response.json());
         }
     }
+
+The difference is subtle, but important: instead of returning
+an `Observable<any>` the service now returns an `Observable<Race>`. 
 
 ## What if
 
