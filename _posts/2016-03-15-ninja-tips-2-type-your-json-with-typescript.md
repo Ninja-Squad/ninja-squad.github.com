@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Ninja Tips 2 - Make your JSON typed
+title: Ninja Tips 2 - Make your JSON typed with TypeScript
 author: jbnizet
 tags: ["Angular 2", "typescript", "json", "tips"]
-description: "Make your code safer and more maintainable by typing your JSON"
+description: "Make your code safer and more maintainable by typing your JSON with TypeScript"
 ---
 
 This tip is not specifically about Angular 2, but rather about TypeScript.

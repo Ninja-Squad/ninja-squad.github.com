@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Ninja Tips 2 - Type ton JSON
+title: Ninja Tips 2 - Type ton JSON avec TypeScript
 author: jbnizet
 tags: ["Angular 2", "typescript", "json", "tips"]
-description: "Rend ton code plus sûr et plus maintenanble en typant ton JSON"
+description: "Rend ton code plus sûr et plus maintenable en typant ton JSON avec TypeScript"
 ---
 
-Ce *tip* ne concerne plutôt TypeScript qu'Angular 2.
+Ce *tip* concerne plutôt TypeScript qu'Angular 2.
 Mais comme c'est Angular 2 qui, comme beaucoup d'entre vous sans doute,
-nous a amené à utiliser TypeScript, on va l'expliquer avec une exemple 
+nous a amené à utiliser TypeScript, on va l'expliquer avec un exemple 
 basé sur Angular 2, et le comparer avec du code JavaScript d'un exemple
 similaire avec AngularJS.
 
@@ -35,7 +35,7 @@ rappeler dans une petite application, alors qu'on vient d'écrire le service
 côté serveur. Mais dans une grosse application bien complexe, manipulant 
 des objets métiers plus obscurs qu'une course de poneys, ce n'est pas toujours évident
 de savoir ce que le message contient. Et la lecture du code JavaScript n'est pas 
-d'une grand secours.
+d'un grand secours.
 
 ## Le même service avec Angular 2 et TypeScript
 
@@ -97,7 +97,7 @@ service comme ceci&nbsp;:
         }
     }
 
-La différence estsubtile, mais importante. Au lieu de retourner un `Observable<any>`,
+La différence est subtile, mais importante. Au lieu de retourner un `Observable<any>`,
 le service retourne à présent un `Observable<Race>`.
 
 ## Et si...
