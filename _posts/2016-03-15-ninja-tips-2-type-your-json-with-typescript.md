@@ -49,7 +49,7 @@ In Angular 2, with TypeScript, the same service would look like (minus imports):
 
 Do we have something better, compared to the AngularJS version? 
 
-Except for the syntax sugar (class, arrow function, string interpolation),
+Except for the syntactic sugar (class, arrow function, string interpolation),
 not much. We know that the service returns an Observable, but we still don't know what a
 race looks like. 
 
@@ -58,8 +58,8 @@ race looks like.
 The object returned by `response.json()` is not an instance of any class you might 
 have defined. It's just a basic JavaScript object full of properties. 
 
-To us Java developers, used to strong typing, there's not much you can do: if the object 
-doesn't have any specific type, then you can't pretend it has one. 
+To developers more used to strongly typed languages like Java, there's not much you can do: 
+if the object doesn't have any specific type, then you can't pretend it has one. 
 
 But TypeScript, despite having similar concepts, is very different from Java. TypeScript
 allows defining interfaces which, unlike in Java, can define instance fields. For example:

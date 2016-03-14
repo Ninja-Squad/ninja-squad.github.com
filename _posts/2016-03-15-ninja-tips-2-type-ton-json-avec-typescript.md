@@ -65,8 +65,8 @@ L'objet retourné par `response.json()` n'est pas une instance d'une quelconque
 classe que vous auriez pu définir. C'est juste un objet JavaScript basique, avec
 quelques propriétés.
 
-Pour nous, développeurs Java, habitués au typage fort, un objet qui n'a pas de type... n'a 
-pas de type. Et on ne peut pas faire comme s'il en avait un.
+Pour les développeur plus habitués aux langages fortement typés comme Java,
+un objet qui n'a pas de type... n'a pas de type. Et on ne peut pas faire comme s'il en avait un.
 
 Mais TypeScript, bien qu'ayant des concepts similaires à ceux de Java, est très
 différent de Java. TypeScript permet entre autres de définir des interfaces qui,
