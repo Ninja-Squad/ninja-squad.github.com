@@ -117,6 +117,15 @@ div.post-content {
     }
 }
 
+pre.prettyprint {
+  background-color: #f5f5f5;
+  border-color: #f5f5f5;
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+  padding: 5px;
+}
+
 pre, code {
     font-size: 14px;
     text-align: left;
