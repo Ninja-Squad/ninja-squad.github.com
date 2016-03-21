@@ -7,8 +7,8 @@ description: "Tip about form validation with Angular 2 and Bootstrap"
 ---
 
 Like everybody, you code enterprise software for a living
-(because everybody know you can't earn your life by building videogames).
-And as you're not very good at front design, you enjoy using CSS frameworks
+(because everybody know you can't make a living by building videogames).
+And as you're not very good at designing web pages, you enjoy using CSS frameworks
 like [Bootstrap](http://getbootstrap.com/), providing best practices for free,
 and a nice design without thinking about it.
 Alright, your websites are not very original (some say *Bootstrap is the new ugly*),
@@ -81,7 +81,7 @@ You may then leverage the validation capabilities of a super-charged Angular&nbs
 
 What have we done here?
 
-* We apply thanks to `ngClass` directive the Bootstrap's `.has-error` class on `div.form-group` if the `password` field:
+* We apply, thanks to `ngClass` directive, the Bootstrap's `.has-error` class on `div.form-group` if the `password` field:
   1. is `dirty`, i.e. modified by the user;
   2. has a validation error.
 * We enable the submit button only if the form is globally valid, thanks to HTML `disabled` attribute.
@@ -123,8 +123,8 @@ And that's when the `ngIf` directive comes to play:
     </span>
 
 Et voilà&nbsp;!
-Of course, we needed to inverse the initial condition of `[hidden]="..."` (but that's Boole Algebra 101),
-and we replaced the `pristine` test by a `dirty` test, which are the exact inverse.
+Of course, we needed to negate the initial condition of `[hidden]="..."` (but that's Boole Algebra 101),
+and we replaced the `pristine` test by a `dirty` test, which is the exact opposite.
 
 Thanks to have taken the time to listen to me until then (I feel better now).
 You may get back to work, or back to read [our Angular&nbsp;2 ebook](https://books.ninja-squad.com/angular2).
