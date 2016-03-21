@@ -65,14 +65,14 @@ formulaire Angular&nbsp;2&nbsp;:
 
     <div class="form-group"
          [ngClass]="{
-            'has-error': loginForm.find('password').dirty
-                         && !loginForm.find('password').valid }">
+            'has-error': password.dirty
+                         && !password.valid }">
       <label for="password">Mot de passe</label>
       <input id="password" type="password"
              class="form-control" ngControl="password">
       <span class="help-block"
-            [hidden]="loginForm.find('password').pristine
-                      || !loginForm.find('password').hasError('required')">
+            [hidden]="password.pristine
+                      || !password.hasError('required')">
         Le mot de passe est obligatoire
       </span>
     </div>
@@ -81,13 +81,13 @@ formulaire Angular&nbsp;2&nbsp;:
       Me connecter
     </button>
 
-Qu'avons-nous fait ici&nbsp;?
+Qu'avons-nous mis en œuvre ici&nbsp;?
 
 * On applique grâce à la directive `ngClass` la classe Bootstrap `.has-error` sur la `div.form-group` si le champ `password`&nbsp;:
   1. est `dirty`, c'est à dire modifié par l'utilisateur&nbsp;;
   2. a une erreur de validation.
-* On active le bouton de soumission que si le formulaire est valide, grâce à l'attribut HTML `disabled`.
-* On masque le `span.help-block` grace à l'attribut HTML&nbsp;5 `hidden`, si&nbsp;:
+* On n'active le bouton de soumission que si le formulaire est valide, grâce à la propriété `disabled` du DOM.
+* On masque le `span.help-block` grâce à l'attribut HTML&nbsp;5 global `hidden`, si&nbsp;:
    1. le champ est `pristine`, c'est à dire vierge de toute modification par l'utilisateur (l'état lors de l'affichage initial)&nbsp;;
    2. ou si le champ n'a aucune erreur `'required'` de validation.
 
@@ -97,7 +97,7 @@ En l'état, le `span.help-block` sera toujours affiché, même quand le champ es
 Ce n'est pas une erreur dans la condition. Ce n'est pas un bug de votre navigateur qui ne supporterait pas cet attribut HTML&nbsp;5. Ce n'est pas non plus un bug de _binding_ d'Angular&nbsp;2 sur cet attribut HTML&nbsp;5.
 Ce problème m'a coûté quelques bonnes minutes de sueurs froides. Ce pourquoi je voulais vous partager ce *ninja tip*, aussi anecdotique soit-il.
 
-En fait, le problème se situe dans le comportement de l'attribut HTML&nbsp;5 `hidden`, et les styles apportés par la classe Bootstrap `.help-block`. La [documentation de `hidden`](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/hidden) explique&nbsp;:
+En fait, le problème se situe dans le comportement de l'attribut HTML&nbsp;5 global `hidden`, et les styles apportés par la classe Bootstrap `.help-block`. La [documentation de `hidden`](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/hidden) explique&nbsp;:
 
 > changing the value of the CSS `display` property on an element
 > with the `hidden` attribute overrides the behavior.
@@ -116,12 +116,12 @@ OK, cool. Et maintenant on fait quoi&nbsp;?
 Et bien soit on enlève la classe `help-block` (mais on perd le style apporté), soit on réécrit son template pour ne plus faire du binding sur l'attribut `hidden`. Et la directive `ngIf` arrive alors à la rescousse&nbsp;:
 
     <span class="help-block"
-          *ngIf="loginForm.find('password').dirty
-                 && loginForm.find('password').hasError('required')">
+          *ngIf="password.dirty
+                 && password.hasError('required')">
       Password is required
     </span>
 
 Et voilà&nbsp;!
 Il nous a fallu inverser la condition initialement placée dans `[hidden]="..."` (mais c'est de l'algèbre de Boole niveau CP), et on a remplacé le test de `pristine` par un test de `dirty`, qui sont les opposés.
 
-Merci d'avoir suivi ce long cheminement pour me permettre de vous expliquer cette anecdote, je me sens mieux d'avoir pu vider mon cœur. Vous pouvez reprendre de votre côté une activité normale (comme la lecture de [notre ebook sur Angular&nbsp;2](https://books.ninja-squad.com/angular2) par exemple).
+Merci d'avoir suivi ce long cheminement pour me permettre de vous expliquer cette anecdote, je me sens mieux d'avoir pu vider mon sac. Vous pouvez reprendre une activité normale (comme la lecture de [notre ebook sur Angular&nbsp;2](https://books.ninja-squad.com/angular2) par exemple).

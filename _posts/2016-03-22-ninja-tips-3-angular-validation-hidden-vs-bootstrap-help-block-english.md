@@ -56,21 +56,21 @@ which purpose is exactly this:
     </div>
 
 But as soon as this form is displayed, this help text is displayed,
-even if the user has not type anything yet.
+even if the user has not typed anything yet.
 At Ninja Squad, we like to have those hints and error messages be displayed only
 when the user has started to input something, to keep a clean form when entering the page.
 You may then leverage the validation capabilities of a super-charged Angular&nbsp;2 form:
 
     <div class="form-group"
          [ngClass]="{
-            'has-error': loginForm.find('password').dirty
-                         && !loginForm.find('password').valid }">
+            'has-error': password.dirty
+                         && !password.valid }">
       <label for="password">Password</label>
       <input id="password" type="password"
              class="form-control" ngControl="password">
       <span class="help-block"
-            [hidden]="loginForm.find('password').pristine
-                      || !loginForm.find('password').hasError('required')">
+            [hidden]="password.pristine
+                      || !password.hasError('required')">
         Password is required
       </span>
     </div>
@@ -79,13 +79,13 @@ You may then leverage the validation capabilities of a super-charged Angular&nbs
       Sign me in
     </button>
 
-What have we done here?
+What are we doing here?
 
-* We apply, thanks to `ngClass` directive, the Bootstrap's `.has-error` class on `div.form-group` if the `password` field:
+* We apply, thanks to the `ngClass` directive, the Bootstrap's `.has-error` class on `div.form-group` if the `password` field:
   1. is `dirty`, i.e. modified by the user;
   2. has a validation error.
-* We enable the submit button only if the form is globally valid, thanks to HTML `disabled` attribute.
-* We hide the `span.help-block` element thanks to the HTML&nbsp;5 `hidden` attribute, if:
+* We enable the submit button only if the form is globally valid, thanks to the `disabled` DOM property.
+* We hide the `span.help-block` element thanks to the HTML&nbsp;5 `hidden` global attribute, if:
    1. the input is `pristine`, i.e. without any modification from user (the initial state);
    2. or if the field has no `'required'` validation error.
 
@@ -98,7 +98,7 @@ That is also not an Angular&nbsp;2 binding bug on this HTML&nbsp;5 attribute.
 This issue gave me some cold sweat,
 that's why I wanted to share this *ninja tip* with you, be it very anecdotic.
 
-The issue is between the HTML&nbsp;5 `hidden` attribute behavior,
+The issue is between the HTML&nbsp;5 `hidden` global attribute behavior,
 and the styles brought by Bootstrap's `.help-block` class.
 The [`hidden` documentation](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/hidden) explains&nbsp;:
 
@@ -117,8 +117,8 @@ or you can rewrite your template to not use `hidden` attribute anymore.
 And that's when the `ngIf` directive comes to play:
 
     <span class="help-block"
-          *ngIf="loginForm.find('password').dirty
-                 && loginForm.find('password').hasError('required')">
+          *ngIf="password.dirty
+                 && password.hasError('required')">
       Password is required
     </span>
 
@@ -126,5 +126,5 @@ Et voilà&nbsp;!
 Of course, we needed to negate the initial condition of `[hidden]="..."` (but that's Boole Algebra 101),
 and we replaced the `pristine` test by a `dirty` test, which is the exact opposite.
 
-Thanks to have taken the time to listen to me until then (I feel better now).
-You may get back to work, or back to read [our Angular&nbsp;2 ebook](https://books.ninja-squad.com/angular2).
+Thanks for the time you spent listening to me. I feel better now.
+You may get back to work, or get back to read [our Angular&nbsp;2 ebook](https://books.ninja-squad.com/angular2).
