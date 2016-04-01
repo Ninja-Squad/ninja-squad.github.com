@@ -41,6 +41,12 @@ Since AngularJS 1.5, it's now possible to bind a value *one-way*, using `<`:
  - Changing an attribute (the color, for example) of `thePony` in the controller scope, will change the attribute in `pony`, in the directive scope: they both reference the same object;
  - Changing an attribute (the color, for example) of `pony` in the directive scope, will change the attribute in `thePony`, in the controller scope: they both reference the same object.
 
+As far as I know, this has been done for several reasons:
+
+ - it aligns more closely with Angular2, where one-way binding is the norm
+ - it allows to avoid making a copy of the object passed as argument to the directive
+ - It allows creating a single watcher in the controller scope, that watches by identity instead of equality, making it faster
+
 More details are available in [the documentation](https://code.angularjs.org/1.5.3/docs/api/ng/service/$compile#-scope-). You can also 
 experiment with [a little plunkr](http://plnkr.co/edit/0df9XJUjLR9TGmkimNE9?p=preview) I wrote to show the difference of behavior 
 between the two.
