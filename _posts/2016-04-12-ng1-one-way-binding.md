@@ -6,7 +6,7 @@ tags: ["angularjs", "directive"]
 description: "One-way binding in AngularJS directives"
 ---
 
-AngularJS 1.5.x is out for a few weeks now but, despite tracking the changelog, I missed
+AngularJS 1.5.x has been out for a few weeks now but, despite tracking the changelog, I missed
 a change that this version introduces: one-way binding in directives.
 
 When you need to pass an argument to a directive, there are 3 ways of doing it:
