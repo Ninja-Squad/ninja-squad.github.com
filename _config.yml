@@ -155,16 +155,14 @@ JB :
     git:
       title: Git
       dates:
-        - 21-22 mars à Paris
-    angularjs:
-      title: AngularJS
-      dates:
-        - 14-16 mars à Paris
+        - 23-24 juin à Paris
     angular2:
       title: Angular 2
       dates:
-        - 4-6 avril à Lyon
-        - 11-13 avril à Paris
+        - 4-6 juillet à Lyon
+        - 11-13 juillet à Paris
+        - 5-7 septembre à Lyon
+        - 12-14 septembre à Paris
     java8:
       title: Java 8
       dates:
