@@ -22,9 +22,9 @@ Une vingtaine de personnes sont donc cordialement invitées, aux frais de la pri
 
 Quelques conditions&nbsp;:
 
-* savoir coder, quelque soit le langage. Unity utilise C#&nbsp;;
+* savoir coder, quelque soit le langage. Nous utiliserons C# sous Unity, mais il comprend aussi le JS&nbsp;;
 * être disponible le vendredi 20 mai après-midi sur Lyon&nbsp;;
-* posséder un ordinateur portable [sur lequel peut s’installer Unity](https://unity3d.com/get-unity/download)&nbsp;;
+* posséder un ordinateur portable [sur lequel peut s’installer Unity](https://unity3d.com/get-unity/download)&nbsp;: Mac ou Windows&nbsp;;
 * venir avec son ordinateur portable et Unity&nbsp;;
 * être sympathique.
 
