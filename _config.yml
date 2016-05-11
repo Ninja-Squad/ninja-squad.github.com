@@ -2,7 +2,7 @@
 # For more see: https://github.com/mojombo/jekyll/wiki/Permalinks
 permalink: /:categories/:year/:month/:day/:title/
 
-exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "blog.cmd"]
+exclude: [".rvmrc", ".rbenv-version", "README.md", "CNAME", "Rakefile", "changelog.md", "blog.sh", "serve.sh"]
 markdown: kramdown
 encoding: utf-8
 
@@ -16,6 +16,7 @@ twitter: NinjaSquad
 author:
   name: Ninja Squad
   email: contact@ninja-squad.com
+  twitter: NinjaSquad
 authors:
   acrepet:
     name : Agnès Crépet
@@ -42,6 +43,16 @@ authors:
     twitter : jbnizet
     gravatar : 2f0d9dec16bae1e06552af55ddefc11f
     gplus : 113219978281208960764
+
+# SEO
+gems:
+  - jekyll-seo-tag
+
+logo: /assets/images/logo-flat-600.png
+twitter:
+  username: NinjaSquad
+facebook:
+  publisher: ninjasquadfr
 
 
 # The production_url is only used when full-domain names are needed
