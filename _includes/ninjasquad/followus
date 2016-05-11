@@ -1,5 +1,5 @@
 <h4>Suivez-nous</h4>
 <ul class="nav nav-list">
-	<li><a href="https://twitter.com/{{ site.twitter }}" title="Ninja Squad sur Twitter">Sur Twitter</a></li>
+	<li><a href="https://twitter.com/{{ twitter }}" title="Ninja Squad sur Twitter">Sur Twitter</a></li>
 	<li><a href="https://plus.google.com/{{site.gplus}}" rel="publisher" title="Ninja Squad sur Google+">Sur Google+</a></li>
 </ul>
