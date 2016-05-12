@@ -124,4 +124,12 @@ Et bien soit on enlève la classe `help-block` (mais on perd le style apporté),
 Et voilà&nbsp;!
 Il nous a fallu inverser la condition initialement placée dans `[hidden]="..."` (mais c'est de l'algèbre de Boole niveau CP), et on a remplacé le test de `pristine` par un test de `dirty`, qui sont les opposés.
 
+
+<a id="update" />
+**Mise à jour du 12/05/2016&nbsp;: solution alternative.**
+
+> Thomas Queste [nous suggère dans les commentaires](/2016/03/22/ninja-tips-3-angular-validation-hidden-vs-bootstrap-help-block-english/#comment-2671575902) de la version anglaise de cet article
+> une [autre solution vue sur StackOverflow](http://stackoverflow.com/questions/30744882/angular2-hidden-ignores/30746262#30746262)&nbsp;:
+> placer le message d'erreur dans son propre `span` à l'intérieur du `span.help-block`.
+
 Merci d'avoir suivi ce long cheminement pour me permettre de vous expliquer cette anecdote, je me sens mieux d'avoir pu vider mon sac. Vous pouvez reprendre une activité normale (comme la lecture de [notre ebook sur Angular&nbsp;2](https://books.ninja-squad.com/angular2) par exemple).
