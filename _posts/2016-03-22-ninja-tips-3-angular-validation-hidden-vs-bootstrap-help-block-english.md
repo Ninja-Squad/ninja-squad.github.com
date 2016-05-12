@@ -126,5 +126,12 @@ Et voilà&nbsp;!
 Of course, we needed to negate the initial condition of `[hidden]="..."` (but that's Boole Algebra 101),
 and we replaced the `pristine` test by a `dirty` test, which is the exact opposite.
 
+<a id="update" />
+**Update on 2016-05-12: new alternative solution.**
+
+> Thomas Queste [suggested in the comments](#comment-2671575902)
+> an [other solution seen on StackOverflow](http://stackoverflow.com/questions/30744882/angular2-hidden-ignores/30746262#30746262):
+> simply wrapping the error message in its own `span` inside the `span.help-block`.
+
 Thanks for the time you spent listening to me. I feel better now.
 You may get back to work, or get back to read [our Angular&nbsp;2 ebook](https://books.ninja-squad.com/angular2).
