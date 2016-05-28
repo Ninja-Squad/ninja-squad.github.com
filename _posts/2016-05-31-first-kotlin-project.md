@@ -92,7 +92,7 @@ Finally, Kotlin chose to adopt the Pascal way of declaring variables and functio
 
 ## Mixed feelings
 
-There are other stuff in Kotlin that I find a little bit disturbing, but maybe just because I'm not used to it yet, or because the language will improve them later. Those include 
+There are other stuff in Kotlin that I find a little bit disturbing, but maybe just because I'm not used to it yet, or because the language will improve them later. Those include:
 
  - companion objects instead of static fields and methods (I haven't seen the real gain yet)
  - hard to remember syntax for creating anonymous class instances;
