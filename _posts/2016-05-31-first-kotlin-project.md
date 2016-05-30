@@ -39,18 +39,16 @@ to use Kotlin.
 
 Another thing that I appreciate is the promotion of immutability and encapsulation. There are two ways to declare variables: `var` and `val`. 
 `val` means `final`. Immutability is helped by making it the default, easy thing. Just use `val`. 
-A List is immutable. If you want to mutate it, you
-need a MutableList. A MutableList is a List, so you don't need to wrap it with `Collections.unmodifiableList()` when returning it 
-from a method: the caller won't be able to add anything to the returned list, because it's not mutable. The beauty of that mechanism
-is that it doesn't work by reimplementing the whole Java collection framework. The actual implementations of those types are the standard
-collections that you already know and master. 
+A List is immutable. If you want to mutate it, you need a MutableList. 
+A MutableList is a List, so you can return a MutableList if your method has List as its returned type. And you don't need to wrap it with `Collections.unmodifiableList()`: the caller won't be able to add anything to the returned list, because it's not mutable. 
+The beauty of that mechanism is that it doesn't work by reimplementing the whole Java collection framework. The actual implementations of those types are the standard collections that you already know and master. 
 
 Finally, the signal/noise ratio is much bigger in Kotlin than in Java. You can write a typical dumb DTO with 5 fields in a single line of code,
 using a data class. No fields, no getters, no setters, mutability of properties depending on the use of `val` or `var`. 
-That is intimidating in the beginning, because you can't help but think that so much information and details are condensed in such a small
+That is intimidating at first, because you can't help but think that so much information and details are condensed in such a small
 piece of code: every character matters when you read it. 
 
-Another great thing that helps make your code clean, readable and immutable 
+Another great thing that helps making your code clean, readable and immutable 
 is the named parameters. Kotlin won't force you to use them, but they are a good alternative to the builder pattern (or setters) that you 
 typically use in Java when dealing with a large data structure. For example, instead of typing
 
@@ -66,6 +64,8 @@ Now, suppose you want a copy of this person with an incremented score, you can d
 
     val newPerson = person.copy(score = person.score + 1)
 
+The copy method is generated for you by the compiler on data classes (but it's quite easy to define it by yourself, too).
+
 ## The pain points
 
 Nothing is perfect in this world, and Kotlin is not either. The code that I have started writing is not a library. It's a typical
@@ -77,7 +77,7 @@ To enable it, you must add the keyword `open` to your class, property or method.
 That is probably a good choice for libraries, but when it comes to "enterprise" applications, it becomes cumbersome. Spring and Java EE
 are both based on dynamic proxies, i.e. on dynamically generated classes that extend your classes. And unit-testing those classes with 
 Mockito, for example, also relies on dynamically generated subclasses. The result is that Kotlin's `open` is like Java's `public`:
-it's a modifier that you start adding everywhere because it is your default.
+it's a modifier that you start adding everywhere because it is your default. (Note: this will [probably be fixed](https://youtrack.jetbrains.com/issue/KT-12149))
 
 Talking about Mockito, that's another pain point. Let's take an example:
 
@@ -100,15 +100,15 @@ There are other stuff in Kotlin that I find a little bit disturbing, but maybe j
  - top-level variables and functions (I haven't seen the real gain over static variables and methods);
  - the lack of package-level visibility. It seems to be circumvented by declaring multiple classes in the same file,
    but I find it ugly: it's hard to find your classes if you're not using an IDE.
- - higher-order functions instead of named functional interfaces (I find them hard to read)
+ - function types instead of named functional interfaces (I find them hard to read, especially when defining generic higher-order functions: `Predicate<T>` is clearer to me than `(T) -> Boolean`)
  - the fact that SAM Java interfaces can be written lambda-style, but not SAM Kotlin interfaces
  - arrays that are invariant (unlike Java, which is good), but which still don't behave like lists when it comes to equality (you still can't use `==` to compare arrays just like you would do for lists)
- - the short syntax for function (`fun foo() = bar()`) which looks like undeeded additional syntax to me
+ - the short syntax for function (`fun foo() = bar()`) which looks like unnecessary additional syntax to me
  - some other stuff that I can't remember :-).
 
 ## Conclusion
 
-After just one week, although the language is not perfect yet, I'm definitely liking it very much. I would use it over Java 8, and even more over Java 6 or 7. Kotlin runs on Java 6, so if you're doing Android development, you should really consider Kotlin as a much better alternative. 
+After just one week, although the language is not perfect yet, I definitely like it a lot. I would use it over Java 8, and even more over Java 6 or 7. Kotlin runs on Java 6, so if you're doing Android development, you should really consider Kotlin as a much better alternative. 
 If you're using Java 8, like I do, you should still really consider it, for all the good stuff this article started with.
 
 Kotlin has also been announced as the future language of choice for gradle, and I can't wait to be able to use it for my gradle builds, and benefit for gradle **and** code completion in the IDE.
