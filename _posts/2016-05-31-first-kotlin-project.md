@@ -111,6 +111,6 @@ There are other stuff in Kotlin that I find a little bit disturbing, but maybe j
 After just one week, although the language is not perfect yet, I definitely like it a lot. I would use it over Java 8, and even more over Java 6 or 7. Kotlin runs on Java 6, so if you're doing Android development, you should really consider Kotlin as a much better alternative. 
 If you're using Java 8, like I do, you should still really consider it, for all the good stuff this article started with.
 
-Kotlin has also been announced as the future language of choice for gradle, and I can't wait to be able to use it for my gradle builds, and benefit for gradle **and** code completion in the IDE.
+Kotlin has also been announced as the future language of choice for Gradle, and I can't wait to be able to use it for my Gradle builds, and benefit for Gradle **and** code completion in the IDE.
 
 Are you already using Kotlin? I'd love to know what you think about it. Comments welcome!
