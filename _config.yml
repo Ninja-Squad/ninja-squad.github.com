@@ -163,18 +163,8 @@ JB :
   # where [HELPER] is the name of the helper you are overriding.
 
   trainings :
-    git:
-      title: Git
-      dates:
-        - 23-24 juin à Paris
     angular2:
       title: Angular 2
       dates:
-        - 4-6 juillet à Lyon
-        - 11-13 juillet à Paris
-        - 5-7 septembre à Lyon
-        - 12-14 septembre à Paris
-    java8:
-      title: Java 8
-      dates:
-        - 2 mai à Lyon
+        - 19-21 sept. à Lyon
+        - 26-28 sept. à Paris
