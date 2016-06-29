@@ -65,12 +65,12 @@ That's ugly. We're repeating the same block of code twice. We now know that tryi
 
     var saveQuestionIfDirty = function() {
         if (formIsDirty()) {
+            return saveQuestion();
+        }
+        else {
             var defer = $q.defer();
             defer.resolve('no need to save the question');
             return defer.promise;
-        }
-        else {
-            return saveQuestion();
         }
     };
 
@@ -86,10 +86,10 @@ So we can simplify `saveQuestionIfDirty()`:
 
     var saveQuestionIfDirty = function() {
         if (formIsDirty()) {
-            return $q.when('no need to save the question');
+            return saveQuestion();
         }
         else {
-            return saveQuestion();
+            return $q.when('no need to save the question');
         }
     };
 
@@ -194,52 +194,52 @@ Here's a [plunkr showing a suite of unit tests](http://plnkr.co/edit/KlrvP6GhrpT
 
 ## Testing is doubting
 
-OK. Now let's say we have a service returning a promise of poneys, and we want to test a controller $scope function that stores the poneys in the scope, or an error flag if the promise is rejected. Simplest thing you can imagine.
+OK. Now let's say we have a service returning a promise of ponies, and we want to test a controller $scope function that stores the ponies in the scope, or an error flag if the promise is rejected. Simplest thing you can imagine.
 
-    it('should set poneys in $scope if poneys can be loaded', function() {
-        var poneys = ['Aloe', 'Pinkie Pie'];
-        spyOn(poneyService, 'getPoneys')
-            .andReturn($q.when(poneys));
+    it('should set ponies in $scope if ponies can be loaded', function() {
+        var ponies = ['Aloe', 'Pinkie Pie'];
+        spyOn(ponyService, 'getPonies')
+            .andReturn($q.when(ponies));
 
-        $scope.showPoneys();
+        $scope.showPonies();
 
-        expect($scope.poneys).toBe(poneys);
+        expect($scope.ponies).toBe(ponies);
     });
 
     it('should store an error flag in the scope', function() {
-        spyOn(poneyService, 'getPoneys')
+        spyOn(ponyService, 'getPonies')
             .andReturn($q.reject('error'));
 
-        $scope.showPoneys();
+        $scope.showPonies();
 
-        expect($scope.errorLoadingPoneys).toBeTruthy();
+        expect($scope.errorLoadingPonies).toBeTruthy();
     });
 
 These tests should pass, right?
 
 Nope. Callbacks are not invoked as soon as the promise is resolved or rejected. Even if the promise is already resolved or rejected and a new callback is passed to `then()`, this callback won't be invoked immediately. AngularJS only invokes the `then()` callbacks at the next digest loop. This doesn't make much difference in classical application code, but it does make a huge one in unit tests. You need to explicitely call `$digest()` or `$apply()`on a $scope to force AngularJS to invoke the callbacks:
 
-    it('should set poneys in $scope if poneys can be loaded', function() {
-        var poneys = ['Aloe', 'Pinkie Pie'];
-        spyOn(poneyService, 'getPoneys')
-            .andReturn($q.when(poneys));
+    it('should set ponies in $scope if ponies can be loaded', function() {
+        var ponies = ['Aloe', 'Pinkie Pie'];
+        spyOn(ponyService, 'getPonies')
+            .andReturn($q.when(ponies));
 
-        $scope.showPoneys();
+        $scope.showPonies();
 
         $scope.$apply();
 
-        expect($scope.poneys).toBe(poneys);
+        expect($scope.ponies).toBe(ponies);
     });
 
     it('should store an error flag in the scope', function() {
-        spyOn(poneyService, 'getPoneys')
+        spyOn(ponyService, 'getPonies')
             .andReturn($q.reject('error'));
 
-        $scope.showPoneys();
+        $scope.showPonies();
 
         $scope.$apply();
 
-        expect($scope.errorLoadingPoneys).toBeTruthy();
+        expect($scope.errorLoadingPonies).toBeTruthy();
     });
 
 If you're testing a service (which doesn't use a $scope), call `$apply()` on the `$rootScope` service.
