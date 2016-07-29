@@ -252,4 +252,6 @@ Un peu comme si on avait écrit le code de comparaison à la main. Ce code est d
 
 Depuis le début, l’équipe Google surveille d’ailleurs les performances, avec des benchmarks entre AngularJS&nbsp;1.x, Angular&nbsp;2 et même React sur des cas d’utilisation un peu tordus afin de voir si la nouvelle version est toujours la plus rapide. Il est même possible d’aller encore plus loin, puisque la stratégie de ChangeDetection peut même être modifiée de sa valeur par défaut, et être encore plus rapide dans certains cas. Mais ça c’est pour une autre fois !
 
+*Cet article a été rédigé pour le numéro 196 du magazine Programmez. Il a été publi en mai 2016*
+
 
