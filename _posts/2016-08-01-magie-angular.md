@@ -1,11 +1,12 @@
 ---
 layout: post
-title: Comment Angular 2 rend vos applications plus performantes, la magie du framework révélée
+title: La magie du framework Angular 2 révélée
 author: cexbrayat
 tags: ["Angular 2", "DOM", "Zone"]
-description: "Angular 2 est sorti en beta. Il a été conçu pour apporter beaucoup de choses incroyables en développement web. Regardons de plus près, notamment le mécanisme de changements de modèle, de modification du DOM avec le nouveau concept des zones"
+description: "Angular 2 est sorti en beta. Il a été conçu pour apporter beaucoup de choses incroyables en développement web. Regardons de plus près, notamment le mécanisme de détection de changement, et de modification du DOM avec le nouveau concept des zones"
 ---
 
+##Comment Angular 2 rend vos applications plus performantes?
 
 Développer avec AngularJS&nbsp;1.X dégageait **un sentiment de "magie"**, et Angular&nbsp;2 procure toujours ce même effet&nbsp;: tu entres une valeur dans un input et hop!, magiquement, toute la page se met à jour en conséquence.
 
@@ -24,7 +25,7 @@ Angular, lui, n’utilise pas de setter, ni de DOM virtuel. Alors **comment fait
 
 La première étape est donc de détecter une **modification du modèle**. Un changement est forcément déclenché par un événement provenant soit directement de l’utilisateur (par exemple un clic sur un bouton, ou une valeur entrée dans un champ de formulaire) soit par le code applicatif (une réponse HTTP, une exécution de méthode asynchrone après un timeout, etc…​).
 
-Comment fait donc le framework pour savoir qu’un événement est survenu&nbsp;? Et bien c’est simple, il nous force à utiliser ses directives, par exemple *ng-click* pour surveiller un clic, ou *ng-model* pour surveiller un input, et ses services, par exemple *$http* pour les appels HTTP ou *$timeout* pour exécuter du code asynchrone.
+Comment fait donc le framework pour savoir qu’un événement est survenu&nbsp;? Et bien c’est simple, il nous force à utiliser ses directives, par exemple `ng-click` pour surveiller un clic, ou `$ng-model` pour surveiller un input, et ses services, par exemple `$http` pour les appels HTTP ou `$timeout` pour exécuter du code asynchrone.
 
 Le fait d’utiliser ses directives et services permet au framework d’être parfaitement informé du fait qu’un événement vient de se produire. C’est ça la première partie de la magie&nbsp;! Et c’est cette première partie qui va déclencher la seconde&nbsp;: il faut maintenant que le framework analyse le changement qui vient de survenir, et puisse déterminer quelle partie du DOM doit être mise à jour.
 
@@ -38,7 +39,7 @@ Ce *digest* évalue alors toutes les expressions stockées dans les *watchers* e
 <img itemprop="image" class="img-responsive" src="/assets/images/2016-08-01/digest.png" alt="schema digest AngularJS 1.x" />
 </p>
 
-Pendant ce digest, AngularJS parcourt toute la liste des *watchers*, et évalue chacun d’eux pour connaître la nouvelle valeur de l’expression surveillée. Avec une subtilité de taille&nbsp;: ce cycle va être effectué dans son intégralité tant que les résultats de tous les *watchers* ne sont pas stables, c’est à dire tant que la dernière valeur calculée n’est pas la même que la nouvelle valeur. Car bien sûr, dans une vraie application, le résultat d’une expression, donc d’un *watcher*, déclenche parfois un callback qui va lui-même modifier à nouveau le modèle et donc changer la valeur d’une ou plusieurs expressions surveillées&nbsp;!
+Pendant ce *digest*, AngularJS parcourt toute la liste des *watchers*, et évalue chacun d’eux pour connaître la nouvelle valeur de l’expression surveillée. Avec une subtilité de taille&nbsp;: ce cycle va être effectué dans son intégralité tant que les résultats de tous les *watchers* ne sont pas stables, c’est à dire tant que la dernière valeur calculée n’est pas la même que la nouvelle valeur. Car bien sûr, dans une vraie application, le résultat d’une expression, donc d’un *watcher*, déclenche parfois un callback qui va lui-même modifier à nouveau le modèle et donc changer la valeur d’une ou plusieurs expressions surveillées&nbsp;!
 
 Prenons un exemple minimaliste&nbsp;: une page avec deux champs à remplir par l’utilisateur, son nom et son mot de passe, et un indice de robustesse du mot de passe qui surveille le mot de passe, recalculé à chaque fois que celui-ci change.
 
@@ -63,7 +64,7 @@ C’est le cas&nbsp;: la force du mot de passe dépend de la valeur de celui-ci.
     - "user.password" -> "h"
     - "passwordStrength" -> 3
 
-Cette fois, c’est stable. C’est seulement à ce moment-là qu’AngularJS&nbsp;1.x applique les résultats sur le DOM. Cette boucle de digest est donc jouée au moins 2 fois à chaque changement dans l’application. Elle peut être jouée jusqu’à 10 fois mais pas plus&nbsp;: après 10 cycles, si les résultats ne sont toujours pas stables, le framework considère qu’il y a une boucle infinie et lance une exception.
+Cette fois, c’est stable. C’est seulement à ce moment-là qu’AngularJS&nbsp;1.x applique les résultats sur le DOM. Cette boucle de *digest* est donc jouée au moins 2 fois à chaque changement dans l’application. Elle peut être jouée jusqu’à 10 fois mais pas plus&nbsp;: après 10 cycles, si les résultats ne sont toujours pas stables, le framework considère qu’il y a une boucle infinie et lance une exception.
 
 Donc mon schéma précédent ressemble en fait plus à&nbsp;:
 
@@ -71,22 +72,20 @@ Donc mon schéma précédent ressemble en fait plus à&nbsp;:
 <img itemprop="image" class="img-responsive" src="/assets/images/2016-08-01/digest-2.png" alt="schema digest AngularJS 1.x détaillé" />
 </p>
 
-Et j’insiste&nbsp;: c’est ce qui se passe après chaque événement de notre application. Cela veut dire que si l’utilisateur entre 5 caractères dans un champ, le digest sera lancé 5 fois, avec 3 boucles à chaque fois dans notre petit exemple, soit 15 boucles d’exécution. Dans une application réelle, on peut avoir facilement plusieurs centaines de *watchers* et donc plusieurs milliers d’évaluation d’expression à chaque changement.
+Et j’insiste&nbsp;: c’est ce qui se passe après chaque événement de notre application. Cela veut dire que si l’utilisateur entre 5 caractères dans un champ, le *digest* sera lancé 5 fois, avec 3 boucles à chaque fois dans notre petit exemple, soit 15 boucles d’exécution. Dans une application réelle, on peut avoir facilement plusieurs centaines de *watchers* et donc plusieurs milliers d’évaluation d’expressions à chaque changement.
 
 Même si ça semble fou, cela marche très bien car les navigateurs modernes sont vraiment rapides, et qu’il est possible d’optimiser deux ou trois choses si nécessaire.
 
 Tout cela signifie deux choses pour AngularJS&nbsp;1.x&nbsp;:
 
 - il faut utiliser les services et les directives du framework pour tout ce qui peut déclencher un changement&nbsp;;
-
-- modifier le modèle à la suite d’un événement non géré par Angular nous oblige à déclencher nous-même le mécanisme de détection de changement (en ajoutant le fameux `$scope.$apply()` qui lance le digest). Par exemple, si l’on veut faire une requête HTTP sans utiliser le service $http, il faut appeler `$scope.$apply()` dans notre callback de réponse pour dire au framework : "Hé, j’ai des nouvelles données, lance le digest s’il te plaît&nbsp;!".
+- modifier le modèle à la suite d’un événement non géré par Angular nous oblige à déclencher nous-même le mécanisme de détection de changement (en ajoutant le fameux `$scope.$apply()` qui lance le *digest*). Par exemple, si l’on veut faire une requête HTTP sans utiliser le service `$http`, il faut appeler `$scope.$apply()` dans notre callback de réponse pour dire au framework&nbsp;: "Hé, j’ai des nouvelles données, lance le *digest* s’il te plaît&nbsp;!".
 
 
 Et la magie du framework peut être scindée en deux parties&nbsp;:
 
 - le déclenchement de la détection de changement à chaque événement&nbsp;;
-
-- la détection de changement elle-même, grâce au digest, et à ses multiples cycles.
+- la détection de changement elle-même, grâce au *digest*, et à ses multiples cycles.
 
 
 Maintenant voyons comment Angular&nbsp;2 fonctionne, et quelle est la différence.
@@ -103,12 +102,10 @@ Mais c’est probablement la première fois que l’on voit les Zones en JavaScr
 ## Zones
 Une zone est un contexte d’exécution. Ce contexte va recevoir du code à exécuter, et ce code peut être synchrone ou asynchrone.
 
-Une zone va nous apporter quelques petits bonus :
+Une zone va nous apporter quelques petits bonus&nbsp;:
 
 - une façon d’exécuter du code avant et après le code reçu à exécuter&nbsp;;
-
 - une façon d’intercepter les erreurs éventuelles d’exécution du code reçu&nbsp;;
-
 - une façon de stocker des variables locales à ce contexte.
 
 Prenons un exemple. Si j’ai du code dans une application qui ressemble à&nbsp;:
@@ -118,7 +115,7 @@ Prenons un exemple. Si j’ai du code dans une application qui ressemble à&nbsp
     // mettre à jour le joueur avec son nouveau score -> synchrone
     updatePlayer(player, score);
 
-Quand on exécute ce code, on obtient :
+Quand on exécute ce code, on obtient&nbsp;:
 
     computeScore: new score: 1000
     udpatePlayer: player 1 has 1000 points
@@ -161,16 +158,13 @@ Mon temps d’exécution n’est plus bon du tout, vu qu’il ne mesure que le c
         updatePlayer(player, score); // asynchrone
     });
 
-Pourquoi est-ce que cela nous aide dans notre cas&nbsp;? Hé bien, si la librairie zone.js est chargée dans notre navigateur, elle va commencer par patcher toutes les méthodes asynchrones de celui-ci. Donc à chaque fois que l’on fera un `setTimeout()`, un `setInterval()`, que l’on utilisera une API asynchrone comme les `Promises`, `XMLHttpRequest`, `WebSocket`, `FileReader`, `GeoLocation`…​ on appellera en fait la version patchée de zone.js. Zone.js connaît alors exactement quand le code asynchrone est terminé, et permet aux développeurs comme nous d’exécuter du code à ce moment là, par le biais d’un hook.
+Pourquoi est-ce que cela nous aide dans notre cas&nbsp;? Hé bien, si la librairie zone.js est chargée dans notre navigateur, elle va commencer par patcher toutes les méthodes asynchrones de celui-ci. Donc à chaque fois que l’on fera un `setTimeout()`, un `setInterval()`, que l’on utilisera une API asynchrone comme les `Promises`, `XMLHttpRequest`, `WebSocket`, `FileReader`, `GeoLocation`... on appellera en fait la version patchée de zone.js. Zone.js connaît alors exactement quand le code asynchrone est terminé, et permet aux développeurs comme nous d’exécuter du code à ce moment là, par le biais d’un hook.
 
-Une zone offre plusieurs hooks possibles :
+Une zone offre plusieurs hooks possibles&nbsp;:
 
 - `beforeTask` qui sera appelé avant l’exécution du code encapsulé dans la zone&nbsp;;
-
 - `afterTask` qui sera appelé après l’exécution du code encapsulé dans la zone&nbsp;;
-
 - `onError` qui sera appelé dès que l’exécution du code encapsulé dans la zone lance une erreur&nbsp;;
-
 - `onZoneCreated` qui sera appelé à la création de la zone.
 
 On peut donc utiliser une zone et ses hooks pour mesurer le temps d’exécution de mon code asynchrone&nbsp;:
@@ -191,7 +185,7 @@ Et cette fois-ci ça marche&nbsp;!
     udpatePlayer: player 1 has 1000 points
     stop: 12ms
 
-Vous voyez maintenant peut-être le lien qu’il peut y avoir avec Angular&nbsp;2. En effet, le premier problème du framework est de savoir quand la détection de changement doit être lancée. En utilisant les zones, et en faisant tourner le code que nous écrivons dans une zone, le framework a une très bonne vue de ce qu’il est en train de se passer. Il est ainsi capable de gérer les erreurs assez finement, mais surtout de lancer la détection de changement dès qu’un appel asynchrone est terminé !
+Vous voyez maintenant peut-être le lien qu’il peut y avoir avec Angular&nbsp;2. En effet, le premier problème du framework est de savoir quand la détection de changement doit être lancée. En utilisant les zones, et en faisant tourner le code que nous écrivons dans une zone, le framework a une très bonne vue de ce qu’il est en train de se passer. Il est ainsi capable de gérer les erreurs assez finement, mais surtout de lancer la détection de changement dès qu’un appel asynchrone est terminé&nbsp;!
 
 Pour simplifier, Angular&nbsp;2 fait quelque chose comme&nbsp;:
 
@@ -204,12 +198,12 @@ Pour simplifier, Angular&nbsp;2 fait quelque chose comme&nbsp;:
 
 Et **le premier problème est ainsi résolu&nbsp;!** C’est pour cela qu’en Angular&nbsp;2, contrairement à AngularJS&nbsp;1.x, il n’est pas nécessaire d’utiliser des services spéciaux pour profiter de la détection de changements. Vous pouvez utiliser ce que vous voulez, les zones se chargeront du reste&nbsp;!
 
-A noter que **les zones sont en voie de standardisation**, et pourraient faire partie de la spécification officielle ECMAScript dans un futur proche. Autre information intéressante, l’implémentation actuelle de zone.js embarque également des informations pour WTF (qui ne veut pas dire What The Fuck ici, mais Web Tracing Framework). Cette librairie permet de profiler votre application en mode développement, et de savoir exactement quel temps a été passé dans chaque partie de votre application et du framework. Bref, plein d’outils pour analyser les performances si besoin&nbsp;!
+A noter que **les zones sont en voie de standardisation**, et pourraient faire partie de la spécification officielle ECMAScript dans un futur proche. Autre information intéressante, l’implémentation actuelle de zone.js embarque également des informations pour WTF (qui ne veut pas dire *What The Fuck* ici, mais *Web Tracing Framework*). Cette librairie permet de profiler votre application en mode développement, et de savoir exactement quel temps a été passé dans chaque partie de votre application et du framework. Bref, plein d’outils pour analyser les performances si besoin&nbsp;!
 
 ## La détection de changement en Angular&nbsp;2
 La seconde partie du problème est la détection de changement en elle-même. C’est bien beau de savoir quand on doit la lancer, mais comment fonctionne-t-elle&nbsp;?
 
-Tout d’abord, il faut se rappeler qu’une application Angular&nbsp;2 est un arbre de composants. Lorsque la détection de changement se lance, le framework va parcourir l’arbre de ces composants pour voir si les composants ont subi des changements qui impactent leurs templates. Si c’est le cas, le DOM du composant en question sera mis à jour (seulement la petite portion impactée par le changement, pas le composant en entier). Ce parcours d’arbre se fait de la racine vers les enfants, et contrairement à AngularJS&nbsp;1.x, il ne se fait qu’une seule fois. **Car il y a maintenant une grande différence** : la détection de changement en Angular&nbsp;2 ne change pas le modèle de l’application, là où un watcher en AngularJS&nbsp;1.x pouvait changer le modèle lors de cette phase. Et en Angular&nbsp;2, un composant ne peut maintenant modifier que le modèle de ses composants enfants et pas de son parent. **Finis les changements de modèle en cascade&nbsp;!**
+Tout d’abord, il faut se rappeler qu’une application Angular&nbsp;2 est un arbre de composants. Lorsque la détection de changement se lance, le framework va parcourir l’arbre de ces composants pour voir si les composants ont subi des changements qui impactent leurs templates. Si c’est le cas, le DOM du composant en question sera mis à jour (seulement la petite portion impactée par le changement, pas le composant en entier). Ce parcours d’arbre se fait de la racine vers les enfants, et contrairement à AngularJS&nbsp;1.x, il ne se fait qu’une seule fois. **Car il y a maintenant une grande différence**&nbsp;: la détection de changement en Angular&nbsp;2 ne change pas le modèle de l’application, là où un *watcher* en AngularJS&nbsp;1.x pouvait changer le modèle lors de cette phase. Et en Angular&nbsp;2, un composant ne peut maintenant modifier que le modèle de ses composants enfants et pas de son parent. **Finis les changements de modèle en cascade&nbsp;!**
 
 La détection de changement est donc seulement là pour vérifier les changements et modifier le DOM en conséquence. Il n’y a plus besoin de faire plusieurs passages comme c’était le cas dans la version 1.x, puisque le modèle n’aura pas changé&nbsp;!
 
@@ -218,28 +212,26 @@ Pour être tout à fait exact, ce parcours se fait deux fois lorsque l’on est 
 Ce fonctionnement a plusieurs avantages&nbsp;:
 
 - il est plus facile de raisonner sur nos applications, car on ne peut plus avoir de cas où un composant parent passe des informations à un composant enfant qui lui aussi passe des informations à son parent. Maintenant les données sont transmises dans un seul sens&nbsp;;
-
 - la détection de changement ne peut plus avoir de boucle infinie&nbsp;;
-
 - la détection de changement est bien plus rapide.
 
 Sur ce dernier point, c’est assez simple à visualiser&nbsp;: là où précédemment la version effectuait **(M watchers) * (N cycles)** vérifications, la version 2 ne fait plus que **M vérifications**.
 
 Mais un autre paramètre entre en compte dans l’amélioration des performances d’Angular&nbsp;2&nbsp;: le temps qu’il faut au framework pour faire cette vérification. Là encore, l’équipe de Google fait parler sa connaissance profonde des sciences informatiques et des machines virtuelles.
 
-Pour cela, il faut se pencher sur la façon dont sont comparées deux valeurs en AngularJS&nbsp;1.x et en Angular&nbsp;2. Dans la version 1.x, le mécanisme est très générique : il y a une méthode dans le framework qui est appelée pour chaque watcher et qui est capable de comparer l’ancienne valeur et la nouvelle. Seulement, les machines virtuelles, comme celle qui exécute le code JavaScript dans notre navigateur (V8 si tu utilises Google Chrome par exemple), n’aiment pas vraiment le code générique.
+Pour cela, il faut se pencher sur la façon dont sont comparées deux valeurs en AngularJS&nbsp;1.x et en Angular&nbsp;2. Dans la version 1.x, le mécanisme est très générique&nbsp;: il y a une méthode dans le framework qui est appelée pour chaque *watcher* et qui est capable de comparer l’ancienne valeur et la nouvelle. Seulement, les machines virtuelles, comme celle qui exécute le code JavaScript dans notre navigateur (V8 si tu utilises Google Chrome par exemple), n’aiment pas vraiment le code générique.
 
-Et si tu le permets, je vais faire une petite parenthèse sur le fonctionnement des machines virtuelles. Avoue que tu ne t’y attendais pas dans un article sur un framework JavaScript ! Les machines virtuelles sont des programmes assez extraordinaires : on leur donne un bout de code et elles sont capables de l’exécuter sur n’importe quelle machine. Vu que peu d’entres nous (certainement pas moi) sont capables de produire du code machine performant, c’est quand même assez pratique. On code avec notre language de haut niveau, et on laisse la VM se préoccuper du reste. Evidemment, les VMs ne se contentent pas de traduire le code, elles vont aussi chercher à l’optimiser. Et elles sont plutôt fortes à ce jeu là, à tel point que les meilleures VMs ont des performances aussi bonnes que du code machine optimisé (voire bien meilleures, car elle peuvent profiter d’informations au runtime, qu’il est plus difficile voire impossible de connaître à l’avance quand on fait l’optimisation à la compilation).
+Et si tu le permets, je vais faire une petite parenthèse sur le fonctionnement des machines virtuelles. Avoue que tu ne t’y attendais pas dans un article sur un framework JavaScript&nbsp;! Les machines virtuelles sont des programmes assez extraordinaires&nbsp;: on leur donne un bout de code et elles sont capables de l’exécuter sur n’importe quelle machine. Vu que peu d’entres nous (certainement pas moi) sont capables de produire du code machine performant, c’est quand même assez pratique. On code avec notre language de haut niveau, et on laisse la VM se préoccuper du reste. Evidemment, les VMs ne se contentent pas de traduire le code, elles vont aussi chercher à l’optimiser. Et elles sont plutôt fortes à ce jeu là, à tel point que les meilleures VMs ont des performances aussi bonnes que du code machine optimisé (voire bien meilleures, car elle peuvent profiter d’informations au runtime, qu’il est plus difficile voire impossible de connaître à l’avance quand on fait l’optimisation à la compilation).
 
-Pour améliorer les performances, les machines virtuelles, notamment celles qui font tourner des languages dynamiques comme JavaScript, utilisent un concept nommé inline caching. C’est une technique très ancienne (inventée pour SmallTalk je crois, soit près de 40 ans, une éternité en informatique), pour un principe finalement assez simple : si un programme appelle une méthode beaucoup de fois avec le même type d’objet, la VM devrait se rappeler de quelle façon elle évalue les propriétés des objets en question. Il y a donc un cache qui est créé, d’où le nom, inline caching. La VM commence donc par regarder dans le cache si elle connaît le type d’objet qu’elle reçoit, et si c’est le cas, utilise la méthode optimisée de chargement.
+Pour améliorer les performances, les machines virtuelles, notamment celles qui font tourner des languages dynamiques comme JavaScript, utilisent un concept nommé *inline caching*. C’est une technique très ancienne (inventée pour SmallTalk je crois, soit près de 40 ans, une éternité en informatique), pour un principe finalement assez simple&nbsp;: si un programme appelle une méthode beaucoup de fois avec le même type d’objet, la VM devrait se rappeler de quelle façon elle évalue les propriétés des objets en question. Il y a donc un cache qui est créé, d’où le nom, *inline caching*. La VM commence donc par regarder dans le cache si elle connaît le type d’objet qu’elle reçoit, et si c’est le cas, utilise la méthode optimisée de chargement.
 
 Ce genre de cache ne fonctionne vraiment que si les arguments de la méthode ont la même forme. Par exemple `{name: 'Cédric'}` et `{name: 'Cyril'}` ont la même forme. Par contre `{name: 'JB', skills: []}` n’a pas la même forme. Lorsque les arguments ont toujours la même forme, on dit que le cache est **monomorphique**, un bien grand mot pour dire qu’il n’a qu’une seule entrée, ce qui donne des résultats très rapides. Si il a quelques entrées, on dit qu’il est polymorphique, cela veut dire que la méthode peut être appelée avec des types d’objets différents, et le code est un peu plus lent. Enfin, il arrive que la VM laisse tomber le cache si il y a trop de types d’objet différents, c’est ce qu’on appelle un état mégamorphique. Et tu l’as compris, c’est le cas le moins performant.
 
-Si j’en reviens à notre détection de changement en AngularJS&nbsp;1.x, on comprend vite que la méthode générique utilisée n’est pas optimisable par la machine virtuelle : on est dans un état mégamorphique, là où le code est le plus lent. Et même si les navigateurs et machines modernes permettent de faire plusieurs milliers de vérification de watchers par seconde, on pouvait quand même atteindre les limites.
+Si j’en reviens à notre détection de changement en AngularJS&nbsp;1.x, on comprend vite que la méthode générique utilisée n’est pas optimisable par la machine virtuelle&nbsp;: on est dans un état mégamorphique, là où le code est le plus lent. Et même si les navigateurs et machines modernes permettent de faire plusieurs milliers de vérification de *watchers* par seconde, on pouvait quand même atteindre les limites.
 
-D’où l’idée de faire un peu différemment en Angular&nbsp;2&nbsp;! Cette fois, plutôt qu’avoir une seule méthode capable de comparer tous les types d’objet, l’équipe Google a pris le parti de générer dynamiquement des comparateurs pour chaque type. Cela veut dire qu’au démarrage de l’application, le framework va parcourir l’arbre des composants et générer un arbre de ChangeDetectors spécifiques.
+D’où l’idée de faire un peu différemment en Angular&nbsp;2&nbsp;! Cette fois, plutôt qu’avoir une seule méthode capable de comparer tous les types d’objet, l’équipe Google a pris le parti de générer dynamiquement des comparateurs pour chaque type. Cela veut dire qu’au démarrage de l’application, le framework va parcourir l’arbre des composants et générer un arbre de `ChangeDetectors` spécifiques.
 
-Par exemple, pour un composant User avec un champ name affiché dans le template, on aura un ChangeDetector qui ressemble à&nbsp;:
+Par exemple, pour un composant User avec un champ name affiché dans le template, on aura un `ChangeDetector` qui ressemble à&nbsp;:
 
     class User_ChangeDetector {
           detectChanges() {
@@ -254,8 +246,8 @@ Un peu comme si on avait écrit le code de comparaison à la main. Ce code est d
 
 **Donc non seulement Angular&nbsp;2 fait moins de comparaison que la version 1.x (une seule passe suffit) mais en plus ces comparaisons sont beaucoup plus rapides&nbsp;!**
 
-Depuis le début, l’équipe Google surveille d’ailleurs les performances, avec des benchmarks entre AngularJS&nbsp;1.x, Angular&nbsp;2 et même React sur des cas d’utilisation un peu tordus afin de voir si la nouvelle version est toujours la plus rapide. Il est même possible d’aller encore plus loin, puisque la stratégie de ChangeDetection peut même être modifiée de sa valeur par défaut, et être encore plus rapide dans certains cas. Mais ça c’est pour une autre fois !
+Depuis le début, l’équipe Google surveille d’ailleurs les performances, avec des benchmarks entre AngularJS&nbsp;1.x, Angular&nbsp;2 et même React sur des cas d’utilisation un peu tordus afin de voir si la nouvelle version est toujours la plus rapide. Il est même possible d’aller encore plus loin, puisque la stratégie de `ChangeDetection` peut même être modifiée de sa valeur par défaut, et être encore plus rapide dans certains cas. Mais ça c’est pour une autre fois&nbsp;!
 
-*Cet article a été rédigé pour le numéro 196 du magazine Programmez. Il a été publi en mai 2016*
+*Cet article a été rédigé pour le numéro 196 du magazine Programmez. Il a été publié en mai 2016*
 
 
