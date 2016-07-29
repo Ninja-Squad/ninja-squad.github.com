@@ -34,7 +34,9 @@ Ensuite, à chaque fois que le framework détecte un changement, il déclenche c
 
 Ce *digest* évalue alors toutes les expressions stockées dans les *watchers* et compare leur nouvelle valeur avec leur ancienne valeur. Si un changement est constaté entre la nouvelle valeur d’une expression et son ancienne valeur, alors le framework sait que l’expression en question doit être remplacée par sa nouvelle valeur dans le DOM pour refléter ce changement. Cette technique est ce que l’on appelle du *dirty checking*.
 
-<div style="float: right;"><img src="/assets/images/2016-08-01/digest.png" alt="schema digest AngularJS 1.x" /></div>
+<p style="text-align: center;">
+<img itemprop="image" class="img-responsive" src="/assets/images/2016-08-01/digest.png" alt="schema digest AngularJS 1.x" />
+</p>
 
 Pendant ce digest, AngularJS parcourt toute la liste des *watchers*, et évalue chacun d’eux pour connaître la nouvelle valeur de l’expression surveillée. Avec une subtilité de taille&nbsp;: ce cycle va être effectué dans son intégralité tant que les résultats de tous les *watchers* ne sont pas stables, c’est à dire tant que la dernière valeur calculée n’est pas la même que la nouvelle valeur. Car bien sûr, dans une vraie application, le résultat d’une expression, donc d’un *watcher*, déclenche parfois un callback qui va lui-même modifier à nouveau le modèle et donc changer la valeur d’une ou plusieurs expressions surveillées&nbsp;!
 
@@ -65,7 +67,9 @@ Cette fois, c’est stable. C’est seulement à ce moment-là qu’AngularJS&nb
 
 Donc mon schéma précédent ressemble en fait plus à&nbsp;:
 
-<div style="float: right;"><img src="/assets/images/2016-08-01/digest.png" alt="schema digest AngularJS 1.x détaillé" /></div>
+<p style="text-align: center;">
+<img itemprop="image" class="img-responsive" src="/assets/images/2016-08-01/digest-2.png" alt="schema digest AngularJS 1.x détaillé" />
+</p>
 
 Et j’insiste&nbsp;: c’est ce qui se passe après chaque événement de notre application. Cela veut dire que si l’utilisateur entre 5 caractères dans un champ, le digest sera lancé 5 fois, avec 3 boucles à chaque fois dans notre petit exemple, soit 15 boucles d’exécution. Dans une application réelle, on peut avoir facilement plusieurs centaines de *watchers* et donc plusieurs milliers d’évaluation d’expression à chaque changement.
 
