@@ -57,7 +57,7 @@ Attention, l'échelle est logarithmique.
 On constate plusieurs choses&nbsp;:
 
 - Seulement 1/5 des acheteurs donnent le prix minimum. Je trouve ça magique&nbsp;: ils font l'effort de faire un geste et de récompenser notre travail et l'association. Voilà de quoi redonner foi dans l'Humanité.
-- La majorité des acheteurs conservent le prix par défaut. Nous l'avions initialement valorisé à 10€ (`D1` sur le graphe). Puis au bout d'une semaine, pour voir, nous l'avons positionné à 20€ (`D2` sur le graphe). La proposition initiale a donc beaucoup de poids dans le choix de l'acheteur. C'est surprenant, mais bon à savoir&nbsp;! :p 
+- La majorité des acheteurs conservent le prix par défaut. Nous l'avions initialement valorisé à 10€ (`D1` sur le graphe). Puis au bout d'une semaine, pour voir, nous l'avons positionné à 20€ (`D2` sur le graphe). La proposition initiale a donc beaucoup de poids dans le choix de l'acheteur. C'est surprenant, mais bon à savoir&nbsp;! :p
 - Quelques rares personnes ont donné des tarifs démesurés : 30€, 50€. Il faut avouer que ce sont pour l'essentiel des connaissances.
 - Et enfin, observation la plus importante&nbsp;: sept personnes ont donné 8,33€ HT (`P` sur le graphe), probablement pour payer 10€ TTC tout rond. Ne négligez donc pas la proportion de la population souffrant de <abbr title="Troubles Obsessionnels Compulsifs">TOCs</abbr> :p.
 
@@ -96,13 +96,19 @@ Vous savez ce qu'il vous reste à faire pour votre prochain livre&nbsp;: DIY&nbs
 <img itemprop="image" class="img-responsive" src="/assets/images/books/writer.gif" alt="yeah" />
 </p>
 
+<br>
+**Mise à jour du 10/08/2016**&nbsp;:
+
+Nous avons désormais une page publique des ventes de cet ebook&nbsp;: [https://books.ninja-squad.com/angularjs/sales](https://books.ninja-squad.com/angularjs/sales "Ventes de l'ebook Devenez un Ninja avec AngularJS").
+Et même [du suivant sur Angular&nbsp;2](https://books.ninja-squad.com/angular2/sales), sorti entre temps.
+
 <script type="text/javascript" src="https://www.google.com/jsapi"></script>
 <script type="text/javascript">
 	google.load("visualization", "1", {packages:["corechart"]});
 	google.setOnLoadCallback(drawCharts);
 
 	function drawCharts() {
-		
+
 		var dataVentes = new google.visualization.DataTable();
 		dataVentes.addColumn('string', 'Date');
 		dataVentes.addColumn('number', 'Nombre de ventes');
@@ -147,7 +153,7 @@ Vous savez ce qu'il vous reste à faire pour votre prochain livre&nbsp;: DIY&nbs
 
 		var chartVentes = new google.visualization.LineChart(document.getElementById('chart_ventes'));
 		chartVentes.draw(dataVentes, optionsVentes);
-		
+
 		var dataTarifs = new google.visualization.DataTable();
 		dataTarifs.addColumn('number', 'Tarif HT');
 		dataTarifs.addColumn('number', 'Nombre d\'achats');
