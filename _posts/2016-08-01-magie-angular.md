@@ -16,9 +16,9 @@ Mais d’abord, laisse moi t’expliquer comment fonctionne AngularJS&nbsp;1.x, 
 
 Tous les frameworks JavaScript fonctionnent d’une façon assez similaire&nbsp;: ils aident le développeur à réagir aux événements de l’application, à mettre à jour son état et à rafraîchir la page (le DOM) en conséquence. Mais ils n’ont pas forcément tous le même moyen d’y parvenir.
 
-[EmberJS](http://emberjs.com/), par exemple, demande aux développeurs d’utiliser des setters sur les objets manipulés pour que le framework puisse "intercepter" l’appel au setter et connaître ainsi les changements appliqués au modèle, et pouvoir modifier le DOM en conséquence. [React](https://facebook.github.io/react/), lui, a opté pour recalculer tout le DOM à chaque changement mais, comme mettre à jour tout le DOM est une opération coûteuse, il fait d’abord ce rendu dans un DOM virtuel, puis n’applique que la différence entre le DOM virtuel et le DOM réel.
+[EmberJS](http://emberjs.com/), par exemple, demande aux développeurs d’utiliser des *setters* sur les objets manipulés pour que le framework puisse "intercepter" l’appel au setter et connaître ainsi les changements appliqués au modèle, et pouvoir modifier le DOM en conséquence. [React](https://facebook.github.io/react/), lui, a opté pour recalculer tout le DOM à chaque changement mais, comme mettre à jour tout le DOM est une opération coûteuse, il fait d’abord ce rendu dans un DOM virtuel, puis n’applique que la différence entre le DOM virtuel et le DOM réel.
 
-Angular, lui, n’utilise pas de setter, ni de DOM virtuel. Alors **comment fait-il pour savoir ce qui doit être mis à jour&nbsp;?**
+Angular, lui, n’utilise pas de *setter*, ni de DOM virtuel. Alors **comment fait-il pour savoir ce qui doit être mis à jour&nbsp;?**
 
 
 ## AngularJS&nbsp;1.x et le digest cycle
@@ -29,7 +29,9 @@ Comment fait donc le framework pour savoir qu’un événement est survenu&nbsp;
 
 Le fait d’utiliser ses directives et services permet au framework d’être parfaitement informé du fait qu’un événement vient de se produire. C’est ça la première partie de la magie&nbsp;! Et c’est cette première partie qui va déclencher la seconde&nbsp;: il faut maintenant que le framework analyse le changement qui vient de survenir, et puisse déterminer quelle partie du DOM doit être mise à jour.
 
-Pour cela, en version 1.x, le framework maintient une liste de *watchers* (des observateurs) qui représente la liste de ce qu’il doit surveiller. Pour simplifier, un *watcher* est créé pour chaque expression dynamique utilisée dans un template. Il y a donc un *watcher* pour chaque petit bout dynamique de l’application, et on peut donc avoir facilement plusieurs centaines de *watchers* dans une page.
+Pour cela, en version 1.x, le framework maintient une liste de *watchers* (des *observateurs*) qui représente la liste de ce qu’il doit surveiller. Pour simplifier, un *watcher* est créé pour chaque expression dynamique utilisée dans un template. Il y a donc un *watcher* pour chaque petit bout dynamique de l’application, et on peut donc avoir facilement plusieurs centaines de *watchers* dans une page.
+
+Ces *watchers* ont un rôle central dans AngularJS 1.x : ils sont la mémoire du framework pour connaître l’état de notre application.
 
 Ensuite, à chaque fois que le framework détecte un changement, il déclenche ce que l’on appelle le *digest* (la digestion).
 
@@ -39,32 +41,35 @@ Ce *digest* évalue alors toutes les expressions stockées dans les *watchers* e
 <img itemprop="image" class="img-responsive" src="/assets/images/2016-08-01/digest.png" alt="schema digest AngularJS 1.x" />
 </p>
 
-Pendant ce *digest*, AngularJS parcourt toute la liste des *watchers*, et évalue chacun d’eux pour connaître la nouvelle valeur de l’expression surveillée. Avec une subtilité de taille&nbsp;: ce cycle va être effectué dans son intégralité tant que les résultats de tous les *watchers* ne sont pas stables, c’est à dire tant que la dernière valeur calculée n’est pas la même que la nouvelle valeur. Car bien sûr, dans une vraie application, le résultat d’une expression, donc d’un *watcher*, déclenche parfois un callback qui va lui-même modifier à nouveau le modèle et donc changer la valeur d’une ou plusieurs expressions surveillées&nbsp;!
+Pendant ce *digest*, AngularJS parcourt toute la liste des *watchers*, et évalue chacun d’eux pour connaître la nouvelle valeur de l’expression surveillée. Avec une subtilité de taille&nbsp;: ce cycle va être effectué dans son intégralité tant que les résultats de tous les *watchers* ne sont pas stables, c’est à dire tant que la dernière valeur calculée n’est pas la même que la nouvelle valeur. Car bien sûr, un *watcher*, lorsqu’il détecte un changement de valeur de l’expression qu’il observe, déclenche un callback. Et ce callback peut lui-même modifier à nouveau le modèle, et donc changer la valeur d’une ou plusieurs expressions surveillées&nbsp;!
 
-Prenons un exemple minimaliste&nbsp;: une page avec deux champs à remplir par l’utilisateur, son nom et son mot de passe, et un indice de robustesse du mot de passe qui surveille le mot de passe, recalculé à chaque fois que celui-ci change.
+Prenons un exemple minimaliste&nbsp;: une page avec deux champs à remplir par l’utilisateur, son nom et son mot de passe. Un *watcher* est utilisé pour surveiller les
+changements du mot de passe, et recalculer sa robustesse chaque fois qu’il change.
 
-Nous avons alors cette liste de *watchers* après leur première évaluation, lorsque l’utilisateur a saisi le premier caractère de son mot de passe&nbsp;:
+Nous avons alors cette liste de *watchers* après la première itération du cycle de *digest*, lorsque l’utilisateur a saisi le premier caractère de son mot de passe&nbsp;:
 
     $$watchers (expression -> value)
     - "user.name" -> "Cédric"
     - "user.password" -> "h"
-    - "passwordStrength" -> 2
+    - "passwordStrength" -> 0
 
-Le cycle va être effectué une seconde fois pour voir si les résultats sont stables, car certains résultats dépendent peut-être d’une autre expression.
-
-    $$watchers
-    - "user.name" -> "Cédric"
-    - "user.password" -> "h"
-    - "passwordStrength" -> 3
-
-C’est le cas&nbsp;: la force du mot de passe dépend de la valeur de celui-ci. Comme les résultats ne sont pas encore stables (une valeur ayant changé entre les deux cycles), le cycle est une nouvelle fois évalué en entier.
+La fonction de callback du watcher qui observe le mot de passe est alors appelée, et elle calcule la nouvelle valeur de `passwordStrength` : 3.
+Mais Angular n’a aucune idée des changements appliqués au modèle. Il lance donc une deuxième itération pour savoir si le modèle est stable.
 
     $$watchers
     - "user.name" -> "Cédric"
     - "user.password" -> "h"
     - "passwordStrength" -> 3
 
-Cette fois, c’est stable. C’est seulement à ce moment-là qu’AngularJS&nbsp;1.x applique les résultats sur le DOM. Cette boucle de *digest* est donc jouée au moins 2 fois à chaque changement dans l’application. Elle peut être jouée jusqu’à 10 fois mais pas plus&nbsp;: après 10 cycles, si les résultats ne sont toujours pas stables, le framework considère qu’il y a une boucle infinie et lance une exception.
+Ce n’est pas le cas : la valeur de `passwordStrength` a changé depuis la première itération. Une nouvelle itération est donc lancée.
+
+    $$watchers
+    - "user.name" -> "Cédric"
+    - "user.password" -> "h"
+    - "passwordStrength" -> 3
+
+
+Cette fois, c’est stable. C’est seulement à ce moment-là qu’AngularJS 1.x applique les résultats sur le DOM. Cette boucle de *digest* est donc jouée au moins 2 fois à chaque changement dans l’application. Elle peut être jouée jusqu’à 10 fois mais pas plus&nbsp;: après 10 cycles, si les résultats ne sont toujours pas stables, le framework considère qu’il y a une boucle infinie et lance une exception.
 
 Donc mon schéma précédent ressemble en fait plus à&nbsp;:
 
@@ -95,7 +100,7 @@ Maintenant voyons comment Angular&nbsp;2 fonctionne, et quelle est la différenc
 
 Angular&nbsp;2 conserve les mêmes principes, **mais les implémente d’une façon différente**, et on pourrait même dire, plus intelligente.
 
-Pour la première partie du problème —&nbsp;le déclenchement de la détection de changement&nbsp;— l’équipe Angular a construit un petit projet annexe appelé *[Zone.js](https://github.com/angular/zone.js/)*. Ce projet n’est pas forcément lié à Angular, car les zones sont un outil qui peut être utilisé dans d’autres projets. Les zones ne sont pas vraiment un nouveau concept&nbsp;: elles existent dans [le language Dart](https://www.dartlang.org/) (un autre projet Google) depuis quelques temps déjà. Elles ont aussi quelques similarités avec [les Domains de Node.js](https://nodejs.org/api/domain.html#domain_domain) (abandonnés depuis) ou [les ThreadLocal](https://docs.oracle.com/javase/8/docs/api/java/lang/ThreadLocal.html) en Java.
+Pour la première partie du problème —&nbsp;le déclenchement de la détection de changement&nbsp;— l’équipe Angular a construit un petit projet annexe appelé *[Zone.js](https://github.com/angular/zone.js/)*. Ce projet n’est pas forcément lié à Angular, car les *zones* sont un outil qui peut être utilisé dans d’autres projets. Les *zones* ne sont pas vraiment un nouveau concept&nbsp;: elles existent dans [le language Dart](https://www.dartlang.org/) (un autre projet Google) depuis quelques temps déjà. Elles ont aussi quelques similarités avec [les Domains de Node.js](https://nodejs.org/api/domain.html#domain_domain) (abandonnés depuis) ou [les ThreadLocal](https://docs.oracle.com/javase/8/docs/api/java/lang/ThreadLocal.html) en Java.
 
 Mais c’est probablement la première fois que l’on voit les Zones en JavaScript&nbsp;: pas d’inquiétude, on va les découvrir ensemble.
 
@@ -152,7 +157,7 @@ va en fait donner&nbsp;:
 
 Mon temps d’exécution n’est plus bon du tout, vu qu’il ne mesure que le code synchrone&nbsp;! Et c’est par exemple là que les zones peuvent être utiles. On va lancer le code en question en utilisant zone.js pour l’exécuter dans une zone&nbsp;:
 
-    let scoreZone = zone.fork();
+    let scoreZone = Zone.current.fork({ name: 'scoreZone' });
     scoreZone.run(() => {
         let score = computeScore();
         updatePlayer(player, score); // asynchrone
@@ -162,21 +167,33 @@ Pourquoi est-ce que cela nous aide dans notre cas&nbsp;? Hé bien, si la librair
 
 Une zone offre plusieurs hooks possibles&nbsp;:
 
-- `beforeTask` qui sera appelé avant l’exécution du code encapsulé dans la zone&nbsp;;
-- `afterTask` qui sera appelé après l’exécution du code encapsulé dans la zone&nbsp;;
-- `onError` qui sera appelé dès que l’exécution du code encapsulé dans la zone lance une erreur&nbsp;;
-- `onZoneCreated` qui sera appelé à la création de la zone.
+- `onInvoke` qui sera appelé avant l’exécution du code encapsulé dans la zone&nbsp;;
+- `onHasTask` qui sera appelé après l’exécution du code encapsulé dans la zone&nbsp;;
+- `onHandleError` qui sera appelé dès que l’exécution du code encapsulé dans la zone lance une erreur&nbsp;;
+- `onFork` qui sera appelé à la création de la zone.
 
 On peut donc utiliser une zone et ses hooks pour mesurer le temps d’exécution de mon code asynchrone&nbsp;:
 
-    let scoreZone = zone.fork({
-        beforeTask: startTimer,
-        afterTask: stopTimer
+    let scoreZone = Zone.current.fork({
+        name: 'scoreZone',
+        onInvoke(delegate, current, target, task, applyThis, applyArgs, source) {
+          // start the timer
+          startTimer();
+          return delegate.invoke(target, task, applyThis, applyArgs, source);
+        },
+        onHasTask(delegate, current, target, hasTaskState) {
+          delegate.hasTask(target, hasTaskState);
+          if (!hasTaskState.macroTask) {
+            // if the zone run is done, stop the timer
+            stopTimer();
+          }
+        }
     });
     scoreZone.run(() => {
-        let score = computeScore();
-        updatePlayer(player, score);
+    let score = computeScore(); 
+    updatePlayer(player, score);
     });
+
 
 Et cette fois-ci ça marche&nbsp;!
 
@@ -189,10 +206,11 @@ Vous voyez maintenant peut-être le lien qu’il peut y avoir avec Angular&nbsp;
 
 Pour simplifier, Angular&nbsp;2 fait quelque chose comme&nbsp;:
 
-    let scoreZone = zone.fork({
-        afterTask: triggerChangeDetection
+    let angularZone = Zone.current.fork({
+        name: 'angular',
+        onHasTask: triggerChangeDetection
     });
-    scoreZone.run(() => {
+    angularZone.run(() => {
         // your application code
     });
 
@@ -231,7 +249,7 @@ Si j’en reviens à notre détection de changement en AngularJS&nbsp;1.x, on co
 
 D’où l’idée de faire un peu différemment en Angular&nbsp;2&nbsp;! Cette fois, plutôt qu’avoir une seule méthode capable de comparer tous les types d’objet, l’équipe Google a pris le parti de générer dynamiquement des comparateurs pour chaque type. Cela veut dire qu’au démarrage de l’application, le framework va parcourir l’arbre des composants et générer un arbre de `ChangeDetectors` spécifiques.
 
-Par exemple, pour un composant User avec un champ name affiché dans le template, on aura un `ChangeDetector` qui ressemble à&nbsp;:
+Par exemple, pour un composant `User` avec un champ `name` affiché dans le template, on aura un `ChangeDetector` qui ressemble à&nbsp;:
 
     class User_ChangeDetector {
           detectChanges() {
@@ -246,8 +264,8 @@ Un peu comme si on avait écrit le code de comparaison à la main. Ce code est d
 
 **Donc non seulement Angular&nbsp;2 fait moins de comparaison que la version 1.x (une seule passe suffit) mais en plus ces comparaisons sont beaucoup plus rapides&nbsp;!**
 
-Depuis le début, l’équipe Google surveille d’ailleurs les performances, avec des benchmarks entre AngularJS&nbsp;1.x, Angular&nbsp;2 et même React sur des cas d’utilisation un peu tordus afin de voir si la nouvelle version est toujours la plus rapide. Il est même possible d’aller encore plus loin, puisque la stratégie de `ChangeDetection` peut même être modifiée de sa valeur par défaut, et être encore plus rapide dans certains cas. Mais ça c’est pour une autre fois&nbsp;!
+Depuis le début, l’équipe Google surveille d’ailleurs les performances, avec des [benchmarks](https://github.com/angular/angular/tree/master/modules/benchmarks_external) entre AngularJS&nbsp;1.x, Angular&nbsp;2 et même Polymer et React sur des cas d’utilisation un peu tordus afin de voir si la nouvelle version est toujours la plus rapide. Il est même possible d’aller encore plus loin, puisque la stratégie de `ChangeDetection` peut même être modifiée de sa valeur par défaut, et être encore plus rapide dans certains cas. Mais ça c’est pour une autre fois&nbsp;!
 
-*Cet article a été rédigé pour le numéro 196 du magazine Programmez. Il a été publié en mai 2016*
+*Une première version de cet article a été rédigée pour le numéro 196 du magazine Programmez. Elle a été publiée en mai 2016.*
 
 
