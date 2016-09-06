@@ -15,7 +15,7 @@ Install Github pages :
 
 Run the blog :
 
-    jekyll serve --watch
+    jekyll serve --watch --incremental --future
 
 ## Principe de fonctionnement
 
