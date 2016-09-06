@@ -6,7 +6,7 @@ tags: [angularjs, websocket]
 canonical: http://hypedrivendev.wordpress.com/2013/12/19/angular-express-socketio
 ---
 
-Vous savez, si [vous nous lisez](http://blog.ninja-squad.com/2013/09/11/rentree-des-ninjas/) régulièrement, que nous donnons des cours dans différents établissements, de la fac aux écoles d'ingé, en passant par l'IUT. Avec cette nouvelle année scolaire, nous voici repartis!
+Vous savez, si [vous nous lisez](/2013/09/11/rentree-des-ninjas/) régulièrement, que nous donnons des cours dans différents établissements, de la fac aux écoles d'ingé, en passant par l'IUT. Avec cette nouvelle année scolaire, nous voici repartis!
 
 Je donne depuis quelques années un cours sur les web services à l'INSA, à l'invitation du [Docteur Ponge](https://twitter.com/jponge) : c'est l'occasion de parler SOAP (beurk), REST (yay!) et Websocket (re-yay!).
 

@@ -59,7 +59,7 @@ Cette section contient tous les alias que vous ajouterez. Comme j'utilise oh-my-
 
     -:author:    Ninja Squad
     +:author:    Ninja Squad Team
-    
+
 Un seul mot ajouté, mais Git considère que la ligne entière est changée. Alors qu'avec `git wdiff`&nbsp;:
 
     :author:    Ninja Squad{+ Team+}
@@ -94,7 +94,7 @@ Par défaut lorsque vous faites un 'diff', Git vous affiche par exemple :
     +++ b/Git/git.asc
 
 Ces préfixes `a/` et `b/` ne sont pas très parlants n'est-ce pas&nbsp;? En passant `diff.mnemonicprefix` à true, Git va afficher des préfixes plus logiques, par exemple `i` pour *index* et `w` pour le *work tree* (votre dossier de travail). Exemple :
-    
+
     --- i/Git/git.asc
     +++ w/Git/git.asc
 
@@ -115,7 +115,7 @@ Mais ne rien faire pour autant&nbsp;! Et bien en activant l'autocorrection, git 
     [rerere]
         enabled = true
 
-Si vous avez lu [mon dernier article](http://blog.ninja-squad.com/2013/08/30/git-rerere-ma-commande-preferee/) sur Git, vous savez déjà tout le bien que peut vous apporter 'rerere'&nbsp;!
+Si vous avez lu [mon dernier article](/2013/08/30/git-rerere-ma-commande-preferee/) sur Git, vous savez déjà tout le bien que peut vous apporter 'rerere'&nbsp;!
 <br/><br/>
 
     [push]

@@ -6,7 +6,7 @@ tags: [git, github]
 canonical: http://hypedrivendev.wordpress.com/2014/02/11/workflow-pull-requests-and-code-reviews
 ---
 
-Si vous suivez le blog, vous savez que nous avons déjà parlé du [workflow Git](http://blog.ninja-squad.com/2013/06/03/branching-with-git/) que nous utilisons en local. Mais on ne vous a jamais expliqué les différentes façons de collaborer à plusieurs sur un projet.
+Si vous suivez le blog, vous savez que nous avons déjà parlé du [workflow Git](/2013/06/03/branching-with-git/) que nous utilisons en local. Mais on ne vous a jamais expliqué les différentes façons de collaborer à plusieurs sur un projet.
 
 Il y a deux grandes façons de travailler à plusieurs :
 - un repo partagé par toute l'équipe
@@ -44,7 +44,7 @@ On peut coder notre fonctionnalité comme précédemment :
     ... commits
 
 Et l'on peut maintenant récupérer les modifications de la team Google et mettre à jour notre branche locale avec celles-ci :
-    
+
     # on récupère les derniers commits de upstream
     git fetch upstream
     git rebase upstream/master
@@ -61,7 +61,7 @@ Github fournit maintenant un ensemble de [guides](http://guides.github.com/) for
 
 ## Enterprise style
 
-En entreprise, le workflow est généralement différent. La plupart du temps, l'équipe collabore sur un seul repository sur lequel tout le monde possède les droits d'écriture. Il y a donc deux façons de procéder. 
+En entreprise, le workflow est généralement différent. La plupart du temps, l'équipe collabore sur un seul repository sur lequel tout le monde possède les droits d'écriture. Il y a donc deux façons de procéder.
 
 La première consiste à pousser ses modifications directement sur le `master` (si c'est votre branche de développement actif). On laisse alors le soin à l'intégration continue de repérer tout problème (il n'y a plus qu'à espérer avoir suffisamment de tests...).
 
@@ -87,11 +87,11 @@ La seconde consiste à pousser ses modifications sur une branche partagée, puis
 
 # Code review, sweet code review
 
-Le mécanisme de code review est vraiment intéressant à systématiser. Bien sûr, cela introduit une tâche supplémentaire, que l'on peut voir comme une perte de temps. Mais il est très difficile de coder juste tout le temps du premier coup (en tout cas moi je sais pas faire), et un oeil externe peut souvent voir certains problèmes qui nous ont échappé au moment de la réalisation. 
+Le mécanisme de code review est vraiment intéressant à systématiser. Bien sûr, cela introduit une tâche supplémentaire, que l'on peut voir comme une perte de temps. Mais il est très difficile de coder juste tout le temps du premier coup (en tout cas moi je sais pas faire), et un oeil externe peut souvent voir certains problèmes qui nous ont échappé au moment de la réalisation.
 
-Au-delà de ça, le niveau d'une équipe n'est jamais parfaitement homogène : certains sont d'excellents développeurs front-end, d'autres seront plus à l'aise sur le back-end, ou l'automatisation du projet. La code review est alors un excellent moyen de transmettre des compétences! Si la personne qui relit le code est plus expérimentée, elle sera à même de donner des conseils, des solutions plus élégantes et de repérer des problèmes. Si elle est moins expérimentée que celle qui a développé, elle pourra poser des questions, comprendre de nouvelles choses, s'inspirer. Et elle trouvera des erreurs aussi, c'est garanti! 
+Au-delà de ça, le niveau d'une équipe n'est jamais parfaitement homogène : certains sont d'excellents développeurs front-end, d'autres seront plus à l'aise sur le back-end, ou l'automatisation du projet. La code review est alors un excellent moyen de transmettre des compétences! Si la personne qui relit le code est plus expérimentée, elle sera à même de donner des conseils, des solutions plus élégantes et de repérer des problèmes. Si elle est moins expérimentée que celle qui a développé, elle pourra poser des questions, comprendre de nouvelles choses, s'inspirer. Et elle trouvera des erreurs aussi, c'est garanti!
 
-C'est une procédure délicate, car il faut être capable de dire les choses sans blesser les autres (on est tous un peu sensible sur notre code), ou être capable d'admettre que l'on ne sait pas ce que fait cette méthode et de poser la question. 
+C'est une procédure délicate, car il faut être capable de dire les choses sans blesser les autres (on est tous un peu sensible sur notre code), ou être capable d'admettre que l'on ne sait pas ce que fait cette méthode et de poser la question.
 
 La code review permet aussi d'homogénéiser les développements, parce que cela force à relire le code des autres, ce que l'on ne fait que rarement si on est la tête dans le guidon. Et surtout, surtout, cela partage les connaissances fonctionnelles. Si vous avez connu le phénomène de "j'ai pas codé cette partie, je sais pas comment ça marche", vous savez de quoi je parle. Faire une revue de code force à comprendre les nouvelles fonctionnalités de l'application même si l'on a pas codé directement dessus. Cela limite ensuite le 'Bus Effect' (autrement appelé 'Scooter Effect' chez Ninja Squad, grâce aux aventures de Cyril).
 

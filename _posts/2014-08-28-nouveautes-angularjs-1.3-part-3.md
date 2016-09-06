@@ -7,7 +7,7 @@ canonical: http://hypedrivendev.wordpress.com/2014/08/28/nouveautes-angularjs-1.
 ---
 
 Nous poursuivons notre exploration des nouvelles features d'AngularJS 1.3!
-Pour vous rafraîchir la mémoire, nous avons déjà parlé de ngModelOptions et des nouveaux inputs dans [la première partie](http://blog.ninja-squad.com/2014/06/24/nouveautes-angularjs-1.3/), ainsi que de ngStrictDI, bindOnce, ngMessages et watchCollection dans [la seconde partie](http://blog.ninja-squad.com/2014/07/31/nouveautes-angularjs-1.3-part-2/).
+Pour vous rafraîchir la mémoire, nous avons déjà parlé de ngModelOptions et des nouveaux inputs dans [la première partie](/2014/06/24/nouveautes-angularjs-1.3/), ainsi que de ngStrictDI, bindOnce, ngMessages et watchCollection dans [la seconde partie](/2014/07/31/nouveautes-angularjs-1.3-part-2/).
 
 # No more global controllers
 
