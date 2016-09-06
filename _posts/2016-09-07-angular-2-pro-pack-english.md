@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The Angular 2 Pro Pack is out!
+title: Our Angular 2 Pro Pack is out!
 author: cexbrayat
 tags: ["angular2", "ebook"]
 description: "The Pro Pack is available and lets you build a complete app to learn everything about Angular 2."
