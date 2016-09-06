@@ -6,6 +6,9 @@ tags: ["angular2", "ebook"]
 description: "The Pro Pack is available and lets you build a complete app to learn everything about Angular 2."
 ---
 
+*Vous cherchez la version en Français&nbsp;? C'est [par ici](/2016/09/07/angular-2-pack-pro-francais/).*
+{: style="text-align: right;"}
+
 To discover Angular 2, several thousands of you have read
 our ebook [Become a ninja with Angular 2](https://books.ninja-squad.com/angular2) (thank you!).
 You may have noticed we spent a lot of time keeping it up to date

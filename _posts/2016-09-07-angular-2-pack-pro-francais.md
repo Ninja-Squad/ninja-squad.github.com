@@ -6,6 +6,9 @@ tags: ["Angular 2", "ebook"]
 description: "Notre Pro Pack est disponible et vous permettra de construire une application complète pour tout apprendre sur Angular 2."
 ---
 
+*Looking for the English version? It's [there](/2016/09/07/angular-2-pro-pack-english/).*
+{: style="text-align: right;"}
+
 Pour découvrir Angular&nbsp;2, plusieurs milliers d'entre-vous se sont jetés
 sur notre ebook [Devenez un Ninja avec Angular 2](https://books.ninja-squad.com/angular2) (merci&nbsp;!).
 Vous avez probablement remarqué qu'on a consacré beaucoup de temps à le maintenir
