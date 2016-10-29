@@ -72,7 +72,7 @@ La variable userForm représente le controller du formulaire (le nom vient du ch
 
 Ainsi le message d'alerte indiquant que le champ n'est pas bien rempli ne s'affiche que si l'email est incorrect. Rien d'autre à faire pour nous, Angular s'occupe de tout.
 
-Vous pouvez vous référer à [cet article précédent](http://blog.ninja-squad.com/2013/10/22/forms-in-angularjs/) pour plus d'informations sur le sujet.
+Vous pouvez vous référer à [cet article précédent](/2013/10/22/forms-in-angularjs/) pour plus d'informations sur le sujet.
 
 La version 1.3 apporte maintenant la gestion des type 'date', en utilisant là encore le support HTML5 si disponible (et vous aurez alors le plus ou moins beau date-picker de votre navigateur), ou un champ texte sinon, dans lequel il faudra entrer une date au format ISO-8601, par exemple 'yyyy-MM-dd'. Le modèle lié doit être une Date JS.
 

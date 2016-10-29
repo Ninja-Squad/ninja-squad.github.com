@@ -6,7 +6,7 @@ tags: ["javascript","angularjs"]
 canonical: http://hypedrivendev.wordpress.com/2014/07/31/nouveautes-angularjs-1_3-part-2/
 ---
 
-Nous poursuivons notre exploration des nouvelles features d'AngularJS 1.3! Si vous avez raté la première partie, c'est [par ici](http://blog.ninja-squad.com/2014/06/24/nouveautes-angularjs-1.3/). 
+Nous poursuivons notre exploration des nouvelles features d'AngularJS 1.3! Si vous avez raté la première partie, c'est [par ici](/2014/06/24/nouveautes-angularjs-1.3/). 
 
 Et bien sûr, vous pourrez retrouver tout ça dans notre livre dont la sortie se rapproche!
 
@@ -73,7 +73,7 @@ Il est possible d'écrire tout ça différemment, avec un attribut `multiple` :
       <ng-message when="pattern">...</ng-message>
     </ng-messages>
 
-Le dernier avantage à utiliser ngMessages réside dans la possibilité d'externaliser les messages d'erreur dans des templates, offrant ainsi la possibilité de les réutiliser par ailleurs. 
+Le dernier avantage à utiliser ngMessages réside dans la possibilité d'externaliser les messages d'erreur dans des templates, offrant ainsi la possibilité de les réutiliser par ailleurs.
 
     <!-- error-messages.html -->
     <ng-message when="required">...</ng-message>

@@ -212,7 +212,7 @@ So you can now do:
 
 # ngMessages
 
-This module, included in the [1.3 release](http://blog.ninja-squad.com/2014/10/28/nouveautes-angularjs-1.3-part-4/),
+This module, included in the [1.3 release](/2014/10/28/nouveautes-angularjs-1.3-part-4/),
 has been slightly enhanced with a few directives to enable dynamic error messages.
 
 Let's start with the breaking change induced: `ng-include-messages`,
