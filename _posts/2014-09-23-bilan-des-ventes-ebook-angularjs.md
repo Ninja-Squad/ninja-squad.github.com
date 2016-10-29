@@ -2,7 +2,7 @@
 layout: post
 title: Bilan des ventes de l'ebook AngularJS
 author: clacote
-tags: ["ebook", "livre", "angularjs", "bilan", "edition"]
+tags: ["ebook", "livre", "AngularJS", "bilan", "edition"]
 description: Alors, est-ce que ça marche de vendre un ebook sans DRM à prix libre? Combien payent les acheteurs, quel est le volume de ventes? Des auteurs de livres sortis via le circuit traditionnel des maisons d'édition viennent également apporter leur témoignage.
 ---
 

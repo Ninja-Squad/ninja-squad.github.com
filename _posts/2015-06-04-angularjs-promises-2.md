@@ -2,7 +2,7 @@
 layout: post
 title: "More traps, anti-patterns and tips about AngularJS promises"
 author: ["jbnizet"]
-tags: ["angularjs"]
+tags: ["AngularJS"]
 description: "AngularJS promises are not easy to understand, and are often misused. This shows how to compose and chain them, and how they
 can be unit-tested."
 ---

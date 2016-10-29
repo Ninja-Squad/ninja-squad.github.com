@@ -2,7 +2,7 @@
 layout: post
 title: Angular filter - Part 1
 author: [cexbrayat]
-tags: [javascript, angularjs]
+tags: [javascript, "AngularJS"]
 canonical: http://hypedrivendev.wordpress.com/2013/06/28/angular-filter-part-1
 ---
 

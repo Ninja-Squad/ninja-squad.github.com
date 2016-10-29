@@ -2,7 +2,7 @@
 layout: post
 title: Les nouveautés d'AngularJS 1.3 - Part 3
 author: cexbrayat
-tags: ["javascript","angularjs"]
+tags: ["javascript","AngularJS"]
 canonical: http://hypedrivendev.wordpress.com/2014/08/28/nouveautes-angularjs-1.3-part-3/
 ---
 

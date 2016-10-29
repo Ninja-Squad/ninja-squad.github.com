@@ -2,7 +2,7 @@
 layout: post
 title: Les nouveautés d'AngularJS 1.3
 author: cexbrayat
-tags: ["javascript","angularjs"]
+tags: ["javascript","AngularJS"]
 canonical: http://hypedrivendev.wordpress.com/2014/06/24/nouveautes-angularjs-1_3/
 ---
 La team Angular prépare avec amour sa nouvelle version.

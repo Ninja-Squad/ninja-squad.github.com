@@ -2,7 +2,7 @@
 layout: post
 title: What's new in AngularJS 1.4
 author: cexbrayat
-tags: ["javascript","angularjs"]
+tags: ["javascript","AngularJS"]
 ---
 
 The new release of AngularJS has been out for a few weeks, and comes with its usual

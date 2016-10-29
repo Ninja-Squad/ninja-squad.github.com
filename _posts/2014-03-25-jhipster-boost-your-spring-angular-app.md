@@ -2,7 +2,7 @@
 layout: post
 title: JHipster - boost your Spring and AngularJS app
 author: cexbrayat
-tags: [java, spring, yeoman, angularjs]
+tags: [java, spring, yeoman, "AngularJS"]
 canonical: http://hypedrivendev.wordpress.com/2014/03/25/jhipster-boost-your-spring-and-angularjs-app/
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title: Nos formations à prix réduit pour les héros
 author: clacote
-tags: ["formation", "promotion", "git", "angularjs"]
+tags: ["formation", "promotion", "git", "AngularJS"]
 ---
 
 Ninja Squad fait d'excellentes formations. Récemment, nos formations [AngularJS](http://ninja-squad.fr/formations/formation-angularjs) et [Git](http://ninja-squad.fr/formations/formation-git) sont parties comme des petits pains, et les clients étaient ravis.

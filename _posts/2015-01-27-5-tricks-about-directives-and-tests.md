@@ -2,7 +2,7 @@
 layout: post
 title: 5 tricks about AngularJS directives and tests
 author: ["cexbrayat"]
-tags: ["javascript", "angularjs"]
+tags: ["javascript", "AngularJS"]
 description: 5 tricks on how to write AngularJS directives and have them tested
 ---
 

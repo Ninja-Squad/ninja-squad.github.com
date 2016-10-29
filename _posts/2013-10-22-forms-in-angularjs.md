@@ -2,7 +2,7 @@
 layout: post
 title: Forms in AngularJS
 author: cexbrayat
-tags: [angularjs]
+tags: ["AngularJS"]
 canonical: http://hypedrivendev.wordpress.com/2013/10/22/forms-in-angular
 ---
 

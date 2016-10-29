@@ -2,7 +2,7 @@
 layout: post
 title: Angular, Express et Socket.io
 author: cexbrayat
-tags: [angularjs, websocket]
+tags: ["AngularJS", websocket]
 canonical: http://hypedrivendev.wordpress.com/2013/12/19/angular-express-socketio
 ---
 

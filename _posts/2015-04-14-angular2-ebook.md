@@ -2,7 +2,7 @@
 layout: post
 title: "A book on Angular2 while traveling"
 author: ["cexbrayat"]
-tags: ["angularjs", "Angular 2", "ebook"]
+tags: ["AngularJS", "Angular 2", "ebook"]
 description: "I'm writing a new book while traveling around the world. Check https://books.ninja-squad.com/angular2 for more details, and read this blog post if you want to know why."
 ---
 

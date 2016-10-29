@@ -2,7 +2,7 @@
 layout: post
 title: Setting up a productive AngularJS & Java environment
 author: jbnizet
-tags: [angularjs, grunt]
+tags: ["AngularJS", grunt]
 ---
 
 Deploying a Java server application is never as fast as we would like it to be. And being forced to deploy
@@ -18,7 +18,7 @@ inside our pages, or, for the perfectionists, in a single large file. But these 
 
 AngularJS makes the first part easy: identifying the components. If everything in Java is inside a class, that's not the case in JavaScript. But AngularJS defines well-identified components: controllers, services, directives, filters.
 
-Now, of course, you really don't want your application to download 200 small JS files before showing a functional page. That's where JavaScript build tools like [Grunt](http://gruntjs.com/) or [Gulp](http://gulpjs.com/) become necessary. 
+Now, of course, you really don't want your application to download 200 small JS files before showing a functional page. That's where JavaScript build tools like [Grunt](http://gruntjs.com/) or [Gulp](http://gulpjs.com/) become necessary.
 
 ## CSS
 
@@ -133,15 +133,15 @@ But how to avoid deploying the webapp every time we make a change? The trick is 
                 middleware: function (connect, options) {
                     return [
                         // serve static files from sources
-                        connect.static('src/main/webapp'), 
+                        connect.static('src/main/webapp'),
                         // then from grunt-built files
-                        connect.static('build/grunt/dist'), 
+                        connect.static('build/grunt/dist'),
                         // then from rest services in tomcat
-                        proxySnippet, 
+                        proxySnippet,
                         // then rewrite the URL and serve index-dev.html
                         // from sources again. This allows refreshing the
                         // page even with html5-mode URLs
-                        function(req, res, next) { 
+                        function(req, res, next) {
                             req.url = '/index-dev.html';
                             next();
                         },
