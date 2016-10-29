@@ -2,7 +2,7 @@
 layout: post
 title: Getting started with lambdas - Part 2
 author: [cexbrayat]
-tags: [java8, lambda]
+tags: ["Java 8", lambda]
 canonical: http://hypedrivendev.wordpress.com/2013/04/05/getting-started-with-lambdas-part-2
 ---
 
@@ -16,8 +16,8 @@ Supposons que nous ayons une interface `Concatenator` (histoire d'avoir un nom q
 
 La première façon d'écrire une lambda implémentant cette interface sous forme de lambda sera :
 
-    Concatenator c = (int a, double b) -> { 
-        String s = a + " " + b; 
+    Concatenator c = (int a, double b) -> {
+        String s = a + " " + b;
         return s;
     };
 
@@ -47,9 +47,9 @@ Si notre interface fonctionnelle avait une méthode avec un seul paramètre, par
 
     interface UnaryOperator {
         int op(int a);
-    }	
+    }
 
-Alors une lambda implémentant `UnaryOperator` pourrait être&nbsp;: 
+Alors une lambda implémentant `UnaryOperator` pourrait être&nbsp;:
 
     UnaryOperator op = (a) -> a * a;
 
@@ -59,7 +59,7 @@ Mais la lambda pourrait même ici se passer des parenthèses autour des paramèt
 
 En revanche, une interface avec une méthode ne possédant pas de paramètres comme `NumberSupplier`&nbsp;:
 
-    interface NumberSupplier { 
+    interface NumberSupplier {
        int get();
     }
 
@@ -67,7 +67,7 @@ devra s'écrire&nbsp;:
 
     NumberSupplier supplier = () -> 25;
 
-Enfin, lorsque la lambda est un appel à une fonction de l'objet passé en paramètre, il est possible d'utiliser une syntaxe légérement différente. Ainsi, pour une interface fonctionnelle&nbsp;: 
+Enfin, lorsque la lambda est un appel à une fonction de l'objet passé en paramètre, il est possible d'utiliser une syntaxe légérement différente. Ainsi, pour une interface fonctionnelle&nbsp;:
 
     interface StringToIntFunction {                        
         int toInt(String s);
@@ -85,14 +85,14 @@ Ce `::` est un nouvel opérateur Java&nbsp;: il agit comme un appel à la métho
 
     StringToIntFunction f = Integer::new;
 
-ce qui équivaut à 
+ce qui équivaut à
 
     StringToIntFunction f = s -> new Integer(s);
 
 L'opérateur peut aussi s'appliquer à une méthode statique, comme parseInt pour la classe Integer. La lambda&nbsp;:
 
     StringToIntFunction f = s -> Integer.parseInt(s);
-   
+
 est donc identique à&nbsp;:
 
     StringToIntFunction f = Integer::parseInt;
@@ -104,7 +104,7 @@ Enfin, il est aussi possible de faire référence à une méthode d'un autre obj
 qui signifie la même chose que&nbsp;:
 
     StringToIntFunction f = s -> stringToIntMap.get(s);
- 
+
 Voilà, nous avons fait un inventaire exhaustif des façons d'écrire une lambda&nbsp;! La possibilité d'omettre les parenthèses, types, accolades et le mot clé return est appréciable et donne une syntaxe très peu verbeuse. L'ajout de l'opérateur `::` introduit de nouvelles possibilités dans l'écriture comme vous avez pu le constater. Son utilisation demande un peu de pratique, mais cela deviendra vite naturel&nbsp;!
 
 La prochaine fois nous regarderons une petite subtilité sur la portée des variables utilisables dans une lambda. Teasing teasing...

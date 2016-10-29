@@ -2,7 +2,7 @@
 layout: post
 title: Getting started with lambdas - Part 1
 author: [cexbrayat]
-tags: [java8, lambda]
+tags: ["Java 8", lambda]
 canonical: http://hypedrivendev.wordpress.com/2013/02/28/getting-started-with-lambdas-part-1/
 ---
 
@@ -13,7 +13,7 @@ Voilà assez parlé de ma vie.
 Ce post démarre une série qui vise à présenter les lambdas, qui sont probablement la plus grande nouveauté dans le langage depuis les génériques. Plutôt que de vous montrer directement une lambda, et nous extasier devant leur utilisation, j’aimerais vous expliquer un peu ce qui se passe derrière.
 
 Tout repose sur le concept d’interface fonctionnelle.
-Une interface vous voyez ce que c’est : un ensemble de méthodes abstraites que l’on devra implémenter dans une classe. Jusque là ça va. 
+Une interface vous voyez ce que c’est : un ensemble de méthodes abstraites que l’on devra implémenter dans une classe. Jusque là ça va.
 
     public interface MessageInterface {
         public String transform(String message);
@@ -24,8 +24,8 @@ Mais cette définition change avec Java 8 : une interface peut maintenant avoir 
 
     public interface MessageInterfaceWithDefault {
         public String transform(String message);
-        public default void print(String message) { 
-            System.out.println(message); 
+        public default void print(String message) {
+            System.out.println(message);
         }
     }
 
@@ -35,8 +35,8 @@ Ca fait bizarre, mais on s’y fait. Dans le cas de cette interface, la méthode
         public String transform(String message) {
             return message;
         }
-        public void print(String message) { 
-            System.out.println(“message :” + message); 
+        public void print(String message) {
+            System.out.println(“message :” + message);
         }
     }
 
@@ -61,17 +61,17 @@ Voilà pour les méthodes `default`.
 
 Revenons-en aux interfaces fonctionnelles. Lorsque vous allez écrire une lambda, vous allez en fait implémenter une interface fonctionnelle. Une interface fonctionnelle est une interface qui ne possède qu’une seule méthode abstraite. Elle peut en revanche avoir plusieurs méthodes `default`. L’interface `MessageInterfaceWithDefault` est donc une interface fonctionnelle. Vous pourriez écrire :
 
-    MessageInterfaceWithDefault asALambda = message -> “message : “ + message; 
+    MessageInterfaceWithDefault asALambda = message -> “message : “ + message;
 
 Ce code est tout à fait valide. L’expression de droite est en fait l’implémentation de la méthode `transform()` de l’interface. Ainsi si vous exécutez le code suivant :
 
     String result = asALambda.transform(“hello”); // result = “message : hello”
 
-On est d’accord, il n’y a pas beaucoup d’intérêt à utiliser les lambdas ainsi. Cet exemple montre seulement ce que sont réellement les lambdas. Ainsi, vous ne pouvez pas utiliser les lambdas pour implémenter des interfaces qui possèdent plusieurs méthodes abstraites : le compilateur ne saurait pas quelle méthode vous essayez d’implémenter. 
+On est d’accord, il n’y a pas beaucoup d’intérêt à utiliser les lambdas ainsi. Cet exemple montre seulement ce que sont réellement les lambdas. Ainsi, vous ne pouvez pas utiliser les lambdas pour implémenter des interfaces qui possèdent plusieurs méthodes abstraites : le compilateur ne saurait pas quelle méthode vous essayez d’implémenter.
 
 Le JDK contient déjà beaucoup d’interfaces fonctionnelles : `FileFilter`, `Runnable`, `Callable`, `ActionListener`, `Comparator`...
 
-`FileFilter` a par exemple une seule méthode abstraite : `boolean accept(File pathname)`, qui prend donc un fichier en argument et renvoie un booléen. `FileFilter` est utilisé comme argument dans la methode `listFiles()` de `File`, pour renvoyer une liste de fichiers qui correspondent au filtre. Vous voulez récupérer les répertoires d’un dossier dir, en une ligne en utilisant les lambdas ? 
+`FileFilter` a par exemple une seule méthode abstraite : `boolean accept(File pathname)`, qui prend donc un fichier en argument et renvoie un booléen. `FileFilter` est utilisé comme argument dans la methode `listFiles()` de `File`, pour renvoyer une liste de fichiers qui correspondent au filtre. Vous voulez récupérer les répertoires d’un dossier dir, en une ligne en utilisant les lambdas ?
 
     File[] files = dir.listFiles(f -> f.isDirectory())
 
@@ -93,4 +93,3 @@ Autant dire que ce garde-fou devra être systématiquement utilisé si vous cré
 La prochaine fois, on regardera comment écrire une lambda en détail (enfin!).
 
 _Article publié sur le [blog de Cédric](http://hypedrivendev.wordpress.com/2013/02/28/getting-started-with-lambdas-part-1 "Article original sur le blog de Cédric Exbrayat")_
-
