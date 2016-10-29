@@ -6,9 +6,9 @@ tags: ["angular2"]
 description: "Angular 2.1 is out. What new features are included?"
 ---
 
-Angular is moving fast, and we already have a minor release!
+Angular is moving fast, and we already have a minor release: [2.1](https://github.com/angular/angular/blob/master/CHANGELOG.md#210-incremental-metamorphosis-2016-10-12)!
 
-If you didn't heard, Angular is planning to have patch updates every week,
+If you haven't heard, Angular is planning to have patch updates every week,
 minor releases every month, and major releases every 6 months.
 
 That means Angular 3 should be Q1 or Q2 of 2017!
@@ -24,8 +24,8 @@ and Angular 2.1.0 various betas and RCs.
 ## Router, modules, lazy-loading and pre-loading
 
 The router comes with a really amazing feature
-that allows to lazy-load parts of your application.
-Instead of shipping a big bundle of all your app when your user lands on your home page,
+allowing to lazy-load parts of your application.
+Instead of shipping a big bundle containing your whole application when your user lands on your home page,
 you can instead use this feature to only deliver the module he/she needs for this page,
 and then fetch the other modules only when required.
 Instead of paying the price of the load time once,
@@ -56,8 +56,8 @@ to define animations that should run when the component is created or deleted.
     })
     export class AnimatedComponent {
 
-With this animation, the component will slowly "fade in".
+With this animation, the component will slowly "fade in"
+as you can see on that [plunker](http://plnkr.co/edit/3Y0ODbdFiCkh6XGrxFRA?p=preview).
 
 That's all for this small release.
-Of course our [ebook](https://books.ninja-squad.com) and [Pro Pack](https://angular2-exercises.ninja-squad.com/) are now up-to-date with the changes introduced,
-check them out!
+Check out our [ebook](https://books.ninja-squad.com) and [Pro Pack](https://angular2-exercises.ninja-squad.com/) if you want to learn more about Angular!
