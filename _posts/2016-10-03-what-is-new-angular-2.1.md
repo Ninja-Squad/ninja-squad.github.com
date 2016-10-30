@@ -2,7 +2,7 @@
 layout: post
 title: What's new in Angular 2.1?
 author: cexbrayat
-tags: ["angular2"]
+tags: ["Angular 2", "Angular"]
 description: "Angular 2.1 is out. What new features are included?"
 ---
 
@@ -57,7 +57,11 @@ to define animations that should run when the component is created or deleted.
     export class AnimatedComponent {
 
 With this animation, the component will slowly "fade in"
-as you can see on that [plunker](http://plnkr.co/edit/3Y0ODbdFiCkh6XGrxFRA?p=preview).
+as you can see on that [plunker](http://plnkr.co/edit/3Y0ODbdFiCkh6XGrxFRA?p=preview):
+
+<p style="text-align: center;">
+  <img src="/assets/images/ng-animations-demo.gif">
+</p>
 
 That's all for this small release.
 Check out our [ebook](https://books.ninja-squad.com) and [Pro Pack](https://angular2-exercises.ninja-squad.com/) if you want to learn more about Angular!
