@@ -2,7 +2,7 @@
 layout: post
 title: Ninja Tips 1 - Angular 2 et son parser HTML
 author: acrepet
-tags: ["Angular 2", "template", "html", "tips"]
+tags: ["Angular 2", "Angular", "template", "html", "tips"]
 description: "Trucs et astuces concernant le moteur de parsing propre à Angular 2"
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title: Ninja Tips 2 - Type ton JSON avec TypeScript
 author: jbnizet
-tags: ["Angular 2", "typescript", "json", "tips"]
+tags: ["Angular 2", "Angular", "typescript", "json", "tips"]
 description: "Rend ton code plus sûr et plus maintenable en typant ton JSON avec TypeScript"
 ---
 

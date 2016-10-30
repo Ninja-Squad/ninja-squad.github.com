@@ -2,7 +2,7 @@
 layout: post
 title: Développer pour Google Glass
 author: cexbrayat
-tags: [google, glass, java, java8]
+tags: [google, glass, java, "Java 8"]
 canonical: http://hypedrivendev.wordpress.com/2014/04/25/developper-pour-google-glass/
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title: Devenir un ninja avec AngularJS - notre ebook est sorti!
 author: cexbrayat
-tags: ["javascript","angularjs", "ebook"]
+tags: ["javascript","AngularJS", "ebook"]
 ---
 
 C’est la rentrée littéraire, et cette année Ninja Squad se frotte à l’édition. Oh, sans ambition de Goncourt, rassurez-vous. On reste dans notre passion, le développement Web fait avec amour.

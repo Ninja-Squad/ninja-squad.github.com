@@ -2,7 +2,7 @@
 layout: post
 title: Nouvelles dates de formation!
 author: cexbrayat
-tags: [angularjs, git, java, play]
+tags: ["AngularJS", git, java, play]
 ---
 La rentrée, c'est aussi l'envie de se remettre à jour et d'**apprendre** de nouvelles choses!
 

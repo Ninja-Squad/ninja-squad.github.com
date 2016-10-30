@@ -2,7 +2,7 @@
 layout: post
 title: Our Angular 2 ebook is available!
 author: cexbrayat
-tags: ["Angular 2", "ebook"]
+tags: ["Angular 2", "Angular", "ebook"]
 description: "Our DRM-free ebook is out. Pay what you want and learn Angular 2!"
 ---
 

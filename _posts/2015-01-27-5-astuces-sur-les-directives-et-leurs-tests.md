@@ -2,7 +2,7 @@
 layout: post
 title: 5 astuces sur les directives AngularJS et leurs tests
 author: ["cexbrayat"]
-tags: ["javascript", "angularjs"]
+tags: ["javascript", "AngularJS"]
 description: 5 astuces sur la façon d'écrire les directives AngularJS et leurs tests
 ---
 

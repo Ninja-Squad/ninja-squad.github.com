@@ -2,22 +2,22 @@
 layout: post
 title: "Traps, anti-patterns and tips about AngularJS promises"
 author: ["jbnizet"]
-tags: ["angularjs"]
+tags: ["AngularJS"]
 description: "AngularJS promises are not easy to understand, and are often misused. This
 posts lists a few traps I've fallen into or seen people fallen into."
 ---
 
 AngularJS promises are not an easy concept to understand, and the documentation, although
-improving, could contain more examples on how to properly use them. 
+improving, could contain more examples on how to properly use them.
 
 I've fallen in a few traps when using them, and have seen many trainees and StackOverflow
-users fall into them as well. This post gives examples of those traps and misuses, and how to 
+users fall into them as well. This post gives examples of those traps and misuses, and how to
 better use promises.
 
 ## You can't escape from asynchronism
 
-Most beginners, including myself, aren't used to asynchronous programming. The first trap 
-is to think you can escape from it, and transform an asynchronous call into a synchronous one. 
+Most beginners, including myself, aren't used to asynchronous programming. The first trap
+is to think you can escape from it, and transform an asynchronous call into a synchronous one.
 The reality quickly hits you in the face: that's not possible.
 
 Here's some example of code I've seen numerous times:
@@ -53,7 +53,7 @@ So let's fix the code:
       };
 
 Once again, that won't work. Now `getPonies()` doesn't return anything anymore. The `return data` statement is not returning from `getPonies()`. It's returning from the anonymous callback function
-passed to `success()`. 
+passed to `success()`.
 
 So let's fix the code again:
 
@@ -89,7 +89,7 @@ us with promises and callbacks in the first place. So let's accept this fact, an
       };
     });
 
-Congrats! This finally works. Except when it doesn't. What if the HTTP call fails? How can the controller know about it? We would need a second callback. 
+Congrats! This finally works. Except when it doesn't. What if the HTTP call fails? How can the controller know about it? We would need a second callback.
 
       var getPonies = function(successCallbackFn, errorCallbackFn) {
         $http.get('/api/ponies').success(function(data) {
@@ -122,7 +122,7 @@ See, our first implementation of the service was right, after all. We simply had
 
 ## The Real Thing - You To Me Are Everything
 
-The previous version works fine, but it still has a design issue. The controller assumes that the 
+The previous version works fine, but it still has a design issue. The controller assumes that the
 service returns an `HttpPromise`. For some bizarre reason, AngularJS thought it would be a good idea if promises returned by the $http service were different than all the other `$q` promises: they would have
 additional `success()` and `error()` methods, that would basically do the same thing as `then()`, but
 in a different way:
@@ -133,10 +133,10 @@ in a different way:
 
 I personally think that was a bad idea. Most asynchronous calls we do when learning AngularJS are
 $http calls, and we thus start learning special HTTP promises instead of learning the real thing, with
-the standard API that would also work for all the other promises. 
+the standard API that would also work for all the other promises.
 
-Let's rewrite our code without assuming the service returns an HTTP promise. The service could 
-after all return a hard-coded list of ponies, or use websockets, for example. So let's use the 
+Let's rewrite our code without assuming the service returns an HTTP promise. The service could
+after all return a hard-coded list of ponies, or use websockets, for example. So let's use the
 "classical" promise API.
 
     app.controller('PoniesCtrl', function($scope, ponyService) {
@@ -145,7 +145,7 @@ after all return a hard-coded list of ponies, or use websockets, for example. So
       });
     });
 
-Oops. That won't work. The actual value wrapped by the promise is not the array of ponies. It's the 
+Oops. That won't work. The actual value wrapped by the promise is not the array of ponies. It's the
 HTTP response object, whose data contains the ponies. So let's fix the code again:
 
     app.controller('PoniesCtrl', function($scope, ponyService) {
@@ -155,18 +155,18 @@ HTTP response object, whose data contains the ponies. So let's fix the code agai
     });
 
 That will work fine. But once again, we're assuming, in the controller, that the service returns
-an HttpPromise. Or at least a promise of something that looks like an HTTP response. Let's change 
+an HttpPromise. Or at least a promise of something that looks like an HTTP response. Let's change
 our service and make it return a promise of ponies, rather than a promise of HTTP response.
 
 We'll thus have to create our own promise, right? So we'll have to use the `$q` service:
 
       var getPonies = function() {
         var defer = $q.defer();
-    
+
         $http.get('/api/ponies').then(function(response) {
           defer.resolve(response.data);
         });
-    
+
         return defer.promise;
       };
 
@@ -182,7 +182,7 @@ error. So let's fix it:
         }, function(response) {
           defer.reject(response);
         });
-    
+
         return defer.promise;
       };
 
@@ -196,7 +196,7 @@ Don't know about you, but I need an example to understand this:
       var getPonies = function() {
         // then() returns a new promise. We return that new promise.
         // that new promise is resolved via response.data, i.e. the ponies
-    
+
         return $http.get('/api/ponies').then(function(response) {    
           return response.data;
         });
