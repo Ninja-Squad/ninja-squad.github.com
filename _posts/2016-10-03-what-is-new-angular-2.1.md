@@ -2,7 +2,7 @@
 layout: post
 title: What's new in Angular 2.1?
 author: cexbrayat
-tags: ["angular2"]
+tags: ["Angular 2", "Angular"]
 description: "Angular 2.1 is out. What new features are included?"
 ---
 
