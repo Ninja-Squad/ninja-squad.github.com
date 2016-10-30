@@ -2,7 +2,7 @@
 layout: post
 title: Notre Pro Pack Angular 2 est disponible !
 author: cexbrayat
-tags: ["Angular 2", "ebook"]
+tags: ["Angular 2", "Angular", "ebook"]
 description: "Notre Pro Pack est disponible et vous permettra de construire une application complète pour tout apprendre sur Angular 2."
 ---
 

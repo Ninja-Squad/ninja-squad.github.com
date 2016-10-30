@@ -2,7 +2,7 @@
 layout: post
 title: New free chapters on Angular 2
 author: cexbrayat
-tags: ["Angular 2", "ebook"]
+tags: ["Angular 2", "Angular", "ebook"]
 description: "Angular 2 is out in beta, we will release our ebook in a few days, and here are some new free chapters!"
 ---
 

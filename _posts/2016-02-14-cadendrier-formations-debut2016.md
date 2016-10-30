@@ -2,7 +2,7 @@
 layout: post
 title: De nouvelles formations Ninja Squad à venir !
 author: acrepet
-tags: ["Formation", "AngularJS", "Angular 2", "Git", "Java 8"]
+tags: ["Formation", "AngularJS", "Angular 2", "Angular", "Git", "Java 8"]
 description: "Le calendrier de nos formations est à jour, notamment avec les formations AngularJS, Angular 2, Git et Java 8"
 ---
 

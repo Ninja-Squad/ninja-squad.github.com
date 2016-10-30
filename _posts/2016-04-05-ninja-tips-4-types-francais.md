@@ -2,7 +2,7 @@
 layout: post
 title: Angular 2 - Les Types, comme dans TypeScript
 author: cexbrayat
-tags: ["Angular 2", "ES6", "TypeScript"]
+tags: ["Angular 2", "Angular", "ES6", "TypeScript"]
 description: "Angular 2 est sorti en beta. Il a été conçu pour apporter beaucoup de choses incroyables en développement web, comme TypeScript. Regardons de plus près!"
 ---
 

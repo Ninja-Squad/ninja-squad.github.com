@@ -2,7 +2,7 @@
 layout: post
 title: Ninja Tips 3 - [hidden] vs Bootstrap's help-block
 author: clacote
-tags: ["Angular 2", "bootstrap", "html", "css"]
+tags: ["Angular 2", "Angular", "bootstrap", "html", "css"]
 description: "Tip about form validation with Angular 2 and Bootstrap"
 ---
 

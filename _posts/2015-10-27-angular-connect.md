@@ -2,7 +2,7 @@
 layout: post
 title: What we learnt at Angular Connect
 author: cexbrayat
-tags: ["Angular 2"]
+tags: ["Angular 2", "Angular"]
 description: "Angular Connect took place the 20-21 October in London, and we learnt a few things on AngularJS 1.x and Angular 2"
 ---
 
