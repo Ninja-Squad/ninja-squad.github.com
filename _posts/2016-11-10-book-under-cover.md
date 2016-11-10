@@ -7,7 +7,8 @@ description: "How to write a technical book: tooling and process"
 ---
 
 Writing a technical book is a long, painful and difficult experience. I only took a small part in the
-writing of our two Angular books, Cédric being the main author, but even then, I know how hard it is.
+writing of our [two Angular books](https://books.ninja-squad.com),
+Cédric being the main author, but even then, I know how hard it is.
 
 It would be even harder if we had not chosen the good tools and processes to write it. And even more importantly,
 for you beloved readers (or future readers, hopefully), the book wouldn't have such a good quality.
