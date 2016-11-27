@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Keynote Codeurs en Seine
+title: Keynote Codeurs en Seine 2016
 author: clacote, acrepet
 tags: ["Talk", "Keynote", Codeurs en Seine"]
 description: "La retransciption de la keynote d'Agnès Crépet et Cyril Lacote à Codeurs en Seine 2016 : Codeurs du Monde."
@@ -42,8 +42,8 @@ des développeurs Java sur l'île de Java. Ah ah.</small>
   <img class="img-polaroid" src="/assets/images/codeurs-en-seine/2.jpg" />
 </p>
 
-Agnès Crépet est développeuse, Java Champion, membre active de Duchess France et du LyonJUG,
-et organisatrice de la [conférence Mix-IT](http://www.mix-it.fr/) à Lyon.
+Agnès Crépet est développeuse, Java Champion, membre active de Duchess France,
+ex-organistratice du LyonJUG, et co-fondatrice de la [conférence Mix-IT](http://www.mix-it.fr/) à Lyon.
 
 <p class="slide">
   <img class="img-polaroid" src="/assets/images/codeurs-en-seine/3.jpg" />
@@ -73,7 +73,7 @@ Il s'avèra que oui, l'audience était plutôt heureuse.
 
 En 2011, Agnès et Cyril sortaient ainsi d'une dizaine d'années de développement.
 Même un job dans une boîte de rêve comme Google ne fut pas l'idéal.
-Alors libres de toutes contraintes et attaches, ils ont décidé de partir faire un Tour du Monde,
+Alors libres de toute contrainte et attache, ils ont décidé de partir faire un Tour du Monde,
 pour voir comment c'était ailleurs.
 
 Pourquoi attendre 5 ans pour le faire&nbsp;?
@@ -90,13 +90,13 @@ Non, ce n'est pas le Bénin, mais son voisin le Togo.
 
 Togo, Malaisie, Indonésie, USA, Suède. Voici les pays que traversera cette présentation.
 Dans leur tour du monde, ils sont aussi passés en Thaïlande, à Bali, en Australie, et en Nouvelle-Zélande,
-mais comme ils n'y ont fait que du tourisme, ils n'en parleront pas (même si ça vaut le coup).
+mais comme ils n'ont fait que profiter du pays, ils n'en parleront pas (même si ça vaut le coup).
 
 <p class="slide">
   <img class="img-polaroid" src="/assets/images/codeurs-en-seine/7.jpg" />
 </p>
 
-Ils n'avaient pas envie de voyager qu'en seul touriste.
+Ils n'avaient pas envie de voyager qu'en touristes.
 Ils voulaient rencontrer des gens, et notamment des dévelopeurs.
 Alors ils ont fait ce qu'ils savaient faire&nbsp;:
 enseigner du Java et partager leur expérience de développeur dans différents meetups.
@@ -133,13 +133,13 @@ Direction Lomé, la capitale du Togo en Afrique de l'Ouest.
 
 À Lomé, ils ont fait la rencontre d'[Horacio](http://horalass.blogspot.fr/),
 alors leader du TogoJUG, et depuis devenu un ami.
-Il leur proposait de faire un talk un samedi matin, à l'université.
-Seulement, c'était à 2H de taxi du centre-ville, et cela coûtait une journée de salaire local pour venir.
+Il leur proposait de faire un talk un samedi matin, dans un campus universitaire éloigné de la capitale.
+C'était à 2H de taxi, et cela coûtait une journée de salaire local pour venir.
 Ils pensaient n'y trouver que quelques personnes&nbsp;: une soixantaine firent le déplacement&nbsp;!
 On leur racontait alors que ce n'était pas étonnant&nbsp;: [JCertif](http://www.jcertif.com/),
 la grosse conférence Java d'Afrique Centrale (leur Devoxx),
 accueillait des centaines de personnes faisant jusqu'à 3 jour de voyage pour y assister.
-Et traversaient parfois l'imposant fleuve baignant le palais des congrès à la nage pour ne pas rater
+Et traversaient parfois l'imposant fleuve baignant le palais des congrès pour ne pas rater
 de conférence&nbsp;!
 Une motivation qu'on n'aurait bien du mal à retrouver en France.
 
@@ -164,10 +164,10 @@ Alors réjouissons-nous de cette richesse, là où d'autres n'ont droit qu'à tr
 
 Agnès et Cyril étaient accueillis par une entreprise au Togo,
 où ils devaient former au Java de nouveaux embauchés.
-Ni l'entreprise, ni les élèves, n'étaient togolais&nbsp;: ils étaient tous ivoiriens (le pays d'à-côté).
+Ni l'entreprise, ni les élèves, n'étaient togolais&nbsp;: ils étaient tous de la Côte d'Ivoire.
 Mais l'entreprise les avait exfiltrés pour fuir la guerre civile sanglante qui ravageait
 le pays après la dernière élection présidentielle (pro-Gbagbo vs pro-Ouattara).
-Et une vraie guerre civile, avec des individus égorgés juste parce qu'ils étaient un peu
+Et une vraie guerre civile, avec des individus tués juste parce qu'ils étaient un peu
 enveloppés, comme le président sortant, qu'ils devaient donc nécessairement soutenir.
 
 Ces élèves se retrouvaient ainsi dans un pays étranger, certes en sécurité,
@@ -201,7 +201,7 @@ Certains occidentaux n'hésitent donc pas à s'expatrier,
 jouissant d'un pouvoir d'achat absolument considérable, avec une immense résidence, et 12 domestiques,
 de la cuisinière au chauffeur. Voilà un bel exemple de néo-colonialisme.
 
-Même les startups africaines recrutent des blancs comme cheval de troie pour que leur
+Même les startups africaines recrutent des blancs comme faire-valoir pour que leur
 proposition commerciale soit simplement écoutée.
 Leur copain Horacio, qui cherchait alors à créer son entreprise,
 leur a même proposé de jouer ce rôle pour lui.
@@ -211,7 +211,7 @@ Malgré l'inconfortable culpabilité de ne pas aider leur ami, ils ont préfér�
   <img class="img-polaroid" src="/assets/images/codeurs-en-seine/16.gif" />
 </p>
 
-En France, si le néo-colonialisme est hors-sujet, nous ne pouvons pas non plus faire les malins&nbsp;:
+En France, nous ne pouvons pas trop faire les malins&nbsp;:
 dans de nombreuses grosses entreprises, seuls certains consultants référencés ont leur mot à dire
 sur la stratégie ou l'architecture applicative, et les équipes de développeurs internes
 sont ignorées sur ces sujets importants. Plus le costume est cher, plus la voix est importante.
@@ -258,9 +258,9 @@ Agnès et Cyril viennent de faire entrer leur plus grand fils Marius, 3 ans, à 
 Alors qu'ils pensaient que Marius faisait ses premiers pas sur le long chemin serein de la vie,
 ils découvrent qu'ils seront plus de trente enfants entassés par classe, avec des peintures écaillées,
 des morceaux de plafond qui tombent, et un sol amianté
-(conseil de la mairie : "s'il ne frottent pas trop leur pied c'est sans danger").
-Voici les moyens assignés à l'éducation publique en France. C'est assez pathétique, et peu rassurant
-sur la foi donnée en l'avenir de la République.
+(conseil de la mairie : "s'il ne frottent pas trop leurs pieds c'est sans danger").
+Voici les moyens assignés à l'éducation publique en France. C'est assez pathétique,
+et peu rassurant sur l'avenir de la République.
 
 <p class="slide">
   <img class="img-polaroid" src="/assets/images/codeurs-en-seine/20-kualalumpur-jakarta.gif" />
@@ -275,11 +275,12 @@ pollué par un trafic routier cauchemardesque.
 </p>
 
 Dans cet enfer, Agnès et Cyril ont rencontré deux jeunes femmes,
-[Nety](http://www.netyherawaty.com/) et [Mila]().
+[Nety](http://www.netyherawaty.com/) et [Mila](https://milayuliani.wordpress.com/).
 Elles n'avaient pas 20 ans et menaient de front leurs études universitaires,
 une création d'entreprise, et quatre heures de transport quotidiennes.
 Régulièrement, elles prenaient leur scooter pour sillonner l'île de Java,
-dans des road trips pédagogiques où elles initiaient des jeunes au code.
+dans des [road trips pédagogiques](http://www.duchess-france.org/mila-and-nety-the-duchess-indonesia-leaders-and-their-roadshow-project-in-east-java/)
+où elles initiaient des jeunes au code.
 
 Impressionnantes de motivation et d'énergie.
 
@@ -343,7 +344,8 @@ leurs employés de San Francisco au siège de Mountain View à une heure de rout
 à se faire caillasser par la population qui leur reprochait la
 terrible [gentrification](https://fr.wikipedia.org/wiki/Gentrification) de la ville.
 
-Même plein aux as, Romain Guy a eu du mal à trouver une maison dans la _Silicon Valley_
+Même avec une très bonne rémunération,
+Romain Guy a eu du mal à trouver une maison dans la _Silicon Valley_
 pour loger sa famille agrandie, il lui a fallu trois ans&nbsp;: quand une annonce paraît,
 des chinois débarquent dans l'heure qui suit avec des valises de liquide, contenant 500.000$
 de plus que l'exorbitant prix demandé, et achètent sans visiter...
@@ -358,7 +360,7 @@ grâce à la French Tech. Non j'déconne. On n'est pas là pour troller sur la F
 A Saint-Etienne, il n'y a peut-être pas Twitter ni Google, mais au moins l'immobilier n'est pas
 aussi tendu&nbsp;: moins de 1000€ le mètre carré.
 Quand Agnès et Cyril sont revenus de leur voyage sans aucune possession, et qu'ils prévoyaient
-la création de leur entreprise sans garantie de succès, et la procréation de deux enfants dont
+la création de leur entreprise sans garantie de succès, et la procréation d'enfants dont
 ils ignoraient tout du coût de gestion, ils se sont alors installés à Saint-Etienne pour éviter
 d'ajouter la pression immobilière à leurs projets. L'aventure était alors financièrement plus sereine.
 
@@ -397,7 +399,7 @@ En France, et dans la plupart des pays occidentaux semble-t-il, ce n'est pas vra
 
 Ce dessin (qui a été piqué à un inconnu sur Internet) représente assez bien l'état d'esprit traditionnel&nbsp;:
 
-- Tu peux avoir de l'argent et du temps libre, mais il ne faut pas avoir d'enfants, ou ne pas s'en occuper.
+- Tu peux avoir de l'argent et du temps libre, mais il ne faut pas avoir d'enfant, ou ne pas s'en occuper.
 - Tu peux avoir de l'argent et des enfants, mais tu n'auras alors pas de temps libre.
 - Tu peux avoir du temps et des enfants, mais tu n'auras probablement pas trop d'argent, avec un temps partiel.
 
@@ -409,8 +411,8 @@ Ce dessin (qui a été piqué à un inconnu sur Internet) représente assez bien
 
 Montrons combien les présentateurs ont fait preuve d'une clairvoyance éclairée pour forger leur destin.
 
-S'ils avaient flippé de partir voyager sans salaire,
-Agnès et Cyril ont finalement réalisé que c'était finalement très facile sans enfants.
+S'ils avaient flippé de partir en long voyage sans salaire,
+Agnès et Cyril ont finalement réalisé que c'était très facile sans enfants.
 Alors, profitez-en tant qu'il est encore temps pour vous&nbsp;!
 
 Le tour du Monde terminé, la question était maintenant de savoir quelles leçons
@@ -427,12 +429,12 @@ remplir des chiffres dans des cases Excel. :'(
 
 Une des premières phrases du droit du travail indique qu'il s'applique uniquement
 s'il y a un rapport de subordination entre l'employé et l'employeur.
-Ainsi, le travail, après lequel courre toute la société depuis des décennies
+Ainsi, le travail, après lequel court toute la société depuis des décennies
 (pour réduire le chômage et retrouver le plein-emploi),
 est fondamentalement une relation de subordination.
-Un employé fera du chantage à l'employé&nbsp;: tu n'auras ton salaire que si tu fais
+Un employeur fera du chantage à l'employé&nbsp;: tu n'auras ton salaire que si tu fais
 cette tâche ingrate.
-Agnès et Cyril ne voulaient plus de cette subordination, et voulaient rester libre
+Agnès et Cyril ne voulaient plus de cette subordination, et voulaient rester libres
 de choisir leur travail, et pour qui ils travaillaient.
 
 Les entreprises libérées sont d'ailleurs à la mode.
@@ -450,7 +452,7 @@ que tu seras maître de son destin.
 
 Agnès et Cyril ne veulent pas non plus dire que travailler dans une grosse
 société est forcément un échec.
-Mais eux-même avaient du mal à imaginer des alternatives satisfaisantes.
+Mais eux-mêmes avaient du mal à imaginer des alternatives satisfaisantes.
 Alors ils veulent aussi présenter celle à laquelle ils sont arrivés.
 
 <p class="slide">
@@ -464,7 +466,8 @@ Ils voulaient construire un projet collectif.
 Tout en sachant qu'ils n'étaient que des développeurs sans aucune autre compétence,
 perdus vers Saint-Etienne, et qu'ils ne voulaient ni locaux, ni managers, ni commerciaux.
 
-Ils se sont alors lancés dans une société coopérative&nbsp;:
+Avec deux autres développeurs (bisous Cédric, bisous JB),
+ils se sont alors lancés dans une société coopérative&nbsp;:
 un homme = une voix, tous égaux, tous actionnaires.
 La transparence était aussi une valeur qui leur tenait à cœur.
 Malgré des écarts d'âge prononcés, ils ont décidé d'adopté un modèle de salaire encore
@@ -485,17 +488,19 @@ Le problème n'était pas tant le salariat que la relation de subordination indu
 Ainsi, dans Ninja Squad, ils ont volontairement choisis d'être salariés, car leur statut de SAS
 le permettait, et ils voulaient par conviction participer au système social par répartition.
 
-Au début, leurs anciens commerciaux ricanaient&nbsp;: "vous allez vous planter en beauté".  
+Au début, les commerciaux de leurs précédentes SSIIs ricanaient&nbsp;:
+"vous allez vous planter en beauté".  
 Et certains leur prophétisaient une déconvenue&nbsp;: "avec un nom comme Ninja Squad,
 vous allez vraiment passer pour des guignols".
 Avec le recul, bien qu'ils étaient loin d'avoir calculé cela, le nom et l'esprit débridé
 assurent un excellent filtre. Si les grosses compagnies scélérosées (banque, assurance, grande distribution) ne veulent pas travailler avec ces guignols, c'est finalement tant mieux&nbsp;:
-ils ne veulent pas non plus travailler pour eux. Les quelques client qui font la démarche de
+ils ne veulent pas non plus travailler pour eux. Les quelques clients qui font la démarche de
 venir les voir sont déjà probablement des gens avec qui ils auront des affinités.
 
 Le plus grand luxe d'avoir sa propre société c'est aussi de choisir ses clients,
 et refuser de travailler pour ceux dont on ne partage pas l'éthique.
-Après avoir vu le Monde, et après avoir fait des enfants, il y a certaines activités qu'on a
+Après avoir éprouvé de l'empathie pour certains parcours de vie autour du monde,
+et après avoir fait des enfants, il y a certaines activités qu'on a
 encore moins envie d'encourager.
 
 Quand on travaille en SSII, la SSII d'à côté est une concurrente, à qui il faut plutôt
@@ -519,9 +524,10 @@ Un autre avantage peut-être anecdotique d'avoir sa propre société est que cel
 un bête problème d'image.
 Quand vous avez votre compagnie, unipersonnelle ou non, il faut en assurer la promotion.
 Si les clients ne savent pas que vous existez, ils ne viendrons pas vers vous.
-Ainsi, si vous êtes freelance, c'est en votre nom propre qu'il vous faut faire de marketing&nbsp;:
+Ainsi, si vous êtes freelance, c'est en votre nom propre qu'il vous faut faire du marketing&nbsp;:
 "Oh la la qu'est-ce que je suis fort, j'ai encore fait ce projet, je parle encore à cette conférence".
 Si vous avez une vraie société, avec son image, il suffit alors d'en dire tout le bien que vous voulez&nbsp;: votre humilité est sauve, vous ne parlez pas de vous.
+Vous avez transformé le _personal branling_ en _corporate branding_&nbsp;!
 
 <p class="slide">
   <img class="img-polaroid" src="/assets/images/codeurs-en-seine/35.jpg" />
@@ -585,7 +591,7 @@ influants sur le bonheur. Et le facteur le plus influent n'est pas celui qu'on p
 Est-ce que les enfants et la famille contribuent au bonheur comme on le croit instinctivement&nbsp;?
 Pas du tout&nbsp;!
 
-On peut être parfaitement heureux ou malheureux avec ou sans enfants.
+On peut être parfaitement heureux ou malheureux avec ou sans enfant.
 
 <p class="slide">
   <img class="img-polaroid" src="/assets/images/codeurs-en-seine/39.jpg" />
