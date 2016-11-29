@@ -34,7 +34,7 @@ En voici la retranscription.
 </p>
 
 <small>Cette diapositive de titre devient extrèmement cocasse quand on réalise qu'elle montre
-des développeurs Java sur l'île de Java. Ah ah.</small>
+des développeurs Java sur l'île de Java. Ha ha.</small>
 
 ## Que racontent Agnès Crépet et Cyril Lacote&nbsp;?
 
@@ -60,12 +60,12 @@ Il participe aussi à l'organisation de la [conférence Mix-IT](http://www.mix-i
   <img class="img-polaroid" src="/assets/images/codeurs-en-seine/4.jpg" />
 </p>
 
-Agnès et Cyril se lancent alors dans un jeu de question-réponses pour sortir le public de leur létargie
+Agnès et Cyril se lancent alors dans un jeu de question-réponses pour sortir le public de leur léthargie
 (et surtout se déstresser un peu en cachette).
 L'audience est-elle heureuse, dans leur vie personnelle (mais on s'en fout complètement)
 ou dans leur job&nbsp;?
 
-Il s'avèra que oui, l'audience était plutôt heureuse.
+Il s'avéra que oui, l'audience était plutôt heureuse.
 
 <p class="slide">
   <img class="img-polaroid" src="/assets/images/codeurs-en-seine/5.jpg" />
@@ -76,8 +76,9 @@ Même un job dans une boîte de rêve comme Google ne fut pas l'idéal.
 Alors libres de toute contrainte et attache, ils ont décidé de partir faire un Tour du Monde,
 pour voir comment c'était ailleurs.
 
-Pourquoi attendre 5 ans pour le faire&nbsp;?
-Parce qu'entre temps ils ont essayé de survivre à la naissance de deux enfants.
+Pourquoi attendre 5 ans pour en parler&nbsp;?
+Parce qu'entre temps ils ont essayé de survivre à la naissance de deux enfants rapprochés
+(et ce n'est pas une mince affaire).
 Et maintenant, ils ont le recul pour constater combien cela les a marqué,
 quelles leçons ils en ont tirées, et lesquelles ont été fructueuses.
 
@@ -134,14 +135,14 @@ Direction Lomé, la capitale du Togo en Afrique de l'Ouest.
 À Lomé, ils ont fait la rencontre d'[Horacio](http://horalass.blogspot.fr/),
 alors leader du TogoJUG, et depuis devenu un ami.
 Il leur proposait de faire un talk un samedi matin, dans un campus universitaire éloigné de la capitale.
-C'était à 2H de taxi, et cela coûtait une journée de salaire local pour venir.
+C'était à deux heures de taxi, et cela coûtait une journée de salaire local pour venir.
 Ils pensaient n'y trouver que quelques personnes&nbsp;: une soixantaine firent le déplacement&nbsp;!
 On leur racontait alors que ce n'était pas étonnant&nbsp;: [JCertif](http://www.jcertif.com/),
 la grosse conférence Java d'Afrique Centrale (leur Devoxx),
 accueillait des centaines de personnes faisant jusqu'à 3 jour de voyage pour y assister.
-Et traversaient parfois l'imposant fleuve baignant le palais des congrès pour ne pas rater
+Et traversaient parfois à pied l'imposant fleuve baignant le palais des congrès pour ne pas rater
 de conférence&nbsp;!
-Une motivation qu'on n'aurait bien du mal à retrouver en France.
+Une motivation qu'on aurait bien du mal à retrouver en France.
 
 <p class="slide">
   <img class="img-polaroid" src="/assets/images/codeurs-en-seine/12.gif" />
@@ -153,7 +154,7 @@ ils n'y auraient probablement vu que 5 personnes maximum.
 
 Sur Lyon, les communautés techniques sont fédérées par [LyonTechHub](http://www.lyontechhub.org/),
 qui publie un calendrier de tous les meetups.
-Il y a un meetup chaque jour de semaine, voir plusieurs.
+Il y a un meetup chaque jour de la semaine, voir plusieurs.
 S'il est formidable de constater ce foisonnement des communautés,
 certaines peinent parfois à trouver leur public.
 Alors réjouissons-nous de cette richesse, là où d'autres n'ont droit qu'à très peu d'animations.
@@ -193,7 +194,7 @@ chance de pouvoir apprendre et travailler.
 
 Leur copain Horacio leur expliquait aussi que les entreprises IT togolaises et africaines en général
 ne faisaient confiance qu'aux consultants blancs,
-et n'écoutaient pas les suggestions de leur employés locaux.
+et n'écoutaient pas les suggestions de leurs employés locaux.
 Elles préfèrent ainsi payer 2000€ par jour l'intervention d'un européen,
 alors que le SMIC mensuel n'est que de 50€ au Togo.
 
@@ -204,8 +205,9 @@ de la cuisinière au chauffeur. Voilà un bel exemple de néo-colonialisme.
 Même les startups africaines recrutent des blancs comme faire-valoir pour que leur
 proposition commerciale soit simplement écoutée.
 Leur copain Horacio, qui cherchait alors à créer son entreprise,
-leur a même proposé de jouer ce rôle pour lui.
-Malgré l'inconfortable culpabilité de ne pas aider leur ami, ils ont préféré refuser pour ne pas participer à ce système.
+leur a même demandé de jouer ce rôle pour lui.
+Malgré l'inconfortable culpabilité de ne pas aider leur ami,
+ils ont préféré refuser de participer à ce système.
 
 <p class="slide">
   <img class="img-polaroid" src="/assets/images/codeurs-en-seine/16.gif" />
@@ -238,7 +240,7 @@ Il s'est avéré que ce n'était pas tout à fait le cas.
   <img class="img-polaroid" src="/assets/images/codeurs-en-seine/18.jpg" />
 </p>
 
-Kuala Lumpur s'est révélée une copie asiatique (et musulmane) de Londres,
+Kuala Lumpur s'est révélée être une copie asiatique (et musulmane) de Londres,
 où les temples sont des tours de verre au service des dieux de la finance et du commerce.
 
 Donnant une session au MalaysiaJUG, ils ont pu observé la richesse de l'université,
@@ -306,9 +308,9 @@ partout où ils sont allés.
   <img class="img-polaroid" src="/assets/images/codeurs-en-seine/24.gif" />
 </p>
 
-Alors qu'en France, vous avez du faire le même constat&nbsp;: c'est plutôt la _bromance_.
+Alors qu'en France, vous avez dû faire le même constat&nbsp;: c'est plutôt la _bromance_.
 
-Cyril fait de la prestation informatique depuis 15 ans, et a du travailler avec 150 personnes.
+Cyril fait de la prestation informatique depuis 15 ans, et a dû travailler avec 150 personnes.
 Et probablement que 139 étaient des mâles trentenaires, blancs et hétéro.
 En gros, la seule développeuse qu'il a rencontrée, il lui a fait deux enfants...  
 C'est un peu exagéré, mais les développeuses qu'il a croisées doivent se compter sur
@@ -423,7 +425,7 @@ ils allaient en tirer pour leur retour à la réalité professionnelle.
 </p>
 
 Agnès et Cyril ne voulaient plus être salariés, et encore moins en SSII,
-où on leur expliquait que le developpement était une tâche à faible valeur-ajoutée,
+où on leur expliquait que le développement était une tâche à faible valeur ajoutée,
 et qu'il fallait penser à faire un vrai métier rentable&nbsp;:
 remplir des chiffres dans des cases Excel. :'(
 
@@ -473,7 +475,7 @@ La transparence était aussi une valeur qui leur tenait à cœur.
 Malgré des écarts d'âge prononcés, ils ont décidé d'adopté un modèle de salaire encore
 plus simple que la [fameuse grille de Buffer](https://buffer.com/salary?r=1&l=10&e=2&q=0)&nbsp;:
 tous le même salaire (2500€ net, et ils se partagent le reste à la fin de l'année,
-ce qui représenta quand même un bonus de 18.000€ nets pour chaque ninja l'année dernière).
+ce qui représenta quand même un bonus de 18&nbsp;000€ nets pour chaque ninja l'année dernière).
 La [grille de salaire de Ninja Squad](https://docs.google.com/spreadsheets/d/1jKXVA35WG4gSr2ABYxvLQL2qM9ZKUS9NI9Zv26ZhDB0/edit?usp=sharing)
 est d'ailleurs aussi publique :)
 
@@ -492,7 +494,7 @@ Au début, les commerciaux de leurs précédentes SSIIs ricanaient&nbsp;:
 "vous allez vous planter en beauté".  
 Et certains leur prophétisaient une déconvenue&nbsp;: "avec un nom comme Ninja Squad,
 vous allez vraiment passer pour des guignols".
-Avec le recul, bien qu'ils étaient loin d'avoir calculé cela, le nom et l'esprit débridé
+Avec le recul, bien qu'ils étaient loin de l'avoir calculé, le nom et l'esprit débridé
 assurent un excellent filtre. Si les grosses compagnies scélérosées (banque, assurance, grande distribution) ne veulent pas travailler avec ces guignols, c'est finalement tant mieux&nbsp;:
 ils ne veulent pas non plus travailler pour eux. Les quelques clients qui font la démarche de
 venir les voir sont déjà probablement des gens avec qui ils auront des affinités.
@@ -523,7 +525,7 @@ formations avec nos chers dinosaures du FAFIEC), mais au moins ont-ils du temps 
 Un autre avantage peut-être anecdotique d'avoir sa propre société est que cela résout
 un bête problème d'image.
 Quand vous avez votre compagnie, unipersonnelle ou non, il faut en assurer la promotion.
-Si les clients ne savent pas que vous existez, ils ne viendrons pas vers vous.
+Si les clients ne savent pas que vous existez, ils ne viendront pas vers vous.
 Ainsi, si vous êtes freelance, c'est en votre nom propre qu'il vous faut faire du marketing&nbsp;:
 "Oh la la qu'est-ce que je suis fort, j'ai encore fait ce projet, je parle encore à cette conférence".
 Si vous avez une vraie société, avec son image, il suffit alors d'en dire tout le bien que vous voulez&nbsp;: votre humilité est sauve, vous ne parlez pas de vous.
@@ -560,7 +562,7 @@ passer beaucoup de temps avec lui. Alors mieux vaut trouver quelqu'un avec qui v
 et qui vous mâchera le travail si la comptabilité n'est pas votre passion...
 Mais vous pourrez toujours changer par la suite.
 
-Avec tout ça, dans le monde du développement où il y a tellement de traval insatisfait,
+Avec tout ça, dans le monde du développement où il y a tellement de travail insatisfait,
 il n'y a aucune raison que cela ne fonctionne pas, si vous travaillez correctement.
 Et avec peu de charges (pas de locaux, pas de commerciaux, pas de managers à payer),
 il est probable que vous viviez très bien.
