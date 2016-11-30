@@ -388,7 +388,7 @@ et lui demande ce qu'il est en train de faire.
 —&nbsp;Heu oui, c'est ça.  
 —&nbsp;Et bien tu ne devrais pas être là. Rentre vite t'en occuper.
 
-En Suède, on en rigole pas avec la parité.
+En Suède, on ne rigole pas avec la parité.
 Le partage des tâches domestiques et familiales n'est pas seulement conseillé,
 c'est surtout très mal vu que le père ne s'occupe pas suffisamment de ses enfants.
 Au point de se faire engueuler par son manager si un jeune papa reste après 17H au travail.
@@ -495,7 +495,7 @@ Au début, les commerciaux de leurs précédentes SSIIs ricanaient&nbsp;:
 Et certains leur prophétisaient une déconvenue&nbsp;: "avec un nom comme Ninja Squad,
 vous allez vraiment passer pour des guignols".
 Avec le recul, bien qu'ils étaient loin de l'avoir calculé, le nom et l'esprit débridé
-assurent un excellent filtre. Si les grosses compagnies scélérosées (banque, assurance, grande distribution) ne veulent pas travailler avec ces guignols, c'est finalement tant mieux&nbsp;:
+assurent un excellent filtre. Si les grosses entreprises scélérosées (banque, assurance, grande distribution) ne veulent pas travailler avec ces guignols, c'est finalement tant mieux&nbsp;:
 ils ne veulent pas non plus travailler pour eux. Les quelques clients qui font la démarche de
 venir les voir sont déjà probablement des gens avec qui ils auront des affinités.
 
@@ -524,7 +524,7 @@ formations avec nos chers dinosaures du FAFIEC), mais au moins ont-ils du temps 
 
 Un autre avantage peut-être anecdotique d'avoir sa propre société est que cela résout
 un bête problème d'image.
-Quand vous avez votre compagnie, unipersonnelle ou non, il faut en assurer la promotion.
+Quand vous avez votre entreprise, unipersonnelle ou non, il faut en assurer la promotion.
 Si les clients ne savent pas que vous existez, ils ne viendront pas vers vous.
 Ainsi, si vous êtes freelance, c'est en votre nom propre qu'il vous faut faire du marketing&nbsp;:
 "Oh la la qu'est-ce que je suis fort, j'ai encore fait ce projet, je parle encore à cette conférence".
