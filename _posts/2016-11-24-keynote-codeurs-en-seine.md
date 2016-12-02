@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Keynote Codeurs en Seine 2016
-author: clacote, acrepet
+author: clacote
 tags: ["Talk", "Keynote", Codeurs en Seine"]
 description: "La retransciption de la keynote d'Agnès Crépet et Cyril Lacote à Codeurs en Seine 2016 : Codeurs du Monde."
 ---
