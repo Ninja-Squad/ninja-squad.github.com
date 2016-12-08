@@ -80,7 +80,7 @@ Avant de lancer jekyll, il faut bien s'assurer d'avoir exécuté les commandes s
 
 On peut ensuite lancer Jekyll en tapant la commande suivante, à la racine du projet :
 
-    jekyll --server
+    jekyll serve --future
 
 Ou, pour plus de diagnostic en cas d'erreur (par exemple, si on a oublié de taper les commandes ci-dessus, et que rien
 ne se produit au lancement de jekyll):
