@@ -2,7 +2,7 @@
 layout: post
 title: Keynote Codeurs en Seine 2016
 author: clacote
-tags: ["Talk", "Keynote", Codeurs en Seine"]
+tags: ["Talk", "Keynote", "Codeurs en Seine"]
 description: "La retransciption de la keynote d'Agnès Crépet et Cyril Lacote à Codeurs en Seine 2016 : Codeurs du Monde."
 ---
 
@@ -27,7 +27,22 @@ d'ouverture de [Codeurs en Seine 2016](http://www.codeursenseine.com/2016/)&nbsp
 _Codeurs du Monde_.  
 L'équipe d'organisation leur avait demandé de raconter l'expérience de leur tour du monde.
 
-En voici la retranscription.
+## La vidéo
+
+La vidéo, avec slides synchronisés, est [disponible chez InfoQ](https://www.infoq.com/fr/presentations/codeurs-en-seine-agnes-crepet-cyril-lacote-keynote
+  "Vidéo de la keynote d'Agnès Crépet et Cyril Lacote à Codeurs en Seine 2016").
+
+<a href="https://www.infoq.com/fr/presentations/codeurs-en-seine-agnes-crepet-cyril-lacote-keynote"
+  title="Vidéo de la keynote d'Agnès Crépet et Cyril Lacote à Codeurs en Seine 2016">
+  <img class="img-responsive" src="/assets/images/codeurs-en-seine/video.jpg" />
+</a>  
+
+Si vous préférez la lecture, en voici la retranscription complète.
+
+<br>
+<br>
+
+## La retranscription
 
 <p class="slide">
   <img class="img-polaroid" src="/assets/images/codeurs-en-seine/1.jpg" />
@@ -36,7 +51,7 @@ En voici la retranscription.
 <small>Cette diapositive de titre devient extrèmement cocasse quand on réalise qu'elle montre
 des développeurs Java sur l'île de Java. Ha ha.</small>
 
-## Que racontent Agnès Crépet et Cyril Lacote&nbsp;?
+### Que racontent Agnès Crépet et Cyril Lacote&nbsp;?
 
 <p class="slide">
   <img class="img-polaroid" src="/assets/images/codeurs-en-seine/2.jpg" />
@@ -112,7 +127,7 @@ Agnès, alors très impliquée dans la communauté [Duchess France](http://www.d
 n'a pas pu s'empêcher de faire aussi un peu de prosélytisme,
 en aidant au montage de deux antennes locales&nbsp;: Duchess Africa et Duchess Indonésia.
 
-## Quelques faits marquants glanés autour du monde
+### Quelques faits marquants glanés autour du monde
 
 <p class="slide">
   <img class="img-polaroid" src="/assets/images/codeurs-en-seine/9.jpg" />
@@ -409,7 +424,7 @@ Ce dessin (qui a été piqué à un inconnu sur Internet) représente assez bien
   <img class="img-polaroid" src="/assets/images/codeurs-en-seine/31.jpg" />
 </p>
 
-## OK, et après&nbsp;?
+### OK, et après&nbsp;?
 
 Montrons combien les présentateurs ont fait preuve d'une clairvoyance éclairée pour forger leur destin.
 
@@ -548,7 +563,7 @@ Il faut donc trouver les gens avec qui vous partagez vraiment les bonnes valeurs
 et qui sont aussi vos complémentaires.
 Facile à dire, bien plus difficile à trouver.
 
-Dans Ninja Squad, ils ont eu beaucoup de chance. 
+Dans Ninja Squad, ils ont eu beaucoup de chance.
 Agnès et Cyril avaient rencontré Cédric dans l'associatif, et avaient travaillé avec lui
 dans ce cadre ([LyonJUG](http://www.lyonjug.org/), [Mix-IT](http://www.mix-it.fr/)).
 Comme quoi, participer à la vie des communautés techniques est important ;).
@@ -633,7 +648,7 @@ d'avoir le contrôle de sa vie (_empowerment_, comme disent les américains).
 Quelqu'un qui pense que sa vie est la faute du gouvernement ou de ce salaud de patron
 sera fondamentalement moins heureux que celui qui pense qu'il est maître de son destin.
 Il n'est même pas question de pouvoir vraiment, factuellement, changer sa vie,
-il est juste question de le penser&nbsp;! 
+il est juste question de le penser&nbsp;!
 
 Alors, vous qui êtes développeurs, dans ce monde où vous êtes tant recherchés,
 il est temps de prendre en main votre destin pour construire votre bonheur.
