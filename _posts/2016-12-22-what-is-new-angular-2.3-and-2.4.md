@@ -3,30 +3,30 @@ layout: post
 title: What's new in Angular 2.3 and 2.4?
 author: cexbrayat
 tags: ["Angular 2", "Angular"]
-description: "Angular 2.3 and 2.4 are out. What new features are included?"
+description: "Angular 2.3 and 2.4 are out. Which new features are included?"
 ---
 
 New month, new minor release of Angular!
 December is the month of the last 2.x releases,
 because the next one will be... Angular 4!
-If you missed the official announcement (Igor Minar's keynote),
+If you missed the official announcement ([Igor Minar's keynote](https://www.youtube.com/watch?v=aJIMoLgqU_o)),
 let me sum it up for you.
 
 We'll have a major release every six months, according to the [plan](http://angularjs.blogspot.fr/2016/10/versioning-and-releasing-angular.html).
-The next major release is plan for March 2017.
+The next major release is planned for March 2017.
 It should have been Angular 3, but the Angular router is already with a version number in 3.x (because it has been rewritten several times during Angular development). So to avoid trouble, everything will be bumped to 4.x!
 Angular 3 will never exist, Angular 4 is the next one, with Angular 5 just around the corner.
-And know it should be called just "Angular".
+And now the framework should be called just "Angular".
 
-Don't worry, these releases are not as different as Angular 2 was different from AngularJS 1.x. They will _maybe_ contain deprecations and new APIs.
-Technically Angular 4 is a new major release because it contains a breaking change: TypeScript 2.1+ will be required if you use it, whereas you currently can to use 1.8+. Nothing too scary.
+Don't worry, these releases are not a complete rewrite with no backward compatibility like Angular 2 was. They will _maybe_ contain deprecations and new APIs.
+Technically Angular 4 is a new major release because it contains a breaking change: TypeScript 2.1+ will be required if you use it, whereas you currently can use 1.8+. Nothing too scary.
 
 Back to our 2.3 and 2.4 releases: what's new in these small releases?
 
 ## Language service
 
 One of the most exciting feature is not really in Angular itself,
-but this release contains a new module that will be reaaaaally handy : a language service module. This is really similar to what TypeScript offers.
+but this release contains a new module that will be reaaaaally handy: a language service module. This is really similar to what TypeScript offers.
 A language service allows the IDEs to provide great autocompletion.
 It's basically an API that the IDE can call to ask "what smart thing can I suggest at this position in this file?".
 
@@ -84,7 +84,7 @@ especially when you navigate from a route to itself:
 when you go from `races/12` to `races/13`,
 the router will keep the `RaceComponent` (instead of destroying it and recreating it). This is powerful, but you then need to subscribe to an observable from the router to know when the parameters change, to display the correct race for example.
 
-This is still the default behavior, but you can now turn it off, and ask the router to destroy and recreate your component every time, by implement [a `RouteReuseStrategy`](https://angular.io/docs/ts/latest/api/router/index/RouteReuseStrategy-class.html).
+This is still the default behavior, but you can now turn it off, and ask the router to destroy and recreate your component every time, by implementing [a `RouteReuseStrategy`](https://angular.io/docs/ts/latest/api/router/index/RouteReuseStrategy-class.html).
 
 See you next year to dig in the new releases, and the upcoming Angular 4!
 
