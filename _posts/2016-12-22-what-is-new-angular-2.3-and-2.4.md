@@ -19,7 +19,7 @@ Angular 3 will never exist, Angular 4 is the next one, with Angular 5 just aroun
 And now the framework should be called just "Angular".
 
 Don't worry, these releases are not a complete rewrite with no backward compatibility like Angular 2 was. They will _maybe_ contain deprecations and new APIs.
-Technically Angular 4 is a new major release because it contains a breaking change: TypeScript 2.1+ will be required if you use it, whereas you currently can use 1.8+. Nothing too scary.
+Technically Angular 4 is a new major release because it contains a breaking change: the minimum version of TypeScript, if you use it, will be 2.1, whereas the current minimum version is 1.8. Nothing too scary.
 
 Back to our 2.3 and 2.4 releases: what's new in these small releases?
 
@@ -64,8 +64,7 @@ If a class inherits from a parent class and does not declare
 a constructor, it inherits the parent class constructor,
 meaning that the dependency injection will be properly done in the parent class.
 
-The lifecycle hooks will also be properly called in the parent class,
-even if they are not overwritten and called from the child:
+The lifecycle hooks defined in the parent class will also be called properly, unless they are overridden in the child class:
 
     export class ParentPony implements OnInit {
       ngOnInit() {
@@ -79,10 +78,10 @@ even if they are not overwritten and called from the child:
 
 ## Route reuse strategy
 
-The Angular router try to optimize a few things for you,
+The Angular router tries to optimize a few things for you,
 especially when you navigate from a route to itself:
 when you go from `races/12` to `races/13`,
-the router will keep the `RaceComponent` (instead of destroying it and recreating it). This is powerful, but you then need to subscribe to an observable from the router to know when the parameters change, to display the correct race for example.
+the router will reuse the `RaceComponent` (instead of destroying it and recreating it). This is powerful, but you then need to subscribe to an observable from the router to know when the parameters change, to display the correct race for example.
 
 This is still the default behavior, but you can now turn it off, and ask the router to destroy and recreate your component every time, by implementing [a `RouteReuseStrategy`](https://angular.io/docs/ts/latest/api/router/index/RouteReuseStrategy-class.html).
 
