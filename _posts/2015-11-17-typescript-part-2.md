@@ -189,7 +189,7 @@ and will understand that it is a component, based on the metadata the decorator 
 Cool, huh? As you can see, a decorator can also receive parameters, here a configuration object.
 
 I just wanted to introduce the raw concept of decorators,
-we'll look into every decorator available in Angular all along [our book](https://books.ninja-squad.com/angular2).
+we'll look into every decorator available in Angular all along [our book](https://books.ninja-squad.com/angular).
 
 I have to point out that you can use decorators with Babel as a transpiler instead of TypeScript.
 There is even a plugin to support all the Angular 2 decorators: [angular2-annotations](https://www.npmjs.com/package/babel-plugin-angular2-annotations).

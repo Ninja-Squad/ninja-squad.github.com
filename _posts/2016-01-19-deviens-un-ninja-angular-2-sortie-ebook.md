@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Notre ebook sur Angular 2 est disponible !
+title: Notre ebook sur Angular est disponible !
 author: cexbrayat
 tags: ["Angular 2", "Angular", "ebook"]
-description: "Notre ebook sans DRM est disponible. Paie ce que tu veux et apprends Angular 2 !"
+description: "Notre ebook sans DRM est disponible. Paie ce que tu veux et apprends Angular !"
 ---
 
 # Enfin le voilà&nbsp;!
 
-Après une quantité de travail indécente, nous sommes très fiers de vous annoncer la sortie de notre ebook "Deviens un ninja avec Angular&nbsp;2"&nbsp;!
+Après une quantité de travail indécente, nous sommes très fiers de vous annoncer la sortie de notre ebook "Deviens un ninja avec Angular"&nbsp;!
 
 Comme on vous le promettait, l'ebook est **sans DRM**, disponible en **français** et en **anglais**,
 et dans tous les formats dont tu peux rêver (**PDF, EPUB, MOBI, HTML**).
@@ -27,8 +27,8 @@ Nous vendons l'ebook par nous-même, en utilisant [Stripe](https://stripe.com/fr
 Quand tu achèteras le livre, on t'enverra un email avec un lien de téléchargement et une facture.
 Pas d'inquiétude, on n'a pas l'intention de te spammer&nbsp;: on t'enverra juste un mail quand on sortira une mise à jour majeure du livre.
 
-Le livre couvre tout ce dont tu as besoin de savoir pour coder de vraies applications en Angular 2.
-Jette un œil [au contenu](https://books.ninja-squad.com/angular2#toc)&nbsp;!
+Le livre couvre tout ce dont tu as besoin de savoir pour coder de vraies applications en Angular.
+Jette un œil [au contenu](https://books.ninja-squad.com/angular#toc)&nbsp;!
 Quelques chapitres seront ajoutés ultérieurement quand le framework sera un peu plus mature
 (car il n'est qu'en *beta* pour le moment).
 Evidémment, toutes les mises à jour futures seront gratuites pour les acheteurs.
@@ -40,13 +40,13 @@ tu bénéficieras d'une réduction si tu as déjà acheté le livre seul.
 
 On espère que tu apprécieras la lecture et nos exercices, et on a hâte d'entendre ce que tu en penses&nbsp;!
 
-Maintenant, il est l'heure d'[aller l'acheter](https://books.ninja-squad.com/angular2#buy)&nbsp;!
+Maintenant, il est l'heure d'[aller l'acheter](https://books.ninja-squad.com/angular#buy)&nbsp;!
 
 <p style="text-align: center;">
-<img itemprop="image" class="img-responsive" src="/assets/images/ng2-ebook/ng2-cover.png" alt="Deviens un ninja avec Angular 2" />
+<img itemprop="image" class="img-responsive" src="/assets/images/ng2-ebook/ng2-cover.png" alt="Deviens un ninja avec Angular" />
 </p>
 
-Et si tu veux aller encore plus loin, n'oublie pas qu'on donne aussi des [formations](http://ninja-squad.fr/training/angular2)&nbsp;!
+Et si tu veux aller encore plus loin, n'oublie pas qu'on donne aussi des [formations](http://ninja-squad.fr/training/angular)&nbsp;!
 
 <ol class="footnote">
   <li id="footnote-1">

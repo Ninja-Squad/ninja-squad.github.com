@@ -3,7 +3,7 @@ layout: post
 title: Ninja Tips 3 - [hidden] vs Bootstrap's help-block
 author: clacote
 tags: ["Angular 2", "Angular", "bootstrap", "html", "css"]
-description: "Tip about form validation with Angular 2 and Bootstrap"
+description: "Tip about form validation with Angular and Bootstrap"
 ---
 
 Like everybody, you code enterprise software for a living
@@ -15,7 +15,7 @@ Alright, your websites are not very original (some say *Bootstrap is the new ugl
 but thanks to it you're productive.
 Don't blame yourself, I do exactly the same (maybe we're too old for this internet shit).
 
-So you get to build this login form with Angular&nbsp;2 and Bootstrap.
+So you get to build this login form with Angular and Bootstrap.
 The HTML template, if using a model-driven form instead of a template-driven one,
 may look like:
 
@@ -59,7 +59,7 @@ But as soon as this form is displayed, this help text is displayed,
 even if the user has not typed anything yet.
 At Ninja Squad, we like to have those hints and error messages be displayed only
 when the user has started to input something, to keep a clean form when entering the page.
-You may then leverage the validation capabilities of a super-charged Angular&nbsp;2 form:
+You may then leverage the validation capabilities of a super-charged Angular form:
 
     <div class="form-group"
          [ngClass]="{
@@ -94,7 +94,7 @@ The `span.help-block` will always be displayed, even with a pristine input, even
 
 That is not an error in the condition.
 That is not your browser not implementing this HTML&nbsp;5 `hidden` attribute.
-That is also not an Angular&nbsp;2 binding bug on this HTML&nbsp;5 attribute.
+That is also not an Angular binding bug on this HTML&nbsp;5 attribute.
 This issue gave me some cold sweat,
 that's why I wanted to share this *ninja tip* with you, be it very anecdotic.
 
@@ -109,7 +109,7 @@ And, indeed, the `help-block` class brings the
 `display: block;` style ([source](https://github.com/twbs/bootstrap/blob/v3.3.6/less/forms.less#L456))...
 
 That's why your help text is always displayed,
-even if your usage of Angular&nbsp;2 validation is perfect.
+even if your usage of Angular validation is perfect.
 
 OK, cool! So now what?
 You can either get rid of the `help-block` class (but you'll lose the style),
@@ -134,4 +134,4 @@ and we replaced the `pristine` test by a `dirty` test, which is the exact opposi
 > simply wrapping the error message in its own `span` inside the `span.help-block`.
 
 Thanks for the time you spent listening to me. I feel better now.
-You may get back to work, or get back to read [our Angular&nbsp;2 ebook](https://books.ninja-squad.com/angular2).
+You may get back to work, or get back to read [our Angular ebook](https://books.ninja-squad.com/angular).

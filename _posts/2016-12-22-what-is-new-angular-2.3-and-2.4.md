@@ -87,4 +87,4 @@ This is still the default behavior, but you can now turn it off, and ask the rou
 
 See you next year to dig in the new releases, and the upcoming Angular 4!
 
-Check out our [ebook](https://books.ninja-squad.com) and [Pro Pack](https://angular2-exercises.ninja-squad.com/) if you want to learn more about Angular!
+Check out our [ebook](https://books.ninja-squad.com) and [Pro Pack](https://angular-exercises.ninja-squad.com/) if you want to learn more about Angular!

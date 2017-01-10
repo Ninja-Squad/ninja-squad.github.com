@@ -49,4 +49,4 @@ This directive is now exported, and can be used in our templates via a local var
     </a>
 
 That's all for this small release.
-Check out our [ebook](https://books.ninja-squad.com) and [Pro Pack](https://angular2-exercises.ninja-squad.com/) if you want to learn more about Angular!
+Check out our [ebook](https://books.ninja-squad.com) and [Pro Pack](https://angular-exercises.ninja-squad.com/) if you want to learn more about Angular!

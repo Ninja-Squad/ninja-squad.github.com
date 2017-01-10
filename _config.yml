@@ -163,8 +163,8 @@ JB :
   # where [HELPER] is the name of the helper you are overriding.
 
   trainings :
-    angular2:
-      title: Angular 2
+    angular:
+      title: Angular
       dates:
         - 05-07 déc. à Paris
         - 12-14 déc. à Lyon

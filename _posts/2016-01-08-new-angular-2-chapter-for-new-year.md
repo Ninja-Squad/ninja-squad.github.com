@@ -1,6 +1,6 @@
 ---
 layout: post
-title: New free chapters on Angular 2
+title: New free chapters on Angular
 author: cexbrayat
 tags: ["Angular 2", "Angular", "ebook"]
 description: "Angular 2 is out in beta, we will release our ebook in a few days, and here are some new free chapters!"
@@ -17,7 +17,7 @@ We hope you enjoyed your Christmas break.
 Maybe you haven’t heard but Angular 2 is now out in beta!
 That’s not the final release yet, but it will be there soon.
 
-And we have been hard at work on [our ebook](https://books.ninja-squad.com/angular2).
+And we have been hard at work on [our ebook](https://books.ninja-squad.com/angular).
 **In fact, we will release a first version of our ebook in a few days**.
 
 Like the framework, we are going to release a first version of the ebook
@@ -27,11 +27,11 @@ and then we’ll release updates with new chapters on more advanced topics.
 Obviously, you'll be notified and will get these updates for free if you bought the book.
 
 To keep you busy while you wait for the ebook release,
-we added some [content to the free samples](https://books.ninja-squad.com/angular2#toc).
+we added some [content to the free samples](https://books.ninja-squad.com/angular#toc).
 
 <div class="row-fluid">
   <span class="span3" style="text-align:center;margin-top:10px;">
-    <img src="/assets/images/ng2-ebook/angular2-logo.png" alt="Angular 2 logo" style="height:80px" />
+    <img src="/assets/images/ng2-ebook/angular2-logo.png" alt="Angular logo" style="height:80px" />
   </span>
 	<span class="span3" style="text-align:center;margin-top:10px;">
     <img src="/assets/images/ng2-ebook/ecmascript6-logo.png" alt="ECMAScript 6 logo" style="height:80px" />
@@ -54,7 +54,7 @@ You can now read about:
 - How to get started
 
 Also, don't miss our sample application: [PonyRacer](http://ponyracer.ninja-squad.com/).
-It leverages all the Angular 2 features that you will learn by reading the ebook.
+It leverages all the Angular features that you will learn by reading the ebook.
 
 Go take a look!
 
@@ -76,10 +76,10 @@ Stay tuned!
 
 On espère que tu as passé d'excellentes fêtes de fin d'année.
 
-Tu l'as peut-être raté&nbsp;: Angular 2 est désormais disponible en version beta&nbsp;!
+Tu l'as peut-être raté&nbsp;: Angular est désormais disponible en version beta&nbsp;!
 Ce n'est certes pas encore la version finale, mais elle approche.
 
-De notre côté, nous avons travaillé dur sur [notre ebook](https://books.ninja-squad.com/angular2).
+De notre côté, nous avons travaillé dur sur [notre ebook](https://books.ninja-squad.com/angular).
 **En fait, nous sommes enfin à quelques jours d'une première version**.
 
 Comme l'a fait l'équipe du framework, nous allons sortir une première version de l'ebook
@@ -88,11 +88,11 @@ puis nous sortirons ensuite une mise à jour avec de nouveaux chapitres sur des 
 Tu seras bien évidemment notifié en tant qu'acheteur, et bénéficieras de ces ajouts gratuitement.
 
 Pour te faire patienter en attendant la sortie du livre,
-on a ajouté [plein de contenu dans les extraits gratuits](https://books.ninja-squad.com/angular2#toc).
+on a ajouté [plein de contenu dans les extraits gratuits](https://books.ninja-squad.com/angular#toc).
 
 <div class="row-fluid">
   <span class="span3" style="text-align:center;margin-top:10px;">
-    <img src="/assets/images/ng2-ebook/angular2-logo.png" alt="Logo Angular 2" style="height:80px" />
+    <img src="/assets/images/ng2-ebook/angular2-logo.png" alt="Logo Angular" style="height:80px" />
   </span>
 	<span class="span3" style="text-align:center;margin-top:10px;">
     <img src="/assets/images/ng2-ebook/ecmascript6-logo.png" alt="Logo ECMAScript 6" style="height:80px" />
@@ -114,7 +114,7 @@ Désormais, tu peux lire gratuitement des chapitres sur&nbsp;:
 - La philosophie du framework&nbsp;;
 - et démarrer de zéro sa première application.
 
-Aussi, ne rate pas notre application de démo qui met en œuvre tout ce que tu apprendras à faire en Angular 2&nbsp;: [PonyRacer](http://ponyracer.ninja-squad.com/).
+Aussi, ne rate pas notre application de démo qui met en œuvre tout ce que tu apprendras à faire en Angular&nbsp;: [PonyRacer](http://ponyracer.ninja-squad.com/).
 
 Va jeter un oeil&nbsp;!
 

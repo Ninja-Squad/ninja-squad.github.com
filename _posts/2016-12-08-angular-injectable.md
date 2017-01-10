@@ -166,4 +166,4 @@ even if it doesn't do anything :).
 The [best practice](https://angular.io/docs/ts/latest/tutorial/toh-pt4.html#!/%23injectable-services) is to add it on every service,
 even if it doesn't have any dependencies on its own.
 
-Check out our [ebook](https://books.ninja-squad.com) and [Pro Pack](https://angular2-exercises.ninja-squad.com/) if you want to learn more about Angular!
+Check out our [ebook](https://books.ninja-squad.com) and [Pro Pack](https://angular-exercises.ninja-squad.com/) if you want to learn more about Angular!
