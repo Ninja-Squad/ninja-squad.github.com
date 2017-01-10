@@ -6,15 +6,15 @@ tags: ["Angular 2", "Angular", "typescript", "json", "tips"]
 description: "Rend ton code plus sûr et plus maintenable en typant ton JSON avec TypeScript"
 ---
 
-Ce *tip* concerne plutôt TypeScript qu'Angular 2.
-Mais comme c'est Angular 2 qui, comme beaucoup d'entre vous sans doute,
-nous a amené à utiliser TypeScript, on va l'expliquer avec un exemple 
-basé sur Angular 2, et le comparer avec du code JavaScript d'un exemple
+Ce *tip* concerne plutôt TypeScript qu'Angular.
+Mais comme c'est Angular qui, comme beaucoup d'entre vous sans doute,
+nous a amené à utiliser TypeScript, on va l'expliquer avec un exemple
+basé sur Angular, et le comparer avec du code JavaScript d'un exemple
 similaire avec AngularJS.
 
 ## Un service type ramenant des données du backend
 
-Un service AngularJS typique qui retourne des données 
+Un service AngularJS typique qui retourne des données
 en provenance du backend, en utilisant le service $http
 et les [promesses](/2015/05/28/angularjs-promises/) ressemble à ça&nbsp;:
 
@@ -32,14 +32,14 @@ C'est assez simple, et l'utiliser dans un controller ne pose pas de problème...
 
 Qu'est-ce qu'une *race*? Quels champs contient-elle? C'est facile de se le
 rappeler dans une petite application, alors qu'on vient d'écrire le service
-côté serveur. Mais dans une grosse application bien complexe, manipulant 
+côté serveur. Mais dans une grosse application bien complexe, manipulant
 des objets métiers plus obscurs qu'une course de poneys, ce n'est pas toujours évident
-de savoir ce que le message contient. Et la lecture du code JavaScript n'est pas 
+de savoir ce que le message contient. Et la lecture du code JavaScript n'est pas
 d'un grand secours.
 
-## Le même service avec Angular 2 et TypeScript
+## Le même service avec Angular et TypeScript
 
-En Angular 2, avec TypeScript, le même service ressemblerait à ça (on vous passe les 
+En Angular, avec TypeScript, le même service ressemblerait à ça (on vous passe les
 imports)&nbsp;:
 
     @Injectable()
@@ -57,7 +57,7 @@ Est-ce franchement mieux que la version AngularJS&nbsp;?
 
 A part le sucre syntaxique (classe, *arrow function*, interpolation de chaîne de caractères),
 pas vraiment. On sait que le service retourne un *Observable*, mais on ne sait toujours
-pas à quoi une course ressemble. 
+pas à quoi une course ressemble.
 
 ## TypeScript à la rescousse
 
@@ -105,14 +105,14 @@ le service retourne à présent un `Observable<Race>`.
 OK, mais que se passe-t-il si le JSON renvoyé par le serveur n'a pas d'attribut `startInstant`
 mais a en réalité un attribut `startTime`&nbsp;?
 
-TypeScript ne peut pas détecter ce problème. A l'exécution, `startInstant` 
-sera *undefined*. 
+TypeScript ne peut pas détecter ce problème. A l'exécution, `startInstant`
+sera *undefined*.
 
-Mais au moins, une fois que cette erreur aura été détectée, 
-tu pourras utiliser ton IDE préféré pour refactoriser `startInstant` en `startTime`, 
-et corriger d'un seul coup tout le code TypeScript utilisant l'attribut incorrect. 
+Mais au moins, une fois que cette erreur aura été détectée,
+tu pourras utiliser ton IDE préféré pour refactoriser `startInstant` en `startTime`,
+et corriger d'un seul coup tout le code TypeScript utilisant l'attribut incorrect.
 
-Plus important encore, quand tu devras (toi ou un collègue) modifier un composant de 
+Plus important encore, quand tu devras (toi ou un collègue) modifier un composant de
 l'application qui manipule une course, tu n'auras qu'à examiner l'interface `Race`
 pour savoir immédiatement à quoi ressemble un objet de ce type. Et tu pourras compter sur
 ton IDE pour te fournir de l'auto-complétion.

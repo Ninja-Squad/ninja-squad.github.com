@@ -3,7 +3,7 @@ layout: post
 title: De nouvelles formations Ninja Squad à venir !
 author: acrepet
 tags: ["Formation", "AngularJS", "Angular 2", "Angular", "Git", "Java 8"]
-description: "Le calendrier de nos formations est à jour, notamment avec les formations AngularJS, Angular 2, Git et Java 8"
+description: "Le calendrier de nos formations est à jour, notamment avec les formations AngularJS, Angular, Git et Java 8"
 ---
 
 # Transmettre du savoir et de l'expérience&nbsp;!
@@ -15,8 +15,8 @@ Nous assurons nos formations sur Lyon, à Paris, ailleurs en France, et dans les
 # Les prochaines dates
 - [**AngularJS&nbsp;: de Zéro à Ninja**](http://ninja-squad.fr/formations/formation-angularjs)&nbsp;: lundi 14 - mercredi 16 mars 2016 (Paris)
 - [**Devenez un ninja avec Git**](http://ninja-squad.fr/formations/formation-git)&nbsp;: lundi 21 - mardi 22 mars 2016 (Paris)
-- [**Angular 2&nbsp;: de Zéro à Ninja**](http://ninja-squad.fr/formations/formation-angular2)&nbsp;: lundi 4 - mercredi 6 avril 2016 (Lyon)
-- [**Angular 2&nbsp;: de Zéro à Ninja**](http://ninja-squad.fr/formations/formation-angular2)&nbsp;: lundi 11 - mercredi 13 avril 2016 (Paris)
+- [**Angular&nbsp;: de Zéro à Ninja**](http://ninja-squad.fr/formations/formation-angular)&nbsp;: lundi 4 - mercredi 6 avril 2016 (Lyon)
+- [**Angular&nbsp;: de Zéro à Ninja**](http://ninja-squad.fr/formations/formation-angular)&nbsp;: lundi 11 - mercredi 13 avril 2016 (Paris)
 - [**Apprivoiser Java&nbsp;8**](http://ninja-squad.fr/formations/formation-java8)&nbsp;: lundi 2 mai 2016 (Lyon)
 - [**Devenez un ninja avec Git**](http://ninja-squad.fr/formations/formation-git)&nbsp;: lundi 23 - mardi 24 mai 2016 (Lyon)
 

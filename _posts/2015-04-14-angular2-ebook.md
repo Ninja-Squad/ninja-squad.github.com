@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "A book on Angular2 while traveling"
+title: "A book on Angular while traveling"
 author: ["cexbrayat"]
 tags: ["AngularJS", "Angular 2", "Angular", "ebook"]
-description: "I'm writing a new book while traveling around the world. Check https://books.ninja-squad.com/angular2 for more details, and read this blog post if you want to know why."
+description: "I'm writing a new book while traveling around the world. Check https://books.ninja-squad.com/angular for more details, and read this blog post if you want to know why."
 ---
 
-TL;DR: I'm writing a [new ebook about Angular 2](https://books.ninja-squad.com/angular2).
+TL;DR: I'm writing a [new ebook about Angular](https://books.ninja-squad.com/angular).
 
 I am currently writing this post from Auckland, New Zealand, first stop of a trip with my girlfriend, in a few countries around the world over 6 months. This has just started, but I already can feel it will be pretty good (and leaving the cold winter of France for the hot summer of New Zealand is a nice start). As my co-founders are pretty awesome, they agreed to let me work part-time, on non-billable work. In fact, it might be a little crazy, but I'd like to write [another](https://books.ninja-squd.com/angularjs) book and try several other ideas.
 
@@ -20,11 +20,11 @@ I've got the feeling (and I'm not the only one) that we are at the dawn of a new
 
 So I'm gonna write about these topics, and it might end up in a new book. Maybe on Angular2 if it keeps its promises. Maybe about Web Development in general. Maybe it will end up in blog series instead of a book. Or I might settle on a beach in Indonesia, selling cocktails, and stop chasing the hype of Web Development... But the most probable trajectory is that I will write a book on Angular2, pretty much as I did when I wrote one on AngularJS 1.x: because I love to write about things I like, and that it is for me the best way to understand things deeper.
 
-I would like to write it in English this time. And if with the help of the Ninja Squad team, it turns into a book that can help others, that’s great! It is a pleasure to see that so many of you like the 'Pay what you want' model we have on [our first ebook](https://books.ninja-squad.com/angularjs). So I think it will be the same for this one, to allow everybody to buy it, and for those who can, to support us and the charity cause we chose. And maybe I'll add a pro package this time, with exercices, quizzes and a full project, so you can jump in head first, and save a lot of time. If this sounds interesting to you, you can check [this page](https://books.ninja-squad.com/angular2) and add your email: I may send you early work versions, or just ping you when the book is done, if it is some day.
+I would like to write it in English this time. And if with the help of the Ninja Squad team, it turns into a book that can help others, that’s great! It is a pleasure to see that so many of you like the 'Pay what you want' model we have on [our first ebook](https://books.ninja-squad.com/angularjs). So I think it will be the same for this one, to allow everybody to buy it, and for those who can, to support us and the charity cause we chose. And maybe I'll add a pro package this time, with exercices, quizzes and a full project, so you can jump in head first, and save a lot of time. If this sounds interesting to you, you can check [this page](https://books.ninja-squad.com/angular) and add your email: I may send you early work versions, or just ping you when the book is done, if it is some day.
 
 Everything you want to know is here:
 
-[https://books.ninja-squad.com/angular2](https://books.ninja-squad.com/angular2)
+[https://books.ninja-squad.com/angular](https://books.ninja-squad.com/angular)
 
 Enough of that, my new kiwi friends are calling me for a drink. Enjoy!
 

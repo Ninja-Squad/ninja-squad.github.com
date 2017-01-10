@@ -3,7 +3,7 @@ layout: post
 title: Ninja Tips 3 - [hidden] et Bootstrap's help-block
 author: clacote
 tags: ["Angular 2", "Angular", "bootstrap", "html", "css"]
-description: "Une astuce sur la validation de formulaires avec Angular 2 et Bootstrap"
+description: "Une astuce sur la validation de formulaires avec Angular et Bootstrap"
 ---
 
 Comme tout le monde, vous développez des applications de gestion
@@ -16,8 +16,8 @@ et d'avoir un rendu plutôt joli sans trop réfléchir.
 mais ça contribue grandement à votre productivité.
 Ne culpabilisez pas, j'en suis là aussi (on doit être de la même génération de vieux).
 
-Vous voilà donc à devoir coder votre formulaire de login en Angular&nbsp;2 et Bootstrap.
-Le template HTML, s'il utilise un formulaire Angular&nbsp;2 piloté par le
+Vous voilà donc à devoir coder votre formulaire de login en Angular et Bootstrap.
+Le template HTML, s'il utilise un formulaire Angular piloté par le
 modèle plutôt que piloté par le template, pourrait ressembler à cela&nbsp;:
 
     <form (ngSubmit)="login()" [ngFormModel]="loginForm">
@@ -61,7 +61,7 @@ Mais dès que ce formulaire est affiché, ces messages sauteront aux yeux de l'u
 alors qu'il n'a encore rien saisi. Chez Ninja Squad on aime bien que les messages
 ne s'affichent qu'une fois que l'utilisateur a commencé à saisir.
 Vous pouvez alors tirer bénéfice des possibilités surnaturelles de validation offertes par un
-formulaire Angular&nbsp;2&nbsp;:
+formulaire Angular&nbsp;:
 
     <div class="form-group"
          [ngClass]="{
@@ -94,7 +94,7 @@ Qu'avons-nous mis en œuvre ici&nbsp;?
 Plutôt cool. Sauf que... ça ne marche pas complètement.
 En l'état, le `span.help-block` sera toujours affiché, même quand le champ est vierge, même quand il n'a pas d'erreur.
 
-Ce n'est pas une erreur dans la condition. Ce n'est pas un bug de votre navigateur qui ne supporterait pas cet attribut HTML&nbsp;5. Ce n'est pas non plus un bug de _binding_ d'Angular&nbsp;2 sur cet attribut HTML&nbsp;5.
+Ce n'est pas une erreur dans la condition. Ce n'est pas un bug de votre navigateur qui ne supporterait pas cet attribut HTML&nbsp;5. Ce n'est pas non plus un bug de _binding_ d'Angular sur cet attribut HTML&nbsp;5.
 Ce problème m'a coûté quelques bonnes minutes de sueurs froides. Ce pourquoi je voulais vous partager ce *ninja tip*, aussi anecdotique soit-il.
 
 En fait, le problème se situe dans le comportement de l'attribut HTML&nbsp;5 global `hidden`, et les styles apportés par la classe Bootstrap `.help-block`. La [documentation de `hidden`](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/hidden) explique&nbsp;:
@@ -110,7 +110,7 @@ Ce qui signifie pour les auvergnats&nbsp;:
 Et en l'occurrence, la classe `help-block` apporte entre autre le style
 `display: block;` ([source](https://github.com/twbs/bootstrap/blob/v3.3.6/less/forms.less#L456))...
 
-Voilà pourquoi votre texte d'aide à l'utilisateur apparaît toujours alors que votre utilisation de la validation Angular&nbsp;2 est parfaite.
+Voilà pourquoi votre texte d'aide à l'utilisateur apparaît toujours alors que votre utilisation de la validation Angular est parfaite.
 
 OK, cool. Et maintenant on fait quoi&nbsp;?
 Et bien soit on enlève la classe `help-block` (mais on perd le style apporté), soit on réécrit son template pour ne plus faire du binding sur l'attribut `hidden`. Et la directive `ngIf` arrive alors à la rescousse&nbsp;:
@@ -132,4 +132,4 @@ Il nous a fallu inverser la condition initialement placée dans `[hidden]="..."`
 > une [autre solution vue sur StackOverflow](http://stackoverflow.com/questions/30744882/angular2-hidden-ignores/30746262#30746262)&nbsp;:
 > placer le message d'erreur dans son propre `span` à l'intérieur du `span.help-block`.
 
-Merci d'avoir suivi ce long cheminement pour me permettre de vous expliquer cette anecdote, je me sens mieux d'avoir pu vider mon sac. Vous pouvez reprendre une activité normale (comme la lecture de [notre ebook sur Angular&nbsp;2](https://books.ninja-squad.com/angular2) par exemple).
+Merci d'avoir suivi ce long cheminement pour me permettre de vous expliquer cette anecdote, je me sens mieux d'avoir pu vider mon sac. Vous pouvez reprendre une activité normale (comme la lecture de [notre ebook sur Angular](https://books.ninja-squad.com/angular) par exemple).

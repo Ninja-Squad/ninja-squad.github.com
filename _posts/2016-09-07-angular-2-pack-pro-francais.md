@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Notre Pro Pack Angular 2 est disponible !
+title: Notre Pro Pack Angular est disponible !
 author: cexbrayat
 tags: ["Angular 2", "Angular", "ebook"]
-description: "Notre Pro Pack est disponible et vous permettra de construire une application complète pour tout apprendre sur Angular 2."
+description: "Notre Pro Pack est disponible et vous permettra de construire une application complète pour tout apprendre sur Angular."
 ---
 
 *Looking for the English version? It's [there](/2016/09/07/angular-2-pro-pack-english/).*
 {: style="text-align: right;"}
 
-Pour découvrir Angular&nbsp;2, plusieurs milliers d'entre-vous se sont jetés
-sur notre ebook [Devenez un Ninja avec Angular 2](https://books.ninja-squad.com/angular2) (merci&nbsp;!).
+Pour découvrir Angular, plusieurs milliers d'entre-vous se sont jetés
+sur notre ebook [Devenez un Ninja avec Angular](https://books.ninja-squad.com/angular) (merci&nbsp;!).
 Vous avez probablement remarqué qu'on a consacré beaucoup de temps à le maintenir
 à jour avec tous les changements des différentes versions _beta_ et _release candidate_.
 Et tout ça pour un prix de votre choix, sans DRM, en anglais et français, et
@@ -38,7 +38,7 @@ de l'injection de dépendances, des modules, de l'HTTP, des WebSockets,
 du _lazy loading_, de l'authentification, des formulaires, de la validation,
 des astuces de performance, des astuces de mise en production, etc...
 Et des tests, des tonnes de tests.
-Parce qu'Angular&nbsp;2 permet d'avoir une excellente couverture, et de
+Parce qu'Angular permet d'avoir une excellente couverture, et de
 construire des applications vraiment solides.
 Cette application est [Ponyracer](http://ponyracer.ninja-squad.com/) (jetez-y un œil)&nbsp;!
 
@@ -64,13 +64,13 @@ Voici le Pack Pro en action&nbsp;:
 
 <img src="/assets/images/2016-09-07/propack-demo.gif" alt="Démo du Pack Pro Pack" />
 
-Vous pouvez jeter un œil à la plateforme du Pack Pro sur [angular2-exercises.ninja-squad.com](https://angular2-exercises.ninja-squad.com)
+Vous pouvez jeter un œil à la plateforme du Pack Pro sur [angular-exercises.ninja-squad.com](https://angular-exercises.ninja-squad.com)
 et visualiser la liste des exercices prévus.
 
 Près d'une centaine de beta-testeurs l'ont essayé sur les derniers mois,
 et ils nous on fait des retours très enthousiastes&nbsp;!
 Comme on met fréquemment à jour les exercices (pour intégrer les changements
-et nouvelles fonctionnalités d'Angular&nbsp;2), et comme on en ajoute de temps
+et nouvelles fonctionnalités d'Angular), et comme on en ajoute de temps
 en temps, ils reviennent souvent pour voir ce qui a changé, apprendre de
 nouvelles actuces, et identifier comment impacter leurs propres projets.
 
@@ -78,7 +78,7 @@ Le Pack Pro permet de vraiment gagner du temps et de l'expérience.
 Il donne un aperçu de tout ce qu'on peut faire, comment le tester, et
 comment l'implémenter, dans le respect de l'état de l'art.
 Si vous complétez les exercices, vous serez prêt à vous attaquer à
-n'importe quel projet en Angular&nbsp;2.
+n'importe quel projet en Angular.
 Ne me faite pas dire que ça va être facile&nbsp;: il vous faudra plusieurs jours
 pour venir à bout de ce Pack Pro.
 Mais on sait que tout ce que vous apprendrez en chemin vaudra largement l'argent investi.
@@ -87,7 +87,7 @@ Les mises à jour et les nouveaux exercices seront gratuits, évidemment.
 Alors, intéressé&nbsp;? Il est disponible dès maintenant&nbsp;!
 
 <div style="text-align: center; margin: 30px 0 30px 0;">
-  <a href="https://books.ninja-squad.com/angular2#propack">🚀 books.ninja-squad.com/angular2 🚀</a>
+  <a href="https://books.ninja-squad.com/angular#propack">🚀 books.ninja-squad.com/angular 🚀</a>
 </div>
 
 Oh, et si vous avez déjà acheté l'ebook, on vous propose une chouette ristourne.

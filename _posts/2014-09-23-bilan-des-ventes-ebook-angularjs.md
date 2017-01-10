@@ -100,7 +100,7 @@ Vous savez ce qu'il vous reste à faire pour votre prochain livre&nbsp;: DIY&nbs
 **Mise à jour du 10/08/2016**&nbsp;:
 
 Nous avons désormais une page publique des ventes de cet ebook&nbsp;: [https://books.ninja-squad.com/angularjs/sales](https://books.ninja-squad.com/angularjs/sales "Ventes de l'ebook Devenez un Ninja avec AngularJS").
-Et même [du suivant sur Angular&nbsp;2](https://books.ninja-squad.com/angular2/sales), sorti entre temps.
+Et même [du suivant sur Angular](https://books.ninja-squad.com/angular/sales), sorti entre temps.
 
 <script type="text/javascript" src="https://www.google.com/jsapi"></script>
 <script type="text/javascript">
