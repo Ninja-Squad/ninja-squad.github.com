@@ -88,6 +88,32 @@ It's now also possible to use an `else` syntax in your templates:
     <div *ngIf="races.length > 0; else empty"><h2>Races</h2></div>
     <ng-template #empty><h2>No races.</h2></ng-template>
 
+## as
+
+Another addition to the template syntax is the `as` keyword,
+to simplify the `let` syntax.
+It allows to store a result in a variable of the template,
+to use it in the element.
+
+It can be useful to store a sliced collection for example:
+
+    <div *ngFor="let pony of ponies | slice:0:2 as total; index as = i">
+      {{i+1}}/{{total.length}}: {{pony.name}}
+    </div>
+
+Or even more useful, to subscribe only once to a pipe with `async`. If `race` is an observable, instead of the bad and ugly:
+
+    <div>
+      <h2>{{ (race | async)?.name }}</h2>
+      <small>{{ (race | async)?.date }}</small>
+    </div>
+
+you can now use the good:
+
+    <div *ngIf="race | async as raceModel">
+      <h2>{{ raceModel.name }}</h2>
+      <small>{{ raceModel.date }}</small>
+    </div>
 
 # Pipes
 
