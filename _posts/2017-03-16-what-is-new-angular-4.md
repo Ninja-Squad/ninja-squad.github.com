@@ -188,6 +188,25 @@ A new directive has been added to help you compare options from a select: `compa
 
 # Router
 
+## ParamMap
+
+A new interface has been introduced to represent the parameters
+of a URL: `ParamMap`.
+Instead of using `params` or `queryParams`,
+you should now use `paramMap` or `queryParamMap`,
+because they offer the choice between `get()` to get a value,
+or `getAll()` to get all values (as query parameters can have multiple values for example).
+
+    const id = this.route.snapshot.paramMap.get('ponyId');
+    this.ponyService.get(id).subscribe(pony => this.pony = pony);
+
+or as an Observable:
+
+    this.route.paramMap
+      .map((params: ParamMap) => params.get('ponyId'))
+      .switchMap(id => this.ponyService.get(id))
+      .subscribe(pony => this.pony = pony);
+
 ## CanDeactivate
 
 The `CanDeactivate` interface now has an extra (optional) parameter,
