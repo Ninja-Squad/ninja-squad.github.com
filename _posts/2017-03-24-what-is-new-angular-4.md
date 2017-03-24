@@ -235,15 +235,15 @@ The internationalization is slowly improving with tiny things.
 For example, `ngPlural` is now simpler:
 
     <div [ngPlural]="value">
-      <ng-template *ngPluralCase="0">there is nothing</ng-template>
-      <ng-template *ngPluralCase="1">there is one</ng-template>
+      <ng-template ngPluralCase="0">there is nothing</ng-template>
+      <ng-template ngPluralCase="1">there is one</ng-template>
     </div>
 
 compared to what we had to write:
 
     <div [ngPlural]="value">
-      <ng-template *ngPluralCase="'=0'">there is nothing</ng-template>
-      <ng-template *ngPluralCase="'=1'">there is one</ng-template>
+      <ng-template ngPluralCase="=0">there is nothing</ng-template>
+      <ng-template ngPluralCase="=1">there is one</ng-template>
     </div>
 
 We added a complete chapter on internationalization in our ebook,
