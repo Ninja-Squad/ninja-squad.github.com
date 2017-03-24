@@ -252,4 +252,4 @@ with several use cases and best practices described if you want to learn more ab
 This release brings some nice features and a really welcome improvement of the generated code size,
 for the price of very few breaking changes that should not impact you a lot. The migration has been quite smooth for us.
 
-All our materials ([ebook](https://books.ninja-squad.com), [online training (Pro Pack)](https://angular-exercises.ninja-squad.com/) and [training](http://ninja-squad.com/training/angular)) are up-to-date with these changes if you want to lean more!
+All our materials ([ebook](https://books.ninja-squad.com), [online training (Pro Pack)](https://angular-exercises.ninja-squad.com/) and [training](http://ninja-squad.com/training/angular)) are up-to-date with these changes if you want to learn more!
