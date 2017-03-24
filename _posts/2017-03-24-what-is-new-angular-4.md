@@ -97,23 +97,29 @@ to use it in the element.
 
 It can be useful to store a sliced collection for example:
 
+{% raw %}
     <div *ngFor="let pony of ponies | slice:0:2 as total; index as = i">
       {{i+1}}/{{total.length}}: {{pony.name}}
     </div>
+{% endraw %}
 
 Or even more useful, to subscribe only once to a pipe with `async`. If `race` is an observable, instead of the bad and ugly:
 
+{% raw %}
     <div>
       <h2>{{ (race | async)?.name }}</h2>
       <small>{{ (race | async)?.date }}</small>
     </div>
+{% endraw %}
 
 you can now use the good:
 
+{% raw %}
     <div *ngIf="race | async as raceModel">
       <h2>{{ raceModel.name }}</h2>
       <small>{{ raceModel.date }}</small>
     </div>
+{% endraw %}
 
 # Pipes
 
@@ -122,8 +128,10 @@ you can now use the good:
 Angular 4 introduced a new `titlecase` pipe.
 It changes the first letter of each word into uppercase:
 
+{% raw %}
     <p>{{ 'ninja squad' | titlecase }}</p>
     <!-- will display 'Ninja Squad' -->
+{% endraw %}
 
 # Http
 
@@ -141,13 +149,17 @@ Previously, you had to do:
 
 Overriding a template in a test has also been simplified:
 
+{% raw %}
     TestBed.overrideTemplate(RaceComponent, '<h2>{{race.name}}</h2>');
+{% endraw %}
 
 Previously, you had to do:
 
+{% raw %}
     TestBed.overrideComponent(RaceComponent, {
       set: { template: '<h2>{{race.name}}</h2>' }
     });
+{% endraw %}
 
 # Service
 
