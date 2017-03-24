@@ -30,7 +30,7 @@ TypeScript 2.1+ is now required (it was 1.8+ before),
 and some interfaces have changed or are deprecated
 (rarely used in most applications, like `OpaqueToken` or `SimpleChange`).
 
-TypeScript [2.1](https://blogs.msdn.microsoft.com/typescript/2016/12/07/announcing-typescript-2-1/) and [2.2](https://blogs.msdn.microsoft.com/typescript/2017/02/22/announcing-typescript-2-2/) have brought really nice features you should check out. Angular 4 now supports them, and you can activate the new `strictNullChecks` TypeScript option for example.
+TypeScript [2.1](https://blogs.msdn.microsoft.com/typescript/2016/12/07/announcing-typescript-2-1/) and [2.2](https://blogs.msdn.microsoft.com/typescript/2017/02/22/announcing-typescript-2-2/) have brought really nice features you should check out. Angular 4 now supports them (and you will soon be able to activate the new `strictNullChecks` TypeScript option for example).
 
 So what does this new Angular version bring?
 Let's dive in!
@@ -233,11 +233,11 @@ compared to what we had to write:
     </div>
 
 We added a complete chapter on internationalization in our ebook,
-with several use cases and best practices described if you want to learn more!
+with several use cases and best practices described if you want to learn more about i18n!
 
 # Summary
 
 This release brings some nice features and a really welcome improvement of the generated code size,
-for the price of a few breaking changes that should not impact you a lot. The migration has been quite smooth for us.
+for the price of very few breaking changes that should not impact you a lot. The migration has been quite smooth for us.
 
 All our materials ([ebook](https://books.ninja-squad.com), [online training (Pro Pack)](https://angular-exercises.ninja-squad.com/) and [training](http://ninja-squad.com/training/angular)) are up-to-date with these changes if you want to lean more!
