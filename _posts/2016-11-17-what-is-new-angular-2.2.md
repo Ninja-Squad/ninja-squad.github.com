@@ -44,9 +44,11 @@ The Router Module offers a very handy directive called `RouterLinkActive`,
 allowing us to add a specific class if a link is active.
 This directive is now exported, and can be used in our templates via a local variable:
 
+    {% raw %}
     <a routerLink="/races/1" routerLinkActive #route="routerLinkActive">
      Race 1 {{ route.isActive ? '(here)' : ''}}
     </a>
+    {% endraw %}
 
 That's all for this small release.
 Check out our [ebook](https://books.ninja-squad.com) and [Pro Pack](https://angular-exercises.ninja-squad.com/) if you want to learn more about Angular!
