@@ -44,7 +44,7 @@ It will far easier for developers to know where the messages come from!
 # Core
 
 The main new feature of this release is the support
-of the upcoming TypeScript 2.3 version,
+of the brand new [TypeScript 2.3 version](https://blogs.msdn.microsoft.com/typescript/2017/04/27/announcing-typescript-2-3/),
 and the support of `strictNullChecks`.
 
 This option allows to check if you won't run into nullability problems in your app.
