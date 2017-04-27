@@ -10,7 +10,7 @@ description: "Angular 4 is out! Which new features are included?"
 🎉 Here we are, Angular 4.0.0 is out, right on schedule ! 🎉
 
 <p style="text-align: center;">
-  <a href="https://books.ninja-squad.com/angular" title="Become a ninja with Angular">
+  <a href="https://github.com/angular/angular/blob/master/CHANGELOG.md#400-invisible-makeover-2017-03-23" title="Become a ninja with Angular">
     <img class="img-rounded img-responsive" style="max-width: 100%" src="/assets/images/angular.png" alt="Angular logo" />
   </a>
 </p>
