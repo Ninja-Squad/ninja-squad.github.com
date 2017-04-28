@@ -30,7 +30,7 @@ So, what are the new features? Let's dive in!
 The internationalization module has a few bugfixes,
 and a notable new feature:
 the extracted messages file now has the source file for each message.
-It will far easier for developers to know where the messages come from!
+It will be far easier for developers to know where the messages come from!
 
     <trans-unit id="home.title" datatype="html">
       <source>Welcome to Ponyracer</source>
@@ -50,16 +50,23 @@ and the support of `strictNullChecks`.
 This option allows to check if you won't run into nullability problems in your app.
 Angular itself now has correct types.
 For example, when you try to retrieve a `FormControl` from a `FormGroup` with `get`,
-the returned type is `AbstractControl | null`
-(because the control might not exist).
-If you don't have the `strictNullCheck` option, you can do:
+the returned type is `AbstractControl | null`.
+
+That's because the control you are trying to get
+might not exist, and, if you are not careful,
+you are introducing a bug in your application by supposing it does exist.
+
+If you don't have the `strictNullChecks` option, you can do:
 
     static passwordMatch(control: FormGroup) {
       const password = control.get('password').value;
     }
 
 but when you enable it, the compiler will complain,
-and you have to do something like:
+and may save you by warning you that the control may not exist,
+and that your code should handle this case.
+
+You have to do something like:
 
     static passwordMatch(control: FormGroup) {
       const passwordCtrl = control.get('password');
@@ -72,6 +79,27 @@ to basically say to the compiler "Shut up":
     static passwordMatch(control: FormGroup) {
       const password = control.get('password')!.value;
     }
+
+It can also be really interesting for your application models.
+Let's say you have a `UserModel` representing your user,
+with a `surname` field that can be null.
+If you declare it correctly, the type should be:
+
+    interface UserModel {
+      surname: string|null;
+    }
+
+Then, with the `strictNullChecks` option activated,
+the compiler will help you when you use this model.
+For example:
+
+   this.user.surname.toLowerCase();
+
+will throw a warning as the `surname` field can be null.
+
+When you have complex entities coming from your server,
+it can really help you to have this kind of warning
+to avoid subtle and hard to avoid bugs.
 
 That's all for this small release!
 
