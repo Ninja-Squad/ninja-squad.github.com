@@ -26,7 +26,7 @@ The `!` post-fix operator is now also available in templates:
     {% endraw %}
 
 The code generated from the AoT compiler
-will then include the https://github.com/Microsoft/TypeScript/wiki/What%27s-new-in-TypeScript#non-null-assertion-operator[non-null assertion operator] too,
+will then include the [non-null assertion operator](https://github.com/Microsoft/TypeScript/wiki/What%27s-new-in-TypeScript#non-null-assertion-operator) too,
 allowing to do strict null checking in your templates also!
 
 # Forms
