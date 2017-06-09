@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Using Controller As in AngularJS"
-author: ["cexbrayat"]
+author: cexbrayat
 tags: ["AngularJS"]
 description: "La syntaxe 'controller as' devient la syntaxe privilégiée pour écrire les controllers AngularJS. Voyons à quoi elle ressemble et ce qu'elle apporte !"
 ---

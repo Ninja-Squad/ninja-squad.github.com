@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting started with AngularJS
-author: [cexbrayat]
+author: cexbrayat
 tags: [javascript, "AngularJS", formation]
 ---
 Si vous faites un peu de développement Web ces temps-ci, vous aurez noté l’incroyable popularité du framework AngularJS. Cette réputation n’est pas usurpée : développé par Google, ce framework a une réelle vision de ce que doit être le web et le développement web. La tâche du développeur est simplifiée grâce au binding bidirectionnel (le modèle met à jour la vue et vice versa), au système de modules, à l’injection de dépendance (bienvenu dans un monde testable simplement grâce à des mocks), à son abstraction de la communication serveur, à son framework de test end-to-end... Bref, vous l’aurez compris, AngularJS mérite que l’on s’y intéresse. Et quand on sait que Google prévoit d’intégrer les Web Components dans les prochaines versions, on sent bien que l’on ne pourra pas passer à côté très longtemps!

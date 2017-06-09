@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Dons à Dr Souris sur les ventes d'ebook
-author: ["clacote"]
+author: clacote
 tags: ["ebook", "livre", "AngularJS", "bilan", "caritatif", "dons"]
 description: La vente de notre ebook AngularJS était non seulement à prix libre, mais en soutien optionnel à une association caritative, Docteur Souris. Il est temps de reverser vos dons !
 ---

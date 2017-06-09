@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Les sélections de Code Story 2013
-author: [clacote]
+author: clacote
 tags: [codestory, concours]
 ---
 

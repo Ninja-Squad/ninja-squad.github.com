@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting started with lambdas - Part 2
-author: [cexbrayat]
+author: cexbrayat
 tags: ["Java 8", lambda]
 canonical: http://hypedrivendev.wordpress.com/2013/04/05/getting-started-with-lambdas-part-2
 ---

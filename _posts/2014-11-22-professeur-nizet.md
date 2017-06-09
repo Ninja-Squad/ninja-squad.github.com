@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Dis-moi, professeur Nizet...
-author: ["clacote", "jbnizet"]
+authors: [clacote, jbnizet]
 tags: ["java", "conseils", "web", "rest"]
 description: Nous avons la chance de travailler avec Jean-Baptiste Nizet, et de profiter de son talent de développeur au quotidien. Voici une compilation de ses bons conseils.
 ---

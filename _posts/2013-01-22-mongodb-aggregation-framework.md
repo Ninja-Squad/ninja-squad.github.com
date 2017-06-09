@@ -1,7 +1,7 @@
 ---
 layout: post
 title: MongoDb Aggregation Framework
-author: [cexbrayat]
+author: cexbrayat
 tags: [mongodb, aggregation, mapreduce, javascript]
 canonical: http://hypedrivendev.wordpress.com/2013/01/22/mongodb-aggregation-framework
 ---

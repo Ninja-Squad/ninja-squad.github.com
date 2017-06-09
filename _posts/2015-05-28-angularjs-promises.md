@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Traps, anti-patterns and tips about AngularJS promises"
-author: ["jbnizet"]
+author: jbnizet
 tags: ["AngularJS"]
 description: "AngularJS promises are not easy to understand, and are often misused. This
 posts lists a few traps I've fallen into or seen people fallen into."

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: JUG Summer Camp 2012
-author: [cexbrayat]
+author: cexbrayat
 tags: [java, jug, conference]
 ---
 Premier voyage de l'équipe <a href="http://ninja-squad.com">Ninja Squad</a>, direction La Rochelle pour le <a href="https://sites.google.com/site/jugsummercamp/">JUG Summer Camp</a>. Du Java, du Web, l'océan, une conf gratuite d'une journée avec une organisation irréprochable, il faudrait être difficile pour ne pas aimer!

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Ninja Squad - Un an!
-author: [acrepet, cexbrayat, clacote, jbnizet]
+authors: [acrepet, cexbrayat, clacote, jbnizet]
 tags: ["ninja squad", bilan, rétrospective]
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Les NoSSII à Devoxx France
-author: [clacote]
+author: clacote
 tags: [devoxx, partner, bof, interview]
 ---
 

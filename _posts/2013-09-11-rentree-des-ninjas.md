@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Les ninjas font leur rentrée!
-author: [acrepet]
+author: acrepet
 tags: [training]
 ---
 
@@ -23,4 +23,3 @@ Expérience enrichissante également sur l’aspect pédagogique, nous avons ten
 Nous avons aussi eu l’occasion d’assurer cette année plusieurs formations (Java, Agilité) à destination des professeurs ou des chercheurs, et nous allons intervenir prochainement pour un talk technique autour de BDD (Behavior Driven Development) lors d’une journée pour les professeurs d’IUT de toute la France.
 
 Bref, les Ninjas sont sensibles au domaine de l’éducation et espèrent, en étant présents dans les écoles ou les universités, continuer à véhiculer une image positive du métier de développeur, métier qu’ils sont fiers d’avoir choisi et qui est pour eux une arme redoutable pour contribuer à changer le monde!
-

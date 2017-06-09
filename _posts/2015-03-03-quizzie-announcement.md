@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Quizzie: quiz me if you can!"
-author: ["jbnizet"]
+author: jbnizet
 tags: ["ninja squad", "quizzie"]
 description: "Quizzie: quiz me if you can! Play and create public or private quizzes about subjects you like, and learn with fun."
 ---

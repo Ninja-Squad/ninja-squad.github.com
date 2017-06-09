@@ -1,15 +1,15 @@
 ---
 layout: post
 title: The poor man's JRebel
-author: [jbnizet]
+author: jbnizet
 tags: [java, productivity]
 ---
 
 *Un développeur*&nbsp;:
 
->Rhaa, malgré mes tests unitaires, je m'aperçois en testant mon application _lightweight full-stack enterprise web 3.0_ qu'il y a un bug&nbsp;! 
+>Rhaa, malgré mes tests unitaires, je m'aperçois en testant mon application _lightweight full-stack enterprise web 3.0_ qu'il y a un bug&nbsp;!
 >
->Il va me falloir un quart d'heure avec Maven pour tout rebuilder et redéployer l'appli dans mon serveur, juste pour corriger deux lignes de code. 
+>Il va me falloir un quart d'heure avec Maven pour tout rebuilder et redéployer l'appli dans mon serveur, juste pour corriger deux lignes de code.
 >
 >Ah, si seulement mon chef de projet scrum master responsable des achats nous achetait des licences de [JRebel](http://zeroturnaround.com/software/jrebel/), tout irait plus vite.
 

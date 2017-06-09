@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Git config - les options indispensables
-author: [cexbrayat]
+author: cexbrayat
 tags: [git]
 canonical: http://hypedrivendev.wordpress.com/2013/09/30/git-config-les-options-indispensables
 ---

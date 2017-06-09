@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Démarrer avec Git
-author: [cexbrayat]
+author: cexbrayat
 tags: [git]
 ---
 

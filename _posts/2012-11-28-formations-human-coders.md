@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Formations : Human Coders + Ninja Squad"
-author: [cexbrayat, clacote]
+authors: [cexbrayat, clacote]
 tags: [formation, java, git, play, partenariat, interview]
 ---
 
@@ -18,7 +18,7 @@ Pour en savoir un peu plus sur eux, nous leur avons posé quelques questions.
 **Qu’est-ce que Human Coders, et que voulez-vous défendre?**
 
 > Nous avons créé Human Coders pour que les développeurs puissent facilement apprendre et partager leurs connaissances. Un développeur qui se forme régulièrement aura plus de facilité à faire de meilleurs choix. Il pourra travailler avec de meilleures technologies. Ainsi, il sera plus efficace, il fera du code plus maintenable, il dormira mieux... et donc plus épanoui.
-> 
+>
 > Nous avons créé 4 services :  
 > - [Human Coders News](http://news.humancoders.com/) pour partager des ressources de qualité
 > - [Human Coders Formations](http://formations.humancoders.com/) pour rester à la pointe

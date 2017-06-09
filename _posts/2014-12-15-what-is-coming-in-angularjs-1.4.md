@@ -1,7 +1,7 @@
 ---
 layout: post
 title: What's coming in AngularJS 1.4
-author: ["cexbrayat"]
+author: cexbrayat
 tags: ["javascript", "AngularJS"]
 description: A new version of AngularJS (1.4) will be released in March next year. Let's have a look at its shiny new features!
 ---

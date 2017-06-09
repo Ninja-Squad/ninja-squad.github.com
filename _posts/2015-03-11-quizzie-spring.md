@@ -1,12 +1,12 @@
 ---
 layout: post
 title: "What we learnt from Quizzie: Spring"
-author: ["jbnizet"]
+author: jbnizet
 tags: ["ninja squad", "quizzie", "spring"]
 description: "Last week, I proudly announced Quizzie, and explained that doing it was a great way to learn new things. In this post and future posts, I'll share some of the things we learnt by making Quizzie. And I'll start with Spring."
 ---
 
-Last week, I [proudly announced](/2015/03/03/quizzie-announcement/) [Quizzie](https://quizzie.io), and 
+Last week, I [proudly announced](/2015/03/03/quizzie-announcement/) [Quizzie](https://quizzie.io), and
 explained that doing it was a great way to learn new things. In this post and future posts, I'll share some of the things we learnt
 by making Quizzie. And I'll start with Spring.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Une année en chiffres
-author: [clacote]
+author: clacote
 tags: ["ninja squad", "bilan", "argent", "bénéfices"]
 ---
 

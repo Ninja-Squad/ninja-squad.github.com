@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Ninjackaton - Java Lambda JDK8
-author: [cexbrayat, jbnizet, acrepet, clacote]
+authors: [cexbrayat, jbnizet, acrepet, clacote]
 tags: [ninjackaton, java, lambda]
 ---
 
