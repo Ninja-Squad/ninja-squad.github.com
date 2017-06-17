@@ -36,6 +36,10 @@ Two new validators joins the existing `required`, `minLength`, `maxLength`, `ema
 
     <input type="number" [(ngModel)]="user.age" min="0" max="130">
 
+**Update (2017-06-17):** The `min` and `max` validators have been temporarily
+removed from Angular in version 4.2.3, as they are a breaking change.
+They'll return in a major version, maybe 5.0.0.
+
 # Animations
 
 Animations received a lot of love in this release!
