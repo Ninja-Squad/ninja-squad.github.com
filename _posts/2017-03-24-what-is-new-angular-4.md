@@ -98,7 +98,7 @@ to use it in the element.
 It can be useful to store a sliced collection for example:
 
     {% raw %}
-    <div *ngFor="let pony of ponies | slice:0:2 as total; index as = i">
+    <div *ngFor="let pony of ponies | slice:0:2 as total; index as i">
       {{i+1}}/{{total.length}}: {{pony.name}}
     </div>
     {% endraw %}
