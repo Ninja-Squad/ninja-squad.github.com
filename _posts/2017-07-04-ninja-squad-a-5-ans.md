@@ -2,7 +2,7 @@
 layout: post
 title: 🎂 Ninja Squad a 5 ans 🥂&nbsp;!
 author: clacote
-tags: ["Ninja Squad", "bilan", "argent"]
+tags: ["ninja squad", "bilan", "argent"]
 description: "Ninja Squad fête ses 5 ans d'existence. Quelles leçons en tirer ?"
 ---
 
@@ -17,7 +17,7 @@ Nous célébrons donc notre mi-décennie&nbsp;: 5 glorieuses années d’existen
 
 Pour ceux qui ne nous connaîtraient pas, rappelons les principes qui régissent
 Ninja Squad.
-On est 4 fondateurs et 3 salariés développeurs à plein temps.
+On est 4 fondateurs dont 3 salariés développeurs à plein temps.
 Tous égaux, tous actionnaires, sans lien de subordination
 (pas de managers, pas de commerciaux). Les salaires sont aussi égaux,
 quelque soit l'activité ou l'expérience de chaque ninja.
@@ -27,7 +27,7 @@ qu'ils soient professionnels, dans l'open-source, ou plus personnels
 
 En 5 ans, nous n'avons pas dérogé à un autre principe fondateur&nbsp;:
 on ne facture que 4 jours par semaine, et nous réservons les vendredis
-au reste&nbsp;: side projects, administratif, ou... paresse.
+au reste&nbsp;: side projects, administratif, ou... procrastination.
 
 Bref, on s'est juste donné les moyens de faire notre métier/passion
 dans des conditions correctes, en bonne entente avec nos clients, et en se
@@ -35,7 +35,7 @@ faisant plaisir.
 
 Et les résultats sont au beau fixe. Nous avons le luxe de choisir nos missions,
 et d'en refuser bien plus qu'on n'en accepte (on les refile alors aux copains
-d'autres NoSSII, ou indépendants).
+d'autres <abbr title="Not Only SSII">NoSSII</abbr>, ou indépendants).
 Si nous n’avons pas encore notre dernier bilan annuel (qui vient de se clôturer au
 30 juin pour nous), il s'annonce encore meilleur que le précédent,
 comme chaque année.
@@ -51,7 +51,7 @@ En attendant, notre <abbr title="Chief Financial Officer">CFO</abbr> amateur Cé
 Nous nous distribuerons alors cette année encore une confortable prime annuelle,
 en plus de nos 2500€ de salaire net.
 Car comme chaque année, nous nous partageons les bénéfices en fin d'exercice
-(12k€ nets chacun à l'issue du précédent).
+(un peu moins de 20k€ nets chacun à l'issue du précédent).
 Du moins, tant que nous ne convaincrons pas JB de nous acheter des Tesla de fonction.
 
 Et que faisons-nous au quotidien, ces derniers temps&nbsp;?
@@ -182,6 +182,7 @@ un pack Super Premium).
 Dernièrement, des auteurs nous contactent même pour bénéficier de cette plateforme
 qui permet de coder et valider à son rythme des exercices,
 pour mettre en pratique la théorie apprise dans leur livre.
+Qui sait, peut-être que d'autres ebooks/formations en ligne préparés avec amour seront bientôt disponibles...
 
 Nos ebooks n'étaient au départ que la mise en forme de nos supports de formation.
 On a donc peut-être trouvé, finalement, le sous-produit qui constituera notre produit.&nbsp;🤞
