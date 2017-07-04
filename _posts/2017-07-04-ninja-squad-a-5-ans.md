@@ -9,41 +9,60 @@ description: "Ninja Squad fête ses 5 ans d'existence. Quelles leçons en tirer 
 # Né un 4 juillet
 
 La société Ninja Squad a été immatriculée le 4 juillet 2012.
-Nous célèbrons donc notre mi-décennie&nbsp;: 5 glorieuses années d’existence. 🎩🙆🕺
+Nous célébrons donc notre mi-décennie&nbsp;: 5 glorieuses années d’existence. 🎩🙆🕺
 
 <p style="text-align: center;">
     <img class="img-responsive" src="/assets/images/5ans/kbis.png" alt="Extrait KBis Ninja Squad" />
 </p>
 
-Les résultats sont au beau fixe.
-Nous n’avons pas encore notre dernier bilan annuel (qui vient de se clôturer au
-30 juin pour nous), mais il s'annonce encore meilleur que le précédent,
+Pour ceux qui ne nous connaîtraient pas, rappelons les principes qui régissent
+Ninja Squad.
+On est 4 fondateurs et 3 salariés développeurs à plein temps.
+Tous égaux, tous actionnaires, sans lien de subordination
+(pas de managers, pas de commerciaux). Les salaires sont aussi égaux,
+quelque soit l'activité ou l'expérience de chaque ninja.
+On ne compte pas les vacances, et on essaie d'encourager les projets de chacun,
+qu'ils soient professionnels, dans l'open-source, ou plus personnels
+(voyage, famille, etc.).
+
+En 5 ans, nous n'avons pas dérogé à un autre principe fondateur&nbsp;:
+on ne facture que 4 jours par semaine, et nous réservons les vendredis
+au reste&nbsp;: side projects, administratif, ou... paresse.
+
+Bref, on s'est juste donné les moyens de faire notre métier/passion
+dans des conditions correctes, en bonne entente avec nos clients, et en se
+faisant plaisir.
+
+Et les résultats sont au beau fixe. Nous avons le luxe de choisir nos missions,
+et d'en refuser bien plus qu'on n'en accepte (on les refile alors aux copains
+d'autres NoSSII, ou indépendants).
+Si nous n’avons pas encore notre dernier bilan annuel (qui vient de se clôturer au
+30 juin pour nous), il s'annonce encore meilleur que le précédent,
 comme chaque année.
 Nous le publierons ici quand il sera disponible.
 
-En attendant, notre <abbr title="Chied Financial Officier">CFO</abbr> amateur Cédric nous indique les chiffres suivants&nbsp;:
-365k€ de chiffre d’affaires, dont&nbsp;:
+En attendant, notre <abbr title="Chief Financial Officer">CFO</abbr> amateur Cédric nous indique les chiffres suivants&nbsp;:
+365k€ de chiffre d'affaires, dont&nbsp;:
 
 - 130k€ de prestations de développement&nbsp;;
 - 190k€ de formation et conseils, essentiellement sur Angular&nbsp;;
-- et 60k€ de ventes d'[ebooks](https://books.ninja-squad.com/) et de Pack Pro (notre [plateforme de formation à Angular](https://angular-exercises.ninja-squad.com/)).
+- et 60k€ de ventes d'[ebooks](https://books.ninja-squad.com/).
 
-Nous nous distribuerons cette année encore une confortable prime annuelle.
-Car comme chaque année, nous nous partageons les bénéfices en fin d'exercice.
+Nous nous distribuerons alors cette année encore une confortable prime annuelle,
+en plus de nos 2500€ de salaire net.
+Car comme chaque année, nous nous partageons les bénéfices en fin d'exercice
+(12k€ nets chacun à l'issue du précédent).
 Du moins, tant que nous ne convaincrons pas JB de nous acheter des Tesla de fonction.
 
-Et qu faisons-nous&nbsp;?
-Un principe n'a pas changé en 5 ans&nbp;: nous ne facturons que 4 jours par
-semaine, et réservons les vendredis au reste&nbsp;: side projects, administratif,
-ou... paresse.
-
-Au quotidien, ces derniers temps&nbsp;:
+Et que faisons-nous au quotidien, ces derniers temps&nbsp;?
 
 - Cédric Exbrayat, quand il ne donne pas une [formation Angular](http://ninja-squad.fr/formations/formation-angular)
 ou assure un audit à l'autre bout de l'Europe (et il est déjà booké jusqu'à la
 fin de l'année), ne fait plus de prestations longues
-de développement, car il se consacre à la laborieuse maintenance de son ebook
-Angular et de son pack d'exercices&nbsp;;
+de développement, car il se consacre à la maintenance de son
+[ebook Angular](https://books.ninja-squad.com/angular) et de son
+[ensemble d'exercices](https://angular-exercises.ninja-squad.com/),
+ce qui est très consommateur de temps&nbsp;;
 - Jean-Baptiste Nizet, quand il n'assure pas une formation Angular en remplacement
 de Cédric déjà pris ailleurs, fait du développement chez un client lyonnais
 historique où nous nous sentons bien&nbsp;;
@@ -57,11 +76,11 @@ aussi du développement chez ce même client historique lyonnais.
 ## Les éxonérations fiscales
 
 On entend souvent dire&nbsp;: "les trois premières années sont les plus dures".  
-Ou son contraire&nbsp;: "les premières années sont faciles, avec les éxonérations
+Ou son contraire&nbsp;: "les premières années sont faciles, avec les exonérations
 fiscales, c'est après que ça fait mal".
 
 Ninja Squad a, dès sa première année, payé des impôts, taxes, et prélèvements
-sociaux, sans aucune éxonération d'aucune sorte.
+sociaux, sans exonération d'aucune sorte.
 Et on en est plutôt fiers.
 Ce furent ainsi 92k€ sur le bilan précédent (probablement plus cette année),
 soit 28% de notre chiffre d'affaires de 323k€.
@@ -70,7 +89,7 @@ comme Google, Apple ou Amazon.
 
 On peut donc créer une société pérenne sans aucun financement extérieur,
 ni emprunt, ni aide privée ou publique, ni apport (au-delà du capital social
-dont le montant peut être négligeable).
+dont le montant peut être négligeable&nbsp;; pour nous, il est de `10101`€).
 
 ## Il est l'or, mon trésor
 
@@ -79,7 +98,7 @@ parce que tout le monde vous payera en retard.
 
 C'est comme un sport national, mais sans le frisson de la compétition.
 C'est devenu normal, tout le monde paie en retard, personne ne s'en étonne.  
-Et ce sont souvent les même entreprises qui respecteront scrupuleusement les
+Et ce sont souvent les mêmes entreprises qui respecteront scrupuleusement les
 contraintes pour toucher illégitimement leur Crédit Impôt Recherche chaque
 année qui feront tout/rien pour ne pas vous payer à temps.
 
@@ -88,11 +107,11 @@ année qui feront tout/rien pour ne pas vous payer à temps.
 </p>
 
 Mais ces entreprises ne sont même pas les pires.
-Les pires sont les <abbr title="Organismes Pariteurs Collecteurs Aggréés">OPCAs</abbr>,
+Les pires sont les <abbr title="Organismes Pariteurs Collecteurs Agréés">OPCAs</abbr>,
 ces organismes de formation privés qui reçoivent
 chaque année nos taxes professionnelles, comme le FAFIEC, l'AgefosPME,
 ou l'AFDAS, et qui fonctionnent encore comme au siècle dernier.  
-Il ne se contentent pas de vous payer avec plusieurs mois en retard,
+Il ne se contentent pas de vous payer systématiquement avec plusieurs mois de retard,
 après vous avoir demandé une tonne de documents&nbsp;:
 ils vous obligent en plus à passer par du courrier papier,
 et vous demandent parfois de refaire le travail plusieurs fois parce que leur
@@ -117,35 +136,45 @@ Mais comme c'est de l’open-source, il n'est pas question d'en vivre.
 On a sorti une plateforme de quiz, [Quizzie](https://quizzie.io),
 qui avait un business model en béton&nbsp;: gratuit pour un quiz public,
 payant pour un quiz privé).
-Ca a marché... moyennement&nbsp;: on a vendu un seul quiz.
-Mais très récemment, soit plus de deux ans après le lancement&nbsp;:
-on est en pleine phase de _growth_ comme disent les entrepreneurs digitaux
-de la Startup Nation.
+Ca a marché... moyennement&nbsp;: on n'a vendu que deux quiz, un premier
+au tout début, et un second très récemment&nbsp;🎉. Soit une croissance
+organique d'à peu-près... 0%&nbsp;😅.
 
-Plus récemment, on aide un [centre de santé communautaire stéphanois](https://globe42.wordpress.com/),
+En plus d'avoir trois ninjas dans l'organisation de [MiXiT à Lyon](https://mixitconf.org),
+on participe toujours à des conférences, que ce soit en tant qu'orateurs&nbsp;:
+
+- [Agnès et Cyril à Codeurs en Seine](/2016/11/24/keynote-codeurs-en-seine/)&nbsp;
+- [Cédric et Agnès à JFokus en Suède](https://www.youtube.com/watch?list=PLUQORQEatnJdHJjmPnbY_xXsYTQDjLoP-&v=Iun4wy7xHW0).
+
+ou en tant que simples spectateurs, comme [SudWeb](https://sudweb.fr) récemment,
+où on a pu échanger sur les modèles d'entreprise alternatifs comme le nôtre.
+
+Dernièrement, on aide un [centre de santé communautaire stéphanois](https://globe42.wordpress.com/),
 en leur réalisant bénévolement une application de gestion,
 qui préserve l'anonymat des migrants.
 
-De beaux projets, mais rien qui ne permette d'en vivre.  
+De beaux projets, mais rien qui permette d'en vivre.  
 Zach Holman disait [_The Product is the Byproduct_](https://zachholman.com/talk/product-is-the-byproduct/)&nbsp;:
 votre produit ne sera pas ce que vous imaginiez au départ,
 mais probablement le sous-produit que votre activité aura généré.
 
 Il faut croire que pour nous, ce fut l'expertise Angular de Cédric.
 Son [premier ebook sur AngularJS 1.x](https://books.ninja-squad.com/angularjs)
-eu déjà un succès respectable&nbsp;:
+eut déjà un succès respectable&nbsp;:
 plus de 14k€ de chiffre d’affaires, et [encore 1500€ de ventes l’année dernière](https://books.ninja-squad.com/angularjs/sales),
-sur la France essentiellement.
+sur la France essentiellement, ce qui ferait déjà rêver la majorité des auteurs
+de livres techniques qui sortent via un circuit d'édition classique.
 
-Et on a bien eu raison de le payer pendant [son tour du monde](/2015/04/14/angular2-ebook/)
-pour qu'il relise chaque commit de l'équipe Angular alors que le framework
+Et on a bien eu raison de le payer partiellement pendant
+[son tour du monde](/2015/04/14/angular2-ebook/)
+pour qu'il relise chaque commit de l'équipe Angular&nbsp;2, alors que le framework
 était en gestation, et qu'il commence à rédiger son second ebook.
 Il s'est pour le moment vendu pour plus de [85k€ au total dans le monde entier](https://books.ninja-squad.com/angular/sales)
 (dans 105 pays&nbsp;!),
 dont 60k€ sur [cette seule dernière année](https://books.ninja-squad.com/angular/sales?from=2016-07-01&to=2017-06-30).
 Et le Pack Pro, notre [plateforme de formation en ligne](https://angular-exercises.ninja-squad.com/),
 est en pleine explosion alors que les entreprises se mettent sérieusement à Angular ~~2 4~~ 5,
-donc on n'exclue pas de tutoyer, Inch'Allah,
+donc on n'exclut pas de tutoyer, Inch'Allah,
 les records de [_Discover Meteor_](http://blog.gumroad.com/post/97148570338/discover-meteor-case-study-making-300000-from-a)
 (même si on s'est interdit de notre côté de vendre des goodies à prix d'or dans
 un pack Super Premium).
