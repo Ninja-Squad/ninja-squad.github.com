@@ -111,7 +111,7 @@ Les pires sont les <abbr title="Organismes Pariteurs Collecteurs Agréés">OPCAs
 ces organismes de formation privés qui reçoivent
 chaque année nos taxes professionnelles, comme le FAFIEC, l'AgefosPME,
 ou l'AFDAS, et qui fonctionnent encore comme au siècle dernier.  
-Il ne se contentent pas de vous payer systématiquement avec plusieurs mois de retard,
+Ils ne se contentent pas de vous payer systématiquement avec plusieurs mois de retard,
 après vous avoir demandé une tonne de documents&nbsp;:
 ils vous obligent en plus à passer par du courrier papier,
 et vous demandent parfois de refaire le travail plusieurs fois parce que leur
