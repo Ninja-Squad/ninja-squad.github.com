@@ -127,7 +127,7 @@ scanner est en panne (_true story_, voir tweets ci-dessous)&nbsp;😅.
 
 # Votre produit est votre sous-produit
 
-Avec Ninja Squad, on rêvait de sortir un produit miracle et d'en vivre.
+Avec Ninja Squad, on rêvait (et on rêve encore) de sortir un produit et d'en vivre.
 
 On a sorti un outil open-source qui a son petit succès chez les développeurs
 Java&nbsp;: [DbSetup](http://dbsetup.ninja-squad.com/).
@@ -135,7 +135,7 @@ Mais comme c'est de l’open-source, il n'est pas question d'en vivre.
 
 On a sorti une plateforme de quiz, [Quizzie](https://quizzie.io),
 qui avait un business model en béton&nbsp;: gratuit pour un quiz public,
-payant pour un quiz privé).
+payant pour un quiz privé.
 Ca a marché... moyennement&nbsp;: on n'a vendu que deux quiz, un premier
 au tout début, et un second très récemment&nbsp;🎉. Soit une croissance
 organique d'à peu-près... 0%&nbsp;😅.
