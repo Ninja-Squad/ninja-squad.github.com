@@ -34,7 +34,7 @@ dans des conditions correctes, en bonne entente avec nos clients, et en se
 faisant plaisir.
 
 Et les résultats sont au beau fixe. Nous avons le luxe de choisir nos missions,
-et d'en refuser bien plus qu'on n'en accepte (on les refile alors aux copains
+et d'en refuser bien plus qu'on en accepte (on les refile alors aux copains
 d'autres <abbr title="Not Only SSII">NoSSII</abbr>, ou indépendants).
 Si nous n’avons pas encore notre dernier bilan annuel (qui vient de se clôturer au
 30 juin pour nous), il s'annonce encore meilleur que le précédent,
