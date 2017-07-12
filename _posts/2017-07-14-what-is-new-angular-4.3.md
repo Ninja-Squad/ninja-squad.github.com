@@ -14,8 +14,27 @@ Angular 4.3.0 is here!
   </a>
 </p>
 
-This is a fairly small release, without a lot of new features.
-This should be the last minor release before Angular 5, where we can expect some exciting stuff!
+This is a fairly big release, with a new `HttpClientModule`,
+a complete rewrite of the `HttpModule`💅!
+This should be the last minor release before Angular 5, when we can expect some other exciting stuff!
+
+# HttpClientModule
+
+The biggest feature of this release is without a doubt the new `HttpClientModule`. This module is a complete rewrite of the current `HttpModule` that had some defaults, like the obligation to extract the JSON from the response for every request, no mechanism to handle requests and responses in a generic fashion, and a quite awful testing API.
+
+The new `HttpClientModule` is a really cool alternative:
+it solves all these issues, and we migrated our applications fairly easily.
+And it was mostly code deletions💖.
+
+We made a little video to show you the difference,
+and a complete article to help you to migrate your applications.
+
+It showcases the brand new `HttpClient` service, how to write unit tests,
+and how to use the new interceptors!
+
+    TODO insert Youtube video here
+
+Check out [the article we wrote that explains](/2017/07/14/http-client-module/) in deep how to use this new module!
 
 # Router
 
@@ -52,9 +71,6 @@ As Angular developers, we can expect to have very precise type-checking in our t
 
 # Summary
 
-That's all for this release! The focus was mainly on fixing bugs in animations,
-and the team is also working on the internals as you can see with the compiler, but also with the build system (using [Bazel](https://bazel.build/)).
-
-The next release will be 5.0, and will have tons of interesting stuff, like the new Http module, with a simplified API!
+That's all for this release: the next important one will be 5.0!
 
 In the meantime, all our materials ([ebook](https://books.ninja-squad.com/angular), [online training (Pro Pack)](https://angular-exercises.ninja-squad.com/) and [training](http://ninja-squad.com/training/angular)) are up-to-date with these changes if you want to learn more!
