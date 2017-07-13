@@ -32,7 +32,10 @@ and a complete article to help you to migrate your applications.
 It showcases the brand new `HttpClient` service, how to write unit tests,
 and how to use the new interceptors!
 
-    TODO insert Youtube video here
+<div class="video-wrapper">
+    <iframe width="560" height="315" frameborder="0" allowfullscreen
+    src="https://www.youtube.com/embed/jIgUrfXmrLM"></iframe>
+</div>
 
 Check out [the article we wrote that explains](/2017/07/14/http-client-module/) in deep how to use this new module!
 

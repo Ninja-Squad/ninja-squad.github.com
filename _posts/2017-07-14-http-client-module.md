@@ -14,7 +14,10 @@ and why you should (spoiler: because it's way better 🦄).
 
 Here is a short video we made to show you what's new with this `HttpClientModule`.
 
-  TODO insert Youtube video here
+<div class="video-wrapper">
+    <iframe width="560" height="315" frameborder="0" allowfullscreen
+    src="https://www.youtube.com/embed/jIgUrfXmrLM"></iframe>
+</div>
 
 The rest of the article focuses on what you have to do to migrate your apps.
 It assumes an app generated with Angular CLI,
