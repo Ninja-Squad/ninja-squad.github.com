@@ -58,14 +58,16 @@ So a service which was looking like that:
 
     import { Injectable } from '@angular/core';
     import { Http } from '@angular/http';
+    import { Observable } from 'rxjs/Observable';
     import 'rxjs/add/operator/map';
+    import { UserModel } from './user.model';
 
     @Injectable()
     export class UserService {
 
       constructor(private http: Http) {}
 
-      list() {
+      list(): Observable<UserModel> {
         return this.http.get('/api/users')
           .map(response => response.json())
       }
@@ -75,13 +77,15 @@ can be rewritten as:
 
     import { Injectable } from '@angular/core';
     import { HttpClient } from '@angular/common/http';
+    import { Observable } from 'rxjs/Observable';
+    import { UserModel } from './user.model';
 
     @Injectable()
     export class UserService {
 
       constructor(private http: HttpClient) {}
 
-      list() {
+      list(): Observable<UserModel> {
         return this.http.get('/api/users');
       }
     }
@@ -115,8 +119,8 @@ You probably had something like:
         const userService = TestBed.get(UserService);
         const mockBackend = TestBed.get(MockBackend);
         // fake response
-        const users = [{ name: 'Cédric' }];
-        const response = new Response(new ResponseOptions({ body: users }));
+        const expectedUsers = [{ name: 'Cédric' }];
+        const response = new Response(new ResponseOptions({ body: expectedUsers }));
         // return the response if we have a connection to the MockBackend
         mockBackend.connections.subscribe((connection: MockConnection) => {
           expect(connection.request.url).toBe('/api/users');
@@ -124,14 +128,14 @@ You probably had something like:
           connection.mockRespond(response);
         });
 
-        userService.list().subscribe(users => {
-          expect(users.length).toBe(1);
+        userService.list().subscribe((users: Array<UserModel>) => {
+          expect(users).toEqual(expectedUsers);
         });
       }));
     });
 
-You can now use the new testing APIs,
-which are much, much nicer:
+You can now use the new testing API,
+which is much, much nicer:
 
     describe('UserService', () => {
 
@@ -144,18 +148,20 @@ which are much, much nicer:
         const userService = TestBed.get(UserService);
         const http = TestBed.get(HttpTestingController);
         // fake response
-        const users = [{ name: 'Cédric' }];
+        const expectedUsers = [{ name: 'Cédric' }];
 
-        userService.list().subscribe(users => {
-          expect(users.length).toBe(1);
+        let actualUsers = [];
+        userService.list().subscribe((users: Array<UserModel>) => {
+          actualUsers = users;
         });
 
-        http.expectOne('/api/users').flush(users);
+        http.expectOne('/api/users').flush(expectedUsers);
+
+        expect(actualUsers).toEqual(expectedUsers);
       });
     });
 
-That should remove a lot of errors you have,
-maybe all of them.
+That should remove a lot of errors you have or all of them.
 
 Maybe you were also adding headers or params to your requests.
 The new `HttpClient` allows it too:
@@ -170,10 +176,10 @@ In the example above, I set the JWT token needed in the `Authorization` header.
 This is something you probably repeat a lot of times in your services,
 as every request needs it.
 
-The new module introduces a very interesting feature: the interceptors.
+The new module introduces a very interesting feature: interceptors.
 These interceptors are called for every request and response,
 and allow to easily handle tasks like adding a header to every request,
-or handling error in a generic away for example.
+or handling errors in a generic way for example.
 
 First create your interceptor:
 
