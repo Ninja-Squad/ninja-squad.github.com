@@ -140,7 +140,7 @@ which are much, much nicer:
         providers: [UserService]
       }));
 
-      it('should list the users', async(() => {
+      it('should list the users', () => {
         const userService = TestBed.get(UserService);
         const http = TestBed.get(HttpTestingController);
         // fake response
@@ -151,7 +151,7 @@ which are much, much nicer:
         });
 
         http.expectOne('/api/users').flush(users);
-      }));
+      });
     });
 
 That should remove a lot of errors you have,
