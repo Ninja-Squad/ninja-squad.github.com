@@ -24,7 +24,7 @@ The biggest feature of this release is without a doubt the new `HttpClientModule
 
 The new `HttpClientModule` is a really cool alternative:
 it solves all these issues, and we migrated our applications fairly easily.
-And it was mostly code deletions💖.
+And it was mostly code deletions&nbsp;💖.
 
 We made a little video to show you the difference,
 and a complete article to help you to migrate your applications.
@@ -34,7 +34,7 @@ and how to use the new interceptors!
 
 <div class="video-wrapper">
     <iframe width="560" height="315" frameborder="0" allowfullscreen
-    src="https://www.youtube.com/embed/jIgUrfXmrLM"></iframe>
+    src="https://www.youtube.com/embed/8qEvXZup0AU"></iframe>
 </div>
 
 Check out [the article we wrote that explains](/2017/07/14/http-client-module/) in deep how to use this new module!
