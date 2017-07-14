@@ -15,7 +15,7 @@ Angular 4.3.0 is here!
 </p>
 
 This is a fairly big release, with a new `HttpClientModule`,
-a complete rewrite of the `HttpModule`💅!
+a complete rewrite of the `HttpModule`&nbsp;💅!
 This should be the last minor release before Angular 5, when we can expect some other exciting stuff!
 
 # HttpClientModule
@@ -41,7 +41,7 @@ Check out [the article we wrote that explains](/2017/07/14/http-client-module/) 
 
 # Router
 
-A few events have been added to the router, if you need to know when a resolver or a guard are run:
+A few events have been added to the router, if you need to know when a resolver or a guard is run:
 
 - `ResolveStart`, `ResolveEnd`
 - `GuardsCheckStart`, `GuardsCheckEnd`

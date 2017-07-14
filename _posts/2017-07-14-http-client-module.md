@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to use HttpClientModule?
+title: Angular - How to use HttpClientModule?
 author: cexbrayat
 tags: ["Angular 2", "Angular", "Angular 4"]
 description: "Angular 4.3 introduced the new HttpClientModule. How do we migrate our applications to use it?"
@@ -10,7 +10,7 @@ Angular 4.3 introduced a new module, `HttpClientModule`,
 which is a complete rewrite of the existing `HttpModule`.
 
 This article will show you how to easily migrate to this new module,
-and why you should (spoiler: because it's way better 🦄).
+and why you should (spoiler: because it's way better&nbsp;🦄).
 
 Here is a short video we made to show you what's new with this `HttpClientModule`.
 
