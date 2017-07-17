@@ -37,7 +37,7 @@ and how to use the new interceptors!
     src="https://www.youtube.com/embed/8qEvXZup0AU"></iframe>
 </div>
 
-Check out [the article we wrote that explains](/2017/07/14/http-client-module/) in deep how to use this new module!
+Check out [the article we wrote that explains](/2017/07/17/http-client-module/) in deep how to use this new module!
 
 # Router
 
