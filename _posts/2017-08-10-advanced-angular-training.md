@@ -30,9 +30,9 @@ To give you an overview, the training deep dives in:
 - **testing**: component tests, how to leverage dependency injection, asynchronous tests;
 - **router**: how to split your application in modules, lazy-loading, the traps to avoid with dependency injection, how to use guards and resolvers;
 - **Angular internals**: how does it work under the hood, change detection, zones, JiT and AoT compilation;
-- **performance**: change detection strategies, element tracking, the `async` pipe and its traps, how to escape Angular's change detection
-- **internationalization**: what's i18n, how to build a multi-language application, best practices
-- **forms**: nested forms, dynamic forms, build your own form component with `ControlValueAccessor`
+- **performance**: change detection strategies, element tracking, the `async` pipe and its traps, how to escape Angular's change detection;
+- **internationalization**: what's i18n, how to build a multi-language application, best practices;
+- **forms**: nested forms, dynamic forms, build your own form component with `ControlValueAccessor`;
 - and a lot of tips on how to be ready for **production**, how to set up a **continuous integration**, etc.
 
 This training also relies on our online training,
