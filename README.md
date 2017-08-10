@@ -8,14 +8,28 @@ Run boot2docker (check that the port 4000 is open on your VM) and launch:
 
 ## Run with Ruby
 
-Install Ruby 2.0+.
-Install Github pages :
+Install [rvm](https://rvm.io/) (Ruby Version Manager):
 
-    gem install github-pages
+    curl -sSL https://get.rvm.io | bash -s stable
 
-Run the blog :
+Install Ruby 2.3.1:
 
-    jekyll serve --watch --incremental --future
+    rvm install ruby-2.3.1
+
+Why 2.3.1? Because latest github-pages (as of August 2017) only works with Ruby 2.3, and not with latest Ruby 2.4.
+A `.ruby-version` file enforces this 2.3.1 version.
+
+Install [bundler](http://bundler.io/) gem:
+
+    gem install bundler
+
+Install required gem files (see `Gemfile` file):
+
+    bundle install
+
+Run the blog:
+
+    ./blog.sh
 
 ## Principe de fonctionnement
 
