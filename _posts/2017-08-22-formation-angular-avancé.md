@@ -18,7 +18,7 @@ Tout au long de ce chemin, nous avons appris pas mal de choses sur Angular,
 son fonctionnement, son éco-système et comment construire de meilleures applications.
 
 C'est pour cela que nous sommes très contents d'annoncer **notre nouvelle formation sur 2 jours&nbsp;:
-[Angular avancé: de Ninja à Héros](http://ninja-squad.com/formations/formation-angular-advanced)!**
+[Angular avancé: de Ninja à Héros](http://ninja-squad.com/formations/formation-angular-advanced)&nbsp;!**
 
 Cette formation va au-delà des fondamentaux
 et se destine à des développeurs qui cherchent des sujets plus avancés et des bonnes pratiques.
