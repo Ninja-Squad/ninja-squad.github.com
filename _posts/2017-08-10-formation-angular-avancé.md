@@ -10,14 +10,14 @@ Angular a presque un an, et est bientôt en version 5.0&nbsp;!
 
 Le premier commit date de 3 ans, et nous avons commencé à l'utiliser dès le tout début.
 Nous avons enseigné les fondamentaux d'Angular à des centaines de développeurs en personne,
-notre [ebook](https://books.ninja-squad.com/angular) a des milliers de lecteurs,
+notre [ebook](https://books.ninja-squad.com/angular) à des milliers de lecteurs,
 et notre [formation en ligne (Pack Pro)](https://angular-exercises.ninja-squad.com/)
 a touché quelques centaines de développeurs supplémentaires tout autour du monde&nbsp;!
 
 Tout au long de ce chemin, nous avons appris pas mal de choses sur Angular,
 son fonctionnement, son éco-système et comment construire de meilleures applications.
 
-C'est pour cela que nous sommes très contents d'annoncer **notre nouvelle formation sur 2 jours&nbsp;: 
+C'est pour cela que nous sommes très contents d'annoncer **notre nouvelle formation sur 2 jours&nbsp;:
 [Angular avancé: de Ninja à Héros](http://ninja-squad.com/formations/formation-angular-advanced)!**
 
 Cette formation va au-delà des fondamentaux
@@ -38,10 +38,10 @@ Pour vous donner un aperçu, la formation couvre&nbsp;:
 Cette formation s'appuie également sur notre
 [Pack Pro](https://angular-exercises.ninja-squad.com/)
 que vous pouvez acheter avec notre [ebook](https://books.ninja-squad.com/angular).
-Nous ferons quelques uns des exercices les plus avancés ensemble
-pour que tu puisses mettre en pratique ces nouveaux concepts&nbsp;!
+Nous ferons quelques-uns des exercices les plus avancés ensemble
+pour que vous puissiez mettre en pratique ces nouveaux concepts&nbsp;!
 
-Ho, et, comme toujours, la formation est **30% moins chère** si tu es un développeur indépendant,
+Ho, et, comme toujours, la formation est **30% moins chère** si vous êtes un développeur indépendant,
 un contributeur open-source,
-un organisateur de conférence ou si tu cherches actuellement un emploi.
-Pour plus de détails, regarde notre [site](http://ninja-squad.com/formations)&nbsp;!
+un organisateur de conférence ou si vous cherchez actuellement un emploi.
+Pour plus de détails, regardez notre [site](http://ninja-squad.com/formations)&nbsp;!
