@@ -62,8 +62,11 @@ You can learn more about the plans for forms in this [design docs](https://docs.
 
 ## Http
 
-The new `HttpClient` [introduced in 4.3](http://blog.ninja-squad.com/2017/07/17/http-client-module/)
-has been slightly improved with Angular 5.0, as we are now able to directly use object literals
+The new `HttpClient` [introduced in 4.3](/2017/07/17/http-client-module/).
+The old `@angular/http` module is now officially deprecated and replaced by `@angular/common/http`
+(you can expect that `@angular/http` will be removed in Angular&nbsp;6.0).
+
+`HttpClient` has been slightly improved with Angular&nbsp;5.0, as we are now able to directly use object literals
 as headers or parameters, whereas we had to use the classes `HttpHeaders` and `HttpParams`.
 
 So this kind of code:
@@ -81,10 +84,10 @@ can now be simplified into:
 ## Animations
 
 Two new transition aliases are introduced: `:increment` and `:decrement`.
-Let's say you wanted to animate a carousel with 5 elements,
+Let's say you want to animate a carousel with 5 elements,
 with a nice animation based on the index of the element displayed.
 You had to declare a transition like: `transition('0 => 1, 1 => 2, 2 => 3, 3 => 4', ...)`.
-With Angular 5, you can now use `transition(':increment')`!
+With Angular&nbsp;5, you can now use `transition(':increment')`!
 
 ## Router
 
@@ -137,9 +140,14 @@ or per component:
     export class HomeComponent implements OnInit, OnDestroy {
 
 If you really want a whitespace to be kept,
-you can use a special entity called `&ngsp`.
-It looks like `&nbsp` with a typo, but it is not:
+you can use a special entity called `&ngsp;`.
+It looks like `&nbsp;` with a typo, but it is not:
 it is a special character that the Angular compiler will transform in a whitespace.
+Note that it will only keep one whitespace, even if add several ones, like `&ngsp;&ngsp;`.
+If you really want to preserve the whitespaces in a fragment of a template,
+you can use `ngPreserveWhitespaces`:
+
+   <div ngPreserveWhitespaces>hello     there</div>
 
 ## Pipes, i18n and breaking changes
 
@@ -194,7 +202,7 @@ For example, with canadian dollars:
     {% endraw %}
 
 The date pipe has several breaking changes.
-I won't list them, it's easier to check out the release note.
+I won't list them, it's easier to check out the [commit message](https://github.com/angular/angular/commit/079d884).
 
 All things are not lost if you want to keep the "old" pipes for now,
 as they have been kept in a new module `DeprecatedI18NPipesModule`,
@@ -242,10 +250,10 @@ and not `useValue`, `useFactory`, `useExisting`...
 So I don't think many apps will be impacted :)
 
 On the other hand, this change allows Angular to not depend on the `Reflect` API,
-and that gives us (slightly) smaller bundles \o/
+and that gives us (slightly) smaller bundles \o/.
 
 Another change is the removal of the ES5 API to write Angular applications
 without decorators.
-This API was depending on `Reflect` and is now gone.
+This API was also depending on `Reflect` and is now gone.
 
 In the meantime, all our materials ([ebook](https://books.ninja-squad.com/angular), [online training (Pro Pack)](https://angular-exercises.ninja-squad.com/) and [training](http://ninja-squad.com/training/angular)) are up-to-date with these changes if you want to learn more!
