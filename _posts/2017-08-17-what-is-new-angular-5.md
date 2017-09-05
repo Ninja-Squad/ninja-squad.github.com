@@ -14,6 +14,25 @@ Angular 5.0.0 is here!
   </a>
 </p>
 
+## Angular compiler is now much faster!
+
+As you may know, Angular has two ways to work:
+- one where the templates are compiled at runtime (Just in time, JiT)
+- one where the templates are compiled at buildtime (Ahead of time, AoT)
+
+The second way is far better, as the work is done on the developer's machine at build time,
+and not for each user at runtime, making the application start faster.
+It also allows to check all the templates of the application and catch errors early.
+But this compiler was a bit slow before Angular 5.0, and as a result,
+most of us were using the JiT mode in development and the Aot mode only for production
+(that's what Angular CLI does by default).
+
+The main reason for this slowliness was that every template change was triggering a full compilation of the application! That's no longer the case: leveraging the new "pipeline tranformer" hability of the TypeScript compiler (introduced in TS 2.3, as I was talking about in [my previous article](/2017/07/17/what-is-new-angular-4.3/)), the Angular compiler, `ngc`, is now able to only compile what is necessary with the introdution of a new `watch` mode:
+
+    ngc --watch
+
+We can expect the Angular CLI to use it and it will probably become the default mode very soon!
+
 ## Forms
 
 Forms got the most of this update, with a tiny but really useful addition to the API:
@@ -26,8 +45,10 @@ and also the `updateOn` option.
 Its value can be:
 
 - `change`, it's the default: the value and validity are updated on every change;
-- `blur`, the value and validity are then updated only when the field lose the focus.
+- `blur`, the value and validity are then updated only when the field lose the focus;
 - `submit`, the value and validity are then updated only when the parent form is submitted.
+
+So you can now do something like this:
 
     this.passwordCtrl = new FormControl('', {
       validators: Validators.required,
@@ -46,13 +67,6 @@ This is of course also possible in template-driven form,
 with the `ngModelOptions` input of the `NgModel` directive:
 
     <input [(ngModel)]="user.login" [ngModelOptions]="{ updateOn: 'blur' }">
-
-or on a group of fields with the `ngModelGroupOptions` input of the `NgModelGroup` directive:
-
-    <div ngModelGroup="address" [ngModelGroupOptions]="{ updateOn: 'blur' }" required>
-      <input name="street" [ngModel]="address.street">
-      <input name="city" [ngModel]="address.city">
-    </div>
 
 or the new `ngFormOptions` input of the `NgForm` directive to apply on all fields:
 
@@ -164,7 +178,7 @@ and that can break your application.
 Using a different locale than the default one (`en-US`) now requires to load additional locale data:
 
     import { registerLocaleData } from '@angular/common';
-    import localeFr from '@angular/common/i18n_data/locale_fr';
+    import localeFr from '@angular/common/locales/fr';
 
     registerLocaleData(localeFr);
 
