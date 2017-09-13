@@ -8,9 +8,7 @@ description: "Angular CLI 1.4 is out! Which new features are included?"
 
 [Angular CLI 1.4.0](https://github.com/angular/angular-cli/releases/tag/v1.4.0) is out with some nice new features!
 
-You can check out what files you need to update using [angular-cli-diff](https://github.com/cexbrayat/angular-cli-diff),
-for example if you are currently using 1.2.1:
-[angular-cli-diff/compare/1.2.1…1.4.0](https://github.com/cexbrayat/angular-cli-diff/compare/1.2.1...1.4.0)
+If you want to upgrade to 1.4.0 without pain (or to any other version, BTW), I have created a Github project to help: [angular-cli-diff](https://github.com/cexbrayat/angular-cli-diff). Choose the version you're currently using (1.2.1 for example), and the target version (1.4.0 for example), and it gives you a diff of all files created by the CLI: [angular-cli-diff/compare/1.2.1…1.4.0](https://github.com/cexbrayat/angular-cli-diff/compare/1.2.1...1.4.0). You have no excuse for staying behind anymore!
 
 Let's see what new features we have!
 
@@ -23,7 +21,7 @@ and the components, services, pipes...
 All the blueprints are now bundled in [`schematics/@angular`](https://github.com/angular/devkit/tree/master/packages/schematics/angular)
 and have been removed from the CLI itself.
 
-Really interesting as it opens the possibility to have other blueprints than the official one!
+Really interesting as it opens the possibility to have other blueprints than the official ones!
 This is a feature that other frameworks also have (like [Vue CLI](https://github.com/vuejs/vue-cli#official-templates) or [Ember CLI](https://ember-cli.com/extending/)).
 
 We can expect to see new "schematics" for Angular CLI really soon,
@@ -33,7 +31,7 @@ The CLI now has an option to specify the blueprint you want to use when you gene
 
     ng new --collection my-custom-schematics project-name
 
-You can of course define your own schematics, even we did not give it a try yet.
+You can of course define your own schematics, but we did not give it a try yet.
 
 ## Serve path
 
@@ -42,7 +40,7 @@ A new option for `ng serve` is available to specify a path where you want the ap
     ng serve --serve-path hello
 
 will serve the application at `http://localhost:4200/hello`.
-This is a simpler way to configure it, even if you could do the same with the `--base-href` and `--deploy-url` flags.
+This is a simple way to configure it, even if you could do the same with the `--base-href` and `--deploy-url` flags.
 
 ## Missing translation strategy
 
@@ -51,7 +49,7 @@ you can specify directly from the CLI the strategy you want to adopt when a tran
 
     ng build --aot --locale fr --i18n-file src/i18n/messages.fr.xlf --missing-translation error
 
-The `--missing-translation` error flag is available for the `serve` and `build` command,
+The `--missing-translation` error flag is available for the `serve` and `build` commands,
 and accepts the values `error`, `warning` or `ignore`.
 
 ## Scripts sourcemaps and minifications
