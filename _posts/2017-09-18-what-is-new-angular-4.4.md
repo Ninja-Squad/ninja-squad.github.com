@@ -49,7 +49,7 @@ If you really want a whitespace to be kept,
 you can use a special entity called `&ngsp;`.
 It looks like `&nbsp;` with a typo, but it is not:
 it is a special character that the Angular compiler will transform in a whitespace.
-Note that it will only keep one whitespace, even if add several ones, like `&ngsp;&ngsp;`.
+Note that it will only keep one whitespace, even if add several consecutive ones, like `&ngsp;&ngsp;`.
 If you really want to preserve the whitespaces in a fragment of a template,
 you can use `ngPreserveWhitespaces`:
 
@@ -85,10 +85,10 @@ can be used as:
 
 That's all for this release: the next important one will be 5.0!
 
-If you missed, there have been more movement on Angular CLI lately.
+The Angular CLI also had interesting changes lately.
 Check out our blog posts if you missed them:
 
 - [Angular CLI 1.3](/2017/08/10/angular-cli-1.3/)
 - [Angular CLI 1.4](/2017/09/14/angular-cli-1.4/)
 
-In the meantime, all our materials ([ebook](https://books.ninja-squad.com/angular), [online training (Pro Pack)](https://angular-exercises.ninja-squad.com/) and [training](http://ninja-squad.com/training/angular)) are up-to-date with these changes if you want to learn more!
+All our materials ([ebook](https://books.ninja-squad.com/angular), [online training (Pro Pack)](https://angular-exercises.ninja-squad.com/) and [training](http://ninja-squad.com/training/angular)) are up-to-date with these changes if you want to learn more!
