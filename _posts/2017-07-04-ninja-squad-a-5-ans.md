@@ -202,3 +202,12 @@ Cet article sera mis à jour prochainement avec notre dernier bilan définitif,
 pour ceux qui ont une appétence ou une curiosité pour les chiffres.
 
 <div style="width:100%;height:0;padding-bottom:78%;position:relative;"><iframe src="https://giphy.com/embed/26BRL7YrutHKsVtJK" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/yosub-birthday-26BRL7YrutHKsVtJK">via GIPHY</a></p>
+
+---
+
+<a id="update-bilan" />
+
+## Mise à jour&nbsp;: les chiffres officiels
+
+Comme promis, pour les passionnés de chiffres,
+nous avons publié [notre bilan comptable 2016-2017](/2017/09/22/bilan-comptable-2016-2017/).
