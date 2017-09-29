@@ -14,7 +14,7 @@ Angular 5.0.0 is here!
   </a>
 </p>
 
-## Angular compiler is now much faster!
+## Angular compiler is now much faster and more powerful!
 
 As you may know, Angular has two ways to work:
 - one where the templates are compiled at runtime (Just in time, JiT)
@@ -24,14 +24,69 @@ The second way is far better, as the work is done on the developer's machine at 
 and not for each user at runtime, making the application start faster.
 It also allows to check all the templates of the application and catch errors early.
 But this compiler was a bit slow before Angular 5.0, and as a result,
-most of us were using the JiT mode in development and the Aot mode only for production
+most of us were using the JiT mode in development and the AoT mode only for production
 (that's what Angular CLI does by default).
 
-The main reason for this slowliness was that every template change was triggering a full compilation of the application! That's no longer the case: leveraging the new "pipeline tranformer" hability of the TypeScript compiler (introduced in TS 2.3, as I was talking about in [my previous article](/2017/07/17/what-is-new-angular-4.3/)), the Angular compiler, `ngc`, is now able to only compile what is necessary with the introdution of a new `watch` mode:
+The main reason for this slowliness was that every template change was triggering a full compilation of the application! That's no longer the case: leveraging the new "pipeline tranformer" ability of the TypeScript compiler (introduced in TS 2.3, as I was talking about in [my previous article](/2017/07/17/what-is-new-angular-4.3/)), the Angular compiler, `ngc`, is now able to only compile what is necessary with the introdution of a new `watch` mode:
 
     ngc --watch
 
-We can expect the Angular CLI to use it and it will probably become the default mode very soon!
+A new flag `--diagnostics` has also been introduced to print how much time the compiler spent on a compilation in watch mode.
+
+We can expect the Angular CLI to use this new watch mode and it will probably become the default mode very soon!
+
+The compiler can also check more thoroughly your templates, with the new option `fullTemplateTypeCheck`.
+It can for example catch that a pipe is not used with the proper type:
+
+    {% raw %}
+    <!-- lowercase expects a string -->
+    <div>{{ 12.3 | lowercase }}</div>
+    {% endraw %}
+
+This example will compile with `ngc` but not if `fullTemplateTypeCheck` is activated:
+
+    Argument of type '12.3' is not assignable to parameter of type 'string'
+
+It can also analyze the local variables referencing a directive in your templates.
+For example, let's say you created a variable to reference a `ngModel`,
+and want to access the `hasError()` method, but made a typo:
+
+    {% raw %}
+    <input [(ngModel)]="user.password" required #loginCtrl="ngModel">
+    <!-- typo in `hasError()` method -->
+    <div *ngIf="loginCtrl.hasEror('required')">Password required</div>
+    {% endraw %}
+
+This will also compile with `ngc`, except if `fullTemplateTypeCheck` is activated:
+
+    Method 'hasEror' does not exist on type ''. Did you mean 'hasError'?
+
+That's super cool! Right now the default value of `fullTemplateTypeCheck` is `false`,
+but we can expect to see it become `true` in a future release.
+
+The compiler is now also smarter to understand factories,
+and avoids us to write this weird trick:
+
+    export function webSocketFactory() {
+      return WebSocket;
+    }
+
+    @NgModule({
+      providers: [
+        { provide: WEBSOCKET, useFactory: webSocketFactory },
+      ]
+    })
+    export class AppModule {
+
+You can now directly write:
+
+    @NgModule({
+      providers: [
+        { provide: WEBSOCKET, useFactory: () => WebSocket },
+      ]
+    })
+    export class AppModule {
+
 
 ## Forms
 
@@ -110,6 +165,8 @@ The router gains two new events to track the activation of individual routes:
 - `ChildActivationStart`
 - `ChildActivationEnd`
 
+These events are introduced to give a more fine-grained control than using the global `NavigationStart`/`NavigationEnd` events, if you for example want to display a spinner while some children components are loading.
+
 ## i18n
 
 The messages extracted from your application now include the interpolations used in the template.
@@ -126,6 +183,19 @@ Now:
 
 This can be really helpful for the translators,
 as they now have a hint about the interpolations.
+
+A notable change in i18n is that the i18n comments are now deprecated.
+In Angular 4, you could use:
+
+    {% raw %}
+    <!--i18n: @@home.justText -->I don't output an element, just text<!--/i18n-->
+    {% endraw %}
+
+Starting with Angular 5, you are encouraged to use an already possible alternative with `ng-container`:
+
+    {% raw %}
+    <ng-container i18n="@@home.justText">I don't output an element, just text</ng-container>
+    {% endraw %}
 
 ## Pipes, i18n and breaking changes
 
