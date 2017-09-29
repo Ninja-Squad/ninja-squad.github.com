@@ -127,42 +127,6 @@ Now:
 This can be really helpful for the translators,
 as they now have a hint about the interpolations.
 
-## Performance
-
-A few things changed internally to boost performance,
-and a new compiler flag appeared that allows to remove extra whitespaces.
-This can look minor, but it can improve the generated code size,
-and also speed the components creation.
-But it can also break your layout if you rely on several consecutive spaces in your templates :)
-That's why the default for the `preserveWhitespaces` flag is `true` for now,
-and might become `false` one day. But right now, you have to activate it manually.
-
-You can configure it globally:
-
-    platformBrowserDynamic().bootstrapModule(AppModule, {
-      preserveWhitespaces: false
-    });
-
-or per component:
-
-
-    @Component({
-      selector: 'pr-home',
-      templateUrl: './home.component.html',
-      preserveWhitespaces: false
-    })
-    export class HomeComponent implements OnInit, OnDestroy {
-
-If you really want a whitespace to be kept,
-you can use a special entity called `&ngsp;`.
-It looks like `&nbsp;` with a typo, but it is not:
-it is a special character that the Angular compiler will transform in a whitespace.
-Note that it will only keep one whitespace, even if add several ones, like `&ngsp;&ngsp;`.
-If you really want to preserve the whitespaces in a fragment of a template,
-you can use `ngPreserveWhitespaces`:
-
-   <div ngPreserveWhitespaces>hello     there</div>
-
 ## Pipes, i18n and breaking changes
 
 More importantly, the pipes that were helping with the internationalization (`number`, `percent`, `currency`, `date`)
