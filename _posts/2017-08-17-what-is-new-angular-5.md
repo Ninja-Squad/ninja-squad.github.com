@@ -262,6 +262,32 @@ that you can import if you want to still use them:
     })
     export class AppModule {
 
+## Service Workers
+
+Angular has a package called `@angular/service-worker`,
+which has been in beta for quite some time and in a different repository.
+It received a little bit of love with Angular 5, as it graduated to the main repository,
+so we can expect it to be brought to the same quality standards than the other packages,
+and to be out of beta soon!
+
+If you don't know about service workers, you can think about them like a small proxy in your browser.
+If you activate them in an app, it allows to cache static assets,
+and to not fetch them on every reload, improving performances.
+You can even go offline, and your app can still respond!
+
+`@angular/service-worker` is a small package, but packed with cool features.
+Did you know that if you add it to your Angular CLI application,
+and turn a flag on (`"serviceWorker": true` in `.angular-cli.json`),
+the CLI will automatically generates all the necessary to cache your static assets by default?
+And it will only download what has changed when you deploy a new version,
+allowing blazing fast application start!
+
+But it can even go further, allowing to cache external resources (like fonts, icons from a CDN...),
+route redirection and even dynamic content caching (like calls to your API),
+with different strategies possible (always fetch for fresh data, or always serve from cache for speed...).
+The package also offers a module called `ServiceWorkerModule` that you can use in your application to react
+to push events and notifications!
+
 
 ## Other breaking changes
 
