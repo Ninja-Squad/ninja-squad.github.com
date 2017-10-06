@@ -166,7 +166,9 @@ JB :
     angular:
       title: Angular
       dates:
-        - 22-24 aout à Lyon
-        - 12-14 sept. à Paris
         - 14-16 nov. à Lyon
-        - 12-14 dec. à Paris
+        - 11-13 dec. à Paris
+    angular-advanced:
+      title: Angular avancé
+      dates:
+        - 14-15 dec. à Paris
