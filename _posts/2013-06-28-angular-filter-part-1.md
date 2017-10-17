@@ -101,7 +101,7 @@ Un certain nombre de patterns sont disponibles (avec un rendu différent selon l
 </pre>
 {% endraw %}    
 
-- json : moins connu, ce filtre permet d'afficher l'objet au format JSON. Il est également moins utile, car, par défaut, afficher un object avec la notation '{{ }}' convertit l'objet en JSON.
+- json : moins connu, ce filtre permet d'afficher l'objet au format JSON. Il est également moins utile, car, par défaut, afficher un object avec la notation {% raw %}`{{ }}`{% endraw %} convertit l'objet en JSON.
 {% raw %}
 <pre>
   <code class="javascript">

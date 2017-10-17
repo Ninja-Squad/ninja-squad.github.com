@@ -45,7 +45,7 @@ authors:
     gplus : 113219978281208960764
 
 # SEO
-gems:
+plugins:
   - jekyll-seo-tag
 
 logo: /assets/images/logo-flat-600.png
