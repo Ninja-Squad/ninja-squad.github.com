@@ -84,6 +84,17 @@ the default being `app` as it is right now.
 The main use of this feature is for people who want to have several app in the same `src` directory,
 each with their own name.
 
+## Schematics template
+
+The new `schematics` tool used by the CLI under the hood to generate ... schematics (blueprints) of projects,
+is very generic and allows to create your own schematics.
+But how do you do that? To help with this question, the CLI team released a collection called `@schematics/schematics` containing a schematic for a schematic (that's a lot of schematic, I know).
+This sample demonstrates a few common features and is a good starting point
+if you want to try to build your own project templates.
+
+    yarn global add @angular-devkit/schematics @schematics/schematics
+    schematics @schematics/schematics:schematic --name my-custom-schematics
+
 ## Nx schematics
 
 A new unofficial schematic has been released by nwrl.io.
