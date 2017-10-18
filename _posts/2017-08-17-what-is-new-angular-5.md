@@ -173,12 +173,20 @@ The messages extracted from your application now include the interpolations used
 
 Before:
 
-    <source>Welcome to Ponyracer <x id="INTERPOLATION"/> <x id="INTERPOLATION_1"/>!</source>
+    <source>
+      Welcome to Ponyracer
+      <x id="INTERPOLATION"/>
+      <x id="INTERPOLATION_1"/>!
+    </source>
 
 Now:
 
     {% raw %}
-    <source>Welcome to Ponyracer <x id="INTERPOLATION" equiv-text="{{ user.firstName }}"/> <x id="INTERPOLATION_1" equiv-text="{{ user.lastName }}"/>!</source>
+    <source>
+      Welcome to Ponyracer
+      <x id="INTERPOLATION" equiv-text="{{ user.firstName }}"/>
+      <x id="INTERPOLATION_1" equiv-text="{{ user.lastName }}"/>!
+    </source>
     {% endraw %}
 
 This can be really helpful for the translators,
@@ -188,13 +196,17 @@ A notable change in i18n is that the i18n comments are now deprecated.
 In Angular 4, you could use:
 
     {% raw %}
-    <!--i18n: @@home.justText -->I don't output an element, just text<!--/i18n-->
+    <!--i18n: @@home.justText -->
+      I don't output an element, just text
+    <!--/i18n-->
     {% endraw %}
 
 Starting with Angular 5, you are encouraged to use an already possible alternative with `ng-container`:
 
     {% raw %}
-    <ng-container i18n="@@home.justText">I don't output an element, just text</ng-container>
+    <ng-container i18n="@@home.justText">
+      I don't output an element, just text
+    </ng-container>
     {% endraw %}
 
 ## Pipes, i18n and breaking changes
