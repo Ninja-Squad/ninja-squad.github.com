@@ -131,9 +131,9 @@ You can learn more about the plans for forms in this [design docs](https://docs.
 
 ## Http
 
-The new `HttpClient` [introduced in 4.3](/2017/07/17/http-client-module/).
-The old `@angular/http` module is now officially deprecated and replaced by `@angular/common/http`
-(you can expect that `@angular/http` will be removed in Angular&nbsp;6.0).
+The old `@angular/http` module is now officially deprecated and replaced by `@angular/common/http`,
+the new `HttpClient` [introduced in 4.3](/2017/07/17/http-client-module/).
+You can probably expect that `@angular/http` will be removed in Angular&nbsp;6.0.
 
 `HttpClient` has been slightly improved with Angular&nbsp;5.0, as we are now able to directly use object literals
 as headers or parameters, whereas we had to use the classes `HttpHeaders` and `HttpParams`.
