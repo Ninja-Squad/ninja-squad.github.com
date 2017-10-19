@@ -6,7 +6,7 @@ tags: ["Angular 2", "Angular", "Angular 4", "Angular 5"]
 description: "Angular 5 is out! Which new features are included?"
 ---
 
-Angular 5.0.0 is here!
+Angular&nbsp;5.0.0 is here!
 
 <p style="text-align: center;">
   <a href="https://github.com/angular/angular/blob/master/CHANGELOG.md#TODO">
@@ -18,16 +18,16 @@ Angular 5.0.0 is here!
 
 As you may know, Angular has two ways to work:
 - one where the templates are compiled at runtime (Just in time, JiT)
-- one where the templates are compiled at buildtime (Ahead of time, AoT)
+- one where the templates are compiled at build time (Ahead of time, AoT)
 
 The second way is far better, as the work is done on the developer's machine at build time,
 and not for each user at runtime, making the application start faster.
 It also allows to check all the templates of the application and catch errors early.
-But this compiler was a bit slow before Angular 5.0, and as a result,
+But this compiler was a bit slow before Angular&nbsp;5.0, and as a result,
 most of us were using the JiT mode in development and the AoT mode only for production
 (that's what Angular CLI does by default).
 
-The main reason for this slowliness was that every template change was triggering a full compilation of the application! That's no longer the case: leveraging the new "pipeline tranformer" ability of the TypeScript compiler (introduced in TS 2.3, as I was talking about in [my previous article](/2017/07/17/what-is-new-angular-4.3/)), the Angular compiler, `ngc`, is now able to only compile what is necessary with the introdution of a new `watch` mode:
+The main reason for this slowness was that every template change was triggering a full compilation of the application! That's no longer the case: leveraging the new "pipeline transformer" ability of the TypeScript compiler (introduced in TS 2.3, as I was talking about in [my previous article](/2017/07/17/what-is-new-angular-4.3/)), the Angular compiler, `ngc`, is now able to only compile what is necessary with the introduction of a new `watch` mode:
 
     ngc --watch
 
@@ -278,8 +278,8 @@ that you can import if you want to still use them:
 
 Angular has a package called `@angular/service-worker`,
 which has been in beta for quite some time and in a different repository.
-It received a little bit of love with Angular 5, as it graduated to the main repository,
-so we can expect it to be brought to the same quality standards than the other packages,
+It received a little bit of love with Angular&nbsp;5, as it graduated to the main repository,
+so we can expect it to be brought to the same quality standards as the other packages,
 and to be out of beta soon!
 
 If you don't know about service workers, you can think about them like a small proxy in your browser.
