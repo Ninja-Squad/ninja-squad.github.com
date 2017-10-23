@@ -22,7 +22,7 @@ As you may know, Angular has two ways to work:
 
 The second way is far better, as the work is done on the developer's machine at build time,
 and not for each user at runtime, making the application start faster.
-It also allows to check all the templates of the application and catch errors early.
+It also allows compiling all the templates of the application and catch errors early.
 But this compiler was a bit slow before Angular&nbsp;5.0, and as a result,
 most of us were using the JiT mode in development and the AoT mode only for production
 (that's what Angular CLI does by default).
@@ -65,7 +65,7 @@ That's super cool! Right now the default value of `fullTemplateTypeCheck` is `fa
 but we can expect to see it become `true` in a future release.
 
 The compiler is now also smarter to understand factories,
-and avoids us to write this weird trick:
+and there's thus no need to use this weird trick anymore:
 
     export function webSocketFactory() {
       return WebSocket;
@@ -90,7 +90,7 @@ You can now directly write:
 
 ## Forms
 
-Forms got the most of this update, with a tiny but really useful addition to the API:
+Forms have a tiny but really useful addition to their API:
 the ability to decide when the validity and value of a field or form is updated.
 This is something we already had in AngularJS 1.x, but not yet in Angular.
 
@@ -213,8 +213,9 @@ Starting with Angular 5, you are encouraged to use an already possible alternati
 
 More importantly, the pipes that were helping with the internationalization (`number`, `percent`, `currency`, `date`)
 have been completely overhauled.
-They don't rely on the Intl API anymore. This internationalization API was supposed to be provided by the browser,
-but that was not always the case and led to numerous bugs.
+They don't rely on the [Intl API](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl) anymore. This internationalization API was supposed to be provided by the browser,
+but that was not always the case, so we had to use a polyfill,
+and inconsistencies between browsers (and polyfills) led to numerous bugs.
 
 If you don't do anything when you upgrade, you'll use the new pipes by default.
 The good news is that there should be less bugs and you can remove the Intl polyfill you likely included.
@@ -282,17 +283,17 @@ It received a little bit of love with Angular&nbsp;5, as it graduated to the mai
 so we can expect it to be brought to the same quality standards as the other packages,
 and to be out of beta soon!
 
-If you don't know about service workers, you can think about them like a small proxy in your browser.
+If you don't know about service workers, you can picture them as small proxies in your browser.
 If you activate them in an app, it allows to cache static assets,
 and to not fetch them on every reload, improving performances.
 You can even go offline, and your app can still respond!
 
-`@angular/service-worker` is a small package, but packed with cool features.
+`@angular/service-worker` is a small package, but filled with cool features.
 Did you know that if you add it to your Angular CLI application,
 and turn a flag on (`"serviceWorker": true` in `.angular-cli.json`),
-the CLI will automatically generates all the necessary to cache your static assets by default?
+the CLI will automatically generate all the necessary stuff to cache your static assets by default?
 And it will only download what has changed when you deploy a new version,
-allowing blazing fast application start!
+allowing blazingly fast application start!
 
 But it can even go further, allowing to cache external resources (like fonts, icons from a CDN...),
 route redirection and even dynamic content caching (like calls to your API),
@@ -303,7 +304,7 @@ to push events and notifications!
 
 ## Other breaking changes
 
-A few things that were deprecated in Angular 4.0 has been definitely removed.
+A few things that were deprecated in Angular&nbsp;4.0 have now been definitely removed.
 
 There is a last breaking change that should not really impact you.
 I feel morally obligated to show it to you,
@@ -329,7 +330,7 @@ It must now be in 5.0:
       { provide: MyCustomProviderB, deps: [MyCustomProviderA] }
     ]).bootstrapModule(AppModule);
 
-I honestly couldn't come up with a decent real case,
+I honestly couldn't come up with a decent real use-case,
 as it is quite rare to give extra providers to these methods,
 and this only impact the two cases in the example
 and not `useValue`, `useFactory`, `useExisting`...
@@ -342,4 +343,4 @@ Another change is the removal of the ES5 API to write Angular applications
 without decorators.
 This API was also depending on `Reflect` and is now gone.
 
-In the meantime, all our materials ([ebook](https://books.ninja-squad.com/angular), [online training (Pro Pack)](https://angular-exercises.ninja-squad.com/) and [training](http://ninja-squad.com/training/angular)) are up-to-date with these changes if you want to learn more!
+All our materials ([ebook](https://books.ninja-squad.com/angular), [online training (Pro Pack)](https://angular-exercises.ninja-squad.com/) and [training](http://ninja-squad.com/training/angular)) are up-to-date with these changes if you want to learn more!
