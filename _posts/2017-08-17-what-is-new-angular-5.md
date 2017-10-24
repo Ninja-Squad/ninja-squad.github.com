@@ -167,6 +167,21 @@ The router gains two new events to track the activation of individual routes:
 
 These events are introduced to give a more fine-grained control than using the global `NavigationStart`/`NavigationEnd` events, if you for example want to display a spinner while some children components are loading.
 
+More newsworthy, it's now possible to reload a page when the router
+receives a request to navigate to the same URL.
+Until now it was ignoring such a request,
+making it impossible to build a "refresh" button.
+
+It's now configurable at the router level, using `onSameUrlNavigation`,
+which can receive either `reload` or `ignore` (currently the default).
+
+    providers: [
+      // ...
+      RouterModule.forRoot(routes, {
+        onSameUrlNavigation: 'reload'
+      })
+    ]
+
 ## i18n
 
 The messages extracted from your application now include the interpolations used in the template.
