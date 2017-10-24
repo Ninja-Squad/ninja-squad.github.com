@@ -59,10 +59,12 @@ and want to access the `hasError()` method, but made a typo:
 
 This will also compile with `ngc`, except if `fullTemplateTypeCheck` is activated:
 
-    Method 'hasEror' does not exist on type ''. Did you mean 'hasError'?
+    Property 'hasEror' does not exist on type 'NgModel'. Did you mean 'hasError'?
 
 That's super cool! Right now the default value of `fullTemplateTypeCheck` is `false`,
 but we can expect to see it become `true` in a future release.
+(Side note: this feature is currently a bit flaky, and I ran into issues testing it.
+You might want to wait 5.0.x to try it!).
 
 The compiler is now also smarter to understand factories,
 and there's thus no need to use this weird trick anymore:
