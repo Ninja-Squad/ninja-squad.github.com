@@ -32,6 +32,19 @@ Which is pretty useful, but used to be too slow to be usable in development.
 Now it starts to be more bearable, even if it's still slower than JiT compilation,
 but the Angular team is working hard on this, and it starts to show.
 
+By default, the `build-optimizer` plugin (which does a little bit of extra work on your generated code, like removing unneeded decorators, adding hints for dead code removals, etc) will now be applied to your build 
+if you are using Angular 5 and building in AoT.
+
+That means that your build command:
+
+    ng build --prod --build-optimizer
+
+can be simplified to:
+
+    ng build --prod
+
+once you'll have updated to the CLI 1.5 and Angular 5.
+
 ## ES2015 as a target
 
 The CLI now supports ES2015 as the target of the build (and not only ES5).
@@ -57,10 +70,19 @@ The problem is that if you build your application in 5 different languages,
 you need to do this for each language, and you don't want to include every locale in every build 🤔.
 
 This is the cool feature introduced by the CLI 1.5: you don't have to do this yourself!
-The CLI will automatically add these lines of code, with the correct locale,
-when you build your app (works only in AoT mode, based on the locale you specified when you build):
+The CLI will automatically add these lines of code, with the correct locale data,
+when you build your app (based on the locale you specified when you build):
 
     ng build --aot --locale=fr
+
+When you are buidling or serving the app in JiT mode, the CLI will do the same trick:
+
+    ng serve --locale=fr
+
+But for your app to work without AoT, you'll have to set the `LOCALE_ID` manually
+(whereas the CLI does it for you automatically in AoT mode).
+As the AoT mode will become the default soon (scheduled for CLI 2.0),
+this is not really bothering.
 
 ## Resource integrity
 
