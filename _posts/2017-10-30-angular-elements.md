@@ -33,11 +33,11 @@ You can of course build your own Custom Elements with vanilla JavaScript
 but there is a bit of "plumbing" to do (you have to write an ES6 class with a constructor that follows some rules,
 then observe the attributes that can change, then implement the correct lifecycle methods defined in the specification).
 
-That why Angular&nbsp;5 introduces `@angular/elements`!
+That is why Angular&nbsp;5 introduces `@angular/elements`!
 Angular Elements are classic components packaged as Custom Elements.
 
 When you package an Angular Component as an Angular Element,
-you can the use it like a standard Custom Element.
+you can then use it like a standard Custom Element.
 It will bootstrap itself, and create an NgElement (custom element) that hosts the component.
 It also builds a bridge between the standard DOM APIs and the underlying Angular Component,
 by doing the plumbing between the component's inputs and the custom element properties,
@@ -91,7 +91,7 @@ Or you can of course use Vanilla JS:
     // listen to the custom event
     ponyComponent.addEventListener('selected', event => console.log('selected!', event));
 
-You can even create new component and insert them, they will be automatically upgraded to custom element (and the inner PonyComponent will be instantiated)!
+You can even create new components and insert them, they will be automatically upgraded to custom elements (and the inner PonyComponent will be instantiated)!
 
     const PonyComponent = customElements.get('ns-pony');
     const otherPony = new PonyComponent();
