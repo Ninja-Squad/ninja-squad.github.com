@@ -30,9 +30,10 @@ As you may know, building with the AoT mode gives you all the usual TypeScript e
 and the errors you may have in your templates.
 Which is pretty useful, but used to be too slow to be usable in development.
 Now it starts to be more bearable, even if it's still slower than JiT compilation,
-but the Angular team is working hard on this, and it starts to show.
+but the Angular team is working hard on this, and it starts to show
+(even if it is still too slow on big project).
 
-By default, the `build-optimizer` plugin (which does a little bit of extra work on your generated code, like removing unneeded decorators, adding hints for dead code removals, etc) will now be applied to your build 
+By default, the `build-optimizer` plugin (which does a little bit of extra work on your generated code, like removing unneeded decorators, adding hints for dead code removals, etc) will now be applied to your build
 if you are using Angular 5 and building in AoT.
 
 That means that your build command:
