@@ -12,7 +12,7 @@ If you want to upgrade to 1.5.0 without pain (or to any other version, BTW), I h
 
 Let's see what new features we have!
 
-## Support for Angular 5 and its new compiler, AoT by default!
+## Support for Angular 5 and its new compiler
 
 This is probably the biggest feature of this release!
 As Angular 5 ships with an improved compiler (check out our article about that if you missed it),
@@ -20,20 +20,20 @@ the CLI can now use it (and will automatically if your project uses ng 5).
 It gives us faster builds,
 and even an AoT mode that starts to be usable in development (using the incremental rebuild).
 
-And now that it's fast enough, it is the new default default mode!
-
 For example, on a medium-size application, where `ng serve` rebuilds in ~400ms,
 you can see the difference between the versions if you use AoT compilation:
 
 - `ng serve --aot` with ng 4.4 and CLI 1.4: ~4000-8000ms
-- `ng serve` with ng 5.0 and CLI 1.5 (AoT by default): ~1800-3600ms
+- `ng serve --aot` with ng 5.0 and CLI 1.5: ~1800-3600ms
 
 As you may know, building with the AoT mode gives you all the usual TypeScript errors
 and the errors you may have in your templates.
 Which is pretty useful, but used to be too slow to be usable in development.
+Now it starts to be more bearable, even if it's still slower than JiT compilation,
+but the Angular team is working hard on this, and it starts to show.
 
-By default, the `build-optimizer` plugin (which does a little bit of extra work on your generated code, like removing unneeded decorators, adding hints for dead code removals, etc) will now be applied to your build
-if you are using Angular 5 and building with a target `production`.
+By default, the `build-optimizer` plugin (which does a little bit of extra work on your generated code, like removing unneeded decorators, adding hints for dead code removals, etc) will now be applied to your build 
+if you are using Angular 5 and building in AoT.
 
 That means that your build command:
 
