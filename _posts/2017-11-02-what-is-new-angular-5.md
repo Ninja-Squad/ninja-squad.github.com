@@ -9,10 +9,18 @@ description: "Angular 5 is out! Which new features are included?"
 Angular&nbsp;5.0.0 is here!
 
 <p style="text-align: center;">
-  <a href="https://github.com/angular/angular/blob/master/CHANGELOG.md#TODO">
+  <a href="https://github.com/angular/angular/blob/master/CHANGELOG.md#500-pentagonal-donut-2017-11-01">
     <img class="img-rounded img-responsive" style="max-width: 100%" src="/assets/images/angular.png" alt="Angular logo" />
   </a>
 </p>
+
+We made a little video to give you an overview of the new features.
+If you want to dive deeper into what has changed, keep on reading after watching it ;).
+
+<div class="video-wrapper">
+    <iframe width="560" height="315" frameborder="0" allowfullscreen
+    src="https://www.youtube.com/embed/KS8edkPk05I"></iframe>
+</div>
 
 ## Angular compiler is now much faster and more powerful!
 
