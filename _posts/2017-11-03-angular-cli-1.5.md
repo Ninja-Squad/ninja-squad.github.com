@@ -8,14 +8,14 @@ description: "Angular CLI 1.5 is out! Which new features are included?"
 
 [Angular CLI 1.5.0](https://github.com/angular/angular-cli/releases/tag/v1.5.0) is out with some nice new features!
 
-If you want to upgrade to 1.5.0 without pain (or to any other version, BTW), I have created a Github project to help: [angular-cli-diff](https://github.com/cexbrayat/angular-cli-diff). Choose the version you're currently using (1.2.1 for example), and the target version (1.5.0 for example), and it gives you a diff of all files created by the CLI: [angular-cli-diff/compare/1.2.1…1.4.0](https://github.com/cexbrayat/angular-cli-diff/compare/1.2.1...1.5.0). You have no excuse for staying behind anymore!
+If you want to upgrade to 1.5.0 without pain (or to any other version, BTW), I have created a Github project to help: [angular-cli-diff](https://github.com/cexbrayat/angular-cli-diff). Choose the version you're currently using (1.2.1 for example), and the target version (1.5.0 for example), and it gives you a diff of all files created by the CLI: [angular-cli-diff/compare/1.2.1…1.5.0](https://github.com/cexbrayat/angular-cli-diff/compare/1.2.1...1.5.0). You have no excuse for staying behind anymore!
 
 Let's see what new features we have!
 
 ## Support for Angular 5 and its new compiler
 
 This is probably the biggest feature of this release!
-As Angular 5 ships with an improved compiler (check out our article about that if you missed it),
+As Angular 5 ships with an improved compiler (check out [our article about that](http://blog.ninja-squad.com/2017/11/02/what-is-new-angular-5/) if you missed it),
 the CLI can now use it (and will automatically if your project uses ng 5).
 It gives us faster builds,
 and even an AoT mode that starts to be usable in development (using the incremental rebuild).
@@ -76,7 +76,7 @@ when you build your app (based on the locale you specified when you build):
 
     ng build --aot --locale=fr
 
-When you are buidling or serving the app in JiT mode, the CLI will do the same trick:
+When you are building or serving the app in JiT mode, the CLI will do the same trick:
 
     ng serve --locale=fr
 
