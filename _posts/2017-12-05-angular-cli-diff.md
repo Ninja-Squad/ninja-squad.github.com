@@ -18,7 +18,7 @@ as often as possible.
 Sadly, there is no automated way to do it.
 You may think that bumping the package version in your `package.json` is enough, but... no...
 
-Often there are also configuration files to update,
+There are also often configuration files to update,
 and even if the committers do their best to guide us through the updates,
 it can be hard to track exactly what you need to change between your current version
 and the new shiny one.
@@ -40,11 +40,12 @@ Here you go: [https://github.com/cexbrayat/angular-cli-diff/compare/1.0.3...1.5.
 
 As you can see there are some differences that you might have missed (new dependencies, new polyfill, new unit test configuration, new types, new linter rules...).
 
-You can of course, compare any version you want.
+You can, of course, compare any version you want.
 They are listed in the [README of the repository](https://github.com/cexbrayat/angular-cli-diff) and new versions are added a few hours/days after the official release.
 
 This problem is not really original, and similar repositories exist for tools like React Native with [rn-diff](https://github.com/ncuillery/rn-diff) (from a good friend of mine [Nicolas Cuillery](https://github.com/ncuillery)) which was definitely an inspiration!
 
-It has been quite useful to us these last weeks, we hope it will help you too.
+It has been quite useful to us these last weeks to update our code samples and online training exercises,
+we hope it will help you too.
 
 Check out our [ebook](https://books.ninja-squad.com/angular), [online training (Pro Pack)](https://angular-exercises.ninja-squad.com/) and [training](http://ninja-squad.com/training/angular) if you want to learn more!
