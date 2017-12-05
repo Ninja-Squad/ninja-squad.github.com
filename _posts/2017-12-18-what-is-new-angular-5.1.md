@@ -33,7 +33,7 @@ and the french locale data will be available for the (fake) locale id `fr-ZZ`.
 The `@angular/service-worker` package evolves a little,
 with the possibility to register the `ServiceWorkerModule` without crashing the application
 even if the Service Worker API is not supported by the browser.
-The `register` method also now has a new option to enable the service worker or not.
+The `register` method has now also a new option to enable the service worker or not.
 Previously you would have registered your service worker like this:
 
     providers: [
@@ -71,10 +71,10 @@ It's worth noting that behind the scenes, some work has been done to enable AoT 
 Currently units test are run using the JiT compiler.
 But as you may know, the Angular team is working to make this JiT compiler obsolete.
 It's been recommended for a long time to use the AoT mode in production,
-and, starting with Angular 5.0, it's no longer necessary to use JiT even in development
+and, starting with Angular&nbsp;5.0, it's no longer necessary to use JiT even in development
 as AoT has become faster (even it's still slower than JiT right now).
 The last place where JiT is required is for unit testing.
-That should no longer be the case soon, as some key pieces are falling in place in the framework.
+That should no longer be the case soon, as some key pieces are falling into place in the framework.
 
 Another interesting point for the compiler: the error messages should now be clearer!
 
