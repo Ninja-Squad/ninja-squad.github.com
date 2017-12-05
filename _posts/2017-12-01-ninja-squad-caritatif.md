@@ -22,7 +22,7 @@ qui offrait aux patients hospitalisés un accès Internet, et notamment aux enfa
 pour poursuivre leur scolarité et rester en contact avec leurs amis.
 
 <p style="text-align: center;">
-    <img class="img-responsive"
+    <img class="img-responsive img-polaroid" style="margin-top: 20px; margin-bottom: 20px;"
          src="/assets/images/2017-12-08-caritatif/docteur-souris.jpg"
          alt="Docteur Souris propose un accès Internet aux enfants hospitalisés" />
 </p>
@@ -36,9 +36,9 @@ il reste encore plus de 1400€ à reverser, puisque vous aviez choisi de revers
 
 Nous avons donc dû choisir une association alternative.
 Pour ne pas trahir la finalité de vos dons, nous nous sommes arrêtés sur
-[Le Rire Médecin](https://www.leriremedecin.org).
-
-TODO association à confirmer et expliciter
+[Le Rire Médecin](https://www.leriremedecin.org), qui a pour mission d'aider
+les enfants hospitalisés et leurs parents à dépasser leur angoisse et leur
+solitude.
 
 TODO insert donation proof
 
@@ -59,7 +59,7 @@ cela nous semble toujours terriblement important et actuel 😓).
 
 Nous n'avions jusqu'alors pas encore reversé vos dons.
 C'est désormais chose faite&nbsp;: 5000€ viennent d'être donnés à l'EFF.
-C'est formidable, merci à vous&nbsp;! 🎉✌️✊
+C'est formidable, merci à vous&nbsp;! ✌️
 
 TODO insert donation proof
 
@@ -70,24 +70,25 @@ d'application pour ceux qui en ont besoin sans les moyens associés.
 
 Notre siège social est dans la Loire, pas loin de Saint-Étienne.
 On y connait [Globe42](https://globe42.wordpress.com), un espace social et de
-santé participatif. Accueillant notamment des migrants, dont certains sans
-papiers, ils assuraient jusqu'alors leur gestion sans l'aide de l'informatique,
-pour éviter toute faille de confidentalité que leur non-maîtrise des outils
-aurait pu engendrer.
+santé participatif. Accueillant des migrants âgés,
+ils assuraient jusqu'alors la gestion de leurs membres sans l'aide de
+l'informatique, pour écarter toute faille de confidentialité qu'un non-spécialiste
+peut craindre, notamment vis-à-vis du _cloud_ (qui n'est que l'ordinateur
+de quelqu'un d'autre).
 
 Nous avons alors voulu les aider. En proposant bénévolement nos services de
 développeurs, non seulement nous nous offrions un _side-project_ pour pratiquer
-les technologies du moment (Angular&nbsp;5, Spring Boot, Kotlin, JUnit 5, ...)
+les technologies du moment (Angular&nbsp;5, Spring&nbsp;Boot&nbsp;2, JUnit&nbsp;5, ...)
 sur une vraie application, tout en aidant une association qui le méritait, et
-qui pouvait ainsi moderniser et faciliter son travail.  
-
-Si cela vous intéresse, [le code est sur Github](https://github.com/ninja-squad/globe42).
+dont on pouvait ainsi faciliter le travail.  
 
 <p style="text-align: center;">
-    <img class="img-responsive"
+    <img class="img-responsive" style="margin-top: 20px; margin-bottom: 20px;"
          src="/assets/images/2017-12-08-caritatif/make-world-better-place-silicon-valley.gif"
-         alt="Make the World a better place... through scalable fault-tolerant distributable databases with ACIS transactions (Silicon Valley, the TV series)" />
+         alt="Make the World a better place... through scalable fault-tolerant distributable databases with ACID transactions (Silicon Valley, the TV series)" />
 </p>
+
+Si cela vous intéresse, [le code est sur Github](https://github.com/ninja-squad/globe42).
 
 # Un engagement caritatif plus large
 
@@ -114,7 +115,7 @@ aux entreprises sur les donations soient plus lâches que pour les particuliers
 
 Prenons un exemple. On voudrait donner 1000€ à une association&nbsp;:
 - Ninja Squad donne 1000€.
-- Avec les déductions fiscales (60% dans la limite de 5‰ du chiffre d'affaire),
+- Avec les déductions fiscales (60% dans la limite de 0,5% du chiffre d'affaire),
   cela lui coûte 400€.
 - Si ce montant de 400€ devait être versé en salaire pour être donné à titre
   personnel par le salarié, cela équivaudrait à ~200€ nets.
@@ -123,7 +124,7 @@ Ainsi, en donnant par l'entreprise, on a virtuellement multiplié le don par 5&n
 Certes, c'est au détriment de l'impôt. C'est pourquoi, si comme nous on croit
 aux valeurs du service public, il convient de rester dans des montants
 raisonnables, marginaux par rapport aux salaires et bénéfices, ce
-qu'assure déjà partiellement le plafond de 5‰ du chiffre d'affaire.  
+qu'assure déjà partiellement le plafond de 0,5% du chiffre d'affaire.  
 Dans notre cas, pour un chiffre d'affaires de ~300&nbsp;000€, la limite de
 déduction est donc à 1500€.
 
@@ -132,10 +133,10 @@ sans grever la contribution de Ninja Squad aux impôts nationaux.
 
 Et plus globalement, nous trouvions tout simplement séduisante cette idée
 d'enveloppe caritative, non sans une certaine fierté d'avoir créé une entreprise
-commerciale qui contribue au tissu associatif. 💪
+commerciale qui contribue au tissu associatif. 💪✊
 
-A bientôt pour de nouvelles aventures fiduciaires (😅), et n'hésitez pas suggérer
-à votre patron à faire de même&nbsp;! 😘
+A bientôt pour de nouvelles aventures fiduciaires 🤓, et n'hésitez pas à suggérer
+à votre patron de faire de même&nbsp;! 😘
 
 ----------
 
