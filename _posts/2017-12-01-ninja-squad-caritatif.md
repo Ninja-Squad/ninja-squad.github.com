@@ -40,7 +40,13 @@ Pour ne pas trahir la finalité de vos dons, nous nous sommes arrêtés sur
 les enfants hospitalisés et leurs parents à dépasser leur angoisse et leur
 solitude.
 
-TODO insert donation proof
+Et voici que nous venons de leur reverser 1400€&nbsp;! 👏
+
+<p style="text-align: center;">
+    <img class="img-responsive" style="margin-top: 20px; margin-bottom: 20px;"
+         src="/assets/images/2017-12-08-caritatif/donation-rire-medecin.png"
+         alt="Donation de Ninja Squad d'un montant de 1400€ à l'association Le Rire Médecin" />
+</p>
 
 # Pour un Internet libre
 
@@ -58,10 +64,14 @@ Nous avons alors choisi
 cela nous semble toujours terriblement important et actuel 😓).
 
 Nous n'avions jusqu'alors pas encore reversé vos dons.
-C'est désormais chose faite&nbsp;: 5000€ viennent d'être donnés à l'EFF.
+C'est désormais chose faite&nbsp;: 4500€ ($5.140) viennent d'être donnés à l'EFF.
 C'est formidable, merci à vous&nbsp;! ✌️
 
-TODO insert donation proof
+<p style="text-align: center;">
+    <img class="img-responsive" style="margin-top: 20px; margin-bottom: 20px;"
+         src="/assets/images/2017-12-08-caritatif/donation-eff.png"
+         alt="Donation de Ninja Squad d'un montant de 4500€ ($5.140) à l'Electronic Frontier Foundation" />
+</p>
 
 # Développement solidaire bénévole
 
