@@ -30,7 +30,7 @@ pour poursuivre leur scolarité et rester en contact avec leurs amis.
 Si nous en parlons au passé, c'est que Docteur Souris a dû malheureusement
 fermer ses portes en 2017.
 Après avoir déjà effectué [un premier don de plus de 2000€](/2015/01/23/ebook-angularjs-dons-docteur-souris/),
-il reste encore plus de 1400€ à reverser, puisque vous aviez choisi de reverser
+il restait encore plus de 1400€ à reverser, puisque vous aviez choisi de donner
 24% en moyenne à l'association, comme vous pouvez le constater sur
 [nos chiffres de ventes publics](https://books.ninja-squad.com/angularjs/sales "Chiffres de ventes de l'ebook Devenez un Ninja avec AngularJS").
 
@@ -42,26 +42,28 @@ solitude.
 
 Et voici que nous venons de leur reverser 1400€&nbsp;! 👏
 
-<p style="text-align: center;">
-    <img class="img-responsive" style="margin-top: 20px; margin-bottom: 20px;"
-         src="/assets/images/2017-12-08-caritatif/donation-rire-medecin.png"
-         alt="Donation de Ninja Squad d'un montant de 1400€ à l'association Le Rire Médecin" />
-</p>
+<iframe src="https://drive.google.com/file/d/1mjxi2IUgTJg6AC9uf6xkPRYq-equRWEO/preview" width="100%" height="480"></iframe>
+
+Si ce don ouvre droit à des déductions fiscales, nous ne l'exercerons pas.
+Nous ne donnons pas l'argent de Ninja Squad, mais celui reçu des
+acheteurs&nbsp;: on ne veut pas voler l'état de revenus qui n'ont aucune raison
+de nous revenir).
 
 # Pour un Internet libre
 
-Avec le [deuxième ebook sur Angular (2, 4, 5...)](https://books.ninja-squad.com/angular),
+Avec le [deuxième ebook sur Angular](https://books.ninja-squad.com/angular)
+(Angular&nbsp;2, Angular&nbsp;4, Angular&nbsp;5...),
 nos ambitions s'envolaient&nbsp;: nous visions l'international, avec un ebook
 écrit en anglais (et aussi traduit en français).
 Il nous fallait alors une association au périmètre plus large, connue dans le
 monde entier, dans laquelle non seulement nos fans autochtones pourraient se reconnaître,
 mais aussi nos nouveaux amis transatlantiques, et potentiellement tous ceux
-de [la centaine de pays](https://books.ninja-squad.com/angular/sales) qui l'ont finalement acheté (👋💋).
+de [la centaine de pays](https://books.ninja-squad.com/angular/sales) qui l'ont finalement acheté&nbsp;👋💋.
 Nous avons alors choisi
 [l'Electronic Frontier Foundation](https://www.eff.org), qui défend un internet libre
 (et avec la volonté actuelle du
 [congrès américain de vouloir tuer la neutralité du net](https://www.eff.org/issues/net-neutrality),
-cela nous semble toujours terriblement important et actuel 😓).
+cela nous semble toujours terriblement important et actuel&nbsp;😓).
 
 Nous n'avions jusqu'alors pas encore reversé vos dons.
 C'est désormais chose faite&nbsp;: 4500€ ($5.140) viennent d'être donnés à l'EFF.
