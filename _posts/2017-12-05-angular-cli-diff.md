@@ -2,7 +2,7 @@
 layout: post
 title: Easily upgrade your Angular CLI application with angular-cli-diff
 author: cexbrayat
-tags: ["Angular 2", "Angular", "Angular 4", "Angular 5", "Angular CLI"]
+tags: ["Angular 5", "Angular CLI", "Angular", "Angular 2", "Angular 4"]
 description: "We wrote a small open-source tool to help you upgrade your Angular CLI applications."
 ---
 

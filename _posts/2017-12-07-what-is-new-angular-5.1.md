@@ -2,7 +2,7 @@
 layout: post
 title: What's new in Angular 5.1?
 author: cexbrayat
-tags: ["Angular 2", "Angular", "Angular 4"]
+tags: ["Angular 5", "Angular", "Angular 2", "Angular 4"]
 description: "Angular 5.1 is out! Which new features are included?"
 ---
 
