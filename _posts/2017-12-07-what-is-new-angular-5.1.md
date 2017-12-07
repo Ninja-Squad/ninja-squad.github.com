@@ -9,7 +9,7 @@ description: "Angular 4.4 is out! Which new features are included?"
 Angular 5.1.0 is here!
 
 <p style="text-align: center;">
-  <a href="https://github.com/angular/angular/blob/master/CHANGELOG.md#TODO">
+  <a href="https://github.com/angular/angular/blob/master/CHANGELOG.md#510-2017-12-06">
     <img class="img-rounded img-responsive" style="max-width: 100%" src="/assets/images/angular.png" alt="Angular logo" />
   </a>
 </p>
@@ -76,7 +76,10 @@ as AoT has become faster (even it's still slower than JiT right now).
 The last place where JiT is required is for unit testing.
 That should no longer be the case soon, as some key pieces are falling into place in the framework.
 
-Another interesting point for the compiler: the error messages should now be clearer!
+Another interesting point for the compiler: the error messages should now be clearer
+(especially when you make a mistake in a decorator)!
+
+Angular now also officially supports TypeScript 2.5.x.
 
 That's all for this small release!
 
