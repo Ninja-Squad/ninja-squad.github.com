@@ -78,7 +78,6 @@ It will also turn on the `serviceWorker` option in your `.angular-cli.json`.
 
 This is pretty straightforward and gives a great basis.
 Even if you have an existing application, you can follow these steps and end up with the same result!
-TODO add a link to ponyracer if we deploy a new version with service worker support
 
 You can go much further than that and add configuration for your API calls
 by selecting the strategy you want: always call the server (freshness),
@@ -143,7 +142,7 @@ Here I'm subscribing to the `available` observable exposed by `SwUpdate`.
 As soon as a new version of the application will be available,
 the observable will emit an event.
 In the example above, I chose to open a modal with `ng-bootstrap` to ask the user to reload the application.
-If he/she chooses to do so, we load the new version with `activateUpdate()`. If not, we do nothing.
+If he/she chooses to do so, we load the new version with `activateUpdate()` and reload the page. If not, we do nothing.
 You can of course display what you want (just an alert, a toast...).
 
 
@@ -154,8 +153,9 @@ with a simple command.
 Server-side rendering (called "universal" in Angular) is possible since quite some time,
 but the CLI had no automated way to do it.
 
-This is now fixed: you just have to run `ng g universal serverApp`
+This is now fixed: you just have to run `ng g universal server-app`
 and Angular CLI automatically sets things up for you:
+
 - creates a new module `app.server.module.ts`, which uses `ServerModule` instead of `BrowserModule`;
 - creates a main file `main.server.ts`;
 - creates a TypeScript config `tsconfig.server.ts`
@@ -165,6 +165,7 @@ and Angular CLI automatically sets things up for you:
 - wraps the bootstrap call in a `DOMContentLoaded` event handler.
 
 You can customize pretty much everything:
+
 - the app's `name`, by default the one you gave in the command line
 - the `clientApp`'s name, by default `0`, as you usually have only one app in your CLI project
 - the `appId`, used by `withServerTransition()`, by default `serverApp`
@@ -184,7 +185,7 @@ because `@angular/platform-server` still depends on it.
 
 Now you should be able to build the application!
 
-    ng build --prod --app=serverApp
+    ng build --prod --app=server-app
 
 And you'll get the bundles in `dist-server/`. Than it's up to you to set up a server to use these.
 Or you can continue reading, and discover another new feature of the CLI ;)
@@ -194,10 +195,23 @@ You won't be able to use `ng serve` with this app though (not yet, but I think i
 ## Application Shell
 
 The other new feature is the Application Shell.
-// TODO broken for now
-// https://github.com/angular/devkit/issues/295
-// https://github.com/angular/devkit/issues/296
-// https://github.com/angular/devkit/issues/297
-// https://github.com/angular/devkit/issues/298
+A new schematic has been added allowing to generate a "shell" - an `index.html` containing a static rendering of your application. This uses the `universal` part I mentioned above for the server-side rendering.
+You can even specify the route path you want to serve this application shell!
+
+    ng g app-shell appShell --universal-app=server-app --route=shell
+
+The command here uses the `serverApp` I created above and ask to use the `shell` path to render the application shell.
+
+This will:
+
+- update `.angular-cli.json` to add the `appShell` key with its configuration;
+- add an `AppShellComponent` to your application;
+- updates the `app.server.module.ts` to add a route with the path specified pointing to the `AppShellComponent`.
+
+The three features can be combined nicely: you can add a universal capability to your application,
+add an application shell to have a fast first render,
+and use service worker for a fast second render!
+
+These features are still very new (application shell is still quite buggy), but look promising for the applications that need to start faster.
 
 Check out our [ebook](https://books.ninja-squad.com/angular), [online training (Pro Pack)](https://angular-exercises.ninja-squad.com/) and [training](http://ninja-squad.com/training/angular) if you want to learn more!
