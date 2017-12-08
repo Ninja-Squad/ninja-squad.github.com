@@ -47,7 +47,7 @@ Et voici que nous venons de leur reverser 1400€&nbsp;! 👏
 Si ce don ouvre droit à des déductions fiscales, nous ne l'exercerons pas.
 Nous ne donnons pas l'argent de Ninja Squad, mais celui reçu des
 acheteurs&nbsp;: on ne veut pas voler l'état de revenus qui n'ont aucune raison
-de nous revenir).
+de nous revenir.
 
 # Pour un Internet libre
 
