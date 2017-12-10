@@ -198,20 +198,28 @@ The other new feature is the Application Shell.
 A new schematic has been added allowing to generate a "shell" - an `index.html` containing a static rendering of your application. This uses the `universal` part I mentioned above for the server-side rendering.
 You can even specify the route path you want to serve this application shell!
 
-    ng g app-shell appShell --universal-app=server-app --route=shell
+    ng g app-shell appShell --universal-app=server-app
 
-The command here uses the `serverApp` I created above and ask to use the `shell` path to render the application shell.
+The command here uses the `serverApp` I created above.
+If you did not create it, the CLI will generate it for you ;)
 
-This will:
+The command will:
 
-- update `.angular-cli.json` to add the `appShell` key with its configuration;
+- update `.angular-cli.json` to add the `appShell` key with its configuration `"appShell": { "app": "server-app", "route": "shell" }`;
 - add an `AppShellComponent` to your application;
 - updates the `app.server.module.ts` to add a route with the path specified pointing to the `AppShellComponent`.
 
-The three features can be combined nicely: you can add a universal capability to your application,
-add an application shell to have a fast first render,
-and use service worker for a fast second render!
+Now when you'll build the application with `ng build --prod` the `dist` and `dist-server` diretories will be generated,
+and the `index.html` file in `dist` will contain the prerendered `AppShellComponent`.
+This means you'll have a meaningful content served right away when deploying to production
+(as you can of course put whatever you want in the shell component).
+When the application is done starting, it will be displayed as usual.
 
-These features are still very new (application shell is still quite buggy), but look promising for the applications that need to start faster.
+The three features can be combined nicely: you can add a universal/server-side rendering capability to your application,
+add an application shell to have a fast first render using this capability,
+and use service worker for the following renderings!
+
+These features are still very new (application shell was still quite buggy when I tested it...),
+but look promising for the applications that need to start faster.
 
 Check out our [ebook](https://books.ninja-squad.com/angular), [online training (Pro Pack)](https://angular-exercises.ninja-squad.com/) and [training](http://ninja-squad.com/training/angular) if you want to learn more!
