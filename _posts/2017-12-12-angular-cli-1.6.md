@@ -14,10 +14,10 @@ Let's see what new features we have!
 
 ## Service Worker
 
-A new flag has been added to the `new` command and allows to generate an application with service workers already enabled and configured.
+A new flag has been added to the `ng new` command and allows to generate an application with service workers already enabled and configured.
 Service workers are a great new API in the browser, acting like a "client-side proxy":
 when your application requests an asset, it will first "ask" the service worker if it is available,
-before really hitting the network if it isn't. It can really speed up the second visits to your application,
+before really hitting the network if it isn't. It can really speed up the second and following visits to your application,
 and can even be a step to working offline, and towards what's called a Progressive Web Application (PWA).
 
 This new flag uses the brand new `@angular/service-worker` package released in v5.0.0.
@@ -74,12 +74,12 @@ As the worker is only enabled in "prod" mode, you won't see a difference using `
 It's only when building your application with `ng build --prod` that you'll see a few new files in your `dist` directory.
 
 As this module is in `@angular/service-worker`, it will also add this package to your dependencies.
-It will also turn on the `serviceWorker` option in your `.angular-cli.json`.
+And it will turn on the `serviceWorker` option in your `.angular-cli.json`.
 
 This is pretty straightforward and gives a great basis.
 Even if you have an existing application, you can follow these steps and end up with the same result!
 
-You can go much further than that and add configuration for your API calls
+You can go much further, and add configuration for your API calls
 by selecting the strategy you want: always call the server (freshness),
 or always from cache (performance), etc.
 
@@ -106,8 +106,8 @@ To give it a try, build your app with `ng build --prod`,
 then serve your `dist` directory with a static HTTP server,
 like `http-server`. Open your application with Chrome,
 and go the Developer Tools in the Application tab.
-You should see the service worker registered in the Service Worker section!
-And you can see which parts are cached in the Cache Storage section.
+You should see the service worker registered in the *Service Worker* section!
+And you can see which parts are cached in the *Cache Storage* section.
 
 Note that the service worker really caches your application,
 meaning that a new version deployed in production will not be seen immediately by your users.
@@ -130,7 +130,8 @@ Angular can help you with its service `SwUpdate`:
           this.swUpdate.available.subscribe(event =>
             // update available: ask the user to reload
             this.modalService.open(this.modalContent).result.then(
-              () => this.swUpdate.activateUpdate().then(() => document.location.reload()), // load the update
+              () => this.swUpdate.activateUpdate()
+                .then(() => document.location.reload()), // load the update
               () => {} // do nothing if the user wants to refresh later
             )
           );
@@ -139,7 +140,7 @@ Angular can help you with its service `SwUpdate`:
     }
 
 Here I'm subscribing to the `available` observable exposed by `SwUpdate`.
-As soon as a new version of the application will be available,
+As soon as a new version of the application is available,
 the observable will emit an event.
 In the example above, I chose to open a modal with `ng-bootstrap` to ask the user to reload the application.
 If he/she chooses to do so, we load the new version with `activateUpdate()` and reload the page. If not, we do nothing.
@@ -153,7 +154,7 @@ with a simple command.
 Server-side rendering (called "universal" in Angular) is possible since quite some time,
 but the CLI had no automated way to do it.
 
-This is now fixed: you just have to run `ng g universal server-app`
+This is now fixed: you just have to run `ng generate universal server-app`
 and Angular CLI automatically sets things up for you:
 
 - creates a new module `app.server.module.ts`, which uses `ServerModule` instead of `BrowserModule`;
@@ -166,29 +167,22 @@ and Angular CLI automatically sets things up for you:
 
 You can customize pretty much everything:
 
-- the app's `name`, by default the one you gave in the command line
-- the `clientApp`'s name, by default `0`, as you usually have only one app in your CLI project
+- the application `name`, by default the one you gave in the command line
+- the `clientApp` name, by default `0`, as you usually have only one app in your CLI project
 - the `appId`, used by `withServerTransition()`, by default `serverApp`
-- `outDir`, the output directory of the build, by default `dist-server/`
-- `root`, the source directory, by default `src`
-- `index`, the name of the index file, by default `index.html`
-- `main`, the name of the entry point, by default `main.server.ts`
-- `test`, the entry point for the tests, by default `test.ts`
-- `tsConfigFileName`, the name of the TS config file, by default `tsconfig.server.json`
-- `testTsconfigFileName`, the name of the TS config file for the tests, by default `tsconfig.spec.json`
-- `appDir`, the name of the app's directory, by default `app`
-- `rootModuleFileName`, the name of the module file, by default `app.server.module.ts`
-- `rootModuleClassName`, the name of the module class, by default `AppServerModule`
+- and the name of every files mentioned above!
 
-Note that you'll have to add the deprecated `@angular/http` package even you don't use it,
+Note that you'll have to add the deprecated `@angular/http` package even if you don't use it,
 because `@angular/platform-server` still depends on it.
 
 Now you should be able to build the application!
 
     ng build --prod --app=server-app
 
-And you'll get the bundles in `dist-server/`. Than it's up to you to set up a server to use these.
-Or you can continue reading, and discover another new feature of the CLI ;)
+And you'll get the bundles in `dist-server/`. Than it's up to you to set up a server to use these,
+probably a NodeJS server, using something like Express and its ngExpressEngine (that's the official example in the [documentation](https://angular.io/guide/universal#server-code)). The job of the server will be to answer a request with an HTML generated using the JS bundles from `dist-server`.
+
+Or you can continue reading, and discover another new feature of the CLI ;).
 You won't be able to use `ng serve` with this app though (not yet, but I think it's coming!).
 
 
@@ -196,7 +190,6 @@ You won't be able to use `ng serve` with this app though (not yet, but I think i
 
 The other new feature is the Application Shell.
 A new schematic has been added allowing to generate a "shell" - an `index.html` containing a static rendering of your application. This uses the `universal` part I mentioned above for the server-side rendering.
-You can even specify the route path you want to serve this application shell!
 
     ng g app-shell appShell --universal-app=server-app
 
@@ -209,7 +202,7 @@ The command will:
 - add an `AppShellComponent` to your application;
 - updates the `app.server.module.ts` to add a route with the path specified pointing to the `AppShellComponent`.
 
-Now when you'll build the application with `ng build --prod` the `dist` and `dist-server` diretories will be generated,
+Now when you'll build the application with `ng build --prod` the `dist` and `dist-server` directories will be generated,
 and the `index.html` file in `dist` will contain the prerendered `AppShellComponent`.
 This means you'll have a meaningful content served right away when deploying to production
 (as you can of course put whatever you want in the shell component).
