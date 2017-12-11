@@ -2,8 +2,8 @@
   <h1 itemprop="name">{{ page.title }}</h1>
 </div>
 <div class="row">
-  <div class="date span2"><span itemprop="datePublished" content="{{ page.date | date:"%Y-%m-%d" }}"><i class="icon-time"></i>{{ page.date | date:"%Y-%m-%d" }}</span></div>
-  <div class="span4">
+  <div class="date span3"><span itemprop="datePublished" content="{{ page.date | date:"%Y-%m-%d" }}"><i class="icon-time"></i>{{ page.date | date:"%Y-%m-%d" }}</span></div>
+  <div class="span6">
   {% unless page.tags == empty %}
     <ul class="tag_box inline">
       {% assign tags_list = page.tags %}
@@ -11,15 +11,15 @@
     </ul>
   {% endunless %}
   </div>
-  <div class="span2 comments-heading"><span><i class="icon-comment"></i><a href="#disqus_thread">Commentaires</a></span></div>
+  <div class="span3 comments-heading"><span><i class="icon-comment"></i><a href="#disqus_thread">Commentaires</a></span></div>
 </div>
 <br/>
 <div class="row">
-  <div class="span8 post-wrapper">
+  <div class="span9 post-wrapper">
     <div class="post-content">{{ content }}</div>
     <hr/>
   </div>
-  <div class="span2 text-center">
+  <div class="span3 text-center">
     <br/>
     <div class="authors">
       <div itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -60,7 +60,7 @@
   </div>
 </div>
 <div class="row">
-  <div class="span4">
+  <div class="span6">
     <div class="pagination">
       <ul>
       {% if page.previous %}
@@ -77,13 +77,13 @@
       </ul>
     </div>
   </div>
-  <div class="span4 social-buttons">
+  <div class="span6 social-buttons">
     <a href="https://twitter.com/share" class="twitter-share-button" data-size="large" data-text="{{page.title}}" data-url="{{site.production_url}}{{page.url}}" data-lang="fr">Tweeter</a>
       <div class="g-plusone" data-href="{{site.production_url}}{{page.url}}"></div>
   </div>
 </div>
 <div class="row">
-  <div class="span8">
+  <div class="span12">
     <hr/>
     {% include JB/comments %}
   </div>
