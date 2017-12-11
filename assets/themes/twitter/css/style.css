@@ -61,9 +61,7 @@ i#atom-feed {
 	background-position: 0 0;
 }
 div.post-title {
-    background-color: #F5F5F5;
-    border:1px solid #F2E9E1;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-bottom: 10px;
 }
 div.post-title h1 {

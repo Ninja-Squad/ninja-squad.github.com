@@ -5,8 +5,8 @@ tagline:
 ---
 {% for post in site.posts limit:10%}
   <div class="row">
-    <div class="date span2"><span><i class="icon-time"></i>{{ post.date | date:"%Y-%m-%d" }}</span></div>
-    <div class="span4">
+    <div class="date span3"><span><i class="icon-time"></i>{{ post.date | date:"%Y-%m-%d" }}</span></div>
+    <div class="span6">
       {% unless post.tags == empty %}
       <ul class="tag_box inline">
         {% assign tags_list = post.tags %}
@@ -14,18 +14,18 @@ tagline:
       </ul>
       {% endunless %}
     </div>
-    <div class="span2 comments-heading"><span><i class="icon-comment"></i><a href="{{post.url}}#disqus_thread">Commentaires</a></span></div>
+    <div class="span3 comments-heading"><span><i class="icon-comment"></i><a href="{{post.url}}#disqus_thread">Commentaires</a></span></div>
   </div>
   <div class="row">
-    <div class="span10 post-title">
+    <div class="span12 post-title">
         <h1><a title="Lien permanent vers {{ post.title }}" href="{{post.url}}">{{ post.title }}</a></h1>
     </div>
   </div>
   <div class="row">
-    <div class="span8 post-wrapper">
+    <div class="span9 post-wrapper">
       <div class="post-content">{{ post.content }}</div>
     </div>
-    <div class="span2">
+    <div class="span3">
       <br/>
       <div class="authors">
         {% for auth in post.author %}
@@ -64,13 +64,13 @@ tagline:
     </div>
   </div>
   <div class="row">
-    <div class="span8 social-buttons">
+    <div class="span10 social-buttons">
       <a href="https://twitter.com/share" class="twitter-share-button" data-size="large" data-text="{{post.title}}" data-url="{{site.production_url}}{{post.url}}" data-lang="fr">Tweeter</a>
       <div class="g-plusone" data-href="{{site.production_url}}{{post.url}}"></div>
     </div>
   </div>
   <div class="row">
-    <div class="span10">
+    <div class="span12">
       <hr/>
     </div>
   </div>
