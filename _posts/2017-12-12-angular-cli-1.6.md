@@ -200,7 +200,7 @@ The command will:
 
 - update `.angular-cli.json` to add the `appShell` key with its configuration `"appShell": { "app": "server-app", "route": "shell" }`;
 - add an `AppShellComponent` to your application;
-- updates the `app.server.module.ts` to add a route with the path specified pointing to the `AppShellComponent`.
+- update the `app.server.module.ts` to add a route with the path specified pointing to the `AppShellComponent`.
 
 Now when you'll build the application with `ng build --prod` the `dist` and `dist-server` directories will be generated,
 and the `index.html` file in `dist` will contain the prerendered `AppShellComponent`.
