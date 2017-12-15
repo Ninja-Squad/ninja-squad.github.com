@@ -93,7 +93,7 @@ Then, with the `strictNullChecks` option activated,
 the compiler will help you when you use this model.
 For example:
 
-   this.user.surname.toLowerCase();
+    this.user.surname.toLowerCase();
 
 will throw a warning as the `surname` field can be null.
 
