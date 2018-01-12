@@ -19,7 +19,7 @@ Let's see what 5.2 has in stock for us!
 ## Templates
 
 Angular&nbsp;5.0 introduced the `fullTemplateTypeCheck` option in the compiler.
-When activated, the Angular compiler will check more strictly your templates and catch potential type errors
+When activated, the Angular compiler will be stricter when checking your templates and catch potential type errors
 (check our [Angular&nbsp;5.0 blog post](/2017/11/02/what-is-new-angular-5/) to learn more).
 The feature is really powerful but sometimes you can run into expressions in your templates that you know will work at runtime,
 even if the compiler can't type-check them.
@@ -42,27 +42,20 @@ This is really similar to `as any` in TypeScript, and allows expressions that wo
     }
     {% endraw %}
 
-As for `any` in TypeScript, I'm not really fan of using this:
+As for `any` in TypeScript, I'm not really a fan of using this:
 I usually prefer to have a correct type instead of "cheating" with `any` or `$any()`.
 So this is not really for the day to day use.
-This is more targeted to help the applications using `fullTemplateTypeCheck`
+
+This is rather intended to help the applications using `fullTemplateTypeCheck`
 which can raise type errors hard to fix, usually from third party libraries.
+For example, we use `ng-bootstrap` and there were two errors in `1.0.0-beta.7`.
+We [fixed](https://github.com/ng-bootstrap/ng-bootstrap/commit/f1137aa867cc01e9cc92bd214354a2c44b9cb735) [them](https://github.com/ng-bootstrap/ng-bootstrap/commit/da31c3ed2aca9a217e877c92cc1a779a16028db3), so if you use `ng-bootstrap@1.0.0-beta.8` or a more recent one, you should be OK!
+
 This was also introduced for internal use in the framework (see below).
 
 ## Compiler
 
-Angular&nbsp;5.0 introduced the option `fullTemplateTypeCheck`,
-but until now it was not really working.
-I usually don't talk about bug fixes in these release blog posts,
-but for once I think it's interesting: the issues related to this compiler option
-have been fixed (using the `$any()` feature)!
-So you can now try the option to see if it discovers some errors in your templates! ✊
-
-Warning: it can also discover errors in some of your third party libraries.
-For example, we use `ng-bootstrap` and there was two errors in `1.0.0-beta.7`.
-We fixed them, so if you use `ng-bootstrap@1.0.0-beta.8` or a more recent one, you should be OK!
-
-Still concerning this feature, some work has been done to have more accurate errors in your template if you use the `strictNullChecks` option form the TypeScript compiler (see our blog post about [Angular&nbsp;4.1](/2017/04/28/what-is-new-angular-4.1/) to learn more about this) with `fullTemplateTypeCheck`.
+Still regarding this feature, some work has been done to have more accurate errors in your template if you use the `strictNullChecks` option form the TypeScript compiler (see our blog post about [Angular&nbsp;4.1](/2017/04/28/what-is-new-angular-4.1/) to learn more about this) with `fullTemplateTypeCheck`.
 
 For example, the compiler was not really good at determining a situation like this one:
 
@@ -101,7 +94,7 @@ We can now simply write:
 
 and the compiler will understand the situation!
 
-Note that this a generic feature: if you wrote your own structural directive,
+Note that this a generic feature: if you write your own structural directive,
 that works like an `*ngIf`, you can also leverage this type guard feature by adding
 a static field called `ngIfUseIfTypeGuard` to your directive.
 
