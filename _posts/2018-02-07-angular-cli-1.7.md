@@ -12,6 +12,50 @@ If you want to upgrade to 1.7.0 without pain (or to any other version, BTW), I h
 
 Let's see what new features we have!
 
+## App budgets
+
+One of the major new features is the ability to set budgets for your applications.
+In `.angular-cli.json`, you can now add a new section looking like:
+
+    "apps": [
+      {
+        "budgets": [
+          { "type": "bundle", "name": "main", "baseline": "300kb", "warning": "30kb" },
+          { "type": "bundle", "name": "races", "maximumWarning": "360kb" },
+          { "type": "allScript", "baseline": "1.4mb", "maximumError": "100kb" },
+          { "type": "initial", "baseline": "1.6mb", "error": "100kb" },
+          { "type": "any", "maximumError": "500kb" }
+         ],
+
+As you can see, there are several types of budget:
+
+- `bundle`, a specific bundle that you name;
+- `allScript`, all your application scripts;
+- `all`, all the application;
+- `initial`, the initial size of the application;
+- `anyScript`, any one of the script;
+- `any`, any one of the files.
+
+The sizes are compared to the `baseline` you specify.
+If you don't specify a baseline, then the baseline used is `0`.
+
+There are several types of error:
+
+- `maximumWarning`: warns you if size > baseline + maximumWarning;
+- `minimumWarning`: warns you if size < baseline + minimumWarning;
+- `warning`: same as defining the same `maximumWarning` and `minimumWarning`;
+- `maximumError`: errors if size > baseline + maximumError;
+- `minimumError`: errors if size < baseline + minimumError;
+- `error`: same as defining the same `maximumError` and `minimumError`.
+
+This is a pretty cool feature, as it allows to keep the size in check without additional tooling
+(like [bundlesize](https://github.com/siddharthkp/bundlesize))!
+
+## Angular&nbsp;6 support
+
+As Angular&nbsp;6 stable is right around the corner (end of march if everything goes well),
+the CLI is now compatible with it, meaning you can give a try to version 6 right now!
+
 ## Angular Compiler options
 
 The Angular Compiler options are now supported!
@@ -19,15 +63,14 @@ The Angular Compiler options are now supported!
 That means if you try to use for example the `fullTemplateTypeCheck` option
 introduced in Angular&nbsp;5.0 (see our [blog post](/2017/11/02/what-is-new-angular-5/)),
 you can now just update the `tsconfig.json` file of your CLI project,
-and when you will run `ng serve` or `ng build` the option will be picked up!
+and when you will run `ng serve --aot` or `ng build --prod` the option will be picked up!
 
 ## TypeScript 2.5 and 2.6 support
 
-As Angular{nbsp}5.1 supports TypeScript{nbsp}2.5
+As Angular&nbsp;5.1 supports TypeScript&nbsp;2.5
 (see our [blog post](/2017/12/07/what-is-new-angular-5.1/))
-and Angular{nbsp}5.2 now supports TypeScript{nbsp}2.6
-(see our other [blog post](/2017/12/07/what-is-new-angular-5.1/)) ,
-the CLI will no longer complain if you use this TS version.
-
+and Angular&nbsp;5.2 now supports TypeScript&nbsp;2.6
+(see our other [blog post](/2018/01/11/what-is-new-angular-5.2/)) ,
+the CLI will no longer complain if you use these TS versions.
 
 Check out our [ebook](https://books.ninja-squad.com/angular), [online training (Pro Pack)](https://angular-exercises.ninja-squad.com/) and [training](http://ninja-squad.com/training/angular) if you want to learn more!
