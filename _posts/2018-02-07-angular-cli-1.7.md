@@ -3,7 +3,7 @@ layout: post
 title: What's new in Angular CLI 1.7?
 author: cexbrayat
 tags: ["Angular 2", "Angular", "Angular 4", "Angular 5", "Angular 6", "Angular CLI"]
-description: "Angular CLI 1.7 is out! Which new features are included? App budgets, Angular 6 support, TypeScript 2.5 and 2.6, and more!"
+description: "Angular CLI 1.7 is out! Which new features are included? App budgets, ng update, Angular 6 support, TypeScript 2.5 and 2.6, and more!"
 ---
 
 [Angular CLI 1.7.0](https://github.com/angular/angular-cli/releases/tag/v1.7.0) is out with some nice new features!
@@ -51,6 +51,58 @@ There are several types of error:
 This is a pretty cool feature, as it allows to keep the size in check without additional tooling
 (like [bundlesize](https://github.com/siddharthkp/bundlesize))!
 And these may be the only budgets your app won't go over ;)
+
+## ng update
+
+Good news, we have now a command to automatically update the Angular dependencies of our CLI applications.
+
+If you use the new CLI 1.7, just run:
+
+    ng update
+
+And all your `@angular/*` dependencies will be updated to the latest stable!
+This includes all the core packages in your dependencies and devDependencies,
+but also the CLI itself, and other Angular packages like Material, or DevKit.
+It does so recursively, so dependencies like `rxjs`,
+`typescript` or `zone.js` are automatically updated too!
+
+The command does not have a lot of options (only a dry run option right now),
+so it's currently an all or nothing process.
+
+But it relies on a schematic, called `package-update`, that you can use directly.
+The schematic offers 4 options:
+- `@angular` to update the Angular packages
+- `@angular/cli` to update the CLI
+- `@angular-devkit` to update the DevKit
+- `all` to update all at once
+
+The `ng update` command calls the `all` command of the schematic,
+but you can use the schematic directly if you need or want to.
+
+I've never really explained how to do so, so let's take an example:
+you only want to update the Angular packages but not the CLI version.
+
+First, install the schematic:
+
+    yarn add --dev @schematics/package-update
+
+Add a `schematics` script in your `package.json`:
+
+    "scripts": {
+      "ng": "ng",
+      "schematics": "schematics"
+      // ...
+    },
+
+and run:
+
+    yarn schematics @schematics/package-update:@angular
+
+And you'll only have your Angular packages (and their own dependencies) updated.
+
+You can also specify a version to the schematic:
+
+    yarn schematics @schematics/package-update:@angular --version 5.2.3
 
 ## Angular&nbsp;6 support
 
