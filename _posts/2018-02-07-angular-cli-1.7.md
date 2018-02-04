@@ -2,13 +2,13 @@
 layout: post
 title: What's new in Angular CLI 1.7?
 author: cexbrayat
-tags: ["Angular 2", "Angular", "Angular 4", "Angular 5", "Angular CLI"]
-description: "Angular CLI 1.7 is out! Which new features are included?"
+tags: ["Angular 2", "Angular", "Angular 4", "Angular 5", "Angular 6", "Angular CLI"]
+description: "Angular CLI 1.7 is out! Which new features are included? App budgets, Angular 6 support, TypeScript 2.5 and 2.6, and more!"
 ---
 
 [Angular CLI 1.7.0](https://github.com/angular/angular-cli/releases/tag/v1.7.0) is out with some nice new features!
 
-If you want to upgrade to 1.7.0 without pain (or to any other version, BTW), I have created a Github project to help: [angular-cli-diff](https://github.com/cexbrayat/angular-cli-diff). Choose the version you're currently using (1.2.1 for example), and the target version (1.7.0 for example), and it gives you a diff of all files created by the CLI: [angular-cli-diff/compare/1.2.1...1.7.0](https://github.com/cexbrayat/angular-cli-diff/compare/1.2.1...1.7.0). You have no excuse for staying behind anymore!
+If you want to upgrade to 1.7.0 without pain (or to any other version, by the way), I have created a Github project to help: [angular-cli-diff](https://github.com/cexbrayat/angular-cli-diff). Choose the version you're currently using (1.2.1 for example), and the target version (1.7.0 for example), and it gives you a diff of all files created by the CLI: [angular-cli-diff/compare/1.2.1...1.7.0](https://github.com/cexbrayat/angular-cli-diff/compare/1.2.1...1.7.0). You have no excuse for staying behind anymore!
 
 Let's see what new features we have!
 
@@ -50,6 +50,7 @@ There are several types of error:
 
 This is a pretty cool feature, as it allows to keep the size in check without additional tooling
 (like [bundlesize](https://github.com/siddharthkp/bundlesize))!
+And these may be the only budgets your app won't go over ;)
 
 ## Angular&nbsp;6 support
 
