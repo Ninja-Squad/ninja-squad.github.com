@@ -3,7 +3,7 @@ layout: post
 title: What's new in Angular CLI 1.7?
 author: cexbrayat
 tags: ["Angular 2", "Angular", "Angular 4", "Angular 5", "Angular 6", "Angular CLI"]
-description: "Angular CLI 1.7 is out! Which new features are included? App budgets, ng update, Angular 6 support, TypeScript 2.5 and 2.6, and more!"
+description: "Angular CLI 1.7 is out! Which new features are included? App budgets, ng update, e2e test suites, Angular 6 support, TypeScript 2.5 and 2.6, Webpack 4, faster builds and more!"
 ---
 
 [Angular CLI 1.7.0](https://github.com/angular/angular-cli/releases/tag/v1.7.0) is out with some nice new features!
@@ -69,7 +69,7 @@ It does so recursively, so dependencies like `rxjs`,
 The command does not have a lot of options (only a dry run option right now),
 so it's currently an all or nothing process.
 
-But it relies on a schematic ([introduced in CLI 1.4, see our blog post](http://blog.ninja-squad.com/2017/09/14/angular-cli-1.4/)),
+But it relies on a schematic ([introduced in CLI 1.4, see our blog post](/2017/09/14/angular-cli-1.4/)),
 called `package-update`, that you can use directly.
 In broad lines, a schematic is a package that contains tasks allowing developers
 to create code (a full project, a component, a service...)
@@ -150,9 +150,9 @@ And then run:
 
 Service workers are a really nice feature of modern browsers,
 and Angular offers a package to help you use them,
-introduced in Angular&nbsp;5 (see [our blog post](http://blog.ninja-squad.com/2017/11/02/what-is-new-angular-5/)).
+introduced in Angular&nbsp;5 (see [our blog post](/2017/11/02/what-is-new-angular-5/)).
 Angular CLI also has a very good support for them,
-as we explained in [our blog post](http://blog.ninja-squad.com/2017/12/12/angular-cli-1.6/).
+as we explained in [our blog post](/2017/12/12/angular-cli-1.6/).
 
 But they can also be tricky, as everything involving caching in our industry...
 If you need to deactivate an already installed service worker,
@@ -187,7 +187,7 @@ the CLI will no longer complain if you use these TS versions.
 As you may know, the CLI uses Webpack under the hood.
 Webpack is currently in version 3 but the version 4 [should not be far away](https://medium.com/webpack/webpack-4-beta-try-it-today-6b1d27d7d7e2),
 bringing in some performance enhancements and some nice features
-(like the side-effect feature, which should reduce our bundle sizes, better defaults, WebAssembly support, etc...).
+(like the side-effect feature which should reduce our bundle sizes, better defaults, WebAssembly support, etc...).
 
 The CLI is getting ready to switch to Webpack 4,
 and we should enjoy some of these nice features (reduce bundle sizes, faster builds) soon!
