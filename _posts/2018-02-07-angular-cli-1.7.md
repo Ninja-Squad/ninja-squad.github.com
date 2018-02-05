@@ -69,14 +69,22 @@ It does so recursively, so dependencies like `rxjs`,
 The command does not have a lot of options (only a dry run option right now),
 so it's currently an all or nothing process.
 
-But it relies on a schematic, called `package-update`, that you can use directly.
-The schematic offers 4 options:
+But it relies on a schematic ([introduced in CLI 1.4, see our blog post](http://blog.ninja-squad.com/2017/09/14/angular-cli-1.4/)),
+called `package-update`, that you can use directly.
+In broad lines, a schematic is a package that contains tasks allowing developers
+to create code (a full project, a component, a service...)
+and/or to update code (like updating configuration or classes, adding a dependency, etc...).
+All the "classic" tasks and blueprints of Angular CLI are in the `@schematics/angular` package,
+but the CLI team is gradually rolling in a few new ones to add features,
+like `@schematics/package-update`.
+
+This new schematic offers 4 tasks:
 - `@angular` to update the Angular packages
 - `@angular/cli` to update the CLI
 - `@angular-devkit` to update the DevKit
 - `all` to update all at once
 
-The `ng update` command calls the `all` command of the schematic,
+The `ng update` command calls the `all` task of the schematic,
 but you can use the schematic directly if you need or want to.
 
 I've never really explained how to do so, so let's take an example:
