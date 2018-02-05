@@ -112,6 +112,54 @@ You can also specify a version to the schematic:
 
     yarn schematics @schematics/package-update:@angular --version 5.2.3
 
+## Configuration simplifications
+
+I usually don't mention that a few files have changed in the project template,
+but for once it comes with a few simplifications and new options,
+so you should definitively take a careful look at all the changes,
+especially in the:
+
+- `test.ts` file (new `zone.js` import, simplified logic)
+- `polyfills.ts` file (shows how to use some `zone.js` capabilities)
+- `tslint.json` file (rules added and removed)
+- `package.json` file (lots of dependency bumps)
+
+You can easily see these changes with our `angular-cli-diff` repository,
+for example between an old version and the last one: [angular-cli-diff/compare/1.2.1...1.7.0](https://github.com/cexbrayat/angular-cli-diff/compare/1.2.1...1.7.0)
+
+## E2e test suites
+
+The `e2e` task can now take a `--suite` option,
+to run only part of your e2e tests.
+You can define suites of tests in your `protractor.conf.js` configuration file:
+
+    exports.config = {
+      suites: {
+        perf: 'e2e/perf/**/*.e2e-spec.ts',
+        regression: [
+          'e2e/regression/**/*.e2e-spec.ts',
+          'e2e/bugs/**/*.e2e-spec.ts'
+        ]
+      },
+
+And then run:
+
+    yarn e2e --suite perf,regression
+
+## Service worker safety
+
+Service workers are a really nice feature of modern browsers,
+and Angular offers a package to help you use them,
+introduced in Angular&nbsp;5 (see [our blog post](http://blog.ninja-squad.com/2017/11/02/what-is-new-angular-5/)).
+Angular CLI also has a very good support for them,
+as we explained in [our blog post](http://blog.ninja-squad.com/2017/12/12/angular-cli-1.6/).
+
+But they can also be tricky, as everything involving caching in our industry...
+If you need to deactivate an already installed service worker,
+`@angular/service-worker` will include a `safety-worker.js` script starting with Angular&nbsp;6,
+and the CLI 1.7 adds support to automatically include it in the production bundle.
+You must then serve the content of this script at the URL of the service worker you want to unregister.
+
 ## Angular&nbsp;6 support
 
 As Angular&nbsp;6 stable is right around the corner (end of march if everything goes well),
@@ -133,5 +181,20 @@ As Angular&nbsp;5.1 supports TypeScript&nbsp;2.5
 and Angular&nbsp;5.2 now supports TypeScript&nbsp;2.6
 (see our other [blog post](/2018/01/11/what-is-new-angular-5.2/)) ,
 the CLI will no longer complain if you use these TS versions.
+
+## Webpack 4 support
+
+As you may know, the CLI uses Webpack under the hood.
+Webpack is currently in version 3 but the version 4 [should not be far away](https://medium.com/webpack/webpack-4-beta-try-it-today-6b1d27d7d7e2),
+bringing in some performance enhancements and some nice features
+(like the side-effect feature, which should reduce our bundle sizes, better defaults, WebAssembly support, etc...).
+
+The CLI is getting ready to switch to Webpack 4,
+and we should enjoy some of these nice features (reduce bundle sizes, faster builds) soon!
+
+## Better, faster, higher
+
+The tasks have been slightly improved with the introduction of caching,
+so your build should be faster!
 
 Check out our [ebook](https://books.ninja-squad.com/angular), [online training (Pro Pack)](https://angular-exercises.ninja-squad.com/) and [training](http://ninja-squad.com/training/angular) if you want to learn more!
