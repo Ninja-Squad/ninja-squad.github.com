@@ -42,10 +42,10 @@ If you don't specify a baseline, then the baseline used is `0`.
 There are several types of error:
 
 - `maximumWarning`: warns you if size > baseline + maximumWarning;
-- `minimumWarning`: warns you if size < baseline + minimumWarning;
+- `minimumWarning`: warns you if size < baseline - minimumWarning;
 - `warning`: same as defining the same `maximumWarning` and `minimumWarning`;
 - `maximumError`: errors if size > baseline + maximumError;
-- `minimumError`: errors if size < baseline + minimumError;
+- `minimumError`: errors if size < baseline - minimumError;
 - `error`: same as defining the same `maximumError` and `minimumError`.
 
 This is a pretty cool feature, as it allows to keep the size in check without additional tooling
@@ -66,7 +66,8 @@ but also the CLI itself, and other Angular packages like Material, or DevKit.
 It does so recursively, so dependencies like `rxjs`,
 `typescript` or `zone.js` are automatically updated too!
 
-The command does not have a lot of options (only a dry run option right now),
+The command does not have a lot of options
+(only a `dry-run` option and a `next` option to update not to the latest stable, but to the next version),
 so it's currently an all or nothing process.
 
 But it relies on a schematic ([introduced in CLI 1.4, see our blog post](/2017/09/14/angular-cli-1.4/)),
@@ -162,7 +163,7 @@ You must then serve the content of this script at the URL of the service worker 
 
 ## Angular&nbsp;6 support
 
-As Angular&nbsp;6 stable is right around the corner (end of march if everything goes well),
+As Angular&nbsp;6 stable is right around the corner (end of March if everything goes well),
 the CLI is now compatible with it, meaning you can give a try to version 6 right now!
 
 ## Angular Compiler options
