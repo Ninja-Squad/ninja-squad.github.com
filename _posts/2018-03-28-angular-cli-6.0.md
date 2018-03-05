@@ -34,7 +34,7 @@ You probably know that under the hood the CLI uses Webpack to do the heavy lifti
 Webpack has released the 4.0 version: you can read more about it on https://medium.com/webpack/webpack-4-released-today-6cdb994702d4.
 
 TL;DR: Webpack 4 is faster, should be smarter for bundling common parts of the application,
-a new option (`sideEffects`) will help to have a better tree-shaking, and adds WebAssembly support.
+has a new option (`sideEffects`) that will help to have a better tree-shaking, and adds WebAssembly support.
 
 The Angular CLI team has done an awesome job and integrated Webpack 4 right away in the CLI,
 and it brings some nice improvements on build times and bundle sizes.
@@ -44,8 +44,8 @@ and it brings some nice improvements on build times and bundle sizes.
 ## Dynamic lazy-loading
 
 Angular provides a nice way to have lazy-loading in your application via the router.
-This is usually enough, but sometimes you might find yourselves in a situation
-where you would like to lazy-load a module programatically, on demand.
+This is usually enough, but sometimes you might find yourself in a situation
+where you would like to lazy-load a module programmatically, on demand.
 
 Something like:
 
@@ -56,7 +56,7 @@ Something like:
 
 The problem was that the CLI was only able to bundle modules separately
 if they are found in a `loadChildren` route configuration.
-So you had to "trick" the CLI and Webapck to build a separate chunk.
+So you had to "trick" the CLI and Webpack to build a separate chunk.
 
 With Angular CLI 6.0, that's no longer necessary.
 A new option, called `lazyModules`, can be added to your `.angular-cli.json`,
