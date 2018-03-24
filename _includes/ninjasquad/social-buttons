@@ -1,0 +1,21 @@
+<a class="twitter-share-button"
+   title="Share on Twitter"
+   target="social"
+   href="https://twitter.com/intent/tweet?text={{ post.title | default: page.title | url_encode }}%20{{ post.description | default: page.description | url_encode }}&url={{ post.url | default: page.url | absolute_url | url_encode }}&related=NinjaSquad,agnes_crepet,cedric_exbrayat,clacote,jbnizet"
+>
+    <img class="sharing-icon" src="/assets/images/sharing/twitter.png" alt="Twitter logo" />
+</a>
+<a class="gplus-share-button"
+   title="Share on Google+"
+   target="social"
+   href="https://plus.google.com/share?text={{ post.title | default: page.title | url_encode }}%20{{ post.description | default: page.description | url_encode }}&url={{ post.url | default: page.url | absolute_url | url_encode }}"
+>
+  <img class="sharing-icon" src="/assets/images/sharing/gplus.png" alt="Google+ logo" />
+</a>
+<a class="facebook-share-button"
+   title="Share on Facebook"
+   target="social"
+   href="https://www.facebook.com/dialog/share?app_id=1494210180705978&quote={{ post.title | default: page.title | url_encode }}%20{{ post.description | default: page.description | url_encode }}&href={{ post.url | default: page.url | absolute_url | url_encode }}"
+>
+  <img class="sharing-icon" src="/assets/images/sharing/facebook.png" alt="Facebook logo" />
+</a>
