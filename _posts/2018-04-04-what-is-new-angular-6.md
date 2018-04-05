@@ -114,7 +114,24 @@ it's a must read when you'll start your Angular{nbsp}6.0 migration.
 
 ## i18n
 
-format functions available
+The big one for i18n is the upcoming possibility to have "runtime i18n",
+without having to be build the application once per locale.
+This is not yet available (there are just prototypes for now),
+and it will need the Ivy renderer to work (continue reading to know what that is).
+So it will be probably a few weeks/months more before we can use it.
+
+While we hope for this much awaited feature,
+a fix landed in i18n that may change how your application display amounts.
+The `currency` pipe has indeed a change that makes sense:
+it will not round every currency with 2 digits anymore,
+but will round the currency to the most appropriate digits
+(which can be 3 like for the Arabic Dinar of Bahrain, or 0 like for the Chilean Pesos).
+
+If you need to, you can retreive this value programmatically by using
+the new i18n function `getNumberOfCurrencyDigits`.
+
+Other formatting functions have also been exposed publicly,
+like `formatDate`, `formatCurrency`, `formatPercent`, `formatNumber`
 
 ## Animations
 
