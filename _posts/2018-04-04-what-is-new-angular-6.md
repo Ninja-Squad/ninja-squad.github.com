@@ -341,9 +341,21 @@ I'll spare you the gory details, but it should be transparent for us.
 
 ### New features
 
-#### runtime i18n
+#### Runtime i18n
 
-#### private properties in templates
+Note that this new renderer will now allow to have the much awaited possibility
+of having "runtime i18n".
+This is not completely ready,
+but we saw a few commits that are good signs!
+
+The cool thing is that you should not have to change your application a lot
+if you are already using i18n.
+But this time instead of building your application one time
+for each locale you want to support,
+you will be able to juste load a JSON containing the translations for each locale,
+and Angular will take care of the rest!
+
+#### Private properties in templates
 
 The new compiler adds a new feature or potential change.
 
@@ -360,6 +372,4 @@ it has access to the private properties of the component.
 I saw a comment from the Angular team saying that it was not recommended to use private properties
 in templates, even if it now possible, as it may not be the case in the future...
 
-
-
-All our materials ([ebook](https://books.ninja-squad.com/angular), [online training (Pro Pack)](https://angular-exercises.ninja-squad.com/) and [training](http://ninja-squad.com/training/angular)) are up-to-date with these changes if you want to learn more!
+All our materials ([ebook](https://books.ninja-squad.com/angular), [online training](https://angular-exercises.ninja-squad.com/) and [training](http://ninja-squad.com/training/angular)) are up-to-date with these changes if you want to learn more!
