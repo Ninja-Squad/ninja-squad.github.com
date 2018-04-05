@@ -122,8 +122,19 @@ web-animation only required for AnimationBuilder
 
 ## ElementRef<T>
 
-When // TODO
+When you want to grab a reference to an element in your template,
+you can use `@ViewChild` or `@ViewChildren` or even inject `ElementRef` directly.
+The inconvenient is that the said `ElementRef` will have its property `nativeElement` typed as `any`,
+in Angular{nbsp}5.0 or older.
 
+In Angular{nbsp}6.0, you can now type `ElementRef` more strictly if you want:
+
+    @ViewChild('loginInput') loginInput: ElementRef<HTMLInputElement>;
+
+    ngAfterViewInit() {
+      // nativeElement is now an `HTMLInputElement`
+      this.loginInput.nativeElement.focus();
+    }
 
 ## Deprecations and breaking changes
 
