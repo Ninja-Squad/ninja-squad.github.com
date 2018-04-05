@@ -110,12 +110,12 @@ I say "one day" and not "right now" because RxJS released a library called `rxjs
 that allows you to bump RxJS to version 6.0 even if you use one of the "old" syntaxes.
 
 The Angular team wrote a [complete document](https://docs.google.com/document/d/12nlLt71VLKb-z3YaSGzUfx6mJbc34nsMXtByPUN35cg/preview) to explain all this,
-it's a must read when you'll start your Angular{nbsp}6.0 migration.
+it's a must read when you'll start your Angular&nbsp;6.0 migration.
 
 ## i18n
 
 The big one for i18n is the upcoming possibility to have "runtime i18n",
-without having to be build the application once per locale.
+without having to build the application once per locale.
 This is not yet available (there are just prototypes for now),
 and it will need the Ivy renderer to work (continue reading to know what that is).
 So it will be probably a few weeks/months more before we can use it.
@@ -124,31 +124,31 @@ While we hope for this much awaited feature,
 a fix landed in i18n that may change how your application display amounts.
 The `currency` pipe has indeed a change that makes sense:
 it will not round every currency with 2 digits anymore,
-but will round the currency to the most appropriate digits
+but will round the currency to the most appropriate digit number
 (which can be 3 like for the Arabic Dinar of Bahrain, or 0 like for the Chilean Pesos).
 
 If you need to, you can retreive this value programmatically by using
 the new i18n function `getNumberOfCurrencyDigits`.
 
 Other formatting functions have also been exposed publicly,
-like `formatDate`, `formatCurrency`, `formatPercent`, `formatNumber`
+like `formatDate`, `formatCurrency`, `formatPercent`, and `formatNumber`.
 
 ## Animations
 
-The polyfill `web-animation-js` is not necessary anymore for animations in Angular{nbsp}6.0,
+The polyfill `web-animations-js` is not necessary anymore for animations in Angular&nbsp;6.0,
 except if you are using the `AnimationBuilder`.
-Your application may have won a few previous bytes!
+Your application may have won a few precious bytes!
 In the case that the browser does not support the [element.animate API](https://developer.mozilla.org/en-US/docs/Web/API/Element/animate),
-Angular{nbsp}6.0 will fallback to CSS keyframes.
+Angular&nbsp;6.0 will fallback to CSS keyframes.
 
 ## ElementRef<T>
 
 When you want to grab a reference to an element in your template,
 you can use `@ViewChild` or `@ViewChildren` or even inject `ElementRef` directly.
 The inconvenient is that the said `ElementRef` will have its property `nativeElement` typed as `any`,
-in Angular{nbsp}5.0 or older.
+in Angular&nbsp;5.0 or older.
 
-In Angular{nbsp}6.0, you can now type `ElementRef` more strictly if you want:
+In Angular&nbsp;6.0, you can now type `ElementRef` more strictly if you want:
 
     @ViewChild('loginInput') loginInput: ElementRef<HTMLInputElement>;
 
@@ -165,18 +165,18 @@ Let's talk about what you should be aware before attempting a migration!
 
 In the "bad things that can happen when you upgrade" section,
 note that `preserveWhitespaces` is now `false` by default.
-This option was introduced in Angular{nbsp}4.4,
+This option was introduced in Angular&nbsp;4.4,
 and if you want to know what to expect,
 you should read [our blog post about that](/2017/09/18/what-is-new-angular-4.4/).
 Spoiler: it may be completely fine or break your layouts.
 
 ### ngModel and reactive forms
 
-It used to be possible to use `ngModel` and `formControl` on the same form fields,
-buit this is now deprecated and the support will be removed in Angular{nbsp}7.0.
+It used to be possible to have `ngModel` and `formControl` on the same form fields,
+but this is now deprecated and the support will be removed in Angular&nbsp;7.0.
 
 It was a bit confusing and was probably not doing exactly what you were expecting
-(`ngModel` was not the directive you knwo, but an input/output on the `formControl` directive doing slightly the same job, but not _exactly_ the same job).
+(`ngModel` was not the directive you know, but an input/output on the `formControl` directive doing slightly the same job, but not _exactly_ the same job).
 We thought it was confusing too,
 so we removed the chapter talking about that in our ebook [6 months ago](https://books.ninja-squad.com/angular/changelog).
 
@@ -224,7 +224,7 @@ if you want to give a try.
 
 Be warned that it is probably not very reliable,
 so my advice would be: don't use it in production right now.
-But it will the defualt in a near future, so you can give it a spin to see if that works for your app,
+But it will the default in a near future, so you can give it a spin to see if that works for your app,
 and what you gain.
 
 Let's dive into what differs between the old renderer, and the Ivy renderer.
@@ -276,8 +276,8 @@ called a `ngfactory`. It would contain (simplified code):
 This is hard to read, but the main things generated are:
 
 - the structure of the DOM to create, containing element definitions (`figure`, `img`, `figcaption`)
-abd their attributes, and text node definitions. Each part of the DOM structure is the view definition array and is represented by its index.
-- change detection functions, containing the code you would more or less write by hand. Here, it checks the result of the `getPonyImageUrl` method and if it changes, updates the value of the input of the image component. Same with the pony's name: if it changes, it updates the text node displaying it.
+and their attributes, and text node definitions. Each part of the DOM structure in the view definition array and is represented by its index.
+- change detection functions, containing the code you would more or less write by hand. Here, it checks the result of the `getPonyImageUrl` method and if it changes, updates the value of the input of the image component. Same with the name of the pony: if it changes, it updates the text node displaying it.
 
 ### Code generated with Ivy
 
@@ -292,10 +292,10 @@ the same example doesn't generate a separate `ngfactory` but inlines all the inf
           factory: () => new PonyComponent(),
           template: (component, creationMode) {
             if (creationMode) {
-                element(0, "figure");
-                element(1, ImageComponent);
-                element(2, "div");
-                text(3);
+              element(0, "figure");
+              element(1, ImageComponent);
+              element(2, "div");
+              text(3);
             }
             property(1, "src", component.getPonyImageUrl());
             text(3, interpolate("", component.ponyModel.name, ""));
@@ -333,7 +333,7 @@ resulting in smaller bundles \o/.
 ### Compatibility with existing librairies
 
 You might be wondering what will happen with libraries
-that have already been published using the previous packaging formation
+that have already been published using the previous packaging format
 if your project uses Ivy.
 Don't worry, the compiler will produce Ivy-compatible version of the dependencies of your project,
 even if they are not compiled with Ivy.
@@ -362,14 +362,19 @@ The new compiler adds a new feature or potential change.
 It is a direct result of the fact that the template function is inlined
 in a static field of the component:
 we can now have private properties of our components used in templates.
-This is not currently the case,
-and forces us to have all the fields and methods of the component used in the template to be public,
-as they end up in a different class (the `ngfactory`), and that would fail the TypeScript compilation
-to access a private property from another class.
+This was not possible until then,
+and forced us to have all the fields and methods of the component used in the template to be public,
+as they ended up in a different class (the `ngfactory`),
+and accessing a private property from another class would have failed the TypeScript compilation.
 This is no longer the case: as the template function is inside a static field,
 it has access to the private properties of the component.
 
 I saw a comment from the Angular team saying that it was not recommended to use private properties
 in templates, even if it now possible, as it may not be the case in the future...
+So you should probably continue to use public fields only in your templates!
+
+This release doesn't bring a lot of new features,
+but Ivy is definitely interesting for the future.
+Give it a try and tell us how it goes for you!
 
 All our materials ([ebook](https://books.ninja-squad.com/angular), [online training](https://angular-exercises.ninja-squad.com/) and [training](http://ninja-squad.com/training/angular)) are up-to-date with these changes if you want to learn more!
