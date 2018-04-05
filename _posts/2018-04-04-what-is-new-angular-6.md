@@ -159,9 +159,44 @@ In Angular{nbsp}6.0, you can now type `ElementRef` more strictly if you want:
 
 ## Deprecations and breaking changes
 
-### preserveWhitespace by default
+Let's talk about what you should be aware before attempting a migration!
 
-### deprecated: ngModel and reactive forms
+### preserveWhitespaces: false by default
+
+In the "bad things that can happen when you upgrade" section,
+note that `preserveWhitespaces` is now `false` by default.
+This option was introduced in Angular{nbsp}4.4,
+and if you want to know what to expect,
+you should read [our blog post about that](/2017/09/18/what-is-new-angular-4.4/).
+Spoiler: it may be completely fine or break your layouts.
+
+### ngModel and reactive forms
+
+It used to be possible to use `ngModel` and `formControl` on the same form fields,
+buit this is now deprecated and the support will be removed in Angular{nbsp}7.0.
+
+It was a bit confusing and was probably not doing exactly what you were expecting
+(`ngModel` was not the directive you knwo, but an input/output on the `formControl` directive doing slightly the same job, but not _exactly_ the same job).
+We thought it was confusing too,
+so we removed the chapter talking about that in our ebook [6 months ago](https://books.ninja-squad.com/angular/changelog).
+
+So using code like:
+
+    <input [(ngModel)]="user.name" [formControl]="nameCtrl">
+
+will now yield a warning.
+
+You can configure your app to emit the warning `always` (the default),
+`once` or `never`:
+
+    imports: [
+      ReactiveFormsModule.withConfig({
+        warnOnNgModelWithFormControl: 'never'
+      });
+    ]
+
+Anyway, to prepare for ng 7, you should migrate your code to use
+either a template-driven form or a reactive form.
 
 ## Project Ivy: the new (new) Angular compiler
 
