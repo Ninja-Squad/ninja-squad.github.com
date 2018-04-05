@@ -135,7 +135,11 @@ like `formatDate`, `formatCurrency`, `formatPercent`, `formatNumber`
 
 ## Animations
 
-web-animation only required for AnimationBuilder
+The polyfill `web-animation-js` is not necessary anymore for animations in Angular{nbsp}6.0,
+except if you are using the `AnimationBuilder`.
+Your application may have won a few previous bytes!
+In the case that the browser does not support the [element.animate API](https://developer.mozilla.org/en-US/docs/Web/API/Element/animate),
+Angular{nbsp}6.0 will fallback to CSS keyframes.
 
 ## ElementRef<T>
 
