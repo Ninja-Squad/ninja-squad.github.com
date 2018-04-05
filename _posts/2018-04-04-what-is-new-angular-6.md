@@ -39,6 +39,9 @@ the injectable is registered as a provider of the `UsersModule` without adding i
 This new way has been introduced to have a better tree-shaking in the application.
 Currently a service added to the `providers` of a module will end up in the final bundle,
 even if it is not used in the application, which is a bit sad.
+And if you use lazy-loading, you can fall in a bunch of traps or end up with the service bundled
+in the "wrong" place.
+
 It should not happen often in applications (if you write a service, you usually use it),
 but third party modules sometimes offer services that you don't use,
 and you end up with a big bundle of useless JavaScript.
@@ -50,12 +53,64 @@ The new CLI will even scaffold a service with `providedIn: 'root'` by default no
 In the same spirit, you can now declare an `InjectionToken` and directly register it with `providedIn`
 and give it a `factory`:
 
-     export const WEBSOCKET = new InjectionToken<WebSocket>('WebSocket', {
+     export const baseUrl = new InjectionToken<string>('baseUrl', {
         providedIn: 'root',
-        factory: () => WebSocket
+        factory: () => 'http://localhost:8080/'
      });
 
+Note that it also simplifies unit testing.
+We used to register the service in the providers of the testing module to be able to test it.
+Before:
+
+    beforeEach(() => TestBed.configureTestingModule({
+      providers: [UserService]
+    }));
+
+Now, if the `UserService` uses `providedIn: 'root'`:
+
+    beforeEach(() => TestBed.configureTestingModule({}));
+
 ## RxJS 6
+
+Angular&nbsp;6 now uses RxJS&nbsp;6 internally,
+and requires you to update your application also.
+
+And... RxJS 6 changed the way to import things!
+
+In RxJS 5, you were probably writing:
+
+    import { Observable } from 'rxjs/Observable';
+    import 'rxjs/add/observable/of';
+    import 'rxjs/add/operator/map';
+
+    Observable.of(1, 2)
+      .map(n => n * 2)
+      .subscribe();
+
+RxJS 5.5 introduced the pipeable operators:
+
+    import { of } from 'rxjs/observable/of';
+    import { map } from 'rxjs/operators';
+
+    of(1, 2).pipe(
+        map(n => n * 2)
+      ).subscribe();
+
+And RxJS 6.0 changed the imports:
+
+    import { of } from 'rxjs';
+    import { map } from 'rxjs/operators';
+
+    of(1, 2).pipe(
+        map(n => n * 2)
+      ).subscribe();
+
+So, one day, you'll have to change the imports across your application.
+I say "one day" and not "right now" because RxJS released a library called `rxjs-compat`,
+that allows you to bump RxJS to version 6.0 even if you use one of the "old" syntaxes.
+
+The Angular team wrote a [complete document](https://docs.google.com/document/d/12nlLt71VLKb-z3YaSGzUfx6mJbc34nsMXtByPUN35cg/preview) to explain all this,
+it's a must read when you'll start your Angular{nbsp}6.0 migration.
 
 ## i18n
 
@@ -223,12 +278,11 @@ I'll spare you the gory details, but it should be transparent for us.
 
 #### private properties in templates
 
-Take this with a grain of salt, as I have not seen official declarations about this,
-but based on what I understand now, I think the new compiler adds a new feature or potential change.
+The new compiler adds a new feature or potential change.
 
 It is a direct result of the fact that the template function is inlined
 in a static field of the component:
-we can now have private property of our components used in templates.
+we can now have private properties of our components used in templates.
 This is not currently the case,
 and forces us to have all the fields and methods of the component used in the template to be public,
 as they end up in a different class (the `ngfactory`), and that would fail the TypeScript compilation
@@ -236,9 +290,8 @@ to access a private property from another class.
 This is no longer the case: as the template function is inside a static field,
 it has access to the private properties of the component.
 
-I don't know if the Angular team will recommend using public properties now even if it's not needed,
-or if we will be encouraged to leverage this new possibility
-to only leave public the fields that really need to be (like inputs and outputs).
+I saw a comment from the Angular team saying that it was not recommended to use private properties
+in templates, even if it now possible, as it may not be the case in the future...
 
 
 
