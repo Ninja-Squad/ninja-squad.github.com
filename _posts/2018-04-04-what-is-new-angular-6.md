@@ -117,6 +117,14 @@ even if you, or one of the libraries you're using, is still using one of the "ol
 The Angular team wrote a [complete document](https://docs.google.com/document/d/12nlLt71VLKb-z3YaSGzUfx6mJbc34nsMXtByPUN35cg/preview) to explain all this,
 it's a must read when you'll start your Angular&nbsp;6.0 migration.
 
+Note that a very cool set of tslint rules has been released called `rxjs-tslint`.
+It just contains 3 rules that, when added to your project,
+will automatically migrate all your RxJS imports and RxJS code to the brand new version
+with a simple `tslint --fix`!
+Because, if you don't know about it, `tslint` has a `fix` option that will autocorrect all the violations it can!
+I gave `rxjs-tslint` a try on one of our projects, and it worked fairly well (run it at least twice to also collapse all the imports).
+Check out the project README to learn more: https://github.com/ReactiveX/rxjs-tslint.
+
 ## i18n
 
 The big one for i18n is the upcoming possibility to have "runtime i18n",
@@ -233,6 +241,8 @@ and the new Ivy renderer is behind a flag that you have to explicitly set in the
 
 Be warned that it is probably not very reliable,
 so my advice would be: don't use it in production right now.
+It will probably not even work right now.
+The v6 version was released in time for NGConf, not really when all the features were ready...
 But it will become the default in a near future, so you can give it a spin to see if that works for your app,
 and what you gain.
 
@@ -296,19 +306,22 @@ the same example doesn't generate a separate `ngfactory` but inlines the informa
 
         static ngComponentDef = defineComponent({
           type: PonyComponent,
-          selector: [[["ns-pony"], null]],
+          selector: [['ns-pony']],
           factory: () => new PonyComponent(),
-          template: (component, creationMode) {
-            if (creationMode) {
-              element(0, "figure");
-              element(1, ImageComponent);
-              element(2, "div");
+          template: (renderFlag, component) {
+            if (renderFlag & RenderFlags.Create) {
+              element(0, 'figure');
+              element(1, 'ns-image');
+              element(2, 'div');
               text(3);
             }
-            property(1, "src", component.getPonyImageUrl());
-            text(3, interpolate("", component.ponyModel.name, ""));
+            if (renderFlag & RenderFlags.Update) {
+              property(1, 'src', component.getPonyImageUrl());
+              text(3, interpolate('', component.ponyModel.name, ''));
+            }
           },
-          inputs: { ponyModel: "ponyModel" }
+          inputs: { ponyModel: 'ponyModel' },
+          directives: () => [ImageComponent];
         });
 
         // ... rest of the class
@@ -338,7 +351,7 @@ but an Hello World application was way too heavy.
 With Ivy-generated code, the tree-shaking process is much more efficient,
 resulting in smaller bundles \o/.
 
-### Compatibility with existing librairies
+### Compatibility with existing libraries
 
 You might be wondering what will happen with libraries
 that have already been published using the previous packaging format
