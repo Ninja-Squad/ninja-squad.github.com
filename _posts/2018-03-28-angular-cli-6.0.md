@@ -3,13 +3,14 @@ layout: post
 title: What's new in Angular CLI 6.0?
 author: cexbrayat
 tags: ["Angular 2", "Angular", "Angular 4", "Angular 5", "Angular 6", "Angular CLI"]
-description: "Angular CLI 6.0 is out! Which new features are included? Webpack 4, dynamic lazy-loading, breaking changes and more!"
+description: "Library support, new architecture, ng update, Webpack 4, dynamic lazy-loading, breaking changes and more!"
 ---
 
 [Angular CLI 6.0.0](https://github.com/angular/angular-cli/releases/tag/v6.0.0) is out with some nice new features!
 
 The version number can be a bit surprising as the last release was... 1.7!
 The Angular team decided to now release the CLI with the rest of the framework, hence the big jump.
+Check out our article about [Angular&nbsp;6.0](TODO) if you haven't!
 
 But it is also a big major release because the internals have changed to offer us more possibilities!
 Note that the update might not be straightforward, as a few things have changed.
@@ -40,7 +41,9 @@ but it looks like you just need to `npm publish` the result and you're good to g
 You can also have several applications in your project, with `ng generate application`.
 Actually you already have two now by default: your main application and an application containing the `e2e` tests.
 
-The cool thing is that you can directly import from the library into your applications.
+The cool thing is that you can directly import from the library into your applications
+in the same CLI project, even without publishing the library on NPM.
+
 For example, let's say you generated a `shared` library.
 By default the CLI will produced a `shared` directory inside `projects`,
 with a `ShareComponent` and a `SharedService`.
@@ -110,24 +113,107 @@ you get it...
 
 A few commands are not delegating to `@angular-devkit/architect` but to `@angular-devkit/schematics`.
 These commands are `ng new my-app` (which is the same as `ng generate @schematics/angular:application my-app`), `ng update` and `ng add`.
-But I'll come back to these two last in a dedicated section.
+But I'll come back to these two lasts in a dedicated section.
 
-// TODO add an extract of angular.json and explain it
+This new architecture comes at a price though:
+a bunch of configuration files have changed.
+Some code has been moved around,
+a new dev dependency has been added (`@angular-devkit/build-angular`),
+but most importantly, `.angular-cli.json` is now deprecated and replaced by `angular.json`.
 
-## ng update
+This new configuration file looks like:
 
-// TODO explain that ng update runs a schematic
-// current examples: the CLI itself, Angular Element, RxJS
+    {
+      "version": 1,
+      "newProjectRoot": "projects",
+      "projects": {
+        "ponyracer": {
+          "root": "",
+          "projectType": "application",
+          "cli": {
+            "packageManager": "yarn"
+          },
+          "architect": {
+            "build": {
+              "builder": "@angular-devkit/build-angular:browser",
+              "options": {
+                "outputPath": "dist",
+                "index": "src/index.html",
+                "main": "src/main.ts",
+                // ...
+
+It's far bigger than this sample of course,
+but you can find what I was explaining about the new architecture.
+The new applications or libraries will be generated in the `projects` directory,
+My configuration is for one project, called `ponyracer` and it's  an application.
+The CLI can be customized to use another package manager like Yarn.
+And then you have a long section for `architect`, the command runner.
+Each available command is a key, for which a builder is needed.
+For example, `build` runs `@angular-devkit/build-angular:browser`,
+with a bunch of options you can override if you want to.
+
+Migrating to this new configuration is a bit cumbersome,
+but not that hard.
+You can do it by hand, using [`angular-cli-diff`]([angular-cli-diff](https://github.com/cexbrayat/angular-cli-diff/compare/1.7.0...6.0.0)) to help you,
+or you can try the brand new `ng update` feature of the CLI.
+
+## ng update and ng add
+
+The `ng update` command has been introduced in 1.7 but was a glorified `npm install`.
+With this release, it starts to express its potential!
+
+It's now a command that can install packages and run migration scripts automatically.
+The command will look into the `package.json` file of the package you're specifying
+for a key called `ng-update`.
+If it finds one, it will try to run the migration scripts found.
+You have to specify from which version you update (and to which one if you want to).
+
+The CLI itself offers a migration script to go from 1.x to 6.0.
+You can run the migration script alone with `ng update @angular/cli --migrate-only --from=1.7.4`,
+and it ill automatically add the missing dependencies, move the code around to match the new layout,
+and migrate the old configuration file to the new `angular.json` one.
+It works well enough in that case, even if it was not perfect when we tried it.
+So give it a try, but don't trust it blindly and check manually if everything looks good.
+
+RxJS also offers scripts to update your app to RxJS v6,
+with `ng update rxjs --migrate-only --from=5.5.9` for example.
+
+Note that the same is possible with `ng add`:
+when adding a package with `ng add`,
+the CLI will look for the `ng-add` key in the `package.json` file
+of the package you are installing and will run it.
+For example, if you add Angular Element to your project with `ng add @angular/elements`,
+a script will add the required polyfill to your application.
+
+On the paper, it looks great and _kind of_ what Facebook does for React with the [codemod  project](https://github.com/reactjs/react-codemod).
+In practice, it will greatly depend on whether the eco-system adopts it or not.
+But this could be quite cool if the feature becomes reliable.
+We can imagine migrating Angular or the CLI from one version to the next
+by relying solely on the tooling and one command line!
+
+## New schematics
+
+Now that the CLI is broken down into several pieces,
+we have one package/schematic per functionnality.
+Let's have an overview on which packages are currently available:
+
+- `@angular-devkit/build-angular`: this is the one to build an Angular application,
+now a required dependency in your CLI projects.
+- `@angular-devkit/build-ng-packagr`: this is the schematic for generating and building a library,
+based on `ng-packagr`.
+- `@angular/pwa`: the schematic to transform your app into a Progressive Web App. See our [blog post about it](/2017/12/12/2017-12-12-angular-cli-1.6) for more details about PWA and Service Workers support. Just run `ng add @angular/pwa` and you'll have transformed your application into a progressive one!
+- `@angular-devkit/build-optimizer`: the plugin that makes crazy optimizations to your application,
+to ship as few code as possible to your users.
 
 ## Breaking changes
 
-The CLI 6.0 supports only Angular 5.x and 6.x, but not Angular 2.x et 4.x anymore.
+The CLI 6.0 supports only Angular 5.x and 6.x of course (check out [our blog post about Angular&nbsp;6.0](TODO)), but not Angular 2.x et 4.x anymore.
 
 The minimum NodeJS version has also changed to 8.9+ (and NPM to 5.5+).
 
-The configuration files and the project layout have changed quite a bit.
-// TODO talk about migrating the angular-cli.json file and the rest with ng update
-// and that it kinda works
+The configuration files and the project layout have changed quite a bit,
+as we pointed out above, so you'll have to move things around and migrate your configuration files
+(with `ng update` and/or manually by checking [`angular-cli-diff`](https://github.com/cexbrayat/angular-cli-diff/compare/1.7.0...6.0.0))
 
 Another thing that can impact you:
 the generated files don't have `.bundle` or `.chunk` in their names anymore.
@@ -146,13 +232,19 @@ and you should now use `ng test --watch=false`.
 The kind of stuff that will break a continuous integration (and the developer nerves)
 when upgrading...
 
+`ng get/set` has been removed and replaced with `ng config`,
+for example you now have to use `ng config cli.packageManager yarn`.
+
+And to finish, `ng eject` is currently not supported
+(but will come back soon).
+
 Now that the unpleasant stuff is out of the way,
 let's see what other stuff this new release brings.
 
 ## Webpack 4
 
 You probably know that under the hood the CLI uses Webpack to do the heavy lifting.
-Webpack has released the 4.0 version: you can read more about it on https://medium.com/webpack/webpack-4-released-today-6cdb994702d4.
+Webpack has released the 4.0 version: you can read more about it on [the offical blog](https://medium.com/webpack/webpack-4-released-today-6cdb994702d4).
 
 TL;DR: Webpack 4 is faster, should be smarter for bundling common parts of the application,
 has a new option (`sideEffects`) that will help to have a better tree-shaking, and adds WebAssembly support.
