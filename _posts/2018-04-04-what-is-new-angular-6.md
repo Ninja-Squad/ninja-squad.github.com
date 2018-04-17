@@ -229,8 +229,6 @@ but comes with improvements in several fields:
 - build time
 - bundle size
 
-// TODO insert some numbers
-
 This is still very experimental,
 and the new Ivy renderer is behind a flag that you have to explicitly set in the compiler options
 (in the tsconfig.json file) if you want to give it a try.
@@ -240,9 +238,8 @@ and the new Ivy renderer is behind a flag that you have to explicitly set in the
     }
 
 Be warned that it is probably not very reliable,
-so my advice would be: don't use it in production right now.
+so don't use it in production right now.
 It will probably not even work right now.
-The v6 version was released in time for NGConf, not really when all the features were ready...
 But it will become the default in a near future, so you can give it a spin to see if that works for your app,
 and what you gain.
 
@@ -379,7 +376,7 @@ This is no longer the case: as the template function is inside a static field,
 it has access to the private properties of the component.
 
 I saw a comment from the Angular team saying that it was not recommended to use private properties
-in templates, even if it now possible, as it may not be the case in the future...
+in templates, even if it is now possible, as it may not be the case in the future...
 So you should probably continue to use only public fields in your templates!
 Anyway, it makes unit tests easier to write,
 as the test can inspect the state of the component without having to actually generate
