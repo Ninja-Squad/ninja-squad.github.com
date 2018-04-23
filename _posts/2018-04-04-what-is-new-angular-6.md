@@ -125,6 +125,8 @@ Because, if you don't know about it, `tslint` has a `fix` option that will autoc
 I gave `rxjs-tslint` a try on one of our projects, and it worked fairly well (run it at least twice to also collapse all the imports).
 Check out the project README to learn more: https://github.com/ReactiveX/rxjs-tslint.
 
+If you want to discover more about RxJS&nbsp;6.0, you can watch [this talk by Ben Lesh at ng-conf](https://www.youtube.com/watch?v=JCXZhe6KsxQ).
+
 ## i18n
 
 The big one for i18n is the upcoming possibility to have "runtime i18n",
@@ -155,6 +157,15 @@ except if you are using the `AnimationBuilder`.
 Your application may have won a few precious bytes!
 In the case that the browser does not support the [element.animate API](https://developer.mozilla.org/en-US/docs/Web/API/Element/animate),
 Angular&nbsp;6.0 will fallback to CSS keyframes.
+
+## Angular Elements
+
+Angular Elements is a project that lets you wrap your Angular components
+as Web Components and embed them in a non-Angular application.
+This project has been existing for a few months
+but was in the "Angular Labs" previously (in other words, was still experimental).
+With v6, it's now a little bit pushed in the front and officially part of the framework.
+As it is a big topic by itself, we have a dedicated blog post about it (coming soon).
 
 ## ElementRef&lt;T&gt;
 
@@ -307,10 +318,13 @@ the same example doesn't generate a separate `ngfactory` but inlines the informa
           factory: () => new PonyComponent(),
           template: (renderFlag, component) {
             if (renderFlag & RenderFlags.Create) {
-              element(0, 'figure');
-              element(1, 'ns-image');
-              element(2, 'div');
+              elementStart(0, 'figure');
+              elementStart(1, 'ns-image');
+              elementEnd();
+              elementStart(2, 'div');
               text(3);
+              elementEnd();
+              elementEnd();
             }
             if (renderFlag & RenderFlags.Update) {
               property(1, 'src', component.getPonyImageUrl());
@@ -337,16 +351,28 @@ but has 2 modes:
 
 All decorators are now inlined directly into their classes
 (it's the same for `@Injectable`, `@Pipe`, `@Directive`)
-and can be generated with only the knowledge of the current decorator
-(except for `@Component`, that still needs `@NgModule` to know what components, directives or pipes to use in its template).
+and can be generated with only the knowledge of the current decorator.
+This is what the Angular team calls the "locality principal":
+to re-compile a component, there is no need to analyze the application again.
 
 The generated code is slightly smaller, but more importantly some dependencies are now decoupled,
 allowing for a faster recompilation when you change one part of the application.
-It also plays much nicer with modern bundlers like Webpack.
+It also plays much nicer with modern bundlers like Webpack,
+and will now really tree-shake the parts of the framework that you don't use.
+For example if you have no pipe in your application,
+the code in the framework that is necessary to interpret pipes is not even included in the final bundle.
+
 Angular used to produce heavy code. That's not necessarily a problem,
-but an Hello World application was way too heavy.
+but an Hello World application was way too heavy: 37kb after minification and compression.
 With Ivy-generated code, the tree-shaking process is much more efficient,
 resulting in smaller bundles \o/.
+The Hello World is now 7.3kb minified, and only 2.7kb after compression,
+which is a huuuuuge difference.
+The TodoMVC app is 12.2kb after compression.
+These numbers are from the Angular team,
+and we couldn't come with some others as you still have to manually patch Ivy to make it work as we speak.
+
+Check out the [keynote from ng-conf](https://www.youtube.com/watch?v=dIxknqPOWms) if you want to learn more.
 
 ### Compatibility with existing libraries
 
@@ -395,6 +421,30 @@ But this time instead of building your application one time
 for each locale you want to support,
 you will be able to just load a JSON containing the translations for each locale,
 and Angular will take care of the rest!
+
+#### Libraries with AoT code
+
+Right now, a library released on NPM must publish a `metadata.json` file,
+and can't publish the AoT code from its components.
+Which is sad, because we have to pay the cost of this build in our applications.
+With Ivy, the metadata file is no longer necessary
+and library authors should be able to directly ship AoT code to NPM!
+
+#### Better stack traces
+
+The generated code should now allow for better stack traces when you have an issue
+in your templates, by yielding a nice error with the line of the template at fault.
+It will even allow us to put break points in the templates
+and see what really is going on in Angular.
+
+#### NgModule will disappear?
+
+It is a far-fetched goal, but in the future we might not need NgModules anymore.
+This is what tree-shakeable providers are starting to tell us,
+and it looks like Ivy has the necessary starting blocks for the team to try
+to remove the need for NgModules (or at least make them less annoying).
+This is not for right now though,
+we'll have to be patient.
 
 This release doesn't bring a lot of new features,
 but Ivy is definitely interesting for the future.
