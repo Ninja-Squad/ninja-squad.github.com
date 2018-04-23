@@ -184,6 +184,13 @@ the CLI will look for the `ng-add` key in the `package.json` file
 of the package you are installing and will run it.
 For example, if you add Angular Element to your project with `ng add @angular/elements`,
 a script will add the required polyfill to your application.
+Another example is Angular Material: just run `ng add @angular/material`
+and it will set up your application,
+by adding the CSS imports, the default theme, the necessary module import, etc.
+Material goes even further and provides a few schematics that you can use.
+For example, if your run `ng generate @angular/material:material-nav --name=nav`,
+it will generate a component `NavComponent` with the boilerplate necessary
+in its template to display a navbar.
 
 On the paper, it looks great and _kind of_ what Facebook does for React with the [codemod  project](https://github.com/reactjs/react-codemod).
 In practice, it will greatly depend on whether the eco-system adopts it or not.
