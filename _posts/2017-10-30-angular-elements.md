@@ -2,8 +2,8 @@
 layout: post
 title: Angular Elements
 author: cexbrayat
-tags: ["Angular 2", "Angular", "Angular 4", "Angular 5", "Angular CLI"]
-description: "Angular Elements is a new package in Angular 5, allowing to use components as Custom Elements!"
+tags: ["Angular 2", "Angular", "Angular 4", "Angular 5", "Angular 6", "Angular CLI"]
+description: "Angular Elements is a new package in Angular 6, allowing to use components as Custom Elements!"
 ---
 
 Sometimes you don't want a full Angular app. Sometimes you just want to build a widget.
@@ -33,7 +33,7 @@ You can of course build your own Custom Elements with vanilla JavaScript
 but there is a bit of "plumbing" to do (you have to write an ES6 class with a constructor that follows some rules,
 then observe the attributes that can change, then implement the correct lifecycle methods defined in the specification).
 
-That is why Angular&nbsp;5 introduces `@angular/elements`!
+That is why Angular&nbsp;6 introduces `@angular/elements`!
 Angular Elements are classic components packaged as Custom Elements.
 
 When you package an Angular Component as an Angular Element,
@@ -64,15 +64,18 @@ To use it, build a component as usual:
 Add it to a module (here `PonyModule`) and then you can register it in another (non Angular) application
 to use it as a Custom Element:
 
-    import { registerAsCustomElements } from '@angular/elements';
+    import { createCustomElement } from '@angular/elements';
     import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
     import { PonyComponent, PonyModule } from './pony.module';
 
-    registerAsCustomElements(
-      [PonyComponent],
-      () => platformBrowserDynamic().bootstrapModule(PonyModule)
-    );
+    platformBrowserDynamic().bootstrapModule(PonyModule)
+      .then(({ injector }) => {
+        // get the ES6 class
+        const PonyElement = createCustomElement(PonyComponent, { injector });
+        // use it to register the custom element
+        customElements.define('ns-pony', PonyElement);
+      });
 
 Once that's done, you can use the element `ns-pony` as if it is a standard element:
 
@@ -98,7 +101,7 @@ You can even create new components and insert them, they will be automatically u
     otherPony.ponyName = 'Applejack';
     document.body.appendChild(otherPony);
 
-The API is really young and experimental,
+The API is still very young (it was in Angular Labs for the past 6 months),
 so I would not recommend using it in production yet.
 But this time will come!
 
