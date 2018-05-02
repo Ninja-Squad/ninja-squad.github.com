@@ -88,6 +88,11 @@ And the CLI will handle it!
 This opens great possibilities for large project,
 and for developers to open source libraries of useful components and services!
 
+A slightly annoying thing right now:
+when you make a change to the library source,
+you'll have to rebuild it manually if you want the rest of the project to see it,
+because there is no watch mode for `ng build` in a library (yet).
+
 ## A new architecture
 
 The CLI as you knew it has been broken down into several small pieces
