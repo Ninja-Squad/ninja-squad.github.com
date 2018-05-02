@@ -229,11 +229,12 @@ as we pointed out above, so you'll have to move things around and migrate your c
 
 Note that the environment concept has slightly changed
 and is now called a `configuration`.
-Building with `ng build --prod` is the same as running `ng build --configuration=prod`.
+You can't run `ng build --env=prod` anymore as the option has been removed,
+and building with `ng build --prod` is now the same as running `ng build --configuration=prod`.
 A configuration can contain build options and file replacements.
 A build option is typically `--aot` for example.
 A file replacement is what is done natively with the `environment.ts` file,
-which is replaced at build time by `environment.prod.ts`.
+which is replaced at build time by `environment.prod.ts` as it was previously.
 The cool thing is that you can create several configurations
 to avoid memorizing a long command.
 For example, when you want to build the application in a specific locale,
@@ -246,14 +247,26 @@ With this new configuration system, you can add your configuration to your `angu
       "configurations": {
         "fr": {
           "aot": true,
-          "outputPath": "dist/my-project-fr/",
+          "outputPath": "dist/fr",
           "i18nFile": "src/locale/messages.fr.xlf",
           "i18nFormat": "xlf",
           "i18nLocale": "fr"
         }
 
+A configuration can also contain as many file replacements as you want.
+For example the `production` configuration replaces `environment.ts` by `environment.prod.ts`.
+
+    "configurations": {
+      "production": {
+        "fileReplacements": [
+          {
+            "replace": "src/environments/environment.ts",
+            "with": "src/environments/environment.prod.ts"
+          }
+        ],
+
 A configuration is specific to a command.
-In my example above, I added the configuration to the build command,
+In my example above, I added the `fr` configuration to the build command,
 allowing to run `ng build --configuration=fr`.
 But you can reuse a configuration for another command by referencing it:
 
