@@ -222,6 +222,44 @@ The configuration files and the project layout have changed quite a bit,
 as we pointed out above, so you'll have to move things around and migrate your configuration files
 (with `ng update` and/or manually by checking [`angular-cli-diff`](https://github.com/cexbrayat/angular-cli-diff/compare/1.7.0...6.0.0))
 
+Note that the environment concept has slightly changed
+and is now called a `configuration`.
+Building with `ng build --prod` is the same as running `ng build --configuration=prod`.
+A configuration can contain build options and file replacements.
+A build option is typically `--aot` for example.
+A file replacement is what is done natively with the `environment.ts` file,
+which is replaced at build time by `environment.prod.ts`.
+The cool thing is that you can create several configurations
+to avoid memorizing a long command.
+For example, when you want to build the application in a specific locale,
+you have to type something like: `ng build --aot --output-path=dist/fr --i18n-locale=fr --i18n-format=xlf --i18n-file=src/locale/messages.fr.xlf`
+(which nobody can remember).
+With this new configuration system, you can add your configuration to your `angular.json` file:
+
+    "build": {
+      "builder": "@angular-devkit/build-angular:browser",
+      "configurations": {
+        "fr": {
+          "aot": true,
+          "outputPath": "dist/my-project-fr/",
+          "i18nFile": "src/locale/messages.fr.xlf",
+          "i18nFormat": "xlf",
+          "i18nLocale": "fr"
+        }
+
+A configuration is specific to a command.
+In my example above, I added the configuration to the build command,
+allowing to run `ng build --configuration=fr`.
+But you can reuse a configuration for another command by referencing it:
+
+    "serve": {
+      "builder": "@angular-devkit/build-angular:dev-server",
+      "configurations": {
+        "fr": {
+          "browserTarget": "ponyracer:build:fr"
+        }
+      }
+
 Another thing that can impact you:
 the generated files don't have `.bundle` or `.chunk` in their names anymore.
 `main.bundle.js` is now `main.js`,
