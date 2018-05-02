@@ -118,10 +118,11 @@ The Angular team wrote a [complete document](https://docs.google.com/document/d/
 it's a must read when you'll start your Angular&nbsp;6.0 migration.
 
 Note that a very cool set of tslint rules has been released called `rxjs-tslint`.
-It just contains 3 rules that, when added to your project,
+It just contains 4 rules that, when added to your project,
 will automatically migrate all your RxJS imports and RxJS code to the brand new version
 with a simple `tslint --fix`!
 Because, if you don't know about it, `tslint` has a `fix` option that will autocorrect all the violations it can!
+It can be used in an even simpler way by installing globally `rxjs-tslint` and running `rxjs-5-to-6-migrate -p src/tsconfig.app.json`.
 I gave `rxjs-tslint` a try on one of our projects, and it worked fairly well (run it at least twice to also collapse all the imports).
 Check out the project README to learn more: https://github.com/ReactiveX/rxjs-tslint.
 
