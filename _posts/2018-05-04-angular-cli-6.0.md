@@ -333,7 +333,7 @@ if they are found in a `loadChildren` route configuration.
 So you had to "trick" the CLI and Webpack to build a separate chunk.
 
 With Angular CLI 6.0, that's no longer necessary.
-A new option, called `lazyModules`, can be added to your `.angular-cli.json`,
+A new option, called `lazyModules`, can be added to your `angular.json`,
 to inform the CLI that you have other NgModules that need to be lazy-loaded,
 and Webpack will build the necessary chunks:
 
