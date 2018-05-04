@@ -10,7 +10,7 @@ description: "Library support, new architecture, ng update, Webpack 4, dynamic l
 
 The version number can be a bit surprising as the last release was... 1.7!
 The Angular team decided to now release the CLI with the rest of the framework, hence the big jump.
-Check out our article about [Angular&nbsp;6.0](TODO) if you haven't!
+Check out our article about [Angular&nbsp;6.0](/2018/05/04/what-is-new-angular-6/) if you haven't!
 
 But it is also a big major release because the internals have changed to offer us more possibilities!
 Note that the update might not be straightforward, as a few things have changed.
