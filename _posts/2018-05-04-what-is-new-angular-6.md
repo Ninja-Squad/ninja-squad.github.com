@@ -4,7 +4,7 @@ title: What's new in Angular 6?
 author: cexbrayat
 tags: ["Angular 6", "Angular 5", "Angular", "Angular 2", "Angular 4"]
 description: "Angular 6 is out! Read about the new Ivy renderer, the tree-shakeable providers,
-the other small features and big changes!"
+RxJS 6, Angular Element, ElementRef, runtime i18n, and the other small features and big changes!"
 ---
 
 Angular&nbsp;6.0.0 is here!
