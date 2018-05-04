@@ -17,8 +17,15 @@ Angular&nbsp;6.0.0 is here!
 
 It has a really big novelty which is not really a feature: the new Ivy renderer.
 As it is still experimental, I'll close this article with it.
+We'll start at first with the other new features and breaking changes.
 
-First let's start with the other new features and breaking changes.
+We made a little video to give you an overview of the new features.
+If you want to dive deeper into what has changed, keep on reading after watching it ;).
+
+<div class="video-wrapper">
+    <iframe width="560" height="315" frameborder="0" allowfullscreen
+    src="https://www.youtube.com/embed/NpnsqOCkhIs"></iframe>
+</div>
 
 ## Tree-shakeable providers
 
