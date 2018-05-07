@@ -159,7 +159,7 @@ with a bunch of options you can override if you want to.
 
 Migrating to this new configuration is a bit cumbersome,
 but not that hard.
-You can do it by hand, using [`angular-cli-diff`]([angular-cli-diff](https://github.com/cexbrayat/angular-cli-diff/compare/1.7.0...6.0.0)) to help you,
+You can do it by hand, using [`angular-cli-diff`](https://github.com/cexbrayat/angular-cli-diff/compare/1.7.0...6.0.0) to help you,
 or you can try the brand new `ng update` feature of the CLI.
 
 ## ng update and ng add
@@ -213,13 +213,13 @@ Let's have an overview on which packages are currently available:
 now a required dependency in your CLI projects.
 - `@angular-devkit/build-ng-packagr`: this is the schematic for generating and building a library,
 based on `ng-packagr`.
-- `@angular/pwa`: the schematic to transform your app into a Progressive Web App. See our [blog post about it](/2017/12/12/2017-12-12-angular-cli-1.6) for more details about PWA and Service Workers support. Just run `ng add @angular/pwa` and you'll have transformed your application into a progressive one!
+- `@angular/pwa`: the schematic to transform your app into a Progressive Web App. See our [blog post about it](/2017/12/12/angular-cli-1.6/) for more details about PWA and Service Workers support. Just run `ng add @angular/pwa` and you'll have transformed your application into a progressive one!
 - `@angular-devkit/build-optimizer`: the plugin that makes crazy optimizations to your application,
 to ship as few code as possible to your users.
 
 ## Breaking changes
 
-The CLI 6.0 supports only Angular 5.x and 6.x of course (check out [our blog post about Angular&nbsp;6.0](TODO)), but not Angular 2.x et 4.x anymore.
+The CLI 6.0 supports only Angular 5.x and 6.x of course (check out [our blog post about Angular&nbsp;6.0](/2018/05/04/what-is-new-angular-6/)), but not Angular 2.x et 4.x anymore.
 
 The minimum NodeJS version has also changed to 8.9+ (and NPM to 5.5+).
 

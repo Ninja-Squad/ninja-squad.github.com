@@ -6,7 +6,7 @@ tags: ["javascript", "AngularJS"]
 description: 5 astuces sur la façon d'écrire les directives AngularJS et leurs tests
 ---
 
-*Looking for the English version? It's [here](http://blog.ninja-squad.fr/2015/01/27/5-tricks-about-directives-and-tests/)*.
+*Looking for the English version? It's [here](http://blog.ninja-squad.com/2015/01/27/5-tricks-about-directives-and-tests/)*.
 
 S'il y a bien un sujet compliqué en Angular, c'est l'écriture de directives. J'espère que les chapitres de [notre livre](https://books.ninja-squad.com) aident à passer un cap sur ce problème, mais il manque sur les internets un article un peu complet sur la façon de tester celles-ci.
 

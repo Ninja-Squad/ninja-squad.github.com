@@ -10,7 +10,7 @@ RxJS 6, Angular Element, ElementRef, runtime i18n, and the other small features 
 Angular&nbsp;6.0.0 is here!
 
 <p style="text-align: center;">
-  <a href="https://github.com/angular/angular/blob/master/CHANGELOG.md#TODO">
+  <a href="https://github.com/angular/angular/blob/master/CHANGELOG.md#600-2018-05-03">
     <img class="img-rounded img-responsive" style="max-width: 100%" src="/assets/images/angular.png" alt="Angular logo" />
   </a>
 </p>
@@ -240,7 +240,7 @@ For those who don't know: Angular compiles your templates into equivalent TypeSc
 This TypeScript code is then compiled along with the TypeScript you wrote into JavaScript code,
 and the result is shipped to your users.
 And we are now on the 3rd version of this Angular renderer
-(the first was in the original release Angular 2.0, and the second in [Angular 4.0](/2017/04/28/what-is-new-angular-4)).
+(the first was in the original release Angular 2.0, and the second in [Angular 4.0](/2017/03/24/what-is-new-angular-4/)).
 
 This new version of the renderer does not change how you write your templates,
 but comes with improvements in several fields:
