@@ -4,6 +4,8 @@
     <meta charset="utf-8">
 {% if page.canonical %}
     <link rel="canonical" href="{{ page.canonical }}" />
+{% else %}
+    <link rel="canonical" href="{{site.production_url}}{{ post.url | default: page.url }}" />
 {% endif %}
     <meta name="author" content="Ninja Squad">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
