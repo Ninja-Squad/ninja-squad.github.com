@@ -2,7 +2,7 @@
 layout: post
 title: "Quizzie : qui m'aime me quiz !"
 author: jbnizet
-tags: ["ninja squad", "quizzie"]
+tags: ["Ninja Squad", "quizzie"]
 description: "Quizzie : qui m'aime me quiz ! Jouez et créez des quiz publics ou privés, sur les sujets que vous adorez, et apprenez en vous amusant."
 ---
 

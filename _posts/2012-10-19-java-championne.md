@@ -2,7 +2,7 @@
 layout: post
 title: Une Java Championne chez Ninja Squad?!
 author: acrepet
-tags: [java, "java champion", "ninja squad"]
+tags: [java, "java champion", "Ninja Squad"]
 ---
 <br/>
 

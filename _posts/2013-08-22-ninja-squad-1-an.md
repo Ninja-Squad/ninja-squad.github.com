@@ -2,7 +2,7 @@
 layout: post
 title: Ninja Squad - Un an!
 authors: [acrepet, cexbrayat, clacote, jbnizet]
-tags: ["ninja squad", bilan, rétrospective]
+tags: ["Ninja Squad", bilan, rétrospective]
 ---
 
 Il y a quelques semaines, Ninja Squad a fêté sa première année d'existence. Après cette itération vient le temps de faire une rétrospective pour commencer un nouveau sprint. Tout d'abord, le sentiment général : nous avons passé une année extraordinaire, bien au-delà de nos attentes! Beaucoup de rencontres, de projets intéressants, d'idées pour la suite et d'opportunités, un vrai plaisir! Aucun d'entre nous ne regrette de s'être lancé dans l'aventure.

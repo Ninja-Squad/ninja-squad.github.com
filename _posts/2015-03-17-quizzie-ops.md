@@ -2,7 +2,7 @@
 layout: post
 title: "What we learnt from Quizzie: Ops"
 author: jbnizet
-tags: ["ninja squad", "quizzie", "ansible", "docker"]
+tags: ["Ninja Squad", "quizzie", "ansible", "docker"]
 description: "We're pretty decent developers, but when it comes to operations, that's another story. Building and operating Quizzie
 is a great way to slowly become devops, and not just devs."
 ---

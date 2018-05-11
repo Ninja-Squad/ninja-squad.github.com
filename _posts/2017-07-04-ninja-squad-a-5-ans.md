@@ -2,7 +2,7 @@
 layout: post
 title: 🎂 Ninja Squad a 5 ans 🥂&nbsp;!
 author: clacote
-tags: ["ninja squad", "bilan", "argent"]
+tags: ["Ninja Squad", "bilan", "argent"]
 description: "Ninja Squad fête ses 5 ans d'existence. Quelles leçons en tirer ?"
 ---
 
