@@ -2,7 +2,7 @@
 layout: post
 title: Une seconde année en chiffres
 author: clacote
-tags: ["ninja squad", "bilan", "argent", "bénéfices"]
+tags: ["Ninja Squad", "bilan", "argent", "bénéfices"]
 description: Le bilan de la seconde année comptable de Ninja Squad. Alors, pâtes ou caviar?
 ---
 

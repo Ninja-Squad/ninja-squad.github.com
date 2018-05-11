@@ -2,7 +2,7 @@
 layout: post
 title: Ninja Squad et le caritatif
 author: clacote
-tags: ["ninja squad", "caritatif", "don"]
+tags: ["Ninja Squad", "caritatif", "don"]
 description: "Ninja Squad s'organise pour plus de caritatif."
 ---
 
