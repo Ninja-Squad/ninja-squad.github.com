@@ -13,7 +13,7 @@ On vient de m'apprendre une bonne nouvelle que je me dois de vous annoncer : j'a
 
 J'espère que cela constituera une prophétie positive pour les débuts de Ninja Squad!
 
-Il y a un an, lorsque nous étions en voyage autour du monde avec [Cyril](http://ninja-squad.com/team#Cyril), on se demandait quels projets nous feraient rêver à notre retour en France. Et notamment, quels projets professionnels.
+Il y a un an, lorsque nous étions en voyage autour du monde avec [Cyril](https://ninja-squad.com/team#Cyril), on se demandait quels projets nous feraient rêver à notre retour en France. Et notamment, quels projets professionnels.
 
 Et si on créait l'entreprise de nos rêves? Oui, mais encore faut-il savoir ce que serait une entreprise de rêve pour les développeurs que nous sommes.
 

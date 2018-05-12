@@ -91,4 +91,4 @@ Check out our blog posts if you missed them:
 - [Angular CLI 1.3](/2017/08/10/angular-cli-1.3/)
 - [Angular CLI 1.4](/2017/09/14/angular-cli-1.4/)
 
-All our materials ([ebook](https://books.ninja-squad.com/angular), [online training (Pro Pack)](https://angular-exercises.ninja-squad.com/) and [training](http://ninja-squad.com/training/angular)) are up-to-date with these changes if you want to learn more!
+All our materials ([ebook](https://books.ninja-squad.com/angular), [online training (Pro Pack)](https://angular-exercises.ninja-squad.com/) and [training](https://ninja-squad.com/training/angular)) are up-to-date with these changes if you want to learn more!

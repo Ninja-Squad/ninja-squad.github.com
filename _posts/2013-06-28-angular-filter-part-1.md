@@ -6,7 +6,7 @@ tags: [javascript, "AngularJS"]
 canonical: http://hypedrivendev.wordpress.com/2013/06/28/angular-filter-part-1
 ---
 
-Aujourd'hui, nous commençons une série d'articles sur AngularJS, sur lequel nous vous proposons [une formation](http://ninja-squad.fr/formations/formation-angularjs).
+Aujourd'hui, nous commençons une série d'articles sur AngularJS, sur lequel nous vous proposons [une formation](https://ninja-squad.fr/formations/formation-angularjs).
 
 L'une des fonctionalités les plus appréciables et méconnues d'Angular réside dans les filtres disponibles. Dans toutes applications web, il est courant de devoir filtrer ou réordonner une collection pour l'afficher. Les filtres Angular sont applicables à la fois en HTML ou en Javascript, à un seul élément ou un tableau. En HTML, la syntaxe se rapproche du style Unix, où l'on peut chaîner les commandes à l'aide du pipe. Par exemple, on peut appliquer un filtre nommé 'uppercase' sur une expression de la façon suivante :
 {% raw %}

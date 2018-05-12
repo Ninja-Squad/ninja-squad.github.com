@@ -369,4 +369,4 @@ and wait for a few weeks to upgrade your main projects...
 It took us quite some time to update our ebook and online training
 with these novelties, but we are up-to-date!
 
-Check out our [ebook](https://books.ninja-squad.com/angular), [online training (Pro Pack)](https://angular-exercises.ninja-squad.com/) and [training](http://ninja-squad.com/training/angular) if you want to learn more!
+Check out our [ebook](https://books.ninja-squad.com/angular), [online training (Pro Pack)](https://angular-exercises.ninja-squad.com/) and [training](https://ninja-squad.com/training/angular) if you want to learn more!

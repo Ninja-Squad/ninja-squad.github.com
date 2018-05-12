@@ -184,4 +184,4 @@ The best way to improve your directive writing skills is to grab inspiration fro
 AngularUI projects hold a lot of directives, especially [UIBootstrap](http://angular-ui.github.io/bootstrap/) which is a good source.
 [Pawel](https://github.com/pkozlowski-opensource), one of the main contributor, gave a talk with [some ideas](http://pkozlowski-opensource.github.io/ng-europe-2014/presentation/#/) going beyond this blog post.
 
-And if you want to practice with some help, [our next training session](http://ninja-squad.fr/formations/formation-angularjs) will be held in Paris, France, on February 9-11, and the following one in Lyon, France, on March 9-11!
+And if you want to practice with some help, [our next training session](https://ninja-squad.fr/formations/formation-angularjs) will be held in Paris, France, on February 9-11, and the following one in Lyon, France, on March 9-11!

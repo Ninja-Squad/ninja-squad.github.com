@@ -126,4 +126,4 @@ If your company needs to have several applications using the same set of common 
 you should check it out for inspiration: [nrwl/nx](https://github.com/nrwl/nx).
 The schematic also uses [ngrx](https://github.com/ngrx) and can generate examples with unit tests included.
 
-Check out our [ebook](https://books.ninja-squad.com/angular), [online training (Pro Pack)](https://angular-exercises.ninja-squad.com/) and [training](http://ninja-squad.com/training/angular) if you want to learn more!
+Check out our [ebook](https://books.ninja-squad.com/angular), [online training (Pro Pack)](https://angular-exercises.ninja-squad.com/) and [training](https://ninja-squad.com/training/angular) if you want to learn more!

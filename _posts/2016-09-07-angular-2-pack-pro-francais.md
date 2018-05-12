@@ -26,7 +26,7 @@ le maîtriser réellement.
 
 Il faut expérimenter, tester, lire et écrire du code encore et encore pour
 apprendre les bonnes pratiques.
-Un moyen efficace est de suivre [une formation](http://ninja-squad.fr/formations/formation-angular2),
+Un moyen efficace est de suivre [une formation](https://ninja-squad.fr/formations/formation-angular2),
 mais on sait que ce n'est pas toujours possible, que ce soit à cause des disponibilités,
 des localisations géographiques, de votre patron, ou du coût.
 
