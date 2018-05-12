@@ -56,4 +56,4 @@ and accepts the values `error`, `warning` or `ignore`.
 
 The scripts that were added via the `scripts` array in `.angular-cli.json` were not minified and had no sourcemaps. This is now resolved.
 
-Check out our [ebook](https://books.ninja-squad.com/angular), [online training (Pro Pack)](https://angular-exercises.ninja-squad.com/) and [training](http://ninja-squad.com/training/angular) if you want to learn more!
+Check out our [ebook](https://books.ninja-squad.com/angular), [online training (Pro Pack)](https://angular-exercises.ninja-squad.com/) and [training](https://ninja-squad.com/training/angular) if you want to learn more!

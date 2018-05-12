@@ -18,7 +18,7 @@ Along the way we have learnt quite a bit about Angular,
 its internals, its ecosystem and how to build better applications.
 
 That's why we are really happy to announce **our new 2 days training:
-[Advanced Angular: from Ninja to Hero](http://ninja-squad.com/formations/formation-angular-advanced)!**
+[Advanced Angular: from Ninja to Hero](https://ninja-squad.com/formations/formation-angular-advanced)!**
 
 This training goes beyond the fundamentals
 and is built for developers who are looking for more advanced topics and best practices.
@@ -42,4 +42,4 @@ We'll go over some of the more advanced exercises of the "Pro Pack"
 so you can get your hands dirty with all these new concepts!
 
 Oh, and, as always, the training is **30% cheaper** if you are an independent developer, an open source committer, a conference organizer or if you are currently looking for a job.
-If you want to have more details, check out [our website](http://ninja-squad.com/formations)!
+If you want to have more details, check out [our website](https://ninja-squad.com/formations)!

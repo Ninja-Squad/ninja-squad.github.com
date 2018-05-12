@@ -22,7 +22,7 @@ Il y aussi plein de bon sens :
 - Dire toujours non aux propositions de fonctionnalité et attendre d'être harcelé pour considérer son développement.
 - Les mockups d'écran sont le meilleur moyen de commencer une discussion.
 
-Je ne veux pas vous spoiler plus le contenu mais j'ai été frappé par la similarité de leurs idées avec celles que nous avions en fondant [Ninja Squad](http://ninja-squad.com). Construire d'abord des applis pour vous, pour des choses qui vous manquent. Le financement externe est le plan B. Il faut être passionné par le sujet pour faire quelque chose de bon. Une équipe de trois est la taille idéale pour démarrer un projet. Les bons écrivains sont de bons développeurs. Choisissez les outils qui vous passionnent.
+Je ne veux pas vous spoiler plus le contenu mais j'ai été frappé par la similarité de leurs idées avec celles que nous avions en fondant [Ninja Squad](https://ninja-squad.com). Construire d'abord des applis pour vous, pour des choses qui vous manquent. Le financement externe est le plan B. Il faut être passionné par le sujet pour faire quelque chose de bon. Une équipe de trois est la taille idéale pour démarrer un projet. Les bons écrivains sont de bons développeurs. Choisissez les outils qui vous passionnent.
 
 Tout ça me parle beaucoup, et la lecture de ce livre a été très motivante pour continuer les petits (et grands) projets que nous avons en cours.
 

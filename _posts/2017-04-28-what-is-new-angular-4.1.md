@@ -103,6 +103,6 @@ to avoid subtle and hard to avoid bugs.
 
 That's all for this small release!
 
-All our materials ([ebook](https://books.ninja-squad.com/angular), [online training (Pro Pack)](https://angular-exercises.ninja-squad.com/) and [training](http://ninja-squad.com/training/angular)) are up-to-date with these changes if you want to learn more!
+All our materials ([ebook](https://books.ninja-squad.com/angular), [online training (Pro Pack)](https://angular-exercises.ninja-squad.com/) and [training](https://ninja-squad.com/training/angular)) are up-to-date with these changes if you want to learn more!
 
 Oh, and our [Pro Pack](https://angular-exercises.ninja-squad.com/) has 3 new exercises about the router! A perfect way to learn about protecting routes with guards, nested routes, resolving data before displaying the component, and how to split your app in small chunks that can be lazy-loaded.

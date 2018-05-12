@@ -56,7 +56,7 @@ Du moins, tant que nous ne convaincrons pas JB de nous acheter des Tesla de fonc
 
 Et que faisons-nous au quotidien, ces derniers temps&nbsp;?
 
-- Cédric Exbrayat, quand il ne donne pas une [formation Angular](http://ninja-squad.fr/formations/formation-angular)
+- Cédric Exbrayat, quand il ne donne pas une [formation Angular](https://ninja-squad.fr/formations/formation-angular)
 ou assure un audit à l'autre bout de l'Europe (et il est déjà booké jusqu'à la
 fin de l'année), ne fait plus de prestations longues
 de développement, car il se consacre à la maintenance de son

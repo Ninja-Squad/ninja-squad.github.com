@@ -48,4 +48,4 @@ This problem is not really original, and similar repositories exist for tools li
 It has been quite useful to us these last weeks to update our code samples and online training exercises,
 we hope it will help you too.
 
-Check out our [ebook](https://books.ninja-squad.com/angular), [online training (Pro Pack)](https://angular-exercises.ninja-squad.com/) and [training](http://ninja-squad.com/training/angular) if you want to learn more!
+Check out our [ebook](https://books.ninja-squad.com/angular), [online training (Pro Pack)](https://angular-exercises.ninja-squad.com/) and [training](https://ninja-squad.com/training/angular) if you want to learn more!

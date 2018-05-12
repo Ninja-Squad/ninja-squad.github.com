@@ -198,4 +198,4 @@ and we should enjoy some of these nice features (reduce bundle sizes, faster bui
 The tasks have been slightly improved with the introduction of caching,
 so your build should be faster!
 
-Check out our [ebook](https://books.ninja-squad.com/angular), [online training (Pro Pack)](https://angular-exercises.ninja-squad.com/) and [training](http://ninja-squad.com/training/angular) if you want to learn more!
+Check out our [ebook](https://books.ninja-squad.com/angular), [online training (Pro Pack)](https://angular-exercises.ninja-squad.com/) and [training](https://ninja-squad.com/training/angular) if you want to learn more!

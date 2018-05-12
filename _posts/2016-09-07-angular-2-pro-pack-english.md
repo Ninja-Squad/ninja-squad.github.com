@@ -24,7 +24,7 @@ in building modern JavaScript applications.
 An ebook is a great way to discover a topic,
 but it’s not enough to really master it.
 You have to experiment, test, read code and learn best practices.
-A great way is to follow a [training](http://ninja-squad.com/formations/formation-angular2),
+A great way is to follow a [training](https://ninja-squad.com/formations/formation-angular2),
 but we know that’s not always possible time-wise,
 location-wise, boss-wise or money-wise.
 

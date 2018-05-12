@@ -13,7 +13,7 @@ Les ninjas se lancent dans l'écriture de *Ninja Tips*&nbsp;! On a envie de vous
 
 Avec Angular, les templates doivent être strictement valides au niveau HTML. Donc si vous écrivez mal votre HTML, vous allez avoir des erreurs.
 
-En travaillant sur les exercices de notre futur [Pack Pro](https://books.ninja-squad.com/angular) et de notre [formation Angular](http://ninja-squad.fr/formations/formation-angular), on a rencontré quelques problèmes. D'abord, en se trompant dans l'écriture d'un tag `<img>`, en écrivant&nbsp;:
+En travaillant sur les exercices de notre futur [Pack Pro](https://books.ninja-squad.com/angular) et de notre [formation Angular](https://ninja-squad.fr/formations/formation-angular), on a rencontré quelques problèmes. D'abord, en se trompant dans l'écriture d'un tag `<img>`, en écrivant&nbsp;:
 
     <div>
       <img [src]="..."></img>

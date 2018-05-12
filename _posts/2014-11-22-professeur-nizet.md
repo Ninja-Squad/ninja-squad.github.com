@@ -6,7 +6,7 @@ tags: ["java", "conseils", "web", "rest"]
 description: Nous avons la chance de travailler avec Jean-Baptiste Nizet, et de profiter de son talent de développeur au quotidien. Voici une compilation de ses bons conseils.
 ---
 
-Chez Ninja Squad, nous avons la chance de travailler avec [Jean-Baptiste Nizet](http://ninja-squad.fr/team#JB). Et il faut avouer qu'en terme de _clean coder_, on a rarement vu mieux. C'est le meilleur développeur que j'ai pu croiser depuis maintenant plus de 13 ans. On a donc une chance incroyable de l'avoir dans notre équipe. Chaque jour, à chaque relecture de pull-request, on s'émerveille de la belle simplicité de son code. Et il nous montre au quotidien la longue marche à suivre pour coder élégamment.
+Chez Ninja Squad, nous avons la chance de travailler avec [Jean-Baptiste Nizet](https://ninja-squad.fr/team#JB). Et il faut avouer qu'en terme de _clean coder_, on a rarement vu mieux. C'est le meilleur développeur que j'ai pu croiser depuis maintenant plus de 13 ans. On a donc une chance incroyable de l'avoir dans notre équipe. Chaque jour, à chaque relecture de pull-request, on s'émerveille de la belle simplicité de son code. Et il nous montre au quotidien la longue marche à suivre pour coder élégamment.
 
 De plus, il a une expérience en Java assez incroyable, ayant déjà mis en oeuvre de nombreux outils, frameworks, et approches. Il en fait déjà profiter très régulièrement la communauté en répondant massivement sur [Stack Overflow, ce qui lui vaut une réputation impressionnante](http://stackoverflow.com/users/571407/jb-nizet).
 

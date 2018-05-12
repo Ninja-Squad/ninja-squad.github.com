@@ -9,7 +9,7 @@ tags: [web, responsive, css, js]
 Tout [le monde a un smartphone](http://www.wired.com/gadgetlab/2011/11/smartphones-feature-phones/), ou presque. Et presque tout le monde a une tablette chez les geeks.   
 Il serait dommage de ne pas soigner ces lecteurs. Une bonne partie d'entre eux consomme du web en situation de mobilité. Et aujourd'hui, nous n'avons plus d'excuse à ne pas faire un site responsive : des frameworks CSS aussi communs que [Twitter Bootstrap](http://twitter.github.com/bootstrap/scaffolding.html#responsive) nous mâchent complètement le travail.
 
-Maintenant, supposons que vous produisiez du contenu par JavaScript. Du genre large le contenu. Par exemple de l'ASCII-art, comme sur [la _home_ de Ninja Squad](http://ninja-squad.com), affiché dans un simili-terminal :
+Maintenant, supposons que vous produisiez du contenu par JavaScript. Du genre large le contenu. Par exemple de l'ASCII-art, comme sur [la _home_ de Ninja Squad](https://ninja-squad.com), affiché dans un simili-terminal :
 
 <pre style="line-height: 16px; text-align: center; min-width: 350px; overflow: auto" class="raw">
  _____ _     _        _____               _ 
@@ -150,4 +150,4 @@ _Et voilà_, commme disent les américains francophones et les francophones amé
 <p style="text-align: center;"><img class="img-polaroid" src="/assets/images/success_baby.jpeg" alt="Success!" /></p>
 
 <br/>
-PS : cet article, ce blog, et [le site de Ninja Squad](http://ninja-squad.com) sont évidemment responsive.
+PS : cet article, ce blog, et [le site de Ninja Squad](https://ninja-squad.com) sont évidemment responsive.
