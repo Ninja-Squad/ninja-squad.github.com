@@ -2,13 +2,13 @@
 layout: post
 title: The story of a Java to Kotlin migration
 author: jbnizet
-tags: ["Kolin", "Java", "Grade"]
-description: "We migrated a project to Kotlin, and its build to the Gradle Kotlin DSL"
+tags: ["Kotlin", "Java", "Gradle"]
+description: "We migrated a project from Java to Kotlin, and its Gradle build to the Kotlin DSL"
 ---
 
 <div style="float: right;"><img src="/assets/images/2016-05-31/kotlin.png" alt="Kotlin logo" /></div>
 
-Cyril and Agnès already told you about [our side project](/2017/12/08/ninja-squad-caritatif/) for [Globe 42](/2018/05/10/globe42/), a local association which helps old migrants in Saint-Etienne. 
+Cyril and Agnès already told you about [our side project](/2017/12/08/ninja-squad-caritatif/) for [Globe 42](/2018/05/10/globe42/), a local non-profit organization which helps old migrants in Saint-Etienne. 
 We started this project as a traditional Spring Boot Java backend, with an Angular frontend.
 The backend uses Spring MVC to expose RESTful endpoints, and uses JPA to access a PostgreSQL database.
 The whole application is built with Gradle.
@@ -21,12 +21,11 @@ Here's how it went. If you're interested into the end result, [the code is on Gi
 
 ## Strategy
 
-I did everything by myself, in a single pass: everything (except the gradle build) was migrated at once, in a single (but long) day. 
-Small refinements and adjustments were brought in later, but the whole code was migrated at once. 
+I did everything by myself, in a single pass: everything (except the gradle build) was migrated in a single (but long) day. Small refinements and adjustments were brought in later.
 
 Beware though. 
 Globe42 is a relatively small project (around 10,000 lines of Java code, not counting comments and blank lines, but including tests). 
-For a larger project, it would probably be wiser to split such a migration in smaller pieces. 
+For a larger project, it would probably be wiser to split such a migration into smaller pieces. 
 But anyway, the strategy I adopted can probably be used.
 
 This migration was also made easy by the facts that I already had this idea of migrating it to Kotlin when the project was started, and the code was written with most of the best practices making it easy to migrate and making the code Kotlin-friendly: constructor injection, immutable DTOs, etc.
@@ -34,7 +33,8 @@ This migration was also made easy by the facts that I already had this idea of m
 I began without a real plan, taking the first package arbitrarily, and migrating it. 
 This wasn't a good idea: the package depended on other downstream packages (still written in Java). 
 This means that the migrated code still used a lot of [platform types](https://kotlinlang.org/docs/reference/java-interop.html#null-safety-and-platform-types), although I knew that these platform types would disappear later during the migration. 
-I would thus have to come back to the migrated code later, once its downstream dependencies would have been migrated. It thus became clear that the good strategy was to start with the lowest layers of the code (entities, DTOs), then go up through the layers (DAOs, then services and controllers, and finally tests).
+I would thus have to come back to the migrated code later, once its downstream dependencies would have been migrated. 
+It became clear that the good strategy was to start with the lowest layers of the code (entities, DTOs), then go up through the layers (DAOs, then services and controllers, and finally tests).
 
 The migration was in fact largely automated by IntelliJ, which has a nice *Convert Java file to Kotlin* action. 
 Note that, despite its name, this action can actually be executed on several files, or a whole directory at once.
@@ -91,7 +91,7 @@ This is technically correct. But not semantically correct. The code will never s
     private lateinit var em: EntityManager
 ```
 
-Another place where we have lots of field injections is in tests (using the `@Mock` and `@InjectMocks` annotations of Mockito, and the `@MockBean` annotation of Spring). Once again, all those has to manually be changed to `lateinit var` instead of nullable properties.
+Another place where we have lots of field injections is in tests (using the `@Mock` and `@InjectMocks` annotations of Mockito, and the `@MockBean` annotation of Spring). Once again, all those have to manually be changed to `lateinit var` instead of nullable properties.
 
 ### Not null fields of JPA entities
 
@@ -103,7 +103,7 @@ So, the following code
 
 ```
     @NotNull
-    var gender: Gender? = null
+    private Gender gender;
 ```
 
 is converted to
@@ -232,6 +232,11 @@ public @interface GlobeMvcTest {
 ```
 
 I tried everything I could to convert this annotation to Kotlin, until I realized that it was actually not possible due to [this known bug](https://youtrack.jetbrains.com/issue/KT-11475): it's impossible to apply an annotation to an annotation method in Kotlin. So this is the only Java class remaining in our code.
+
+### Git history
+
+Renaming files from `.java` to `.kt` and converting their content from Java code to Kotlin code in a single commit confuses Git, which thinks you just deleted a bunch of files and created a bunch of newer ones. 
+To preserve the history and help reviewers, I had to rewrite the history, by first creating a commit which only renames files (without changing their content), then a second commit applying the changes.
 
 ## Takeaways
 
