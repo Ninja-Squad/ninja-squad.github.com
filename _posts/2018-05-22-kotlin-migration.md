@@ -45,7 +45,7 @@ The converter does a pretty good job, but isn't perfect, and can't read in your 
 
 ### Constants
 
-I have a static final field used as a value of an annotation attribute:
+The code uses static final fields as values of annotation attributes:
 
 ```
     private static final String PERSON_GENERATOR = "PersonGenerator";
@@ -57,12 +57,12 @@ The converter transforms the constant to a field of the companion object of the 
 
 ```
     companion object {
-        private val PARTICIPATION_GENERATOR = "ParticipationGenerator"
+        private val PERSON_GENERATOR = "PersonGenerator"
     }
 
     @SequenceGenerator(
-        name = PARTICIPATION_GENERATOR,
-        sequenceName = "PARTICIPATION_SEQ"
+        name = PERSON_GENERATOR,
+        sequenceName = "PERSON_SEQ"
     )
 ```
 
@@ -70,7 +70,7 @@ But only `const val` can be used as a value of an annotation attribute. So that 
 
 ### Field injections
 
-I actually had one field injection:
+The production code actually has one field injection:
 
 ```
     @PersistenceContext
@@ -91,7 +91,7 @@ This is technically correct. But not semantically correct. The code will never s
     private lateinit var em: EntityManager
 ```
 
-Another place where we have lots of field injections is in tests (using the `@Mock` and `@InjectMocks` annotations of Mockito, and the `@MockBean` annotation of Spring). Once again, all those have to manually be changed to `lateinit var` instead of nullable properties.
+Another place where there are lots of field injections is in tests (using the `@Mock` and `@InjectMocks` annotations of Mockito, and the `@MockBean` annotation of Spring). Once again, all those have to manually be changed to `lateinit var` instead of nullable properties.
 
 ### Not null fields of JPA entities
 
@@ -117,9 +117,9 @@ Once again, this is technically correct, but not semantically correct.
 The gender is not supposed to be null. 
 It's just always supposed to be initialized after construction. 
 
-Note that even in the case of the *creation* of a new person (where our own code invokes the constructor and populates the entity), the gender is supposed to be set, either directly in the constructor, or right after construction, before it's ever read. 
+Note that even in the case of the *creation* of a new person (where our own code invokes the constructor and populates the entity), the gender is supposed to be set, either directly in the constructor, or right after construction, before it's ever being read. 
 
-So we decided to change this code to
+So I decided to change this code to
 
 ```
     @NotNull
@@ -145,8 +145,8 @@ doesn't compile: `'lateinit' modifier is not allowed on properties of primitive 
 
 This is surprising to me. Maybe I'm missing something, but Kotlin could deal with this for me by using a `java.lang.Long` instead of a `long`, just as it does transparently when using a property of type `Long?` rather than `Long`. 
 
-But we can't do much about that, and we preferred not using a primitive type as the ID (Hibernate recommends using nullable, non-primitive types for generated IDs). 
-So we kept using `var id: Long?` for our IDs, even though it forces us to use the `!!` operator (in tests mainly). 
+But I can't do much about that, and I preferred not using a primitive type as the ID (Hibernate recommends using nullable, non-primitive types for generated IDs). 
+So I kept using `var id: Long?` for our IDs, even though it forces us to use the `!!` operator (in tests mainly). 
 Maybe we'll change this strategy later. 
 If you have an explanation on why Kotlin doesn't allow `lateinit var` on Long, I'd be happy to learn about it.
 
@@ -160,7 +160,7 @@ So we converted all our DTOs to data classes by hand.
 Note that we didn't use data classes for the JPA entities.
 This is an anti-pattern to me, for the following reasons:
 
- - in general, I prefer not to have `hashCode()` and `equals()` methods in entities. And data classes do have such methods. `equals()` and `hashCode()` on entities are most of the time semantically incorrect because entities are mutable, and are stored in HashSets, which break the HashSet contract.
+ - in general, I prefer not to have `hashCode()` and `equals()` methods in entities. And data classes do have such methods. `equals()` and `hashCode()` on entities are most of the time semantically incorrect because entities are mutable, and are stored in HashSets when used in toMany associations, which break the HashSet contract.
  - It's sometimes possible, but hard, to write `equals()` and `hashCode()` methods correctly for entities, but they should not use their auto-generated ID. And data classes include all the fields of the class in those methods. 
 
 
@@ -187,7 +187,7 @@ is converted to this non-compiling Kotlin monstruosity:
     }
 ```
 
-So we changed all these kinds of code to the following idiomatic Kotlin code:
+So I changed all these pieces of code to the following idiomatic Kotlin code:
 
 ```
     fun list(): List<CountryDTO> {
@@ -199,9 +199,9 @@ So we changed all these kinds of code to the following idiomatic Kotlin code:
 
 We use Mockito a lot in our tests. 
 And using Mockito with Kotlin is only really possible with the [mockito-kotlin](https://github.com/nhaarman/mockito-kotlin) library. 
-So we had to manually change all the calls to `when`, `verify`, `any`, etc. by calls to the mockito-kotlin extension functions (`whenever`, etc.) 
+So I had to manually change all the calls to `when`, `verify`, `any`, etc. by calls to the mockito-kotlin extension functions (`whenever`, etc.) 
 
-The idiomatic way of naming a test method in Kotlin is to use a real sentence. So we wrote and executed a simple script to change all the methods like
+The idiomatic way of naming a test method in Kotlin is to use a real sentence. So I wrote and executed a simple script to change all the methods like
 
 ```
     fun shouldNotUpdateMediationCodeIfLetterStaysTheSame()
