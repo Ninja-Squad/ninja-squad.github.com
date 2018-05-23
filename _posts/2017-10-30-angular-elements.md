@@ -2,7 +2,7 @@
 layout: post
 title: Angular Elements
 author: cexbrayat
-tags: ["Angular 2", "Angular", "Angular 4", "Angular 5", "Angular 6", "Angular CLI"]
+tags: ["Angular", "Angular 6", "Angular CLI"]
 description: "Angular Elements is a new package in Angular 6, allowing to use components as Custom Elements!"
 ---
 
@@ -29,7 +29,7 @@ Like `admin-user`, or `responsive-image`, or `funky-carousel`.
 
 I deep dived into the [official specification](https://w3c.github.io/webcomponents/spec/custom/)
 to learn a bit more about the details of Custom Elements.
-You can of course build your own Custom Elements with vanilla JavaScript
+You can of course build your own Custom Element with vanilla JavaScript
 but there is a bit of "plumbing" to do (you have to write an ES6 class with a constructor that follows some rules,
 then observe the attributes that can change, then implement the correct lifecycle methods defined in the specification).
 
@@ -105,4 +105,4 @@ The API is still very young (it was in Angular Labs for the past 6 months),
 so I would not recommend using it in production yet.
 But this time will come!
 
-Check out our [ebook](https://books.ninja-squad.com/angular), [online training (Pro Pack)](https://angular-exercises.ninja-squad.com/) and [training](http://ninja-squad.com/training/angular) if you want to learn more!
+Check out our [ebook](https://books.ninja-squad.com/angular), [online training (Pro Pack)](https://angular-exercises.ninja-squad.com/) and [training](https://ninja-squad.com/training/angular) if you want to learn more!
