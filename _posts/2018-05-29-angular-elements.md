@@ -11,6 +11,10 @@ Or maybe you have several teams, some using React, Vue and others Angular.
 Right now it's not really easy to share just one Angular component,
 into an app that is not an Angular app.
 
+<p style="text-align: center;">
+    <img class="img-responsive" src="/assets/images/2018-05-29/angular-labs.png" alt="Angular Labs" />
+</p>
+
 But some people fight for a better Web and think that a new standard can save us all: Web Components.
 Web components are actually 4 different specifications:
 - HTML templates (the `template` tag)
