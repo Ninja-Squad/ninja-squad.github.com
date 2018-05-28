@@ -8,7 +8,7 @@ description: "Angular Elements is a new package in Angular 6, allowing to use co
 
 Sometimes you don't want a full Angular app. Sometimes you just want to build a widget.
 Or maybe you have several teams, some using React, Vue and others Angular.
-Right now it's not really easy to share just one Angular component,
+Right now it's not really easy to integrate just one Angular component,
 into an app that is not an Angular app.
 
 <p style="text-align: center;">
@@ -78,7 +78,7 @@ to use it as a Custom Element:
         // get the ES6 class
         const PonyElement = createCustomElement(PonyComponent, { injector });
         // use it to register the custom element
-        customElements.define('ns-pony', PonyElement);
+        window.customElements.define('ns-pony', PonyElement);
       });
 
 Once that's done, you can use the element `ns-pony` as if it is a standard element:
