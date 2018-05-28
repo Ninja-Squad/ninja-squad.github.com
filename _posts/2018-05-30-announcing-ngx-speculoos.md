@@ -17,14 +17,14 @@ Let me thus introduce [ngx-speculoos](https://ngx-speculoos.ninja-squad.com).
 
 It's free, as in beer, and as in speach. 
 
-It uses the standard Angular TestBed and ComponentFixture abstractions, so you should get up to speed in a few minutes. 
+It uses the standard Angular `TestBed` and `ComponentFixture` abstractions, so you should be up to speed in a few minutes. 
 
 So, if you're like us, and would like your tests to be cleaner, more readable, and easier to maintain, please give it a try and tell us what you think about it.
 
-Since a code snippet is worth a thousand words, here's how you would test that selecting a country in a select box makes an error message disappear, and another cities select box appear, containing expected option values, labels and selection. Note the absence of calls to `detectChanges` or `dispatchEvent`. Note the non-duplication of CSS selectors thanks to the page object pattern.
+Since a code snippet is worth a thousand words, here's how you would test that selecting a country in a select box makes an error message disappear, and another cities select box appear, containing expected option values, labels and selection. Note the absence of calls to `detectChanges` or `dispatchEvent`. Note the non-duplication of CSS selectors thanks to the page object pattern. And note the (optional) usage of some custom matchers.
 
 ```
-    expect(tester.countryErrors).toContainText('The country is mandatory');
+    expect(tester.countryErrors).toContainText('The country is mandatory'); 
     expect(tester.city).toBeNull();
 
     tester.country.selectValue('FR');
@@ -47,7 +47,7 @@ Well, `ngx` stands for *Angular extension*.
 
 Oh, you meant the *other* part of the name?
 
-A *speculoos* is a delicious cookie from Belgium, where one quarter of the Ninja Squad staff (i.e. me) comes from. 
+A *speculoos* is a delicious cookie from Belgium, where one quarter of the Ninja Squad team (i.e. me) comes from. 
 
 And *speculoos* starts with `spec`, which is how test files are usually named in an Angular project. 
 That sounded like a cool name for this library.
