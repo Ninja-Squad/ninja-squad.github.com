@@ -1,21 +1,9 @@
 <h4>Ninja Squad books</h4>
-<br>
+
 <p>
 	<h5>Become a ninja with <strong>Angular</strong></h5>
 	<a href="https://books.ninja-squad.com/angular" title="Become a ninja with Angular">
 		<img class="img-rounded img-responsive" style="max-width: 100%" src="/assets/images/bookangular.png" alt="Cover of ebook Become a ninja with Angular" />
 	</a><br><br>
 	Pay what you want and support charity!
-</p>
-<br>
-<p>
-	<h5>Devenez un Ninja avec <strong>AngularJS</strong></h5>
-	<a href="https://books.ninja-squad.com/angularjs" title="Devenez un ninja avec AngularJS">
-		<img class="img-rounded img-responsive" style="max-width: 100%" src="/assets/images/bookangularjs.png" alt="Couverture du livre Devenez un Ninja avec AngularJS" />
-	</a><br><br>
-	Passez de débutant à ninja en AngularJS 1.4 avec un ebook à <strong>prix libre</strong> et pour une bonne cause&nbsp;!
-</p>
-<p>
-<br>
-<i class="icon-hand-right"></i> <a href="https://books.ninja-squad.com" title="Ninja Squad books">Ninja Squad books</a>
 </p>
