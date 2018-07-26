@@ -18,7 +18,7 @@ Angular&nbsp;6.1.0 is here!
 
 Angular&nbsp;6.1 introduced a new pipe!
 It allows iterating over a Map or an object,
-and to display the keys/values in our templates.
+and displaying the keys/values in our templates.
 
 Note that it orders the keys:
 
@@ -132,7 +132,7 @@ for basic native content projection.
 
 ## Tree-shakeable services in core
 
-You may remember that Angular&nbsp;6.0 introduced tree-shakeable services,
+You may remember that Angular&nbsp;6.0 introduced [tree-shakeable services](/2018/05/04/what-is-new-angular-6/),
 with the possiblity to declare a service using `@Injectable({ providedIn: 'root' })`.
 The core services of the framework are starting to move to this new declaration,
 with the first two services: `Title` (which allows setting the title of the page)
@@ -232,7 +232,7 @@ by writing tedious code looking like this, even if the data comes from a `resolv
 
 And you'll have to do the same in every component where you want the scroll position to be restored...
 
-## Router - URI error handler
+## Router &mdash; URI error handler
 
 You may have noticed that if a user tries to access a badly formed URL in your Angular application,
 the router will redirect to the root of the application.
@@ -251,7 +251,7 @@ that you can provide to redirect your user to a different page.
 As you can see, the handler receives the badly formed URL and the error,
 so you can even display a proper error to your users if you want.
 
-## Router - URL update strategy
+## Router &mdash; URL update strategy
 
 In the same vein, if the router navigates to a component,
 and the navigation fails, the URL is currently not updated.
