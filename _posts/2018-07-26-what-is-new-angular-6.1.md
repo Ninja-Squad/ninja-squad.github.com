@@ -265,6 +265,6 @@ so the URL will be updated even if the navigation fails.
 
 ## Angular CLI 6.1
 
-The CLI has also been released in 6.1.0: stay tuned for an other article about what's new!
+The CLI has also been released in 6.1.0: check out [our other article](/2018/07/27/angular-cli-6.1) about what's new!
 
 All our materials ([ebook](https://books.ninja-squad.com/angular), [online training](https://angular-exercises.ninja-squad.com/) and [training](https://ninja-squad.com/training/angular)) are up-to-date with these changes if you want to learn more!
