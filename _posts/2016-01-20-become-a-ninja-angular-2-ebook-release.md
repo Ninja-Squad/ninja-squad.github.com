@@ -41,7 +41,7 @@ We really hope you'll enjoy your read and our exercises and we can't wait to hea
 Now go and [buy it](https://books.ninja-squad.com/angular#buy)!
 
 <p style="text-align: center;">
-<img itemprop="image" class="img-responsive" src="/assets/images/ng2-ebook/ng2-cover.png" alt="Become a ninja with Angular" />
+<img itemprop="image" class="img-fluid" src="/assets/images/ng2-ebook/ng2-cover.png" alt="Become a ninja with Angular" />
 </p>
 
 If you want to go further, we also give [trainings](https://ninja-squad.com/formations/formation-angular) all around the world!

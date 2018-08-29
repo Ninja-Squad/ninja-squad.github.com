@@ -8,7 +8,7 @@ tags: [java, "java champion", "ninja squad"]
 
 On vient de m'apprendre une bonne nouvelle que je me dois de vous annoncer : j'ai la joie incroyable d'avoir été élue <b>Java Championne</b>! Aussi inimaginable que cela puisse l'être pour moi, je rejoins ainsi les bancs de <a href="http://java.net/website/java-champions/bios.html#Crepet">ce collège prestigieux</a>, aux côtés de Josh Bloch, James Gosling, Bob Lee, Adam Bien, Gavin King… et de notre ami JUG leader Antonio Goncalves. Je le remercie d'ailleurs d'avoir proposé ma candidature au titre! Et un grand merci également aux <a href="http://www.duchess-france.org">Duchesses</a> qui ont soumis l'idée!
 
-<p style="text-align:center;"><img class="img-rounded" src="/assets/images/Java_Champions_clr.gif" alt="Java Champions" /></p>
+<p style="text-align:center;"><img class="rounded" src="/assets/images/Java_Champions_clr.gif" alt="Java Champions" /></p>
 
 
 J'espère que cela constituera une prophétie positive pour les débuts de Ninja Squad!
@@ -17,7 +17,7 @@ Il y a un an, lorsque nous étions en voyage autour du monde avec [Cyril](https:
 
 Et si on créait l'entreprise de nos rêves? Oui, mais encore faut-il savoir ce que serait une entreprise de rêve pour les développeurs que nous sommes.
 
-<p style="text-align:center;"><img class="img-polaroid" src="/assets/images/agnes-keynote-indonesia.jpg" alt="Agnès donnant une conférence à l'université Gunardama en Indonésie" /></p>
+<p style="text-align:center;"><img class="img-thumbnail" src="/assets/images/agnes-keynote-indonesia.jpg" alt="Agnès donnant une conférence à l'université Gunardama en Indonésie" /></p>
 
 Ca pourrait être par exemple une boîte où nous nous accordons le temps de hacker sur les sujets de notre choix. Où nous avons toute latitude de mener des projets d'édition qui nous trottent dans la tête, de tenter de les développer, de se donner le temps d'essayer, même si nous ne sommes pas sûrs que ça marche... N'oublions pas qu'on a été biberonné aux écrits enthousiastes de [Joël Spolsky](http://www.joelonsoftware.com) sur le sujet!
 Et comment se consacrer à un projet sur un grand laps de temps sans facturer?  
@@ -27,7 +27,7 @@ Mais est-ce vraiment possible de trouver des gens dans le même esprit? Des gens
 
 Et bien oui, c'est possible... On en a au moins trouvé quatre! Quatre développeurs qui se disent qu'il est plus important de tenter une expérience de création de produit, quitte à la râter, plutôt qu'espérer avoir son salaire variable... Quatre à mettre plus de valeur dans ce qu'on produit, ce qu'on code, comment on le code, que dans le titre de nos cartes de visite et le chiffre en bas de nos fiches de paye.
 
-<p style="text-align:center;"><img class="img-polaroid" src="/assets/images/agnes-road-movie.jpg" alt="Agnès en voyage autour du monde" /></p>
+<p style="text-align:center;"><img class="img-thumbnail" src="/assets/images/agnes-road-movie.jpg" alt="Agnès en voyage autour du monde" /></p>
 <br/>
 
 Et moi, Agnès, pourquoi ai-je monté Ninja Squad avec ces 3 autres ninjas?

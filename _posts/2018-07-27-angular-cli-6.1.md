@@ -51,13 +51,13 @@ thanks to [source-map-explorer](https://www.npmjs.com/package/source-map-explore
 For example, this is with `sourceMap` only:
 
 <p style="text-align: center;">
-  <img class="img-rounded img-responsive" style="max-width: 100%" src="/assets/images/2018-07-27/source-map.png" alt="Source maps" />
+  <img class="rounded img-fluid" style="max-width: 100%" src="/assets/images/2018-07-27/source-map.png" alt="Source maps" />
 </p>
 
 and the same source maps built with `vendorSourceMap`:
 
 <p style="text-align: center;">
-  <img class="img-rounded img-responsive" style="max-width: 100%" src="/assets/images/2018-07-27/vendor-source-map.png" alt="Vendor source maps" />
+  <img class="rounded img-fluid" style="max-width: 100%" src="/assets/images/2018-07-27/vendor-source-map.png" alt="Vendor source maps" />
 </p>
 
 

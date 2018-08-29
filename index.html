@@ -5,74 +5,75 @@ tagline:
 ---
 {% for post in site.posts limit:10%}
   <div class="row">
-    <div class="date span2"><span><i class="icon-time"></i>{{ post.date | date:"%Y-%m-%d" }}</span></div>
-    <div class="span4">
+    <div class="date col-lg-3">
+      <span class="fas fa-clock"></span>
+      {{ post.date | date:"%Y-%m-%d" }}
+    </div>
+    <div class="col-lg-6">
       {% unless post.tags == empty %}
-      <ul class="tag_box inline">
+      <ul class="list-inline">
         {% assign tags_list = post.tags %}
         {% include JB/tags_list %}
       </ul>
       {% endunless %}
     </div>
-    <div class="span2 comments-heading"><span><i class="icon-comment"></i><a href="{{post.url}}#disqus_thread">Commentaires</a></span></div>
-  </div>
-  <div class="row">
-    <div class="span10 post-title">
-        <h1><a title="Lien permanent vers {{ post.title }}" href="{{post.url}}">{{ post.title }}</a></h1>
+    <div class="col-lg-3 comments-heading">
+      <span class="fas fa-comment-alt"></span>
+      <a href="{{post.url}}#disqus_thread">Commentaires</a>
     </div>
   </div>
+  <div class="post-title">
+    <h1><a title="Lien permanent vers {{ post.title }}" href="{{post.url}}">{{ post.title }}</a></h1>
+  </div>
   <div class="row">
-    <div class="span8 post-wrapper">
-      <div class="post-content">{{ post.content }}</div>
+    <div class="col-lg-10 post-wrapper">
+      <div class="px-lg-5">{{ post.content }}</div>
     </div>
-    <div class="span2">
-      <br/>
+    <div class="col-lg-2 sidebar">
       <div class="authors">
         {% for auth in post.author %}
         {% assign author = site.authors[auth] %}
         <p>
-          <img class="img-circle" alt="" style="width:60px" src="//en.gravatar.com/avatar/{{author.gravatar}}&amp;size=60">
+          <img class="rounded-circle" alt="" style="width:60px" src="//en.gravatar.com/avatar/{{author.gravatar}}&amp;size=60">
         </p>
         <h4>{{author.name}}</h4>
-        <ul class="nav nav-list">
+        <ul class="list-unstyled">
           <li><a href="https://github.com/{{author.github}}">Github</a></li>
           <li><a href="https://twitter.com/{{author.twitter}}">Twitter</a></li>
         </ul>
         {% endfor %}
       </div>
-      <br/>
+
       <div id="promotion" class="training-dates">
         {% include ninjasquad/promotion %}
       </div>
-      <br/>
+
       <div class="pages">
         <h4>Navigation</h4>
-        <ul class="nav nav-list">
+        <ul class="list-unstyled">
           {% assign pages_list = site.pages %}
           {% assign group = 'navigation' %}
           {% include JB/pages_list %}
         </ul>
       </div>
-      <br/>
+
       <div class="training-dates">
         {% include ninjasquad/trainings %}
       </div>
-      <br/>
+
       <div class="training-dates">
         {% include ninjasquad/followus %}
       </div>
     </div>
   </div>
   <div class="row">
-    <div class="span8 social-buttons">
-      {% include ninjasquad/social-buttons %}
+    <div class="col-lg-10">
+      <div class="social-buttons pr-lg-5 my-2">
+        {% include ninjasquad/social-buttons %}
+      </div>
     </div>
   </div>
-  <div class="row">
-    <div class="span10">
-      <hr/>
-    </div>
-  </div>
+  <hr/>
 {% endfor %}
 
 <p>

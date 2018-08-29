@@ -12,7 +12,7 @@ La société Ninja Squad a été immatriculée le 4 juillet 2012.
 Nous célébrons donc notre mi-décennie&nbsp;: 5 glorieuses années d’existence. 🎩🙆🕺
 
 <p style="text-align: center;">
-    <img class="img-responsive" src="/assets/images/5ans/kbis.png" alt="Extrait KBis Ninja Squad" />
+    <img class="img-fluid" src="/assets/images/5ans/kbis.png" alt="Extrait KBis Ninja Squad" />
 </p>
 
 Pour ceux qui ne nous connaîtraient pas, rappelons les principes qui régissent

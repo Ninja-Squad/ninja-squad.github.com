@@ -14,7 +14,7 @@ L'absence de DRM et le prix libre ne sont pas les seules libertés laissées à 
 C'est ainsi un chèque de **plus de 2000€** que Ninja Squad a pu reverser à cette association, grâce à vous&nbsp;!
 
 <p style="text-align: center;">
-<img itemprop="image" class="img-responsive" src="/assets/images/books/DonDrSouris2014.png" alt="Chuck de Ninja Squad remet le chèque de don à Docteur Souris" />
+<img itemprop="image" class="img-fluid" src="/assets/images/books/DonDrSouris2014.png" alt="Chuck de Ninja Squad remet le chèque de don à Docteur Souris" />
 </p>
 
 Chuck, pas peu fier d'avoir pu remettre ce chèque à Docteur Souris, vous remercie d'avoir encouragé cette œuvre qui nous tenait à cœur&nbsp;!

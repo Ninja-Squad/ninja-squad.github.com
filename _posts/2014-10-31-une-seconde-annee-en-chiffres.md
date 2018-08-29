@@ -99,7 +99,7 @@ Certains ninjas prévoient aussi de longs voyages autour du monde&nbsp;, d'autre
 
 
 <figure style="text-align: center;">
-    <img class="img-responsive" src="/assets/images/we-dont-need-roads.gif" alt="Roads? Where we're going, we don't need roads!" />
+    <img class="img-fluid" src="/assets/images/we-dont-need-roads.gif" alt="Roads? Where we're going, we don't need roads!" />
     <figcaption style="text-align: center;">Roads? Where we're going, we don't need roads!</figcaption>
 </figure>
 

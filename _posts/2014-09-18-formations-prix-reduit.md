@@ -15,7 +15,7 @@ Mais on organise aussi des formations en *inter-entreprise*&nbsp;: on planifie d
 
 <p style="text-align: center;">
 <figure>
-    <img class="img-responsive" src="/assets/images/trainings-promotion/mercatique.gif" alt="Jean-Claude, notre directeur de la mercatique digitale" />
+    <img class="img-fluid" src="/assets/images/trainings-promotion/mercatique.gif" alt="Jean-Claude, notre directeur de la mercatique digitale" />
     <figcaption>Jean-Claude, notre directeur de la mercatique digitale</figcaption>
 </figure>
 </p>
@@ -36,7 +36,7 @@ On offrira désormais sur toutes nos formations Ninja Squad une **réduction de 
 Si vous nous montrez que vous faites partie de cette population méritante, vous bénéficierez de cette réduction exceptionnelle. Si des gens ont besoin d'un encouragement, c'est bien vous&nbsp;! Vous êtes nos héros, et on a envie de vous aimer.
 
 <p style="text-align: center;">
-<img class="img-responsive" src="/assets/images/trainings-promotion/yeah.gif" alt="yeah" />
+<img class="img-fluid" src="/assets/images/trainings-promotion/yeah.gif" alt="yeah" />
 </p>
 
 <br/>

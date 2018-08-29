@@ -19,7 +19,7 @@ Probablement aussi pour se faire mousser un peu : les trois ninjas ont tous Ã©tÃ
 
 
 <p style="text-align:center;">
-  <img class="img-polaroid" src="/assets/images/carlton.gif" alt="La victoire des ninjas" />
+  <img class="img-thumbnail" src="/assets/images/carlton.gif" alt="La victoire des ninjas" />
 </p>
 <br/>
 

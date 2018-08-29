@@ -10,7 +10,7 @@ Angular&nbsp;6.1.0 is here!
 
 <p style="text-align: center;">
   <a href="https://github.com/angular/angular/blob/master/CHANGELOG.md#610-2018-07-25">
-    <img class="img-rounded img-responsive" style="max-width: 100%" src="/assets/images/angular.png" alt="Angular logo" />
+    <img class="rounded img-fluid" style="max-width: 100%" src="/assets/images/angular.png" alt="Angular logo" />
   </a>
 </p>
 

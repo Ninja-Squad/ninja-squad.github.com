@@ -15,7 +15,7 @@ Son outil de prédilection est [Unity](https://unity3d.com/), un moteur de jeux 
 Alors pourquoi ne pas s'essayer au développement de jeu. Et plutôt que profiter égoïstement de notre proximité avec ce généreux grand homme, on s'est dit que cela pourrait vous intéresser aussi, soit parce que vous aimez le jeu vidéo depuis que vous jouiez à la NES les yeux collés à votre écran cathodique assis sur le tapis du salon, soit pour se confronter à un univers de développement très éloigné de nos petits problèmes de transaction en BDD et de formulaires web.
 
 <p style="text-align: center;">
-<img itemprop="image" class="img-responsive" src="/assets/images/videogames-are-for-idiots.png" alt="Videogames are for idiots - Monkey Moon" />
+<img itemprop="image" class="img-fluid" src="/assets/images/videogames-are-for-idiots.png" alt="Videogames are for idiots - Monkey Moon" />
 </p>
 
 Une vingtaine de personnes sont donc cordialement invitées, aux frais de la princesse des ninjas, à un atelier d'initiation au développement de jeu vidéo avec Unity, le vendredi 20 mai 2016 après-midi. Cela se passera à La Cordée Liberté.

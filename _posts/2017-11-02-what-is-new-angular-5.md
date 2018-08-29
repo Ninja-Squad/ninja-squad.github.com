@@ -10,7 +10,7 @@ Angular&nbsp;5.0.0 is here!
 
 <p style="text-align: center;">
   <a href="https://github.com/angular/angular/blob/master/CHANGELOG.md#500-pentagonal-donut-2017-11-01">
-    <img class="img-rounded img-responsive" style="max-width: 100%" src="/assets/images/angular.png" alt="Angular logo" />
+    <img class="rounded img-fluid" style="max-width: 100%" src="/assets/images/angular.png" alt="Angular logo" />
   </a>
 </p>
 

@@ -93,7 +93,7 @@ Si c'est donc pour ne pas gagner plus, et subir des pressions éditoriales, nous
 Vous savez ce qu'il vous reste à faire pour votre prochain livre&nbsp;: DIY&nbsp;! \o/
 
 <p style="text-align: center;">
-<img itemprop="image" class="img-responsive" src="/assets/images/books/writer.gif" alt="yeah" />
+<img itemprop="image" class="img-fluid" src="/assets/images/books/writer.gif" alt="yeah" />
 </p>
 
 <br>

@@ -10,7 +10,7 @@ Angular 4.4.1 is here (4.4.0 glitched out and was never released)!
 
 <p style="text-align: center;">
   <a href="https://github.com/angular/angular/blob/master/CHANGELOG.md#441-2017-09-15">
-    <img class="img-rounded img-responsive" style="max-width: 100%" src="/assets/images/angular.png" alt="Angular logo" />
+    <img class="rounded img-fluid" style="max-width: 100%" src="/assets/images/angular.png" alt="Angular logo" />
   </a>
 </p>
 

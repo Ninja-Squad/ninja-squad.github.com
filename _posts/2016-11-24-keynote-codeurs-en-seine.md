@@ -12,7 +12,7 @@ description: "La retransciption de la keynote d'Agnès Crépet et Cyril Lacote �
     margin-top: 2.5em;
     margin-bottom: 1.5em;
   }
-  .slide img.img-polaroid {
+  .slide img.img-thumbnail {
     max-width: 90%;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -34,7 +34,7 @@ La vidéo, avec slides synchronisés, est [disponible chez InfoQ](https://www.in
 
 <a href="https://www.infoq.com/fr/presentations/codeurs-en-seine-agnes-crepet-cyril-lacote-keynote"
   title="Vidéo de la keynote d'Agnès Crépet et Cyril Lacote à Codeurs en Seine 2016">
-  <img class="img-responsive" src="/assets/images/codeurs-en-seine/video.jpg" />
+  <img class="img-fluid" src="/assets/images/codeurs-en-seine/video.jpg" />
 </a>  
 
 Si vous préférez la lecture, en voici la retranscription complète.
@@ -45,7 +45,7 @@ Si vous préférez la lecture, en voici la retranscription complète.
 ## La retranscription
 
 <p class="slide">
-  <img class="img-polaroid" src="/assets/images/codeurs-en-seine/1.jpg" />
+  <img class="img-thumbnail" src="/assets/images/codeurs-en-seine/1.jpg" />
 </p>
 
 <small>Cette diapositive de titre devient extrèmement cocasse quand on réalise qu'elle montre
@@ -54,14 +54,14 @@ des développeurs Java sur l'île de Java. Ha ha.</small>
 ### Que racontent Agnès Crépet et Cyril Lacote&nbsp;?
 
 <p class="slide">
-  <img class="img-polaroid" src="/assets/images/codeurs-en-seine/2.jpg" />
+  <img class="img-thumbnail" src="/assets/images/codeurs-en-seine/2.jpg" />
 </p>
 
 Agnès Crépet est développeuse, Java Champion, membre active de Duchess France,
 ex-organistratice du LyonJUG, et co-fondatrice de la [conférence Mix-IT](http://www.mix-it.fr/) à Lyon.
 
 <p class="slide">
-  <img class="img-polaroid" src="/assets/images/codeurs-en-seine/3.jpg" />
+  <img class="img-thumbnail" src="/assets/images/codeurs-en-seine/3.jpg" />
 </p>
 
 Cyril Lacote est dévelopeur Java. Après 10 ans de prestations en SSII,
@@ -72,7 +72,7 @@ Il participe aussi à l'organisation de la [conférence Mix-IT](http://www.mix-i
 (dont il portait ce jour un t-shirt, en complète indécence et irrespect pour Codeurs en Seine qui les recevait).
 
 <p class="slide">
-  <img class="img-polaroid" src="/assets/images/codeurs-en-seine/4.jpg" />
+  <img class="img-thumbnail" src="/assets/images/codeurs-en-seine/4.jpg" />
 </p>
 
 Agnès et Cyril se lancent alors dans un jeu de question-réponses pour sortir le public de leur léthargie
@@ -83,7 +83,7 @@ ou dans leur job&nbsp;?
 Il s'avéra que oui, l'audience était plutôt heureuse.
 
 <p class="slide">
-  <img class="img-polaroid" src="/assets/images/codeurs-en-seine/5.jpg" />
+  <img class="img-thumbnail" src="/assets/images/codeurs-en-seine/5.jpg" />
 </p>
 
 En 2011, Agnès et Cyril sortaient ainsi d'une dizaine d'années de développement.
@@ -98,7 +98,7 @@ Et maintenant, ils ont le recul pour constater combien cela les a marqué,
 quelles leçons ils en ont tirées, et lesquelles ont été fructueuses.
 
 <p class="slide">
-  <img class="img-polaroid" src="/assets/images/codeurs-en-seine/6.jpg" />
+  <img class="img-thumbnail" src="/assets/images/codeurs-en-seine/6.jpg" />
 </p>
 
 Est-ce que vous reconnaissez ce minuscule pays de l'Afrique de l'Ouest&nbsp;?
@@ -109,7 +109,7 @@ Dans leur tour du monde, ils sont aussi passés en Thaïlande, à Bali, en Austr
 mais comme ils n'ont fait que profiter du pays, ils n'en parleront pas (même si ça vaut le coup).
 
 <p class="slide">
-  <img class="img-polaroid" src="/assets/images/codeurs-en-seine/7.jpg" />
+  <img class="img-thumbnail" src="/assets/images/codeurs-en-seine/7.jpg" />
 </p>
 
 Ils n'avaient pas envie de voyager qu'en touristes.
@@ -120,7 +120,7 @@ Ils étaient souvent nourris et logés en échange de leurs formations,
 ce qui leur convenait parfaitement.
 
 <p class="slide">
-  <img class="img-polaroid" src="/assets/images/codeurs-en-seine/8.jpg" />
+  <img class="img-thumbnail" src="/assets/images/codeurs-en-seine/8.jpg" />
 </p>
 
 Agnès, alors très impliquée dans la communauté [Duchess France](http://www.duchess-france.org/),
@@ -130,7 +130,7 @@ en aidant au montage de deux antennes locales&nbsp;: Duchess Africa et Duchess I
 ### Quelques faits marquants glanés autour du monde
 
 <p class="slide">
-  <img class="img-polaroid" src="/assets/images/codeurs-en-seine/9.jpg" />
+  <img class="img-thumbnail" src="/assets/images/codeurs-en-seine/9.jpg" />
 </p>
 
 Nous voilà partis pour un Tour du Monde en 15 minutes (record battu),
@@ -138,13 +138,13 @@ où l'audience sera emportée dans un maelström d'anecdotes exotiques,
 tout à la fois savoureuses et pertinentes (espérons-le).
 
 <p class="slide">
-  <img class="img-polaroid" src="/assets/images/codeurs-en-seine/10-lyon-lome.gif" />
+  <img class="img-thumbnail" src="/assets/images/codeurs-en-seine/10-lyon-lome.gif" />
 </p>
 
 Direction Lomé, la capitale du Togo en Afrique de l'Ouest.
 
 <p class="slide">
-  <img class="img-polaroid" src="/assets/images/codeurs-en-seine/11.jpg" />
+  <img class="img-thumbnail" src="/assets/images/codeurs-en-seine/11.jpg" />
 </p>
 
 À Lomé, ils ont fait la rencontre d'[Horacio](http://horalass.blogspot.fr/),
@@ -160,7 +160,7 @@ de conférence&nbsp;!
 Une motivation qu'on aurait bien du mal à retrouver en France.
 
 <p class="slide">
-  <img class="img-polaroid" src="/assets/images/codeurs-en-seine/12.gif" />
+  <img class="img-thumbnail" src="/assets/images/codeurs-en-seine/12.gif" />
 </p>
 
 En France, Agnès et Cyril s'occupaient alors du [LyonJUG](http://www.lyonjug.org/).
@@ -175,7 +175,7 @@ certaines peinent parfois à trouver leur public.
 Alors réjouissons-nous de cette richesse, là où d'autres n'ont droit qu'à très peu d'animations.
 
 <p class="slide">
-  <img class="img-polaroid" src="/assets/images/codeurs-en-seine/13.jpg" />
+  <img class="img-thumbnail" src="/assets/images/codeurs-en-seine/13.jpg" />
 </p>
 
 Agnès et Cyril étaient accueillis par une entreprise au Togo,
@@ -193,7 +193,7 @@ jetant régulièrement un œil sur l'actualité de leur pays d'origine
 et prenant régulièrement des nouvelles de leurs proches.
 
 <p class="slide">
-  <img class="img-polaroid" src="/assets/images/codeurs-en-seine/14.jpg" />
+  <img class="img-thumbnail" src="/assets/images/codeurs-en-seine/14.jpg" />
 </p>
 
 En France, la plus violente des dernières guerres civiles en date
@@ -204,7 +204,7 @@ Encore une fois, réjouissons-nous des conditions de paix et de sérénité dans
 chance de pouvoir apprendre et travailler.
 
 <p class="slide">
-  <img class="img-polaroid" src="/assets/images/codeurs-en-seine/15.jpg" />
+  <img class="img-thumbnail" src="/assets/images/codeurs-en-seine/15.jpg" />
 </p>
 
 Leur copain Horacio leur expliquait aussi que les entreprises IT togolaises et africaines en général
@@ -225,7 +225,7 @@ Malgré l'inconfortable culpabilité de ne pas aider leur ami,
 ils ont préféré refuser de participer à ce système.
 
 <p class="slide">
-  <img class="img-polaroid" src="/assets/images/codeurs-en-seine/16.gif" />
+  <img class="img-thumbnail" src="/assets/images/codeurs-en-seine/16.gif" />
 </p>
 
 En France, nous ne pouvons pas trop faire les malins&nbsp;:
@@ -234,7 +234,7 @@ sur la stratégie ou l'architecture applicative, et les équipes de développeur
 sont ignorées sur ces sujets importants. Plus le costume est cher, plus la voix est importante.
 
 <p class="slide">
-  <img class="img-polaroid" src="/assets/images/codeurs-en-seine/17-lome-kualalumpur.gif" />
+  <img class="img-thumbnail" src="/assets/images/codeurs-en-seine/17-lome-kualalumpur.gif" />
 </p>
 
 Après Lomé au Togo, nous nous envolons pour Kuala Lumpur en Malaisie
@@ -252,7 +252,7 @@ genre temple d'Indiana Jones avec des singes dans la jungle.
 Il s'est avéré que ce n'était pas tout à fait le cas.
 
 <p class="slide">
-  <img class="img-polaroid" src="/assets/images/codeurs-en-seine/18.jpg" />
+  <img class="img-thumbnail" src="/assets/images/codeurs-en-seine/18.jpg" />
 </p>
 
 Kuala Lumpur s'est révélée être une copie asiatique (et musulmane) de Londres,
@@ -264,7 +264,7 @@ et les conditions exceptionnelles auxquelles avaient droit les étudiants.
 Bien loin de celles qu'ils avaient connues en France...
 
 <p class="slide">
-  <img class="img-polaroid" src="/assets/images/codeurs-en-seine/19.jpg" />
+  <img class="img-thumbnail" src="/assets/images/codeurs-en-seine/19.jpg" />
 </p>
 
 Voici l'INSA de Lyon, école d'ingénieur au top de leur région.
@@ -280,7 +280,7 @@ Voici les moyens assignés à l'éducation publique en France. C'est assez path�
 et peu rassurant sur l'avenir de la République.
 
 <p class="slide">
-  <img class="img-polaroid" src="/assets/images/codeurs-en-seine/20-kualalumpur-jakarta.gif" />
+  <img class="img-thumbnail" src="/assets/images/codeurs-en-seine/20-kualalumpur-jakarta.gif" />
 </p>
 
 Plus petit trajet de notre histoire&nbsp;: direction Jakarta, en Indonésie.
@@ -288,7 +288,7 @@ Un véritable enfer urbain (plus de 25 millions de personnes en 2012),
 pollué par un trafic routier cauchemardesque.
 
 <p class="slide">
-  <img class="img-polaroid" src="/assets/images/codeurs-en-seine/21.jpg" />
+  <img class="img-thumbnail" src="/assets/images/codeurs-en-seine/21.jpg" />
 </p>
 
 Dans cet enfer, Agnès et Cyril ont rencontré deux jeunes femmes,
@@ -302,7 +302,7 @@ où elles initiaient des jeunes au code.
 Impressionnantes de motivation et d'énergie.
 
 <p class="slide">
-  <img class="img-polaroid" src="/assets/images/codeurs-en-seine/22.jpg" />
+  <img class="img-thumbnail" src="/assets/images/codeurs-en-seine/22.jpg" />
 </p>
 
 En France, les étudiants de 20 ans semblent moins préoccupés par leur avenir.
@@ -310,7 +310,7 @@ Et consacrent en général leur temps libre à d'autres loisirs moins constructi
 N'est-ce pas Agnès&nbsp;? (elle écumait alors les bars et les concerts).
 
 <p class="slide">
-  <img class="img-polaroid" src="/assets/images/codeurs-en-seine/23.jpg" />
+  <img class="img-thumbnail" src="/assets/images/codeurs-en-seine/23.jpg" />
 </p>
 
 Voici les élèves à qui ils donnaient des cours à l'Université de Jakarta.
@@ -320,7 +320,7 @@ Sans connaître les statistiques exactes, c'est bien ce qu'Agnès et Cyril ont c
 partout où ils sont allés.
 
 <p class="slide">
-  <img class="img-polaroid" src="/assets/images/codeurs-en-seine/24.gif" />
+  <img class="img-thumbnail" src="/assets/images/codeurs-en-seine/24.gif" />
 </p>
 
 Alors qu'en France, vous avez dû faire le même constat&nbsp;: c'est plutôt la _bromance_.
@@ -337,14 +337,14 @@ Et encore, le terme de diversité est mal choisi.
 l'IT n'est pas à l'image de la France.
 
 <p class="slide">
-  <img class="img-polaroid" src="/assets/images/codeurs-en-seine/25-jakarta-sanfrancisco.gif" />
+  <img class="img-thumbnail" src="/assets/images/codeurs-en-seine/25-jakarta-sanfrancisco.gif" />
 </p>
 
 Voilà maintenant qu'on s'envole pour San Francisco, Californie, USA,
 capitale de l'informatique mondiale, siège des Google, Twitter, Facebook, Uber et AirBnb.
 
 <p class="slide">
-  <img class="img-polaroid" src="/assets/images/codeurs-en-seine/26.jpg" />
+  <img class="img-thumbnail" src="/assets/images/codeurs-en-seine/26.jpg" />
 </p>
 
 Agnès et Cyril y ont rencontré quelques stars qu'ils interviewaient pour [un podcast](http://www.cast-it.fr/) (depuis abandonné)&nbsp;:
@@ -368,7 +368,7 @@ des chinois débarquent dans l'heure qui suit avec des valises de liquide, conte
 de plus que l'exorbitant prix demandé, et achètent sans visiter...
 
 <p class="slide">
-  <img class="img-polaroid" src="/assets/images/codeurs-en-seine/27.jpg" />
+  <img class="img-thumbnail" src="/assets/images/codeurs-en-seine/27.jpg" />
 </p>
 
 À Saint-Etienne, il n'y a peut-être pas Twitter ni Google, mais ça ne saurait tarder
@@ -382,14 +382,14 @@ ils ignoraient tout du coût de gestion, ils se sont alors installés à Saint-E
 d'ajouter la pression immobilière à leurs projets. L'aventure était alors financièrement plus sereine.
 
 <p class="slide">
-  <img class="img-polaroid" src="/assets/images/codeurs-en-seine/28-sanfrancisco-stockholm.gif" />
+  <img class="img-thumbnail" src="/assets/images/codeurs-en-seine/28-sanfrancisco-stockholm.gif" />
 </p>
 
 Direction Stockholm, en Suède. Ce n'était pas vraiment dans le cadre de leur tour du Monde,
 mais ils y sont allés récemment (en repérage pour peut-être s'y installer avec leurs enfants).
 
 <p class="slide">
-  <img class="img-polaroid" src="/assets/images/codeurs-en-seine/29.jpg" />
+  <img class="img-thumbnail" src="/assets/images/codeurs-en-seine/29.jpg" />
 </p>
 
 À Stockholm, Agnès et Cyril ont croisé un expatrié français depuis 8 ans
@@ -409,7 +409,7 @@ c'est surtout très mal vu que le père ne s'occupe pas suffisamment de ses enfa
 Au point de se faire engueuler par son manager si un jeune papa reste après 17H au travail.
 
 <p class="slide">
-  <img class="img-polaroid" src="/assets/images/codeurs-en-seine/30.jpg" />
+  <img class="img-thumbnail" src="/assets/images/codeurs-en-seine/30.jpg" />
 </p>
 
 En France, et dans la plupart des pays occidentaux semble-t-il, ce n'est pas vraiment cet esprit.
@@ -421,7 +421,7 @@ Ce dessin (qui a été piqué à un inconnu sur Internet) représente assez bien
 - Tu peux avoir du temps et des enfants, mais tu n'auras probablement pas trop d'argent, avec un temps partiel.
 
 <p class="slide">
-  <img class="img-polaroid" src="/assets/images/codeurs-en-seine/31.jpg" />
+  <img class="img-thumbnail" src="/assets/images/codeurs-en-seine/31.jpg" />
 </p>
 
 ### OK, et après&nbsp;?
@@ -436,7 +436,7 @@ Le tour du Monde terminé, la question était maintenant de savoir quelles leço
 ils allaient en tirer pour leur retour à la réalité professionnelle.
 
 <p class="slide">
-  <img class="img-polaroid" src="/assets/images/codeurs-en-seine/32.jpg" />
+  <img class="img-thumbnail" src="/assets/images/codeurs-en-seine/32.jpg" />
 </p>
 
 Agnès et Cyril ne voulaient plus être salariés, et encore moins en SSII,
@@ -473,7 +473,7 @@ Mais eux-mêmes avaient du mal à imaginer des alternatives satisfaisantes.
 Alors ils veulent aussi présenter celle à laquelle ils sont arrivés.
 
 <p class="slide">
-  <img class="img-polaroid" src="/assets/images/codeurs-en-seine/33.jpg" />
+  <img class="img-thumbnail" src="/assets/images/codeurs-en-seine/33.jpg" />
 </p>
 
 Ils cherchaient donc une alternative au salariat.
@@ -495,7 +495,7 @@ La [grille de salaire de Ninja Squad](https://docs.google.com/spreadsheets/d/1jK
 est d'ailleurs aussi publique :)
 
 <p class="slide">
-  <img class="img-polaroid" src="/assets/images/codeurs-en-seine/34.jpg" />
+  <img class="img-thumbnail" src="/assets/images/codeurs-en-seine/34.jpg" />
 </p>
 
 Avec le recul, quatre ans après, est-ce que cela a fonctionné&nbsp;?
@@ -547,7 +547,7 @@ Si vous avez une vraie société, avec son image, il suffit alors d'en dire tout
 Vous avez transformé le _personal branling_ en _corporate branding_&nbsp;!
 
 <p class="slide">
-  <img class="img-polaroid" src="/assets/images/codeurs-en-seine/35.jpg" />
+  <img class="img-thumbnail" src="/assets/images/codeurs-en-seine/35.jpg" />
 </p>
 
 Comment faire alors pour se lancer&nbsp;? Est-ce compliqué&nbsp;?
@@ -585,14 +585,14 @@ il est probable que vous viviez très bien.
 ## Une conclusion subtile et inspirante
 
 <p class="slide">
-  <img class="img-polaroid" src="/assets/images/codeurs-en-seine/36.jpg" />
+  <img class="img-thumbnail" src="/assets/images/codeurs-en-seine/36.jpg" />
 </p>
 
 Voici, enfin, la conclusion, où apparaît soudainement, après un moment de flou,
 combien cette présentation est finalement bien construite et inspirante (normalement).
 
 <p class="slide">
-  <img class="img-polaroid" src="/assets/images/codeurs-en-seine/37.jpg" />
+  <img class="img-thumbnail" src="/assets/images/codeurs-en-seine/37.jpg" />
 </p>
 
 Donc, pour reboucler avec l'introduction, pourquoi est-on heureux&nbsp;?
@@ -602,7 +602,7 @@ Il présentait différentes études statistiques qui ont permis de discriminer l
 influants sur le bonheur. Et le facteur le plus influent n'est pas celui qu'on pourrait croire.
 
 <p class="slide">
-  <img class="img-polaroid" src="/assets/images/codeurs-en-seine/38.jpg" />
+  <img class="img-thumbnail" src="/assets/images/codeurs-en-seine/38.jpg" />
 </p>
 
 Est-ce que les enfants et la famille contribuent au bonheur comme on le croit instinctivement&nbsp;?
@@ -611,35 +611,35 @@ Pas du tout&nbsp;!
 On peut être parfaitement heureux ou malheureux avec ou sans enfant.
 
 <p class="slide">
-  <img class="img-polaroid" src="/assets/images/codeurs-en-seine/39.jpg" />
+  <img class="img-thumbnail" src="/assets/images/codeurs-en-seine/39.jpg" />
 </p>
 
 Est-ce que la religion aide&nbsp;?
 Non plus&nbsp;!
 
 <p class="slide">
-  <img class="img-polaroid" src="/assets/images/codeurs-en-seine/40.jpg" />
+  <img class="img-thumbnail" src="/assets/images/codeurs-en-seine/40.jpg" />
 </p>
 
 Après, il y a les facteurs évidents, comme la santé.
 On sera évidemment plus heureux si on est en bonne santé.
 
 <p class="slide">
-  <img class="img-polaroid" src="/assets/images/codeurs-en-seine/41.jpg" />
+  <img class="img-thumbnail" src="/assets/images/codeurs-en-seine/41.jpg" />
 </p>
 
 Le cadre de vie joue aussi.
 On sera plus heureux dans un joli endroit qu'en vivant au bord d'une décharge.
 
 <p class="slide">
-  <img class="img-polaroid" src="/assets/images/codeurs-en-seine/42.jpg" />
+  <img class="img-thumbnail" src="/assets/images/codeurs-en-seine/42.jpg" />
 </p>
 
 Le niveau de vie contribue aussi&nbsp;: on sera évidemment plus heureux si on a les moyens
 de manger ce qui nous plaît, et de s'offrir quelques loisirs.
 
 <p class="slide">
-  <img class="img-polaroid" src="/assets/images/codeurs-en-seine/43.jpg" />
+  <img class="img-thumbnail" src="/assets/images/codeurs-en-seine/43.jpg" />
 </p>
 
 Mais enfin, le facteur le plus universel qui contribue le plus au bonheur est le sentiment

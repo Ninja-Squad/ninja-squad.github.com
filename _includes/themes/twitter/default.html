@@ -1,93 +1,124 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-  <head>
-    <meta charset="utf-8">
-{% if page.canonical %}
-    <link rel="canonical" href="{{ page.canonical }}" />
-{% endif %}
-    <meta name="author" content="Ninja Squad">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="publisher" href="https://plus.google.com/{{site.gplus}}">
-{% for auth in page.author %}
+<head>
+  <meta charset="utf-8">
+  {% if page.canonical %}
+  <link rel="canonical" href="{{ page.canonical }}"/>
+  {% endif %}
+  <meta name="author" content="Ninja Squad">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="publisher" href="https://plus.google.com/{{site.gplus}}">
+  {% for auth in page.author %}
   {% assign author = site.authors[auth] %}
-    <link rel="author" href="https://plus.google.com/{{author.gplus}}" />
-{% endfor %}
+  <link rel="author" href="https://plus.google.com/{{author.gplus}}"/>
+  {% endfor %}
 
+  <!-- Le styles -->
+  <link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/solid.css"
+        integrity="sha384-wnAC7ln+XN0UKdcPvJvtqIH3jOjs9pnKnq9qX68ImXvOGz2JuFoEiCjT8jyZQX2z" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/fontawesome.css"
+        integrity="sha384-HbmWTHay9psM8qyzEKPc8odH4DsOuzdejtnr+OFtDmOcIVnhgReQ4GZBH7uwcjf6" crossorigin="anonymous">
+  <link href="{{ ASSET_PATH }}/css/prettify.css" rel="stylesheet">
+  <link href="{{ ASSET_PATH }}/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
 
-    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+  <!-- Le fav and touch icons -->
+  <link rel="shortcut icon" href="/assets/images/favicon.ico">
+  <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/assets/images/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/assets/images/apple-touch-icon-114x114.png">
 
-    <!-- Le styles -->
-    <link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="{{ ASSET_PATH }}/css/prettify.css" rel="stylesheet">
-    <link href="{{ ASSET_PATH }}/bootstrap/css/ninja-main.min.css" rel="stylesheet">
-    <link href="{{ ASSET_PATH }}/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
-    <link href="{{ ASSET_PATH }}/bootstrap/css/responsive.min.css" rel="stylesheet">
+  <script src="{{ ASSET_PATH }}/js/jquery-3.3.1.slim.min.js"></script>
 
-    <!-- Le fav and touch icons -->
-    <link rel="shortcut icon" href="/assets/images/favicon.ico">
-    <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/assets/images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/assets/images/apple-touch-icon-114x114.png">
+  {% seo %}
+</head>
 
-    <script src="{{ ASSET_PATH }}/js/jquery-1.7.2.min.js"></script>
+<body>
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="https://ninja-squad.com">
+      <img alt="Ninja Squad" title="Logo Ninja Squad" src="/assets/images/logo-head.png"/>
+    </a>
+    <button class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-    {% seo %}
-  </head>
-
-  <body>
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-              <span class="icon-bar icon-white"></span>
-              <span class="icon-bar icon-white"></span>
-              <span class="icon-bar icon-white"></span>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/">
+            <span class="fas fa-book"></span> Blog
           </a>
-          <a class="brand" href="https://ninja-squad.com"><img alt="Ninja Squad" title="Logo Ninja Squad" src="/assets/images/logo-head.png" /></a>
-          <div class="nav-collapse">
-            <ul class="nav">
-              <li class="active"><a href="/"><i class="icon-book icon-white"></i>Blog</a></li>
-              <li><a href="https://ninja-squad.com/work"><i class="icon-bullhorn icon-white"></i>Notre métier</a></li>
-              <li><a href="https://ninja-squad.com/team"><i class="icon-user icon-white"></i>Notre équipe</a></li>
-              <li><a href="https://ninja-squad.com/projects"><i class="icon-folder-open icon-white"></i>Nos projets</a></li>
-              <li><a href="https://ninja-squad.com/training"><i class="icon-briefcase icon-white"></i>Formation</a></li>
-              <li><a href="https://ninja-squad.com/contact"><i class="icon-envelope icon-white"></i>Contact</a></li>
-            </ul>
-            <ul class="nav pull-right">
-              <li><a href="/atom.xml" title="Atom feed"><i id="atom-feed" class="icon-"></i>feed</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://ninja-squad.com/work">
+            <span class="fas fa-bullhorn"></span>
+            Notre métier
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://ninja-squad.com/team">
+            <span class="fas fa-user"></span>
+            Notre équipe
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://ninja-squad.com/projects">
+            <span class="fas fa-folder-open"></span>
+            Nos projets</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://ninja-squad.com/training">
+            <span class="fas fa-briefcase"></span>
+            Formation
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://ninja-squad.com/contact">
+            <span class="fas fa-envelope"></span>
+            Contact
+          </a>
+        </li>
+      </ul>
+      <ul class="navbar-nav">
+        <li>
+          <a class="nav-link" href="/atom.xml" title="Atom feed">
+            <span class="fas fa-rss-square"></span>
+            feed
+          </a>
+        </li>
+      </ul>
     </div>
-    <br/>
-    <div class="container">
-      <div class="row">
-        <div class="span1"></div>
-        <div class="span10">
-          <div class="content" itemscope itemtype="http://schema.org/Article">{{ content }}</div>
-        </div>
-        <div class="span1"></div>
-      </div>
-      <footer>
-        <p>&copy; {{ site.title }} 2012&nbsp;-&nbsp;{{ site.time | date: '%Y' }}
-          with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
-          and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
-        </p>
-      </footer>
-    </div> <!-- /container -->
+  </div>
+</nav>
 
-    <script src="{{ ASSET_PATH }}/bootstrap/js/bootstrap.min.js"></script>
-    <script src="{{ ASSET_PATH }}/js/prettify.js"></script>
-    <script>
-      $(document).ready(function() {
-        $("pre:not(.raw)").addClass("prettyprint");
+<div class="container">
+  <div class="row">
+    <div class="col-lg-10 offset-lg-1">
+      <div class="content" itemscope itemtype="http://schema.org/Article">{{ content }}</div>
+    </div>
+  </div>
+  <footer>
+    <p>&copy; {{ site.title }} 2012&nbsp;-&nbsp;{{ site.time | date: '%Y' }}
+      avec l'aide de <a href="https://jekyllrb.com/">Jekyll</a> et <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a>
+    </p>
+  </footer>
+</div> <!-- /container -->
+
+<script src="{{ ASSET_PATH }}/bootstrap/js/bootstrap.min.js"></script>
+<script src="{{ ASSET_PATH }}/js/prettify.js"></script>
+<script>
+    $(document).ready(function () {
+        $('pre:not(.raw)').addClass('prettyprint');
         prettyPrint();
-      });
-	</script>
-    {% include JB/analytics %}
-  </body>
+    });
+</script>
+{% include JB/analytics %}
+</body>
 </html>

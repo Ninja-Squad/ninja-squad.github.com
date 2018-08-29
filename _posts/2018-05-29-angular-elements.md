@@ -12,7 +12,7 @@ Right now it's not really easy to integrate just one Angular component,
 into an app that is not an Angular app.
 
 <p style="text-align: center;">
-    <img class="img-responsive" src="/assets/images/2018-05-29/angular-labs.png" alt="Angular Labs" />
+    <img class="img-fluid" src="/assets/images/2018-05-29/angular-labs.png" alt="Angular Labs" />
 </p>
 
 But some people fight for a better Web and think that a new standard can save us all: Web Components.

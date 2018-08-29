@@ -10,7 +10,7 @@ Angular 4.2.0 is here!
 
 <p style="text-align: center;">
   <a href="https://github.com/angular/angular/blob/master/CHANGELOG.md#420-salubrious-stratagem-2017-06-08">
-    <img class="img-rounded img-responsive" style="max-width: 100%" src="/assets/images/angular.png" alt="Angular logo" />
+    <img class="rounded img-fluid" style="max-width: 100%" src="/assets/images/angular.png" alt="Angular logo" />
   </a>
 </p>
 
@@ -83,7 +83,7 @@ it will slowly fade out.
 And when an element enters, it will slowly fade in.
 
 <p style="text-align: center;">
-  <img class="img-responsive" style="max-width: 100%" src="/assets/images/2017-05-25/query.gif" alt="Query animation" />
+  <img class="img-fluid" style="max-width: 100%" src="/assets/images/2017-05-25/query.gif" alt="Query animation" />
 </p>
 
 Another function introduced is `stagger`.
@@ -105,7 +105,7 @@ where the elements will animate one after the other.
     ])
 
 <p style="text-align: center;">
-  <img class="img-responsive" style="max-width: 100%" src="/assets/images/2017-05-25/stagger.gif" alt="Stagger animation" />
+  <img class="img-fluid" style="max-width: 100%" src="/assets/images/2017-05-25/stagger.gif" alt="Stagger animation" />
 </p>
 
 `animation` has also been added to build reusable animations.

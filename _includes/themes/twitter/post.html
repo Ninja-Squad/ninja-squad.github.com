@@ -1,88 +1,107 @@
 <div class="page-header">
   <h1 itemprop="name">{{ page.title }}</h1>
 </div>
+
 <div class="row">
-  <div class="date span2"><span itemprop="datePublished" content="{{ page.date | date:"%Y-%m-%d" }}"><i class="icon-time"></i>{{ page.date | date:"%Y-%m-%d" }}</span></div>
-  <div class="span4">
+  <div class="date col-lg-3">
+    <span itemprop="datePublished" content="{{ page.date | date:"%Y-%m-%d" }}">
+      <span class="fas fa-clock"></span>
+      {{ page.date | date:"%Y-%m-%d" }}
+    </span>
+  </div>
+
+  <div class="col-lg-6 mt-3 mt-lg-0">
   {% unless page.tags == empty %}
-    <ul class="tag_box inline">
+    <ul class="list-inline">
       {% assign tags_list = page.tags %}
       {% include JB/tags_list %}
     </ul>
   {% endunless %}
   </div>
-  <div class="span2 comments-heading"><span><i class="icon-comment"></i><a href="#disqus_thread">Commentaires</a></span></div>
+
+  <div class="col-lg-3 mt-3 mt-lg-0 comments-heading">
+      <span class="fas fa-comment-alt"></span>
+      <a href="#disqus_thread">Commentaires</a>
+  </div>
 </div>
-<br/>
+
 <div class="row">
-  <div class="span8 post-wrapper">
-    <div class="post-content">{{ content }}</div>
+  <div class="col-lg-10 post-wrapper">
+    <div class="px-lg-5">{{ content }}</div>
     <hr/>
   </div>
-  <div class="span2 text-center">
-    <br/>
+  <div class="col-lg-2 sidebar">
     <div class="authors">
       <div itemprop="author" itemscope itemtype="http://schema.org/Person">
       {% for auth in page.author %}
       {% assign author = site.authors[auth] %}
       <p>
-        <img itemprop="image" class="img-circle" alt="" style="width:60px" src="//en.gravatar.com/avatar/{{author.gravatar}}&amp;size=60">
+        <img itemprop="image" class="rounded-circle" alt="" style="width:60px" src="//en.gravatar.com/avatar/{{author.gravatar}}&amp;size=60">
       </p>
       <h4 itemprop="name">{{author.name}}</h4>
-      <ul class="nav nav-list">
+      <ul class="list-unstyled">
         <li><a href="https://github.com/{{author.github}}">Github</a></li>
         <li><a href="https://twitter.com/{{author.twitter}}">Twitter</a></li>
       </ul>
       {% endfor %}
       </div>
     </div>
-    <br/>
+
     <div id="promotion" class="training-dates">
       {% include ninjasquad/promotion %}
     </div>
-    <br/>
+
     <div class="training-dates">
       {% include ninjasquad/trainings %}
     </div>
-    <br/>
+
     <div class="pages">
       <h4>Navigation</h4>
-      <ul class="nav nav-list">
+      <ul class="list-unstyled">
         {% assign pages_list = site.pages %}
         {% assign group = 'navigation' %}
         {% include JB/pages_list %}
       </ul>
     </div>
-    <br/>
+
     <div class="training-dates">
       {% include ninjasquad/followus %}
     </div>
   </div>
 </div>
+
 <div class="row">
-  <div class="span4">
-    <div class="pagination">
-      <ul>
-      {% if page.previous %}
-        <li class="prev"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Précédent</a></li>
-      {% else %}
-        <li class="prev disabled"><a>&larr; Précédent</a></li>
-      {% endif %}
-        <li><a href="{{ BASE_PATH }}{{ site.JB.archive_path }}">Archive</a></li>
-      {% if page.next %}
-        <li class="next"><a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">Suivant &rarr;</a></li>
-      {% else %}
-        <li class="next disabled"><a>Suivant &rarr;</a>
-      {% endif %}
-      </ul>
+  <div class="col-lg-10">
+    <div class="row">
+      <div class="col-md-8 d-flex justify-content-center d-md-block">
+        <ul class="pagination">
+          {% if page.previous %}
+            <li class="page-item">
+              <a class="page-link" href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Précédent</a>
+            </li>
+          {% else %}
+            <li class="page-item disabled">
+              <a class="page-link" href="#" tabindex="-1">&larr; Précédent</a>
+            </li>
+          {% endif %}
+
+          <li class="page-item"><a class="page-link" href="{{ BASE_PATH }}{{ site.JB.archive_path }}">Archive</a></li>
+
+          {% if page.next %}
+          <li class="page-item">
+            <a class="page-link" href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">Suivant &rarr;</a>
+          </li>
+          {% else %}
+          <li class="page-item disabled">
+            <a class="page-link" href="#" tabindex="-1">Suivant &rarr;</a>
+          </li>
+          {% endif %}
+        </ul>
+      </div>
+      <div class="col-md-4 social-buttons">
+        {% include ninjasquad/social-buttons %}
+      </div>
     </div>
-  </div>
-  <div class="span4 social-buttons">
-    {% include ninjasquad/social-buttons %}
-  </div>
-</div>
-<div class="row">
-  <div class="span8">
     <hr/>
     {% include JB/comments %}
   </div>

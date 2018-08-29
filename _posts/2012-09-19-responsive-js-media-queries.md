@@ -147,7 +147,7 @@ Nous voilà avec un magnifique ASCII-art responsive :
 N'hésitez pas à redimensionner la fenêtre de votre navigateur pour maximiser le _Wow effect_!  
 _Et voilà_, commme disent les américains francophones et les francophones américanophiles.  
 
-<p style="text-align: center;"><img class="img-polaroid" src="/assets/images/success_baby.jpeg" alt="Success!" /></p>
+<p style="text-align: center;"><img class="img-thumbnail" src="/assets/images/success_baby.jpeg" alt="Success!" /></p>
 
 <br/>
 PS : cet article, ce blog, et [le site de Ninja Squad](https://ninja-squad.com) sont évidemment responsive.

@@ -28,5 +28,5 @@ Everything you want to know is here:
 
 Enough of that, my new kiwi friends are calling me for a drink. Enjoy!
 
-<p style="text-align:center;"><img class="img-polaroid" src="/assets/images/ng2-ebook/nz1.jpg" alt="New Zealand is pretty awemsome" /></p>
-<p style="text-align:center;"><img class="img-polaroid" src="/assets/images/ng2-ebook/nz2.jpg" alt="New Zealand is pretty awemsome, again" /></p>
+<p style="text-align:center;"><img class="img-thumbnail" src="/assets/images/ng2-ebook/nz1.jpg" alt="New Zealand is pretty awemsome" /></p>
+<p style="text-align:center;"><img class="img-thumbnail" src="/assets/images/ng2-ebook/nz2.jpg" alt="New Zealand is pretty awemsome, again" /></p>

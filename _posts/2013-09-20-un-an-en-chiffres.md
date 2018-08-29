@@ -11,7 +11,7 @@ après le [bilan subjectif](/2013/08/22/ninja-squad-1-an/) et le [bilan sur la f
 Je ne crois pas que l'argent soit le nerf de notre guerre, mais il est en tout cas un moyen de liberté,
 et surtout une grosse curiosité chez beaucoup de gens que l'on croise, intrigués de savoir comment ça fonctionne pour nous.
 
-<p style="text-align: center;"><img class="img-polaroid" src="/assets/images/breaking-bad-money.jpg" alt="Money!" /></p>
+<p style="text-align: center;"><img class="img-thumbnail" src="/assets/images/breaking-bad-money.jpg" alt="Money!" /></p>
 
 # 4 fondateurs
 

@@ -22,7 +22,7 @@ qui offrait aux patients hospitalisés un accès Internet, et notamment aux enfa
 pour poursuivre leur scolarité et rester en contact avec leurs amis.
 
 <p style="text-align: center;">
-    <img class="img-responsive img-polaroid" style="margin-top: 20px; margin-bottom: 20px;"
+    <img class="img-fluid img-thumbnail" style="margin-top: 20px; margin-bottom: 20px;"
          src="/assets/images/2017-12-08-caritatif/docteur-souris.jpg"
          alt="Docteur Souris propose un accès Internet aux enfants hospitalisés" />
 </p>
@@ -70,7 +70,7 @@ C'est désormais chose faite&nbsp;: 4500€ ($5.140) viennent d'être donnés à
 C'est formidable, merci à vous&nbsp;! ✌️
 
 <p style="text-align: center;">
-    <img class="img-responsive" style="margin-top: 20px; margin-bottom: 20px;"
+    <img class="img-fluid" style="margin-top: 20px; margin-bottom: 20px;"
          src="/assets/images/2017-12-08-caritatif/donation-eff.png"
          alt="Donation de Ninja Squad d'un montant de 4500€ ($5.140) à l'Electronic Frontier Foundation" />
 </p>
@@ -95,7 +95,7 @@ sur une vraie application, tout en aidant une association qui le méritait, et
 dont on pouvait ainsi faciliter le travail.  
 
 <p style="text-align: center;">
-    <img class="img-responsive" style="margin-top: 20px; margin-bottom: 20px;"
+    <img class="img-fluid" style="margin-top: 20px; margin-bottom: 20px;"
          src="/assets/images/2017-12-08-caritatif/make-world-better-place-silicon-valley.gif"
          alt="Make the World a better place... through scalable fault-tolerant distributable databases with ACID transactions (Silicon Valley, the TV series)" />
 </p>

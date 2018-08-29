@@ -1,26 +1,33 @@
-/* Override some defaults */
-.navbar {
-  margin-bottom: 0;
+body {
+  padding-top: 5rem;
+  background-color: #f2e9e1;
 }
-.container > footer {
+
+/* Override some defaults */
+footer {
+  font-size: .8rem;
   margin-top: 20px;
 }
-.container > footer p {
+
+footer p {
   text-align: center; /* center align it with the container */
+}
+
+a {
+  color: #ea9960;
+  text-decoration: none;
+}
+a:hover {
+  color: #ea9960;
 }
 
 /* The white background content wrapper */
 .content {
-  font-size: 16px;
   background-color: #fff;
   padding: 20px;
   margin: 0 -20px; /* negative indent the amount of the padding to maintain the grid system */
-  -webkit-border-radius: 0 0 6px 6px;
-     -moz-border-radius: 0 0 6px 6px;
-          border-radius: 0 0 6px 6px;
-  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.15);
-     -moz-box-shadow: 0 1px 2px rgba(0,0,0,.15);
-          box-shadow: 0 1px 2px rgba(0,0,0,.15);
+  border-radius: 0 0 6px 6px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .15);
 }
 
 /* Page header tweaks */
@@ -30,137 +37,104 @@
   margin: -20px -20px 20px;
 }
 
-.topbar .btn {
-  border: 0;
+.post-title {
+  background-color: #F5F5F5;
+  border: 1px solid #F2E9E1;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-
-/* tag_box ======================================================== */
-
-.tag_box {
-	list-style:none;
-	margin:0;
-	overflow:hidden;
-}
-.tag_box li {
-	margin-right: 10px;
-}
-.tag_box li i {
-	margin-right: 2px;
-}
-.tag_box.inline li {
-	float:left;
-}
-.tag_box a span {
-	vertical-align:super;
-	font-size:0.8em;
+.post-title h1 {
+  margin-top: 10px;
+  font-size: 42px;
+  padding-left: 10px;
 }
 
-i#atom-feed {
-    background-image: url(../img/feed-icon.png);
-	background-position: 0 0;
-}
-div.post-title {
-    background-color: #F5F5F5;
-    border:1px solid #F2E9E1;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-div.post-title h1 {
-    margin-top: 10px;
-    font-size: 42px;
-    padding-left: 10px;
-}
 h1 {
-    margin-top: 20px;
+  margin-top: 20px;
 }
+
 h1 a {
-    color : inherit;
+  color: inherit;
 }
+
 h1 a:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
-div.comments-heading {
-    text-align: right;
+
+.sidebar h4 {
+  font-size: 1.1rem;
 }
-div.authors, div.pages, div.training-dates {
-    text-align: center;
-    padding-top: 20px;
+
+.comments-heading {
+  text-align: right;
 }
-div.social-buttons {
-    text-align: right;
-    margin: 22px 0;
+
+.authors, .pages, .training-dates {
+  text-align: center;
+  padding-top: 20px;
 }
-div.post-wrapper {
-    text-align: justify;
-    padding-top: 20px;
-    word-spacing: 3px;
+
+.social-buttons {
+  text-align: right;
 }
-div.post-wrapper, div.post-wrapper li {
-    font-size: 18px;
-    line-height: 1.50em;
+
+.social-buttons a {
+  text-decoration: none;
+  margin-left: 10px;
 }
-div.post-content {
-    padding-left: 45px;
-    padding-right: 45px;
+
+.post-wrapper {
+  text-align: justify;
+  padding-top: 20px;
+  word-spacing: 3px;
 }
-@media all and (max-width: 767px) {
-    div.post-content {
-      padding-left: 0px;
-      padding-right: 0px;
-    }
-}
-@media all and (min-width:768px) and (max-width:979px) {
-    div.post-content {
-      padding-left: 15px;
-      padding-right: 15px;
-    }
+
+.post-wrapper, div.post-wrapper li {
+  font-size: 18px;
+  line-height: 1.50em;
 }
 
 pre.prettyprint {
   background-color: #f5f5f5;
   border-color: #f5f5f5;
   -webkit-border-radius: 6px;
-     -moz-border-radius: 6px;
-          border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
   padding: 5px;
 }
 
 pre, code {
-    font-size: 14px;
-    text-align: left;
-    word-spacing: normal;
-    color: #555555;
+  font-size: 14px;
+  text-align: left;
+  word-spacing: normal;
+  color: #555555;
 }
 
-p code {
-    font-size: 18px;
-    color: #555555
+p code, li code {
+  font-size: 18px;
+  color: #555555
 }
 
 blockquote p {
-    font-size: 19px;
+  font-size: 19px;
 }
 
 ol.footnote li {
-    font-size: 0.7em;
+  font-size: 0.7em;
 }
 
 .video-wrapper {
-	position: relative;
-	padding-bottom: 56.25%; /* 16:9 */
-	padding-top: 25px;
-	height: 0;
-}
-.video-wrapper iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
 }
 
-.social-buttons a {
-  text-decoration: none;
-  margin-left: 10px;
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
