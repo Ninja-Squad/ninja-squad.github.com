@@ -1,6 +1,5 @@
 body {
   padding-top: 5rem;
-  background-color: #f2e9e1;
 }
 
 /* Override some defaults */
@@ -26,8 +25,9 @@ a:hover {
   background-color: #fff;
   padding: 20px;
   margin: 0 -20px; /* negative indent the amount of the padding to maintain the grid system */
+  border: 1px solid #f5f5f5;
   border-radius: 0 0 6px 6px;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, .15);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
 }
 
 /* Page header tweaks */
@@ -38,7 +38,7 @@ a:hover {
 }
 
 .post-title {
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
   border: 1px solid #F2E9E1;
   margin-top: 10px;
   margin-bottom: 10px;
