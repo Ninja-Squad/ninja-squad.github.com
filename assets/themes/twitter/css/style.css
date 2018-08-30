@@ -80,6 +80,8 @@ h1 a:hover {
 
 .post-wrapper h1, .post-wrapper h2, .post-wrapper h3, .post-wrapper h4, .post-wrapper h5, .post-wrapper h6 {
   font-family: sans-serif;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
 }
 
 pre.prettyprint {
