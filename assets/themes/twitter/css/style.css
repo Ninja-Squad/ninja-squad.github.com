@@ -90,9 +90,14 @@ h1 a:hover {
   word-spacing: 3px;
 }
 
-.post-wrapper, div.post-wrapper li {
-  font-size: 18px;
+.post-wrapper, .post-wrapper li {
+  font-size: 20px;
   line-height: 1.50em;
+  font-family: Georgia,Cambria,"Times New Roman",Times,serif;
+}
+
+.post-wrapper h1, .post-wrapper h2, .post-wrapper h3, .post-wrapper h4, .post-wrapper h5, .post-wrapper h6 {
+  font-family: sans-serif;
 }
 
 pre.prettyprint {
