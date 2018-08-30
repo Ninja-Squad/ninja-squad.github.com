@@ -1,7 +1,3 @@
-<div class="page-header">
-  <h1 itemprop="name">{{ page.title }}</h1>
-</div>
-
 <div class="row">
   <div class="date col-lg-3">
     <span itemprop="datePublished" content="{{ page.date | date:"%Y-%m-%d" }}">
@@ -27,7 +23,10 @@
 
 <div class="row">
   <div class="col-lg-10 post-wrapper">
-    <div class="px-lg-5">{{ content }}</div>
+    <div class="px-lg-5">
+      <h1 itemprop="name" class="post-title">{{ page.title }}</h1>
+      <div>{{ content }}</div>
+    </div>
     <hr/>
   </div>
   <div class="col-lg-2 sidebar">

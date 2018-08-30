@@ -22,12 +22,12 @@ tagline:
       <a href="{{post.url}}#disqus_thread">Commentaires</a>
     </div>
   </div>
-  <div class="post-title">
-    <h1><a title="Lien permanent vers {{ post.title }}" href="{{post.url}}">{{ post.title }}</a></h1>
-  </div>
   <div class="row">
     <div class="col-lg-10 post-wrapper">
-      <div class="px-lg-5">{{ post.content }}</div>
+      <div class="px-lg-5">
+        <h1 class="post-title"><a title="Lien permanent vers {{ post.title }}" href="{{post.url}}">{{ post.title }}</a></h1>
+        <div>{{ post.content }}</div>
+      </div>
     </div>
     <div class="col-lg-2 sidebar">
       <div class="authors">
