@@ -22,7 +22,7 @@ a:hover, a.page-link:hover {
 
 .content {
   padding: 20px;
-  margin: 0 -20px; /* negative indent the amount of the padding to maintain the grid system */
+  margin: 0 -10px; /* negative indent the amount of the padding to maintain the grid system */
 }
 
 .post-title {
@@ -100,6 +100,7 @@ pre, code {
   line-height: 1.3rem;
   text-align: left;
   word-spacing: normal;
+  word-wrap: break-word;
   color: #555555;
 }
 
