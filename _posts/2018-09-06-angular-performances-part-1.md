@@ -2,7 +2,7 @@
 layout: post
 title: Angular Performances Part 1 - First load
 author: cexbrayat
-tags: ["Angular 6", "Angular 5", "Angular", "Angular 2", "Angular 4", "Angular CLI"]
+tags: ["Angular 6", "Angular 5", "Angular", "Angular 2", "Angular 4", "Angular CLI", "performances", "benchmarks"]
 description: "Learn how to make your Angular application faster. In this first part, let's talk about the first load of an application."
 ---
 
@@ -14,9 +14,9 @@ but you usually don't have the other side of the story: what are the traps of th
 are they what you are looking for,
 and should you really use them.
 
-This is the first part of this series, and this blog post is about the first laod of an Angular application.
+This is the first part of this series, and this blog post is about the first load of an Angular application.
 In future posts, we'll talk about how to make reloading faster, then about how to profile your running application,
-and who to improve runtime performances.
+and how to improve runtime performances.
 If you are the lucky owner of our ebook, you can already check the rest if you download the [last ebook release](https://books.ninja-squad.com/claim?book=Angular).
 
 Warning: be careful with premature optimization. Always measure before and after. Beware of the benchmarks you find on the internets: it’s pretty easy to make them say what the authors want.
@@ -39,7 +39,7 @@ When you load a modern Web application in your browser, a few things happen. Fir
 
 So the first tip is very obvious: be careful with your assets sizes!
 
-The assets loading phase depends on how many assets you want to load. A lot will be slow. Big ones will be slow. Especially if the network is not that good, which happens more than you think: you might test your application of a fiber optic connection, but some of your actual users might be in the middle of nowhere, using slow 3G. Here is what you can do.
+The assets loading phase depends on how many assets you want to load. A lot will be slow. Big ones will be slow. Especially if the network is not that good, which happens more than you think: you might test your application on a fiber optic connection, but some of your actual users might be in the middle of nowhere, using slow 3G. Here is what you can do.
 
 ### Bundle your application
 
