@@ -9,20 +9,20 @@ Generating documentation for a Java API is quite easy. Javadoc is a great and ea
 and produces a result that every Java developer is (or should be) comfortable with.
 
 Generating documentation for a REST API is not as easy. You can implement a RESTful backend in any language you can imagine. Once you have chosen one
-(Java, in our case), the way you define it and implement it depends on the frameworks you choose: JAX-RS, Spring MVC, etc. Even assuming you have a tool 
-understanding your framework, it also has to understand how your JSON serializer (Jackson, in this case) is configured and works. And if 
+(Java, in our case), the way you define it and implement it depends on the frameworks you choose: JAX-RS, Spring MVC, etc. Even assuming you have a tool
+understanding your framework, it also has to understand how your JSON serializer (Jackson, in this case) is configured and works. And if
 you use annotations to define your validation constraints, it also has to understand them. All in all, automating the documentation generation
 of a REST API is much harder than doing so for a Java API.
 
 We did some experiments with [Swagger](http://swagger.wordnik.com/), but were not really satisfied with the result. It has good points: language
-and framework-agnostic specification, automatic generation from code and annotations, JSON structure descriptions and examples, possibility to send GET 
+and framework-agnostic specification, automatic generation from code and annotations, JSON structure descriptions and examples, possibility to send GET
 and POST requests directly from the documentation.
 
 But its [Spring MVC integration](https://github.com/martypitt/swagger-springmvc) doesn't handle all the signatures of the Spring MVC
 controller methods, the generated validation constraints are incorrect, and the end result is a bit rough. It's also non-trivial to have an offline
-version of the documentation. 
+version of the documentation.
 
-There are goods reasons why popular REST API documentations like the Twitter API are not automatically generated, but 
+There are goods reasons why popular REST API documentations like the Twitter API are not automatically generated, but
 carefully hand-crafted. So we finally decided to go this way, and this post describes how we did it.
 
 ## Asciidoc
@@ -30,13 +30,13 @@ carefully hand-crafted. So we finally decided to go this way, and this post desc
 First af all, we wanted to be free to organize the documentation as we wanted, to provide introductory paragraphs about the general
 conventions, etc. Being able to generate it in various formats (HTML, PDF, etc.) is also something we found useful. And an automatically generated
 table of contents is great as well. So we decided
-to go with [Asciidoc](http://www.methods.co.nz/asciidoc/) and, more specifically, [Asciidoctor](http://asciidoctor.org/). A typical service documentation 
+to go with [Asciidoc](http://www.methods.co.nz/asciidoc/) and, more specifically, [Asciidoctor](http://asciidoctor.org/). A typical service documentation
 looks like this in our Asciidoc document:
 
     == Poney Races
 
-    Poney races can be read, created, updated and deleted by a user having the 
-    RACE_ORGANIZER role. A poneydrome ID is used to identify where to read 
+    Poney races can be read, created, updated and deleted by a user having the
+    RACE_ORGANIZER role. A poneydrome ID is used to identify where to read
     or save the poney race.
 
     === Read
@@ -56,12 +56,12 @@ looks like this in our Asciidoc document:
 You can add any information you like, in any format you like, in the documentation. This is a real advantage that allows making your documentation
 readable and understandable. But even more than the URLs, the HTTP methods and status codes, what matters is the nature and format of the data
 accepted or returned by the services. And this is where we automated it partially, to make sure it conforms to the reality of the actual API,
-and to avoid having to hard-code JSON structures in the document. 
+and to avoid having to hard-code JSON structures in the document.
 
 ## JSON snippets generation
 
-The magic is thus in the include block in the snippet above. The `race.json.adoc` file is generated and contains an example JSON structure. 
-To generate it, we use Java code that creates instances of Java objects that are actually returned by the service, and serialize them using the 
+The magic is thus in the include block in the snippet above. The `race.json.adoc` file is generated and contains an example JSON structure.
+To generate it, we use Java code that creates instances of Java objects that are actually returned by the service, and serialize them using the
 same Jackson mapper, configured the same way as in the actual application (except for the indentation).
 
 So we simply have a class that contains methods like the following:
@@ -89,7 +89,9 @@ and written to a file using the simple method below:
 
 And here is how it looks like once generated:
 
-![Result of the documentation](/assets/images/rest-api-doc-result.png)
+<p style="text-align: center;">
+  <img class="img-fluid" style="max-width: 100%" src="/assets/images/rest-api-doc-result.png" alt="Result of the documentation" />
+</p>
 
 ## Gradle to assemble everything
 
