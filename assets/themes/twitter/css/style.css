@@ -83,6 +83,7 @@ h1 a:hover {
   font-family: sans-serif;
   margin-top: 1.5rem;
   margin-bottom: 1rem;
+  word-wrap: break-word;
 }
 
 .post-wrapper h1 {
