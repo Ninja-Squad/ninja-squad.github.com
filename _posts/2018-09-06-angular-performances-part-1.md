@@ -17,7 +17,7 @@ and should you really use them.
 This is the first part of this series, and this blog post is about the first load of an Angular application.
 In future posts, we'll talk about how to make reloading faster, then about how to profile your running application,
 and how to improve runtime performances.
-If you are the lucky owner of our ebook, you can already check the rest if you download the [last ebook release](https://books.ninja-squad.com/claim?book=Angular).
+If you are the lucky owner of our ebook, you can already check the other parts if you download the [last ebook release](https://books.ninja-squad.com/claim?book=Angular).
 
 Warning: be careful with premature optimization. Always measure before and after. Beware of the benchmarks you find on the internets: it’s pretty easy to make them say what the authors want.
 
@@ -39,7 +39,7 @@ When you load a modern Web application in your browser, a few things happen. Fir
 
 So the first tip is very obvious: be careful with your assets sizes!
 
-The assets loading phase depends on how many assets you want to load. A lot will be slow. Big ones will be slow. Especially if the network is not that good, which happens more than you think: you might test your application on a fiber optic connection, but some of your actual users might be in the middle of nowhere, using slow 3G. Here is what you can do.
+The assets loading phase depends on how many assets you want to load. A lot will be slow. Big ones will be slow. Especially if the network is not that good, which happens more often than you think: you might test your application on a fiber optic connection, but some of your actual users might be in the middle of nowhere, using slow 3G. Here is what you can do.
 
 ### Bundle your application
 
@@ -114,10 +114,10 @@ The bad news is that it’s not as easy as adding the `@angular/universal` packa
 
 So, again, I would advise you to use server side rendering only if it is critical for your application, and not based on the hype…​
 
-If you enjoy this blog post, you may want to dig deeper with our [ebook](https://books.ninja-squad.com/angular),
+If you enjoyed this blog post, you may want to dig deeper with our [ebook](https://books.ninja-squad.com/angular),
 and/or with a complete exercise that we added in our [online training](https://angular-exercises.ninja-squad.com/).
 The exercise takes an application and walks you through what we would do to optimize it,
 measuring the benefits of each steps, showing you how to avoid the common traps,
 how to test the optimized application, etc. Check it out if you want to learn more!
 
-See you next for part 2.
+See you soon for part 2.
