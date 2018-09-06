@@ -84,21 +84,9 @@ It mainly adds in `tsconfig.app.json`:
 to activate Ivy.
 Be warned though, this is still very experimental!
 
-## Terser instead of UglifyJS
-
-As uglify-es is [no longer maintained](https://github.com/mishoo/UglifyJS2/issues/3156#issuecomment-392943058) and uglify-js does not support ES6+,
-the CLI team has moved to [Terser](https://github.com/fabiosantoscode/terser).
-Terser is a fork of uglify-es that retains API and CLI compatibility with uglify-es and uglify-js@3.
-
-It shouldn't really change the results,
-but it fixes a few long standing issues with UglifyJS,
-like production builds that weren't working in old Firefox ESR versions.
-
-## Breaking change
-
-This is a small one, but worth noting:
-the CLI no longer inlines the assets less than 10kb in the CSS.
-
-## TODO interactive prompt
+That's all for this small release,
+but the CLI team is already working on CLI 7.0,
+with some cool features incoming (an interactive prompt for the command, a better minifier, support of Angular 7...).
+Stay tuned !
 
 All our materials ([ebook](https://books.ninja-squad.com/angular), [online training](https://angular-exercises.ninja-squad.com/) and [training](https://ninja-squad.com/training/angular)) are up-to-date with these changes if you want to learn more!
