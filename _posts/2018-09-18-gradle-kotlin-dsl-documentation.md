@@ -25,10 +25,10 @@ Try the Kotlin DSL.
 It works, it is quite close to the Groovy DSL, but with less black magic involved, and it does allow auto-completion and navigation to the sources in IntelliJ.
 
 Translating the samples has been a great experience. 
+And it helped finding and fixing a few issues, too.
 Contributing to an open-source project you like and respect is always gratifying. 
 You get the feeling that what you're doing matters. 
 Gradle folks have been nothing but kind, understanding, helpful, grateful... and demanding. 
-And it helped finding and fixing a few issues, too.
 
 I didn't just decide to contribute though. 
 That's always intimidating: where to start? 
