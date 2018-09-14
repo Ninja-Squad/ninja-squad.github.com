@@ -114,7 +114,8 @@ p code, li code {
 }
 
 blockquote p {
-  font-size: 19px;
+  margin-left: 1rem;
+  font-style: italic;
 }
 
 ol.footnote li {
