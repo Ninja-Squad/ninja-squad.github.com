@@ -36,7 +36,7 @@ How to get help?
 Will I help, or will I be a burden for the maintainers?
 
 I contributed because the Gradle team asked me to. 
-The first time was after I wrote my migration guide, and then by opening [this epic issue](https://github.com/gradle/gradle/issues/6442), asking for help from contributors, and providing detailed instructions and examples on how to accomplish the task.
+First after I wrote my migration guide, and after when they opened [this epic issue](https://github.com/gradle/gradle/issues/6442), asking for help from contributors, and providing detailed instructions and examples on how to accomplish the task.
 
 I wish more big open-source projects do that. 
 Tagging issues with "ideal-for-contribution" is also nice.
@@ -45,3 +45,4 @@ What might seem like grunt work for project maintainers or experienced contribut
 So, if you're an open-source project maintainer and you read this, please make it easy to start contributing on your project. 
 Ask for help. 
 And communicate on public channels (blogs, tweets, etc.) about it.
+I'm apparently not the only one to have this opinion, so here is some more [food](https://www.firsttimersonly.com/) [for](https://yourfirstpr.github.io/) [thoughts](https://up-for-grabs.net/).
