@@ -199,4 +199,4 @@ The exercise takes an application and walks you through what we would do to opti
 measuring the benefits of each steps, showing you how to avoid the common traps,
 how to test the optimized application, etc. Check it out if you want to learn more!
 
-See you soon for part 4!
+See you soon for [part 4](/2018/09/27/angular-performances-part-4)!
