@@ -61,11 +61,37 @@ as they are for the TypeScript compiler options!
 
 ## Ivy progress
 
-The rewrite is making progress, but Ivy is still not really usable in this release.
-I gave it a few shots but it is not yet ready for prime time.
-But you can check it out yourself, as the CLI added an `--experimentalIvy` flag
+The rewrite is making progress, but Ivy is still not usable in this release.
+If you refer to the [official feature tracking](https://github.com/angular/angular/blob/master/packages/core/src/render3/STATUS.md),
+a good chunk of the work is done.
+But in reality, there is still a long way to go before we can use it.
+
+Ivy has several pieces:
+
+- `ngtsc`: the compiler that compiles your Angular application and generates JavaScript from your HTML templates. This piece of code has made good progress but still misses a few features.
+- `ngcc`: a tool that explores all the dependencies you have, to convert existing code into "Ivy compatible" code. This is still very early stage, and barely usable at the moment if you don't know how to workaround a few issues
+([Olivier](https://twitter.com/OCombe) and [Pete](https://twitter.com/petebd) from the Angular team were nice enough to help me).
+- the renderer itself, which takes the generated code and makes the magic happen at runtime. It still moves a lot, as new optimizations and new issues are found by the team.
+
+Another part that is eagerly awaited is the support of "runtime i18n".
+The implementation work has just started this week,
+so this is also far from being done.
+
+I gave Ivy a few shots lately but it is definitely not yet ready for prime time.
+Internally at Google, the Angular team needs to migrate the huge number of projects
+they have to gather feedback and fix issues.
+So it will take a few more months.
+
+But you can check it out yourself, as the CLI added an `--experimental-ivy` flag
 to generate an application with the configuration needed to try it.
-We have more details in our upcoming article about Angular CLI 7.0 (TODO add link when done).
+
+    ng new ivy-test --experimental-ivy
+    cd ivy-test
+    $(npm bin)/ngcc
+    ng serve --aot
+
+Note that the change detection is not working when I'm writing these lines,
+so this is very limited right now :).
 
 ## Slots with Angular Elements
 
