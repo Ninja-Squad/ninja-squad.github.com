@@ -9,7 +9,7 @@ description: "Angular 7 is out! Read about the support of the new versions of Ty
 Angular&nbsp;7.0.0 is here!
 
 <p style="text-align: center;">
-  <a href="https://github.com/angular/angular/blob/master/CHANGELOG.md#700-TODO">
+  <a href="https://github.com/angular/angular/blob/master/CHANGELOG.md#700-2018-10-18">
     <img class="rounded img-fluid" style="max-width: 100%" src="/assets/images/angular.png" alt="Angular logo" />
   </a>
 </p>
