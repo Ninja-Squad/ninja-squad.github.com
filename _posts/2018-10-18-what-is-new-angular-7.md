@@ -20,7 +20,7 @@ rewriting the Angular compiler and runtime code to make it smaller, better, fast
 But Ivy is not ready for prime time yet.
 
 So don't expect a lot of shiny things in Angular 7.0:
-there was not enough material to make a video as we did for [Angular 5](/2017/11/02/what-is-new-in-angular-5) or [Angular 6](/2018/05/04/what-is-new-in-angular-5).
+there was not enough material to make a video as we did for [Angular 5](/2017/11/02/what-is-new-in-angular-5) or [Angular 6](/2018/05/04/what-is-new-in-angular-6).
 This will be a short blog post for once,
 and a fast and easy upgrade for you!
 
@@ -90,7 +90,7 @@ to generate an application with the configuration needed to try it.
     $(npm bin)/ngcc
     ng serve --aot
 
-Note that the change detection is not working when I'm writing these lines,
+Note that the change detection is not working as I'm writing these lines,
 so this is very limited right now :).
 
 ## Slots with Angular Elements
