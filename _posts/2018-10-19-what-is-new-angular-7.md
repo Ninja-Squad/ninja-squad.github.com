@@ -3,7 +3,7 @@ layout: post
 title: What's new in Angular 7?
 author: cexbrayat
 tags: ["Angular 7", "Angular 6", "Angular 5", "Angular", "Angular 2", "Angular 4"]
-description: "Angular 7 is out! Read about the support of the new versions of TypeSCript, the progress made on Ivy, the router features and the deprecations introduced!"
+description: "Angular 7 is out! Read about the support of the new versions of TypeScript, the progress made on Ivy, the router features and the deprecations introduced!"
 ---
 
 Angular&nbsp;7.0.0 is here!
@@ -17,7 +17,7 @@ Angular&nbsp;7.0.0 is here!
 Not a lot of new features in this release:
 the Angular team is mainly focused on the Ivy project,
 rewriting the Angular compiler and runtime code to make it smaller, better, faster.
-But Ivy is not yet ready for prime time.
+But Ivy is not ready for prime time yet.
 
 So don't expect a lot of shiny things in Angular 7.0:
 there was not enough material to make a video as we did for [Angular 5](/2017/11/02/what-is-new-in-angular-5) or [Angular 6](/2018/05/04/what-is-new-in-angular-5).
@@ -26,7 +26,7 @@ and a fast and easy upgrade for you!
 
 ## TypeScript 3.1 support
 
-One of the main new feature is the support of TypeScript 3.1,
+One of the main new features is the support of TypeScript 3.1,
 which is the latest release! It is in fact mandatory to bump to TS 3.1 for Angular 7.
 Usually Angular lags a few releases behind,
 so it's great to be able to use the latest TypeScript version for once!
@@ -77,7 +77,7 @@ Another part that is eagerly awaited is the support of "runtime i18n".
 The implementation work has just started this week,
 so this is also far from being done.
 
-I gave Ivy a few shots lately but it is definitely not yet ready for prime time.
+I gave Ivy a few shots lately but it is definitely not ready for prime time yet.
 Internally at Google, the Angular team needs to migrate the huge number of projects
 they have to gather feedback and fix issues.
 So it will take a few more months.
@@ -140,7 +140,6 @@ The warning looks like:
 
 Sadly, this introduces warnings in your unit tests if you use the router in some of them,
 and looks like it's an issue in Angular itself (see [this issue](https://github.com/angular/angular/issues/25837) if you want to add a thumb up).
-(TODO check if https://github.com/angular/angular/pull/25839 landed)
 
 Another internal work that we can't really see has been the rewrite of the router to
 use a single Observable under the hood, that will automatically cancel the previous navigations.
@@ -150,7 +149,7 @@ and will allow new features more easily in the future.
 
 ## Deprecations
 
-As it's usually the case with major releases, a few things has been deprecated.
+As it's usually the case with major releases, a few things have been deprecated.
 If you are using `<ngForm>` to declare a form in your template
 (you don't have to, as `form` also activates the NgForm directive),
 this selector is now deprecated and should be replaced by `<ng-form>`.
