@@ -9,7 +9,9 @@ description: "Angular CLI 7.0 is out! Read about the TODO and more!"
 [Angular CLI 7.0.0](https://github.com/angular/angular-cli/releases/tag/v7.0.0) is out
 (in fact we even have a [7.0.1](https://github.com/angular/angular-cli/releases/tag/v7.0.1) available)!
 
-If you want to upgrade to 7.0.1 without pain (or to any other version, by the way), I have created a Github project to help: [angular-cli-diff](https://github.com/cexbrayat/angular-cli-diff). Choose the version you're currently using (6.2.1 for example), and the target version (7.0.1 for example), and it gives you a diff of all files created by the CLI: [angular-cli-diff/compare/6.2.1...7.0.1](https://github.com/cexbrayat/angular-cli-diff/compare/6.2.1...7.0.1). You have no excuse for staying behind anymore!
+If you want to upgrade to 7.0.1 without pain (or to any other version, by the way), I have created a Github project to help: [angular-cli-diff](https://github.com/cexbrayat/angular-cli-diff). Choose the version you're currently using (6.2.1 for example), and the target version (7.0.1 for example), and it gives you a diff of all files created by the CLI: [angular-cli-diff/compare/6.2.1...7.0.1](https://github.com/cexbrayat/angular-cli-diff/compare/6.2.1...7.0.1).
+It can be a great help along the official `ng update @angular/core @angular/cli` command.
+You have no excuse for staying behind anymore!
 
 Let's see what we've got!
 
