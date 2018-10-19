@@ -102,7 +102,7 @@ to reflect the new view encapsulation option added in
 We already talked about `--no-interactive` and `--defaults`,
 but `ng new` also earned a flag called `--no-create-application`.
 If you use it, the CLI will create a workspace
-with the NPM, TypeScript, TSLint and Angular CLI configuration,
+with the NPM, TypeScript, TSLint and Angular CLI configurations,
 but with no application (so no `src` and `e2e` directories).
 
 Along the same lines, a new flag called `--minimal`
@@ -164,7 +164,7 @@ it should be automatically removed for you and
 your bundle will be a few Kb lighter!
 
 Talking about bundle sizes,
-a new application now has by default some "budgets" set:
+a new application has now some "budgets" set by default:
 
     budgets: [{
       type: 'initial',
@@ -184,7 +184,7 @@ the version that introduced budgets).
 The CLI team released a new package (still experimental),
 called `benchmark`.
 The goal is to help benchmarking a process,
-by measuring the time, CPU usage, mermory usage, etc.
+by measuring the time, CPU usage, memory usage, etc.
 You can check out the [README](https://github.com/angular/angular-cli/blob/master/packages/angular_devkit/benchmark/README.md) to learn more.
 The CLI team probably intends to track the performances of the various tools
 they are currently releasing,
@@ -193,7 +193,7 @@ but maybe you can use it on your projects too.
 ## .npmrc per project
 
 You can now define one `.npmrc` file per project in your workspace,
-making it easier to deploy artefacts to your Nexus or Artifactory repositories.
+making it easier to deploy artefacts to your Nexus or Artifactory repository.
 
 ## Breaking change
 
