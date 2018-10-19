@@ -3,7 +3,7 @@ layout: post
 title: What's new in Angular CLI 7.0?
 author: cexbrayat
 tags: ["Angular 7", "Angular 6", "Angular 5", "Angular", "Angular 2", "Angular 4", "Angular CLI"]
-description: "Angular CLI 7.0 is out! Read about the TODO and more!"
+description: "Angular CLI 7.0 is out! Read about the interactive prompts, the new flags and more!"
 ---
 
 [Angular CLI 7.0.0](https://github.com/angular/angular-cli/releases/tag/v7.0.0) is out
@@ -17,12 +17,12 @@ Let's see what we've got!
 
 ## Interactive prompts
 
-One of the major addition to this version:
+One of the major additions to this version:
 the CLI now offers interactive prompts on several commands
-to let the developer choose some options or name.
+to let the developer choose some options or names.
 
 For example, if you run `ng new` with CLI 7.0,
-then you're asked:
+then it asks you:
 
     ? What name would you like to use for the project?
     ? Would you like to add Angular routing? y/N
@@ -38,9 +38,9 @@ choose to add or not the routing support
 (with No as a default value if you just press Enter),
 and pick which CSS pre-processor you want,
 allowing to choose between CSS, SCSS, SASS, LESS and Stylus
-by using the arrows of your keyboard.
+by using the arrow keys.
 
-Note that this could be done already,
+Note that all these options were already available,
 but you had to know the correct flags to add.
 For example `ng new ponyracer --routing --style=scss`.
 
@@ -65,7 +65,7 @@ A lot of flags have been added to various commands!
 
 ### ng serve
 
-A `--verbose` flag is now available for `ng serve`,
+A `--verbose` flag is now available for `ng serve` and `ng build`,
 displaying how much time each task took,
 how much each asset weighs, etc.
 
@@ -84,7 +84,7 @@ The second one is the result of the [Speed Measure Webpack plugin](https://githu
 and contains information about how much time each plugin took.
 
 This is not really intended for us,
-but to help the CLI team to improve some projects with long build times.
+but to help the CLI team improving some projects with long build times.
 If you are in this case,
 you can now offer proper information to the team about your build,
 and they might be able to speed things up in future releases.
@@ -121,22 +121,22 @@ so it can be useful on a CI for example.
 
 ### ng xi18n
 
-You can now turn of the progress of the build when
+You can now turn off the progress of the build when
 extracting the `i18n` messages with: `ng xi18n --no-progress`.
 
 ## TypeScript 3.1 support
 
-As Angular 7.0 now uses TypeScript 3.1
+As Angular 7.0 now requires TypeScript 3.1
 ([check out our article about Angular 7](/2018/10/18/what-is-new-angular-7)),
 the CLI officially supports it too.
-This also include a few optimizations in `build-optimizer`
+This also includes a few optimizations in `build-optimizer`
 specific to Angular 7.0/TS 3.1.
 
 ## Terser instead of UglifyJS
 
 As uglify-es is [no longer maintained](https://github.com/mishoo/UglifyJS2/issues/3156#issuecomment-392943058) and uglify-js does not support ES6+,
 the CLI team has moved to [Terser](https://github.com/fabiosantoscode/terser)
-for minifying part of the build.
+for the minification phase of the build.
 Terser is a fork of uglify-es that retains API and CLI compatibility with uglify-es and uglify-js@3.
 It shouldn't really change the results,
 but it fixes a few long standing issues with UglifyJS,
@@ -160,11 +160,11 @@ On the polyfill side,
 the `reflect-metadata` polyfill (`core-js/es7/reflect`) is now only included in JiT mode,
 as it is not needed in AoT (production) mode.
 If you run `ng update` to update to 7.0,
-it should be automatically removed for you and
-your bundle will be a few Kb lighter!
+it should be automatically removed and
+your bundle will be a few kB lighter!
 
 Talking about bundle sizes,
-a new application has now some "budgets" set by default:
+a new application now has some "budgets" set by default:
 
     budgets: [{
       type: 'initial',
@@ -173,8 +173,8 @@ a new application has now some "budgets" set by default:
     }],
 
 When you build your application,
-you'll see a warning if the bundle is over 2mb,
-and an error if it is over 5mb.
+you'll see a warning if the bundle is over 2MB,
+and an error if it is over 5MB.
 You can customize these limits of course
 (see [our article about the CLI 1.7](/2018/02/19/angular-cli-1.7),
 the version that introduced budgets).
@@ -183,8 +183,9 @@ the version that introduced budgets).
 
 The CLI team released a new package (still experimental),
 called `benchmark`.
-The goal is to help benchmarking a process,
+The goal is to help benchmarking a NodeJS process,
 by measuring the time, CPU usage, memory usage, etc.
+So it's not specific to the CLI itself.
 You can check out the [README](https://github.com/angular/angular-cli/blob/master/packages/angular_devkit/benchmark/README.md) to learn more.
 The CLI team probably intends to track the performances of the various tools
 they are currently releasing,
@@ -199,11 +200,13 @@ making it easier to deploy artefacts to your Nexus or Artifactory repository.
 
 This is a small one, but worth noting:
 the CLI no longer inlines the assets less than 10kb in the CSS.
+If you had a small image, it used to be inlined directly
+in the generated CSS.
 
 ## Eject is not coming back
 
 As you may know, the CLI used to have an `eject` command,
-making you able to customize the Webpack config directly
+making it possible to customize the Webpack config directly
 (at the price of losing the CLI support).
 It was temporarily removed in CLI 6.0 due to the internal refactoring,
 but it will not come back. It will be removed completely in 8.0.
