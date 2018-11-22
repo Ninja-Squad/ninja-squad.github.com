@@ -216,6 +216,6 @@ They also mention [ngx-build-plus](https://github.com/manfredsteyer/ngx-build-pl
 if you want even more customization without ejecting.
 
 That's all for this release, I hope you enjoyed reading this blog post.
-Stay tuned !
+Stay tuned!
 
 All our materials ([ebook](https://books.ninja-squad.com/angular), [online training](https://angular-exercises.ninja-squad.com/) and [training](https://ninja-squad.com/training/angular)) are up-to-date with these changes if you want to learn more!

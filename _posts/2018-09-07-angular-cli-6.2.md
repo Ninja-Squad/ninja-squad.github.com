@@ -88,6 +88,6 @@ Be warned though, this is still very experimental!
 That's all for this small release,
 but the CLI team is already working on CLI 7.0,
 with some cool features incoming (an interactive prompt for the command, a better minifier, support of Angular 7...).
-Stay tuned !
+Stay tuned!
 
 All our materials ([ebook](https://books.ninja-squad.com/angular), [online training](https://angular-exercises.ninja-squad.com/) and [training](https://ninja-squad.com/training/angular)) are up-to-date with these changes if you want to learn more!
