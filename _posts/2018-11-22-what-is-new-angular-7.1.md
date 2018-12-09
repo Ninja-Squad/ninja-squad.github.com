@@ -9,7 +9,7 @@ description: "Angular 7.1 is out! Read about the new router and forms options, B
 Angular&nbsp;7.1.0 is here!
 
 <p style="text-align: center;">
-  <a href="https://github.com/angular/angular/blob/master/CHANGELOG.md#TODO">
+  <a href="https://github.com/angular/angular/blob/master/CHANGELOG.md#710-2018-11-21">
     <img class="rounded img-fluid" style="max-width: 100%" src="/assets/images/angular.png" alt="Angular logo" />
   </a>
 </p>
@@ -66,7 +66,7 @@ Note that you can also use `router.createUrlTree()` to build a `UrlTree` with pa
 ### New option for runGuardAndResolvers
 
 `runGuardsAndResolvers` is one of the configuration options for a route,
-allowing to define when the guards and the resovlers will be run for this route.
+allowing to define when the guards and the resolvers will be run for this route.
 By default, they run only when the path or matrix parameters change (value `paramsChange`).
 You can override this behavior by using another value for this option like `paramsOrQueryParamsChange`,
 to also trigger the guards and resolvers if a query parameter changes,
