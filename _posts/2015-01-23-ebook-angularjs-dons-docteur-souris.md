@@ -20,4 +20,4 @@ C'est ainsi un chèque de **plus de 2000€** que Ninja Squad a pu reverser à c
 Chuck, pas peu fier d'avoir pu remettre ce chèque à Docteur Souris, vous remercie d'avoir encouragé cette œuvre qui nous tenait à cœur&nbsp;!
 
 Et si après cette lecture vous avez envie d'aller plus loin dans la maîtrise d'AngularJS,
-sachez que nous proposons [une formation](https://ninja-squad.fr/training/angularjs "La formation AngularJS de Ninja Squad").
+sachez que nous proposons [une formation](https://ninja-squad.fr/formations/formation-angular "La formation AngularJS de Ninja Squad").

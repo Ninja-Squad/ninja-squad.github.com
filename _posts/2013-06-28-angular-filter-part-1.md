@@ -6,7 +6,7 @@ tags: [javascript, "AngularJS"]
 canonical: http://hypedrivendev.wordpress.com/2013/06/28/angular-filter-part-1
 ---
 
-Aujourd'hui, nous commençons une série d'articles sur AngularJS, sur lequel nous vous proposons [une formation](https://ninja-squad.fr/formations/formation-angularjs).
+Aujourd'hui, nous commençons une série d'articles sur AngularJS, sur lequel nous vous proposons [une formation](https://ninja-squad.fr/formations/formation-angular).
 
 L'une des fonctionalités les plus appréciables et méconnues d'Angular réside dans les filtres disponibles. Dans toutes applications web, il est courant de devoir filtrer ou réordonner une collection pour l'afficher. Les filtres Angular sont applicables à la fois en HTML ou en Javascript, à un seul élément ou un tableau. En HTML, la syntaxe se rapproche du style Unix, où l'on peut chaîner les commandes à l'aide du pipe. Par exemple, on peut appliquer un filtre nommé 'uppercase' sur une expression de la façon suivante :
 {% raw %}
@@ -54,7 +54,7 @@ Angular propose par défaut certains filtres communs :
     {{ 87.67 | number:1 }} // 87.7
   </code>
 </pre>
-{% endraw %}  
+{% endraw %}
 
 {% raw %}
 <pre>
@@ -80,7 +80,7 @@ Angular propose par défaut certains filtres communs :
     {{ today | date:'yyyy-MM-dd' }} // 2013-06-25
   </code>
 </pre>
-{% endraw %}  
+{% endraw %}
 
 Un certain nombre de patterns sont disponibles (avec un rendu différent selon la locale) :
 {% raw %}
@@ -89,17 +89,17 @@ Un certain nombre de patterns sont disponibles (avec un rendu différent selon l
     {{ today | date:'longDate' }} // June 25, 2013
   </code>
 </pre>
-{% endraw %}    
+{% endraw %}
 
 - lowercase/uppercase : de façon assez évidente, ces filtres vont convertir l'expression en majuscules ou minuscules.
 {% raw %}
 <pre>
   <code class="javascript">
-    {{ "Cedric" | uppercase }} // CEDRIC   
+    {{ "Cedric" | uppercase }} // CEDRIC
     {{ "Cedric" | lowercase }} // cedric
   </code>
 </pre>
-{% endraw %}    
+{% endraw %}
 
 - json : moins connu, ce filtre permet d'afficher l'objet au format JSON. Il est également moins utile, car, par défaut, afficher un object avec la notation {% raw %}`{{ }}`{% endraw %} convertit l'objet en JSON.
 {% raw %}
@@ -108,7 +108,7 @@ Un certain nombre de patterns sont disponibles (avec un rendu différent selon l
     {{ person | json }} // { name: 'Cedric', company: 'Ninja Squad'}
   </code>
 </pre>
-{% endraw %}  
+{% endraw %}
 
 {% raw %}
 <pre>
@@ -116,7 +116,7 @@ Un certain nombre de patterns sont disponibles (avec un rendu différent selon l
     {{ person }} // { name: 'Cedric', company: 'Ninja Squad'}
   </code>
 </pre>
-{% endraw %}    
+{% endraw %}
 
 - limitTo : ce filtre s'applique quant à lui à un tableau, en créant un nouveau tableau ne contenant que le nombre d'éléments passés en paramètre. Selon le signe de l'argument, les éléments sont retenus depuis le début ou la fin du tableau.
 {% raw %}
@@ -126,17 +126,17 @@ Un certain nombre de patterns sont disponibles (avec un rendu différent selon l
     {{ ['a','b','c'] | limitTo:-2 }} // ['b','c']
   </code>
 </pre>
-{% endraw %}  
+{% endraw %}
 
 - orderBy : là encore un filtre s'appliquant à un tableau. Celui-ci va trier le tableau selon le prédicat passé en paramètre. Le prédicat peut être une chaîne de caractères représentant une propriété des objets à trier ou une fonction. Le prédicat sera appliqué sur chaque élément du tableau pour donner un résultat, puis le tableau de ces résultats sera trié selon les opérateur <', '=', '>'. Une propriété peut être précédée du signe '-' pour indiquer que le tri doit être inversé. A la place d'un simple prédicat, il est possible de passer un tableau de propriétés ou de fonctions (chaque propriété ou fonction supplémentaire servant à affiner le tri primaire). Un second paramètre, booléen, permet quant à lui d'indiquer si le tri doit être inversé.
 {% raw %}
 <pre>
   <code class="javascript">
-    var jb = {name: 'JB', gender: 'male'};    
-    var cyril = {name: 'Cyril', gender: 'male'};     
-    var agnes = {name: 'Agnes', gender: 'female'};     
-    var cedric = {name: 'cedric', gender: 'male'};     
-    $scope.ninjas = [jb, cyril, agnes, cedric];  
+    var jb = {name: 'JB', gender: 'male'};
+    var cyril = {name: 'Cyril', gender: 'male'};
+    var agnes = {name: 'Agnes', gender: 'female'};
+    var cedric = {name: 'cedric', gender: 'male'};
+    $scope.ninjas = [jb, cyril, agnes, cedric];
 
     // order by the property 'gender'
     {{ ninjas | orderBy:'gender'}} // Agnes,JB,Cyril,Cédric

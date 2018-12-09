@@ -8,12 +8,12 @@ La rentrée, c'est aussi l'envie de se remettre à jour et d'**apprendre** de no
 
 Bonne nouvelle! Nous avons de nouvelles dates de formation! Si tu es un fidèle de ce blog, tu sais tout le bien que nous pensons d'AngularJS ou de Git entre autres. Si tu as envie d'apprendre de nouvelles technos, de rattraper ton retard dans d'autres (tu ne fais pas de Git encore? vraiment?), alors tu auras envie de nous rejoindre pour une formation dans la **bonne humeur** :
 
-[Débuter avec AngularJS](https://ninja-squad.fr/formations/formation-angularjs)
+[Débuter avec AngularJS](https://ninja-squad.fr/formations/formation-angular)
 
 - 9 - 11 décembre, Paris (1 place restante)
 - 16 - 18 décembre, Lyon (2 places restantes)
 
-[Devenez un ninja avec Git!](https://ninja-squad.fr/formations/formation-git)  
+[Devenez un ninja avec Git!](https://ninja-squad.fr/formations/formation-git)
 
 - 28 - 29 novembre, Paris
 - 9 - 10 décembre, Lyon (2 places restantes)

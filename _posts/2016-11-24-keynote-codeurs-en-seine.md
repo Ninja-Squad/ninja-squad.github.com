@@ -24,7 +24,7 @@ description: "La retransciption de la keynote d'Agnès Crépet et Cyril Lacote �
 
 Le jeudi 24 novembre 2016, Agnès Crépet et Cyril Lacote assuraient la keynote
 d'ouverture de [Codeurs en Seine 2016](http://www.codeursenseine.com/2016/)&nbsp;:
-_Codeurs du Monde_.  
+_Codeurs du Monde_.
 L'équipe d'organisation leur avait demandé de raconter l'expérience de leur tour du monde.
 
 ## La vidéo
@@ -35,7 +35,7 @@ La vidéo, avec slides synchronisés, est [disponible chez InfoQ](https://www.in
 <a href="https://www.infoq.com/fr/presentations/codeurs-en-seine-agnes-crepet-cyril-lacote-keynote"
   title="Vidéo de la keynote d'Agnès Crépet et Cyril Lacote à Codeurs en Seine 2016">
   <img class="img-fluid" src="/assets/images/codeurs-en-seine/video.jpg" />
-</a>  
+</a>
 
 Si vous préférez la lecture, en voici la retranscription complète.
 
@@ -58,7 +58,7 @@ des développeurs Java sur l'île de Java. Ha ha.</small>
 </p>
 
 Agnès Crépet est développeuse, Java Champion, membre active de Duchess France,
-ex-organistratice du LyonJUG, et co-fondatrice de la [conférence Mix-IT](http://www.mix-it.fr/) à Lyon.
+ex-organistratice du LyonJUG, et co-fondatrice de la [conférence Mix-IT](https://mixitconf.org/) à Lyon.
 
 <p class="slide">
   <img class="img-thumbnail" src="/assets/images/codeurs-en-seine/3.jpg" />
@@ -68,7 +68,7 @@ Cyril Lacote est dévelopeur Java. Après 10 ans de prestations en SSII,
 voulant travailler à l'étranger avec Agnès, il a cru trouver un job de rêve chez Google à Londres.
 Contre toute attente, il n'y resta qu'un mois, avant de s'enfuir (on en reparlera).
 
-Il participe aussi à l'organisation de la [conférence Mix-IT](http://www.mix-it.fr/)
+Il participe aussi à l'organisation de la [conférence Mix-IT](https://mixitconf.org/)
 (dont il portait ce jour un t-shirt, en complète indécence et irrespect pour Codeurs en Seine qui les recevait).
 
 <p class="slide">
@@ -327,7 +327,7 @@ Alors qu'en France, vous avez dû faire le même constat&nbsp;: c'est plutôt la
 
 Cyril fait de la prestation informatique depuis 15 ans, et a dû travailler avec 150 personnes.
 Et probablement que 139 étaient des mâles trentenaires, blancs et hétéro.
-En gros, la seule développeuse qu'il a rencontrée, il lui a fait deux enfants...  
+En gros, la seule développeuse qu'il a rencontrée, il lui a fait deux enfants...
 C'est un peu exagéré, mais les développeuses qu'il a croisées doivent se compter sur
 les doigts d'une main (coucou Pierrette, coucou Daphné).
 
@@ -398,9 +398,9 @@ Il avait débarqué en Suède avec un enfant en très bas âge.
 Lors de son premier jour de travail, son manager passe près de son bureau à 17H,
 et lui demande ce qu'il est en train de faire.
 
-—&nbsp;Et bien je travaille.  
-—&nbsp;Je croyais que tu avais un bébé à la maison.  
-—&nbsp;Heu oui, c'est ça.  
+—&nbsp;Et bien je travaille.
+—&nbsp;Je croyais que tu avais un bébé à la maison.
+—&nbsp;Heu oui, c'est ça.
 —&nbsp;Et bien tu ne devrais pas être là. Rentre vite t'en occuper.
 
 En Suède, on ne rigole pas avec la parité.
@@ -506,7 +506,7 @@ Ainsi, dans Ninja Squad, ils ont volontairement choisis d'être salariés, car l
 le permettait, et ils voulaient par conviction participer au système social par répartition.
 
 Au début, les commerciaux de leurs précédentes SSIIs ricanaient&nbsp;:
-"vous allez vous planter en beauté".  
+"vous allez vous planter en beauté".
 Et certains leur prophétisaient une déconvenue&nbsp;: "avec un nom comme Ninja Squad,
 vous allez vraiment passer pour des guignols".
 Avec le recul, bien qu'ils étaient loin de l'avoir calculé, le nom et l'esprit débridé
@@ -565,7 +565,7 @@ Facile à dire, bien plus difficile à trouver.
 
 Dans Ninja Squad, ils ont eu beaucoup de chance.
 Agnès et Cyril avaient rencontré Cédric dans l'associatif, et avaient travaillé avec lui
-dans ce cadre ([LyonJUG](http://www.lyonjug.org/), [Mix-IT](http://www.mix-it.fr/)).
+dans ce cadre ([LyonJUG](http://www.lyonjug.org/), [Mix-IT](https://mixitconf.org/)).
 Comme quoi, participer à la vie des communautés techniques est important ;).
 Ils avaient travaillé avec JB dans le cadre professionnel.
 Mais JB et Cédric ne se connaissaient pas. Ce dernier dit d'ailleurs&nbsp;:

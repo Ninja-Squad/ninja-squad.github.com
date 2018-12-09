@@ -5,7 +5,7 @@ author: jbnizet
 tags: [mix-it]
 ---
 
-Mardi, j'ai eu l'honneur de présenter un lightning talk à [mix-IT 2014](http://www.mix-it.fr/). C'était ma façon à moi, le quatrième 
+Mardi, j'ai eu l'honneur de présenter un lightning talk à [mix-IT 2014](https://mixitconf.org/). C'était ma façon à moi, le quatrième
 Ninja, de contribuer à cette géniale conférence, que les 3 autres Ninjas co-organisent. 100% du squad étaient donc personnellement investis dans cette conférence.
 
 Voici les slides de ce lightning talk:
@@ -24,7 +24,7 @@ Les idées pour ce talk:
  - être hyper-dynamique: une idée par slide, un slide toutes les 6 secondes en moyenne.
  - glisser ça et là une touche humoristique, dans les slides comme dans le discours
 
- Il m'est impossible de savoir objectivement si mon talk a plu, mais ce qui est sûr, c'est que l'exercice est instructif. 
+ Il m'est impossible de savoir objectivement si mon talk a plu, mais ce qui est sûr, c'est que l'exercice est instructif.
 
  Parler devant 500 personnes est **très** intimidant. Et ça s'est senti dans le ton de ma voix, au moins dans la première minute. Et malgré les répétitions, parler debout, sur scène, un micro à la main, avec 3 écrans géants derrière soi, ce n'est pas la même chose que parler devant un ou deux collègues, devant son laptop. Bizarrement, j'ai passé mon temps à me retourner pour regarder mes slides sur l'écran géant, au lieu de les regarder sur mon écran en face de moi.
 

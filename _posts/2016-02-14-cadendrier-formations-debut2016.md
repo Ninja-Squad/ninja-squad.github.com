@@ -13,7 +13,7 @@ Nous aimons notre métier de développeur, et nous aimons également animer des 
 Nous assurons nos formations sur Lyon, à Paris, ailleurs en France, et dans les pays limitrophes. On peut étudier toute proposition de déplacement dans d'autres endroits exotiques, un peu de soleil, par exemple, n'a jamais fait de mal à un ninja ;-)
 
 # Les prochaines dates
-- [**AngularJS&nbsp;: de Zéro à Ninja**](https://ninja-squad.fr/formations/formation-angularjs)&nbsp;: lundi 14 - mercredi 16 mars 2016 (Paris)
+- [**AngularJS&nbsp;: de Zéro à Ninja**](https://ninja-squad.fr/formations/formation-angular)&nbsp;: lundi 14 - mercredi 16 mars 2016 (Paris)
 - [**Devenez un ninja avec Git**](https://ninja-squad.fr/formations/formation-git)&nbsp;: lundi 21 - mardi 22 mars 2016 (Paris)
 - [**Angular&nbsp;: de Zéro à Ninja**](https://ninja-squad.fr/formations/formation-angular)&nbsp;: lundi 4 - mercredi 6 avril 2016 (Lyon)
 - [**Angular&nbsp;: de Zéro à Ninja**](https://ninja-squad.fr/formations/formation-angular)&nbsp;: lundi 11 - mercredi 13 avril 2016 (Paris)

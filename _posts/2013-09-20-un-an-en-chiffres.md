@@ -65,7 +65,7 @@ Quand la société a été sur ses rails, on a commencé à flamber et faire des
 - on a déposé [notre marque à l'INPI](http://bases-marques.inpi.fr/Typo3_INPI_Marques/marques_fiche_resultats.html?index=1&refId=3937579_201246_fmark&y=0)&nbsp;: 240€.
 - on a payé un ami graphiste pour faire naître [Chuck](/2013/08/28/3d-pixel-art/), notre emblème&nbsp;: 500€.
 - on a réalisé nos propres goodies (mugs, tee-shirts, badges)&nbsp;: 350€.
-- et on a offert des stickers pour [la promotion de Golo](http://golo-lang.org/news/2013/04/29/viral-marketing-thanks-to-ninjasquad/) (le montant reste confidentiel tellement il est indécent).
+- et on a offert des stickers pour [la promotion de Golo](https://golo-lang.org/news/2013/04/29/viral-marketing-thanks-to-ninjasquad) (le montant reste confidentiel tellement il est indécent).
 
 Voilà près de 5000€ dépensés pour <span style="text-decoration:line-through;">le swag</span> le confort, la veille, et notre contribution à la communauté.
 

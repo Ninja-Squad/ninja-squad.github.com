@@ -163,6 +163,6 @@ Si vous faites des directives un peu avancées, un jour ou l'autre, vous allez t
 
 Le meilleur moyen de progresser en écriture de directives est de vous inspirer des projets open-source. Le projet AngularUI contient un grand nombre de directives, notamment les directives de [UIBootstrap](http://angular-ui.github.io/bootstrap/) qui peuvent vous inspirer. L'un des principaux contributeurs au projet, [Pawel](https://github.com/pkozlowski-opensource), a fait un talk avec [quelques idées](http://pkozlowski-opensource.github.io/ng-europe-2014/presentation/#/) complémentaires à cet article.
 
-Et si vous voulez mettre tout ça en pratique, [notre prochaine formation](https://ninja-squad.fr/training/angularjs) a lieu à Paris les 9-11 Février, et la suivante à Lyon les 9-11 Mars !
+Et si vous voulez mettre tout ça en pratique, [notre prochaine formation](https://ninja-squad.fr/formations/formation-angular) a lieu à Paris les 9-11 Février, et la suivante à Lyon les 9-11 Mars !
 
 _Article publié sur le [blog de Cédric](http://hypedrivendev.wordpress.com/2015/01/27/5-astuces-sur-les-directives-et-leurs-tests/ "Article original sur le blog de Cédric Exbrayat")_

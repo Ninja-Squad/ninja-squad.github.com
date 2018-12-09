@@ -25,7 +25,7 @@ de celui qui permet de faire des applications Android.
 
 Mon idée était relativement simple : avec Mix-IT qui approche
   (disclaimer : je fais parti de l'orga), pourquoi ne pas faire le programme de la conf
-sur Glass ? Le [site de Mix-IT](http://mix-it.fr) expose déjà une API pour récupérer les différentes sessions,
+sur Glass ? Le [site de Mix-IT](http://mixitconf.org) expose déjà une API pour récupérer les différentes sessions,
 il suffisait donc de trouver le moyen d'envoyer une notification à l'utilisateur
 avant chaque session. Cela ressemblait bien à ce que proposait la Mirror API !
 
@@ -218,8 +218,6 @@ Vous allez me dire : "Mais t'as des Google Glass toi ?". Non, j'en ai pas.
 Alors, comment je fais pour tester ? Google propose un [Playground](https://developers.google.com/glass/tools-downloads/playground) pour visualiser sa timeline Glass.
 Bizarrement assez buggué (les cartes n'apparaissent pas parfois), cela permet quand même de voir si les cartes
 sont correctement insérées dans la timeline (même si il faut rafraîchir manuellement, alors que l'on pourrait s'attendre à quelque chose de plus... temps réel!) et d'éditer leur contenu pour jouer avec.
-
-Vous pouvez essayer vous même! C'est par ici :  [mix-it-on-glass.ninja-squad.com](http://mix-it-on-glass.ninja-squad.com).
 
 ## TL;DR;
 

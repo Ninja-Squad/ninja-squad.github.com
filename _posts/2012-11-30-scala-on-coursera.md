@@ -6,13 +6,13 @@ tags: [java, scala, coursera]
 canonical: http://hypedrivendev.wordpress.com/2012/11/30/scala-on-coursera/
 ---
 
-La semaine dernière s’achevait le cours [Functional Programming Principle in Scala](https://class.coursera.org/progfun-2012-001/class/index) de Coursera, animé par Martin Odersky en personne. Si vous ne connaissez pas [Coursera](https://www.coursera.org/), sachez que c’est l’une des startups californiennes qui se lance dans le domaine de l’éducation en ligne (l’une de leur dernière recrue est [Pamela Fox](https://twitter.com/pamelafox), speakeuse à [Mix-it 2012](http://mix-it.fr), et qui, alors qu’elle n’était pas encore employée, avait fait une keynote sur l’éducation). Sur le site, vous suivez des cours en vidéo, vous avez des exercices à faire et à rendre, vous recevez des notes et à la fin un diplome si vous avez été sages. Avec pas loin de 2 000 000 d’inscrits, le site a pris son envol, à juste titre il faut dire car la plateforme est très bien conçue. Martin Odersky, et sa société [TypeSafe](http://hypedrivendev.wordpress.com/2011/05/18/typesafe-scala-akka/), frappe donc encore un grand coup marketing en lançant ce cours en ligne sur Coursera. Si ce nom vous est également inconnu, Martin est le créateur de Scala avec une équipe de l’EPFL (Ecole Polytechnique Fédérale de Lausanne) où il est chercheur. Il a également bossé sur le compilateur Java et notamment contribué aux génériques de Java5. On peut donc dire sans trop se tromper qu’il en connaît un rayon en matière de JVM et de langage.
+La semaine dernière s’achevait le cours [Functional Programming Principle in Scala](https://class.coursera.org/progfun-2012-001/class/index) de Coursera, animé par Martin Odersky en personne. Si vous ne connaissez pas [Coursera](https://www.coursera.org/), sachez que c’est l’une des startups californiennes qui se lance dans le domaine de l’éducation en ligne (l’une de leur dernière recrue est [Pamela Fox](https://twitter.com/pamelafox), speakeuse à [Mix-it 2012](http://mixitconf.org), et qui, alors qu’elle n’était pas encore employée, avait fait une keynote sur l’éducation). Sur le site, vous suivez des cours en vidéo, vous avez des exercices à faire et à rendre, vous recevez des notes et à la fin un diplome si vous avez été sages. Avec pas loin de 2 000 000 d’inscrits, le site a pris son envol, à juste titre il faut dire car la plateforme est très bien conçue. Martin Odersky, et sa société [TypeSafe](http://hypedrivendev.wordpress.com/2011/05/18/typesafe-scala-akka/), frappe donc encore un grand coup marketing en lançant ce cours en ligne sur Coursera. Si ce nom vous est également inconnu, Martin est le créateur de Scala avec une équipe de l’EPFL (Ecole Polytechnique Fédérale de Lausanne) où il est chercheur. Il a également bossé sur le compilateur Java et notamment contribué aux génériques de Java5. On peut donc dire sans trop se tromper qu’il en connaît un rayon en matière de JVM et de langage.
 
- 
+
 
 Je ne l’avais jamais vu en revanche donner un cours, mais les videos sur Coursera qu’il a réalisé sont claires et compréhensibles à condition d’avoir un minimum d’anglais (et également de faire abstraction de l’accent allemand, qui est quand même plus compréhensible que l’accent français probablement). Le volume de cours n’est pas négligeable : s’étalant sur 7 semaines, il fallait quand même prévoir une à deux heures pour les vidéos et de quelques minutes à plusieurs heures pour les exercices. Mais cela n’a pas décourager les foules : le cours a compté 50000 participants (ou plutot inscrits, je ne sais pas si tous en sont venus à bout). Ce que j’en retiendrais :
 
- 
+
 
 Les plus :
 
@@ -22,7 +22,7 @@ Les plus :
 
 - au delà de Scala, difficile de ne pas aimer la __programmation fonctionnelle__. Et la pratiquer en Java est un vrai plaisir. Les collections scala sont géniales, vraiment. Dans la vie de tous les jours, je pallie comme beaucoup le manque grâce à l’excellente librairie Guava par exemple, et ce n’est pas sans déplaisir que je vois l’arrivée de Java8 (dont de nombreux concepts sont déjà dans Scala).
 
- 
+
 
 Le moins :
 
@@ -34,7 +34,7 @@ Le moins :
 
 - Les boucles __“for comprehension”__ sont un concept puissant mais on se retrouve vite perdu entre les types disponibles, les itérateurs déclarés et les filtres. Alors que le code executé est souvent simple, toute la logique se trouve dans la déclaration du for. C’est souvent compliqué à débugger, parfois correct mais incroyablement lent si vous avez fait un mauvais choix (dont on ne se rend pas toujours compte immédiatement). Pour les anagrammes j’avais par exemple une solution qui fonctionnait correctement mais qui mettait 30 secondes de plus pour un itérateur mal déclaré. Il doit y avoir des carnages dans certaines applications... Il est parfois plus simple de faire le code avec des “map” et des “filter” puis de convertir en “for comprehension” par la suite.
 
- 
+
 
 Si le sujet vous intéresse un autre article bien plus complet sur Scala et Coursera se trouve ici. Je ne peux qu’admirer l’excellence marketing de TypeSafe qui réussit encore une fois un très beau coup (après l’annonce récente de l’entrée de Rod Johnson au board par exemple). Et à titre personnel, je suis content d’avoir participer : j’ai appris de nouvelles choses et voir d’autres langages est toujours un excellent moyen de progresser. Je ne suis par contre toujours pas convaincu pour faire un vrai gros projet de la vraie vie avec. Ou alors avec un mec de chez Twitter ou Foursquare qui vient m’aider à démarrer et à prendre les bonnes options et les bonnes pratiques. Mais on en a rarement sous la main. Je surveille quand même du coin de l’oeil, on ne sait jamais...
 

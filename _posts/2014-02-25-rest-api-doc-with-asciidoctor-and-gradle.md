@@ -14,7 +14,7 @@ understanding your framework, it also has to understand how your JSON serializer
 you use annotations to define your validation constraints, it also has to understand them. All in all, automating the documentation generation
 of a REST API is much harder than doing so for a Java API.
 
-We did some experiments with [Swagger](http://swagger.wordnik.com/), but were not really satisfied with the result. It has good points: language
+We did some experiments with [Swagger](https://swagger.io/), but were not really satisfied with the result. It has good points: language
 and framework-agnostic specification, automatic generation from code and annotations, JSON structure descriptions and examples, possibility to send GET
 and POST requests directly from the documentation.
 
