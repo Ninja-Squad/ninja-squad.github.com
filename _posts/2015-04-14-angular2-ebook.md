@@ -8,7 +8,7 @@ description: "I'm writing a new book while traveling around the world. Check htt
 
 TL;DR: I'm writing a [new ebook about Angular](https://books.ninja-squad.com/angular).
 
-I am currently writing this post from Auckland, New Zealand, first stop of a trip with my girlfriend, in a few countries around the world over 6 months. This has just started, but I already can feel it will be pretty good (and leaving the cold winter of France for the hot summer of New Zealand is a nice start). As my co-founders are pretty awesome, they agreed to let me work part-time, on non-billable work. In fact, it might be a little crazy, but I'd like to write [another](https://books.ninja-squd.com/angularjs) book and try several other ideas.
+I am currently writing this post from Auckland, New Zealand, first stop of a trip with my girlfriend, in a few countries around the world over 6 months. This has just started, but I already can feel it will be pretty good (and leaving the cold winter of France for the hot summer of New Zealand is a nice start). As my co-founders are pretty awesome, they agreed to let me work part-time, on non-billable work. In fact, it might be a little crazy, but I'd like to write [another](https://books.ninja-squad.com/angularjs) book and try several other ideas.
 
 There is a whole trend about [digital nomadism](http://en.wikipedia.org/wiki/Digital_nomad), but I don't consider myself into this: first of all, I'll be traveling and enjoying the world, but, as I'm pretty much hyperactive, I'll have the need to do something. So why not try to combine the 2 ?
 
