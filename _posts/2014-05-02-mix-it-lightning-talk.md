@@ -2,10 +2,10 @@
 layout: post
 title: 5 apprentissages pour le programmeur débutant
 author: jbnizet
-tags: [mix-it]
+tags: [mixit]
 ---
 
-Mardi, j'ai eu l'honneur de présenter un lightning talk à [mix-IT 2014](https://mixitconf.org/). C'était ma façon à moi, le quatrième
+Mardi, j'ai eu l'honneur de présenter un lightning talk à [MiXiT 2014](https://mixitconf.org/). C'était ma façon à moi, le quatrième
 Ninja, de contribuer à cette géniale conférence, que les 3 autres Ninjas co-organisent. 100% du squad étaient donc personnellement investis dans cette conférence.
 
 Voici les slides de ce lightning talk:

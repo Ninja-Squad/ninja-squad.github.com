@@ -23,9 +23,9 @@ de celui qui permet de faire des applications Android.
 
 ## L'idée
 
-Mon idée était relativement simple : avec Mix-IT qui approche
+Mon idée était relativement simple : avec MiXiT qui approche
   (disclaimer : je fais parti de l'orga), pourquoi ne pas faire le programme de la conf
-sur Glass ? Le [site de Mix-IT](http://mixitconf.org) expose déjà une API pour récupérer les différentes sessions,
+sur Glass ? Le [site de MiXiT](https://mixitconf.org ) expose déjà une API pour récupérer les différentes sessions,
 il suffisait donc de trouver le moyen d'envoyer une notification à l'utilisateur
 avant chaque session. Cela ressemblait bien à ce que proposait la Mirror API !
 
@@ -74,7 +74,7 @@ même différents formats (markdown, yml...).
 
 `index.html`
 
-    <h1>Mix-IT, now on Google Glass</h1>
+    <h1>MiXiT, now on Google Glass</h1>
     <a href='[[oauth]]'>Try it!</a>
 
 Le serveur va répondre le fichier `index.html` et remplacer la variable `oauth` par celle définie dans le code,

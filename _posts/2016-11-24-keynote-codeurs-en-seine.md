@@ -58,7 +58,7 @@ des développeurs Java sur l'île de Java. Ha ha.</small>
 </p>
 
 Agnès Crépet est développeuse, Java Champion, membre active de Duchess France,
-ex-organistratice du LyonJUG, et co-fondatrice de la [conférence Mix-IT](https://mixitconf.org/) à Lyon.
+ex-organistratice du LyonJUG, et co-fondatrice de la [conférence MiXiT](https://mixitconf.org/) à Lyon.
 
 <p class="slide">
   <img class="img-thumbnail" src="/assets/images/codeurs-en-seine/3.jpg" />
@@ -68,7 +68,7 @@ Cyril Lacote est dévelopeur Java. Après 10 ans de prestations en SSII,
 voulant travailler à l'étranger avec Agnès, il a cru trouver un job de rêve chez Google à Londres.
 Contre toute attente, il n'y resta qu'un mois, avant de s'enfuir (on en reparlera).
 
-Il participe aussi à l'organisation de la [conférence Mix-IT](https://mixitconf.org/)
+Il participe aussi à l'organisation de la [conférence MiXiT](https://mixitconf.org/)
 (dont il portait ce jour un t-shirt, en complète indécence et irrespect pour Codeurs en Seine qui les recevait).
 
 <p class="slide">
@@ -350,7 +350,7 @@ capitale de l'informatique mondiale, siège des Google, Twitter, Facebook, Uber 
 Agnès et Cyril y ont rencontré quelques stars qu'ils interviewaient pour [un podcast](http://www.cast-it.fr/) (depuis abandonné)&nbsp;:
 
 - Romain Guy, un googler d'origine lyonnaise, qui a codé l'essentiel de l'UI de vos téléphones Android&nbsp;
-- Pamela Fox, ancienne _developer advocate_ de Google, alors chez Coursera, qu'ils ont fait venir à Mix-IT&nbsp;
+- Pamela Fox, ancienne _developer advocate_ de Google, alors chez Coursera, qu'ils ont fait venir à MiXiT&nbsp;
 - Malte Ubl, depuis devenu le _tech lead_ de [AMP](https://www.ampproject.org/), la technologie
 de Google pour rendre instantané le rendu des pages web sur mobile.
 
@@ -565,7 +565,7 @@ Facile à dire, bien plus difficile à trouver.
 
 Dans Ninja Squad, ils ont eu beaucoup de chance.
 Agnès et Cyril avaient rencontré Cédric dans l'associatif, et avaient travaillé avec lui
-dans ce cadre ([LyonJUG](http://www.lyonjug.org/), [Mix-IT](https://mixitconf.org/)).
+dans ce cadre ([LyonJUG](http://www.lyonjug.org/), [MiXiT](https://mixitconf.org/)).
 Comme quoi, participer à la vie des communautés techniques est important ;).
 Ils avaient travaillé avec JB dans le cadre professionnel.
 Mais JB et Cédric ne se connaissaient pas. Ce dernier dit d'ailleurs&nbsp;:

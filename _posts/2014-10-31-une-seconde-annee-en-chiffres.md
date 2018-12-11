@@ -30,11 +30,11 @@ Et bien non, nos activités parallèles et non rentables ont perduré, dans l'un
 
 - On a fait [un chouette timeoff](https://plus.google.com/b/103019373375785071516/103019373375785071516/posts/VG37F3buDh2 "Quelques photos du timeoff de Ninja Squad dans la Drôme") dans la Drome provençale, où en plus de prendre du bon temps en famille et faire de la plongée en piscine (!), on a parlé Gradle et Docker, et affiné notre stratégie globale super secrète de conquète du monde (_stay tuned_).
 - Cédric Exbrayat a dilapidé ses nuits pour écrire le livre ["Devenez un Ninja avec AngularJS"](https://books.ninja-squad.com/ "Un ebook sur AngularJS à prix libre par Ninja Squad") dont vous avez forcément entendu parler (hein?) si vous nous suivez un peu. Les ventes ne rentrent pas dans cet exercice 2013-2014 clos au 30 juin 2014, la vente ayant débuté en septembre.
-- Trois des quatre ninjas étaient toujours organisateurs de [Mix-IT](http://mixitconf.org), la conférence technique et agile lyonnaise, dont l'édition 2014 à été, sans trop se vanter, [un franc succès](https://twitter.com/hashtag/mixit14?src=hash "#mixit14 sur Twitter").
+- Trois des quatre ninjas étaient toujours organisateurs de [MiXiT](https://mixitconf.org ), la conférence technique et agile lyonnaise, dont l'édition 2014 à été, sans trop se vanter, [un franc succès](https://twitter.com/hashtag/mixit14?src=hash "#mixit14 sur Twitter").
 - Nous assurions toujours plusieurs modules de cours (Web, JEE) auprès des Licence Pro de l'université Lyon 1. C'est toujours beaucoup de boulot peu rémunérateur, mais on aime bien marquer au fer rouge la jeune génération.
 - Et en bons adeptes de l'effervescence communautaire, plusieurs ninjas ont assuré des talks&nbsp;:
   - Cédric Exbrayat et Jean-Baptiste Nizet ont parlé [Java 8 et Lambdas](/2013/10/23/going-to-softshake/) à Softshake 2013.
-  - Jean-Baptiste Nizet à fait un Lightning-Talk à Mix-IT 2014, ["5 apprentissages pour le programmeur débutant"](/2014/05/02/mix-it-lightning-talk/).
+  - Jean-Baptiste Nizet à fait un Lightning-Talk à MiXiT 2014, ["5 apprentissages pour le programmeur débutant"](/2014/05/02/mix-it-lightning-talk/).
   - Agnès Crépet a présenté à Devoxx France 2014 et au LavaJUG ["Le Bon et le Mauvais Testeur"](http://www.parleys.com/play/535fa85be4b03397a8eee8e8) avec Guillaume Ehret.
 
 Mais j'en vois qui s'impatientent au fond&nbsp;: trop de bla-bla. Ils sont venus là pour les chiffres, de la thune, du concret croustillant.
