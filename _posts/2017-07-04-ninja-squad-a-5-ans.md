@@ -133,7 +133,7 @@ On a sorti un outil open-source qui a son petit succès chez les développeurs
 Java&nbsp;: [DbSetup](http://dbsetup.ninja-squad.com/).
 Mais comme c'est de l’open-source, il n'est pas question d'en vivre.
 
-On a sorti une plateforme de quiz, [Quizzie](https://quizzie.io),
+On a sorti une plateforme de quiz, Quizzie,
 qui avait un business model en béton&nbsp;: gratuit pour un quiz public,
 payant pour un quiz privé.
 Ca a marché... moyennement&nbsp;: on n'a vendu que deux quiz, un premier
