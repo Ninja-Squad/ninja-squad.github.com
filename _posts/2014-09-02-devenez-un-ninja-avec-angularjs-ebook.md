@@ -13,12 +13,10 @@ Alors voilà, nous avons eu envie de faire une formation solide sur AngularJS. E
 
 Nous avons eu envie de nous essayer à la vente de cet ebook. Ce n’est pas de la grande littérature, ce n’est pas un tutoriel, ce n’est pas exhaustif. C’est un guide des principales choses à connaître, une explication de la magie, des astuces pour éviter les pièges les plus fréquents, des pistes pour aller plus loin. Le bouquin que l’on aurait voulu avoir quand on a commencé. La petite touche Ninja Squad, quoi.
 
-Et pour que ce livre nous ressemble un peu plus, nous le vendons à prix libre. Si votre statut d’étudiant ne vous permet que de donner 2€, très bien. Si votre employeur, qui ne vous offre pas une seule conférence dans l’année mais que vous efforcez de faire changer, ne vous offre que 15€ de budget ebook, cela nous va. Et nous avions aussi envie d’aider, à notre petite échelle, une association, sur le principe des Humble Bundles. Vous pouvez donc donner le prix que vous voulez et le répartir entre Ninja Squad et l’association [Docteur Souris](http://www.docteursouris.fr). Tout ça pour un ebook qui regroupe plusieurs centaines d’heures de travail, sans DRM.
+Et pour que ce livre nous ressemble un peu plus, nous le vendons à prix libre. Si votre statut d’étudiant ne vous permet que de donner 2€, très bien. Si votre employeur, qui ne vous offre pas une seule conférence dans l’année mais que vous efforcez de faire changer, ne vous offre que 15€ de budget ebook, cela nous va. Et nous avions aussi envie d’aider, à notre petite échelle, une association, sur le principe des Humble Bundles. Vous pouvez donc donner le prix que vous voulez et le répartir entre Ninja Squad et l’association Docteur Souris. Tout ça pour un ebook qui regroupe plusieurs centaines d’heures de travail, sans DRM.
 
 Nous espérons que ce petit ouvrage vous plaira, que vous soyez complètement débutant ou que vous ayez envie de comprendre un peu mieux ce qu’il se passe dans votre application. Si vous repérez une typo ou une erreur, faites-nous signe. L’ebook est à jour avec les nouveautés des dernières bêtas, et vous recevrez les mises à jour gratuitement. Et si vous cherchez quelqu’un pour [vous former](https://ninja-squad.fr/training), ou une [petite équipe](https://ninja-squad.fr/team) pour vous aider dans votre prochain projet, que vous allez faire en Angular bien sûr, alors vous savez où nous trouver ;).
 
-[C’est par ici pour obtenir notre ebook.](https://books.ninja-squad.com) Enjoy ! 
+[C’est par ici pour obtenir notre ebook.](https://books.ninja-squad.com) Enjoy !
 
 PS : Merci à toux ceux qui nous ont encouragé, montré leur impatience sur Twitter, ou pris le temps de relire des versions intermédiaires. On vous aime.
-
-

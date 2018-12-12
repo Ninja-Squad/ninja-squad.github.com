@@ -14,7 +14,7 @@ Comme on vous le promettait, l'ebook est **sans DRM**, disponible en **français
 et dans tous les formats dont tu peux rêver (**PDF, EPUB, MOBI, HTML**).
 Et comme pour notre premier ebook, tu peux **payer ce que tu veux** et **donner autant que tu veux à une association**.
 
-Pour notre premier ebook, nous avions choisi de soutenir [Docteur Souris](http://www.docteursouris.fr/), une association qui aide les enfants à l'hopital.
+Pour notre premier ebook, nous avions choisi de soutenir Docteur Souris, une association qui aide les enfants à l'hopital.
 Pour ce nouvel ebook, nous voulons soutenir l'[Electronic Frontier Foundation](https://www.eff.org/),
 parce que croyons fermement en un monde de libre expression et de respect de la vie privée.
 

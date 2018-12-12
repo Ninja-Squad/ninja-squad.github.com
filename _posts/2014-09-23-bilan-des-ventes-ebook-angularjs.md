@@ -33,7 +33,7 @@ Bien sûr, ce rythme a très vite chuté, pour atteindre des volumes assez déri
 
 A ce jour du 23 septembre 2014, après trois semaines, on a fait **4300 visiteurs unique, et 395 ventes pour un total de plus de 3900€ HT**.
 
-L'autre bonne nouvelle, c'est qu'on a aussi récolté **plus de 1200€ pour l'association** [Docteur Souris](http://www.docteursouris.fr/). \o/
+L'autre bonne nouvelle, c'est qu'on a aussi récolté **plus de 1200€ pour l'association** Docteur Souris. \o/
 
 Pour nous, c'était inespéré.
 
