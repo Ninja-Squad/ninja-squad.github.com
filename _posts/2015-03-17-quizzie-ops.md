@@ -7,10 +7,12 @@ description: "We're pretty decent developers, but when it comes to operations, t
 is a great way to slowly become devops, and not just devs."
 ---
 
+{% include ninjasquad/quizzie-discontinued-en %}
+
 We think we're pretty decent developers. Operations are another story. Most of the time, when working as
 consultants, we leave that part to other, more qualified people. So we have a lot to learn in that area.
 
-Building, deploying and operating [Quizzie](https://quizzie.io), one of our Friday side-projects, is a great
+Building, deploying and operating Quizzie, one of our Friday side-projects, is a great
 way to improve and learn.
 
 In this post, I'll explain where and how we deploy Quizzie, and the lessons we learnt while doing so.

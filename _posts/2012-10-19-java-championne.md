@@ -6,7 +6,7 @@ tags: [java, "java champion", "ninja squad"]
 ---
 <br/>
 
-On vient de m'apprendre une bonne nouvelle que je me dois de vous annoncer : j'ai la joie incroyable d'avoir été élue <b>Java Championne</b>! Aussi inimaginable que cela puisse l'être pour moi, je rejoins ainsi les bancs de <a href="http://java.net/website/java-champions/bios.html#Crepet">ce collège prestigieux</a>, aux côtés de Josh Bloch, James Gosling, Bob Lee, Adam Bien, Gavin King… et de notre ami JUG leader Antonio Goncalves. Je le remercie d'ailleurs d'avoir proposé ma candidature au titre! Et un grand merci également aux <a href="http://www.duchess-france.org">Duchesses</a> qui ont soumis l'idée!
+On vient de m'apprendre une bonne nouvelle que je me dois de vous annoncer : j'ai la joie incroyable d'avoir été élue <b>Java Championne</b>! Aussi inimaginable que cela puisse l'être pour moi, je rejoins ainsi les bancs de <a href="https://community.oracle.com/docs/DOC-925803">ce collège prestigieux</a>, aux côtés de Josh Bloch, James Gosling, Bob Lee, Adam Bien, Gavin King… et de notre ami JUG leader Antonio Goncalves. Je le remercie d'ailleurs d'avoir proposé ma candidature au titre! Et un grand merci également aux <a href="http://www.duchess-france.org">Duchesses</a> qui ont soumis l'idée!
 
 <p style="text-align:center;"><img class="rounded" src="/assets/images/Java_Champions_clr.gif" alt="Java Champions" /></p>
 

@@ -46,7 +46,7 @@ Bitbucket propose en plus une criticité, une priorité et une gestion du workfl
 
 Une autre fonctionnalité intéressante réside dans le [vote sur les issues](http://blog.bitbucket.org/2013/08/14/no-more-1s-bitbucket-issues-now-has-voting/). Là où Github ne permet toujours pas de voter, et où les commentaires '+1' sont le seul moyen de manifester son intérêt, Bitbucket intègre directement le vote sur les issues, ce qui permet de jauger l'intérêt de la communauté pour une feature particulière.
 
-La synchronisation avec d'autres bug trackers est généralement possible. L'intégration de Bitbucket avec Jira est mise en avant mais le même [connecteur](https://confluence.atlassian.com/display/BITBUCKET/Use+the+JIRA+DVCS+Connector+Plugin) est utilisé pour Github et Bitbucket dans JIRA, les fonctionnalités sont donc possiblement équivalentes (mais je n'ai pas testé).
+La synchronisation avec d'autres bug trackers est généralement possible. L'intégration de Bitbucket avec Jira est mise en avant mais le même [connecteur](https://marketplace.atlassian.com/apps/311676/jira-dvcs-connector-plugin/version-history) est utilisé pour Github et Bitbucket dans JIRA, les fonctionnalités sont donc possiblement équivalentes (mais je n'ai pas testé).
 
 <h1>Wiki</h1>
 
@@ -69,7 +69,7 @@ Les prix sont tout de suite plus ... entreprise! Github Enterprise démarre à 5
 
 Tous deux proposent une très bonne API REST, et des "hooks" qui permettent de s'intégrer avec tout ce que votre écosystème comporte d'important (les intégrations continues, dashboards, issue trackers...).
 Bitbucket ne pose [aucune limite sur la taille des fichiers](https://confluence.atlassian.com/pages/viewpage.action?pageId=273877699), là où Github [restreint à 100Mb par fichier](https://help.github.com/articles/what-is-my-disk-quota).
-Dans les petits bonus de Github, il ne faut pas oublier [Github Pages](http://pages.github.com/), un support de nouveaux formats ([fichier STL 3D](https://github.com/cexbrayat/3d-pixel-art/blob/master/ninja-squad-3d-smoothed.stl), [fichier GeoJSON](https://github.com/benbalter/dc-maps/blob/master/embassies.geojson)) et une application mobile (même si c'est un peu anecdotique).
+Dans les petits bonus de Github, il ne faut pas oublier [Github Pages](http://pages.github.com/), un support de nouveaux formats ([fichier STL 3D](https://github.com/cexbrayat/3d-pixel-art/blob/master/ninja-squad-3d-smoothed.stl), fichier GeoJSON) et une application mobile (même si c'est un peu anecdotique).
 
 <h1>Communauté</h1>
 

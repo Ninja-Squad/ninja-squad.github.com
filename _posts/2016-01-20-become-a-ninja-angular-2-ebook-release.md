@@ -14,7 +14,7 @@ As we announced, the ebook is **DRM free**, available in **English** and **Frenc
 in every format you can dream of (**PDF, EPUB, MOBI, HTML**).
 And, as for our previous ebook, you can **pay what you want** and **give as much you want to a charity**.
 
-For our first ebook, we chose to support [a local charity helping kids in hospitals](http://www.docteursouris.fr/).
+For our first ebook, we chose to support a local charity helping kids in hospitals.
 For this ebook, we want to help the [Electronic Frontier Foundation](https://www.eff.org/),
 because we deeply believe in a world with free expression and respect of privacy.
 

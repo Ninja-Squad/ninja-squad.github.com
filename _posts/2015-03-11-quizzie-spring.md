@@ -6,7 +6,9 @@ tags: ["ninja squad", "quizzie", "spring"]
 description: "Last week, I proudly announced Quizzie, and explained that doing it was a great way to learn new things. In this post and future posts, I'll share some of the things we learnt by making Quizzie. And I'll start with Spring."
 ---
 
-Last week, I [proudly announced](/2015/03/03/quizzie-announcement/) [Quizzie](https://quizzie.io), and
+{% include ninjasquad/quizzie-discontinued-en %}
+
+Last week, I [proudly announced](/2015/03/03/quizzie-announcement/) Quizzie, and
 explained that doing it was a great way to learn new things. In this post and future posts, I'll share some of the things we learnt
 by making Quizzie. And I'll start with Spring.
 
@@ -63,8 +65,7 @@ the Spring developers, and good news: [transactional events are coming in the ne
 
 Where do we use such events in Quizzie?
 
-For example, when you finish a game, you might gain the [*player*](https://quizzie.io/badges/player) badge, but also maybe the
-[*champion*](https://quizzie.io/badges/champion) badge and also maybe the [*pioneer*](https://quizzie.io/badges/pioneer) badge.
+For example, when you finish a game, you might gain the *player* badge, but also maybe the *champion* badge and also maybe the *pioneer* badge.
 So instead of putting all this badge handling code in the `finishGame()` method, we simply fire a `GamePlayed` event.
 
 Badge handlers observing the `GamePlayed` event are then notified and asynchronously check if the badge they're responsible for should be assigned or not.

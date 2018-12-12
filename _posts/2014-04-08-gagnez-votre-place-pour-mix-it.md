@@ -35,7 +35,7 @@ A vos tweets, partez!
 
 Après tirage au sort, le grand gagnant de la place pour MiXiT 2014 est Maxence Dalmais aka [@maxired](https://twitter.com/maxired), avec le tweet suivant :
 
-<blockquote class="twitter-tweet" lang="en" style="text-align: center;"><p><a href="https://twitter.com/search?q=%23mixIT_lyon&amp;src=hash">#mixIT_lyon</a> A moi la place <a href="https://twitter.com/NinjaSquad">@NinjaSquad</a> pour How torewrite your JavaScript app ten times <a href="http://t.co/eTBqmzFLLP">http://t.co/eTBqmzFLLP</a> ! svp, svp svp ! ! ! <a href="https://twitter.com/LyonJS">@LyonJS</a></p>&mdash; Maxence Dalmais (@maxired) <a href="https://twitter.com/maxired/statuses/453525239914586112">April 8, 2014</a></blockquote>
+<blockquote class="twitter-tweet" lang="en" style="text-align: center;"><p><a href="https://twitter.com/search?q=%23mixIT_lyon&amp;src=hash">#mixIT_lyon</a> A moi la place <a href="https://twitter.com/NinjaSquad">@NinjaSquad</a> pour How torewrite your JavaScript app ten times <a href="https://mixitconf.org/2014/garann-means-how-to-rewrite-your-javascript-app-ten-times">https://mixitconf.org/2014/garann-means-how-to-rewrite-your-javascript-app-ten-times</a> ! svp, svp svp ! ! ! <a href="https://twitter.com/LyonJS">@LyonJS</a></p>&mdash; Maxence Dalmais (@maxired) <a href="https://twitter.com/maxired/statuses/453525239914586112">April 8, 2014</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Bravo à lui, et rendez-vous le 29 avril pour MiXiT&nbsp;!

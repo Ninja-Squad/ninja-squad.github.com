@@ -60,7 +60,7 @@ Et c'est tout, si on néglige quelques frais annuels minimes (cotisations, taxes
 
 Quand la société a été sur ses rails, on a commencé à flamber et faire des dépenses démesurées&nbsp;:
 - on s'est chacun acheté un second moniteur (250€ pièce), des SSDs (200€ pièce) et des licences IntelliJ pour bosser confortablement chez nos clients récurrents.
-- on s'est payé les conférences que nous n'organisions pas&nbsp;:p, qui nous branchaient et où nous n'avions pas la chance d'être déjà invités (avec une Java Championne et deux JUGs leaders, on est chanceux de ce côté-là)&nbsp;: [Devoxx FR](http://devoxx.fr), [RealtimeConf EU](http://realtimeconf.eu/), [Blend Conference](http://www.blendconference.com/).
+- on s'est payé les conférences que nous n'organisions pas&nbsp;:p, qui nous branchaient et où nous n'avions pas la chance d'être déjà invités (avec une Java Championne et deux JUGs leaders, on est chanceux de ce côté-là)&nbsp;: [Devoxx FR](http://devoxx.fr), RealtimeConf EU, [Blend Conference](http://www.blendconference.com/).
 - on a organisé un [#Ninjackaton](http://twitter.com/search?q=ninjackaton) en soirée&nbsp;: 500€.
 - on a déposé [notre marque à l'INPI](http://bases-marques.inpi.fr/Typo3_INPI_Marques/marques_fiche_resultats.html?index=1&refId=3937579_201246_fmark&y=0)&nbsp;: 240€.
 - on a payé un ami graphiste pour faire naître [Chuck](/2013/08/28/3d-pixel-art/), notre emblème&nbsp;: 500€.
