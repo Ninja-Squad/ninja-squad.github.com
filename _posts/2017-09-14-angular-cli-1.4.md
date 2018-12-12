@@ -14,11 +14,11 @@ Let's see what new features we have!
 
 ## Schematics
 
-The Google team has created [schematics](https://github.com/angular/devkit/tree/master/packages/angular_devkit/schematics),
+The Google team has created [schematics](https://github.com/angular/angular-cli/tree/master/packages/angular_devkit/schematics),
 a Yeoman-like generator.
 Angular CLI will now use this new tool to generate the application skeleton
 and the components, services, pipes...
-All the blueprints are now bundled in [`schematics/@angular`](https://github.com/angular/devkit/tree/master/packages/schematics/angular)
+All the blueprints are now bundled in [`schematics/@angular`](https://github.com/angular/angular-cli/tree/master/packages/schematics/angular)
 and have been removed from the CLI itself.
 
 Really interesting as it opens the possibility to have other blueprints than the official ones!

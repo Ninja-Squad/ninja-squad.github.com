@@ -17,7 +17,7 @@ Nous assurons nos formations sur Lyon, à Paris, ailleurs en France, et dans les
 - [**Devenez un ninja avec Git**](https://ninja-squad.fr/formations/formation-git)&nbsp;: lundi 21 - mardi 22 mars 2016 (Paris)
 - [**Angular&nbsp;: de Zéro à Ninja**](https://ninja-squad.fr/formations/formation-angular)&nbsp;: lundi 4 - mercredi 6 avril 2016 (Lyon)
 - [**Angular&nbsp;: de Zéro à Ninja**](https://ninja-squad.fr/formations/formation-angular)&nbsp;: lundi 11 - mercredi 13 avril 2016 (Paris)
-- [**Apprivoiser Java&nbsp;8**](https://ninja-squad.fr/formations/formation-java8)&nbsp;: lundi 2 mai 2016 (Lyon)
+- [**Apprivoiser Java&nbsp;8**](https://ninja-squad.fr/formations)&nbsp;: lundi 2 mai 2016 (Lyon)
 - [**Devenez un ninja avec Git**](https://ninja-squad.fr/formations/formation-git)&nbsp;: lundi 23 - mardi 24 mai 2016 (Lyon)
 
 # Un prix réduit pour les Héros&nbsp;!

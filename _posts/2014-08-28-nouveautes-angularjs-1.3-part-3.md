@@ -3,7 +3,7 @@ layout: post
 title: Les nouveautés d'AngularJS 1.3 - Part 3
 author: cexbrayat
 tags: ["javascript","AngularJS"]
-canonical: http://hypedrivendev.wordpress.com/2014/08/28/nouveautes-angularjs-1.3-part-3/
+canonical: http://hypedrivendev.wordpress.com/2014/08/28/nouveautes-angularjs-1_3-part-3/
 ---
 
 Nous poursuivons notre exploration des nouvelles features d'AngularJS 1.3!
@@ -152,4 +152,4 @@ Vous pouvez tester l'exemple dans [ce Plunker](http://plnkr.co/edit/u1JcxrqJgmNO
 
 Déjà une vingtaine de betas sont sorties pour cette version 1.3.0, on se rapproche de la sortie finale. Mais il reste probablement de quoi faire un dernier article avant celle-ci ;).
 
-_Article publié sur le [blog de Cédric](http://hypedrivendev.wordpress.com/2014/08/28/nouveautes-angularjs-1.3-part-3/ "Article original sur le blog de Cédric Exbrayat")_
+_Article publié sur le [blog de Cédric](http://hypedrivendev.wordpress.com/2014/08/28/nouveautes-angularjs-1_3-part-3/ "Article original sur le blog de Cédric Exbrayat")_

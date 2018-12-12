@@ -43,7 +43,7 @@ I think it's a great idea, because we will have a shared convention for project 
 Talking about eco-system, [Batarangle](https://github.com/rangle/batarangle), a chrome extension for inspecting Angular 2 apps, was demoed.
 On a todo app of course (it doesn't work yet with my Angular 2 apps).
 I think we will see other great tools like this one, as the architecture of Angular 2 allows being notified
-on every change and thus storing and replaying actions (a la [Elm Time Travel Debugger](http://debug.elm-lang.org/)).
+on every change and thus storing and replaying actions (a la [Elm Time Travel Debugger](https://elm-lang.org/blog/time-travel-made-easy)).
 We could also have detailed stats on performance to find the bottlenecks in our apps.
 
 # Modules
