@@ -10,11 +10,11 @@ Mon blog s'appelant [Hype Driven Development](http://hypedrivendev.wordpress.com
 de ne pas faire un article sur [JHipster](http://jhipster.github.io/), le générateur d'application full stack pour
 les hipsters du Java (avouez, c'est difficile de résister).
 
-Un générateur? Oui, un générateur [Yeoman](http://yeoman.io/). Vous avez peut être entendu parler
+Un générateur? Oui, un générateur [Yeoman](https://yeoman.io/). Vous avez peut être entendu parler
 de cet outil, fort pratique pour générer des squelettes de projets,
 par exemple pour commencer votre prochain projet Angular (c'est d'ailleur le générateur le plus connu).
 Yeoman fournit le moteur de base, et vous pouvez installer les générateurs qui vous intéressent.
-Il y en a [plein](http://yeoman.io/community-generators.html) et JHipster commence à être fort populaire.
+Il y en a [plein](https://yeoman.io/generators/) et JHipster commence à être fort populaire.
 
 JHipster est un générateur d'application Spring/AngularJS, et donne un projet tout bien
 configuré et prêt à démarrer en moins de 10 minutes,
@@ -39,7 +39,7 @@ avec quelques annotations dessus, et ça roule. Spring Boot ramène des copains 
 - [HikariCP](http://brettwooldridge.github.io/HikariCP/) pour le pool de connexion JDBC.
 - [Spring Security](http://projects.spring.io/spring-security/) pour la gestion des utilisateurs et de l'authentification.
 - [Joda Time](http://www.joda.org/joda-time/) pour la gestion des dates (ca devrait être inutile en Java 8).
-- [Metrics](http://metrics.codahale.com/) un framework de monitoring, développé par Yammer.
+- [Metrics](https://metrics.dropwizard.io) un framework de monitoring, développé par Yammer.
 - [Thymeleaf](http://www.thymeleaf.org/) si vous voulez faire des templates côté serveur.
 - les drivers de la base de données choisie (H2, PG ou MySQL).
 - [Liquibase](http://www.liquibase.org/) pour gérer les changements de schéma (très pratique comme outil).

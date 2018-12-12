@@ -41,7 +41,7 @@ But for others it resulted in massive gains!
 So it can be interested for you, especially if you are using Angular Material
 (check the comments of [this issue](https://github.com/angular/material2/issues/4137)).
 
-You can read more about how this feature works [here](https://github.com/angular/devkit/tree/master/packages/angular_devkit/build_optimizer).
+You can read more about how this feature works [here](https://github.com/angular/angular-cli/tree/master/packages/angular_devkit/build_optimizer).
 Be warned that it is experimental though, and can break your app, so be careful...
 
 ## Named chunks

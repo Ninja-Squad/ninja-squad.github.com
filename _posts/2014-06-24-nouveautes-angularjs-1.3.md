@@ -61,7 +61,7 @@ Vous pouvez jouer avec cette nouvelle fonctionnalité, et ses limites, avec ce [
 
 # Input date
 
-Jusqu'à maintenant, les formidables capacités d'AngularJS pour les formulaires permettaient de gérer la validation des types `text`, `number`, `email`, `url`, en s'appuyant sur les  [types d'input HTML5](http://www.whatwg.org/specs/web-apps/current-work/multipage/the-input-element.html) dans les navigateurs récents et en la simulant à l'aide d'un polyfill dans les autres. Plus besoin donc d'écrire vos propres expressions régulières, le travail est fait pour vous, et le framework se charge d'ajouter dynamiquement des classes CSS sur l'élément (par exemple `ng-invalid-email`) en cas de violation, ainsi que de maintenir une représentation de votre champ (et du formulaire plus globalement) en JS pour permettre de faire :
+Jusqu'à maintenant, les formidables capacités d'AngularJS pour les formulaires permettaient de gérer la validation des types `text`, `number`, `email`, `url`, en s'appuyant sur les  [types d'input HTML5](https://html.spec.whatwg.org/multipage/input.html#the-input-element) dans les navigateurs récents et en la simulant à l'aide d'un polyfill dans les autres. Plus besoin donc d'écrire vos propres expressions régulières, le travail est fait pour vous, et le framework se charge d'ajouter dynamiquement des classes CSS sur l'élément (par exemple `ng-invalid-email`) en cas de violation, ainsi que de maintenir une représentation de votre champ (et du formulaire plus globalement) en JS pour permettre de faire :
 
     <form name="userForm">
       <input name="email" type="email" ng-required="true" ng-model="user.email">

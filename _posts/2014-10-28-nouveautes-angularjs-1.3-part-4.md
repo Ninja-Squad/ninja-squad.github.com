@@ -3,7 +3,7 @@ layout: post
 title: Les nouveautés d'AngularJS 1.3 - Part 4
 author: cexbrayat
 tags: ["javascript","AngularJS"]
-canonical: http://hypedrivendev.wordpress.com/2014/10/28/nouveautes-angularjs-1.3-part-4/
+canonical: http://hypedrivendev.wordpress.com/2014/10/28/nouveautes-angularjs-1_3-part-4/
 ---
 
 Angular est [finalement sorti en version 1.3.0](http://angularjs.blogspot.fr/2014/10/angularjs-130-superluminal-nudge.html), près d'un an après la release de la 1.2.0. Pas mal de petites nouveautés sont disponibles et vous pouvez voir celles des premières bétas dans les articles précédents&nbsp;:
@@ -57,9 +57,9 @@ ne sera réévalué que si `prénom` ou `nom` change et pas à chaque cycle comm
 
 # ngAria
 
-Un autre module fait son apparition : après ngMessages, c'est au tour de ngAria, qui ajoute automatiquement les attributs d'accessibilité sur certaines directives si le module est présent (aria-hidden, aria-checked, aria-disabled, aria-required, aria-invalid, aria-multiline, aria-valuenow, aria-valuemin, aria-valuemax, tabindex). Il est possible de désactiver sélectivement celles que l'on veut.  
+Un autre module fait son apparition : après ngMessages, c'est au tour de ngAria, qui ajoute automatiquement les attributs d'accessibilité sur certaines directives si le module est présent (aria-hidden, aria-checked, aria-disabled, aria-required, aria-invalid, aria-multiline, aria-valuenow, aria-valuemin, aria-valuemax, tabindex). Il est possible de désactiver sélectivement celles que l'on veut.
 Plus d'excuses pour ne pas faire d'application Angular accessible&nbsp;!
 
 Vous pouvez bien sûr trouver toutes ces nouveautés et d'autres astuces dans notre [ebook à prix libre](https://books.ninja-squad.com).
 
-_Article publié sur le [blog de Cédric](http://hypedrivendev.wordpress.com/2014/10/28/nouveautes-angularjs-1.3-part-4/ "Article original sur le blog de Cédric Exbrayat")_
+_Article publié sur le [blog de Cédric](http://hypedrivendev.wordpress.com/2014/10/28/nouveautes-angularjs-1_3-part-4/ "Article original sur le blog de Cédric Exbrayat")_

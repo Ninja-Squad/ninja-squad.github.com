@@ -18,7 +18,7 @@ Bonne nouvelle! Nous avons de nouvelles dates de formation! Si tu es un fidèle 
 - 28 - 29 novembre, Paris
 - 9 - 10 décembre, Lyon (2 places restantes)
 
-[Maîtriser Java](https://ninja-squad.fr/formations/formation-javaAdvanced)
+[Maîtriser Java](https://ninja-squad.fr/formations)
 
 - 4 - 6 novembre, Paris
 - 2 - 4 décembre, Lyon

@@ -3,7 +3,7 @@ layout: post
 title: Getting Real
 author: cexbrayat
 tags: [book, lean]
-canonical: http://hypedrivendev.wordpress.com/2012/12/27/getting-real-a-book-review/
+canonical: https://hypedrivendev.wordpress.com/2012/12/28/getting-real-a-book-review/
 ---
 
 Cette semaine j'ai lu un livre que j'ai adoré&nbsp;: *Getting Real*. Sorti en 2005, il est probable que vous en ayez entendu parler. Il est écrit par la société *37 Signals*, startup américaine dont le produit phare est *Basecamp*, l'appli web de gestion de projet. Vous ne les connaissez peut être pas, mais ils sont également à l'origine du projet Ruby on Rails, rien que ça. Leur philosophie est de réaliser des applications web et de les sortir le plus rapidement possible pour obtenir le feedback utilisateur, d'où le titre. Et les 170 pages valent vraiment la lecture!
@@ -28,4 +28,4 @@ Tout ça me parle beaucoup, et la lecture de ce livre a été très motivante po
 
 Vous n'avez pas d'excuse pour ne pas le lire, il est gratuit sur [leur site](http://gettingreal.37signals.com/). Moi, après m'être flagellé pour avoir attendu aussi longtemps de le lire, je vais m'attaquer à [Rework](http://37signals.com/rework), leur deuxième best-seller!
 
-_Article publié sur le [blog de Cédric](http://hypedrivendev.wordpress.com/2012/12/27/getting-real-a-book-review/ "Article original sur le blog de Cédric Exbrayat")_
+_Article publié sur le [blog de Cédric](https://hypedrivendev.wordpress.com/2012/12/28/getting-real-a-book-review/ "Article original sur le blog de Cédric Exbrayat")_
