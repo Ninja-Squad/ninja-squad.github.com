@@ -9,7 +9,7 @@ tags: [devoxx, partner, bof, interview]
 
 Un des avantages de gérer sa propre entreprise, c'est qu'il devient ainsi facile pour nous développeurs de réclamer une place à sa direction : les négociations en sont très facilitées! :)
 
-Nous aurons ainsi non seulement la chance d'assister en spectateurs aux trois jours (université + conférence), mais nous co-animerons un <a href="http://en.wikipedia.org/wiki/Birds_of_a_Feather_(computing)" title="Définition d'un Birds of a Feather sur Wikipedia">BOF</a> intitulé ["Not Only SSII"](http://www.devoxx.com/display/FR13/BOF+Not+Only+SSII "Détail du BOF Not Only SSII à Devox France"), avec nos amis de [scopyleft](http://scopyleft.fr "Site de scopyleft") et de [Lateral Thoughts](http://www.lateral-thoughts.com "Site de Lateral Thoughts"). Il aura lieu le jeudi 28 mars à 21h à l'Auditorium.
+Nous aurons ainsi non seulement la chance d'assister en spectateurs aux trois jours (université + conférence), mais nous co-animerons un <a href="http://en.wikipedia.org/wiki/Birds_of_a_Feather_(computing)" title="Définition d'un Birds of a Feather sur Wikipedia">BOF</a> intitulé "Not Only SSII", avec nos amis de [scopyleft](http://scopyleft.fr "Site de scopyleft") et de [Lateral Thoughts](http://www.lateral-thoughts.com "Site de Lateral Thoughts"). Il aura lieu le jeudi 28 mars à 21h à l'Auditorium.
 
 Si nous animons ce BOF ensemble, c'est que nous partageons quelques valeurs, et l'envie de sortir du schéma traditionnel des SSIIs avec des sociétés coopératives gérées par des développeurs.
 
@@ -74,7 +74,7 @@ Avant de discuter ces projets avec vous à Devoxx, nous avions envie de vous les
 > En plus de nos missions de prestation,
 > - Olivier et Jonathan travaillent à monter une cellule autour du Big Data : LT-Data.
 > - Jonathan, Florent et Hugo travaillent sur leurs formation pour LT-Training.
-> - Hugo et Jean-Baptiste travaille sur le projet [hopwork.com](http://hopwork.com)
+> - Hugo et Jean-Baptiste travaille sur le projet HopWork, devenu [Malt](https://www.malt.com) depuis.
 > - et anecdote, Jean-Baptiste passe pas mal de temps aussi a réceptionner le courrier, le classer dans _Google Drive_ (accessible à tous : transparence absolue).
 > Nous nous retrouvons également régulièrement sur _Skype_ ou _Hangout_ afin de discuter et prendre ou modifier des décisions qui sont ensuite entérinées sur notre outil collaboratif [Agora](https://github.com/LateralThoughts/lt-agora).
 

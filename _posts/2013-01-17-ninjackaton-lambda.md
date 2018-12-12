@@ -6,7 +6,7 @@ tags: [ninjackaton, java, lambda]
 ---
 
 Ninja Squad fête déjà sa demi-année d’existence. Nous on est absolument ravi. Et on s’est dit qu’il n’y aurait rien de mieux que célébrer ce bonheur tous ensemble&nbsp;: ceux qui nous aiment (ou pas), ceux qui nous soutiennent, et même ceux qui ne nous connaissent pas.  
-Alors on organise un premier Ninjackaton mardi 12 février à 19h à [La Cordée de Charpennes](https://plus.google.com/107576172998205518534/about). Et c’est gratuit!
+Alors on organise un premier Ninjackaton mardi 12 février à 19h à La Cordée de Charpennes. Et c’est gratuit!
 
 ## Un Ninjackaton&nbsp;?
 On aurait pu imaginer faire la fête dans un grand raout de débauche. Mais on a préféré rendre ces événements utiles, pour que chacun y trouve son compte : on essaiera d’y partager des connaissances.  Si tout se passe aussi bien qu’on l’espère, il est probable que ces événements deviennent réguliers.

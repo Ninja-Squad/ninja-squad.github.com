@@ -35,7 +35,7 @@ Et bien non, nos activités parallèles et non rentables ont perduré, dans l'un
 - Et en bons adeptes de l'effervescence communautaire, plusieurs ninjas ont assuré des talks&nbsp;:
   - Cédric Exbrayat et Jean-Baptiste Nizet ont parlé [Java 8 et Lambdas](/2013/10/23/going-to-softshake/) à Softshake 2013.
   - Jean-Baptiste Nizet à fait un Lightning-Talk à MiXiT 2014, ["5 apprentissages pour le programmeur débutant"](/2014/05/02/mix-it-lightning-talk/).
-  - Agnès Crépet a présenté à Devoxx France 2014 et au LavaJUG ["Le Bon et le Mauvais Testeur"](http://www.parleys.com/play/535fa85be4b03397a8eee8e8) avec Guillaume Ehret.
+  - Agnès Crépet a présenté à Devoxx France 2014 et au LavaJUG ["Le Bon et le Mauvais Testeur"](https://www.youtube.com/watch?v=jCk2H0X82qM) avec Guillaume Ehret.
 
 Mais j'en vois qui s'impatientent au fond&nbsp;: trop de bla-bla. Ils sont venus là pour les chiffres, de la thune, du concret croustillant.
 
