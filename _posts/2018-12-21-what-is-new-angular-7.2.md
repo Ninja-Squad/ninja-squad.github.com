@@ -35,9 +35,33 @@ And boom! You have a new project that uses Bazel.
 You can then run the usual commands like `ng serve/build/test`,
 and they will not use the default CLI builders, but the Bazel ones.
 
-TODO doesn't work yet in beta.1
+This is still very experimental and early stage,
+so you will probably encounter various issues if you give it a try.
 
 ## Router
+
+### History state
+
+The router gains a new feature allowing to pass dynamic data to the component you want to navigate to,
+without adding them into the URL.
+This is currently handled by a shared service for example,
+but it can be cumbersome to have to create a service to just pass a few data.
+
+The router now uses the full capacity of the [Browser History API](https://developer.mozilla.org/en-US/docs/Web/API/History_API),
+and allows to pass a `state` property to `NavigationExtras`,
+the options that you can pass to some router methods, like `navigateByUrl`.
+
+    this.router.navigateByUrl('/user', { state: { orderId: 1234 } });
+
+or in a link, thanks to a new `state` input:
+
+    <a [routerLink]="/user" [state]="{ orderId: 1234 }">Go to user's detail</a>
+
+The state will be persisted to the browser's `History.state` property.
+Later, the value can be read from the router by using `getCurrentNavigation`:
+
+    const navigation = this.router.getCurrentNavigation();
+    this.orderId = navigation.extras.state ? navigation.extras.state.orderId : 0;
 
 ### New option for runGuardAndResolvers
 
@@ -59,9 +83,5 @@ but not if a matrix parameter changes.
 
 I think a configuration object with boolean switches for `path`, `query` or `matrix` parameters
 would make things clearer at that point 😅.
-
-### History state
-
-TODO
 
 All our materials ([ebook](https://books.ninja-squad.com/angular), [online training](https://angular-exercises.ninja-squad.com/) and [training](https://ninja-squad.com/training/angular)) are up-to-date with these changes if you want to learn more!
