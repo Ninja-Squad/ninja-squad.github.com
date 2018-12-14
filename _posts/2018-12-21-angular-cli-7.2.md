@@ -55,6 +55,20 @@ Now you can activate one or the other, as `optimization` can now take an object 
       "styles": true
     }
 
+### Build Event Log
+
+A new flag called `buildEventLog` has been added to `ng build`.
+This flag needs a filename as a parameter and will generate the specified file,
+with a timeline of the build events.
+Currently, running `ng build --build-event-log log.txt` generates:
+
+    {"id":{"started":{}},"started":{"command":"build","start_time_millis":1544793799294}}
+    {"id":{"finished":{}},"finished":{"finish_time_millis":1544793807037,"exit_code":{"code":0}}}
+
+As you can see, it only logs a `started` and `finished` events for now.
+This is heavily inspired by the [Build Event Protocol](https://docs.bazel.build/versions/master/build-event-protocol.html),
+and we will probably get a more detailed report in the future (this is probably introduced with the future Bazel build in mind).
+
 ## New flag for ng update
 
 A new `verbose` flag is available for this command to detail what exactly is going on and help debug potential issues.
@@ -68,6 +82,8 @@ The team took the occasion to deprecate a few flags from the CLI itself:
 - `evalSourceMap` in `ng build/serve` as it could be used to improve build performances, but isn't needed anymore.
 - `vendorSourceMap` in `ng build/serve`, as it has been replaced, see above.
 - `skipAppShell` in `ng build/serve` for a Web application as it had no effect.
+- `styleext` in `ng generate`, and should now be `style`. It is used to specify the extension of the style file of a new component (for example, `ng generate component user --style scss`).
+- `spec` in `ng generate`, and should now be `skipTests`. It is used to not generate tests (for example, `ng generate component user --skip-tests`).
 
 ## Flag override warning
 
