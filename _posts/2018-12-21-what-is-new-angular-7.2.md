@@ -18,6 +18,12 @@ Not a lot of new features in this release:
 the Angular team is still mainly focused on the Ivy project,
 rewriting the Angular compiler and runtime code to make it smaller, better, faster.
 
+## TypeScript 3.2 support
+
+One of the new features is the support of TypeScript 3.2,
+which is the latest release!
+You can check out what was introduced in [TypeScript 3.2](https://blogs.msdn.microsoft.com/typescript/2018/11/29/announcing-typescript-3-2/)
+on the Microsoft blog.
 
 ## ng new with Bazel support!
 
@@ -34,6 +40,7 @@ And boom! You have a new project that uses Bazel.
 
 You can then run the usual commands like `ng serve/build/test`,
 and they will not use the default CLI builders, but the Bazel ones.
+Note that all the usual flags and options of the CLI are not yet supported right now.
 
 This is still very experimental and early stage,
 so you will probably encounter various issues if you give it a try.
@@ -63,10 +70,10 @@ Later, the value can be read from the router by using `getCurrentNavigation`:
     const navigation = this.router.getCurrentNavigation();
     this.orderId = navigation.extras.state ? navigation.extras.state.orderId : 0;
 
-### New option for runGuardAndResolvers
+### New options for runGuardAndResolvers
 
 This is not a left over copy/paste from the [7.1 article](/2018/11/22/what-is-new-angular-7.1):
-there is another new option for `runGuardsAndResolvers` in 7.2!
+there are other new options for `runGuardsAndResolvers` in 7.2!
 
 `runGuardsAndResolvers` is one of the configuration options for a route,
 allowing to define when the guards and the resolvers will be run for this route.
@@ -83,5 +90,15 @@ but not if a matrix parameter changes.
 
 I think a configuration object with boolean switches for `path`, `query` or `matrix` parameters
 would make things clearer at that point 😅.
+
+But *another* new possibility in 7.2 is to define your own predicate function
+to indicate to `runGuardsAndResolvers` if it should run the guards and resolvers.
+The function should look like `(from: ActivatedRouteSnapshot, to: ActivatedRouteSnapshot) => boolean`,
+for example:
+
+    runGuardsAndResolvers: (from: ActivatedRouteSnapshot, to: ActivatedRouteSnapshot)
+      => to.paramMap.get('query') !== from.paramMap.get('query')
+
+In that case, the guards and resolvers will only run if the `query` param changed.
 
 All our materials ([ebook](https://books.ninja-squad.com/angular), [online training](https://angular-exercises.ninja-squad.com/) and [training](https://ninja-squad.com/training/angular)) are up-to-date with these changes if you want to learn more!
