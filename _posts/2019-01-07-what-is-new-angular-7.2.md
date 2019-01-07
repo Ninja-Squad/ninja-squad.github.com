@@ -3,13 +3,13 @@ layout: post
 title: What's new in Angular 7.2?
 author: cexbrayat
 tags: ["Angular 7", "Angular 6", "Angular 5", "Angular", "Angular 2", "Angular 4"]
-description: "Angular 7.2 is out! Read about the new Bazel support and more!"
+description: "Angular 7.2 is out! Read about the new Bazel support, TS 3.2 and more!"
 ---
 
 Angular&nbsp;7.2.0 is here!
 
 <p style="text-align: center;">
-  <a href="https://github.com/angular/angular/blob/master/CHANGELOG.md#TODO">
+  <a href="https://github.com/angular/angular/blob/master/CHANGELOG.md#720-2019-01-07">
     <img class="rounded img-fluid" style="max-width: 100%" src="/assets/images/angular.png" alt="Angular logo" />
   </a>
 </p>
@@ -29,7 +29,7 @@ on the Microsoft blog.
 
 I was mentioning in [our article about Angular 7.1](/2018/11/22/what-is-new-angular-7.1) that the [Bazel](https://bazel.build/) support was making progress,
 and this 7.2 release brings a cool new feature.
-It's more a new CLI feature and maybe should be mentioned in [my blog post about "What's new in Angular CLI 7.2"](/2018/12/TODO/angular-cli-7.2), but the code of `@angular/bazel` lives in the Angular repo and not in the CLI repo.
+It's more a new CLI feature and maybe should be mentioned in my upcoming blog post about "What's new in Angular CLI 7.2", but the code of `@angular/bazel` lives in the Angular repo and not in the CLI repo.
 
 This new feature is the possibility to generate a new project with Bazel build! 🚀
 
@@ -40,7 +40,7 @@ And boom! You have a new project that uses Bazel.
 
 You can then run the usual commands like `ng serve/build/test`,
 and they will not use the default CLI builders, but the Bazel ones.
-Note that all the usual flags and options of the CLI are not yet supported right now.
+Note however that all the usual flags and options of the CLI are not supported yet.
 
 This is still very experimental and early stage,
 so you will probably encounter various issues if you give it a try.
@@ -51,7 +51,7 @@ so you will probably encounter various issues if you give it a try.
 
 The router gains a new feature allowing to pass dynamic data to the component you want to navigate to,
 without adding them into the URL.
-This is currently handled by a shared service for example,
+This could be done by using a shared service,
 but it can be cumbersome to have to create a service to just pass a few data.
 
 The router now uses the full capacity of the [Browser History API](https://developer.mozilla.org/en-US/docs/Web/API/History_API),
