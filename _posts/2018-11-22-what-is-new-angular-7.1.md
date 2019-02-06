@@ -26,7 +26,7 @@ containing the stepping stones for building our Angular applications with [Bazel
 It also contains a schematics collection (with a target currently called `bazel-workspace`) to generate the necessary files in an Angular CLI application.
 
     npm i -g @angular/bazel
-    npm generate @angular/bazel:bazel-workspace my-app // adds the Bazel build files to a CLI project
+    ng generate @angular/bazel:bazel-workspace my-app // adds the Bazel build files to a CLI project
 
 I guess that in a near future, we should be able to directly generate a CLI app with Bazel build
 (something like `ng new my-app --collection=@angular/bazel`).
