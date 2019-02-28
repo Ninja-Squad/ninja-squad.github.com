@@ -68,7 +68,7 @@ When we develop a backend with a REST API, we try to document it as cleanly as p
 [Spring REST Docs](https://spring.io/projects/spring-restdocs) is a great help to do so.
 You can write a really nice documentation only using Asciidoc and tests.
 For example, you can check out the documentation of the REST API we wrote for our Angular trainings:
-http://ponyracer.ninja-squad.com/apidoc.
+[ponyracer.ninja-squad.com/apidoc](http://ponyracer.ninja-squad.com/apidoc).
 
 The current DSL is not really designed for Kotlin though, so, you know what?
 Yep, Jean-Baptiste wrote another open-source library:
