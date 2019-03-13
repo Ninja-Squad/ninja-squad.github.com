@@ -35,16 +35,16 @@ This is not the only perk:
 the application will also start very fast
 as the assets are cached for offline use.
 
-We tried to push things a little bit more and used the [`SwUpdate`](https://angular.io/api/service-worker/SwUpdate) service offered by the `@angular/pwa` package to display a notification to our users when a new version of the applciation is available.
+We tried to push things a little further and used the [`SwUpdate`](https://angular.io/api/service-worker/SwUpdate) service offered by the `@angular/pwa` package to display a notification to our users when a new version of the application is available.
 This is because the application is displayed right away from cache when a user loads it, and then the Service Worker checks if a new version is available.
 If that's the case, [`SwUpdate.available`](https://angular.io/api/service-worker/SwUpdate#properties) emits a new event,
 and you can ask your user if he/she wants to refresh the page to use the new version.
-This works great even we ran into an Angular issue, that [we documented](https://github.com/angular/angular/commit/353362f5a4ce14e91cc96359a990013f10747b47) as good open source citizens 😉
+We had a weird issue, but we figured it out, and, as good open source citizens, [we documented it](https://github.com/angular/angular/commit/353362f5a4ce14e91cc96359a990013f10747b47) 😉.
 
 ## Leaflet and ngx-leaflet
 
 We needed to display a map in several places in the application,
-with pins for location of the issues reported for example.
+with pins marking the locations of the reported issues.
 Our customer really wanted to use Open Street Map,
 so Google Maps was not an option.
 We went with [Leaflet](https://leafletjs.com/) and found [ngx-leaflet](https://github.com/Asymmetrik/ngx-leaflet),
@@ -59,6 +59,8 @@ and we did not regret to use it!
         [leafletFitBounds]="mapFitBounds"
         [leafletLayers]="mapMarkers">
     </div>
+
+Kudos to [Asymmetrik](https://github.com/Asymmetrik) and [Ryan Blace](https://github.com/reblace) for maintaining it!
 
 ## Bootstrap and ng-bootstrap
 
