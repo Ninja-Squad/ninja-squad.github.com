@@ -97,4 +97,4 @@ This is what part of our `docker-compose.yml` file looks like:
 
 MailHog gives you a SMTP testing server (that doesn't really send emails) with a Web UI allowing to check the emails sent (looks like a classic email client inbox, but you see all the emails sent). Very handy!
 
-Check out [part 2 about the frontend](/2019/03/14/cool-things-we-learned-part-2-frontend-edition/)!
+Check out [part 2 about the frontend](/2019/03/15/cool-things-we-learned-part-2-frontend-edition/)!
