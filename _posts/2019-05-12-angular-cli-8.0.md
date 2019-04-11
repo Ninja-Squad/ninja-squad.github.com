@@ -38,7 +38,7 @@ Note that this must be the exact syntax for now(TODO still the case in final rel
 and you must use an arrow function, and `m` as the variable name.
 The `import` feature was introduced in [TypeScript 2.4](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-4.html).
 If you want to use `import` in your CLI project,
-you need to be enabled it by using `"module": "exnext"`
+you must enable it by using `"module": "exnext"`
 in the root `tsconfig.json` file
 and adding `"experimentalImportFactories": true"` to your
 `angularCompilerOptions`.
@@ -62,7 +62,7 @@ You can still use `node-sass` if you wish, by installing it explicitely.
 ## Ivy support
 
 You probably know that the main feature in Angular 8.0  is Ivy.
-The CLI provides a switch to give a try.
+The CLI provides a switch to give it a try.
 You can test it in a new project with:
 
     ng new project --enable-ivy
@@ -105,6 +105,8 @@ containing the following boilerplate code:
       postMessage(response);
     });
 
+That's where you would put your heavy code computation.
+
 and adds this other boilerplate code to your `PictureComponent`:
 
     if (typeof Worker !== 'undefined') {
@@ -121,10 +123,15 @@ and adds this other boilerplate code to your `PictureComponent`:
 
 to get you started.
 
+The sample posts a simple string,
+but you can post an object or an array.
+It will be serialized and then deserialized so the worker receives a copy.
+TODO update snippet if https://github.com/angular/angular-cli/pull/14132 lands
+
 The schematic will also configure your CLI project
 if this is the first time you add a Web Worker.
 It will exclude the `worker.ts` files from your main TypeScript configuration,
-and two new TypeScript configurations named `src/tsconfig.json` and `src/tsconfig.worker.json`. The former adds `webworker` to the `lib` section,
+and add two new TypeScript configurations named `src/tsconfig.json` and `src/tsconfig.worker.json`. The former adds `webworker` to the `lib` section,
 and the latter handles the `worker.ts` file.
 The `angular.json` file is also modified to add:
 
@@ -138,7 +145,7 @@ via `@angular/platform-webworker`, which is not yet supported in Angular CLI.
 ## Usage analytics data
 
 The CLI can now collect usage analytics data.
-If you opt-in, some stats are collected and send to the CLI team,
+If you opt-in, some stats are collected and sent to the CLI team,
 to help them prioritize features and improvements.
 You can't really miss this new feature,
 as you'll be asked after installing the new CLI version globally 🧐.
