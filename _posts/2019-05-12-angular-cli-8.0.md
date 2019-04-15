@@ -17,12 +17,12 @@ You have no excuse for staying behind anymore!
 
 Let's see what we've got in this release!
 
-## Angular 8 and TypeScript 3.3 (TODO 3.4?) support
+## Angular 8 and TypeScript 3.4 support
 
 This was obviously expected: Angular 8.0 is now supported by the CLI.
-Note that as Angular 8.0 now requires TypeScript 3.3 (TODO 3.4?),
+Note that as Angular 8.0 now requires TypeScript 3.4,
 you will need to also update your TypeScript version.
-You can checkout out what TypeScript 3.3 brings [on the Microsoft blog](TODO link to 3.3 and maybe 3.4 if supported).
+You can checkout out what [TypeScript 3.3](https://devblogs.microsoft.com/typescript/announcing-typescript-3-3/) and [TypeScript 3.4](https://devblogs.microsoft.com/typescript/announcing-typescript-3-4/) brings on the Microsoft blog.
 
 The CLI now also supports the new style of lazy-loading declarations using TypeScript `import`, introduced in Angular 8.0. It is even required if you want to use Ivy (see below).
 
@@ -118,7 +118,7 @@ and adds this other boilerplate code to your `PictureComponent`:
       // Create a new
       const worker = new Worker('./picture.worker', { type: 'module' });
       worker.onmessage = ({ data }) => {
-        console.log('page got message: $\{data\}');
+        console.log(`page got message: ${data}`);
       };
       worker.postMessage('hello');
     } else {
@@ -131,7 +131,6 @@ to get you started.
 The sample posts a simple string,
 but you can post an object or an array.
 It will be serialized and then deserialized so the worker receives a copy.
-TODO update snippet if https://github.com/angular/angular-cli/pull/14132 lands
 
 The schematic will also configure your CLI project
 if this is the first time you add a Web Worker.
