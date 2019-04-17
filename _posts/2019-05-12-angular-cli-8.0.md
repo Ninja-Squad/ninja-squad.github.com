@@ -19,7 +19,7 @@ Let's see what we've got in this release!
 
 ## Angular 8 and TypeScript 3.4 support
 
-This was obviously expected: Angular 8.0 is now supported by the CLI.
+This was obviously expected: Angular 8.0 is now supported, and even required, by the CLI.
 Note that as Angular 8.0 now requires TypeScript 3.4,
 you will need to also update your TypeScript version.
 You can checkout out what [TypeScript 3.3](https://devblogs.microsoft.com/typescript/announcing-typescript-3-3/) and [TypeScript 3.4](https://devblogs.microsoft.com/typescript/announcing-typescript-3-4/) brings on the Microsoft blog.
@@ -42,6 +42,76 @@ you must enable it by using `"module": "exnext"`
 in the root `tsconfig.json` file
 and adding `"experimentalImportFactories": true"` to your
 `angularCompilerOptions`.
+
+If you updated your CLI version by running `ng update @angular/cli` you won't even have to do it manually,
+as an update schematic will automatically take care of it for you!
+
+## Differential loading
+
+This is one of the cool new features of the CLI 8.0.
+as it allows to specify which browsers you want to target,
+and the CLI will automatically build the necessary JS bundles with the necessary polyfills for your targets.
+
+A first step was done in this direction with
+[CLI 7.3](/2019/01/31/angular-cli-7.3) and its conditional ES5 browser polyfill loading.
+This release goes one step further.
+
+The default target in `tsconfig.json` is now `es2015`
+which means the default target of `ng build` is now the modern browsers that support ES6 features.
+But if you need to support older browsers like IE9 or the Google Bot (which still use an old Chrome version),
+then you can specify it by using the `browserslist` file.
+This file already exists in your CLI project but was use for the CSS part only.
+It is now also used for the JS generation.
+
+The default content is:
+
+    > 0.5%
+    last 2 versions
+    Firefox ESR
+    Chrome 41 # Support for Googlebot
+    not dead
+    not IE 9-11 # For IE 9-11 support, remove 'not'.
+
+You can check out the details on the [browserslist repo](https://github.com/browserslist/browserslist),
+but a cool trick is to run:
+
+    npx browserslist
+
+in your project to see what your current `browserlist` configuration actually means 🚀.
+Or you can also check https://browserl.ist/ and enter your query.
+
+The CLI uses this configuration to generate only one "modern" build if you only target modern browsers,
+or build the application twice if you asked for IE 9-11 support for example.
+The `dist` directory then contains the same bundle twice after `ng build --prod`:
+
+    index.html
+    main-es2015.407919b7ee8dd339e9bc.js      // smaller version
+    main-es5.145b0a190c32187f268c.js         // slightly bigger one
+    polyfills-es2015.40c67a1b836fd165fb67.js // 43Kb
+    polyfills-es5.b96063cf2c012927fe18.js    // 110Kb
+    runtime-es2015.293c0dc955d5bcd5c818.js   // same size
+    runtime-es5.645890afb0d6a6596d07.js      // same size
+
+The `index.html` file references all of them,
+but the `es5` scripts are marked with the `nomodule` attribute,
+and the `es2015` scripts have a `type="module"` attribute.
+The `nomodule` attribute indicates to modern browsers (that supports ECMAScript modules)
+to ignore this script,
+so they are not even fetched on modern browsers.
+And the older browsers will ignore the scripts with `type="module"`.
+So each browser loads only what it really needs,
+with only older browsers downloading the extra JS needed.
+
+The default configuration is the recommend one,
+and will trigger the two builds.
+You currently have to set a very restricted query to only have the `es2015` build,
+like `> 4%` (to get rid of UC Browser for Android which is [still used a lot](https://caniuse.com/usage-table)).
+
+Note that `core-js` has been updated to v3,
+and is now directly handled by the CLI itself,
+so it's no longer needed as a dependency of your application.
+Also the property `es5BrowserSupport` introduced
+in CLI 7.3 is now unnecessary and has been deprecated.
 
 ## dart-sass replaces node-sass
 
