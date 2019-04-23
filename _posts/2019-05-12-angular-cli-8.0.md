@@ -205,11 +205,11 @@ It will be serialized and then deserialized so the worker receives a copy.
 The schematic will also configure your CLI project
 if this is the first time you add a Web Worker.
 It will exclude the `worker.ts` files from your main TypeScript configuration,
-and add two new TypeScript configurations named `src/tsconfig.json` and `src/tsconfig.worker.json`. The former adds `webworker` to the `lib` section,
-and the latter handles the `worker.ts` file.
+and add a new TypeScript configuration named `tsconfig.worker.json`
+that handles the `worker.ts` file.
 The `angular.json` file is also modified to add:
 
-    "webWorkerTsConfig": "src/tsconfig.worker.json"
+    "webWorkerTsConfig": "tsconfig.worker.json"
 
 Then, when you'll run `ng build`, the CLI will package the Web Worker in a dedicated bundle (using [googlechromelabs/worker-plugin](https://github.com/googlechromelabs/worker-plugin)).
 
