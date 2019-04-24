@@ -280,7 +280,8 @@ After NPM and Yarn, The CLI now supports another package manager: [PNPM](https:/
 This is just a note about the internals of the CLI.
 The Architect API, responsible for running pretty much everything under the hood,
 has been completely overhauled.
-Check out this [blog post](TODO) on the official Angular blog if you want to learn more about it.
+Check out this [blog post](https://blog.angular.io/introducing-cli-builders-d012d4489f1b)
+on the official Angular blog if you want to learn more about it.
 
 As you can see, this 8.0 release was packed with new features!
 
