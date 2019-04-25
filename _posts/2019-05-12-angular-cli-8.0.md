@@ -140,15 +140,11 @@ You can test it in a new project with:
 
     ng new project --enable-ivy
 
-Or in a existing project by adding the following option in your `tsconfig.json` file:
+Or in a existing project by adding the following option in your `tsconfig.app.json` file:
 
     "angularCompilerOptions": {
       "enableIvy": true
     }
-
-and in `angular.json`, add change your lazy routes declaration as explained above.
-The CLI team also offers to add `"aot": true` in your default build configuration in `angular.json`,
-because they think Ivy will achieve fast rebuilds, fast enough to use AoT in development with `ng serve`.
 
 When using Ivy, you need to compile your third party Angular modules with `ngcc` (the Angular Compatibility Compiler).
 This tool generates the code necessary to compile your application with Ivy enabled (by generating the `ngComponentDef` field, `ngModuleDef` field, etc. for each dependency you use).
