@@ -35,7 +35,7 @@ That's why a big part of Angular is its compiler:
 it takes all your HTML and generates the JS code necessary.
 This compiler (and the runtime) has been completely rewritten over the last year,
 and this is what Ivy is about.
-Thi is not the first rewrite:
+This is not the first rewrite:
 Ivy stands for 'IV', 4 in roman numbers.
 The last time was in Angular 4.0,
 and maybe you did not even noticed it 😊.
@@ -49,7 +49,7 @@ Ivy is a very important stepping stone in the Angular history.
 It changes how the framework internally works,
 without changing how we write Angular applications.
 
-If the parallel makes some sense for you, it's very similar to React and the "Fiber rewrite".
+If the parallel makes some sense to you, it's very similar to React and the "Fiber rewrite".
 React Fiber was a complete rewrite of React internals,
 and notably offered a more incremental rendering.
 The rewrite lasted over a year, and opened the door to new features
@@ -202,11 +202,11 @@ Now each component references the directives and components it uses only by thei
 So if you modify an internal detail of a component or a directive,
 only the actual components that use it will be recompiled!
 It could lead to huge benefits in rebuild times for applications with dozens of components and directives,
-as you will go to recompile all of them to recompile just the needed ones.
+as you will go from recompiling all of them to recompile just the needed ones.
 
 Let's take an example with our `PonyComponent` that declares its input like this:
 
-    @Input('pony) ponyModel: PonyModel;
+    @Input('pony') ponyModel: PonyModel;
 
 This is a common technic to have an internal field (`this.ponyModel`) exposed as a public property with a different name (`pony`).
 So when a component uses `PonyComponent` in its template, it looks like:
@@ -252,9 +252,9 @@ you had to reference manually each component and directive used
 in a component directly in its decorator.
 Modules were introduced to avoid that, but the downside was that it become the smallest unit of compilation:
 changing one element of the module lead to recompile all the elements of the module.
-You can see how the code generated in Ivy take us back to what was originally designed by the Angular team,
-with a `directives` property generatedin the `ngComponentDef` field .
-I also heard the team talk about changing/removing modules one day in various conferences,
+You can see how the code generated in Ivy takes us back to what was originally designed by the Angular team,
+with a `directives` property generated in the `ngComponentDef` field.
+I also heard the team talking about changing/removing modules one day in various conferences,
 so we'll see.
 
 
@@ -275,13 +275,13 @@ For the medium to large applications,
 the situation should not change much with the first release of Ivy.
 The bundles should be roughly the same sizes (or even slightly bigger) as they are with View Engine.
 The Angular team will have time to focus on that once they are sure that there is no regression with Ivy,
-and we can hope for smaller bundles in every cases in the future.
+and we can hope for smaller bundles in every case in the future.
 
 
 ## Runtime performances
 
 Ivy has no particular focus on performances, at least not in the first release.
-It has been designed to be very efficient memory-wise, some mecanics have been improved,
+It has been designed to be very efficient memory-wise, some mechanics have been improved,
 and it's still designed to avoid mega-morphic calls,
 but overall you should not see big improvements or losses.
 If you spot some performance loss, the team will probably be very happy to hear about it.
@@ -321,7 +321,7 @@ they usually ship the JavaScript code resulting from the compilation.
 And Ivy needs these static fields to properly work,
 so are we stuck until every library we use ship the new version?
 
-Hopefuly no, we aren't 😊.
+Hopefully no, we aren't 😅.
 The Angular team built a "compatibility compiler", `ngcc`.
 This compiler has one critical task:
 it takes the `node_modules` of your application,
