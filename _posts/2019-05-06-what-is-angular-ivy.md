@@ -32,14 +32,14 @@ It will be compiled by Angular into JavaScript instructions,
 to create the appropriate DOM when the component appears on the page,
 and to update the component when its state changes.
 That's why a big part of Angular is its compiler:
-it takes all your HTML and generates the JS code necessary.
+it takes all your HTML and generates the necessary JS code.
 This compiler (and the runtime) has been completely rewritten over the last year,
 and this is what Ivy is about.
 This is not the first rewrite:
 Ivy stands for 'IV', 4 in roman numbers.
-The last time was in Angular 4.0,
+The last rewrite was done in Angular 4.0,
 and maybe you did not even noticed it 😊.
-But this is by far the deepest rewrite of the internals since Angular initial release:
+But this is by far the deepest rewrite of the internals since the initial release of Angular:
 the Angular team is literally changing the engine (previously called View Engine) while driving.
 
 
@@ -71,14 +71,14 @@ Ivy aims to be compatible with the existing applications:
 it will just be a switch to turn on for most projects.
 
 But it can happen that Ivy does not have the exact same behavior for some edge cases.
-To avoid breaking application when we'll switch to Ivy,
+To avoid breaking applications when we switch to Ivy,
 the Angular team wrote migration scripts (update schematics) to analyze your code
 and prepare it for Ivy if necessary.
 So when you'll update to Angular 8,
 the schematics will run and tweak a few things in your code to be "Ivy-ready"
 when the time comes.
 The plan is to enable Ivy by default in the future,
-probably in V9 or v10.
+probably in V9.
 
 
 ## Differences in generated code
@@ -158,7 +158,7 @@ than a `ng_factory` (a creation and update part)
 but uses different instructions.
 
 But the biggest difference is probably the new *locality principle*.
-This could make a big difference when developping an Angular application,
+This could make a big difference when developing an Angular application,
 and cut rebuild times.
 But it also allows to ship pre-compiled code to NPM directly!
 
@@ -176,14 +176,14 @@ It means that if an application used 3 libraries with 10 components each,
 and the application itself had 50 components,
 `ng build` was compiling 80 components.
 
-With Ivy, as you may have understand,
+With Ivy, as you may have understood,
 there are no `ng_factory.js` or `metadata.json` files anymore.
 It means that, as a library author,
 you can directly ship to NPM the compiled JS code,
 with the result of the Ivy compilation
 (with the static fields generated for each component, directive, service...).
 
-Then when someone will build an application with your "Ivy-ready" library,
+Then when someone builds an application with your "Ivy-ready" library,
 they won't pay the cost of compiling the components of your library!
 This should speed up the rebuild times in the development cycle,
 when we have `ng serve` running and we wait to check a modification we did.
@@ -208,7 +208,8 @@ Let's take an example with our `PonyComponent` that declares its input like this
 
     @Input('pony') ponyModel: PonyModel;
 
-This is a common technic to have an internal field (`this.ponyModel`) exposed as a public property with a different name (`pony`).
+It's a common technique to have a property (`this.ponyModel`)
+exposed as an input with a different name (`pony`).
 So when a component uses `PonyComponent` in its template, it looks like:
 
     <ns-pony [pony]="myPony"></ns-pony>
@@ -236,13 +237,24 @@ It may not look like much a difference,
 but View Engine only references the private field,
 and not its public name.
 
-This is the locality principle:
-in Ivy, the generated code of a component only references other entities by their public interfaces,
-and not by their implementation details.
-So now, if you rename the internal field during development,
-Ivy just has to recompile `PonyComponent`,
-not all the components that use `PonyComponent`
-as View Engine did.
+This is the locality principle.
+To compile an `AppComponent` that uses `PonyComponent` in its template,
+Ivy doesn't need to know anything about the pony component.
+The output of the Ivy compiler for `Appcomponent`
+depends exclusively on the code of `AppComponent`.
+
+That was not true in ViewEngine,
+where the code generated for the `AppComponent`
+also depended on the code of the `PonyComponent`
+(in this example, on the name of the field `ponyModel` backing the input `pony`).
+
+That seems like an implementation detail,
+but it has consequences on the rebuild time:
+if you have 200 components in your app and you're changing the code of 3 of those components,
+the Ivy compiler only has to recompile those 3 components.
+It doesn't need to recompile all of the unmodified components,
+because their generated code is guaranteed
+to not depend on the code of the modified components anymore.
 
 A little trivia of Angular history:
 modules were introduced fairly lately in Angular development,
@@ -250,7 +262,7 @@ just a few months before the stable release.
 Previously, during the 2.0 beta phase,
 you had to reference manually each component and directive used
 in a component directly in its decorator.
-Modules were introduced to avoid that, but the downside was that it become the smallest unit of compilation:
+Modules were introduced to avoid that, but the downside was that it became the smallest unit of compilation:
 changing one element of the module lead to recompile all the elements of the module.
 You can see how the code generated in Ivy takes us back to what was originally designed by the Angular team,
 with a `directives` property generated in the `ngComponentDef` field.
@@ -260,7 +272,7 @@ so we'll see.
 
 ## Bundle sizes
 
-The new instruction set has be designed to achieve the goals mentioned above.
+The new instruction set has been designed to achieve the goals mentioned above.
 More accurately, it has been designed to be completely tree-shakeable.
 That means if you don't use a particuliar feature of Angular,
 the instructions corresponding to that feature won't be in your final bundle.
@@ -302,17 +314,17 @@ when it was introduced in [Angular 5](/2017/11/02/what-is-new-angular-5/).
 This option is now more powerful in Ivy,
 and will probably be even more powerful in the future.
 
-For example, one of the feature already available in Ivy
+For example, one of the features already available in Ivy
 is the type-checking of component and directive inputs.
 Imagine an `ImageComponent` with an input called `size`, of type `number`.
-If another component uses `ImageComponent` and try to pass a boolean value into the `size` property,
+If another component uses `ImageComponent` and tries to pass a boolean value into the `size` property,
 you'll see the error: `Type 'boolean' is not assignable to type 'number'.`.
 
 This is a just an example of what Ivy will be capable of,
 and these features are very interesting for large applications.
 
 
-## Retro-compatibility
+## Backward compatibility
 
 I explained that the Ivy compiler takes the decorators in your TypeScript code,
 and then generates a static field in the class.
@@ -347,7 +359,7 @@ When it will be stable enough,
 it will become the default.
 And then the team can start working on adding other features more easily.
 Like the [i18n service](https://github.com/angular/angular/issues/11405),
-probably one of the most awaited feature.
+probably one of the most awaited features.
 Or the possibility to have [metaprogramming or higher order components](https://blog.nrwl.io/metaprogramming-higher-order-components-and-mixins-with-angular-ivy-75748fcbc310).
 Or to lazy-load a single component instead of a module.
 Or to have JiT components and AoT components work with each other.
@@ -357,6 +369,6 @@ And probably tons of other ideas the team has,
 and have not talked about yet.
 
 I hope this clarified a bit what Ivy is about,
-and that you'll give a try in the next months!
+and that you'll give it a try in the next months!
 
 All our materials ([ebook](https://books.ninja-squad.com/angular), [online training](https://angular-exercises.ninja-squad.com/) and [training](https://ninja-squad.com/training/angular)) are up-to-date with these changes if you want to learn more!
