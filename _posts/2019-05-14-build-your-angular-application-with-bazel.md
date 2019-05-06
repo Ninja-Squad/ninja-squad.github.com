@@ -16,9 +16,9 @@ The Angular framework itself is built with Bazel.
 
 The key advantages of Bazel are:
 
-- the possibility of building your backends and frontends with the same tool.
+- the possibility of building your backends and frontends with the same tool
 - the incremental build and tests
-- the possibility to have remote builds on a build farm
+- the possibility to have remote builds (and cache) on a build farm
 
 The second point is the most useful for most developers.
 Bazel allows you to declare tasks with clear inputs and outputs.
@@ -28,8 +28,11 @@ depending on which inputs changed since the last run
 (very similar to what [Gradle](https://gradle.org/) does in the Java world).
 This can bring impressive gains on rebuild times.
 
-Be warn though: the first build will be painfully slow,
-as Bazel is aiming for exactly reproducible builds.
+This [talk by Alex Eagle at ng-conf 2019](https://www.youtube.com/watch?v=J1lnp-nU4wM)
+can be interesting to learn more about what Bazel can do.
+
+Be warned though: the first build will be painfully slow,
+as Bazel is aiming for exactly reproductible builds.
 For example, if you launch your tests on Firefox,
 it will download a complete version of Firefox,
 to make sure all developers are running the tests in the exact same browser!
@@ -63,16 +66,18 @@ to generate a new application already configured for Bazel:
 The generated application is very similar to a "classic" Angular CLI project,
 with a few different files:
 
-- the `angular.json` files references builders from `@angular/bazel` to build, serve and test the application. Note that the classic `angular.json` file is backed up as `angular.json.bak`.
-- a script called `protractor.on-prepare.js` is added to configure Protractor in the e2e project
+- the `angular.json` file references builders from `@angular/bazel` to build, serve and test the application. Note that the classic `angular.json` file is backed up as `angular.json.bak`.
+- a script called `protractor.on-prepare.js` is added to configure Protractor in the e2e project.
 - a file called `initialize_testbed.ts` configures the unit tests (equivalent to the classic `test.ts` file).
 - the `tsconfig.json` file is slightly tweaked, and the original is backed up in `tsconfig.json.bak`.
 - a file called `angular-metadata.tsconfig.json` is added for the Angular compiler.
 - a file named `rxjs_shims.js`.
-- to files named `main.dev.ts` and `main.prod.ts`.
+- two files named `main.dev.ts` and `main.prod.ts`.
 
 You won't see any Bazel files added, and that might seems strange,
-but the CLI actually keep them in memory.
+but the CLI actually keeps them in memory.
+If at any time you want to go back,
+simply restore the `.bak` files and delete the new ones.
 
 It also adds a bunch of dependencies to your application:
 - `@angular/bazel`, the Bazel builders for Angular CLI
@@ -83,6 +88,9 @@ It also adds a bunch of dependencies to your application:
 
 Once the application is generated, you can use the usual commands:
 `ng serve`, `ng test` and `ng build` but now they use Bazel!
+Note that all commands run with AoT compilation,
+whereas in the "classic" CLI
+you have to turn it on explicitely.
 
 
 ## Adding Bazel to an existing project
@@ -263,8 +271,14 @@ where you have multiple modules and libraries depending on each others.
 In that case, the rebuild times will be greatly improved,
 as Bazel will analyze the graph and only rebuild what's necessary.
 But it's also in that case that the setup is going to take a lot of time.
+
 It will probably be easier to setup in the future though,
 as the Angular team is still working on this.
+Bazel should reach 1.0 around September
+and we can hope for more auto-configuration
+(for setting up lazy-laoding for example).
+Keep in mind that Bazel is still considered an experiment,
+and has the "Labs" label.
 At the time of writing, Bazel is impressive but still for the thrill seekers!
 
 If you want to learn more about Angular, check out our ([ebook](https://books.ninja-squad.com/angular), [online training](https://angular-exercises.ninja-squad.com/) and [training](https://ninja-squad.com/training/angular))!
