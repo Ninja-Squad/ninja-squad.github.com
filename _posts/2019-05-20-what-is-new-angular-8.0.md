@@ -64,7 +64,7 @@ and restart your application: it now uses Ivy!
 The `AbstractControl` class now offers a new method `markAllAsTouched`
 in addition to the existing `markAsDirty`, `markAsTouched`, `markAsPending`, etc.
 `AbstractControl` is the parent class of `FormGroup`, `FormControl`, `FormArray`,
-so the method is available on all reactive forms entites.
+so the method is available on all reactive forms entities.
 
 Like `markAsTouched`, this new method marks a control as `touched`
 but also all its descendants.
@@ -77,13 +77,13 @@ You previously had to loop over the controls to remove them one by one.
 
 ## Router
 
-### Lazy-loading with `import()` syntax
+### Lazy-loading with import() syntax
 
-A new syntax has been introduced to declare your lazy-laoding routes,
+A new syntax has been introduced to declare your lazy-loading routes,
 using the `import()` syntax from TypeScript
 (introduced in [TypeScript 2.4](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-4.html).
 
-This is now the preferred way to declare a lazy-laoding route,
+This is now the preferred way to declare a lazy-loading route,
 and the string form has been deprecated.
 
 So you can change your `loadChildren` declarations from:
@@ -131,6 +131,14 @@ There are several values possible:
 - `registerDelay:$TIMEOUT` with `$TIMEOUT` the number of milliseconds to wait before the registration
 - a function returning an Observable, to define a custom strategy. The SW will then register when the Observable emits its first value.
 
+      providers: [
+        ServiceWorkerModule.register('/ngsw-worker.js', {
+          enabled: environment.production,
+          registrationStrategy: 'registerWhenStable'
+        }),
+        // ...
+      ]
+
 ### Bypass a Service Worker
 
 It is now also possible to bypass the Service Worker
@@ -151,8 +159,8 @@ and are there to prepare our applications.
 But the cool news is that the Angular team already wrote schematics
 to make our life easier.
 
-Simply run `ng update @angular/core` and the update schematics will run
-and update your code.
+Simply run `ng update @angular/core` and the update schematics will
+update your code.
 What do these schematics do? Let's find out!
 
 ### Queries timing
@@ -259,7 +267,7 @@ This is what the migration looks like (with a failure in one component):
     those manually and apply the appropriate timing:
     ⮑   home/home.component.ts@43:3: undefined
 
-Note that this only concern `ViewChild` and `ContentChild`,
+Note that this only concerns `ViewChild` and `ContentChild`,
 not `ViewChildren` and `ContentChildren`
 (which will work the same way in Ivy and View Engine).
 
@@ -302,7 +310,7 @@ but a provided schematic will take care of it for you.
 after being [replaced by `@angular/common/http` in 4.3](/2017/07/17/http-client-module/)
 and [officially deprecated in 5.0](/2017/11/02/what-is-new-angular-5/),
 18 months ago.
-You have probably already migrate to `@angular/common/http`,
+You have probably already migrated to `@angular/common/http`,
 but if you didn't, now you have to:
 the provided schematic will only remove the dependecy from your `package.json`.
 
