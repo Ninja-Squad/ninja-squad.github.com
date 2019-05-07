@@ -249,12 +249,9 @@ also depended on the code of the `PonyComponent`
 (in this example, on the name of the field `ponyModel` backing the input `pony`).
 
 That seems like an implementation detail,
-but it has consequences on the rebuild time:
-if you have 200 components in your app and you're changing the code of 3 of those components,
-the Ivy compiler only has to recompile those 3 components.
-It doesn't need to recompile all of the unmodified components,
-because their generated code is guaranteed
-to not depend on the code of the modified components anymore.
+but it has consequences on the rebuild time
+as the Ivy compiler can do better than
+to recompile everything as the View Engine did.
 
 A little trivia of Angular history:
 modules were introduced fairly lately in Angular development,
