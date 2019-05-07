@@ -14,12 +14,48 @@ Angular&nbsp;8.0.0 is here!
   </a>
 </p>
 
+TODO
 
 ## Ivy
 
-TODO
+Ivy is obviously a huge part of this release,
+and it took most of effort from the team these last month.
+There is so much to say about Ivy that I wrote a [dedicated article about it](TODO).
 
-## Queries timing
+TL;DR: Ivy is the new compiler/runtime of Angular. It will enable very cool features in the future,
+but it is currently focused on not breaking existing applications.
+
+Angular&nbsp;8.0 is the first release to officially offer a switch to opt-in into Ivy.
+There are no real gains to do so,
+but you can give it a try to see if nothing breaks in your application.
+Because, at some point, probably in v9, Ivy will be the default.
+So the Angular team hopes the community will give a try to Ivy,
+and that we'll catch all the remaining issues before v9.
+
+We tried it on several of our apps and already caught a few regressions,
+so we would strongly advised to not use it blindly in production 😄.
+
+If you feel adventurous, you can add `"enableIvy": true` in your `angularCompilerOptions`,
+and restart your application: it now uses Ivy!
+
+## Forms
+
+### markAllAsTouched
+
+TODO
+https://github.com/angular/angular/commit/45bf911df8c2767df75701216a1140306ad803f0
+
+
+## Notable changes
+
+A few things have changed and require some work from your part.
+But the cool news is that the Angular team already wrote schematics
+to make our life easier.
+
+Simply run `ng update @angular/core` and the update schematics will run.
+What do they do? Let's find out!
+
+### Queries timing
 
 The `ViewChild` and `ContentChild` decorators now accept a new option called `static`.
 Let me explain why with a very simple example using a `ViewChild`:
