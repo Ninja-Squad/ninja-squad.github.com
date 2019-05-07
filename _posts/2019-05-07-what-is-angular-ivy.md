@@ -88,10 +88,10 @@ Let's dive into the gritty details 🤓.
 For a component `PonyComponent` with a template like:
 
 {% raw %}
-  <figure>
-    <img [src]="getPonyImageUrl()">
-    <figcaption>{{ ponyModel.name }}</figcaption>
-  </figure>
+    <figure>
+      <img [src]="getPonyImageUrl()">
+      <figcaption>{{ ponyModel.name }}</figcaption>
+    </figure>
 {% endraw %}
 
 View Engine, the pre-Ivy engine, generated code looking like:
