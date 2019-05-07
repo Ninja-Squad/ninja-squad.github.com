@@ -14,7 +14,18 @@ Angular&nbsp;8.0.0 is here!
   </a>
 </p>
 
-TODO
+A personal announcement first:
+I'm now officially part of the Angular team
+as a collaborator,
+in an effort from the core team to include more developpers from the community.
+Angular&nbsp;8.0 has a little bit more code of mine than the other releases 😊.
+
+This release is mostly about Ivy
+and the possibility to give it a try,
+but it also includes a few features and breaking changes.
+Hopefully the update should be very easy,
+as the Angular team wrote a bunch of schematics
+that will do the heavy lifting for you.
 
 ## TypeScript 3.4
 
@@ -68,10 +79,67 @@ You previously had to loop over the controls to remove them one by one.
 
 ### Lazy-loading with `import()` syntax
 
+A new syntax has been introduced to declare your lazy-laoding routes,
+using the `import()` syntax from TypeScript
+(introduced in [TypeScript 2.4](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-4.html).
+
+This is now the preferred way to declare a lazy-laoding route,
+and the string form has been deprecated.
+
+So you can change your `loadChildren` declarations from:
+
+    loadChildren: './admin/admin.module#AdminModule'
+
+to:
+
+    loadChildren: () => import('./races/races.module').then(m => m.RacesModule)
+
+A schematic offered by the CLI will automatically migrate your declarations
+for you, so this should be painless if you run `ng update @angular/cli`.
+Check out our article about [Angular CLI 8.0](/2019/05/22/angular-cli-8.0/) (TODO check link)
+to learn more about that.
+
+### Location
+
+To help people migrating from AngularJS,
+a bunch of things have been added to the location services in Angular.
+
+`PlatformLocation` now offers access to the `hostname`, `port` and `protocol`,
+and a new `getState()` method allows to get the `history.state`.
+A `MockPlatformLocation` is also available to ease testing.
+All this is really useful if you are using `ngUpgrade`,
+otherwise you probably won't need it.
+
+
 ## Service worker
 
-Previously, it was not possible to have multiple apps (using
-`@angular/service-worker`) on different subpaths of the same domain,
+### Registration strategy
+
+The service worker registration has a new option
+that allows to specify when the registration should take place.
+Previously, the service worker was waiting for the application
+to be stable to register, to avoid slowing the start of the application.
+But if you were starting a recurring asynchronous task (like a polling process) on application bootstrap,
+the application was never stable as Angular considers
+an application to be stable if there is no pending task.
+So the service worker never registered, and you had to manually workaround it.
+With the new `registrationStrategy` option, you can now let Angular handle this.
+There are several values possible:
+
+- `registerWhenStable`, the default, as explained above
+- `registerImmediately`, which don't wait for the app to be stable and registers the SW right away
+- `registerDelay:$TIMEOUT` with `$TIMEOUT` the number of milliseconds to wait before the registration
+- a function returning an Observable, to define a custom strategy. The SW will then register when the Observable emits its first value.
+
+### Bypass a Service Worker
+
+It is now also possible to bypass the Service Worker
+for a specific request by adding the `ngsw-bypass` header.
+
+### Multiple apps on sub-domains
+
+Previously, it was not possible to have multiple applications using
+`@angular/service-worker` on different subpaths of the same domain,
 because each Service Worker would overwrite the caches of the others...
 This is now fixed!
 
@@ -221,6 +289,13 @@ You then have to manually fix it:
       (click)="options[index] = 'newButtonText'">{{ option }}</button>
 {% endraw %}
 
+### DOCUMENT
+
+The [`DOCUMENT` token](https://angular.io/api/common/DOCUMENT)
+moved from `@angular/platform-browser` to `@angular/common`.
+You can manually change it in your application,
+but a provided schematic will take care of it for you.
+
 ### Deprecated HTTP package removed
 
 `@angular/http` has been removed from 8.0,
@@ -228,7 +303,14 @@ after being [replaced by `@angular/common/http` in 4.3](/2017/07/17/http-client-
 and [officially deprecated in 5.0](/2017/11/02/what-is-new-angular-5/),
 18 months ago.
 You have probably already migrate to `@angular/common/http`,
-but if you didn't, now you have to.
+but if you didn't, now you have to:
+the provided schematic will only remove the dependecy from your `package.json`.
 
+
+That's all for Angular&nbsp;8.0!
+You can check out our other articles about
+[Ivy](/2019/05/07/what-is-angular-ivy/),
+the [CLI&nbsp;8.0 release](/2019/05/22/angular-cli-8.0/) (TODO check link),
+or the [new Bazel support](/2019/05/14/build-your-angular-application-with-bazel/).
 
 All our materials ([ebook](https://books.ninja-squad.com/angular), [online training](https://angular-exercises.ninja-squad.com/) and [training](https://ninja-squad.com/training/angular)) are up-to-date with these changes if you want to learn more!
