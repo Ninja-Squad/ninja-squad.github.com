@@ -16,11 +16,19 @@ Angular&nbsp;8.0.0 is here!
 
 TODO
 
+## TypeScript 3.4
+
+Angular&nbsp;8.0 now supports TypeScript 3.4,
+and even requires it, so you'll need to upgrade.
+
+You can checkout out what [TypeScript 3.3](https://devblogs.microsoft.com/typescript/announcing-typescript-3-3/) and [TypeScript 3.4](https://devblogs.microsoft.com/typescript/announcing-typescript-3-4/) brings on the Microsoft blog.
+
 ## Ivy
 
 Ivy is obviously a huge part of this release,
 and it took most of effort from the team these last month.
-There is so much to say about Ivy that I wrote a [dedicated article about it](TODO).
+There is so much to say about Ivy that I wrote a
+[dedicated article about it](/2019/05/07/what-is-angular-ivy/).
 
 TL;DR: Ivy is the new compiler/runtime of Angular. It will enable very cool features in the future,
 but it is currently focused on not breaking existing applications.
@@ -42,18 +50,42 @@ and restart your application: it now uses Ivy!
 
 ### markAllAsTouched
 
-TODO
-https://github.com/angular/angular/commit/45bf911df8c2767df75701216a1140306ad803f0
+The `AbstractControl` class now offers a new method `markAllAsTouched`
+in addition to the existing `markAsDirty`, `markAsTouched`, `markAsPending`, etc.
+`AbstractControl` is the parent class of `FormGroup`, `FormControl`, `FormArray`,
+so the method is available on all reactive forms entites.
 
+Like `markAsTouched`, this new method marks a control as `touched`
+but also all its descendants.
 
-## Notable changes
+### FormArray.clear
+
+The `FormArray` class now also offers a `clear` method,
+to quickly remove all the controls it contains.
+You previously had to loop over the controls to remove them one by one.
+
+## Router
+
+### Lazy-loading with `import()` syntax
+
+## Service worker
+
+Previously, it was not possible to have multiple apps (using
+`@angular/service-worker`) on different subpaths of the same domain,
+because each Service Worker would overwrite the caches of the others...
+This is now fixed!
+
+## Notable and breaking changes
 
 A few things have changed and require some work from your part.
+Some of the changes are driven by Ivy,
+and are there to prepare our applications.
 But the cool news is that the Angular team already wrote schematics
 to make our life easier.
 
-Simply run `ng update @angular/core` and the update schematics will run.
-What do they do? Let's find out!
+Simply run `ng update @angular/core` and the update schematics will run
+and update your code.
+What do these schematics do? Let's find out!
 
 ### Queries timing
 
@@ -162,5 +194,41 @@ This is what the migration looks like (with a failure in one component):
 Note that this only concern `ViewChild` and `ContentChild`,
 not `ViewChildren` and `ContentChildren`
 (which will work the same way in Ivy and View Engine).
+
+### Template variable reassignment
+
+Currently with View Engine, doing something like:
+
+{% raw %}
+    <button
+      *ngFor="let option of options"
+      (click)="option = 'newButtonText'">{{ option }}</button>
+{% endraw %}
+
+works.
+
+In Ivy, that won't be the case anymore:
+it will not be possible to reassign a value to a template variable (here `option`).
+To prepare the sitch to Ivy, a schematic analyzes your templates
+when you upgrade to Angular&nbsp;8.0
+and warn you if that's the case.
+
+You then have to manually fix it:
+
+{% raw %}
+    <button
+      *ngFor="let option of options; index as index"
+      (click)="options[index] = 'newButtonText'">{{ option }}</button>
+{% endraw %}
+
+### Deprecated HTTP package removed
+
+`@angular/http` has been removed from 8.0,
+after being [replaced by `@angular/common/http` in 4.3](/2017/07/17/http-client-module/)
+and [officially deprecated in 5.0](/2017/11/02/what-is-new-angular-5/),
+18 months ago.
+You have probably already migrate to `@angular/common/http`,
+but if you didn't, now you have to.
+
 
 All our materials ([ebook](https://books.ninja-squad.com/angular), [online training](https://angular-exercises.ninja-squad.com/) and [training](https://ninja-squad.com/training/angular)) are up-to-date with these changes if you want to learn more!
