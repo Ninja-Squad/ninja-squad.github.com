@@ -314,6 +314,9 @@ You have probably already migrated to `@angular/common/http`,
 but if you didn't, now you have to:
 the provided schematic will only remove the dependecy from your `package.json`.
 
+You can also find all the deprecated APIs in the
+[official deprecations guide](https://next.angular.io/guide/deprecations).
+
 
 That's all for Angular&nbsp;8.0!
 You can check out our other articles about
