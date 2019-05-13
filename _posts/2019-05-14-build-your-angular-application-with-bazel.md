@@ -9,10 +9,14 @@ description: "Angular 8 adds a better support for Bazel in the CLI. Let's learn 
 One of the new features of Angular 8 is the possibility
 to (more easily) build your CLI application with Bazel.
 
-[Bazel](https://bazel.build/) is a build tool developped
+[Bazel](https://bazel.build/) is a build tool developed
 and massively used by Google,
 as it can build pretty much any language.
 The Angular framework itself is built with Bazel.
+
+<p style="text-align: center;">
+  <img class="rounded img-fluid" style="max-width: 60%" src="/assets/images/2019-05-14/bazel.svg" alt="Bazel" />
+</p>
 
 The key advantages of Bazel are:
 
@@ -23,8 +27,8 @@ The key advantages of Bazel are:
 The second point is the most useful for most developers.
 Bazel allows you to declare tasks with clear inputs and outputs.
 Then when you run a command, Bazel builds a task graph,
-and only run the necessary ones,
-depending on which inputs changed since the last run
+and only runs the necessary ones,
+depending on which inputs and outputs changed since the last run
 (very similar to what [Gradle](https://gradle.org/) does in the Java world).
 This can bring impressive gains on rebuild times.
 
@@ -32,7 +36,7 @@ This [talk by Alex Eagle at ng-conf 2019](https://www.youtube.com/watch?v=J1lnp-
 can be interesting to learn more about what Bazel can do.
 
 Be warned though: the first build will be painfully slow,
-as Bazel is aiming for exactly reproductible builds.
+as Bazel is aiming for exactly reproducible builds.
 For example, if you launch your tests on Firefox,
 it will download a complete version of Firefox,
 to make sure all developers are running the tests in the exact same browser!
@@ -164,11 +168,11 @@ which can be NPM modules like here,
 or another `ng_module` of your app for example.
 This `ng_module` will only rebuild if:
 - one of the `srcs` or `assets` files changes
-- one of the dependency changes
+- one of the dependencies changes
 
 The most common task is to add a dependency to your project.
 For example, if you build a component that uses the forms support from Angular,
-then you'll need to list that dependency:
+then you need to list that dependency:
 
     deps = [
         "@npm//@angular/core",
@@ -181,7 +185,7 @@ then you'll need to list that dependency:
 
 If you want to add an external Angular module,
 like [ng-bootstrap](https://github.com/ng-bootstrap/ng-bootstrap/),
-you need to add it to the `deps` attribute:
+you must also add it to the `deps` attribute:
 
     deps = [
         "@npm//@angular/core",
@@ -193,7 +197,7 @@ you need to add it to the `deps` attribute:
         "@npm//@ng-bootstrap/ng-bootstrap",
     ],
 
-but also to add it to `angular-metadata.tsconfig.json`,
+and include it into the `angular-metadata.tsconfig.json`,
 as the Angular compiler needs to build the external components:
 
     "include": [
@@ -260,11 +264,10 @@ And now you have a working `ng serve` again.
 ## Advanced customization
 
 As you can see, it can take quite a bit of work to customize your project.
-Hopefully, there is a very good example available from the Angular team:
+Fortunately, you can get inspiration from a very good example project created by the Angular team:
 [angular-bazel-example](https://github.com/angular/angular-bazel-example).
-It contains examples for the most common features you'll want,
-with some quite painful to setup, like lazy-loading.
-
+It provides explanations and sources for the most common features.
+But some of them, like lazy loading, are quite painful to set up.
 
 Bazel will reveal its full potential on big projects,
 where you have multiple modules and libraries depending on each others.
@@ -277,8 +280,9 @@ as the Angular team is still working on this.
 Bazel should reach 1.0 around September
 and we can hope for more auto-configuration
 (for setting up lazy-laoding for example).
-Keep in mind that Bazel is still considered an experiment,
+Keep in mind that the Bazel build support is still considered an experiment,
 and has the "Labs" label.
+You can check out more resources on [bazel.angular.io](https://bazel.angular.io).
 At the time of writing, Bazel is impressive but still for the thrill seekers!
 
 If you want to learn more about Angular, check out our ([ebook](https://books.ninja-squad.com/angular), [online training](https://angular-exercises.ninja-squad.com/) and [training](https://ninja-squad.com/training/angular))!
