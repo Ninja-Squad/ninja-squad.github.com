@@ -279,7 +279,7 @@ It will probably be easier to setup in the future though,
 as the Angular team is still working on this.
 Bazel should reach 1.0 around September
 and we can hope for more auto-configuration
-(for setting up lazy-laoding for example).
+(for setting up lazy-loading for example).
 Keep in mind that the Bazel build support is still considered an experiment,
 and has the "Labs" label.
 You can check out more resources on [bazel.angular.io](https://bazel.angular.io).
