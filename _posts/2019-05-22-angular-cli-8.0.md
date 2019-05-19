@@ -3,7 +3,7 @@ layout: post
 title: What's new in Angular CLI 8.0?
 author: cexbrayat
 tags: ["Angular 8", "Angular 7", "Angular 6", "Angular 5", "Angular", "Angular 2", "Angular 4", "Angular CLI"]
-description: "Angular CLI 8.0 is out! Read all about TODO!"
+description: "Angular CLI 8.0 is out! Read all about Ivy, differential loading, CLI analytics, SVG templates, Web Worker support, and more!"
 ---
 
 [Angular CLI 8.0.0](https://github.com/angular/angular-cli/releases/tag/v8.0.0) is out!✨
@@ -34,14 +34,11 @@ to:
 
     loadChildren: () => import('./races/races.module').then(m => m.RacesModule)
 
-Note that this must be the exact syntax for now(TODO still the case in final release?),
-and you must use an arrow function, and `m` as the variable name.
-The `import` feature was introduced in [TypeScript 2.4](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-4.html).
+The `import` feature was introduced in [TypeScript 2.4](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-4.html)
+and is similar to the [ECMAScript standard](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import).
 If you want to use `import` in your CLI project,
-you must enable it by using `"module": "exnext"`
-in the root `tsconfig.json` file
-and adding `"experimentalImportFactories": true"` to your
-`angularCompilerOptions`.
+you must enable it by using `"module": "esnext"`
+in the root `tsconfig.json` file.
 
 If you updated your CLI version by running `ng update @angular/cli` you won't even have to do it manually,
 as an update schematic will automatically take care of it for you!
@@ -58,7 +55,7 @@ This release goes one step further.
 
 The default target in `tsconfig.json` is now `es2015`
 which means the default target of `ng build` is now the modern browsers that support ES6 features.
-But if you need to support older browsers like IE9 or the Google Bot (which still use an old Chrome version),
+But if you need to support older browsers like IE9,
 then you can specify it by using the `browserslist` file.
 This file already exists in your CLI project but was use for the CSS part only.
 It is now also used for the JS generation.
@@ -68,17 +65,16 @@ The default content is:
     > 0.5%
     last 2 versions
     Firefox ESR
-    Chrome 41 # Support for Googlebot
     not dead
     not IE 9-11 # For IE 9-11 support, remove 'not'.
 
-You can check out the details on the [browserslist repo](https://github.com/browserslist/browserslist),
+You can check out the details on the [browserslist repository](https://github.com/browserslist/browserslist),
 but a cool trick is to run:
 
     npx browserslist
 
-in your project to see what your current `browserlist` configuration actually means 🚀.
-Or you can also check https://browserl.ist/ and enter your query.
+in your project to see what your current `browserslist` configuration actually means 🚀.
+Or you can also check [browserl.ist](https://browserl.ist/) and enter your query.
 
 The CLI uses this configuration to generate only one "modern" build if you only target modern browsers,
 or build the application twice if you asked for IE 9-11 support for example.
@@ -130,11 +126,12 @@ mentions that the compilation can be twice as fast with `fibers` installed.
 
 Note that all of this was already possible previously, but it is now the default,
 and is technically a breaking change.
-You can still use `node-sass` if you wish, by installing it explicitely.
+You can still use `node-sass` if you wish, by installing it explicitly.
 
 ## Ivy support
 
-You probably know that the main feature in Angular 8.0  is Ivy.
+You probably know that the main feature in Angular 8.0 is Ivy.
+You can checkout [our dedicated article to Ivy to learn more](/2019/05/07/what-is-angular-ivy/)
 The CLI provides a switch to give it a try.
 You can test it in a new project with:
 
@@ -251,7 +248,7 @@ You'll notice that the [project layout changed quite a bit](https://github.com/c
 ## SVG templates support
 
 It is now possible to have a file with an `svg` extension as template (instead of only HTML previously).
-This was the first PR from [@oocx](https://twitter.com/oocx) and he detailled the feature himself in an [article](https://medium.com/@oocx/using-svg-files-as-component-templates-with-angular-cli-ea58fe79b6c1) that you can check if you want to learn more.
+This was the first PR from [@oocx](https://twitter.com/oocx) and he detailed the feature himself in an [article](https://medium.com/@oocx/using-svg-files-as-component-templates-with-angular-cli-ea58fe79b6c1) that you can check if you want to learn more.
 
 ## Codelyzer 5.0
 
@@ -267,9 +264,12 @@ The update schematic will also removes the es6 imports from your `polyfills.ts` 
 as they are now added automatically if needed by the CLI (see [our article about CLI 7.3](/2019/01/31/angular-cli-7.3/)).
 
 
-## PNPM support
+## NPM/PNPM support
 
 After NPM and Yarn, The CLI now supports another package manager: [PNPM](https://github.com/pnpm/pnpm).
+
+Also note that the `ng add` command gained a new `--registry` flag,
+allowing to add packages from a private NPM registry (`ng update` already offered it).
 
 ## New Architect API
 
