@@ -3,7 +3,7 @@ layout: post
 title: What's new in Angular 8.0?
 author: cexbrayat
 tags: ["Angular 8", "Angular 7", "Angular 6", "Angular 5", "Angular", "Angular 2", "Angular 4"]
-description: "Angular 8.0 is out! Read about TODO"
+description: "Angular 8.0 is out! Read all about the new Ivy compiler/runtime, the new Bazel support, and all the tiny features and breaking changes!"
 ---
 
 Angular&nbsp;8.0.0 is here!
@@ -37,7 +37,7 @@ You can checkout out what [TypeScript 3.3](https://devblogs.microsoft.com/typesc
 ## Ivy
 
 Ivy is obviously a huge part of this release,
-and it took most of effort from the team these last month.
+and it took most of the effort from the team these last month.
 There is so much to say about Ivy that I wrote a
 [dedicated article about it](/2019/05/07/what-is-angular-ivy/).
 
@@ -45,7 +45,7 @@ TL;DR: Ivy is the new compiler/runtime of Angular. It will enable very cool feat
 but it is currently focused on not breaking existing applications.
 
 Angular&nbsp;8.0 is the first release to officially offer a switch to opt-in into Ivy.
-There are no real gains to do so,
+There are no real gains to do so right now,
 but you can give it a try to see if nothing breaks in your application.
 Because, at some point, probably in v9, Ivy will be the default.
 So the Angular team hopes the community will anticipate the switch and provide feedback,
@@ -56,7 +56,18 @@ so we would strongly advise to not use it blindly in production 😄.
 
 If you feel adventurous, you can add `"enableIvy": true` in your `angularCompilerOptions`,
 and restart your application: it now uses Ivy!
-Check the [official guide for more info](https://angular.io/guide/ivy).
+Check [our article](/2019/05/07/what-is-angular-ivy/)
+and the [official guide for more info](https://angular.io/guide/ivy).
+
+## Bazel support
+
+As for Ivy, we wrote a dedicated article on how to build your
+[Angular applications with the new Bazel support](/2019/05/14/build-your-angular-application-with-bazel/) 🛠.
+
+<p style="text-align: center;">
+  <img class="rounded img-fluid" style="max-width: 20%" src="/assets/images/2019-05-14/bazel.svg" alt="Bazel" />
+</p>
+
 
 ## Forms
 
@@ -70,11 +81,18 @@ so the method is available on all reactive form entities.
 Like `markAsTouched`, this new method marks a control as `touched`
 but also all its descendants.
 
+    form.markAllAsTouched();
+
 ### FormArray.clear
 
 The `FormArray` class now also offers a `clear` method,
 to quickly remove all the controls it contains.
 You previously had to loop over the controls to remove them one by one.
+
+    // `users` is initialized with 2 users
+    const users = fb.array([user1, user2]);
+    users.clear();
+    // users is now empty
 
 ## Router
 
@@ -86,6 +104,9 @@ using the `import()` syntax from TypeScript
 
 This is now the preferred way to declare a lazy-loading route,
 and the string form has been deprecated.
+This syntax is similar to the
+[ECMAScript standard](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import)
+and Ivy will only support this.
 
 So you can change your `loadChildren` declarations from:
 
@@ -132,18 +153,22 @@ There are several values possible:
 - `registerDelay:$TIMEOUT` with `$TIMEOUT` being the number of milliseconds to wait before the registration
 - a function returning an Observable, to define a custom strategy. The Service Worker will then register when the Observable emits its first value.
 
-      providers: [
-        ServiceWorkerModule.register('/ngsw-worker.js', {
-          enabled: environment.production,
-          registrationStrategy: 'registerDelay:2000'
-        }),
-        // ...
-      ]
+For example, if you want to register the Service Worker after 2 seconds:
+
+    providers: [
+      ServiceWorkerModule.register('/ngsw-worker.js', {
+        enabled: environment.production,
+        registrationStrategy: 'registerDelay:2000'
+      }),
+      // ...
+    ]
 
 ### Bypass a Service Worker
 
 It is now also possible to bypass the Service Worker
 for a specific request by adding the `ngsw-bypass` header.
+
+    this.http.get('api/users', { headers: { 'ngsw-bypass': true } });
 
 ### Multiple apps on sub-domains
 
@@ -316,7 +341,7 @@ but if you didn't, now you have to:
 the provided schematic will only remove the dependecy from your `package.json`.
 
 You can also find all the deprecated APIs in the
-[official deprecations guide](https://next.angular.io/guide/deprecations).
+[official deprecations guide](https://angular.io/guide/deprecations).
 
 
 That's all for Angular&nbsp;8.0!
