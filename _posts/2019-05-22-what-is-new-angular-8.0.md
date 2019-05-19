@@ -48,14 +48,15 @@ Angular&nbsp;8.0 is the first release to officially offer a switch to opt-in int
 There are no real gains to do so,
 but you can give it a try to see if nothing breaks in your application.
 Because, at some point, probably in v9, Ivy will be the default.
-So the Angular team hopes the community will give a try to Ivy,
+So the Angular team hopes the community will anticipate the switch and provide feedback,
 and that we'll catch all the remaining issues before v9.
 
 We tried it on several of our apps and already caught a few regressions,
-so we would strongly advised to not use it blindly in production 😄.
+so we would strongly advise to not use it blindly in production 😄.
 
 If you feel adventurous, you can add `"enableIvy": true` in your `angularCompilerOptions`,
 and restart your application: it now uses Ivy!
+Check the [official guide for more info](https://angular.io/guide/ivy).
 
 ## Forms
 
@@ -64,7 +65,7 @@ and restart your application: it now uses Ivy!
 The `AbstractControl` class now offers a new method `markAllAsTouched`
 in addition to the existing `markAsDirty`, `markAsTouched`, `markAsPending`, etc.
 `AbstractControl` is the parent class of `FormGroup`, `FormControl`, `FormArray`,
-so the method is available on all reactive forms entities.
+so the method is available on all reactive form entities.
 
 Like `markAsTouched`, this new method marks a control as `touched`
 but also all its descendants.
@@ -127,14 +128,14 @@ With the new `registrationStrategy` option, you can now let Angular handle this.
 There are several values possible:
 
 - `registerWhenStable`, the default, as explained above
-- `registerImmediately`, which don't wait for the app to be stable and registers the SW right away
-- `registerDelay:$TIMEOUT` with `$TIMEOUT` the number of milliseconds to wait before the registration
-- a function returning an Observable, to define a custom strategy. The SW will then register when the Observable emits its first value.
+- `registerImmediately`, which doesn't wait for the app to be stable and registers the Service Worker right away
+- `registerDelay:$TIMEOUT` with `$TIMEOUT` being the number of milliseconds to wait before the registration
+- a function returning an Observable, to define a custom strategy. The Service Worker will then register when the Observable emits its first value.
 
       providers: [
         ServiceWorkerModule.register('/ngsw-worker.js', {
           enabled: environment.production,
-          registrationStrategy: 'registerWhenStable'
+          registrationStrategy: 'registerDelay:2000'
         }),
         // ...
       ]
@@ -159,7 +160,7 @@ and are there to prepare our applications.
 But the cool news is that the Angular team already wrote schematics
 to make our life easier.
 
-Simply run `ng update @angular/core` and the update schematics will
+Simply run `ng update @angular/core` and the schematics will
 update your code.
 What do these schematics do? Let's find out!
 
@@ -224,7 +225,7 @@ you can write:
 
     @ViewChild('static', { static: true }) static: ElementRef<HTMLDivElement>;
 
-and the behavior will be the same as currently
+and the behavior will be the same as the current one
 (the element is also accessible in `ngOnInit`).
 
 Note that if you add `static: true` on a dynamic element (wrapped in a condition or a loop),
@@ -237,7 +238,7 @@ the Angular team wrote a schematic that automatically analyzes your application,
 and adds the `static` flag.
 It even offers two strategies:
 - one based on your templates, which will make sure that your application works
-(so it tends to mark queries as static even they aren't).
+(so it tends to mark queries as static even when they aren't).
 You are sure it works,
 but it exposes you to problems if you wrap your static element in a condition or a loop later.
 - one based on your usage of the query,
@@ -285,9 +286,9 @@ works.
 
 In Ivy, that won't be the case anymore:
 it will not be possible to reassign a value to a template variable (here `option`).
-To prepare the sitch to Ivy, a schematic analyzes your templates
+To prepare the switch to Ivy, a schematic analyzes your templates
 when you upgrade to Angular&nbsp;8.0
-and warn you if that's the case.
+and warns you if that's the case.
 
 You then have to manually fix it:
 
