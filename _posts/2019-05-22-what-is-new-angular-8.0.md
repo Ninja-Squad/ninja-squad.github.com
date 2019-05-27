@@ -173,7 +173,7 @@ for a specific request by adding the `ngsw-bypass` header.
 ### Multiple apps on sub-domains
 
 Previously, it was not possible to have multiple applications using
-`@angular/service-worker` on different subpaths of the same domain,
+`@angular/service-worker` on different sub-paths of the same domain,
 because each Service Worker would overwrite the caches of the others...
 This is now fixed!
 
@@ -191,7 +191,7 @@ What do these schematics do? Let's find out!
 
 ### Queries timing
 
-The `ViewChild` and `ContentChild` decorators now accept a new option called `static`.
+The `ViewChild` and `ContentChild` decorators now must have a new option called `static`.
 Let me explain why with a very simple example using a `ViewChild`:
 
     <div *ngIf="true">
@@ -231,7 +231,7 @@ gives:
       console.log('after view init static', this.staticDiv); // div
     }
 
-I don't think this is documented, or recommended,
+This was not documented, or recommended,
 but that's how it currently works.
 
 With Ivy though, the behavior changes to be more consistent:
@@ -270,27 +270,24 @@ but it exposes you to problems if you wrap your static element in a condition or
 which is more error-prone (as it is harder for the schematic to figure it out),
 but will not mark the queries as static if they don't need to be.
 So most queries will have `static: false`, which will be the default in Ivy.
-You will be prompted which strategy you want to use when updating.
 
-When migrating our own applications,
-I preferred using the usage strategy to avoid having `static: true` where it is not necessary.
+The first strategy is used by default when you run `ng update` because it is the safest,
+but you can try the usage strategy by using `NG_STATIC_QUERY_USAGE_STRATEGY=true ng update`.
+
+You can check out the [official guide](https://v8.angular.io/guide/static-query-migration) for more information.
 
 This is what the migration looks like (with a failure in one component):
 
-    ------ Static Query migration ------
-    In preparation for Ivy, developers can now explicitly specify the
-    timing of their queries. Read more about this here:
-    https://github.com/angular/angular/pull/28810
+    ------ Static Query Migration ------
+    With Angular version 8, developers need to
+    explicitly specify the timing of ViewChild and
+    ContentChild queries. Read more about this here:
+    https://v8.angular.io/guide/static-query-migration
 
-    There are two available migration strategies that can be selected:
-      • Template strategy  -  migration tool (short-term gains, rare corrections)
-      • Usage strategy  -  best practices (long-term gains, manual corrections)
-    For an easy migration, the template strategy is recommended. The usage
-    strategy can be used for best practices and a code base that will be more
-    flexible to changes going forward.
-
-    Some queries cannot be migrated automatically. Please go through
-    those manually and apply the appropriate timing:
+    Some queries could not be migrated automatically. Please go
+    those manually and apply the appropriate timing.
+    For more info on how to choose a flag, please see:
+    https://v8.angular.io/guide/static-query-migration
     ⮑   home/home.component.ts@43:3: undefined
 
 Note that this only concerns `ViewChild` and `ContentChild`,
@@ -338,7 +335,7 @@ and [officially deprecated in 5.0](/2017/11/02/what-is-new-angular-5/),
 18 months ago.
 You have probably already migrated to `@angular/common/http`,
 but if you didn't, now you have to:
-the provided schematic will only remove the dependecy from your `package.json`.
+the provided schematic will only remove the dependency from your `package.json`.
 
 You can also find all the deprecated APIs in the
 [official deprecations guide](https://angular.io/guide/deprecations).
