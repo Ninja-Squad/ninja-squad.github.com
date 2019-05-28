@@ -327,6 +327,13 @@ moved from `@angular/platform-browser` to `@angular/common`.
 You can manually change it in your application,
 but a provided schematic will take care of it for you.
 
+### Deprecated webworker package
+
+The `@angular/platform-webworker` package enabled running your Angular application in a Web Worker.
+As this proved trickier than expected (for building the application, SEO...),
+and not that good performance-wise,
+the package has been deprecated and will be removed in the future.
+
 ### Deprecated HTTP package removed
 
 `@angular/http` has been removed from 8.0,
