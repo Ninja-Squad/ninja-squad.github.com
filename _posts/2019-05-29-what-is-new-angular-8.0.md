@@ -17,7 +17,7 @@ Angular&nbsp;8.0.0 is here!
 A personal announcement first:
 I'm now officially part of the Angular team
 as a collaborator,
-in an effort from the core team to include more developpers from the community.
+in an effort from the core team to include more developers from the community.
 Angular&nbsp;8.0 has a little bit more code of mine than the other releases 😊.
 
 This release is mostly about Ivy
