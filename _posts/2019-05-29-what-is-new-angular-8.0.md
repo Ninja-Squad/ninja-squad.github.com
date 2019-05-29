@@ -9,7 +9,7 @@ description: "Angular 8.0 is out! Read all about the new Ivy compiler/runtime, t
 Angular&nbsp;8.0.0 is here!
 
 <p style="text-align: center;">
-  <a href="https://github.com/angular/angular/blob/master/CHANGELOG.md#TODO">
+  <a href="https://github.com/angular/angular/blob/master/CHANGELOG.md#800-2019-05-28">
     <img class="rounded img-fluid" style="max-width: 100%" src="/assets/images/angular.png" alt="Angular logo" />
   </a>
 </p>
@@ -118,7 +118,7 @@ to:
 
 A schematic offered by the CLI will automatically migrate your declarations
 for you, so this should be painless if you run `ng update @angular/cli`.
-Check out our article about [Angular CLI 8.0](/2019/05/22/angular-cli-8.0/) (TODO check link)
+Check out our article about [Angular CLI 8.0](/2019/05/29/angular-cli-8.0/)
 to learn more about that.
 
 ### Location
@@ -351,7 +351,7 @@ You can also find all the deprecated APIs in the
 That's all for Angular&nbsp;8.0!
 You can check out our other articles about
 [Ivy](/2019/05/07/what-is-angular-ivy/),
-the [CLI&nbsp;8.0 release](/2019/05/22/angular-cli-8.0/) (TODO check link),
+the [CLI&nbsp;8.0 release](/2019/05/29/angular-cli-8.0/)
 or the [new Bazel support](/2019/05/14/build-your-angular-application-with-bazel/).
 
 All our materials ([ebook](https://books.ninja-squad.com/angular), [online training](https://angular-exercises.ninja-squad.com/) and [training](https://ninja-squad.com/training/angular)) are up-to-date with these changes if you want to learn more!
