@@ -217,7 +217,7 @@ to help them prioritize features and improvements.
 You can't really miss this new feature,
 as you'll be asked after installing the new CLI version globally 🧐.
 
-You can opt-in globally (`ng analytics on`) and per project (`ng analytics project on`).
+You can opt-in with `ng analytics on`.
 A few metrics are collected if you opted in globally: command used, flags used, OS, Node version, CPU count and speed, RAM size, command initialization and execution time, and errors with their crash data if any occurs. If you opted-in in the project, it will even collect for build commands the number and size of your bundles (initial, lazy and total), the assets, polyfills and CSS sizes, and the number of `ngOnInit` in your code.
 
 If you use `ng update` to update you CLI project,
@@ -227,7 +227,7 @@ you will be asked about whether you want to collect and send analytics or not (o
     Google’s Privacy Policy at https://policies.google.com/privacy? For more details and
     how to change this setting, see http://angular.io/analytics.
 
-You can manually trigger the prompt again with: `ng analytics prompt` or `ng analytics project prompt`. You can turn it off at any time with `ng analytics off` or for a project with `ng analytics project off`.
+You can manually trigger the prompt again with `ng analytics prompt`. You can turn it off at any time with `ng analytics off`.
 
 You can find more details [on the official documentation](https://github.com/angular/angular/blob/master/aio/content/marketing/analytics.md).
 
