@@ -45,9 +45,9 @@ as an update schematic will automatically take care of it for you!
 
 ## Differential loading
 
-This is one of the cool new features of the CLI 8.0.
+This is one of the cool new features of the CLI 8.0.0
 as it allows to specify which browsers you want to target,
-and the CLI will automatically build the necessary JS bundles with the necessary polyfills for your targets.
+and the CLI will automatically build the necessary JS bundles with the required polyfills for your targets.
 
 A first step was done in this direction with
 [CLI 7.3](/2019/01/31/angular-cli-7.3) and its conditional ES5 browser polyfill loading.
