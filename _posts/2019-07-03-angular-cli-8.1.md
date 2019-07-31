@@ -133,7 +133,7 @@ is now `true` by default.
 In their experiments, the CLI team found that the AoT builds with Ivy enabled
 were much faster than with View Engine,
 and pretty much on par with JiT builds.
-I gave it a try on one of my our projects,
+I gave it a try on one of our projects,
 and here are the results of how much time rebuilds are taking after a modification:
 
     Ivy disabled, JiT mode: 190-250ms (initial 11.5s)
