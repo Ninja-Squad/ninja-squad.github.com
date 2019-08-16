@@ -15,8 +15,7 @@ If you want to upgrade to 8.2.0 without pain (or to any other version, by the wa
 It can be a great help along the official `ng update @angular/core @angular/cli` command.
 You have no excuse for staying behind anymore!
 
-Let's see what we've got in this release,
-and start with new options for several commands.
+Let's see what we've got in this release.
 
 ## Component style budget
 
