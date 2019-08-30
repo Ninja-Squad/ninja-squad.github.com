@@ -6,6 +6,10 @@ tags: ["Angular 2", "Angular", "tips"]
 description: "Injectable must be added on services. But do we really need it?"
 ---
 
+**UPDATE (2019-08-30)**: This blog post applies to Angular&nbsp;2 to 8.
+Angular&nbsp;9 introduced a new engine, called Ivy,
+which behaves differently than what is explained here.
+
 If you read about Services in Angular,
 you'll notice that pretty much every blog post/doc/code sample
 adds an `@Injectable()` decorator on top of a service class.
