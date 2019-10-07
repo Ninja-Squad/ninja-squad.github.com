@@ -60,7 +60,7 @@ Here we have a tag function to uppercase the names of the protagonists:
     @Component({
       template: '{{ title }}'
     })
-    export class HomeCompoment {
+    export class HomeComponent {
       title = $localize`You have 10 users`;
     }
 {% endraw %}
@@ -72,8 +72,9 @@ As long as you add `import '@angular/localize/init'` once in your application,
 You can then load your translations:
 
     import { loadTranslations } from '@angular/localize';
+    import { computeMsgId } from '@angular/compiler';
     loadTranslations({
-      'You have 10 users': 'Vous avez 10 utilisateurs'
+      [computeMsgId('You have 10 users', '')]: 'Vous avez 10 utilisateurs'
     });
 
 The template of my `HomeComponent` then displays `Vous avez 10 utilisateurs`!
@@ -85,7 +86,10 @@ and the values, their translations.
 If you want to load another set of translations,
 you can call `clearTranslations()` and then load the other translations.
 
-Note that if no translation is found, `$localize` simply displays the original string.
+Note that if no translation is found, `$localize` simply displays the original string,
+and logs a warning in the console:
+
+    No translation found for "6480943972743237078" ("You have 10 users").
 
 What happens if you have some dynamic expression in your template string?
 
@@ -96,7 +100,8 @@ Then you can use these placeholders wherever you want in the translations
 (note that the syntax is `{$placeholder}` and not `${placeholder}` as ):
 
     loadTranslations({
-      'Hi {$PH}! You have {$PH_1} users.': 'Bonjour {$PH}\xa0! Vous avez {$PH_1} utilisateurs.'
+      [computeMsgId('Hi {$PH}! You have {$PH_1} users.', '')]:
+        'Bonjour {$PH}\xa0! Vous avez {$PH_1} utilisateurs.'
     });
 
 
@@ -108,7 +113,8 @@ by using the `${expression}:placeholder:` syntax.
 Then you can use this placeholder wherever you want in the translations:
 
     loadTranslations({
-      'Hi {$name}! You have {$userCount} users.': 'Bonjour {$name}\xa0!Vous avez {$userCount} utilisateurs.'
+      [computeMsgId('Hi {$name}! You have {$userCount} users.', '')]:
+        'Bonjour {$name}\xa0!Vous avez {$userCount} utilisateurs.'
     });
 
 ## i18n in templates
@@ -125,15 +131,82 @@ Interpolations are automatically named `INTERPOLATION`, `INTERPOLATION_1`, etc.
 So I can translate my title with:
 
     loadTranslations({
-      'Hello {$INTERPOLATION} - {$INTERPOLATION_1}': 'Bonjour {$INTERPOLATION} - {$INTERPOLATION_1}'
+      [computeMsgId('Hello {$INTERPOLATION} - {$INTERPOLATION_1}', '')]:
+        'Bonjour {$INTERPOLATION} - {$INTERPOLATION_1}'
     });
 
 
 That's why if your application, or one of its dependencies, uses `i18n` attributes
 in its templates, then you'll have to add `import '@angular/localize/init'` to your polyfills!
 
-// TODO the CLI may add it via a schematic on migration, and may include it in new apps.
+The CLI offers a schematic to do this for you.
+Simply run:
 
-// TODO compile-time inlining
+    ng add @angular/localize
+
+and the CLI adds the package to your dependencies and the necessary import to your polyfills.
+
+## Custom IDs
+
+Note that if you have translations with custom IDs,
+they are used by `$localize`:
+
+{% raw %}
+    <h1 i18n="@@home.greetings">Hello {{ user.name }} - {{ today | date }}</h1>
+{% endraw %}
+
+Then your translation looks like:
+
+    loadTranslations({
+      'home.greetings': 'Bonjour {$INTERPOLATION} - {$INTERPOLATION_1}'
+    });
+
+which is obviously nicer to use.
+
+How about for translations in code?
+`$localize` also understands a syntax allowing to specify an ID:
+
+    title = $localize`:@@home.users:You have 10 users`;
+
+The syntax for the custom ID is the same than in templates,
+and the ID is surrounded by colons to separate it from the content of the translation.
+
+As for the template syntax, you can also specify a description and a meaning,
+to help translators with a bit of context: `:meaning|description@@id:message`.
+
+For example:
+
+    title = $localize`:greeting message with the number of users currently logged in@@home.users:You have 10 users`;
+
+Keep in mind that this is a low level API.
+The Angular team or community will probably offer higher level functions
+with a better developer experience (well, I hope so!).
+
+## Compile time inlining
+
+You may be wondering why `$localize` is a global function.
+Among other reasons,
+it's mainly because this ensures that `$localize` is not renamed in the generated bundles
+at the end of the compilation.
+
+This allows to then run a tool on the bundles to directly replace
+the calls to `$localize` by the proper translation.
+You then have a bundle containing no calls to `$localize`
+and all i18n strings have been translated.
+
+This approach has a very cool benefit compared to what we used to have previously.
+until now, you had to build your application once per locale,
+and this was a full build. So let's say it's a 30s build,
+and you wanted 4 locales, then you were in for 4 minutes.
+
+With the new approach, the compilation is done once,
+and then the various i18n versions are generated in a few seconds.
+So you go from 4 minutes to 30-40 seconds!
+
+You then have several bundles, one per locale,
+and you can serve the appropriate one to your users depending on their preference
+as you used to.
+
+// TODO mention that $localize calls in templates are not dynamic, they are done once when the app is loaded. So you need to reload the page if you want another set of translations to be displayed.
 
 All our materials ([ebook](https://books.ninja-squad.com/angular), [online training](https://angular-exercises.ninja-squad.com/) and [training](https://ninja-squad.com/training/angular)) are up-to-date with these changes if you want to learn more!
