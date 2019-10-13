@@ -132,7 +132,7 @@ So our component becomes:
         selectors: [['ns-pony']],
         factory: () => new PonyComponent(),
         // number of elements, templates, content, bound texts to allocate...
-        consts: 4,
+        decls: 4,
         vars: 2,
         template: (renderFlags: RenderFlags, component: PonyComponent) => {
           if (renderFlags & RenderFlags.Create) {
@@ -144,10 +144,10 @@ So our component becomes:
             elementEnd();
           }
           if (renderFlags & RenderFlags.Update) {
-            select(1)
+            advance(1);
             property('src', component.getPonyImageUrl());
-            select(3)
-            textBinding(3, interpolation1('', component.ponyModel.name, ''));
+            advance(2);
+            textInterpolate(component.ponyModel.name);
           }
         }
       });
@@ -171,7 +171,7 @@ and then run the Angular compiler to generate the `metadata.json` files.
 
 Then, when someone was building an application with your library,
 `ng build` was building the `ng_factory.js` files for your components
-and for the components coming from librairies.
+and for the components coming from libraries.
 It means that if an application used 3 libraries with 10 components each,
 and the application itself had 50 components,
 `ng build` was compiling 80 components.
@@ -218,7 +218,6 @@ And the generated code in Ivy looks like:
 
     // ...
       if (renderFlags & RenderFlags.Update) {
-        select(0);
         // updates the public `pony` property
         property('pony', component.myPony);
       }
@@ -240,7 +239,7 @@ and not its public name.
 This is the locality principle.
 To compile an `AppComponent` that uses `PonyComponent` in its template,
 Ivy doesn't need to know anything about the pony component.
-The output of the Ivy compiler for `Appcomponent`
+The output of the Ivy compiler for `AppComponent`
 depends exclusively on the code of `AppComponent`.
 
 That was not true in ViewEngine,
@@ -271,7 +270,7 @@ so we'll see.
 
 The new instruction set has been designed to achieve the goals mentioned above.
 More accurately, it has been designed to be completely tree-shakeable.
-That means if you don't use a particuliar feature of Angular,
+That means if you don't use a particular feature of Angular,
 the instructions corresponding to that feature won't be in your final bundle.
 More than that the Ivy runtime won't have the code to run this instruction,
 whereas View Engine was not tree-shakeable and always contained everything.
