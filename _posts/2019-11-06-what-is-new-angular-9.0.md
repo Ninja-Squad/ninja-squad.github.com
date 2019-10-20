@@ -26,7 +26,7 @@ In a few words, if you're in a hurry,
 Ivy is a complete rewrite of the underlying compiler and renderer.
 The main goals are:
 - a cleaner architecture of the framework, which is a stepping stone to optimizations and new features in the future
-- a faster and stricter compilation, to help developers and not slow them
+- a faster and stricter compilation, to help developers and avoid slowing them down
 - smaller bundle sizes, especially in big applications right now, and all over the place in the future.
 - a support for runtime i18n.
 
@@ -42,7 +42,7 @@ In fact there are so many topics to cover
 that we wrote a dedicated article about it:
 [Angular i18n with $localize](TODO add link).
 
-We talk about compile-time i18n, the much awaited runtime i18n,
+This article talks about compile-time i18n, the much awaited runtime i18n,
 and how all this works under the hood.
 Check it out!
 
@@ -88,11 +88,11 @@ Note that this `@Directive()` decorator does not have a selector:
 this was not possible before v9,
 and it has been introduced for this use-case specifically.
 
-Another migration adds an `@Injectable()` decorator on all providers that don't have one.
+Another migration adds an `@Injectable()` decorator on all services that don't have one.
 It was not necessary for View Engine
 (check [this blog post](/2016-12-08-angular-injectable/) if you want to know why)
 but it is now with Ivy.
-So everything that is referenced as a provider in your application must now have
+So everything that is referenced as a service in your application must now have
 an `@Injectable()` decorator.
 
 You may also remember the `static` flag added in Angular 8.0,
@@ -132,7 +132,7 @@ by
 
 ### NgForm
 
-Note that the directive `NgForm` used to have `ngForm` as a possible selector
+The directive `NgForm` used to have `ngForm` as a possible selector
 and it's now no longer the case.
 It had already been deprecated in [Angular 7.0](/2018-10-18-what-is-new-angular-7/).
 
