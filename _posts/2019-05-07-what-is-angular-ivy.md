@@ -120,14 +120,14 @@ a function defining a view definition with two parts:
 Ivy generates a different code for the same component.
 First it does not generate a *ng_factory* anymore:
 it inlines the generated code in a static field.
-A `@Directive` decorator becomes a field called `ngDirectiveDef`.
-An `@Injectable` decorator becomes a field called `ngInjectableDef`.
-A `@Component` decorator becomes a field called `ngComponentDef`.
+A `@Directive` decorator becomes a field called `ɵdir`.
+A `@NgModule` decorator becomes a field called `ɵmod`.
+A `@Component` decorator becomes a field called `ɵcmp`.
 
 So our component becomes:
 
     class PonyComponent {
-      static ngComponentDef = defineComponent({
+      static ɵcmp = defineComponent({
         type: PonyComponent,
         selectors: [['ns-pony']],
         factory: () => new PonyComponent(),
@@ -261,7 +261,7 @@ in a component directly in its decorator.
 Modules were introduced to avoid that, but the downside was that it became the smallest unit of compilation:
 changing one element of the module lead to recompile all the elements of the module.
 You can see how the code generated in Ivy takes us back to what was originally designed by the Angular team,
-with a `directives` property generated in the `ngComponentDef` field.
+with a `directives` property generated in the `ɵcmp` field.
 I also heard the team talking about changing/removing modules one day in various conferences,
 so we'll see.
 

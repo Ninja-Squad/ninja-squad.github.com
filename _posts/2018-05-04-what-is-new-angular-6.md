@@ -320,7 +320,7 @@ the same example doesn't generate a separate `ngfactory` but inlines the informa
 
     export class PonyComponent {
 
-        static ngComponentDef = defineComponent({
+        static ɵcmp = defineComponent({
           type: PonyComponent,
           selector: [['ns-pony']],
           factory: () => new PonyComponent(),
@@ -335,8 +335,10 @@ the same example doesn't generate a separate `ngfactory` but inlines the informa
               elementEnd();
             }
             if (renderFlag & RenderFlags.Update) {
-              property(1, 'src', component.getPonyImageUrl());
-              text(3, interpolate('', component.ponyModel.name, ''));
+              advance(1)
+              property('src' component.getPonyImageUrl());
+              advance(3)
+              textInterpolate(component.ponyModel.name));
             }
           },
           inputs: { ponyModel: 'ponyModel' },

@@ -144,7 +144,7 @@ Or in a existing project by adding the following option in your `tsconfig.app.js
     }
 
 When using Ivy, you need to compile your third party Angular modules with `ngcc` (the Angular Compatibility Compiler).
-This tool generates the code necessary to compile your application with Ivy enabled (by generating the `ngComponentDef` field, `ngModuleDef` field, etc. for each dependency you use).
+This tool generates the code necessary to compile your application with Ivy enabled (by generating the `ɵcmp` field, `ngModuleDef` field, etc. for each dependency you use).
 
 But no need to worry about it, as the CLI now has a Webpack plugin that takes care of it for you! Your workflow will not change, even if behind the scenes the CLI does an extra-step for you when necessary.
 
