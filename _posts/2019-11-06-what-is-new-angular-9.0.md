@@ -56,6 +56,37 @@ This is fairly straightforward:
 But really you should check out [the blog post we wrote](TODO add link)
 or the updated chapter in [our ebook](https://books.ninja-squad.com/angular).
 
+## Better type-checking
+
+In the Ivy section, I was mentioning that the compilation is a bit stricter.
+And indeed it is smarter!
+Until now, you could for example give a string to `@Input()`
+that was expecting a number: you now get a nice compilation error.
+`ngFor` elements were previously typed as `any`,
+and are now properly typed.
+So:
+
+{% raw %}
+    <div *ngFor="let user of users">{{ user.nam }}</div>
+{% endraw %}
+
+is now caught by the compiler if you typed `nam` instead of `name`.
+The `$event` parameter and `#ref` variables in templates are now also properly typed.
+
+TODO: document the flags that will allow to deactivate these if needed.
+
+## Better auto-completion
+
+The language service (the package responsible for the nice auto-completion we have in our IDEs) has been improved and now offers some really nice new features.
+For example if you hover on a component or a directive in template,
+you'll if it is the former or the latter and from which module it comes from.
+It should be smarter and more robust overall.
+
+## TypeScript 3.6
+
+This release also comes with the need to upgrade to TypeScript 3.6.
+You can check out which new features TS 3.6 offers on the [Microsoft blog](https://devblogs.microsoft.com/typescript/announcing-typescript-3-6/).
+
 ## Automatic migrations
 
 If you are using the CLI `ng update @angular/core` command,
@@ -88,6 +119,10 @@ Note that this `@Directive()` decorator does not have a selector:
 this was not possible before v9,
 and it has been introduced for this use-case specifically.
 
+The `@Directive()` decorator is also added to your base class
+if it has decorated fields,
+like `@Input()`, `@Output()`, `@ViewChild()`, `@HostBinding()`, etc..
+
 Another migration adds an `@Injectable()` decorator on all services that don't have one.
 It was not necessary for View Engine
 (check [this blog post](/2016-12-08-angular-injectable/) if you want to know why)
@@ -114,7 +149,16 @@ but the former could be useful if you have several Angular applications
 or Angular Elements on the same page,
 and want them to share a service instance.
 
-## TestBed.inject
+## Deprecations
+
+### entryComponents is no longer necessary
+
+Until now you had to declare the component dynamically loaded,
+typically in a modal, in the `entryComponents` of a module.
+This is no longer necessary with Ivy!
+You can safely remove `entryComponents` from your modules.
+
+### TestBed.inject
 
 The `TestBed.get` method that you probably use all over your unit tests
 has been deprecated and replaced by `TestBed.inject`.
@@ -143,6 +187,17 @@ even if you were not using it.
 To gain a few kB in our bundles, this is no longer the case,
 and you'll have to import `HammerModule` explicitly in your root module
 if you want to keep using Hammer.
+
+## Intl API
+
+The i18n pipes (`number`, `percent`, `currency`, `date`)
+were using the Intl API,
+and were rewritten to not depend on it in Angular&nbsp;5.0.
+The current version of these pipes works without the Intl API.
+If you really wanted to keep the old version,
+you had to import `DeprecatedI18NPipesModule` in your application
+when migrating to Angular&nbsp;5.0.
+This is no longer possible as all the deprecated pipes have been removed.
 
 
 All our materials ([ebook](https://books.ninja-squad.com/angular), [online training](https://angular-exercises.ninja-squad.com/) and [training](https://ninja-squad.com/training/angular)) are up-to-date with these changes if you want to learn more!
