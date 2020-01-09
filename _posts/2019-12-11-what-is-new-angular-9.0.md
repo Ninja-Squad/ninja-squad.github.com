@@ -86,7 +86,6 @@ But if you want to go one step further,
 you can try the `strictTemplates` option in your `tsconfig.json`:
 
     "angularCompilerOptions": {
-      "fullTemplateTypeCheck": true,
       "strictTemplates": true
     }
 
@@ -108,7 +107,6 @@ so if one particular check bothers you, you can disable it.
 For example, if you don't want to check the type of the inputs:
 
     "angularCompilerOptions": {
-      "fullTemplateTypeCheck": true,
       "strictTemplates": true,
       "strictInputTypes": false
     }
