@@ -73,9 +73,48 @@ This is fairly straightforward:
 But really you should check out [the blog post we wrote](/2019/12/10/angular-localize/)
 or the updated chapter in [our ebook](https://books.ninja-squad.com/angular).
 
+## Other i18n goodies
+
 Unrelated to this new package,
 the locale data now include the directionality of the locale (`ltr` or `rtl`).
 You can get this information by using `getLocaleDirection(locale)`.
+
+Angular&nbsp;9 also offers the possibility to configure the default currency!
+The `currency` pipe allows to specify which currency you want to use
+by providing an ISO string like `USD`, 'EUR'...
+If you don't provide one, it uses `USD` by default.
+So it is a bit cumbersome to have to specify the currency every time,
+if your application only uses `EUR` for example.
+
+Angular&nbsp;9 introduced the possibility to configure
+the default currency globally using the token `DEFAULT_CURRENCY_CODE`:
+
+    { provide: DEFAULT_CURRENCY_CODE, useValue: 'EUR' },
+
+And you can then use `currency` without specifying `EUR` in a component.
+You can also get the currency via dependency injection of course:
+
+    {% raw %}
+    @Component({
+      selector: 'ns-currency',
+      template: `
+        <p>The currency is {{ currency }}</p>
+        <!-- will display 'EUR' -->
+        <p>{{ 1234.56 | currency }}</p>
+        <!-- will display '1 234,56 €' -->
+      `
+    })
+    class DefaultCurrencyOverriddenComponent {
+      constructor(@Inject(DEFAULT_CURRENCY_CODE) public currency: string) {}
+    }
+    {% endraw %}
+
+It also offers a `getLocaleCurrencyCode(locale)` function
+to retrieve the default currency for a specific locale.
+
+Note that in Angular&nbsp;10 the behavior will change,
+and the currency pipe will always use the default currency of the configured locale,
+even you don't specify the `DEFAULT_CURRENCY_CODE`!
 
 ## Better type-checking
 
@@ -126,10 +165,11 @@ For example if you hover on a component or a directive in template,
 you'll see if it is the former or the latter and from which module it comes from.
 It should be way smarter and more robust overall.
 
-## TypeScript 3.6
+## TypeScript 3.7
 
-This release also comes with the need to upgrade to TypeScript 3.6.
-You can check out which new features TS 3.6 offers on the [Microsoft blog](https://devblogs.microsoft.com/typescript/announcing-typescript-3-6/).
+This release also comes with the need to upgrade to at least TypeScript 3.6,
+and you can even use TypeScript 3.7.
+You can check out which new features TS 3.6 and TS 3.7 offers on the [Microsoft blog](https://devblogs.microsoft.com/typescript/announcing-typescript-3-6/) [posts](https://devblogs.microsoft.com/typescript/announcing-typescript-3-7/) (optional chaining, yay \o/).
 
 ## Automatic migrations
 
