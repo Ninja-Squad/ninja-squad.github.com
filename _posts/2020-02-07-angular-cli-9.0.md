@@ -100,7 +100,7 @@ You can now specify a `type` when generating a component:
 This generates files with a `container` suffix (`hello.container.ts`, `hello.container.html`...),
 and a component named `HelloContainer` instead of `HelloComponent`.
 
-You can also now add a `displayHost` flag if you want to generate a style containing `:host { display: block; }`.
+You can also now add a `displayBlock` flag if you want to generate a style containing `:host { display: block; }`.
 
 Also note that the `styleext` and `spec` flags have been definitely removed,
 so you must now use `style` and `skipTests` instead.
