@@ -291,7 +291,7 @@ This is no longer possible as all the deprecated pipes have been removed.
 
 This is a big update, and I'm sure you're dying to try it 😎.
 You can also check out
-[our blog post about the CLI v9](/2019/12/11/angular-cli-9.0/)
+[our blog post about the CLI v9](/2020/02/07/angular-cli-9.0/)
 to see what's new there.
 
 All our materials ([ebook](https://books.ninja-squad.com/angular), [online training](https://angular-exercises.ninja-squad.com/) and [training](https://ninja-squad.com/training/angular)) are up-to-date with these changes if you want to learn more!
