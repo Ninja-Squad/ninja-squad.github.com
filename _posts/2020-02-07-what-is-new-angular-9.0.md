@@ -20,7 +20,7 @@ This is a long awaited release for the community,
 as Ivy is now the default compiler/renderer in Angular 🌈.
 
 If you want to learn more about Ivy itself,
-check out [our dedicated blog post](/2019-05-07-what-is-angular-ivy/).
+check out [our dedicated blog post](/2019/05/07/what-is-angular-ivy/).
 
 In a few words, if you're in a hurry,
 Ivy is a complete rewrite of the underlying compiler and renderer.
