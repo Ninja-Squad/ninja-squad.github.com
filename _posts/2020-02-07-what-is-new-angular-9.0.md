@@ -234,8 +234,9 @@ Until now, when using `@Injectable()`,
 you could give only two values: an Angular module or `root`
 (which is an alias for the root module of your application).
 It now also accepts `platform` and `any`.
-The latter has no use for application developers like you and me,
-but the former could be useful if you have several Angular applications
+The latter provides a unique service instance in every module
+(including lazy modules) that injects the token,
+and the former could be useful if you have several Angular applications
 or Angular Elements on the same page,
 and want them to share a service instance.
 
