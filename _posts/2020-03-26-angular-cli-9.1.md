@@ -2,8 +2,8 @@
 layout: post
 title: What's new in Angular CLI 9.1?
 author: cexbrayat
-tags: ["Angular 9", "Angular 8", "Angular 7", "Angular 6", "Angular 5", "Angular", "Angular 2", "Angular 4", "Angular CLI"]
-description: "Angular CLI 9.1 is out! Read all about the new Protractor options and TODO!"
+tags: ["Angular 9", "Angular", "Angular CLI"]
+description: "Angular CLI 9.1 is out! Read all about TSLint support and the new Protractor options!"
 ---
 
 [Angular CLI 9.1.0](https://github.com/angular/angular-cli/releases/tag/v9.1.0) is out!✨
@@ -14,14 +14,42 @@ You have no excuse for staying behind anymore!
 
 Let's see what we've got in this release.
 
-## Fun with flags
+## TSLint 6.1
+
+As Angular 9.1 now supports TypeScript 3.8,
+the CLI does support it as well.
+The CLI also supports TSLint 6.1
+(which supports the new TypeScript syntaxes introduced in version 3.8).
+This is a bit weird,
+as TSLint is officially deprecated since version 6.0,
+in favor of [typescript-eslint](https://github.com/typescript-eslint/typescript-eslint).
+
+The CLI team plans to migrate to `typescript-eslint`
+as soon as possible, but, in the meantime,
+it still supports TSLint, and its new release 6.1.
+
+Note that TSLint 6.0
+introduced a [lot of](https://github.com/palantir/tslint/pull/4871)
+[changes](https://github.com/palantir/tslint/pull/4312)
+in the `tslint:recommended` config,
+that the CLI extends.
+
+To avoid these breaking changes in our applications,
+the default `tslint.json` configuration has been updated,
+and the CLI 9.1 ships with a migration you can run to update your configuration.
+The migration will be run automatically in version 10,
+but until then, you can run it manually if you want with:
+
+    ng update @angular/cli --migrate-only tslint-version-6
+
+## Fun with flags 🤓
 
 ### ng e2e
 
 The Protractor builder now accepts two flags `grep` and `invertGrep`
 to only run the matching spec names.
 Not the file name, the spec name,
-meaning what you defined in the `describe()` and `it()` functions:
+i.e. what you specified in the `describe()` and `it()` functions:
 
     describe('App', () => {
       it('should have a navbar', () => { });
