@@ -32,4 +32,8 @@ And to celebrate the release, we decided to also **lower the price of our [Angul
 
 Take care in these tough times. We hope you'll enjoy discovering and learning Vue 3 as much as we did ❤️.
 
-
+<p style="text-align: center;">
+  <a href="https://books.ninja-squad.com/vue">
+    <img class="rounded img-fluid" style="max-width: 100%" src="/assets/images/2020-05-12/vue-3-en.jpeg" alt="become a Ninja with Vue 3" />
+  </a>
+</p>

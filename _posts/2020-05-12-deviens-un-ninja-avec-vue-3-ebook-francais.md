@@ -33,3 +33,9 @@ Comme plus de mille personnes ont aimé notre Pack Pro Angular, mais que certain
 Enfin, pour fêter cette sortie, nous **baissons le prix de notre [Pack Pro Angular](https://books.ninja-squad.com/angular) au même prix de 99€**. Cette sortie est donc une bonne nouvelle à la fois pour les fans d'Angular et ceux que Vue intéressent.
 
 Prenez soin de vous dans ces temps difficiles. Nous espérons que vous aimerez découvrir et apprendre Vue 3 autant que nous ❤️.
+
+<p style="text-align: center;">
+  <a href="https://books.ninja-squad.com/vue">
+    <img class="rounded img-fluid" style="max-width: 100%" src="/assets/images/2020-05-12/vue-3-fr.jpeg" alt="Deviens un Ninja avec Vue 3" />
+  </a>
+</p>
