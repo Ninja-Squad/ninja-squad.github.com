@@ -1,24 +1,25 @@
 ---
 layout: post
-title: Getting started with Vue 3
+title: Commencer avec Vue 3
 author: cexbrayat
 tags: ["Vue"]
-description: "Let's start a new application with Vue 3 from scratch."
+description: "Commençons une nouvelle application avec Vue 3 en partant de zéro."
 ---
 
 > **Disclaimer**
-> This blog post is a chapter of our ebook [Become a Ninja with Vue](https://books.ninja-squad.com/vue). Enjoy! But keep in mind that, unlike the ebook, it won't be kept up to date with changes in Vue in the future.
+> Cet article est un chapitre de notre livre [Deviens un Ninja avec Vue](https://books.ninja-squad.com/vue). Bonne lecture&nbsp;! Garde en tête que, contrairement à notre livre, cet article ne sera pas maintenu à jour avec de futurs changements de Vue.
 
-Vue always marketed itself as a progressive framework that,
-unlike other alternatives like Angular or React,
-you can adopt progressively.
-You can take your existing static HTML,
-or jQuery application
-and easily sprinkle a bit of Vue on top of it.
+Vue s'est toujours présenté comme un framework évolutif qui,
+au contraire d'alternatives comme Angular ou React,
+peut être adopté progressivement.
+On peut parfaitement prendre une page HTML statique,
+ou une application basée sur jQuery, et y ajouter
+un peu de Vue.
 
-So first I'd like to demonstrate how easy it is to set up Vue.
+Donc, pour commencer, j'aimerais montrer comme c'est simple
+de mettre en place Vue dans une page HTML.
 
-Let's make an empty `index.html` file:
+Créons une page HTML vide `index.html`&nbsp;:
 
     <html lang="en">
       <meta charset="UTF-8" />
@@ -30,7 +31,7 @@ Let's make an empty `index.html` file:
     </html>
 
 
-Now let's add some HTML for Vue to handle:
+Ajoutons-y un peu de HTML que Vue devra gérer&nbsp;:
 
     <html lang="en">
       <meta charset="UTF-8" />
@@ -44,23 +45,23 @@ Now let's add some HTML for Vue to handle:
       </body>
     </html>
 
-The curly braces around `user` is Vue templating syntax,
-indicating that `user` should be replaced by its value.
-We'll explain everything in details in the following chapter,
-don't worry.
+Les accolades autour de `user` font partie de la syntaxe de Vue.
+Elles indiquent que `user` doit être remplacé par sa valeur.
+Nous expliquerons tout cela en détails dans le prochain chapitre,
+pas d'inquiétude.
 
-If you load the page in your browser,
-you'll see that it displays {% raw %}`Hello {{ user }}`{% endraw %}.
-That's normal, as we haven't used Vue yet.
+Si tu ouvres cette page dans ton navigateur, tu verras
+qu'elle affiche {% raw %}`Hello {{ user }}`{% endraw %}.
+C'est normal&nbsp;: nous n'avons pas encore utilisé Vue.
 
-Now let's add Vue.
-Vue is released on [NPM](https://www.npmjs.com/package/vue)
-and some sites (called CDNs, for Content Delivery Network)
-make NPM packages available for inclusion in our HTML pages.
-[Unpkg](https://unpkg.com/) is one of them.
-We can use it to add Vue to our page.
-Of course, you could also choose
-to download the file and serve it by yourself.
+Faisons-le.
+Vue est publié sur [NPM](https://www.npmjs.com/package/vue)
+et il existe des sites (appelés _CDNs_, pour _Content Delivery Network_)
+qui hébergent les packages NPM et permettent ainsi de les inclure dans nos pages HTML.
+[Unpkg](https://unpkg.com/) est l'un d'entre eux,
+et on peut donc l'utiliser pour ajouter Vue à notre page.
+Bien sûr, tu pourrais aussi choisir de télécharger le fichier
+et de l'héberger toi-même.
 
 {% raw %}
     <html lang="en">
@@ -77,32 +78,32 @@ to download the file and serve it by yourself.
     </html>
 {% endraw %}
 
-NOTE: We are using the latest version of Vue in this example.
-You can specify any version you want by adding `@version` after `https://unpkg.com/vue`
-in the URL.
+NOTE: Cet exemple utilise la dernière version de Vue.
+Tu peux spécifier n'importe quelle version explicitement en ajoutant
+`@version` dans l'URL, après `https://unpkg.com/vue`.
 
-If you reload the application,
-you'll see that Vue emits a warning in the console,
-informing us that we are using a development version.
-You can use `vue.global.prod.js` to use the production version,
-and make it disappear.
-The production doesn't do any checks in our code,
-is minified, and is bit faster.
+Si tu recharges la page,
+tu verras que Vue affiche un avertissement dans la console,
+nous informant qu'on utilise une version dédiée au développement.
+Tu peux utiliser `vue.global.prod.js` pour utiliser la version de production,
+et faire disparaître l'avertissement.
+La version de production désactive toutes les validations sur le code,
+est minifiée, et est donc plus rapide et plus légère.
 
-We now need to create our application.
-Vue offers a `createApp` function to create an application.
-To call it, we need a root component.
+Il nous faut à présent créer notre application, avec la
+fonction `createApp`. Mais cette fonction
+a besoin d'un composant racine.
 
-To create a component,
-we simply need to create an object
-that defines it.
-This object can have various properties,
-but for now we'll just add a `setup` function.
-Again we'll explain thoroughly later,
-but the name is explanatory enough:
-this function is here to set up the component,
-and Vue is going to call it for us
-when the component is initialized.
+Pour créer ce composant, il nous suffit de créer un objet
+qui le définit.
+Cet objet peut avoir de nombreuses propriétés,
+mais pour l'instant, nous allons seulement y ajouter
+une fonction `setup`.
+Pas de panique, nous reviendrons en détails sur la définition
+d'un composant et sur cette fonction.
+Mais son nom est assez explicite&nbsp;:
+elle prépare le composant, et Vue appellera cette fonction
+lorsque le composant sera initialisé.
 
 {% raw %}
     <html lang="en">
@@ -126,13 +127,13 @@ when the component is initialized.
     </html>
 {% endraw %}
 
-The `setup` function just returns an object with a property `user`
-and a value for this property.
-But if you reload your page, still nothing happens:
-we need to call `createApp` with our component.
+La fonction `setup` ne fait que retourner un objet avec une propriété `user`
+et une valeur pour cette propriété.
+Si tu recharges la page, toujours pas de changement&nbsp;:
+il nous reste toujours à appeler `createApp` avec notre composant racine.
 
-NOTE: You need a recent enough browser to load this page, as,
-as you can see, it uses a "modern" JavaScript syntax.
+NOTE: nous utilisons du JavaScript moderne dans cet exemple, et il
+te faut donc utiliser un navigateur suffisamment récent, qui supporte cette syntaxe.
 
 {% raw %}
     <html lang="en">
@@ -158,18 +159,17 @@ as you can see, it uses a "modern" JavaScript syntax.
     </html>
 {% endraw %}
 
-`createApp` creates an application that needs to be "mounted"
-in some place in the DOM: here we use the div with the id `app`.
-If you reload the page,
-you should now see `Hello Cédric`.
-Congratulations, you have your first Vue application.
+`createApp` crée une application qui doit être "montée",
+c’est-à-dire attachée à un élément du DOM.
+Nous utilisons ici la `div` avec l'identifiant `app`.
+Si tu recharges la page, tu devrais voir `Hello Cédric` s'afficher.
+Bravo, tu viens de créer ta première application Vue.
 
-Maybe we can add another component?
-We'll build an other component,
-displaying the number of unread messages.
+Peut-être pourrions-nous ajouter un autre composant&nbsp;?
 
-Let's add a new object called `UnreadMessagesComponent`,
-with a similar `setup` property:
+Créons un composant qui affiche le nombre de messages non lus.
+Il nous faut donc un nouvel objet `UnreadMessagesComponent`,
+avec une fonction `setup` similaire&nbsp;:
 
 {% raw %}
     <html lang="en">
@@ -200,12 +200,13 @@ with a similar `setup` property:
     </html>
 {% endraw %}
 
-Unlike the root component which is using the template inside the `#app` div,
-we want to define a template for `UnreadMessagesComponent`.
-This can be done by adding a `script` tag
-with a special type `text/x-template`.
-This type guarantees that the browser won't care about this script.
-You can then reference the template by its id inside the component definition:
+Cette fois, au contraire du composant racine dont la vue
+est directement définie par la `div` `#app`, nous voudrions
+définir un template pour le composant `UnreadMessagesComponent`.
+Il suffit pour cela de définir un élément `script`
+avec le type `text/x-template`.
+Ce type garantit que le navigateur ignorera simplement le contenu du script.
+On peut ensuite référencer le template par son identifiant dans la définition du composant.
 
 {% raw %}
     <html lang="en">
@@ -240,11 +241,14 @@ You can then reference the template by its id inside the component definition:
     </html>
 {% endraw %}
 
-We want to be able to insert the unread
-messages component inside our main template.
-To do that, we need to tell the root component
-it's allowed to use the unread messages component,
-and we need to assign it a PascalCase name:
+On veut pouvoir insérer ce nouveau composant à l'intérieur du composant racine.
+Pour pouvoir faire ça, nous devons autoriser le composant racine
+à utiliser le composant _unread messages_, et lui assigner
+un nom en _PascalCase_.
+
+On peut ensuite utiliser `<unread-messages></unread-messages>`
+(qui est la version _dash-case_ de `UnreadMessages`)
+pour insérer le composant où on le veut.
 
 {% raw %}
     <html lang="en">
@@ -322,25 +326,27 @@ We can now use the tag `<unread-messages></unread-messages>`
     </html>
 {% endraw %}
 
-Comparing to other frameworks,
-a Vue application is super easy to start:
-just pure JavaScript and HTML,
-no tooling, components are simple objects.
-Even someone that doesn't know Vue can understand what's going on.
-And this is one of the strengths of the framework:
-it's easy to start, easy to grasp,
-and you can progressively learn the features.
+En comparaison des autres frameworks,
+une application Vue est extrêmement simple à mettre en œuvre&nbsp;:
+juste du pur JavaScript et HTML.
+Pas d'outillage nécessaire.
+Les composants sont de simples objets.
+Même un développeur qui ne connaît pas Vue
+peut sans doute comprendre ce qui se passe.
+Et c'est l'une des forces du framework&nbsp;:
+c'est facile de démarrer, facile à comprendre,
+et les fonctionnalités peuvent être apprises progressivement.
 
-We _could_ stick to this minimal setup for our projects,
-but, let's face it, it will not scale for long.
-We will soon have too many components to fit in one file,
-we would really love to use TypeScript instead of JavaScript,
-to add tests, to add some kind of code analysis, etc.
+On _pourrait_ se contenter de cette approche minimale,
+mais soyons réalistes&nbsp;: ça ne tiendra pas très longtemps.
+Trop de composants vont devoir être définis dans le même fichier.
+On voudrait aussi pouvoir utiliser TypeScript au lieu de JavaScript,
+ajouter des tests, de l'analyse de code, etc.
 
-We _could_ set up all the needed tools by hand,
-but instead let's leverage the work of the community
-and use the excellent Vue CLI.
+Nous _pourrions_ installer et configurer toute une série
+d'outils nous-mêmes. Mais profitons plutôt du travail
+de la communauté et utilisons l'excellente Vue CLI.
 
-Come back next week if you want to learn how,
-or pay what you want for our complete ebook
-[Become a Ninja with Vue](https://books.ninja-squad.com/vue)!
+Reviens la semaine prochaine pour apprendre comment,
+ou paye le prix que tu veux pour notre ebook complet
+[Deviens un Ninja avec Vue](https://books.ninja-squad.com/vue)&nbsp;!
