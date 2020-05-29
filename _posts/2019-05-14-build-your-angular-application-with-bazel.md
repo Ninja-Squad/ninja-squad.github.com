@@ -6,6 +6,9 @@ tags: ["Angular", "Angular 8", "Bazel"]
 description: "Angular 8 adds a better support for Bazel in the CLI. Let's learn how to use it!"
 ---
 
+> **Disclaimer**
+> This approach has later been deprecated in Angular v10.
+
 One of the new features of Angular 8 is the possibility
 to (more easily) build your CLI application with Bazel.
 

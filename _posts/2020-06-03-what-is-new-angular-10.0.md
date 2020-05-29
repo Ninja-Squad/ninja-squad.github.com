@@ -8,7 +8,7 @@ description: "Angular 10.0 is out!"
 
 Angular&nbsp;10.0.0 is here!
 10 major versions is quite a milestone
-(well, it's 9 in fact, as there is no Angular version 3, but you get the point)
+(well, it's 8 in fact, as there are no Angular version 1 and 3, but you get the point)
 
 <p style="text-align: center;">
   <a href="https://github.com/angular/angular/blob/master/CHANGELOG.md#TODO">
@@ -17,7 +17,7 @@ Angular&nbsp;10.0.0 is here!
 </p>
 
 Despite being a nice round number, this is a small release in terms of features.
-But I'm super happy to see that the team has been digging into the opened issues on Github:
+But I'm super happy to see that the team has been digging into the open issues on Github:
 it's no secret that issues accumulated over these past months/years
 without much feedback from the Angular team, busy as they were working on Ivy.
 We should see some improvements on this front!
@@ -30,12 +30,20 @@ This release comes with the support of TypeScript 3.9,
 and requires us to update our applications to use this version (TS 3.8 is no longer supported).
 You can check out which new features TS 3.9 offers on the [Microsoft blog](https://devblogs.microsoft.com/typescript/announcing-typescript-3-9/).
 
-## IE9 and 10 are no longer supported
+## IE9, IE10, and IE mobile are no longer supported
 
 As these old browsers now have a very small fraction of the market,
 they are no longer officially supported by the Angular framework.
 
 ## Deprecations and breaking changes
+
+The [Bazel builder](/2019/05/14/build-your-angular-application-with-bazel)
+is now deprecated.
+It never reached a stable state as it was still in the "Angular Labs",
+and has not been actively used or maintained.
+It does not mean that there will not be a solution for using Bazel with Angular applications,
+but instead of wrapping Bazel in the CLI,
+it will probably come in another form.
 
 `WrappedValue` has been deprecated.
 It was used to wrap a value, to force a change detection even if the value did not change.
