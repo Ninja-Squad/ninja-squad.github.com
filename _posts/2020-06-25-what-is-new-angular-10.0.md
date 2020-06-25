@@ -11,7 +11,7 @@ Angular&nbsp;10.0.0 is here!
 (well, it's 8 in fact, as there are no Angular version 1 and 3, but you get the point)
 
 <p style="text-align: center;">
-  <a href="https://github.com/angular/angular/blob/master/CHANGELOG.md#TODO">
+  <a href="https://github.com/angular/angular/blob/master/CHANGELOG.md#1000-2020-06-24">
     <img class="rounded img-fluid" style="max-width: 100%" src="/assets/images/angular.png" alt="Angular logo" />
   </a>
 </p>
@@ -75,7 +75,7 @@ The signature of `CanLoad` changed, and it now matches the signature of `CanActi
 The guard can now also return an `UrlTree`. `CanActivate` had this option since Angular 7.1 (see our explanation in [this blog post](/2018/11/22/what-is-new-angular-7.1), and `CanLoad` can now do the same.
 
 You can also check out
-[our blog post about the CLI v10](/2020/06/TODO/angular-cli-10/)
+[our blog post about the CLI v10](/2020/06/25/angular-cli-10/)
 to see what's new there.
 
 All our materials ([ebook](https://books.ninja-squad.com/angular), [online training](https://angular-exercises.ninja-squad.com/) and [training](https://ninja-squad.com/training/angular)) are up-to-date with these changes if you want to learn more!
