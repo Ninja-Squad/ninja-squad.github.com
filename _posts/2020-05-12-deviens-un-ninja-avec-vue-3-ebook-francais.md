@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Deviens un Ninja avec Vue - notre book pour apprendre Vue 3 !
+title: Deviens un Ninja avec Vue - notre ebook pour apprendre Vue 3 !
 author: cexbrayat
 tags: ["Vue", "Angular"]
 description: "Nous sommes très contents d'annoncer la sortie de notre ebook et formation en ligne sur Vue 3 !"
