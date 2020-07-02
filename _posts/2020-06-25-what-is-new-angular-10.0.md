@@ -2,7 +2,7 @@
 layout: post
 title: What's new in Angular 10.0?
 author: cexbrayat
-tags: ["Angular 9", "Angular"]
+tags: ["Angular 10", "Angular"]
 description: "Angular 10.0 is out!"
 ---
 
