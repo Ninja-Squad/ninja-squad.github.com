@@ -33,7 +33,7 @@ The awesome news is that it can extract messages from your TypeScript code 🎉
 If you want to learn more about that,
 check out our article about the [CLI v10.1](/2020/09/03/angular-cli-10.1/).
 
-The [PeerTube](https://peer.tube/) team builds their app in 20 languages,
+The [PeerTube](https://joinpeertube.org/) team builds their app in 20 languages,
 and started to use localize now that it supports this feature:
 their build time dropped from [80 minutes to 12 minutes](https://twitter.com/chocobozzz/status/1295263873730334720) 😍.
 
