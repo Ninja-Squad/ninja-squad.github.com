@@ -22,7 +22,7 @@ let's see what it brings us.
 ## TypeScript 4.0
 
 This new release supports TypeScript 4.0.
-Even if 4.0 sounds like a big deal, TypeScript does not follow semver, so this not really an exceptional release.
+Even if 4.0 sounds like a big deal, TypeScript does not follow semver, so this is not really an exceptional release.
 There are still a few interesting features though.
 You can check the [official blog post](https://devblogs.microsoft.com/typescript/announcing-typescript-4-0/) to learn about variadic tuple types for example (yes, it's a thing 🤓).
 
