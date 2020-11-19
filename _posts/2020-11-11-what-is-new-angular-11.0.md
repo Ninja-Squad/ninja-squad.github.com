@@ -208,7 +208,7 @@ resulting in the same ID and a single message to translate:
       </context-group>
     </trans-unit>
 
-Note that the option is now set to `false` in a newly generated CLI project
+Note that the option will be set to `false` in a newly generated CLI project
 (as this will be the default in the long run).
 You can of course change it in your applications by adding it to your Angular compiler options.
 
