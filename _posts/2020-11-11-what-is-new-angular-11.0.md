@@ -232,4 +232,3 @@ in our [previous blog post](/2020/09/03/angular-cli-10.1/)
 
 
 All our materials ([ebook](https://books.ninja-squad.com/angular), [online training](https://angular-exercises.ninja-squad.com/) and [training](https://ninja-squad.com/training/angular)) are up-to-date with these changes if you want to learn more!
-f
