@@ -17,6 +17,7 @@ Angular&nbsp;11.1.0 is here!
 This is a relatively small release.
 A ton of work has been done by the team on the Language Service (that powers the autocomplete/intellisense of our IDEs), and on the "linker", a new piece that'll allow to ship partially compiled libraries to NPM
 in the long term (and get rid of `ngcc`).
+This deserves a dedicated blog post, which will come soon!
 
 ## TypeScript 4.1
 
@@ -55,7 +56,13 @@ We now have an explicit error if we write a route configuration with both of the
 A schematic will automatically remove the useless `canActivate` guards in your route configurations when you update to v11.1.
 
 Overall, the router received some love in this release with a bunch of fixes.
-It also has a tiny new feature: `routerLink` now has a `relativeTo` input.
+For example, you may have seen this very annoying log (that made no sense) when you run `ng test`:
+
+    WARN: 'Navigation triggered outside Angular zone, did you forget to call 'ngZone.run()'?'
+
+It has been fixed and the useless log is now gone!
+
+The router also has a tiny new feature: `routerLink` now has a `relativeTo` input.
 This allows to use `<a routerLink="something" [relativeTo]="route.parent">` like we do in the `router.navigate()` method.
 If you give no value to this input, the `routerLink` is resolved relatively to the root (as it is by default).
 It has been introduced to fix an issue with router outlets and router links,
