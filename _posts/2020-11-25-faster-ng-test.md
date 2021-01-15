@@ -48,4 +48,4 @@ It will be fixed in the framework when [this PR](https://github.com/angular/angu
 
 But it is soooo nice to have faster tests that I thought it deserved a blog post until this is fixed 🤓.
 
-Check out our [ebook](https://books.ninja-squad.com/angular), [online training](https://angular-exercises.ninja-squad.com/) and [training](https://ninja-squad.com/training/angular)) if you want to learn more about Angular!
+Check out our [ebook](https://books.ninja-squad.com/angular), [online training](https://angular-exercises.ninja-squad.com/) and [training](https://ninja-squad.com/training/angular) if you want to learn more about Angular!
