@@ -30,8 +30,7 @@ on the Microsoft blog to learn more about the new TS features
 
 The `QueryList` type, that we use as the type of a field decorated
 with `@ViewChildren` or `@ContentChildren`, has a new `get` method.
-Until now, you had to use the index to access an element.
-You can now use `elements.get(1)` (same as `element[1]`).
+You can now use `elements.get(1)` instead of `elements.toArray()[1]` (which was duplicating the whole array).
 
 As you may know, Angular has built-in support for [HammerJS](https://hammerjs.github.io/),
 as long as you import `HammerModule` in your application.
@@ -64,7 +63,7 @@ It has been fixed and the useless log is now gone!
 
 The router also has a tiny new feature: `routerLink` now has a `relativeTo` input.
 This allows to use `<a routerLink="something" [relativeTo]="route.parent">` like we do in the `router.navigate()` method.
-If you give no value to this input, the `routerLink` is resolved relatively to the root (as it is by default).
+If you give no value to this input, the `routerLink` is resolved relatively to the current route (as it is by default).
 It has been introduced to fix an issue with router outlets and router links,
 so you'll probably only need it in very specific cases.
 
@@ -76,6 +75,9 @@ It was already supporting XMB, XLIFF, and JSON.
 
 ARB is based on JSON, and is a popular format in some ecosystems
 (I believe [Flutter](https://flutter.dev/) projects use this format).
+
+Check [our article about CLI v11.1](/2021-01-20/angular-cli-11.1/) to see an example,
+and the differences between JSON and ARB.
 
 
 All our materials ([ebook](https://books.ninja-squad.com/angular), [online training](https://angular-exercises.ninja-squad.com/) and [training](https://ninja-squad.com/training/angular)) are up-to-date with these changes if you want to learn more!
