@@ -26,11 +26,11 @@ In the long run, this will help developers to find relevant information on an er
 We can expect the official documentation to reference these codes soon,
 but in the meantime, here are the most frequent runtime errors we all have seen once:
 
-- NG0100: "ExpressionChangedAfterItHasBeenCheckedError" (change detection error)
-- NG0200: "Circular dependency" (dependency injection error)
-- NG0201: "No provider for X" (dependency injection error)
-- NG0300: "Multiple components match node with tagname X" (template error)
-- NG0301: "Export of name X not found" (template error)
+- [NG0100: "ExpressionChangedAfterItHasBeenCheckedError" (change detection error)](https://angular.io/errors/NG0100)
+- [NG0200: "Circular dependency" (dependency injection error)](https://angular.io/errors/NG0200)
+- [NG0201: "No provider for X" (dependency injection error)](https://angular.io/errors/NG0201)
+- [NG0300: "Multiple components match node with tagname X" (template error)](https://angular.io/errors/NG0300)
+- [NG0301: "Export of name X not found" (template error)](https://angular.io/errors/NG0301)
 - NG0302: "The pipe X could not be found" (template error)
 - NG0303: "Can't bind to X since it isn't a known property" (template error)
 - NG0304: "X is not a known element" (template error)
