@@ -95,7 +95,7 @@ It was already supporting XMB, XLIFF, and JSON.
 ARB is based on JSON, and is a popular format in some ecosystems
 (I believe [Flutter](https://flutter.dev/) projects use this format).
 
-Check [our article about CLI v11.1](/2021-01-20/angular-cli-11.1/) to see an example,
+Check [our article about CLI v11.1](/2021/01/21/angular-cli-11.1/) to see an example,
 and the differences between JSON and ARB.
 
 ## Docs
@@ -110,7 +110,7 @@ And some of them now have dedicated documentation pages, with videos!
 - [NG0300: "Multiple components match node with tagname X" (template error)](https://angular.io/errors/NG0300)
 - [NG0301: "Export of name X not found" (template error)](https://angular.io/errors/NG0301)
 
-THe compiler now also has a few dedicated error code:
+The compiler now also has a few dedicated error code:
 
 - [NG1001: "Decorator argument is not an object literal"](https://angular.io/errors/NG1001)
 - [NG2003: "No suitable injection token for parameter"](https://angular.io/errors/NG2003)
