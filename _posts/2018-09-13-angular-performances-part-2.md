@@ -6,7 +6,7 @@ tags: ["Angular 6", "Angular 5", "Angular", "Angular 2", "Angular 4", "Angular C
 description: "Learn how to make your Angular application faster. In this second part, let's talk about how you can speed up the reloading of an application."
 ---
 
-This is the second part of this series (check the [first post](/2018/09/06/angular-performances-part-1) if you missed it), and this blog post is about how you can speed up the reloading of an Angular application.
+This is the second part of this series (check the [first post](/2018/09/06/angular-performances-part-1/) if you missed it), and this blog post is about how you can speed up the reloading of an Angular application.
 In future posts, we'll talk about how to profile your running application,
 and how to improve runtime performances.
 If you are the lucky owner of our ebook, you can already check the other parts if you download the [last ebook release](https://books.ninja-squad.com/claim?book=Angular).
@@ -90,4 +90,4 @@ The exercise takes an application and walks you through what we would do to opti
 measuring the benefits of each steps, showing you how to avoid the common traps,
 how to test the optimized application, etc. Check it out if you want to learn more!
 
-See you soon for [part 3](/2018/09/20/angular-performances-part-3)!
+See you soon for [part 3](/2018/09/20/angular-performances-part-3/)!

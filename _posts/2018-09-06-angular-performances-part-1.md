@@ -15,7 +15,7 @@ are they what you are looking for,
 and should you really use them.
 
 This is the first part of this series, and this blog post is about the first load of an Angular application.
-In future posts, we'll talk about how to make [reloading faster](/2018/09/13/angular-performances-part-2), then about how to [profile your running application](/2018/09/20/angular-performances-part-3),
+In future posts, we'll talk about how to make [reloading faster](/2018/09/13/angular-performances-part-2/), then about how to [profile your running application](/2018/09/20/angular-performances-part-3/),
 and how to improve runtime performances.
 If you are the lucky owner of our ebook, you can already check the other parts if you download the [last ebook release](https://books.ninja-squad.com/claim?book=Angular).
 
@@ -120,4 +120,4 @@ The exercise takes an application and walks you through what we would do to opti
 measuring the benefits of each steps, showing you how to avoid the common traps,
 how to test the optimized application, etc. Check it out if you want to learn more!
 
-See you soon for [part 2](/2018/09/13/angular-performances-part-2).
+See you soon for [part 2](/2018/09/13/angular-performances-part-2/).

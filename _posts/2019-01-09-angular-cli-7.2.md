@@ -17,7 +17,7 @@ Let's see what we've got!
 ## TypeScript 3.2 support
 
 As Angular 7.2 now supports TypeScript 3.2
-([check out our article about Angular 7.2](/2019/01/07/what-is-new-angular-7.2)),
+([check out our article about Angular 7.2](/2019/01/07/what-is-new-angular-7.2/)),
 the CLI officially supports it too.
 
 ## New flag and flag values for ng build

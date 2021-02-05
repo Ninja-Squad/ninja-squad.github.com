@@ -21,7 +21,7 @@ But let's try nevertheless!
 
 As you may have understood if you read our last
 [blog](/2019/05/07/what-is-angular-ivy/)
-[posts](/2019/05/29/what-is-new-angular-8.0),
+[posts](/2019/05/29/what-is-new-angular-8.0/),
 Ivy is still a big part of the work done by the Angular team
 for this release.
 The plan is still to enable it by default in v9,

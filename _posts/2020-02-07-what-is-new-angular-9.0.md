@@ -269,7 +269,7 @@ by
 
 The directive `NgForm` used to have `ngForm` as a possible selector
 and it's now no longer the case.
-It had already been deprecated in [Angular 7.0](/2018-10-18-what-is-new-angular-7/).
+It had already been deprecated in [Angular 7.0](/2018/10/18/what-is-new-angular-7/).
 
 ### Hammer
 

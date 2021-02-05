@@ -64,7 +64,7 @@ The Google security team helped the Angular team
 to make the framework ready,
 and we should see official documentation soon.
 The CLI may even help us detecting potential violations in the future.
-You can already start by adding a custom CSP header to dev server (see [our CLI blog post](/2020/11/11/angular-cli-11.0))
+You can already start by adding a custom CSP header to dev server (see [our CLI blog post](/2020/11/11/angular-cli-11.0/))
 
 Pretty much all my knowledge comes from [this article](https://web.dev/trusted-types/),
 if you want to learn more.
@@ -165,7 +165,7 @@ A new option is available for the i18n message extraction: `enableI18nLegacyMess
 
 Currently, the `xi18n` command
 (renamed  `extract-i18n` in CLI v11,
-see [our blog post](/2020/11/11/angular-cli-11.0))
+see [our blog post](/2020/11/11/angular-cli-11.0/))
 uses 2 different algorithms to compute the message IDs in an application:
 
 - a legacy one for messages in the template (based on ViewEngine)
@@ -215,7 +215,7 @@ You can of course change it in your applications by adding it to your Angular co
 ## ViewEncapsulation
 
 Angular v6.1 introduced a new option called `ShadowDom` to replace the deprecated `Native` option.
-You can check out why in [our blog post](/2018/07/26/what-is-new-angular-6.1) from 2 years ago.
+You can check out why in [our blog post](/2018/07/26/what-is-new-angular-6.1/) from 2 years ago.
 It's now time to say goodbye to `Native`: it has been removed from the codebase.
 A migration will automatically replace it with `ShadowDom` in your application
 if you were still using it.

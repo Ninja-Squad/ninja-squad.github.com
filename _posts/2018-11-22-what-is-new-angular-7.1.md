@@ -80,7 +80,7 @@ but not if a query or matrix parameter changes.
 
 ### updateOn in FormBuilder
 
-The `updateOn` option is available since [Angular 5](/2017/11/02/what-is-new-angular-5),
+The `updateOn` option is available since [Angular 5](/2017/11/02/what-is-new-angular-5/),
 but it was only usable if you used the constructor of `FormGroup` directly:
 
     this.userForm = new FormGroup({

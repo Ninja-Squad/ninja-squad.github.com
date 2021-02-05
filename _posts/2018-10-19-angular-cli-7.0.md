@@ -95,7 +95,7 @@ The CLI README now also has [a dedicated section to CPU profiling](https://githu
 
 `ng generate component` now accepts `--viewEncapsulation=ShadowDom`
 to reflect the new view encapsulation option added in
-[Angular 6.1](/2018/07/26/what-is-new-angular-6.1).
+[Angular 6.1](/2018/07/26/what-is-new-angular-6.1/).
 
 ### ng new
 
@@ -127,7 +127,7 @@ extracting the `i18n` messages with: `ng xi18n --no-progress`.
 ## TypeScript 3.1 support
 
 As Angular 7.0 now requires TypeScript 3.1
-([check out our article about Angular 7](/2018/10/18/what-is-new-angular-7)),
+([check out our article about Angular 7](/2018/10/18/what-is-new-angular-7/)),
 the CLI officially supports it too.
 This also includes a few optimizations in `build-optimizer`
 specific to Angular 7.0/TS 3.1.
@@ -176,7 +176,7 @@ When you build your application,
 you'll see a warning if the bundle is over 2MB,
 and an error if it is over 5MB.
 You can customize these limits of course
-(see [our article about the CLI 1.7](/2018/02/19/angular-cli-1.7),
+(see [our article about the CLI 1.7](/2018/02/19/angular-cli-1.7/),
 the version that introduced budgets).
 
 ## Performances

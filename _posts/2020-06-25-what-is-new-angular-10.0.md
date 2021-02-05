@@ -37,7 +37,7 @@ they are no longer officially supported by the Angular framework.
 
 ## Deprecations and breaking changes
 
-The [Bazel builder](/2019/05/14/build-your-angular-application-with-bazel)
+The [Bazel builder](/2019/05/14/build-your-angular-application-with-bazel/)
 is now deprecated.
 It never reached a stable state as it was still in the "Angular Labs",
 and has not been actively used or maintained.
@@ -59,7 +59,7 @@ Again, that should not impact you, unless you were relying on this behavior.
 ## Service worker
 
 The service worker package offers registration strategies since Angular 8.0.
-You can check out [the article we wrote at that time](/2019/05/29/what-is-new-angular-8.0).
+You can check out [the article we wrote at that time](/2019/05/29/what-is-new-angular-8.0/).
 It now adds the possibility to set a timeout for the `registerWhenStable` strategy,
 with `registerWhenStable:TIMEOUT`.
 If the application does not stabilize after the timeout, the ServiceWorker registers anyway.
@@ -72,10 +72,10 @@ It is now also possible to specify caching options with `cacheQueryOptions` for 
 ## Router
 
 The signature of `CanLoad` changed, and it now matches the signature of `CanActivate`.
-The guard can now also return an `UrlTree`. `CanActivate` had this option since Angular 7.1 (see our explanation in [this blog post](/2018/11/22/what-is-new-angular-7.1), and `CanLoad` can now do the same.
+The guard can now also return an `UrlTree`. `CanActivate` had this option since Angular 7.1 (see our explanation in [this blog post](/2018/11/22/what-is-new-angular-7.1/), and `CanLoad` can now do the same.
 
 You can also check out
-[our blog post about the CLI v10](/2020/06/25/angular-cli-10/)
+[our blog post about the CLI v10](/2020/06/25/angular-cli-10.0/)
 to see what's new there.
 
 All our materials ([ebook](https://books.ninja-squad.com/angular), [online training](https://angular-exercises.ninja-squad.com/) and [training](https://ninja-squad.com/training/angular)) are up-to-date with these changes if you want to learn more!

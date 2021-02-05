@@ -150,7 +150,7 @@ If you check out the
 [differences between version 8.0 and 8.1](https://github.com/cexbrayat/angular-cli-diff/compare/8.0.0...8.1.0),
 you'll notice that the `tsconfig.json` file lost the `emitDecoratorMetadata` option.
 This option was only needed for JiT development
-for the dependency injection (you can [read an old blog post of mine about that](/2016/12/08/angular-injectable)).
+for the dependency injection (you can [read an old blog post of mine about that](/2016/12/08/angular-injectable/)).
 As it was only useful for that use-case,
 the CLI is now handling it itself when building your application in dev mode.
 So you can now remove this option from your project!
@@ -169,7 +169,7 @@ You will also note that two `angularCompilerOptions` are now enabled by default:
 
 The first one is one of my favorites,
 as it allows a deeper check of your templates.
-I [explained this option](/2017/11/02/what-is-new-angular-5)
+I [explained this option](/2017/11/02/what-is-new-angular-5/)
 when it was introduced in Angular 5.0.
 `strictInjectionParameters` errors when an injection type can't be determined.
 

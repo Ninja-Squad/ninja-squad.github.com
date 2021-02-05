@@ -27,7 +27,7 @@ on the Microsoft blog.
 
 ## ng new with Bazel support!
 
-I was mentioning in [our article about Angular 7.1](/2018/11/22/what-is-new-angular-7.1) that the [Bazel](https://bazel.build/) support was making progress,
+I was mentioning in [our article about Angular 7.1](/2018/11/22/what-is-new-angular-7.1/) that the [Bazel](https://bazel.build/) support was making progress,
 and this 7.2 release brings a cool new feature.
 It's more a new CLI feature and maybe should be mentioned in my upcoming blog post about "What's new in Angular CLI 7.2", but the code of `@angular/bazel` lives in the Angular repo and not in the CLI repo.
 
@@ -72,7 +72,7 @@ Later, the value can be read from the router by using `getCurrentNavigation`:
 
 ### New options for runGuardAndResolvers
 
-This is not a left over copy/paste from the [7.1 article](/2018/11/22/what-is-new-angular-7.1):
+This is not a left over copy/paste from the [7.1 article](/2018/11/22/what-is-new-angular-7.1/):
 there are other new options for `runGuardsAndResolvers` in 7.2!
 
 `runGuardsAndResolvers` is one of the configuration options for a route,

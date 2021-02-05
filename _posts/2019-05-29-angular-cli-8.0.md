@@ -50,7 +50,7 @@ as it allows to specify which browsers you want to target,
 and the CLI will automatically build the necessary JS bundles with the required polyfills for your targets.
 
 A first step was done in this direction with
-[CLI 7.3](/2019/01/31/angular-cli-7.3) and its conditional ES5 browser polyfill loading.
+[CLI 7.3](/2019/01/31/angular-cli-7.3/) and its conditional ES5 browser polyfill loading.
 This release goes one step further.
 
 The default target in `tsconfig.json` is now `es2015`

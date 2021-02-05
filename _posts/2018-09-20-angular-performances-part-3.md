@@ -6,7 +6,7 @@ tags: ["Angular 6", "Angular 5", "Angular", "Angular 2", "Angular 4", "Angular C
 description: "Learn how to make your Angular application faster. In this third part, let's talk about how you can profile the runtime performances of your application and how to improve them."
 ---
 
-This is the third part of this series (check the [first part](/2018/09/06/angular-performances-part-1) and the [second one](/2018/09/13/angular-performances-part-2) if you missed them), and this blog post is about how you can profile the runtime performances of your Angular application and how you can improve these runtime performances.
+This is the third part of this series (check the [first part](/2018/09/06/angular-performances-part-1/) and the [second one](/2018/09/13/angular-performances-part-2/) if you missed them), and this blog post is about how you can profile the runtime performances of your Angular application and how you can improve these runtime performances.
 If you are the lucky owner of our ebook, you can already check the other parts if you download the [last ebook release](https://books.ninja-squad.com/claim?book=Angular).
 
 
@@ -199,4 +199,4 @@ The exercise takes an application and walks you through what we would do to opti
 measuring the benefits of each steps, showing you how to avoid the common traps,
 how to test the optimized application, etc. Check it out if you want to learn more!
 
-See you soon for [part 4](/2018/09/27/angular-performances-part-4)!
+See you soon for [part 4](/2018/09/27/angular-performances-part-4/)!

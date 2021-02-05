@@ -58,7 +58,7 @@ the bundle sizes went:
 
 That's quite a big difference!
 
-Interesting to note that in the [design doc](https://docs.google.com/document/d/195L4WaDSoI_kkW094LlShH6gT3B7K1GZpSBnnLkQR-g/preview), the Angular team compares the performance (the execution time of course but also the pressure on the memory) with the baseline implementation (best vanilla JS they could write) Angular 2.x and InfernoJS (a really fast React-like implementation).
+Interesting to note that in the design doc, the Angular team compares the performance (the execution time of course but also the pressure on the memory) with the baseline implementation (best vanilla JS they could write) Angular 2.x and InfernoJS (a really fast React-like implementation).
 
 # Universal
 

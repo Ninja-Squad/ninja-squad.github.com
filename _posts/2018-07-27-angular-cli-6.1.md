@@ -63,6 +63,6 @@ and the same source maps built with `vendorSourceMap`:
 
 This is all for this small release,
 except the support of TypeScript 2.8 and 2.9 and the support of Angular 6.1 of course.
-You can check out what's new in Angular 6.1 in our [previous blog post](/2018/07/26/what-is-new-angular-6.1).
+You can check out what's new in Angular 6.1 in our [previous blog post](/2018/07/26/what-is-new-angular-6.1/).
 
 All our materials ([ebook](https://books.ninja-squad.com/angular), [online training](https://angular-exercises.ninja-squad.com/) and [training](https://ninja-squad.com/training/angular)) are up-to-date with these changes if you want to learn more!

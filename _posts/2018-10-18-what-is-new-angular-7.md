@@ -20,7 +20,7 @@ rewriting the Angular compiler and runtime code to make it smaller, better, fast
 But Ivy is not ready for prime time yet.
 
 So don't expect a lot of shiny things in Angular 7.0:
-there was not enough material to make a video as we did for [Angular 5](/2017/11/02/what-is-new-angular-5) or [Angular 6](/2018/05/04/what-is-new-angular-6).
+there was not enough material to make a video as we did for [Angular 5](/2017/11/02/what-is-new-angular-5/) or [Angular 6](/2018/05/04/what-is-new-angular-6/).
 This will be a short blog post for once,
 and a fast and easy upgrade for you!
 
@@ -96,7 +96,7 @@ so this is very limited right now :).
 ## Slots with Angular Elements
 
 It is possible to use `ViewEncapsulation.ShadowDom` since
-[Angular 6.1](/2018/07/26/what-is-new-angular-6.1),
+[Angular 6.1](/2018/07/26/what-is-new-angular-6.1/),
 which is great for Angular Elements
 (Angular components packaged as Web components that you can use alone).
 But there was a missing feature to be able to use `<slot>`,

@@ -6,7 +6,7 @@ tags: ["Angular 6", "Angular 5", "Angular", "Angular 2", "Angular 4", "Angular C
 description: "Learn how to make your Angular application faster. In this last part, let's talk about how you improve the runtime performances with pure pipes, the attribute decorator and other tips."
 ---
 
-This is the last part of this series (check the [first part](/2018/09/06/angular-performances-part-1), the [second one](/2018/09/13/angular-performances-part-2), the [third one](/2018/09/20/angular-performances-part-3) and the [fourth one](/2018/09/27/angular-performances-part-4) if you missed them), and this blog post is about how you can improve the runtime performances of your Angular application with pure pipes, the attribute decorator and other tips.
+This is the last part of this series (check the [first part](/2018/09/06/angular-performances-part-1/), the [second one](/2018/09/13/angular-performances-part-2/), the [third one](/2018/09/20/angular-performances-part-3/) and the [fourth one](/2018/09/27/angular-performances-part-4/) if you missed them), and this blog post is about how you can improve the runtime performances of your Angular application with pure pipes, the attribute decorator and other tips.
 If you are the lucky owner of our ebook, you can already check the other parts if you download the [last ebook release](https://books.ninja-squad.com/claim?book=Angular).
 
 

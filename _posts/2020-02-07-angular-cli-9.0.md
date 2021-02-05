@@ -44,7 +44,7 @@ When running `ng update @angular/cli`, some schematics are going to update your 
 
 - `aot: true` is added to the default configuration in `angular.json`. The CLI team is now confident that always working in AoT mode is possible and fast enough with Ivy.
 - `enableIvy: true` is removed (if present) from your TS config, and the `include` section is updated to only include the files needed.
-- the `anyComponentStyle` budget, added in [CLI 8.2](/2019-08-01-angular-cli-8.2/), is automatically added to your project configuration with a `6kb` limit warning.
+- the `anyComponentStyle` budget, added in [CLI 8.2](/2019/08/01/angular-cli-8.2/), is automatically added to your project configuration with a `6kb` limit warning.
 - (if you are developing a PWA) the `ngsw-config.json` file is updated to include `manifest.webmanifest` which is now necessary in modern Chrome versions.
 - the styles and scripts option `lazy` in `angular.json` has been deprecated and replaced by a new `inject` property which has the opposite meaning (`lazy: true` = `inject: false` if you don't want to inject the style or script in your HTML page). The schematic automatically handles the migration.
 
