@@ -1,0 +1,20 @@
+name: Check HTML links
+
+on: [push]
+
+jobs:
+  check_html_links_job:
+    runs-on: ubuntu-latest
+    name: A job to test check-html-links-action
+    steps:
+      - uses: actions/checkout@v2
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.4
+          bundler-cache: true # runs 'bundle install' and caches installed gems automatically
+      - name: build blog
+        run: bundle exec jekyll build --future
+      - name: check all internal links
+        run: npx broken-link-checker-local --ordered --recursive --get --exclude-external _site
+      - name: check external links for the home page
+        run: npx broken-link-checker-local --ordered --get --exclude-internal --exclude https://twitter.com _site
