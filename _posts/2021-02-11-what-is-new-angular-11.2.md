@@ -69,6 +69,7 @@ Indeed, you can't break another part of the application when you just change the
 
 We'll hopefully see faster compilation times in the future releases.
 
+You can check what's new in the CLI for this v11.2 release in [our other blog post](/2021/02/11/angular-cli-11.2/).
 The next one will be v12.0, and it should include some new features,
 stay tuned!
 
