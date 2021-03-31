@@ -5,7 +5,7 @@ on: [push]
 jobs:
   check_html_links_job:
     runs-on: ubuntu-latest
-    name: A job to test check-html-links-action
+    name: A job to test our HTML links
     steps:
       - uses: actions/checkout@v2
       - uses: ruby/setup-ruby@v1
