@@ -83,7 +83,7 @@ so that's what we're going to use to ease the transition.
 
 First you need to add @angular-eslint.
 
-    ng add @angular-eslint/-schematic
+    ng add @angular-eslint/schematics
 
 This adds a bunch of dependencies to your application.
 Then you can run the automatic migration:
