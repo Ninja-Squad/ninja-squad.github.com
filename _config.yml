@@ -163,10 +163,6 @@ JB :
   # where [HELPER] is the name of the helper you are overriding.
 
   trainings :
-    angular:
-      title: Angular
-      dates:
-        - 12-14/04 à distance
     angular-advanced:
       title: Angular avancé
       dates:
@@ -175,3 +171,7 @@ JB :
       title: Vue 3
       dates:
         - 21-23/06 à distance
+    angular:
+      title: Angular
+      dates:
+        - 19-21/07 à distance
