@@ -9,7 +9,7 @@ description: "Angular 12 is out!"
 Angular&nbsp;12.0.0 is here!
 
 <p style="text-align: center;">
-  <a href="https://github.com/angular/angular/blob/master/CHANGELOG.md#TODO">
+  <a href="https://github.com/angular/angular/blob/master/CHANGELOG.md#1200-2021-05-12">
     <img class="rounded img-fluid" style="max-width: 100%" src="/assets/images/angular.png" alt="Angular logo" />
   </a>
 </p>
