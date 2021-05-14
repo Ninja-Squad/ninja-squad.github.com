@@ -1,6 +1,6 @@
 ---
 layout: post
-title: What's new in Angular 12?
+title: What's new in Angular 12.0?
 author: cexbrayat
 tags: ["Angular 12", "Angular"]
 description: "Angular 12 is out!"
