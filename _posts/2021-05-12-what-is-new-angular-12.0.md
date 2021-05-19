@@ -336,6 +336,7 @@ You can test it in your browser console:
     // logs
     // { inputs: { userModel: "userModel" }, outputs: {}, changeDetection: 1, encapsulation: 0 }
 
-
+Update: [Angular DevTools](http://goo.gle/install-angular-devtools)
+[was announced](https://blog.angular.io/introducing-angular-devtools-2d59ff4cf62f) a few days after the v12 release.
 
 All our materials ([ebook](https://books.ninja-squad.com/angular), [online training](https://angular-exercises.ninja-squad.com/) and [training](https://ninja-squad.com/training/angular)) are up-to-date with these changes if you want to learn more!
