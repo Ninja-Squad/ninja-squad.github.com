@@ -52,17 +52,15 @@ It also comes with a wide ecosystem and a very active community.
 
 We're going to use a schematic to ease the migration:
 
-    ng add @briebug/cypress-schematic --remove-protractor
+    ng add @cypress/schematic
 
 This command:
 - adds `cypress` to the dependencies of your application,
-- removes `protractor` as a dependency
-- removes the `e2e` directory
 - adds a `cypress` directory with a dummy test
 - adds a `cypress.json` config file
 - updates the `angular.json` file.
 
-Note that you can also manually remove `ts-node` and `jasmine-spec-reporter`
+Note that you can also manually remove `protractor`, `ts-node` and `jasmine-spec-reporter`
 as they are only used by Protractor in the CLI.
 
 I also add the cypress files to the lint task.
