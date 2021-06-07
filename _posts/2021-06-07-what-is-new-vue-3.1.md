@@ -254,6 +254,10 @@ They now support Vue 2 as well.
 Vue 3.1 also exposes performance metrics that the devtools can display!
 It is now super easy to spot if a component takes too much time to render.
 
+<p style="text-align: center;">
+  <img class="rounded img-fluid" style="max-width: 100%" src="/assets/images/devtools.png" alt="Vue Devtools" />
+</p>
+
 [Vue CLI](https://github.com/vuejs/vue-cli) v4 already supports Vue 3 and version 5 should be out of beta soon with Webpack 5 support
 (come back here when it will be out, as we already have a draft blog post about that).
 
