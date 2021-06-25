@@ -1,7 +1,15 @@
-<h4>Become a ninja with <strong>Angular</strong></h4>
+<h4>Become a Ninja with <strong>Angular</strong></h4>
 <p>
-    <a href="https://books.ninja-squad.com/angular" title="Become a ninja with Angular">
-        <img class="rounded img-fluid" style="max-width: 100%" src="/assets/images/bookangular.png" alt="Cover of ebook Become a ninja with Angular" />
+    <a href="https://books.ninja-squad.com/angular" title="Become a Ninja with Angular">
+        <img class="rounded img-fluid" style="max-width: 100%" src="/assets/images/ebook-cover-angular.png" alt="Cover of ebook Become a Ninja with Angular" />
     </a><br><br>
     Pay what you want and support charity!
+</p>
+
+<h4>Become a Ninja with <strong>Vue&nbsp;3</strong></h4>
+<p>
+    <a href="https://books.ninja-squad.com/vue" title="Become a Ninja with Vue">
+        <img class="rounded img-fluid" style="max-width: 100%" src="/assets/images/ebook-cover-vue.png" alt="Cover of ebook Become a Ninja with Vue" />
+    </a><br><br>
+    Pay what you want and support the Vue team!
 </p>
