@@ -1,4 +1,5 @@
 <h4>Formations</h4>
+<small>certifiées Qualiopi</small>
 {% for training in site.JB.trainings %}
 <a href="https://ninja-squad.fr/training/{{training[0]}}">{{training[1].title}}</a>
 <p>
