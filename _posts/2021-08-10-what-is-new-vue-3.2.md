@@ -90,7 +90,7 @@ a property or an attribute and not rely on the default behavior.
 A shorthand version has also been introduced,
 with `.` for binding a property and `^` for binding an attribute.
 
-    <a :.title="firstTabTooltip" :^aria-selected="isFirstTabSelected">First tab</a>
+    <a .title="firstTabTooltip" ^aria-selected="isFirstTabSelected">First tab</a>
 
 ## effectScope
 
