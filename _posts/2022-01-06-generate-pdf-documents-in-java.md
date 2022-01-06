@@ -21,7 +21,7 @@ My feeling is that it certainly has its uses for large or complex documents that
 On another project, I tried something else: [Eclipse BIRT](https://eclipse.github.io/birt-website/). 
 The experience was similar, only a bit worse.
 
-All this time, I knew about a lower-lever library, that, by the way, Jasper Reports and BIRT both seem to use under the scene to actually generate the PDF documents: [iText](https://itextpdf.com/en/products/itext-7). 
+All this time, I knew about a lower-level library, that, by the way, Jasper Reports and BIRT both seem to use under the scene to actually generate the PDF documents: [iText](https://itextpdf.com/en/products/itext-7). 
 But for some reason (maybe it was true at the time), I always thought it was too low-level to be used directly. 
 
 I recently revisited that assumption, and I was very wrong. 
