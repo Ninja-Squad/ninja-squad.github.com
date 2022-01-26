@@ -14,7 +14,5 @@ jobs:
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
       - name: build blog
         run: bundle exec jekyll build --future
-      - name: check all internal links
-        run: npx broken-link-checker-local --ordered --recursive --get --exclude-external _site
-      - name: check external links for the home page
-        run: npx broken-link-checker-local --ordered --get --exclude-internal --exclude https://twitter.com _site
+      - name: check links for the home page
+        run: npx linkinator --timeout 5000 --recurse _site/index.html
