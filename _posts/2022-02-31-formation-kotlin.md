@@ -44,4 +44,5 @@ chaque exercice.
 
 Tu trouveras tous les détails (pré-requis, programme, prix) sur [la page de la formation](https://ninja-squad.fr/formations/formation-kotlin).
 Comme cette formation est en rodage, tu pourrais bien bénéficier d'une belle réduction si tu fais partie
-des premiers inscrits&nbsp;!
+des premiers inscrits&nbsp;! On organise une première session inter-entreprises les **lundi 14 et mardi 15 mars 2022**, à distance.
+Et on peut bien sûr aussi organiser une session rien que pour ton équipe si tu le désires.
