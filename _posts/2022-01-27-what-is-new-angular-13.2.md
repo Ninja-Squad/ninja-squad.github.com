@@ -82,12 +82,6 @@ It is also possible to fine-tune each check:
       }
     }
 
-## Animations auto-completion
-
-The language service now supports auto-completion for the animation syntax.
-You'll now have help when trying to autocomplete either the definition of an animation
-or when using it in a component with the `@` syntax.
-
 ## Router
 
 The router now allows using Symbols for the keys of the `data` and `resolve` properties.
