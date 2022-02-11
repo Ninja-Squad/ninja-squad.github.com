@@ -2,7 +2,7 @@
 layout: post
 title: Getting started with Vue 3
 author: cexbrayat
-tags: ["Vue"]
+tags: ["Vue 3"]
 description: "Let's start a new application with Vue 3 from scratch."
 ---
 

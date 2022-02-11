@@ -2,7 +2,7 @@
 layout: post
 title: Become a Ninja with Vue - our ebook to learn Vue 3!
 author: cexbrayat
-tags: ["Vue", "Angular"]
+tags: ["Vue 3", "Angular"]
 description: "We are super happy to release our new ebook and online training about Vue 3!"
 ---
 

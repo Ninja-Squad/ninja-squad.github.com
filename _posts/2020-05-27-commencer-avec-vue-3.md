@@ -2,7 +2,7 @@
 layout: post
 title: Commencer avec Vue 3
 author: cexbrayat
-tags: ["Vue"]
+tags: ["Vue 3"]
 description: "Commençons une nouvelle application avec Vue 3 en partant de zéro."
 ---
 
