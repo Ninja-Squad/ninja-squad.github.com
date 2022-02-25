@@ -2,7 +2,7 @@
 layout: post
 title: Notre formation Kotlin
 author: jbnizet
-tags: ["Koltin", "formation", "training"]
+tags: ["Kotlin", "formation", "training"]
 description: "Nous proposons maintenant une formation Kotlin"
 ---
 
