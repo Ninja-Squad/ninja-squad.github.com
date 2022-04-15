@@ -15,4 +15,4 @@ jobs:
       - name: build blog
         run: bundle exec jekyll build --future
       - name: check links for the home page
-        run: npx linkinator --timeout 5000 --recurse _site/index.html
+        run: npx linkinator --timeout 15000 --recurse _site/index.html --skip '^(https://vue-exercises.ninja-squad.com/exercises/.*)|^(https://twitter.com/intent/.*)'
