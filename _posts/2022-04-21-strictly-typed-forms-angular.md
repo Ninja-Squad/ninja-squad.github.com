@@ -208,6 +208,31 @@ _on every field_ (this might change in the future):
       rememberMe: new FormControl<boolean>(false, { validators: Validators.required, initialValueIsDefault: true })
     }); // incredibly verbose version, that yields non-nullable types
 
+Or you can use `NonNullableFormBuilder`.
+
+## NonNullableFormBuilder
+
+Angular v14 introduces a new property on `FormBuilder`, called `nonNullable`,
+that returns a `NonNullableFormBuilder`.
+This new builder offers the usual `control`, `group` and `array` methods
+to build non-nullable controls:
+
+    registerForm = this.fb.nonNullable.group({
+      login: ['', Validators.required]
+    });
+    // `registerForm.value` type is `{ login?: string }`
+
+    constructor(private fb: FormBuilder) {}
+
+As using `fb.nonNullable` every time is a bit verbose,
+you can directly inject `NonNullableFormBuilder` instead of `FormBuilder`:
+
+    registerForm = this.fb.group({
+      login: ['', Validators.required]
+    });
+    
+    constructor(private fb: NonNullableFormBuilder) {}
+
 
 ## What do we gain?
 
