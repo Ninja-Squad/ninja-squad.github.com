@@ -325,11 +325,15 @@ we can now use a new multi-token `ENVIRONMENT_INITIALIZER`.
 All the code registered with this token will be executed
 during the application initialization.
 
-    bootstrapApplication(AppComponent, { providers: [{
-      provide: ENVIRONMENT_INITIALIZER,
-      multi: true,
-      useValue: () => inject(CurrentUserService).init()
-    }]);
+    bootstrapApplication(AppComponent, {
+      providers: [
+        {
+          provide: ENVIRONMENT_INITIALIZER,
+          multi: true,
+          useValue: () => inject(CurrentUserService).init()
+        }
+      ]
+    });
 
 Note that `importProvidersFrom(SomeModule)` is smart enough to automatically 
 register the initialization logic of `SomeModule` in `ENVIRONMENT_INITIALIZER`.
