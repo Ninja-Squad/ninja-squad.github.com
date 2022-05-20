@@ -413,7 +413,7 @@ we can finally get rid of `NgModule` in Angular if we want to.
 Their addition to Angular was a bit rushed: 
 they were introduced in Angular v2.0.0-rc.5 two months (!!) before the stable release,
 mainly to help the ecosystem build libraries.
-As often in our field, the rushed design resulted in a an entity that mixed several concerns,
+As often in our field, the rushed design resulted in an entity that mixed several concerns,
 with some concepts quite hard to understand for beginners.
 
 The new "mental model" is easy to grasp:
