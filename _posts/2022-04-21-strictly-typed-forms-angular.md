@@ -193,19 +193,20 @@ Except if you give a value to reset, for example `.reset('')`,
 but as TypeScript doesn't know _if_  and _how_ you are going to call `.reset()`,
 the inferred type is nullable.
 
-You can tweak this behavior if you use the new option introduced in Angular v13.2: `initialValueIsDefault` (see [our blog post](/2022/01/27/what-is-new-angular-13.2) for more details).
+You can tweak this behavior if you use the option `nonNullable` 
+(which replaces the new option introduced in Angular v13.2 `initialValueIsDefault`, see [our blog post](/2022/01/27/what-is-new-angular-13.2) for more details).
 With this option, you get rid of the null value if you want to!
 On one hand, this is very handy if your application uses `strictNullChecks`.
 But on the other hand, this is quite verbose, as you currently have to set this option
 _on every field_ (this might change in the future):
 
     registerForm = new FormGroup({
-      login: new FormControl<string>('', { validators: Validators.required, initialValueIsDefault: true }),
+      login: new FormControl<string>('', { validators: Validators.required, nonNullable: true }),
       passwordGroup: new FormGroup({
-        password: new FormControl('', { validators: Validators.required, initialValueIsDefault: true }),
-        confirm: new FormControl('', { validators: Validators.required, initialValueIsDefault: true })
+        password: new FormControl('', { validators: Validators.required, nonNullable: true }),
+        confirm: new FormControl('', { validators: Validators.required, nonNullable: true })
       }),
-      rememberMe: new FormControl<boolean>(false, { validators: Validators.required, initialValueIsDefault: true })
+      rememberMe: new FormControl<boolean>(false, { validators: Validators.required, nonNullable: true })
     }); // incredibly verbose version, that yields non-nullable types
 
 Or you can use `NonNullableFormBuilder`.
@@ -250,7 +251,7 @@ except in forms!
 
 This is no longer the case:
 the new forms API properly types `value` according to the types of the form controls.
-In my example above (with `initialValueIsDefault`), the type of `this.registerForm.value` is:
+In my example above (with `nonNullable`), the type of `this.registerForm.value` is:
 
     {
       login?: string;
@@ -378,16 +379,16 @@ where your user can add or remove options.
 For example, our users can add and remove the language they understand (or don't understand) when they register:
 
     languages: new FormRecord({
-      english: new FormControl(true, { initialValueIsDefault: true }),
-      french: new FormControl(false, { initialValueIsDefault: true })
+      english: new FormControl(true, { nonNullable: true }),
+      french: new FormControl(false, { nonNullable: true })
     });
 
     // later 
-    this.registerForm.get('languages').addControl('spanish', new FormControl(false, { initialValueIsDefault: true }));
+    this.registerForm.get('languages').addControl('spanish', new FormControl(false, { nonNullable: true }));
 
 If you try to add a control of a different type, TS throws a compilation error:
 
-    this.registerForm.get('languages').addControl('spanish', new FormControl(0, { initialValueIsDefault: true })); // does not compile
+    this.registerForm.get('languages').addControl('spanish', new FormControl(0, { nonNullable: true })); // does not compile
 
 But as the keys can be any string, there is no type-checking on the key in `removeControl(key)` or `setControl(key)`.
 Whereas if you use a `FormGroup`, with well-defined keys, you _do_ have type checking
