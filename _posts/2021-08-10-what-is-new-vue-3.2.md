@@ -210,7 +210,12 @@ The lifecycle hooks that are called after the `await` call won't be executed,
 as they need to be in the context of the component.
 They in fact throw a warning in the console if you try this code:
 
-`onMounted` is called when there is no active component instance to be associated with. Lifecycle injection APIs can only be used during execution of setup(). If you are using async setup(), make sure to register lifecycle hooks before the first await statement.
+    `onMounted` is called when there is no active 
+    component instance to be associated with. 
+    Lifecycle injection APIs can only be used during 
+    execution of setup(). If you are using async setup
+    (), make sure to register lifecycle hooks before 
+    the first await statement.
 
 If you want to know why, I recommend you to read [this discussion](https://github.com/vuejs/rfcs/discussions/234)
 and [this blog post from Anthony Fu](https://antfu.me/posts/async-with-composition-api)
