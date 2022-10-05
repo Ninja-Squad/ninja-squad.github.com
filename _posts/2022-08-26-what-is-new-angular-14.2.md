@@ -31,7 +31,8 @@ To enable it, add it to the imports of one of your modules or standalone compone
 
   imports: [NgOptimizedImage]
 
-Then to use it, you can simply replace the `src` of an image with `rawSrc`:
+Then to use it, you can simply replace the `src` of an image with `rawSrc`
+(_update_: this is now `ngSrc` since Angular v15):
 
 {% raw %}
     <img [rawSrc]="imageUrl" />
@@ -94,7 +95,7 @@ It is of course possible to create your own loader:
     ]
 
 The directive also supports width or density descriptors, like `400w` or `2x`,
-with `rawSrcset`.
+with `rawSrcset` (_update_: this is now `ngSrcset` since Angular v15).
 
 {% raw %}
     <img rawSrcset="avatar.png" rawSrcset="100w, 200w" />
