@@ -138,7 +138,10 @@ Note that you can also register class-based interceptors via `withInterceptorsFr
     import { AppComponent } from './app.component';
     
     bootstrapApplication(AppComponent, {
-      providers: [provideHttpClient(withInterceptorsFromDi([LoggerInterceptor]))]
+      providers: [
+        { provide: HTTP_INTERCEPTORS, useClass: LoggerInterceptor, multi: true },
+        provideHttpClient(withInterceptorsFromDi())
+      ]
     });
 
 But this API may be phased out in the future,
