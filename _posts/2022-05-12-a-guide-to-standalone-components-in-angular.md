@@ -227,6 +227,9 @@ in component providers: it's only usable in `bootstrapApplication()`.
 `bootstrapApplication()` is now responsible for the Dependency Injection work,
 and that's where providers must be declared.
 
+Note: since Angular&nbsp;v15, it's now possible to use `provideRouter()`
+and `provideHttpClient()` (see our blog post about [Angular HTTP in a standalone application](/2022/11/09/angular-http-in-standalone-applications/)).
+
 ## Lazy loading routes
 
 The lazy-loading story in Angular has always revolved around `NgModule`.

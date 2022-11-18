@@ -21,6 +21,10 @@ This is a major release with a ton of interesting features: let's dive in!
 Here we are: standalone components are now stable!
 You can officially build Angular applications without modules if you want to.
 
+Check out our guide to standalone components:
+
+👉 [A guide to standalone components in Angular](/2022/05/12/a-guide-to-standalone-components-in-angular/)
+
 A few improvements landed in v15.
 
 The HTTP support evolved, and we can now use `provideHttpClient` to provide `HttpClient` without using `HttpClientModule` (see below).
