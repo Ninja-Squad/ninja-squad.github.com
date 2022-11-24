@@ -115,7 +115,7 @@ They are functions that take an `HttpRequest` and a `HttpHandlerFn` as parameter
 As this is a function, you can't use the usual dependency injection via constructor parameters to inject services in it.
 But you can use the `inject()` function:
 
-    export function loggerInterceptor(req: HttpRequest<unknown>, next: HttpHandlerFn): Observable<HttpEvent<unknown>> {
+    export const loggerInterceptor: HttpInterceptorFn = (req: HttpRequest<unknown>, next: HttpHandlerFn): Observable<HttpEvent<unknown>> => {
       const logger = inject(Logger);
       logger.log(`Request is on its way to ${req.url}`);
       return next(req);
@@ -128,7 +128,7 @@ Functional interceptors have to be registered via `withInterceptors()`:
     import { AppComponent } from './app.component';
     
     bootstrapApplication(AppComponent, {
-      providers: [provideHttpClient(withInterceptors([loggerInterceptor()]))]
+      providers: [provideHttpClient(withInterceptors([loggerInterceptor]))]
     });
 
 Note that you can also register class-based interceptors via `withInterceptorsFromDi()`:
