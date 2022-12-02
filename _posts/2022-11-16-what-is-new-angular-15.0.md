@@ -34,12 +34,13 @@ and... `provideLocationMocks()` to test components using the router:
 
     TestBed.configureTestingModule({
       providers: [
-        // 👇 similar to RouterTestingModule
-        provideLocationMocks(), 
+        // 👇 ~ similar to RouterTestingModule
+        // (some providers are missing compared to RouterTestingModule)
         provideRouter([]), 
+        provideLocationMocks(), 
         // 👇 similar to HttpClientTestingModule
-        provideHttpClientTesting(), 
-        provideHttpClient() 
+        provideHttpClient(),
+        provideHttpClientTesting()
       ],
     });
 
