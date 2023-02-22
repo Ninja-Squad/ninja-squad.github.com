@@ -12,12 +12,10 @@ Install [rvm](https://rvm.io/) (Ruby Version Manager):
 
     curl -sSL https://get.rvm.io | bash -s stable
 
-Install Ruby 2.3.1:
+Install Ruby (version used by Github Pages referenced [here](https://pages.github.com/versions/)):
 
-    rvm install ruby-2.3.1
-
-Why 2.3.1? Because latest github-pages (as of August 2017) only works with Ruby 2.3, and not with latest Ruby 2.4.
-A `.ruby-version` file enforces this 2.3.1 version.
+    curl --silent https://pages.github.com/versions.json | jq --raw-output '.ruby'
+    rvm install ruby-{version}
 
 Install [bundler](http://bundler.io/) gem:
 

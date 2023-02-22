@@ -8,9 +8,12 @@ jobs:
     name: A job to test our HTML links
     steps:
       - uses: actions/checkout@v3
+      - name: get ruby version (used in Github Pages)
+        id: ruby-version
+        run: echo -n "version=$(curl --silent https://pages.github.com/versions.json | jq --raw-output '.ruby')" >> $GITHUB_OUTPUT
       - uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 2.4
+          ruby-version: ${{ steps.ruby-version.outputs.version }}
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
       - name: build blog
         run: bundle exec jekyll build --future
