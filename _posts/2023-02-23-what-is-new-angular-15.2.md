@@ -73,7 +73,7 @@ Finally, you can use the `effect` function to react to changes in your signals:
     // log the value of the count signal when it changes
     effect(() => console.log(count()));
 
-This does look like like a `BehaviorSubject`, but it has some subtle differences, the most important one being that unsubscribing is unnecessary thanks to the usage of 
+This does look like a `BehaviorSubject`, but it has some subtle differences, the most important one being that unsubscribing is unnecessary thanks to the usage of 
 [weak references](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakRef).
 
 That's pretty much it for now!
