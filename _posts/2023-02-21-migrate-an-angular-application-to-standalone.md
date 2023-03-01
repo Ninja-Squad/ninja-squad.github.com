@@ -40,7 +40,7 @@ The schematics expects two arguments:
 
 There are three modes available:
 - `convert-to-standalone`: this is the default mode, and it will convert all your components to standalone components, except the ones declared in your main module.
-- `prune-ng-module`: this mode will remove all the modules that aren't necessary anymore.
+- `prune-ng-modules`: this mode will remove all the modules that aren't necessary anymore.
 - `standalone-bootstrap`: this mode will bootstrap your application with the `bootstrapApplication` function,
 and migrate the components referenced in your main module.
 
@@ -89,7 +89,7 @@ The second mode will remove all the modules that aren't necessary anymore.
 
 To run it, enter:
 
-    ng generate @angular/core:standalone --defaults --mode=prune-ng-module
+    ng generate @angular/core:standalone --defaults --mode=prune-ng-modules
 
 The schematic can remove a module only if:
 - it doesn't have any `declarations`, `providers` or `bootstrap`
