@@ -167,6 +167,7 @@ JB :
       title: Angular
       dates:
         - 17-19/04 à distance
+        - 12-14/06 à distance
     angular-advanced:
       title: Angular avancé
       dates:
@@ -174,7 +175,6 @@ JB :
     vue:
       title: Vue 3
       dates:
-        - 6-9/03 à distance
         - 22-25/05 à distance
     kotlin:
       title: Kotlin
