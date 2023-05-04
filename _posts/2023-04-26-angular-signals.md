@@ -302,7 +302,7 @@ That's why you get an error from Angular if you try to do so:
 
 Effects will probably be used very rarely, but they can be handy in some cases:
 - logging / tracing;
-- synchronising state to the DOM or to a storage, etc.
+- synchronizing state to the DOM or to a storage, etc.
 
 ## Signals and RxJS interoperability
 
