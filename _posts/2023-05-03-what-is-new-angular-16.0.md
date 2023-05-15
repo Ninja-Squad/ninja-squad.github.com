@@ -98,9 +98,9 @@ which has only one method called `onDestroy`.
 and then used to register code that should run
 on the destruction of the surrounding context.
 
-   const destroyRef = inject(DestroyRef);
-   // register a destroy callback
-   destroyRef.onDestroy(() => doSomethingOnDestroy());
+    const destroyRef = inject(DestroyRef);
+    // register a destroy callback
+    destroyRef.onDestroy(() => doSomethingOnDestroy());
 
 For example, it can be used to execute code on the destruction
 of a component or directive (as we do now with `ngOnDestroy`).
