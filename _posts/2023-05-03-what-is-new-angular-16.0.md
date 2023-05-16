@@ -116,7 +116,7 @@ the new RXJS operator introduced in our [Signals blog post](/2023/04/26/angular-
 One of the last modules that needed to be transitioned to a standalone provider function was `ServiceWorkerModule`. It is now done with `provideServiceWorker`:
 
     bootstrapApplication(AppComponent, {
-      providers: [provideServiceWorker()]
+      providers: [provideServiceWorker('ngsw-worker.js', { enabled: !isDevMode() })]
     });
 
 It, of course, accepts the same options as the `ServiceWorkerModule`.
