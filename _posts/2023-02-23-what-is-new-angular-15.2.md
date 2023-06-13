@@ -2,7 +2,7 @@
 layout: post
 title: What's new in Angular 15.2?
 author: cexbrayat
-tags: ["Angular 15.2", "Angular"]
+tags: ["Angular 15", "Angular"]
 description: "Angular 15.2 is out!"
 ---
 
