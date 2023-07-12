@@ -29,7 +29,7 @@ It is a standalone directive available as an experiment in the `@angular/common`
 This directive helps you to optimize your images in your application.
 To enable it, add it to the imports of one of your modules or standalone components:
 
-  imports: [NgOptimizedImage]
+    imports: [NgOptimizedImage]
 
 Then to use it, you can simply replace the `src` of an image with `rawSrc`
 (_update_: this is now `ngSrc` since Angular v15):
