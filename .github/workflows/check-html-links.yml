@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to test our HTML links
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: get ruby version (used in Github Pages)
         id: ruby-version
         run: echo -n "version=$(curl --silent https://pages.github.com/versions.json | jq --raw-output '.ruby')" >> $GITHUB_OUTPUT
