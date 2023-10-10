@@ -405,6 +405,10 @@ If you want to give it a try, run:
     ng g @angular/core:control-flow
 
 This automatically migrates all your templates to the new syntax!
+You can also run the migration against a single file with the `--path` option:
+
+    ng g @angular/core:control-flow --path src/app/app.component.html
+
 Even though the new control flow is experimental,
 v17 comes with a mandatory migration needed to support this new control flow syntax,
 which consists in converting the `@`, `{` and `}` characters used in your templates to their HTML entities.
