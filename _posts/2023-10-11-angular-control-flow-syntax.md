@@ -6,7 +6,7 @@ tags: ["Angular 17", "Angular"]
 description: "Angular 17 introduces a brand new template syntax to replace *ngIf/*ngFor/*ngSwitch. Let's dive in!"
 ---
 
-Angular v17 introduces a new experimental feature called "control flow syntax".
+Angular v17 introduces a new "developer preview" feature called "control flow syntax".
 This feature allows you to use a new template syntax to write control flow statements, like if/else, for, and switch,
 instead of using the built-in structural directives (`*ngIf`, `*ngFor`, and `*ngSwitch`).
 
@@ -389,7 +389,7 @@ with a warning in the console during development if you use loose equality:
 
 ## The future of templating 🚀
 
-The control flow syntax is a new experimental feature introduced in Angular v17,
+The control flow syntax is a new "developer preview" feature introduced in Angular v17,
 and will probably be the recommended way to write templates in the future
 (the plan is to make it stable in v18 once it has been battle-tested).
 
