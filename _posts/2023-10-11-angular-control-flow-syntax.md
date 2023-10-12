@@ -405,8 +405,9 @@ If you want to give it a try, run:
     ng g @angular/core:control-flow
 
 This automatically migrates all your templates to the new syntax!
-Angular v17 has a first mandatory migration to convert `@`, `{` and `}` characters used in your templates to their HTML entities.
-Even though the new control flow is experimental, v17 comes with a mandatory migration needed to support this new control flow syntax, which consists in converting the `@`, `{` and `}` characters used in your templates to their HTML entities.
+Even though the new control flow is experimental,
+v17 comes with a mandatory migration needed to support this new control flow syntax,
+which consists in converting the `@`, `{` and `}` characters used in your templates to their HTML entities.
 This migration is run automatically when you update the app with `ng update`.
 
 The future of Angular is exciting!
