@@ -275,7 +275,7 @@ You can still store the result of the condition in a variable if you want to,
 which is really handy when used with an `async` pipe for example:
 
 {% raw %}
-    @if (user$ | async ; as user) {
+    @if (user$ | async; as user) {
       <div>User is {{ user.name }}</div>
     } @else if (isAdmin$ | async) {
       <div>User is admin</div>
@@ -343,6 +343,13 @@ but you still can if you need to, for example when using nested loops.
     </ul>
 {% endraw %}
 
+It is also worth noting that the control flow `@for` uses
+a new algorithm under the hood to update the DOM when the collection changes.
+It should be quite a bit faster than the algorithm used by `*ngFor`,
+as it does not allocate intermediate maps in most cases.
+Combined with the required `track` property,
+`for` loops should be way faster in Angular applications by default.
+
 ## Switch statement
 
 This is probably where the new type-checking shines the most,
@@ -362,16 +369,29 @@ as using an impossible value in a case will now throw a compilation error!
 
 Note that the switch statement does not support fall-through,
 so you can't have several cases grouped together.
+It also does not check if all cases are covered,
+so you won't get a compilation error if you forget a case.
+(but I hope it will, add a 👍 on [this issue](https://github.com/angular/angular/issues/52107) if you want this as well!).
 
 It's also noteworthy that the `@switch` statement uses strict equality (`===`) to compare values,
 whereas `*ngSwitch` used to use loose equality (`==`).
 Angular v17 introduced a breaking change, and `*ngSwitch` now uses strict equality too,
-with a warning in the console during development if you use loose equality.
+with a warning in the console during development if you use loose equality:
+
+    NG02001: As of Angular v17 the NgSwitch directive 
+    uses strict equality comparison === instead of == to match different cases. 
+    Previously the case value "1" matched switch expression value "'1'", 
+    but this is no longer the case with the stricter equality check.
+    Your comparison results return different results using === vs. ==
+    and you should adjust your ngSwitch expression and / or values
+    to conform with the strict equality requirements.
+
 
 ## The future of templating 🚀
 
 The control flow syntax is a new experimental feature introduced in Angular v17,
-and will probably be the recommended way to write templates in the future.
+and will probably be the recommended way to write templates in the future
+(the plan is to make it stable in v18 once it has been battle-tested).
 
 It doesn't mean that structural directives will be deprecated,
 but the Angular team will likely focus on the control flow syntax in the future
@@ -379,7 +399,16 @@ and push them forward as the recommended solution.
 
 We will even have an automated migration to convert structural directives
 to control flow statements in existing applications.
-Angular v17 has a first migration to convert `@`, `{` and `}` characters used in your templates
-to their HTML entities.
+The migration is available in Angular v17 as a developer preview.
+If you want to give it a try, run:
+
+    ng g @angular/core:control-flow
+
+This automatically migrates all your templates to the new syntax!
+Angular v17 has a first mandatory migration to convert `@`, `{` and `}` characters used in your templates to their HTML entities.
+Even though the new control flow is experimental, v17 comes with a mandatory migration needed to support this new control flow syntax, which consists in converting the `@`, `{` and `}` characters used in your templates to their HTML entities.
+This migration is run automatically when you update the app with `ng update`.
+
+The future of Angular is exciting!
 
 All our materials ([ebook](https://books.ninja-squad.com/angular), [online training](https://angular-exercises.ninja-squad.com/) and [training](https://ninja-squad.com/training/angular)) are up-to-date with these changes if you want to learn more!
