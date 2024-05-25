@@ -416,11 +416,11 @@ and now Angular is using the replay events feature from Wiz.
 That's why these two features are in a `packages/core/primitives` directory in the Angular codebase:
 they are part of Angular but are shared by the two frameworks.
 
-To enable this feature, you can use the `withReplayEvents()` (developer preview) function in your server-side rendering configuration:
+To enable this feature, you can use the `withEventReplay()` (developer preview) function in your server-side rendering configuration:
 
 ```ts
 providers: [
-  provideClientHydration(withReplayEvents())
+  provideClientHydration(withEventReplay())
 ]
 ```
 
