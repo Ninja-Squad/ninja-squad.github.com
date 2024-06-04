@@ -46,7 +46,7 @@ La marche à suivre pour refactorer le code est la suivante :
 - puis faire apparaître les duplications de code afin d'extraire de nouvelles méthodes
 
 David finit par introduire de la délégation (un objet était passé dans toutes les méthodes de la classe), en utilisant une <a href="http://projectlombok.org/features/Delegate.html">annotation de Lombok</a>.
-Une fois le code propre, David écrit un petit serveur http qui expose les données en JSON, déploie l'application sur <a href="http://www.heroku.com/">heroku</a>, puis déploie un front statique sur <a href="http://pages.github.com/">Github Pages</a> (comme le <a href="http://blog.ninja-squad.com">blog de NinjaSquad</a>) qui consomme les données.
+Une fois le code propre, David écrit un petit serveur http qui expose les données en JSON, déploie l'application sur <a href="http://www.heroku.com/">heroku</a>, puis déploie un front statique sur <a href="http://pages.github.com/">Github Pages</a> (comme le <a href="https://blog.ninja-squad.com">blog de NinjaSquad</a>) qui consomme les données.
 Le tout en 45 minutes, en expliquant très bien ses choix et en utilisant IntelliJ avec maestria. C'est la présentation que j'ai préféré de la journée, même si parfois le refactoring était un peu magique, David connaissant bien le code et étant pressé par le temps. Si vous voulez tester le dojo par vous même, les projets sont <a href="https://github.com/dgageot/jug-summer-camp-json">disponibles</a> sur le <a href="https://github.com/dgageot">compte Github</a> de David.
 <br/><br/>
 ___Beaglebone = Arduino^10___ : Laurent Huet -&nbsp;<a href="https://twitter.com/lhuet35">@lhuet35</a><br/>

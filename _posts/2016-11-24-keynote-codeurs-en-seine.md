@@ -526,7 +526,7 @@ Sans avoir d'explication formelle, il s'avère que dans leur petit monde des soc
 coopératives, l'entre-aide est plutôt de mise.
 En 2013, avec leurs amis de [Scopyleft](http://scopyleft.fr/)
 et de [Lateral Thoughts](http://www.lateral-thoughts.com/),
-ils avaient animé un [BoF à Devoxx sur les NoSSII](http://blog.ninja-squad.com/2013/03/22/nossii-devoxx-france/) (NoSSII&nbsp;: _Not Only SSII_). Depuis, ils se retrouvent sur un [Slack](https://nossii.herokuapp.com/).
+ils avaient animé un [BoF à Devoxx sur les NoSSII](https://blog.ninja-squad.com/2013/03/22/nossii-devoxx-france/) (NoSSII&nbsp;: _Not Only SSII_). Depuis, ils se retrouvent sur un [Slack](https://nossii.herokuapp.com/).
 Et l'échange de tuyaux, de bons plans, et de missions, est toujours d'actualité.
 
 Être libre dans sa société, c'est aussi maîtriser complètement son temps de travail,

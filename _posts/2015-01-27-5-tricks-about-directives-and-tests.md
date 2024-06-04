@@ -6,7 +6,7 @@ tags: ["javascript", "AngularJS"]
 description: 5 tricks on how to write AngularJS directives and have them tested
 ---
 
-*Vous cherchez la version en Français ? C'est [ici](http://blog.ninja-squad.com/2015/01/27/5-astuces-sur-les-directives-et-leurs-tests/)*.
+*Vous cherchez la version en Français ? C'est [ici](https://blog.ninja-squad.com/2015/01/27/5-astuces-sur-les-directives-et-leurs-tests/)*.
 
 If AngularJS has one tricky part, it is for sure how to write directives.
 Hopefully [our book](https://books.ninja-squad.com) helped you for the first steps,
