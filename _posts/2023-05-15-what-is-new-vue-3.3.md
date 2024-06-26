@@ -73,7 +73,7 @@ It's _the_ part I really liked, so I'm quite happy about it 🤓.
 
 The syntax plays well with TypeScript, but the declaration of default values was a bit painful:
 
-    const props = withDefaults(defineProps<{ name?: string }>(), { name: 'Hello '})
+    const props = withDefaults(defineProps<{ name?: string }>(), { name: 'Hello' })
     console.log(props.name);
 
 You also can't destructure the props directly, as it loses the reactivity.
@@ -470,4 +470,4 @@ We can't wait to try this!
 
 That's all for this release. Stay tuned for the next one!
 
-Our [ebook](https://books.ninja-squad.com/vue), [online training](https://vue-exercises.ninja-squad.com/) and [training](https://ninja-squad.com/training/vue)) are up-to-date with these changes if you want to learn more!
+Our [ebook](https://books.ninja-squad.com/vue), [online training](https://vue-exercises.ninja-squad.com/) and [training](https://ninja-squad.com/training/vue) are up-to-date with these changes if you want to learn more!
