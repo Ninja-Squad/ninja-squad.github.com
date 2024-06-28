@@ -9,7 +9,7 @@ description: "Vue 3.4 is out!"
 [Vue&nbsp;3.4.0](https://blog.vuejs.org/posts/vue-3-4) is here!
 
 <p style="text-align: center;">
-  <a href="https://github.com/vuejs/core/blob/main/CHANGELOG.md#TODO">
+  <a href="https://github.com/vuejs/core/blob/main/CHANGELOG.md#340-slam-dunk-2023-12-29">
     <img class="rounded img-fluid" style="max-width: 100%" src="/assets/images/vue.png" alt="Vue logo" />
   </a>
 </p>
@@ -362,4 +362,4 @@ you can read more in the [official blog post](https://nuxt.com/blog/v3-9).
 
 That's all for this release. Stay tuned for the next one!
 
-Our [ebook](https://books.ninja-squad.com/vue), [online training](https://vue-exercises.ninja-squad.com/) and [training](https://ninja-squad.com/training/vue)) are up-to-date with these changes if you want to learn more!
+Our [ebook](https://books.ninja-squad.com/vue), [online training](https://vue-exercises.ninja-squad.com/) and [training](https://ninja-squad.com/training/vue) are up-to-date with these changes if you want to learn more!
