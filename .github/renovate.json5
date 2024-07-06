@@ -12,7 +12,7 @@
   "packageRules": [
     // group all minor dependencies, once a week
     {
-      "matchPackagePatterns": ["*"],
+      "matchDepPatterns": ["*"],
       "matchUpdateTypes": ["minor", "patch"],
       "matchCurrentVersion": ">=1",
       "groupName": "all non-major dependencies",
