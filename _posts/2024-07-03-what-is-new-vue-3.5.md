@@ -47,6 +47,89 @@ or even throw an error if you want to enforce the use of the previous syntax by 
 
 Read more about this feature in the [RFC](https://github.com/vuejs/rfcs/discussions/502).
 
+## useTemplateRef
+
+As you probably know, Vue lets you grab a reference to an element in a template, using the `ref="key"` syntax. The framework then populates a Ref named `key` in the setup of the component.
+For example, to initialize a chart, you usually write code looking that:
+
+```html
+<canvas ref="chart"></canvas>
+```
+
+```ts
+// 👇 special ref that Vue populates with the element in the template
+const chart = ref<HTMLCanvasElement | null>(null); 
+onMounted(() => new Chart(chart.value!, /* chart options */));
+```
+
+This API felt a bit awkward, as nothing was pointing out that this ref was "special" at first glance. It also forced developers to pass this ref around to composables.
+For example, if you wanted to build a `useChart` composable, you had to write it like this:
+
+```ts
+export function useChart(chartRef: Ref<HTMLCanvasElement | null>) {
+  onMounted(() => new Chart(chartRef.value!, /* chart options */));
+}
+```
+
+And then call it in your component by passing it the ref:
+
+```ts
+const chart = ref<HTMLCanvasElement | null>(null); 
+useChart(chart);
+```
+
+Vue v3.5 introduces a new composable called `useTemplateRef` to grab a reference in the template:
+
+```ts
+// useTemplateRef expects the key of the element in the template
+const chartRef = useTemplateRef<HTMLCanvasElement>('chart');
+onMounted(() => new Chart(chartRef.value!, /* chart options */));
+```
+
+The type of `chartRef` is a read-only `ShallowRef<HTMLCanvasElement | null>`.
+In addition to a more explicit name and usage, the new function is usable directly inside a composable. This simplifies the pattern we saw above, as `useChart` can simply be written:
+
+```ts
+export function useChart(chartKey: string) {
+  const chartRef = useTemplateRef<HTMLCanvasElement>(key);
+  onMounted(() => new Chart(chartRef.value!, /* chart options */));
+}
+```
+
+and then used in a component:
+
+```ts
+useChart('chart');
+```
+
+This is a nice improvement!
+
+## useId
+
+A new composition function called `useId` has been added to generate a unique ID.
+This feature is probably already familiar to [React developers](https://react.dev/reference/react/useId) or Nuxt developers who use the `useId` [composable](https://nuxt.com/docs/api/composables/use-id).
+
+This can be useful when you need to generate an ID for an HTML element,
+for example when you use a label with an input, or for accessibility attributes:
+
+```html
+<label :for="id">Name</label>
+<input :id="id" />
+```
+
+As the component can be rendered many times, you need to ensure that the ID is unique.
+This is where `useId` comes in:
+
+```ts
+const id = useId();
+```
+
+`useId` guarantees that the generated ID is unique within the application.
+By default, Vue generates an ID with a prefix of `v:` followed by a unique number
+(that increments when new components are rendered).
+The prefix can be customized by using `app.config.idPrefix`.
+`useId` also guarantees that the ID is stable between server-side rendering and client-side rendering, to avoid mismatching errors.
+
 ## Better types
 
 A few improvements have been made to help the tooling understand the Vue API better.
@@ -136,7 +219,38 @@ onEffectCleanup(() => {
 }, true /* 👈 no warning */);
 ```
 
-## Teleport and Transition
+## throwUnhandledErrorInProduction
+
+A new option has been added to the app configuration to throw unhandled errors in production.
+This can be useful to catch errors that are currently not caught because the default behavior is to log them in the console.
+
+```ts
+const app = createApp(App);
+app.config.throwUnhandledErrorInProduction = true;
+```
+
+With this option enabled, you'll easily catch errors when rendering your application in production.
+Note that the default is `false` to avoid breaking existing applications.
+
+## Teleport
+
+### deferred Teleport
+
+It is now possible to add a `defer` attribute to `Teleport` to mark the component as deferred.
+When doing so, the target of the teleportation doesn't have to already exist:
+even if it appears later, the target can still be resolved.
+A deferred Teleport waits until all other DOM content in the same update cycle has been rendered before locating the target container.
+
+So we can now use `Teleport` with targets located in other components (as long as they are mounted in the same tick), or even use `Teleport` and a target inside a `Suspense` (whereas you previously had to target a container outside of the `Suspense` component).
+
+```html
+<Suspense>
+  <Teleport defer to="#target">...</Teleport>
+  <div id="target"></div>
+</Suspense>
+```
+
+### Teleport and Transition
 
 It is now possible to use a `Teleport` component directly inside a `Transition` component,
 thus allowing to animate the appearance and the disappearance of an element in a different place in the DOM. This used to throw an error in Vue 3.4.
