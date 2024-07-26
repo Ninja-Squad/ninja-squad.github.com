@@ -130,6 +130,45 @@ By default, Vue generates an ID with a prefix of `v:` followed by a unique numbe
 The prefix can be customized by using `app.config.idPrefix`.
 `useId` also guarantees that the ID is stable between server-side rendering and client-side rendering, to avoid mismatching errors.
 
+
+### data-allow-mismatch
+
+Vue 3.5 now supports a new attribute called `data-allow-mismatch`,
+that can be added to any element to allow client/server mismatch warnings
+to be silenced for that element.
+
+For example, if you have a component that renders the current date like this:
+
+{% raw %}
+```html
+<div>{{ currentDate }}</div>
+```
+{% endraw %}
+
+you might get a warning if the server and the client render the date at different times:
+
+```
+[Vue warn]: Hydration text content mismatch on <div> 
+  - rendered on server: Jul 26 2024
+  - expected on client: Jul 27 2024
+``` 
+
+You can silence this warning by adding the `data-allow-mismatch` attribute:
+
+{% raw %}
+```html
+<div data-allow-mismatch="text">{{ currentDate }}</div>
+```
+{% endraw %}
+
+The value of the attribute can be:
+- `text` to silence the warning for text content
+- `children` to silence the warning for children content
+- `class` to silence the warning for class mismatch
+- `style` to silence the warning for style mismatch
+- `attribute` to silence the warning for attribute mismatch
+
+
 ## Better types
 
 A few improvements have been made to help the tooling understand the Vue API better.
