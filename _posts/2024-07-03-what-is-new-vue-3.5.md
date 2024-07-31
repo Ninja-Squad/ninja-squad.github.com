@@ -131,7 +131,33 @@ The prefix can be customized by using `app.config.idPrefix`.
 `useId` also guarantees that the ID is stable between server-side rendering and client-side rendering, to avoid mismatching errors.
 
 
-### data-allow-mismatch
+## Lazy hydration strategies
+
+Asynchronous components, defined with `defineAsyncComponent`,
+can now control when they should be hydrated using a new `hydrate` option.
+
+Vue provides four strategies for hydration in v3.5:
+
+- `hydrateOnIdle()`: the component will be hydrated when the browser is idle.
+- `hydrateOnVisible()`: the component will be hydrated when it becomes visible in the viewport (implemented using an `IntersectionObserver`). A `rootMargin` option can be passed to the strategy to define the margin around the viewport, as `rootMargin` in the `IntersectionObserver` API. So you can use `hydrateOnVisible('100px')` (or `hydrateOnVisible(100)` as `px` is automatically added for you if you pass a number) to hydrate the component when it is 100px away from the viewport.
+- `hydrateOnInteraction(event)`: the component will be hydrated when the user interacts with the component with a defined event, for example `hydrateOnInteraction('click')`. You can also specify an array of events.
+- `hydrateOnMediaQuery(query)`: the component will be hydrated when the media query matches. For example, `hydrateOnMediaQuery('(min-width: 600px)')` will hydrate the component when the viewport is at least 600px wide.
+
+You can also define a define custom strategy if you want to.
+
+Here is an example of how to use these strategies:
+
+```ts
+import { defineAsyncComponent, hydrateOnVisible } from 'vue'
+
+const User = defineAsyncComponent({
+  loader: () => import('./UserComponent.vue'),
+  hydrate: hydrateOnVisible('100px')
+});
+```
+
+
+## data-allow-mismatch
 
 Vue 3.5 now supports a new attribute called `data-allow-mismatch`,
 that can be added to any element to allow client/server mismatch warnings
@@ -190,6 +216,7 @@ export const vFocus: Directive<
 ```
 
 The built-in directives have also been improved to leverage this new feature.
+
 
 ## app.onUnmount()
 
