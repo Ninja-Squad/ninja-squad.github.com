@@ -15,8 +15,8 @@ Vue&nbsp;3.5.0 is here!
 </p>
 
 The last minor release was v3.4.0 in December.
-Since then, we have seen a few patch releases,
-some coming with new features.
+Since then, we have seen quite a few patch releases,
+and some interesting new features.
 
 Let's see what we have in this release!
 
@@ -138,8 +138,8 @@ can now control when they should be hydrated using a new `hydrate` option.
 
 Vue provides four strategies for hydration in v3.5:
 
-- `hydrateOnIdle()`: the component will be hydrated when the browser is idle.
-- `hydrateOnVisible()`: the component will be hydrated when it becomes visible in the viewport (implemented using an `IntersectionObserver`). A `rootMargin` option can be passed to the strategy to define the margin around the viewport, as `rootMargin` in the `IntersectionObserver` API. So you can use `hydrateOnVisible('100px')` (or `hydrateOnVisible(100)` as `px` is automatically added for you if you pass a number) to hydrate the component when it is 100px away from the viewport.
+- `hydrateOnIdle()`: the component will be hydrated when the browser is idle (you can specify a timeout if needed, as `requestIdleCallback`, which is used internally, allows).
+- `hydrateOnVisible()`: the component will be hydrated when it becomes visible in the viewport (implemented using an `IntersectionObserver`). Additional options supported by the [`IntersectionObserver` API](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API) can be passed to the strategy, like  `rootMargin` to define the margin around the viewport. So you can use `hydrateOnVisible({ rootMargin: '100px' })` to hydrate the component when it is 100px away from the viewport.
 - `hydrateOnInteraction(event)`: the component will be hydrated when the user interacts with the component with a defined event, for example `hydrateOnInteraction('click')`. You can also specify an array of events.
 - `hydrateOnMediaQuery(query)`: the component will be hydrated when the media query matches. For example, `hydrateOnMediaQuery('(min-width: 600px)')` will hydrate the component when the viewport is at least 600px wide.
 
@@ -152,7 +152,7 @@ import { defineAsyncComponent, hydrateOnVisible } from 'vue'
 
 const User = defineAsyncComponent({
   loader: () => import('./UserComponent.vue'),
-  hydrate: hydrateOnVisible('100px')
+ hydrate: hydrateOnVisible('100px')
 });
 ```
 
@@ -175,8 +175,8 @@ you might get a warning if the server and the client render the date at differen
 
 ```
 [Vue warn]: Hydration text content mismatch on <div> 
-  - rendered on server: Jul 26 2024
-  - expected on client: Jul 27 2024
+ - rendered on server: Jul 26, 2024
+ - expected on client: Jul 27, 2024
 ``` 
 
 You can silence this warning by adding the `data-allow-mismatch` attribute:
@@ -217,6 +217,20 @@ export const vFocus: Directive<
 
 The built-in directives have also been improved to leverage this new feature.
 
+Another improvement concerns the `computed` function:
+you can now define a getter and a setter with different types (it was already working but TS was complaining):
+
+```ts
+const user = ref<UserModel>({ name: 'Cédric' });
+const json = computed({
+  get: () => JSON.stringify(user.value),
+  // 👇 the setter receives a UserModel instead of a string
+  set: (newUser: UserModel) => user.value = newUser;
+}); // typed as ComputedRef<string, UserModel>
+console.log(json.value); // 👈 a string
+json.value = { name: 'JB' }; // 👈 no error
+```
+
 
 ## app.onUnmount()
 
@@ -237,7 +251,60 @@ install (app: App) {
 }
 ```
 
-## onEffectCleanup
+## Watcher novelties
+
+### deep watch
+
+The `watch` function had a `deep` option since the beginning.
+It allows watching deeply nested properties of a ref:
+
+```ts
+const obj = ref({ super: { nested: { prop: 1 } } });
+watch(obj, () => {
+  // called when the ref or one of its nested properties changes
+  console.log('nested prop changed');
+}, { deep: true });
+```
+
+You don't need it for a `reactive` object though,
+as `watch` will automatically watch deeply nested properties of a reactive object.
+In that case, `deep` can be set to `false` if you want to disable this behavior.
+
+The novelty introduced in Vue 3.5 is that you can now use `deep` with a specific depth:
+
+```ts
+const obj = ref({ super: { nested: { prop: 1 } } });
+watch(obj, () => {
+  // called when the ref or the first level of its nested properties changes
+  console.log('nested prop changed');
+}, { deep: 1 }); // 👈 deep can now be a number
+```
+
+### pause/resume
+
+The `watch` and `watchEffect` can now be paused and resumed, in addition to being stopped.
+
+Until now, you could only stop a watcher, which would prevent it from being called again:
+
+```ts
+const stop = watch(obj, () => {
+  console.log('obj changed');
+});
+stop(); // 👈 stop the watcher
+```
+
+Now, you can pause and resume a watcher:
+
+```ts
+const { pause, resume, stop } = watch(obj, () => {
+  console.log('obj changed');
+});
+pause(); // 👈 pause the watcher
+resume(); // 👈 resume the watcher
+stop(); // 👈 stop the watcher
+``` 
+
+### onEffectCleanup
 
 A new API called `onEffectCleanup` has been added to register a callback that will be called when a `watchEffect` is cleaned up.
 This is similar to what the `onCleanup` parameter of `watchEffect` does,
@@ -285,6 +352,14 @@ onEffectCleanup(() => {
 }, true /* 👈 no warning */);
 ```
 
+## Trusted types
+
+Vue 3.5 now supports [Trusted Types](https://web.dev/trusted-types/).
+It should work out of the box by default.
+This is done by automatically converting the strings generated by the compiler into `TrustedHTML` when they are used in a context where a Trusted Type is expected.
+`v-html` is not supported out-of-the-box, but can also be used if you declare a custom policy.
+
+
 ## throwUnhandledErrorInProduction
 
 A new option has been added to the app configuration to throw unhandled errors in production.
@@ -322,6 +397,19 @@ It is now possible to use a `Teleport` component directly inside a `Transition` 
 thus allowing to animate the appearance and the disappearance of an element in a different place in the DOM. This used to throw an error in Vue 3.4.
 
 You can check out this [playground](https://deploy-preview-6548--vue-sfc-playground.netlify.app/#eNqdVm1v2zYQ/is3dUOSIrKdugMSzQ22Fv2wDVuLJRhQQF9o6WSxoUiBpPzSIP+9R1KSZcXxhwI2IN4999wL7056jP6o68m6wSiJFj/FcSr/UTkTkKmqVhKlhQ23JWSNsari39hSIBihrAEmc/hwdwdWM2m45UqaSSrj+DaVqVyYTPPagkHb1CThxKYtBO5CqwrOJlN/cr7PesAjaCzgqYUEVSoz4iauUm0CwTuHOi+YMHhBvqbBWXBssaoFs0gngMWysVZJ4Pm7NHL2ceUI0gh+zwTPHlppx2p1g2l0e0eiEOpiGgg8NdHd97mCZBWSecvnvTkACvSJWEXKpcp3vY60vr7hObWjOncKX8AW78khcSEOIw3hK+P8D8P3BRn4I4auGvCqRJajHuhIW85vw8VC0C6mJBlYTw+KGUQ+pi7daZdvqPZ0Xx8SHJgvjN0J95DK6WsCv4b7EqFQQqgNlyvwamoqjcAaq2JW14JjTnUEclFRgYzvRG+6b7n9DcCmRAm2RK5hzQ1fcsHtDrghitVKYO4tlzv4v8HJV9eqEOL4ohrImARkhosdUMC70PPEBeEG9v4cAeb0KFchkhINDYQP3lNOXYYTbxZT0Khj38qPrj6qZhnFlMDst1Q+DYAC2RpjSvU0bMDXSmgwLOMS9eVzrjEkkMcbXD5wG/uUCqWrBEzGBJ5fTa4uyB+EZI9oKBKaNH+L0WXUz67bG6NhD+Naa1Ub6socC3L/2Z3OfQiuZRN4rxSFSsk9nR5haqucr2Ed86Jtd7rrTDBjuruPK2YehmPm8IeIjaZ+Qn04G89hfa0OgEehYWBGOEK63djthh5DJWCNsP2UOdChgyl5aJfMCaejfXLEZYvoHLrjj7srlKKGO+3wBQy4a/chtICRtl3MYzGMImhJ4hYdPcf3e/xnrLg9P/N78eziOfT209+DbX4Qy8sFOn4enrrng2U3WHftFLoWDQNYq7BJEij4FnM/ct9iLnPcJnBzc3MdhlDVYf4BBBa2e97w3JYJXM1mv/gzbbtVSdpesGTZw0qrRubUzELpBPRqyc5nl9D+Jr+GKc+5cZsuAete6fvBb2NrdxDh58ZtRocYrqJ2oEJKh1xxhkJ4wjVqy2mFxEzwFZFWPM+9ryHTaD+1Gc5ns3rrSSqmV5yM6ezfDF5YszynFZzAGyeed9jn2b8qiiKolKbRizXLeWPIrrNQ29iULHcbaeakcE3/cc3m88FqbCvEhHixOmHOoZyHnEIKtJP7O+2ie/tmeXM9H1m7oR0atlmO3waHsxEMCqEYtYN2XdHBB0vbGqp2wVf0/lOSFre3SSP3DcIF6k+1/4pLoySwOR2lqTZ/eZn7OqL3TJBnJWYPR+RfzdbJ0uizpjejXtP3SK+zlA7aoP549y9u6blXUlKNIPQJ5X9olGhcjAH2ni6awh7gfLR/+k9Jao9783FrkW6sTcp/3hHyyePTiN5eH06kvg93Pnnr7aii0dN3LgCgKA==) from the PR author [edison1105](https://github.com/edison1105), showcasing this new feature.
+
+
+## Custom elements
+
+Vue v3.5 adds a bunch of features for custom elements.
+As I don't personally use them, I'll just list the most notable here:
+
+- `defineCustomElement` now supports disabling ShadowDom by setting the `shadowRoot` option to `false`;
+- a `useHost()` composable has been added to get the host element and a `useShadowRoot()` composable has been added to get the shadow root of the custom element (which can be useful for CSS in JS);
+- `emit` now supports specifying event options, like `emit('event', { bubbles: true })`;
+- `expose` is now available in custom elements;
+- custom elements can now define a `configureApp` method to configure the associated app instance,
+for example to use plugins like the router;
 
 ## Developer experience
 
@@ -426,7 +514,7 @@ You can try the changes using:
 ```ts
 export default defineNuxtConfig({
  future: {
-   compatibilityVersion: 4
+ compatibilityVersion: 4
  }
 })
 ```
