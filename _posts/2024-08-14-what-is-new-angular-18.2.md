@@ -18,7 +18,7 @@ This is a minor release with some nice features: let's dive in!
 
 ## Automatic flush in fakeAsync
 
-In Angular v18.2 (and zone.js v14.11+), the `flush()` function is now automatically called at the end of a `fakeAsync()` test.
+In Angular v18.2 (and zone.js v0.15), the `flush()` function is now automatically called at the end of a `fakeAsync()` test.
 
 Before this version, you had to call `flush()` yourself at the end of your test to flush all pending asynchronous tasks or `discardPeriodicTasks()` for periodic tasks. If you didn't do it, you would get the error `1 periodic timer(s) still in the queue`.
 
@@ -31,22 +31,24 @@ it('should do something', fakeAsync(() => {
 }));
 ```
 
-This is no longer necessary, as Angular will do it for you.
+This is no longer necessary, as Angular will do it for you
+(if you manually set the `flush` option to true with Angular v18.2/zone.js v0.14,
+and will be done by default by Angular in v19/zone.js v0.15).
 
 ```ts
 it('should do something', fakeAsync(() => {
   // ...
   // no flush() or discardPeriodicTasks() required!
-}));
+}, { flush: true }));
 ```
 
-This can be manually disabled by setting the `flush` option of `fakeAsync` to `false`:
+When zone.js v0.15 is released, you won't need to specify the `flush` option anymore, as it will be done automatically for you:
 
 ```ts
 it('should do something', fakeAsync(() => {
   // ...
   flush();
-}, { flush: false }));
+}));
 ```
 
 ## whenStable helper
