@@ -275,7 +275,7 @@ You can for example define a BASE_URL that will be replaced with the value of `h
 
 ```json
 "build": {
-  "builder": "@angular-devkit/build-angular:browser",
+  "builder": "@angular-devkit/build-angular:application",
   "options": {
     "define": {
       "BASE_URL": "'https://api.example.com'"
