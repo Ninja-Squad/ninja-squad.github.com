@@ -125,7 +125,7 @@ const id = useId();
 ```
 
 `useId` guarantees that the generated ID is unique within the application.
-By default, Vue generates an ID with a prefix of `v:` followed by a unique number
+By default, Vue generates an ID with a prefix of `v-` followed by a unique number
 (that increments when new components are rendered).
 The prefix can be customized by using `app.config.idPrefix`.
 `useId` also guarantees that the ID is stable between server-side rendering and client-side rendering, to avoid mismatching errors.
