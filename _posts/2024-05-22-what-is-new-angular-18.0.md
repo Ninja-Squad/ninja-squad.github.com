@@ -409,7 +409,7 @@ but this project was no longer maintained.
 Instead of reviving preboot, the Angular team decided to implement this feature directly in the framework.
 But they did not start from scratch:
 in fact, they used something that already existed inside Google, in the Wiz framework.
-Wiz is not open-source, but it is widely by Google for their applications (Google Search, Google Photos, etc.).
+Wiz is not open-source, but it is widely used by Google for their applications (Google Search, Google Photos, etc.).
 You can read about the ambitions of the Wiz and Angular teams to "merge" the two frameworks in this [blog post on angular.io](https://medium.com/angular-blog/angular-and-wiz-are-better-together-91e633d8cd5a).
 Wiz started to use the signals API from Angular (that's why Youtube is now using Signals),
 and now Angular is using the replay events feature from Wiz.
