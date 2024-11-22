@@ -166,15 +166,14 @@ JB :
     angular:
       title: Angular
       dates:
-        - 30/09-03/10 à distance
-        - 09-12/09 à distance
+        - 09-12/12 à distance
+        - 24-27/02 à distance
     angular-advanced:
       title: Angular avancé
       dates:
-        - 21-24/10 à distance
         - 20-23/01 à distance
     vue:
       title: Vue 3
       dates:
-        - 07-10/10 à distance
         - 02-05/12 à distance
+        - 17-20/02 à distance
