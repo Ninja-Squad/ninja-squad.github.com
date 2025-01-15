@@ -107,7 +107,7 @@ This is a nice improvement!
 ## useId
 
 A new composition function called `useId` has been added to generate a unique ID.
-This feature is probably already familiar to [React developers](https://react.dev/reference/react/useId) or Nuxt developers who use the `useId` [composable](https://nuxt.com/docs/api/composables/use-id).
+This feature is probably already familiar to [React developers](https://react.dev/reference/react/useId) or Nuxt developers who use the `useId` composable.
 
 This can be useful when you need to generate an ID for an HTML element,
 for example when you use a label with an input, or for accessibility attributes:
