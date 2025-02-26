@@ -39,12 +39,12 @@ as an experimental API to handle asynchronous resources in Angular applications:
 
 ```ts
 list(): ResourceRef<Array<UserModel> | undefined> {
- return resource({
-  loader: async () => {
- const response = await fetch('/users');
+  return resource({
+    loader: async () => {
+      const response = await fetch('/users');
       return (await response.json()) as Array<UserModel>;
- }
- });
+    }
+  });
 }
 ```
 
