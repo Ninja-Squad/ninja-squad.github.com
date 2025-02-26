@@ -111,6 +111,10 @@ We wrote a dedicated blog post to explain how to use it:
 
 👉 [A guide to HTTP calls with `httpResource()`](/2025/02/20/angular-http-resource/)
 
+The official RFCs for [Resource Architecture](https://github.com/angular/angular/discussions/60120)
+and [Resource APIS](https://github.com/angular/angular/discussions/60121)
+are also out if you're curious.
+
 ## Template strings in templates
 
 The Angular compiler now supports template strings in templates:

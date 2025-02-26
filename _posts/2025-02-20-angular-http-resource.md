@@ -98,6 +98,8 @@ createUser() {
   );
 ```
 
+Note that we will probably keep using the `HttpClient` for mutations.
+
 In these options, you can also define:
 
 - `defaultValue`, a default value of the resource, to use when idle, loading, or in error;
@@ -108,5 +110,9 @@ Some of you may get a feeling of déjà vu with all this,
 as it’s quite similar to the [TanStack Query library](https://tanstack.com/query/latest),
 I must insist that this is experimental and will probably evolve in the future.
 Let’s see what the RFC process will bring us!
+
+Update: the RFCs are out for 
+[Resource Architecture](https://github.com/angular/angular/discussions/60120)
+and [Resource APIS](https://github.com/angular/angular/discussions/60121).
 
 All our materials ([ebook](https://books.ninja-squad.com/angular), [online training](https://angular-exercises.ninja-squad.com/) and [training](https://ninja-squad.com/training/angular)) are up-to-date with these changes if you want to learn more!
