@@ -81,10 +81,10 @@ we have to pass the `injector` in the options as a second argument:
 
 ```ts
 injector = inject(Injector);
-createUserResource: HttpResourceRef<UserModel | undefined> | undefined;
+filterUserResource: HttpResourceRef<UserModel | undefined> | undefined;
 
-createUser() {
-  this.createUserResource = httpResource<UserModel>(
+filterUser() {
+  this.filterUserResource = httpResource<UserModel>(
     {
       url: `/users`,
       method: 'POST',
@@ -105,6 +105,9 @@ In these options, you can also define:
 - `defaultValue`, a default value of the resource, to use when idle, loading, or in error;
 - an `equal` function that defines the equality of two values;
 - a `map` function that allows you to transform the response before setting it in the resource.
+
+It is also possible to request something else than JSON,
+by using the `httpResource.text()`, `httpResource.blob()` or `httpResource.arrayBuffer()` functions.
 
 Some of you may get a feeling of déjà vu with all this,
 as it’s quite similar to the [TanStack Query library](https://tanstack.com/query/latest),
