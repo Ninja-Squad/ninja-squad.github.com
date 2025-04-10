@@ -12,10 +12,10 @@ to create resources that use HTTP requests: `httpResource()` in the `@angular/co
 This function uses `HttpClient` under the hood,
 allowing us to use our usual interceptors, testing utilities, etc.
 
-The most basic usage is to call this function with the URL from which you want to fetch data:
+The most basic usage is to call this function with a function that returns the URL from which you want to fetch data:
 
 ```ts
-readonly usersResource = httpResource<Array<UserModel>>('/users');
+readonly usersResource = httpResource<Array<UserModel>>(() => '/users');
 ```
 
 `httpResource()` returns an `HttpResourceRef` with the same properties as `ResourceRef`,
@@ -39,17 +39,14 @@ It also contains a few more properties specific to HTTP resources:
 - `progress` is a signal that contains the download progress of the response as a `HttpProgressEvent`.
 
 It is also possible to define a reactive resource 
-by using a function that returns the request as a parameter.
-If the function uses a signal,
-the resource will automatically reload when the signal changes:
+by using a signal in the function that defines the URL.
+The resource will automatically reload when the signal changes:
 
 ```ts
 readonly sortOrder = signal<'asc' | 'desc'>('asc');
 readonly sortedUsersResource = httpResource<Array<UserModel>>(() => `/users?sort=${this.sortOrder()}`);
 ```
 
-When using a reactive request,
-the resource will automatically reload when a signal used in the request changes.
 If you want to skip the reload,
 you can return `undefined` from the request function (as for `resource()`).
 
@@ -85,13 +82,13 @@ filterUserResource: HttpResourceRef<UserModel | undefined> | undefined;
 
 filterUser() {
   this.filterUserResource = httpResource<UserModel>(
-    {
+    () => ({
       url: `/users`,
       method: 'POST',
       body: {
         name: 'JB'
       }
-    },
+    }),
     {
       injector: this.injector
     }
