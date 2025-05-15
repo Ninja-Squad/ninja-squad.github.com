@@ -120,7 +120,7 @@ For example, to get the type of an input, you can use:
 })
 class InputAttrDirective {
   constructor(@Attribute('type') private type: string) {
-    // type would be 'text' if `<input type="text" />
+    // type would be 'text' if `<input type="text" />`
   }
 }
 ```
