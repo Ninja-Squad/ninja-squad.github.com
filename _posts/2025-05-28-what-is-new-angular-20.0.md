@@ -335,7 +335,7 @@ in `configureTestingModule` as a last resort.
 
 ## Dynamically created components
 
-The `createComponent()` API ([v14.2](/2022/08/26-what-is-new-angular-14.2/))
+The `createComponent()` API ([v14.2](/2022/08/26/what-is-new-angular-14.2/))
 allows to dynamically create components to manually insert them.
 
 The function (and `ViewViewContainerRef.createComponent`) gained
