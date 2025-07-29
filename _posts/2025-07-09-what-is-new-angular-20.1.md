@@ -112,8 +112,8 @@ it("should display a user", () => {
 
 This is a nice improvement, even if the "wrapper component" approach
 is still valid and can be useful in some cases, for example,
- when you want to test a component 
- which uses `ng-content` or a directive that requires a host element.
+when you want to test a component
+which uses `ng-content` or a directive that requires a host element.
 
 ## Performances
 
@@ -125,12 +125,16 @@ even if this is hard to measure in practice.
 
 A template like the following:
 
+{% raw %}
+
 ```html
 <figure>
   <img [src]="userImageUrl()" />
   <figcaption>{{ userModel().name }}</figcaption>
 </figure>
 ```
+
+{% endraw %}
 
 used to be compiled into the following instructions:
 
